@@ -1,0 +1,38 @@
+# Unity generated state
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/.vs/
+/.idea/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.suo
+*.opendb
+*.VC.db
+
+# Project-local generated evidence, temporary fixtures, saves and executables
+/.artifacts/
+/Saves/
+__pycache__/
+*.pyc
+
+# Private supplied materials: track only an explicit provenance manifest, never art by accident
+/Assets/Supplied/**
+!/Assets/Supplied/AssetManifest.json
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
