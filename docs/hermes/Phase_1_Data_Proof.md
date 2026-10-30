@@ -1,6 +1,6 @@
 # Phase 1 — Pack rules and data proof
 
-Status: PHASE 1 DELIVERY READY — implementation, parent execution, and independent pre-commit review passed. Awaiting user review/acceptance and separate Phase 2 authorization. Model A 0.1.0 remains explicitly provisional. Machamp completion target remains unanswered, not a blocker for booster generation.
+Status: COMPLETE / USER ACCEPTED. User explicitly accepted the delivered Phase 1 checkpoint and authorized Phase 2 with “yes i approve”. Model A 0.1.0 remains provisional and unchanged. This acceptance is of the data-proof checkpoint, not human playtesting of a playable opening. Machamp completion-target exception remains unanswered.
 
 ## Current process
 
@@ -61,6 +61,7 @@ Citation verifier compatibility: the installed helper strips literal closing par
 - [x] Verify Unity compilation and real Editor JSON-to-domain diagnostic export.
 - [x] Independently review code: no blocking security/correctness findings; parent verified all staged/live review pins unchanged before closing documentation.
 - [x] Prepare verified local checkpoint and stop for Phase 1 user review. No remote configured or upload performed.
+- [x] User explicitly accepted Phase 1 and authorized Phase 2. This is not physical/human playtesting of a playable opening.
 
 ## Independent review
 
@@ -76,4 +77,4 @@ None. Text/metadata research does not require downloading branded art or sound. 
 
 ## Session handoff
 
-Phase 1 implementation and independent review are complete; delivery is ready for user review, not silently accepted. Preserve the unresolved Machamp target, never put it in boosters, and do not equate the 101-card runtime booster catalog with a completion denominator. All project-controlled writes remain inside the authorized root; no public remote or upload is authorized. Proposed next phase is only the placeholder playable opening with durable generated-pack resume/exactly-once awards; do not begin it without separate approval. Asset request: none for the current data proof; placeholders are sufficient for Phase 2, with a small supplied-material request deferred to Phase 3.
+Phase 1 is explicitly user-accepted and Phase 2 is authorized. Preserve its generator/model/data baseline; the unresolved Machamp completion target is not implicitly answered. Current work and acceptance gates now live in Phase_2_Playable_Slice.md. All project-controlled writes stay in the authorized root; no uploads/services are authorized. Phase 2 uses placeholders and adds only the playable opening, recoverable generated-pack persistence and exactly-once virtual awards. Phase 3 and later remain gated. Phase 1 acceptance is not a claim of human-tested rendering/controls or exact factory collation.

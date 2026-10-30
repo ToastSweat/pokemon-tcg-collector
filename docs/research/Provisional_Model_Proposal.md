@@ -1,6 +1,6 @@
 # Proposed provisional single-pack model
 
-Status: Model A APPROVED for Phase 1 implementation. The user explicitly selected the sheet-informed model and its stated order/holo/duplicate policies. The separate Machamp completion-target question was unanswered when the form timed out; it remains unresolved, not implicitly approved. No Phase 2 authorization. The model is provisional, not a claim of exact factory collation.
+Status: Model A APPROVED for Phase 1 implementation. The user explicitly selected the sheet-informed model and its stated order/holo/duplicate policies. The separate Machamp completion-target question was unanswered when the form timed out; it remains unresolved, not implicitly approved. The user subsequently accepted Phase 1 and separately authorized Phase 2; this does not change Model A's provisional assumptions. The model is not a claim of exact factory collation.
 
 ## What research supports, and where it stops
 

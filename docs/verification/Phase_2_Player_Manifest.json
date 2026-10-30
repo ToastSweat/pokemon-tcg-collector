@@ -1,0 +1,685 @@
+{
+  "root": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Builds\\Phase2Windows",
+  "excludes": [
+    "Saves/** (user data, not build identity)"
+  ],
+  "fileCount": 135,
+  "files": [
+    {
+      "path": "D3D12/D3D12Core.dll",
+      "bytes": 5908408,
+      "sha256": "31f364f2b3aa1753e7ba9ff912d0721c8f424be5fa14503efddafbb30c635d3b"
+    },
+    {
+      "path": "MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
+      "bytes": 7831464,
+      "sha256": "b9539fc6e3099795687a5e973103faef8c2c604f73015e64cf3d5b0da3ea263d"
+    },
+    {
+      "path": "MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
+      "bytes": 611248,
+      "sha256": "f3fbf13a59fd944f483a7feabb430bc1d26406a88cfcf7fc2be91aeffe5b0451"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/machine.config",
+      "bytes": 29066,
+      "sha256": "e91782a27fa39fc6c1d6ee8b08529f5d35052310d0006034b878eb04b8f2af30"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/settings.map",
+      "bytes": 2622,
+      "sha256": "49c6160f9d54af4270a3b4e997fc4a8301f79b9e2070118fa46ddbcbbc44f9a2"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/web.config",
+      "bytes": 11635,
+      "sha256": "cf2b54339e069b9e42f7d6795eecbf562c50c1011f4ca8f65f578fe52d97ff92"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/machine.config",
+      "bytes": 33598,
+      "sha256": "e60aec2c5115d65b3acb3c55ea21576dbd770f579166c017125571e46ae560ed"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/settings.map",
+      "bytes": 2622,
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/web.config",
+      "bytes": 18802,
+      "sha256": "e38bb8cc68fe5b4edecdfd288d094b9e8ced7629039b2a347682aba0d8bd7492"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/machine.config",
+      "bytes": 34056,
+      "sha256": "ee950004b576fb28dc85f4b0435ed04bf96612de2e8b53be84d07afe85a0de6c"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/settings.map",
+      "bytes": 2622,
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/web.config",
+      "bytes": 18811,
+      "sha256": "c4cbddd4fd9347b58cc5a72b36dc4ba1ad2bb699e65869d05cd3fb9865f0d824"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/browscap.ini",
+      "bytes": 311984,
+      "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/config",
+      "bytes": 3815,
+      "sha256": "5776169973a26a387b8b3e5c0f2301a7ab9a6dd7c7d3efa22a96abc47fbf8662"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/mconfig/config.xml",
+      "bytes": 25817,
+      "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d"
+    },
+    {
+      "path": "UnityCrashHandler64.exe",
+      "bytes": 1606056,
+      "sha256": "cb65416ced2ab00a43affaa9f84a8fdd8cd135438a357767753072e033ee277b"
+    },
+    {
+      "path": "UnityPlayer.dll",
+      "bytes": 34058664,
+      "sha256": "bfcc706e09180e2673611429967b4138b1deb2e2705557696531a6b9d778a4e8"
+    },
+    {
+      "path": "VintageCardCollector.exe",
+      "bytes": 667648,
+      "sha256": "7f5064c64866d57f0c70185c9a33fd8fc0aa1895e856715da2abdfbaf6afaab1"
+    },
+    {
+      "path": "VintageCardCollector_Data/app.info",
+      "bytes": 37,
+      "sha256": "9ce73fd9ced42032ec8af389e2869d71dafad5f174ec1c70cf66f950f445d1d9"
+    },
+    {
+      "path": "VintageCardCollector_Data/boot.config",
+      "bytes": 156,
+      "sha256": "9256cc62d468767bff2c11f196c8e6843223341b23de44f16b78bde5cd488557"
+    },
+    {
+      "path": "VintageCardCollector_Data/globalgamemanagers",
+      "bytes": 21684,
+      "sha256": "a292544670327aa660ede1a9268e6f74e9d2ac2228951c3ecba43e166452fcdf"
+    },
+    {
+      "path": "VintageCardCollector_Data/globalgamemanagers.assets",
+      "bytes": 3636,
+      "sha256": "f8e74d4d678438468c05ee7f27d41282f38e14c8e2f56ff7b573de9de077a0ee"
+    },
+    {
+      "path": "VintageCardCollector_Data/globalgamemanagers.assets.resS",
+      "bytes": 2796240,
+      "sha256": "39dd38fcd8dd95d41d6d55fe16a448d29fe2c31d9a162c825c24c6d99a893d7a"
+    },
+    {
+      "path": "VintageCardCollector_Data/level0",
+      "bytes": 1984,
+      "sha256": "74fce08483a5a799ba8fddc4cce467e697fe849e543bd3f8aa35e86a7b772d4c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/Assembly-CSharp.dll",
+      "bytes": 83968,
+      "sha256": "24b79555b5994c53262983a21e274e820ef2dbe72be0a17d6868deb06d7ed140"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/Mono.Security.dll",
+      "bytes": 241152,
+      "sha256": "11cf227a25eb9ce7ee8207dbe4094304d68f10e36f4a2a5708de352d37ee45ba"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/mscorlib.dll",
+      "bytes": 4632064,
+      "sha256": "8e23ea1288c204636c06c805bb0735399864aafd44e2c01e721547563a95639e"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/netstandard.dll",
+      "bytes": 90112,
+      "sha256": "6ae62e082dc494a2433984177f60ca4db5fae69b1f360a8b33754172b310b8c5"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.ComponentModel.Composition.dll",
+      "bytes": 257024,
+      "sha256": "585606407f61eca89b5314d8093a198a1f22890800b0cc0159cf28582e37270a"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Configuration.dll",
+      "bytes": 124928,
+      "sha256": "d6ca16e51588c601f327d51f801988eb58f72e89921484a66a40e725d0c822f8"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Core.dll",
+      "bytes": 1113088,
+      "sha256": "bee6c7a45bfda0bf9054a23ccc524c8d2964b23934cb8ca44592b2039c2bb4fd"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Data.DataSetExtensions.dll",
+      "bytes": 29696,
+      "sha256": "09675c7eb9b41cbac5b8ce87a22c3d179ad23cfd1306d733c987bc420feef283"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Data.dll",
+      "bytes": 2125312,
+      "sha256": "c5781b1aa81af6acfcd6e760a3bb3ffb7afc9032744967caf3453edbe15d3e5a"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.dll",
+      "bytes": 2641920,
+      "sha256": "a183e440d48ed4ead3de490f6aa14e74a4654b7025d6807e91ac2d365f5861b0"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Drawing.dll",
+      "bytes": 489984,
+      "sha256": "8c99ed0c3e9ca93d50b298f9a4af0b398a779dc46e034134ae3e92bd1f991d48"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.EnterpriseServices.dll",
+      "bytes": 44544,
+      "sha256": "b47060c44e1be5d0362229c810028e9187e0ae59c8289a01d731006894857ec4"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.IO.Compression.dll",
+      "bytes": 114688,
+      "sha256": "3f9b2db8b7afbce708f87051372ad87c240e8e65cafe00f6fc564de6d13d539f"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.IO.Compression.FileSystem.dll",
+      "bytes": 18432,
+      "sha256": "a0e387ea7c0763f476ee0cc5dd0700f2d3d54e9260e7d38e371f0dd5e479e112"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Net.Http.dll",
+      "bytes": 122880,
+      "sha256": "fa175f91e9c40b6d549bc29b3a9828eaab06664aacc555c568a8084d5ec4048d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Numerics.dll",
+      "bytes": 119296,
+      "sha256": "d345bea2bec8e0e87f4422c1487a49648b5d6a475b5bfa4e178236c328d2099d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Runtime.Serialization.dll",
+      "bytes": 934400,
+      "sha256": "a3fdb9fde864052214b3e69e219e2651260961a9f5d8d65d1399601655d0675d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Security.dll",
+      "bytes": 320000,
+      "sha256": "8952c73b23f23d70703f9689ce4ee6fcdb7a8b40bf7962a2c5f7e66f4acb1ba2"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.ServiceModel.Internals.dll",
+      "bytes": 215040,
+      "sha256": "dbc4ae4c0a4f39d64eacf9a8a632205db9ae5410af81bff94219ff3bb707c4ac"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Transactions.dll",
+      "bytes": 35328,
+      "sha256": "a0a99a1f4d5be511b8ff893ab7f586e442f56ce6bc2c9d484b51e46c2b8b166c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Xml.dll",
+      "bytes": 3160064,
+      "sha256": "c4dbe8d722eb363230a112ea3e67c98ac876542cf7a012ad4b1b12f8388085ae"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/System.Xml.Linq.dll",
+      "bytes": 136704,
+      "sha256": "1d7f971601355d6cb45c9ea3252466f1f2b6cde84451549d3f448d10f23b791e"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AccessibilityModule.dll",
+      "bytes": 53168,
+      "sha256": "cd57e0e9e1180ce69c56d777eb09c6ec075dc1de6094f5975804073238eacc1e"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AIModule.dll",
+      "bytes": 75184,
+      "sha256": "cc87615632596385b410f9e4738432298de47e39e7b26b5ac9c6e02e7935b264"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AMDModule.dll",
+      "bytes": 21936,
+      "sha256": "358fe0e516ae6d6749ec62d12668b9c2df1ba5b1c1b2465e848d5866ac86483f"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AndroidJNIModule.dll",
+      "bytes": 119728,
+      "sha256": "985eebaf7ad0aa276c9708ca6188be1a0e09a7b5345dd7ee8b9fe9cc4ca9b5e9"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AnimationModule.dll",
+      "bytes": 220584,
+      "sha256": "6bb725e7556e55f2c5a10bbdf895528fc082285052665ca374b9813ed134e97d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ARModule.dll",
+      "bytes": 23464,
+      "sha256": "8ac767ef874be7eca47a0c61a5fe622199adb5569e6bbc3ae30393a3c85dd457"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "bytes": 40360,
+      "sha256": "49bbeee21759656cd5239adf90f735a6338508a4187a28b8e5eed26f3da72390"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.AudioModule.dll",
+      "bytes": 104872,
+      "sha256": "cd0ef7f547cfefaa26e415f55d4d6a7f52fd96190f3a6f4b4ec3189bcbb30ebd"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ClothModule.dll",
+      "bytes": 34728,
+      "sha256": "05ec53334168ed6806429e28e7cfb64ab9642234b8ca3402fd67274e51cb96bc"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ClusterInputModule.dll",
+      "bytes": 26024,
+      "sha256": "a330bd0257872a0301af446f10a92ec1c4853ae00bf105f4422f97b48953071c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ClusterRendererModule.dll",
+      "bytes": 25008,
+      "sha256": "baaa0fafe42b7ac1f8e6079e5a31ad87ce27160bde421ceead0e67e2a081db8c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ContentLoadModule.dll",
+      "bytes": 30632,
+      "sha256": "1d13a0df8241e5cca1210fc456eb938b5b034ec0cd27406e4cad35d34da6b365"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.CoreModule.dll",
+      "bytes": 1875880,
+      "sha256": "bec4f03a8af713cd689190dab9bd786b133b01ccadb986bf7d21fb97e4773922"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.CrashReportingModule.dll",
+      "bytes": 24496,
+      "sha256": "de7a8a03049213d42949e22e6b3c6360ee517d6cce8a0823f3d761676623786d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.DirectorModule.dll",
+      "bytes": 39848,
+      "sha256": "1acfeb454284ff6d07999be2e0e58c87e7f840d29fbd5ce3bf351d28edfb53f9"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.dll",
+      "bytes": 175016,
+      "sha256": "3aae71862f2ebc859861c62ff939b2f6935177d12b16d27a8af121ed6f03966b"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.DSPGraphModule.dll",
+      "bytes": 31656,
+      "sha256": "09c9788947370a8896a79be890fc65c450ace69b6845e17617d09a5403f32981"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.GameCenterModule.dll",
+      "bytes": 43952,
+      "sha256": "ca3c327d5f4dc2d75cfea2ad0eab981e6468fb065f72e503fe1c6ac27110ea1f"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.GIModule.dll",
+      "bytes": 22448,
+      "sha256": "7ccd1e02ed09f59aa96e6b7d58342155c19964da264c3c9164de125c7368fe0d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+      "bytes": 14256,
+      "sha256": "02703595227519bce5a8128beecedfe3b236cb5d89f06a6051abb64b93249564"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.GridModule.dll",
+      "bytes": 28592,
+      "sha256": "258537eb5cd9822449e926dd982a6d3c9d2f6339674378e8a3b33551a3e2f466"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
+      "bytes": 91568,
+      "sha256": "085e031ae6edc851fad638567dfeb333d9c545bc7150497a26899c3073425b7c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.HotReloadModule.dll",
+      "bytes": 22448,
+      "sha256": "b8874e103b232b2cbffc28ba7b7ccdb4c1ab9e5dac28c850eb555bc6561bfba0"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.IdentifiersModule.dll",
+      "bytes": 14760,
+      "sha256": "61128c867e81f97ee6ca018b93a4bfa03c0f062cee5516b5f1982eed4e23b281"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "bytes": 29608,
+      "sha256": "24397a947cde39f63ab5c3e0ecbc189650283dc7102918203c3c150fdff3a7ed"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.IMGUIModule.dll",
+      "bytes": 208816,
+      "sha256": "9c1722174bef099630e091b7907a2ae257005e4b8dbc673d0ff80dee4c2bb62b"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.InputForUIModule.dll",
+      "bytes": 57768,
+      "sha256": "d6b5cdb24080b6f83922a4679d7919dd43a46d1638d137f6d73ba41f715162a3"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "bytes": 43952,
+      "sha256": "96032262f41bfb4a68d4c1b6663aa20c7d814f4f0fd9394453879eac51b0f819"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.InputModule.dll",
+      "bytes": 26536,
+      "sha256": "218dff3a90c81a328ba1677874da0c1c31d47c042409f1de950ff336140f853e"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.InsightsModule.dll",
+      "bytes": 14248,
+      "sha256": "c024d8b6775d4bcf776c7591edb0231c5bdb5a2f0956407e3b427531d2af5e02"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.JSONSerializeModule.dll",
+      "bytes": 25000,
+      "sha256": "a7b2feb4db5e7a6ab6708e8b49cc04d368e548478e6170b23a531dff80a1cc98"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.LocalizationModule.dll",
+      "bytes": 25008,
+      "sha256": "cecf5d6df260616e14686c98b712d1a1d7d366b69af707dc70da24d36264d43a"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.MarshallingModule.dll",
+      "bytes": 65960,
+      "sha256": "52641d0fe36b8b3856c2db6d2f9d03f969fd1931611b01348d5e45eaa819ee40"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.MultiplayerModule.dll",
+      "bytes": 15784,
+      "sha256": "9fa9a6820e2f978e6ada5d285443c693003f4fdd859c61b1b12ab0853cfb7775"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.NVIDIAModule.dll",
+      "bytes": 36776,
+      "sha256": "a747113936329de34fda7dc78b38047da7489ef6aa622de96fd8d2d659f8764f"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ParticleSystemModule.dll",
+      "bytes": 169904,
+      "sha256": "1b03afa29113c9a6e3af154aa2b11b8a4b0a28584a55cdda93d4be4ae590b710"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+      "bytes": 22960,
+      "sha256": "940393d1569b4ef01fae89126d3ca6de11fd92cbaa184508fc4add2f7f24c6a6"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.Physics2DModule.dll",
+      "bytes": 203184,
+      "sha256": "0860597d322588decccee4ae71f7a1098cedc2c784fff7714e96849bdc1762f8"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.PhysicsModule.dll",
+      "bytes": 177576,
+      "sha256": "c8ad49d4ed0fed8ed6ce9ac792bd6bbb6bc8a390a12f4f3d94ddcb75a19a2b76"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.PropertiesModule.dll",
+      "bytes": 149424,
+      "sha256": "12d0f5d6480509551f591b6bcc74def5e896b6015a1e39c82ba549bdc6df2146"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "bytes": 22448,
+      "sha256": "a704d43462c1f0b6058d2967003eeba9da3ea3bb4c4f0f1e2810de355614802c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+      "bytes": 24488,
+      "sha256": "36f951031eb522f1be85dd453afba13cdd34e91f667cd1e6741285ba9cd368cc"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+      "bytes": 22448,
+      "sha256": "8182dfcd14a1356be7671426a20cb1fa859462333880cf0b1d35c15a53ac3bb9"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "bytes": 34224,
+      "sha256": "fc2525fdfcf0ba6b1490135a8316777ac91f8f7c8a93d4c2861dc5d8907203dd"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.SpriteMaskModule.dll",
+      "bytes": 26536,
+      "sha256": "97ba99d59a2fd448eb3deb896e0ac004986957c225dad27c84adfff0e063af29"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.SpriteShapeModule.dll",
+      "bytes": 30120,
+      "sha256": "617d28f50dd144b98083e113841c049c6e4b49f1d88b6fdb13e4a67a50b8c03a"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.StreamingModule.dll",
+      "bytes": 23976,
+      "sha256": "cba2173a6b20b3dada0ef73dc52cfb7943ec76e5eaef6813dde9fe45b1d1040c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.SubstanceModule.dll",
+      "bytes": 27560,
+      "sha256": "91b223817b4ba620ef0cf48c4f7e33bc93090dc16d6bf23192fbadd25734717b"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.SubsystemsModule.dll",
+      "bytes": 39848,
+      "sha256": "3a7d1c90aa8eb5444c2a8a8d8295454c14460baf127b1db2de4b9b44d32d154e"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TerrainModule.dll",
+      "bytes": 130992,
+      "sha256": "850b0e67a2a2bd13ec525bfa977fa994f341e438aad26db112da01ed80703908"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+      "bytes": 23976,
+      "sha256": "ce55cba16566ee48e3fc107a29c8ac5f97bc28d5a592b57e9b5150c2e5cc8386"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+      "bytes": 86448,
+      "sha256": "4ca182e52fd2b0ee03afc4fbecce7a552fce6402619d7ecae3784072098c12dc"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+      "bytes": 311216,
+      "sha256": "1e80831d74f50f285a229a373023956cb9d4c9932d99bbe092bbd160532eafc5"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "bytes": 47536,
+      "sha256": "e49afb5ecf9d027f9f8c3420aa6f675c2c8d6f21ac7106966eefe8ea58293403"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TilemapModule.dll",
+      "bytes": 56232,
+      "sha256": "c077a422b5e9704fe7fde4acc0a39194bf0ba010b0fc464db3cd77a57107c42e"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.TLSModule.dll",
+      "bytes": 29608,
+      "sha256": "b0f62774301f05b643cb837e8b83f904f803d57d56dd15197855847a3b7d76e7"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UIElementsModule.dll",
+      "bytes": 2221480,
+      "sha256": "c309b65a701ac9c9cc77e82a28ae1258ba6631b8c1bab440f4e71d84c3ec6c08"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UIModule.dll",
+      "bytes": 48040,
+      "sha256": "bfc1128fe7f6c804f4056845208d753391d1831a42175ced4d305232f72d2e6f"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UmbraModule.dll",
+      "bytes": 22440,
+      "sha256": "f059fb98eaa0be792472b8fac37bd63163f75661364f3a42865376df33c90953"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+      "bytes": 33712,
+      "sha256": "f34deb0dcde45876b5ea10017a9c09dce07063482fd7f5f38cf7f98d18802b2c"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+      "bytes": 58800,
+      "sha256": "d4260e6e34eb8d346ff5b32905ab34359277b563541a5b88be472e8b5fce2c68"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityConnectModule.dll",
+      "bytes": 25520,
+      "sha256": "6407a64d41a0d81b669185ecdff6bc548363067748c94cfb299b0d34ab4313c7"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityConsentModule.dll",
+      "bytes": 16304,
+      "sha256": "9c309cc498f512630dd7a419215dc4ed69ba99d9dc072debdc1fe5a2e19040fd"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityCurlModule.dll",
+      "bytes": 24496,
+      "sha256": "0e155dfc44266186a3e6486c2bd5fd2bd6b2ad999b3c072093652e9d68cd7b07"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
+      "bytes": 22448,
+      "sha256": "528bea9253200549826415064d9c12a5f426a68c5a1c45bc3f826f12fd41dca1"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "bytes": 27048,
+      "sha256": "d63c2b50bd43335932a5fbbab351527ac1dadfff10c0668b3883c25015f93a85"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+      "bytes": 26536,
+      "sha256": "a7ac5ee996fdcc28cbc31432b51a7996673f849c375117f6731819f5a6178abb"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "bytes": 67504,
+      "sha256": "3432603172ebf832bd5ed816f3fc7a6dac278c32c49427ee2dac31c918fd4617"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+      "bytes": 25512,
+      "sha256": "bb5f7604fcbc1fa07cfa954e9ef440dec4203e1c50ad49b5cebdfa0f9183675d"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+      "bytes": 34728,
+      "sha256": "2ff461ba6743d460dba66ce424525237b41c97d8343969d7f22aa325784122c9"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.VehiclesModule.dll",
+      "bytes": 29616,
+      "sha256": "c6f60f76a665f4649f2f99088a4fbe8c9ff772c6239f58395cb5c84cb702f7ce"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.VFXModule.dll",
+      "bytes": 76200,
+      "sha256": "895ac08be2ef98375e2d14ae1b38c4defc3017d216d72056c11a7400e33b3648"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.VideoModule.dll",
+      "bytes": 56752,
+      "sha256": "bbf4669a3b193f228d08a88d67a04e49885669781e60aa759548db07134cdb72"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
+      "bytes": 41384,
+      "sha256": "2d220d490fe89a9d031a292b4a8dfc8cc1cd59b4a89eaa7e1715790f5dcabb37"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.VRModule.dll",
+      "bytes": 29608,
+      "sha256": "7068d60a7d00605f53190fe4c67cb2187d5cbb4a402b3f51af4003c6786adf55"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.WindModule.dll",
+      "bytes": 24496,
+      "sha256": "ba5b9e9850d41cc9b17d13c4d165df29bdd4f0328bbd37d3b4953a257b40ed24"
+    },
+    {
+      "path": "VintageCardCollector_Data/Managed/UnityEngine.XRModule.dll",
+      "bytes": 86448,
+      "sha256": "d402694a5f9282fd49074a2aa7bada39c8e89648c81c8a0ccb11307cd8c74d34"
+    },
+    {
+      "path": "VintageCardCollector_Data/Resources/unity default resources",
+      "bytes": 5863012,
+      "sha256": "620c67ea0b2e25575e4dccfc1542819283f9698718b075f430e6c04eb1b04325"
+    },
+    {
+      "path": "VintageCardCollector_Data/Resources/unity_builtin_extra",
+      "bytes": 356756,
+      "sha256": "d5f5105d73f46c66913d59e4fd7065f3d5d7d7e2124e41ba4091f60c010f5c77"
+    },
+    {
+      "path": "VintageCardCollector_Data/RuntimeInitializeOnLoads.json",
+      "bytes": 13,
+      "sha256": "6a33c1efd5944feb0cb1e012e26b30c3f43fec918e5643e72ab945a9c504ff13"
+    },
+    {
+      "path": "VintageCardCollector_Data/ScriptingAssemblies.json",
+      "bytes": 2961,
+      "sha256": "90b194a2080e13bfbc41610400fd41d6a22d463085a16bcb4bb517506842a286"
+    },
+    {
+      "path": "VintageCardCollector_Data/sharedassets0.assets",
+      "bytes": 67024,
+      "sha256": "8badeb7945c0c9034d140da27291fd7ce217aa8a7f56a1cbb287bb0f95280df7"
+    },
+    {
+      "path": "VintageCardCollector_Data/sharedassets0.assets.resS",
+      "bytes": 524288,
+      "sha256": "87a4847eade1de49f6aac782a74b9929acbdb3c0f8b36d7750474215f1880479"
+    }
+  ],
+  "manifestSha256": "29ed47956943fbb520133e2d5044e41e2102f22e11a5ad182b153c74dc19e271"
+}

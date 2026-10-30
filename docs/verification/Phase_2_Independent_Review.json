@@ -1,0 +1,257 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "recordedAt": "2026-10-30T18:30:50.110452-05:00",
+  "delegationId": "deleg_fb471919",
+  "reviews": [
+    {
+      "reviewerId": "sa-0-3c8d71d1",
+      "scope": "Persistence/controller/paths",
+      "passed": true,
+      "security_concerns": [],
+      "logic_errors": [],
+      "summary": "Read complete 136335-byte core diff; independently reran 109 persistence and five path checks; reconciled 297 Unity assertions and all staged/live pins. No tracked changes.",
+      "suggestions": [
+        {
+          "finding": "Add explicit recovery-specific sharing-denial cases for state.backup-writing/state.anchor-writing.",
+          "status": "nonblocking future test extension; existing documented commit/crash/recovery boundaries remain accepted"
+        }
+      ]
+    },
+    {
+      "reviewerId": "sa-1-55179fd2",
+      "scope": "Presentation/build/native verification and binary coherence",
+      "passed": true,
+      "security_concerns": [],
+      "logic_errors": [],
+      "summary": "Read complete 165609-byte diff and relevant evidence; verified all 135 player file bytes/manifest, mapped shipped runtime sources via PE/PDB, and reconciled 111 driver checks / 60 validated captures / 10 player logs. No tracked changes or executable launches.",
+      "suggestions": [
+        {
+          "finding": "Mouse-message run inspected a random result card, nonholo Electabuzz #20, not necessarily a holo.",
+          "status": "resolved by documentation-only wording correction; fixed-seed integrated/layout suites separately establish holo inspection"
+        }
+      ]
+    }
+  ],
+  "coreDiffSha256": "0c695e8101e58270c7362e53c15fab1aa4add4f8a0aab2c372f036968c12d29d",
+  "presentationBuildDiffSha256": "a10604e73ec8efe9e8801e6cf1f813b239494c227834e42f0c9a74c25f246155",
+  "reviewedSourceEntryCount": 65,
+  "parentPinMismatches": [],
+  "verifiedPlayerFileCount": 135,
+  "playerManifestSha256": "29ed47956943fbb520133e2d5044e41e2102f22e11a5ad182b153c74dc19e271",
+  "excludedUserSettingsUnchanged": true,
+  "reviewedCodeDataSettingsAndMetadataFiles": [
+    {
+      "path": ".gitattributes",
+      "sha256": "8d84c2e7de5d13020e47d46069967624774c3e1ab6cc2bef9cccd14bf3bb01b2"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2Build.cs",
+      "sha256": "395a0df97696550231ce4ba20189be331c58aa6700ebea055d246ea4ad432938"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2Build.cs.meta",
+      "sha256": "f03211ed27fdb7fa4f87152f9fc95740e312c71d7946bdaf5ca6ef38cf09076a"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2BuildChecks.cs",
+      "sha256": "255bf8e48efd8167d1961d59d3b2b7cece688aa1868572042ea7b556c92ab91f"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2BuildChecks.cs.meta",
+      "sha256": "02438e48977226303d20462472856354ea2dac648a21b6f94f91a4b48688626b"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2PresentationChecks.cs",
+      "sha256": "d3daaacef3f6f30e86d02d8f61e04c1c8c12d9161ff48b4b288579adf27a3648"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2PresentationChecks.cs.meta",
+      "sha256": "58f5a032606ae76a1a79f5824a1b5104bd947473e82da9b22c92f1d14c376293"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2RuntimeChecks.cs",
+      "sha256": "a992a2907100143ec846a8a8ec22e34580d844492ba393cde56ad730054235b9"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase2RuntimeChecks.cs.meta",
+      "sha256": "ddb5f5cb0a1c0c0b0315ccd575fc2deb0c3cd1221ebe09f6ba86bd536c4c63bb"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence.meta",
+      "sha256": "e768ed6d2d585eee1b8ea1f3161560d702a3bf4679948a586abdc7b437d233b9"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SaveProtocol.cs",
+      "sha256": "c1cdf32c693c6dbedb1f68620e7929408c3dff0d463865c57da76c55c6304999"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SaveProtocol.cs.meta",
+      "sha256": "b350e5723e6a1ff4cb2dd713b08466066afc95e69266bc9e647e9346eba98d06"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionData.cs",
+      "sha256": "560db24646bd3469fcec8ded357115167fd2c15ac7fc6969d827aad7d9dc617e"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionData.cs.meta",
+      "sha256": "3aaac874224a89fc2dcb62e93a18345a9c3fe331b7c115b41e44c01cfcdb438a"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionStore.cs",
+      "sha256": "c10f8d2670fc170eb3b6bb5caa05032d01fa19b09f627725df96e6511b448ec6"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionStore.cs.meta",
+      "sha256": "b5c02442d3f8c77110d55e9a8d39bed2b80a683ae92de3cf45aa9f144d381e73"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/StateValidation.cs",
+      "sha256": "06d23cc557b698eaeaf53d378e785327a011d16a2947dd8df8789303268f2184"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/StateValidation.cs.meta",
+      "sha256": "ab2a2b51166c69cf507e737e4fcd16f50df99f9fbec329237caf2f4ee7b884d8"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation.meta",
+      "sha256": "a8322f573d342f3400a6eb1d63ce4b69d34df367bb0781c20b9f346c0fa46729"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/OpeningView.cs",
+      "sha256": "6a9a4f3ffb72544a888129a96c65d960f7252419319fe44f0ea02ecfb75eb674"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/OpeningView.cs.meta",
+      "sha256": "91ef20d04f8d172918c5fee28f04b7b04ed6e47465c792c6649599e9d78e1698"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/PresentationRules.cs",
+      "sha256": "5bc7244a486aca9adcf2f5c6ab0698c4ffd2c8825b9b3349d20d0d07a88ce976"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/PresentationRules.cs.meta",
+      "sha256": "f0ce7934fb9c90423230df67a865aa09616fc0101e95c3adaa7b2c5df41b3ca3"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/TabletopPresentation.cs",
+      "sha256": "02601fd6977dd5ef423dce66a94586a1a292dbd9310a4b4673b94562c67a88ee"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/TabletopPresentation.cs.meta",
+      "sha256": "70dd6fb8601ed57bb9926fb1603cf4cb4eb9a4477830d83f86ec43651ba596bf"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime.meta",
+      "sha256": "01f698032f786c5769e313cbaf8c5a25ae841fd2e9379e41af1a4f2b7e4e9d57"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/GamePaths.cs",
+      "sha256": "6fffff2490ca4963eb2c5c3f22b06eb47a5f22ba0663dbb649e16a6134872d1f"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/GamePaths.cs.meta",
+      "sha256": "3d7f07e5a055b9d3aacf5a1e47ce33f6c605e9d5e3100aeadd940c84c848d142"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "sha256": "57838eb335e346708ef8db790c020ffa67ac47dba056d6a6e34ddf096cd48ae7"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/OpeningGame.cs.meta",
+      "sha256": "8384b33f12e1a3c3c8397697daca534a51914a7e70655a1ab5598436151d75d7"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase2SmokeRunner.cs",
+      "sha256": "37f93c9f737a03699e07434ff524f9049c654dab1ff687ce1f7e6e96f0f32ee8"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase2SmokeRunner.cs.meta",
+      "sha256": "1087139ee26b6f07cbd0c6b62173a45e2b59682e87d54d187952c547dcdf0030"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/UnityStateSerializer.cs",
+      "sha256": "12735723d80e043befd44a2a0133cd7185a9f06abfaf53ec4e6c5c41721588df"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/UnityStateSerializer.cs.meta",
+      "sha256": "35b1b79efc691f24d4a4afeee7ced1a7520f962090133d7e120100a31ff537c2"
+    },
+    {
+      "path": "Assets/VintageCollector/Scenes.meta",
+      "sha256": "ae093ae768a5517757b9fe061695a035ebf5a8776659fd86d41ff943de7f99ac"
+    },
+    {
+      "path": "Assets/VintageCollector/Scenes/Bootstrap.unity",
+      "sha256": "10ed2b54688a4882ad408e66dad28a124f6aa10495aedfca8af357c8b1982763"
+    },
+    {
+      "path": "Assets/VintageCollector/Scenes/Bootstrap.unity.meta",
+      "sha256": "d17be671f5f41b672c81cfe8bad3d173052b78e3180cf662aaeac33f899e3ce3"
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "sha256": "c7c992ea0f42d2db009130d222c1bf7dbeab8d9f92b09dc275d67c843e20ad75"
+    },
+    {
+      "path": "ProjectSettings/ProjectSettings.asset",
+      "sha256": "946003c20dc14d5f82e2e64236aebb6c557a227a0db08e8207a3440d268d98c4"
+    },
+    {
+      "path": "ProjectSettings/SceneTemplateSettings.json",
+      "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a"
+    },
+    {
+      "path": "TestsPhase2/PersistenceTests.cs",
+      "sha256": "9739e0b4e9a737ca22296aca874abade60d2fcd351520f248e3b8d091a7281f2"
+    },
+    {
+      "path": "TestsPhase2/Phase2SmokeRunner.cs",
+      "sha256": "37f93c9f737a03699e07434ff524f9049c654dab1ff687ce1f7e6e96f0f32ee8"
+    },
+    {
+      "path": "TestsPhase2/PresentationFixtureBuild.cs",
+      "sha256": "08be623625a8c0d0a20423e4f62c5c4f9dc85cd3102045081401a1f0378ed8b3"
+    },
+    {
+      "path": "TestsPhase2/PresentationRenderFixture.cs",
+      "sha256": "9b9f347d8ce11b3f63f0857d88404abdcd07da77b9fb7c4b4d32dbe5b6c9a2e3"
+    },
+    {
+      "path": "TestsPhase2/PresentationTests.cs",
+      "sha256": "c0ad98c03cb0afbbb9cbe7feca98017ae0c56562bb6e4c8d1a774bcdda0234b2"
+    },
+    {
+      "path": "TestsPhase2/RuntimePathTests.cs",
+      "sha256": "1f0964d2b06d440d6ff8d06a28503ef09ec3abd247129cdd7335f83e5e7a0773"
+    },
+    {
+      "path": "tools/run_phase2_persistence.py",
+      "sha256": "bbab0e03bd6fc2e8bf080a5bc8b2a9435ab0d8983a084adcfd19f81fda0fa493"
+    },
+    {
+      "path": "tools/run_phase2_presentation.py",
+      "sha256": "e9970544f23fe7c799528096d660c845f6019e1cb53351a536417409bfbdafa2"
+    },
+    {
+      "path": "tools/run_phase2_presentation_editor.py",
+      "sha256": "8a281a879284e201864828e914feeb3337b92c8f1df19e631ce3ebaaa89a0fa5"
+    },
+    {
+      "path": "tools/run_phase2_presentation_render.py",
+      "sha256": "6cd89ca04139a72422a07efb78609f87285cb071feeed42244a8c5b81063e658"
+    },
+    {
+      "path": "tools/run_phase2_runtime_paths.py",
+      "sha256": "efa77d1ab87f9780f03ec0b6a04b04970d0ae2db1bd9d1e23c7ef4e216bcd357"
+    },
+    {
+      "path": "tools/verify_phase2_player.py",
+      "sha256": "f03b5ba48aebfef5992fec5305f397e7f6b800668042055097db50807a7d48e9"
+    }
+  ],
+  "closingChanges": "Only status/review/playtest documentation changed after approval. No reviewed game, model, tool, scene or binary bytes changed.",
+  "humanPlaytestAccepted": false,
+  "phase3Authorized": false
+}

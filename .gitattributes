@@ -13,5 +13,6 @@
 # Preserve engine-generated empty YAML values and retrieved/OCR source whitespace.
 # Keep normal whitespace gates enabled for handwritten production/test code.
 *.meta whitespace=-blank-at-eol
+Assets/VintageCollector/Scenes/*.unity whitespace=-blank-at-eol
 docs/research/evidence/**/*.md whitespace=-blank-at-eol,-blank-at-eof
 docs/research/evidence/**/*.txt whitespace=-blank-at-eol,-blank-at-eof

@@ -1,6 +1,6 @@
 # Pack research register
 
-Status: Phase 1 research reviewed. User explicitly approved Model A's provisional sheet-informed order, holo, weighting and duplicate policies. Implemented and executed as generator/model version 0.1.0; parent rerun and Unity Editor JSON integration passed. Machamp completion-target exception remains unanswered; do not infer a decision. Independent code review passed; Phase 1 delivery is ready for user review. Phase 2 is not authorized.
+Status: Phase 1 research reviewed. User explicitly approved Model A's provisional sheet-informed order, holo, weighting and duplicate policies. Implemented and executed as generator/model version 0.1.0; parent rerun and Unity Editor JSON integration passed. Machamp completion-target exception remains unanswered; do not infer a decision. Independent code review passed and the user accepted Phase 1. Phase 2 has been separately authorized; the researched Model A remains unchanged.
 
 ## Scope and evidence policy
 
