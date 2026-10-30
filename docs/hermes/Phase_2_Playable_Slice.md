@@ -49,7 +49,9 @@ The accepted generator is now connected to durable persistence, passive tabletop
 - [x] Build Bootstrap and Windows player; run native/graphics/restart/failure/input checks.
 - [x] Inspect actual production screenshots and reconcile reports/build pins.
 - [x] Both independent reviews passed; no blocking security/correctness findings. Parent rechecked all 65 staged/live source entries and 135 player file hashes/membership against the frozen manifest.
-- [ ] Record final local checkpoint and request Phase 2 human review.
+- [x] Verified local implementation checkpoint recorded: `d649e46` (`[verified] feat: add durable Unity pack opening slice and Windows player proof`). Stop for the linked human checklist; Phase 3 remains unapproved.
+
+Closing documentation is a separate nonbehavioral checkpoint. The sole pre-existing untracked PackageManagerSettings.asset is preserved and deliberately not included in the implementation commit.
 
 ## Review and remaining suggestions
 
