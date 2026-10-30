@@ -1,0 +1,86 @@
+{
+  "requested_url": "https://html.duckduckgo.com/html/?q=%22Base+Set%22+%22holo%22+%221+in+3%22+booster",
+  "final_url": "https://html.duckduckgo.com/html/?q=%22Base+Set%22+%22holo%22+%221+in+3%22+booster",
+  "status": 200,
+  "title": "\"Base Set\" \"holo\" \"1 in 3\" booster at DuckDuckGo",
+  "accessed": "2026-10-30T12:17:32.765041-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+"Base Set" "holo" "1 in 3" booster at DuckDuckGo
+All Regions
+Argentina
+Australia
+Austria
+Belgium (fr)
+Belgium (nl)
+Brazil
+Bulgaria
+Canada (en)
+Canada (fr)
+Catalonia
+Chile
+China
+Colombia
+Croatia
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Germany
+Greece
+Hong Kong
+Hungary
+Iceland
+India (en)
+Indonesia (en)
+Ireland
+Israel (en)
+Italy
+Japan
+Korea
+Latvia
+Lithuania
+Malaysia (en)
+Mexico
+Netherlands
+New Zealand
+Norway
+Pakistan (en)
+Peru
+Philippines (en)
+Poland
+Portugal
+Romania
+Russia
+Saudi Arabia
+Singapore
+Slovakia
+Slovenia
+South Africa
+Spain (ca)
+Spain (es)
+Sweden
+Switzerland (de)
+Switzerland (fr)
+Taiwan
+Thailand (en)
+Turkey
+US (English)
+US (Spanish)
+Ukraine
+United Kingdom
+Vietnam (en)
+Any Time
+Past Day
+Past Week
+Past Month
+Past Year
+What Percentage of Base Set Cards Were Holographic
+pokemonpricing.com/what-percentage-of-base-set-cards-were-holographic/
+In the Base Set , the pull rate for a holo Rare was about 1 in 3 packs. That means, on average, you'd get one holo Rare card for every three booster packs you opened. This was never officially confirmed by Wizards of the Coast (the original publisher), but it's widely accepted by the collector community based on years of pack openings and data collection [1]. So, while 7.8% of the set's ...
+Which Japanese wotc packs have a holo in every pack?
+www.elitefourum.com/t/which-japanese-wotc-packs-have-a-holo-in-every-pack/25861
+Do you happen to know the holo pull rates for Japanese e-Series and ex era as well? Thanks in advance! Based on personal experience I think it is about the same as english packs. Roughly 1 in 3 or 4 packs. I don't have hard numbers or proof so take that with a grain of salt, just my experience from mostly base set and expedition base set packs.
+Feedback

@@ -1,0 +1,991 @@
+{
+  "provenance": {
+    "source_title": "TCGdex English Base Set card-object metadata",
+    "record_count": 11,
+    "policy": "Original source fields and values, with media URL and pricing fields removed recursively. No media requested. This is supplementary research, not authoritative physical-print certification.",
+    "removed_field_names": [
+      "image",
+      "logo",
+      "pricing",
+      "symbol"
+    ]
+  },
+  "records": [
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-8",
+      "accessed_at": "2026-10-30T12:20:21.314425-05:00",
+      "raw_response_sha256": "1894c6806ae08de8904edd76fa3d1ac15ea38abfe50d6d102bad58816332f254",
+      "card": {
+        "category": "Pokemon",
+        "id": "base1-8",
+        "illustrator": "Ken Sugimori",
+        "localId": "8",
+        "name": "Machamp",
+        "rarity": "Rare",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": true,
+          "normal": false,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "holo",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273703,
+              "tcgplayer": 42425
+            },
+            "variantId": "4ffrmhcfiaejakhepqdkx7o"
+          },
+          {
+            "type": "holo",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "cardmarket": 660220
+            },
+            "variantId": "mtltux8qtgdu4exu903oasum21juxbvx6lx"
+          },
+          {
+            "type": "holo",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 660220
+            },
+            "variantId": "3takscxpcqoqcfnxk1ivs2y6"
+          },
+          {
+            "type": "holo",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "zqq5g2u9n0st0gren5bssktmac2ywqaw"
+          }
+        ],
+        "dexId": [
+          68
+        ],
+        "hp": 100,
+        "types": [
+          "Fighting"
+        ],
+        "evolveFrom": "Machoke",
+        "description": "Using its amazing muscles, it throws powerful punches that can knock its victim clear over the horizon.",
+        "stage": "Stage2",
+        "abilities": [
+          {
+            "type": "Pokemon Power",
+            "name": "Strikes Back",
+            "effect": "Whenever your opponent's attack damages Machamp (even if Machamp is Knoced Out), this power does 10 damage to attacking Pokémon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is already Asleep, Confused, or Paralyzed when your opponent attacks."
+          }
+        ],
+        "attacks": [
+          {
+            "cost": [
+              "Fighting",
+              "Fighting",
+              "Fighting",
+              "Colorless"
+            ],
+            "name": "Seismic Toss",
+            "damage": 60
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Psychic",
+            "value": "×2"
+          }
+        ],
+        "retreat": 3,
+        "legal": {
+          "standard": false,
+          "expanded": false
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-31",
+      "accessed_at": "2026-10-30T12:20:21.312468-05:00",
+      "raw_response_sha256": "af4fd86d2e9862a4911ec02d1f2c2eb38bdef3d01575bcc31820aac3915acc65",
+      "card": {
+        "category": "Pokemon",
+        "id": "base1-31",
+        "illustrator": "Ken Sugimori",
+        "localId": "31",
+        "name": "Jynx",
+        "rarity": "Uncommon",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273726,
+              "tcgplayer": 42373
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107028,
+              "cardmarket": 660197
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107028,
+              "cardmarket": 660197
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "dexId": [
+          124
+        ],
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "description": "Merely by meditating, the Pokémon launches a powerful psychic energy attack.",
+        "stage": "Basic",
+        "attacks": [
+          {
+            "cost": [
+              "Psychic"
+            ],
+            "name": "Doubleslap",
+            "effect": "Flip 2 coins. This attack does 10 damage times the number of heads.",
+            "damage": "10x"
+          },
+          {
+            "cost": [
+              "Psychic",
+              "Psychic",
+              "Colorless"
+            ],
+            "name": "Meditate",
+            "effect": "Does 20 damage plus 10 more damage for each damage counter on the Defending Pokémon.",
+            "damage": "20+"
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Psychic",
+            "value": "×2"
+          }
+        ],
+        "retreat": 2,
+        "legal": {
+          "standard": false,
+          "expanded": false
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-58",
+      "accessed_at": "2026-10-30T12:20:21.308951-05:00",
+      "raw_response_sha256": "91365f6e2300f6c784d3f6ae819951f677ec55b25ac773f44b50cc38f7476d75",
+      "card": {
+        "category": "Pokemon",
+        "id": "base1-58",
+        "illustrator": "Mitsuhiro Arita",
+        "localId": "58",
+        "name": "Pikachu",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273753,
+              "tcgplayer": 42402
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107055,
+              "cardmarket": 660169
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107055,
+              "cardmarket": 660169
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless-red-cheek",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 147229,
+              "cardmarket": 660170
+            },
+            "variantId": "mtltux8qussk4naabf2sjstrcyez6fa4nvy"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless-red-cheek",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 147229,
+              "cardmarket": 660170
+            },
+            "variantId": "3skqdujv9jyo7ijcqeiufs8ut5ygkjq1y1bpa3mn9q4bbjp"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          },
+          {
+            "type": "normal",
+            "size": "jumbo",
+            "thirdParty": {
+              "cardmarket": 362859
+            },
+            "variantId": "l7orfpmicmyc"
+          },
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "stamp": [
+              "poketour-99"
+            ],
+            "thirdParty": {
+              "cardmarket": 275586
+            },
+            "variantId": "jnhspmmj4h1e7ohhxunqpao96lgmqwtl2ts1"
+          }
+        ],
+        "dexId": [
+          25
+        ],
+        "hp": 40,
+        "types": [
+          "Lightning"
+        ],
+        "description": "When several of these Pokémon gather, their electricity can cause lightning storms.",
+        "stage": "Basic",
+        "attacks": [
+          {
+            "cost": [
+              "Colorless"
+            ],
+            "name": "Gnaw",
+            "damage": 10
+          },
+          {
+            "cost": [
+              "Lightning",
+              "Colorless"
+            ],
+            "name": "Thunder Jolt",
+            "effect": "Flip a coin. If tails, Pikachu does 10 damage to itself.",
+            "damage": 30
+          }
+        ],
+        "weaknesses": [
+          {
+            "type": "Fighting",
+            "value": "×2"
+          }
+        ],
+        "retreat": 1,
+        "legal": {
+          "standard": false,
+          "expanded": false
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-73",
+      "accessed_at": "2026-10-30T12:20:21.313292-05:00",
+      "raw_response_sha256": "a8c8bdf52dce0f60e06636955df79577cb36a4d8ec7b14fe90f957a9c3db7acb",
+      "card": {
+        "category": "Trainer",
+        "id": "base1-73",
+        "illustrator": "Ken Sugimori",
+        "localId": "73",
+        "name": "Impostor Professor Oak",
+        "rarity": "Rare",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 86271,
+              "cardmarket": 273768
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107070,
+              "cardmarket": 660146
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107070,
+              "cardmarket": 660146
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "effect": "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards.",
+        "legal": {
+          "standard": false,
+          "expanded": false
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-96",
+      "accessed_at": "2026-10-30T12:20:21.462863-05:00",
+      "raw_response_sha256": "0ef519bf78ffa40947dd2973756d3282feff130713c8f78a99f0dcb7b7fcbde4",
+      "card": {
+        "category": "Energy",
+        "id": "base1-96",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "96",
+        "name": "Double Colorless Energy",
+        "rarity": "Uncommon",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273791,
+              "tcgplayer": 42440
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107099,
+              "cardmarket": 660106
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107099,
+              "cardmarket": 660106
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "effect": "Provides {C}{C} energy.\nDoesn't count as a basic Energy card.",
+        "energyType": "Special",
+        "legal": {
+          "standard": false,
+          "expanded": false
+        },
+        "updated": "2026-09-04T23:45:25+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-97",
+      "accessed_at": "2026-10-30T12:20:21.461905-05:00",
+      "raw_response_sha256": "77f992148d48ff759013b866fdd4594020ba6551e03f98bfd2e0614707a4e4f0",
+      "card": {
+        "category": "Energy",
+        "id": "base1-97",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "97",
+        "name": "Fighting Energy",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273792,
+              "tcgplayer": 42441
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107093,
+              "cardmarket": 660105
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107093,
+              "cardmarket": 660105
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "stage": "Basic",
+        "energyType": "Normal",
+        "legal": {
+          "standard": true,
+          "expanded": true
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-98",
+      "accessed_at": "2026-10-30T12:20:21.474757-05:00",
+      "raw_response_sha256": "d948387bf2a3efece77aac23cb64b9fb1a4aa76e6459da71cf017a9c025d7eb2",
+      "card": {
+        "category": "Energy",
+        "id": "base1-98",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "98",
+        "name": "Fire Energy",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273793,
+              "tcgplayer": 42442
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107094,
+              "cardmarket": 660103
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107094,
+              "cardmarket": 660103
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "stage": "Basic",
+        "energyType": "Normal",
+        "legal": {
+          "standard": true,
+          "expanded": true
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-99",
+      "accessed_at": "2026-10-30T12:20:21.462737-05:00",
+      "raw_response_sha256": "89817d733381c22523a6c0936701322b7757a1b2a873ee9f0cddeccf3feaedc2",
+      "card": {
+        "category": "Energy",
+        "id": "base1-99",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "99",
+        "name": "Grass Energy",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273794,
+              "tcgplayer": 42443
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107095,
+              "cardmarket": 660102
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107095,
+              "cardmarket": 660102
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "stage": "Basic",
+        "energyType": "Normal",
+        "legal": {
+          "standard": true,
+          "expanded": true
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-100",
+      "accessed_at": "2026-10-30T12:20:21.630808-05:00",
+      "raw_response_sha256": "91a35b75a701b5568142ba06c5b7b4b0bab40b4ff0f031732d3ac2fe24f548e9",
+      "card": {
+        "category": "Energy",
+        "id": "base1-100",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "100",
+        "name": "Lightning Energy",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273795,
+              "tcgplayer": 42348
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107097,
+              "cardmarket": 660101
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107097,
+              "cardmarket": 660101
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "stage": "Basic",
+        "energyType": "Normal",
+        "legal": {
+          "standard": true,
+          "expanded": true
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-101",
+      "accessed_at": "2026-10-30T12:20:21.619029-05:00",
+      "raw_response_sha256": "682e529c2403a5bdce8dbc0851babfb23c206cd75d1d63425e79b0cb932f1c0d",
+      "card": {
+        "category": "Energy",
+        "id": "base1-101",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "101",
+        "name": "Psychic Energy",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273796,
+              "tcgplayer": 42349
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107096,
+              "cardmarket": 660098
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107096,
+              "cardmarket": 660098
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "stage": "Basic",
+        "energyType": "Normal",
+        "legal": {
+          "standard": true,
+          "expanded": true
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    },
+    {
+      "source_url": "https://api.tcgdex.net/v2/en/cards/base1-102",
+      "accessed_at": "2026-10-30T12:20:21.618335-05:00",
+      "raw_response_sha256": "0bcb5272ed96acfef25ceec6847e1acd19a26d4a969a48891a6f4bf2a060511a",
+      "card": {
+        "category": "Energy",
+        "id": "base1-102",
+        "illustrator": "Keiji Kinebuchi",
+        "localId": "102",
+        "name": "Water Energy",
+        "rarity": "Common",
+        "set": {
+          "cardCount": {
+            "official": 102,
+            "total": 102
+          },
+          "id": "base1",
+          "name": "Base Set"
+        },
+        "variants": {
+          "firstEdition": true,
+          "holo": false,
+          "normal": true,
+          "reverse": false,
+          "wPromo": false
+        },
+        "variants_detailed": [
+          {
+            "type": "normal",
+            "subtype": "unlimited",
+            "size": "standard",
+            "thirdParty": {
+              "cardmarket": 273797,
+              "tcgplayer": 42350
+            },
+            "variantId": "3a83wf50tz7q114spsx7dw6v5"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "stamp": [
+              "1st-edition"
+            ],
+            "thirdParty": {
+              "tcgplayer": 107098,
+              "cardmarket": 660096
+            },
+            "variantId": "gx8bq2hefwadd3utcibq3oc56sjf4jqdz709e"
+          },
+          {
+            "type": "normal",
+            "subtype": "shadowless",
+            "size": "standard",
+            "thirdParty": {
+              "tcgplayer": 107098,
+              "cardmarket": 660096
+            },
+            "variantId": "2tszcx1bpt4e79y5us0p570b9n"
+          },
+          {
+            "type": "normal",
+            "subtype": "1999-2000-copyright",
+            "size": "standard",
+            "variantId": "qi4g3e7tzbkcyhfflvx7zmvunxwjcq3pvp"
+          }
+        ],
+        "stage": "Basic",
+        "energyType": "Normal",
+        "legal": {
+          "standard": true,
+          "expanded": true
+        },
+        "updated": "2026-08-20T08:25:49+01:00"
+      }
+    }
+  ]
+}

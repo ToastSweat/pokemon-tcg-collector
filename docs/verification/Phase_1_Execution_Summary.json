@@ -1,0 +1,282 @@
+{
+  "verifiedAt": "2026-10-30T14:38:47.961306-05:00",
+  "phase": 1,
+  "modelId": "base-en-unlimited1999-sheet-informed",
+  "modelVersion": "0.1.0",
+  "status": "execution-and-independent-review-passed-awaiting-user-review",
+  "historicalAccuracy": "approved-provisional-not-factory-proof",
+  "completionTarget": "unresolved-machamp-exception",
+  "csharpTests": {
+    "checks": [
+      {
+        "error": "",
+        "name": "Test_01_CatalogLoadsRealJson",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_02_CatalogRejectsMalformedIdentity",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_03_CatalogSnapshotsEveryField",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_04_PortableNonzeroDomainUnbiasedRng",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_05_RngRejectionAndRawVector",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_06_WeightedHalfOpenBoundaries",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_07_UniquePoolRemovesWholeIdentityAndResetsPerCall",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_08_AlternativeThresholdAndSlotOrder",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_09_InvalidRulesFailAtConstruction",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_10_ReachableUniqueSlotDemandValidatedExactly",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_11_HostileRngRejectedAndFailureDoesNotDepleteGenerator",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_12_GeneratorAndResultsFreezeVersionsAndNestedRuleData",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_13_PrintingIdsMustEncodeCanonicalPrintingFinishVariant",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_14_DiagnosticContainsActualOrderedIdsNamesAndWarnings",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_15_BatchCountsReconcileWithActualPacks",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_16_CliRequiresExplicitGenerationMode",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_17_BatchCliReturnsReconciledJson",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_18_AllFrozenPoolWeightBoundaries",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_19_RealCatalogProvenanceAndSourceCorrections",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_20_GeneratorSupportsIndependentConcurrentAndReentrantCalls",
+        "passed": true
+      },
+      {
+        "error": "",
+        "name": "Test_21_DomainCompilesAsSeparatePureAssembly",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "testCount": 21
+  },
+  "pythonOracleRunnerTests": {
+    "testCount": 6,
+    "checks": [
+      {
+        "name": "__main__.BatchAnalysisTests.test_analysis_rejects_biased_actual_counter_fixture",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "__main__.BatchAnalysisTests.test_real_batch_probabilities_and_all_checks",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "__main__.IndependentPackOracleTests.test_python_reference_matches_actual_seeded_ordered_packs",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "__main__.OracleTests.test_grouped_marginals_match_exhaustive_ordered_enumeration",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "__main__.RunnerFailureTests.test_missing_zero_compile_runtime_and_count_mismatch_fail_closed",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "__main__.RunnerIntegrationTests.test_opt_in_full_run_writes_parseable_evidence",
+        "passed": true,
+        "error": ""
+      }
+    ],
+    "passed": true
+  },
+  "pythonAuthoringTests": {
+    "testCount": 5,
+    "checks": [
+      {
+        "name": "test_printing_specific_name_cannot_drift_back_to_source_typo",
+        "passed": true
+      },
+      {
+        "name": "test_real_authored_data_matches_approved_source_mapping",
+        "passed": true
+      },
+      {
+        "name": "test_rule_mutations_cannot_silently_change_the_approved_model",
+        "passed": true
+      },
+      {
+        "name": "test_unanswered_completion_target_cannot_be_implicitly_approved",
+        "passed": true
+      },
+      {
+        "name": "test_unsupported_catalog_schema_is_rejected",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "editorIntegration": {
+    "passed": true,
+    "checkCount": 4,
+    "checks": [
+      {
+        "name": "unity_json_to_ordered_pack",
+        "passed": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "diagnostic_provenance_and_limitations",
+        "passed": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "readable_order_matches_portable_seed_vector",
+        "passed": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "editor_menu_exports_project_local_diagnostics",
+        "passed": true,
+        "detail": "PASS"
+      }
+    ]
+  },
+  "authoringDataChecks": {
+    "passed": true,
+    "checkCount": 9,
+    "checks": [
+      {
+        "name": "catalog_source_mapping",
+        "passed": true
+      },
+      {
+        "name": "booster_catalog_size",
+        "passed": true
+      },
+      {
+        "name": "source_checklist_size",
+        "passed": true
+      },
+      {
+        "name": "pool_sizes",
+        "passed": true
+      },
+      {
+        "name": "pool_weight_totals",
+        "passed": true
+      },
+      {
+        "name": "approved_pool_entries_and_policies",
+        "passed": true
+      },
+      {
+        "name": "approved_order_and_holo_fraction",
+        "passed": true
+      },
+      {
+        "name": "approved_model_metadata",
+        "passed": true
+      },
+      {
+        "name": "catalog_schema_and_pending_target",
+        "passed": true
+      }
+    ],
+    "cardCount": 101,
+    "sourceChecklistCount": 102,
+    "completionTargetStatus": "unresolved-machamp-exception",
+    "modelVersion": "0.1.0",
+    "poolSizes": {
+      "holo": 15,
+      "rare": 16,
+      "uncommon": 32,
+      "common": 32,
+      "energy": 6
+    },
+    "poolWeights": {
+      "holo": 110,
+      "rare": 121,
+      "uncommon": 121,
+      "common": 121,
+      "energy": 121
+    }
+  },
+  "batch": {
+    "sampleSize": 100000,
+    "seed": 2463534242,
+    "generatedCards": 1100000,
+    "holoCount": 33247,
+    "invariantViolations": 0,
+    "distributionCheckCount": 183,
+    "distributionPassed": true,
+    "tolerance": "Each count: abs(actual-N*p) <= 6*sqrt(N*p*(1-p))+2; per-card C/U trials are packs, not slots. Deterministic PRNG regression, not a historical confidence interval.",
+    "reportPath": ".artifacts/domain/parent-final-distribution.json"
+  },
+  "unityDiagnosticEqualsMonoSeed4": true,
+  "playableTestPerformed": false,
+  "phase2Authorized": false
+}

@@ -1,0 +1,85 @@
+{
+  "requested_url": "https://html.duckduckgo.com/html/?q=site%3Aelitefourum.com+%22base%22+%22duplicates%22+%22pack%22",
+  "final_url": "https://html.duckduckgo.com/html/?q=site%3Aelitefourum.com+%22base%22+%22duplicates%22+%22pack%22",
+  "status": 200,
+  "title": "site:elitefourum.com \"base\" \"duplicates\" \"pack\" at DuckDuckGo",
+  "accessed": "2026-10-30T12:19:01.421226-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+site:elitefourum.com "base" "duplicates" "pack" at DuckDuckGo
+All Regions
+Argentina
+Australia
+Austria
+Belgium (fr)
+Belgium (nl)
+Brazil
+Bulgaria
+Canada (en)
+Canada (fr)
+Catalonia
+Chile
+China
+Colombia
+Croatia
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Germany
+Greece
+Hong Kong
+Hungary
+Iceland
+India (en)
+Indonesia (en)
+Ireland
+Israel (en)
+Italy
+Japan
+Korea
+Latvia
+Lithuania
+Malaysia (en)
+Mexico
+Netherlands
+New Zealand
+Norway
+Pakistan (en)
+Peru
+Philippines (en)
+Poland
+Portugal
+Romania
+Russia
+Saudi Arabia
+Singapore
+Slovakia
+Slovenia
+South Africa
+Spain (ca)
+Spain (es)
+Sweden
+Switzerland (de)
+Switzerland (fr)
+Taiwan
+Thailand (en)
+Turkey
+US (English)
+US (Spanish)
+Ukraine
+United Kingdom
+Vietnam (en)
+Any Time
+Past Day
+Past Week
+Past Month
+Past Year
+No results found for site:elitefourum.com "base" "duplicates" "pack"
+Suggestions :
+Check spelling
+Try related keywords
+Remove unnecessary punctuation
+Feedback

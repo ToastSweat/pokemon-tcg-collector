@@ -1,0 +1,1719 @@
+{
+  "requested_url": "https://archive.org/download/pokemon-gotta-catch-em-all-tcg-starter-rules-version-1-base-set-wotc-english/Pokemon%20Gotta%20Catch%20Em%20All%20Trading%20Card%20Game%20Rules%20Version%202%20Base%20Set%20Jungle%20Set%20WOTC%20%28English%29_djvu.txt",
+  "final_url": "https://dn721602.ca.archive.org/0/items/pokemon-gotta-catch-em-all-tcg-starter-rules-version-1-base-set-wotc-english/Pokemon%20Gotta%20Catch%20Em%20All%20Trading%20Card%20Game%20Rules%20Version%202%20Base%20Set%20Jungle%20Set%20WOTC%20%28English%29_djvu.txt",
+  "status": 200,
+  "title": "",
+  "accessed": "2026-10-30T12:19:35.271981-05:00",
+  "content_type": "text/plain; charset=utf-8"
+}
+
+e ME es 
+“6” 
+
+
+TRADING CARD GAME 
+
+
+VIDEO SERIES 
+
+
+4, I|CHOOSE YOU! PIKACHU! 
+2. THE MYSTERY OF MT. MOON 
+3. THE SISTERS OF CERULEAN CITY 
+3 TV episodes per volume 
+© 75 mins. each 
+
+
+COMIC SERIES 
+
+
+@ PIKACHU SHOCKS BACK: 
+4 issues, Mar. '99-Jun. ‘99 
+
+
+@ ELECTRIC PIKACHU BOOGALOO: 
+4 issues, Jul. ‘99-Oct. '99 
+
+
+$17.00 for a 4-issue subscription 
+
+
+ORDER FROM VIZ AT (800) 394-3042 
+FAX: (415) 546-7086 ¢ wwwj-pop.com 
+CALL (888) 266-4226 TO FIND YOUR LOCAL COMICS STORE 
+
+
+339 Netenda. 
+
+
+Pokdengm ©1995, 1866 anc 1998 Nintendo, Crnatures, GAMETACAK “am or 
+
+
+Table of Contents 
+What's a Pokémon? 
+Gotta Catch ’Em All! 
+What Do You Need to Play? 
+How to Win 
+What's the Pokémon Game Like? 
+What Are the Different Kinds of Cards? 
+Starting the Game 
+Let’s Play! 
+What Can You Do during Your Turn? 
+What Happens after Each Player’s Turn? 
+How Do Sleep, Confusion, Paralysis, and Poison Work? 
+Can Your Pokémon Be Asleep and Confused at the Same Time? 
+Why Are There So Many Different Cards? 
+How Do You Make a New Deck? 
+The Pokémon League 
+Complete Pokémon Base Set Card List 
+Complete Pokémon: Jungle™ Card List 
+Collect Both Pokémon: Jungle™ Theme Decks! 
+
+
+In What Order Do You Do Your Attack? 
+
+How Do You Figure Out the Damage? 
+
+How Do You Retreat Using Double Energy Cards? 
+
+What Happens if You Can't Do What a Card Tells You to Do? 
+
+What Happens if Neither Player Gets a Basic Pokémon 
+in His or Her First 7 Cards? 
+
+What Happens if Both Players Win at the Same Time? 
+
+What's Sudden Death? 
+
+Glossary 
+
+Index 
+
+Credits 
+
+
+What's a Pokémon? 
+Welcome to the world of Pokémon, a special place where people just 
+like you train to become the number-one Pokémon Master in the world! 
+
+
+But what is a Pokémon, you ask? “Pokémon are incredible creatures that 
+share the world with humans,” says Professor Oak, the leading authority on 
+
+these monsters. “There are currently 150 documented 
+species of Pokémon.” 
+
+
+And your incredible task is to capture, train, and 
+fight with all of them! It's not easy, but once 
+you get the hang of it, you'll know exactly 
+which Pokémon to choose for a battle. On your 
+way to the top, you'll perfect your skills by 
+using your Pokémon to fight against other 
+Pokémon trainers. 
+Each Pokémon has its own special 
+fighting abilities. Though they come in 
+many shapes and sizes, even the 
+smallest Pokémon can launch a fierce 
+attack. Some Pokémon grow, or 
+evolve, into even more powerful 
+creatures. But don’t worry—even your 
+toughest Pokémon will be loyal to you! 
+
+
+Carry your Pokémon with you, and you're 
+ready for anything! You've got the power 
+in your hands, so use it! 
+
+
+If you play the Pokémon Game Boy® game 
+or watch the animated Pokémon show, you 
+already know the basic ideas and goals of 
+the trading card game. So are you ready 
+for your first Pokémon trading card 
+game battle? 
+
+
+Gotta Catch ’Em All! 
+
+
+In the Pokémon trading card game, one of your goals is to collect each 
+of the cards, similar to your goal of collecting each of the Pokémon in the 
+Game Boy game. But not all Pokémon cards are as easy to catch as 
+others. The Energy cards are the most basic and most common kind of 
+cards. Your Pokémon cards, Evolution cards, and Trainer cards come in four 
+different varieties: common cards are marked in the bottom right-hand 
+corner with a @. Uncommon cards are marked with a , and rare cards 
+are marked with a %. In addition, some rare cards are printed using 
+holographic foil. These “holo” cards are the hardest to catch and collect. In 
+addition, a limited quantity of each set of Pokémon cards is printed 
+with the <8 symbol, which shows that those cards are first-edition cards 
+from that set. The same cards may be reprinted in the future but never 
+with the <%% symbol, ensuring that your first-edition cards will maintain 
+their value! 
+
+
+If you're mostly interested in playing, there are always good cards appearing 
+in all levels of commonality. (Many of the most popular Pokémon—such as 
+Pikachu, Charmander, Squirtle, and Bulbasaur—are common cards.) This 
+ensures that players who buy different amounts of cards can still play and 
+have a fun and fair game. 
+
+
+for Pokémon n suey, deckbuilding, and trading tips, be sure to read 
+the Duelist, one of the leading trading card game 
+magazines. You can find the Duelist at most 
+larger newsstands. 
+
+
+What Do You Need to Play? 
+
+Well, you and your opponent will each need your 
+own deck of 60 cards, a coin to flip, and some 
+
+counters to mark damage to your Pokémon. (You 
+
+might want to have one color count as 10 damage 
+
+each and the other color count as 30 damage each.) 
+
+
+How to Win 
+
+In Pokémon, you can win three different ways. First, at the start of the 
+game, you set aside 6 of your cards as Prizes. Every time one of your 
+opponent's Pokémon is Knocked Out, you take | of your Prizes and put it 
+into your hand. When you've taken all 6 of your Prizes, you win the game! 
+(You'll win most of your games this way.) Second, you also win if your 
+opponent has no Pokémon left to fight against your Pokémon. And finally, 
+you win if your opponent's deck is out of cards at the start of his or her 
+turn. 
+
+
+What’s the Pokémon Game Like? 
+
+You and your opponent take turns playing cards from your hands. Some of 
+these cards will be Basic Pokémon cards, Evolution cards that can grow 
+them into bigger and stronger Pokémon, or Energy cards that help Pokémon 
+fight. You can also play Trainer cards—these will do lots of different things 
+to help you win. 
+
+
+You might have several Pokémon on the table at once, but only one of 
+them (called your “Active Pokémon”) will be fighting for you at a time. The 
+rest will be sitting on your Bench in case you need them to fight. Every 
+turn, you'll have a chance to attack with your Active Pokémon, which will 
+either do damage to your opponent's Active Pokémon (called the “Defending 
+Pokémon” during your attack) or do something else to it, like making it 
+Asleep, Confused, Paralyzed, or Poisoned. If your attack does enough damage 
+to Knock Out the Defending Pokémon, you get to take | of your 6 Prizes. 
+When you take your 6th Prize (when you've Knocked Out 6 of your 
+opponent's Pokémon), you win! 
+
+
+4 
+
+
+What Are the Different Kinds of Cards? 
+Basic Pokémon are your most important cards. They fight for you 
+turn after turn against your opponent's Pokémon. 
+
+Evolution cards are played on top of your Basic Pokémon (or 
+Sometimes on top of other Evolution cards). They 
+make your Pokémon bigger and more powerful. 
+Energy cards are attached to your Pokémon to 
+give them the Energy they need to use their attacks. 
+Trainer cards are one-shot cards that do 
+something once and are then discarded. 
+
+
+Starding the Game 
+
+Shuffle your deck and draw a starting hand of 7 cards. Put the rest of 
+
+your deck face-down in front of you. 
+
+If you don’t have a Basic Pokémon card in your hand (it'll say “Basic 
+
+Pokémon” in the upper left-hand corner), show your hand to your 
+
+opponent, shuffle it back into your deck, and draw 7 new cards. Your 
+
+opponent may then draw up to 2 extra cards. If you still don’t have 
+any Basic Pokémon in your new hand, you repeat this proces, but your 
+opponent gets to draw up to 2 extra cards each time! 
+
+* You and your opponent each choose a Basic Pokémon card from your 
+hands and put them face-down. These will be your starting Active 
+Pokémon. 
+
+* Each player may, if he or she wishes, choose up to 5 Basic Pokémon 
+from his or her hand and put them face-down on his or her Bench 
+(this is where Pokémon wait when they're not the Active Pokémon). 
+
+* Put the top 6 cards of your deck face-down in front of you. These are 
+your Prizes, which you take when your opponent's Pokémon are Knocked 
+Out. You can't look at a Prize card until you take it. 
+
+* Flip a coin to decide who goes first. You can use your special Pokémon 
+coin, if you have one, 
+
+* Flip over all the Active and Benched Pokémon that have been put on 
+the table. 5 
+
+
+How Your Play Area Should Look 
+
+
+© Your 
+
+
+ip our Opponents Opponent’s Prizes 
+
+
+Benched Pokémon 
+© Your Opponent's 
+Active Pokémon 
+
+
+© Your Opponent’s Deck 
+
+
+© Your Opponent's 
+Discard Pile 
+
+
+© Your—|- 
+Oppone| 
+
+
+© In-Play 
+Area—}— 
+
+
+Your 
+Bench 
+
+
+al 
+© Your © Your Discard Pile 
+
+
+© Your Prizes 
+| Benched Pokémon 
+© Your Active © Your Deck 
+Pokémon 
+
+
+Be sure to leave room for your discard pile, All of your cards that get 
+~ discarded during the game, no matter how they get discarded, will go there. 
+
+
+fe) During the game, you'll be putting more and more cards on the table. All the 
+
+
+cards on the table that are in the Active Pokémon area or on the Bench are 
+referred to as being “in play.” Your deck, your Prizes, and the cards in your 
+discard pile are not considered to be “in play.” 
+
+
+Zi Pokémon cards, Evolution cards, and Energy cards will be on the table—in 
+™ - 
+play"—after you play them from your hand. You can keep using those cards 
+
+
+in play turn after turn, Trainer cards, though, are used once and then discarded. 
+
+
+Pokémon Card 
+
+
+Name Hit Points 
+
+
+Pokémon Type 
+
+
+Evolution Stage- 
+(or Colorless) 
+
+
+Pokémon Power 
+(or Attack Cost and Text) - 
+
+
+Attack Cost 
+and Text 
+
+
+Pokémon Data 
+
+
+Attack Damage 
+
+
+Flavor Text 
+Illustrator — 
+
+
+Rarity Symbol 
+
+
+Monster Number 
+
+
+Card Number 
+
+
+Trainer Card 
+
+
+Name 
+
+
+Rules Text 
+
+
+Illustrator Rarity Symbol 
+
+
+— Card Number 
+
+
+KEY to 
+Energy symbols 
+
+
+Grass 
+Fire 
+Water 
+Lightning 
+
+
+Psychic 
+
+
+Fighting 
+
+
+Energy Illustrator Colorless 
+
+
+Symbol 
+
+
+Let’s Play! 
+
+As you play, you and your opponent take turns. During your opponent's turn, 
+you don’t do anything except replace your Active Pokémon if it gets Knocked 
+Out (see below). During your turn, go through the steps below. 
+
+
+What Can You Do during Your Turn? 
+
+
+[S| You can do lots of things during your turn! You always draw a 
+
+card first, and you always attack last. Here's everything you can do 
+
+|) Draw a card 
+
+2) Do any of the following in any order and as often as you like: 
++ Put a Basic Pokémon on the Bench 
+* Evolve a Pokémon in play 
+* Attach an Energy card to a Pokémon (only once per turn) 
+* Play a Trainer card 
+* Retreat your Active Pokémon 
+* Use a Pokémon Power 
+
+3) Attack with your Active Pokémon 
+
+4) Your turn is over now 
+
+
+|) Draw a card 
+You always begin your turn by drawing a card. (If your deck is empty 
+at the beginning of your turn, the game is over, and your 
+opponent wins.) 
+
+2) Do any of the following in any order and as often as you like: 
+
+
+* Put a Basic Pokémon on the Bench 
+
+Choose a Basic Pokémon from your hand and put it face-up on your Bench. 
+You can have no more than $ Pokémon on your Bench at any time, so you 
+can put a new Basic Pokémon there only if your Bench has 4 or fewer 
+Pokémon on it. 
+
+
+*Evolve a Pokémon in play 
+If you have a card in your hand that says “Evolves from so-and-so” and 
+so-and-so is the name of a Pokémon you already have in play, you may 
+play that card in your hand on top of the Pokémon so-and-so. This is called 
+“evolving” a Pokémon, 
+Example: Juliane has a card called Ninetales that says “Evolves from Vulpix,” and she 
+has a Vulpix card in play. She may play the Ninetales card on top of the Vulpix card. 
+When a Pokémon evolves, it keeps all cards attached to it (Energy cards, 
+Evolution cards, etc.) and any damage it might already have, but the old 
+attacks and Pokémon Powers of the Pokémon it evolved from go away. All 
+other things about the Pokémon go away—Sleep, Confusion, Paralysis, 
+Poison, or anything else that might be the result of an attack some 
+Pokémon made earlier. 
+Sorry, you can't evolve 2 Pokémon that you just played or evolved on that 
+turn, Also, neither player can evolve a Pokémon on the first turn. And finally, 
+i! yes, you can evolve a Pokémon on your Bench—that counts as “in play”! 
+
+
+*Attach an Energy card to a Pokémon 
+
+Take an Energy card from your hand and attach it to one of your Pokémon 
+in play (put it under the Pokémon card). 
+
+Unlike most of the other things you can do during your turn, you may do 
+this only once during your turn. 
+
+
+*Play a Trainer card 
+When you want to play a Trainer card, do what it says, then put it in the 
+discard pile. 
+
+
+Retreat your Active Pokémon 
+
+You may switch your Active Pokémon with one of the Pokémon on your 
+Bench. To do this, you must discard Energy attached to the Active Pokémon 
+equal to the Retreat Cost that’s written in the lower right-hand corner. 
+(You'll read more about costs in the “Attack with Your Active Pokémon” 
+section.) If you can't do that, then you can't retreat. Pokémon 
+
+
+with no Retreat Cost don’t need to get rid of any Energy when they 
+retreat—they can retreat “for free.” 
+
+
+A Pokémon that is Asleep or Paralyzed can’t retreat. A Confused Pokémon 
+can try to retreat, but it might not succeed. (Why this might happen will 
+be explained later on in the rules.) 
+
+
+When your Active Pokémon goes to your Bench (whether it retreated or got 
+there some other way), it keeps any Energy cards, any Evolution cards, and 
+any damage counters it might already have. All other things about the 
+Pokémon go away—Sleep, Confusion, Paralysis, Poison, or anything else that 
+might be the result of an attack some Pokémon made earlier. All of these 
+things go away. 
+
+If you retreat, you can still attack that turn. 
+
+
+Use a Pokémon Power 
+
+Some Pokémon have a special “Pokémon Power” that they can use when 
+they're in play. (Remember, Benched Pokémon are “in play,” too.) Many of 
+these Powers can be used before you attack. Each Pokémon Power is 
+different, though, so you should read carefully to see how each Power works. 
+
+
+A Pokémon Power isn't the same as a Pokémon’s attack, so if you use the 
+Pokémon Power, you can still attack! 
+
+
+3) Attack with your Active Pokémon 
+
+If you wish, you may have your Active Pokémon attack your opponent's Active 
+Pokémon (also called the “Defending Pokémon”). This is the last thing you 
+can do during your turn—you can't do anything else afterward. You can 
+only attack one time during your turn, and your Pokémon can only use one 
+of its attacks each turn. To attack, just tell your opponent which one of your 
+Pokémon’s attacks you're using. You can only use an attack if you have at 
+least the required amount of Energy attached to your Active Pokémon. 
+
+The required amount is written to the left of the 
+
+attack name. 
+
+
+Any kind of Energy—@, @, ©, 4%, ©, @, or *&—can count toward 
+Colorless Energy requirements (3). But only Energy of the appropriate kind 
+counts toward Energy requirements of that kind. For example, you can use 
+at attack with @® @® % next to it only if that Pokémon has at least 3 
+Energy attached to it, at least 2 of which are @ Energy. 
+
+S| You have to have the required amount of Energy attached to a Pokémon to 
+
+(8) use its attack, but you don’t have to discard those cards to attack. The 
+cards stay attached to your Pokémon unless the card says otherwise! 
+
+
+When you attack, read the attack you're using and do what it says. For each 
+10 damage a Pokémon takes, put one damage counter on it. If a Pokémon 
+ever has total damage at least equal to its Hit Points (for example, 4 or more 
+damage counters on a Pokémon with 40 HP), it’s immediately Knocked Out. 
+
+
+Some Pokémon have a Weakness or Resistance to Pokémon of other types. 
+(For example, Charmander has a Weakness to © Pokémon.) A Defending 
+Pokémon takes double damage from a Pokémon that it has a Weakness to, 
+and it takes 30 less damage from a Pokémon that it has Resistance to. 
+
+
+Ee] Usually the attack won't depend on the order you do this in, but if it does, 
+then this is how you'll figure it out! First, you pay any costs (discarding 
+= Energy cards, for example) before seeing what the attack does, Then damage 
+comes before any other effects. Also, Weakness is applied before other things that might 
+change the amount of damage. 
+What happens when your Pokémon is Knocked Out? 
+Whenever one of your Pokémon is Knocked Out, put its Basic Pokémon card 
+and all cards attached to it (Evolution cards, Energy cards, etc.) in your 
+discard pile. Your opponent then chooses one of his or her Prizes (even if 
+you Knocked Out your Pokémon yourself!) and puts it into his or her hand. 
+After that, you must replace your Active Pokémon with a Pokémon from 
+your Bench. (If you can’t do this because your Bench is empty, you lose.) 
+If your Active Pokémon and your opponent's Active Pokémon are Knocked 
+Out at the same time, the player whose turn it is replaces his or her Pokémon 
+last. The player whose turn it is chooses his or her Prize last as well. 
+
+
+12 
+
+
+4) Your turn is over now 
+Sometimes there are things to do after your turn is over but before 
+your opponent’s turn begins. After you've done those things, your 
+opponent's turn begins. 
+
+
+What Happens after Each Player’s Turn? 
+
+After each player's turn, if either player's Active Pokémon is Poisoned, it'll 
+take damage, and if it's Asleep or Paralyzed it might recover. Then the next 
+player's turn begins. 
+
+
+How Do Sleep, Confusion, Paralysis, 
+
+and Poison Work? 
+
+Some attacks cause the Defending Pokémon to be Asleep, Confused, Paralyzed, 
+or Poisoned. These things don’t happen to a Benched Pokémon, only to an 
+Active Pokémon—in fact, if a Pokemon goes to the Bench, these things are 
+removed from it. And evolving a Pokémon also means it's no longer Asleep, 
+Confused, Paralyzed, or Poisoned. 
+
+
+Asleep 
+
+If a Pokémon is Asleep, it can’t attack or retreat. Turn the Pokémon sideways 
+to show it is Asleep. After each player’s turn, flip a coin. On a heads, the 
+Pokémon wakes up (turn the card back right-side up), but on a tails it's 
+still Asleep, and you'll have to wait until after the next turn to try to wake 
+it up again, 
+
+
+Confused 
+
+If a Pokémon is Confused, you have to flip a coin whenever you try to 
+attack with it or whenever you try to make it retreat. Turn a Confused 
+Pokémon with its head pointed toward you to show it’s Confused. 
+
+
+When you try to make a Confused Pokémon retreat, you first have to pay 
+the Retreat Cost by discarding Energy cards. Then flip a coin. On heads, you 
+retreat the Pokémon as normal. On tails, the retreat fails, and that Pokémon 
+can't try to retreat again that turn. 
+
+
+13 
+
+
+When you attack with a Confused Pokémon, you flip a coin. On heads, the 
+attack works normally, but on tails your Pokémon attacks itself with an 
+attack that does 20 damage. (If your Pokémon has a Weakness or Resistance 
+to its own type, or if there's some other effect that would alter the attack, 
+apply these things as usual.) 
+
+
+On tails, the Active Pokémon does 20 damage to itself even if its attack 
+normally doesn't do damage (like Squirtle’s Withdraw attack). 
+
+
+Paralyzed 
+
+If a Pokémon is Paralyzed, it can’t attack or retreat. Turn the Pokémon 
+sideways to show it’s Paralyzed. If an Active Pokémon is Paralyzed, it 
+recovers after its player’s next turn. Turn the card right-side up again, 
+
+
+What this means is that if your Pokémon gets Paralyzed, it will be out of 
+‘action on your next turn, and then it will be okay again. 
+
+
+Card Positions 
+Normal Position 
+
+
+Paralyzed 
+
+
+j in rig 5 
+
+
+14 Confused 
+
+
+0166-25086 VM ‘NOLNSY 
+
+
+086 XOd ‘Od 
+
+
+=> 3/50 
+mw al[Q 
+BS iS 
+cs fio =| > om 
+00 Flog 
+no ae | 
+oz SIF ey 
+oo 
+TE Baw 
+z= zea 
+mm > 2m 
+ov: ony 
+On ger 
+Mm i 
+Bo * a 
+=o 2 
+o |45 
+2 |2> 
+a iE 
+
+
+Cc 
+Zz 22 
+Pd 
+z= 
+SASS 
+G=FOS 
+p> ™m>p> 
+3 02D 
+m <m 
+ao 
+
+
+an 
+
+
+A(SAILOARY OMI NOK YS1]) SOA 
+oN DO 
+
+
+{S400 otWOD pear NoA og “S| 
+
+
+Esmoys: 
+ALL S1J0A83 Omg NOK are YAK “pT 
+
+
+gsoulzeseut 
+SYJOABS OM} INOK ATE YA “E] 
+
+
+wiSEMA IS OD 
+Qsupapey ogy EO 
+
+
+{uouI9404 Surpnjour you “Aeyd 
+NOK op soured pred Suipen yoy “ZI 
+
+
+PHO OD 
+au01s 10 [RW 
+419 SLID SKOG/VOWA OD 
+
+
+a eee eet = Kael af 
+eyo eng 
+Axjd 0) moy nox Sure} 
+Ut Yoogayn4 op Jo ssaufnydjay oy (-q 
+Lod = |i oa «eam | 
+wp 400g 
+TEA HL wou?Yog oy] ("e 
+
+
++" ayer nok pjnom MOH “9 
+
+
+g4umo nox 
+op sjonpoad wourgyog s9x0 yey *¢ 
+
+
+syped 1as0og 
+
+
+{Aueur Moy pur ‘aseyoind nok 
+PIP Sionpoid N51 wowgy0g YoY “p 
+
+
+— = a LOOUS_ 
+rs is SWOY §,pUaty/ouloY AW a yO OD 
+auruo/asqam O 
+SO ee CRE {soured Avjd Ayjensn nok op auoy yy *1 1 a0}s aEMYOS OF 
+auoys AQqoyaurey FE 
+oO DO (ueW-1eM 40 128se | se yons) 
+2dIZPMIS/AND saigeg omeag Q JosIpuEqauoMT sey 
+spueo Suipery aioys AOL 
+sdums 2 
+sam3y uonsy O éDOL 
+sssouppy SYOO OHIO FE] WOUZYOY DYN aseYDNd No< pip a1dy A “¢ 
+oureyy (Ajdde ase yO O 
+WMP [Te x24) Buravofjoy ayy 199]}09] “O| —_uorENsUOWEP WI paredionmed/aeg 
+JaK[ d40IS/210I8 UI MESO) 
+ris Ajpenbs (og, wawastuaape Jadedsmouauizesey Ff) 
+2! _O auIfUO/AISqOA\, OD 
+watid DO juswasTOApE AL O 
+ajome iadedsmauauzeseW 
+{OD.L wourpyY0g axp Jo puny O 
+4o199{[09 40 soAvjd wv AjuBUId NOK ary "6 
+(aoa) oy dn is) S94 ODL wouzy¥0g 
+ON O NO 0 ap Jo way FIG Nok pip MoH *Z 
+
+
+ésqnjo uey Aue 0} Suojaq nok og “11 
+
+
+Ajoxytun KA 2 
+Ajayryun eymawog PF 
+Jou YS JO GTO 
+
+Ajay yMoMIOg 
+AP 2A OD 
+
+
+cauizedew 
+awed paseo Surpen uoM9y0g & 0} 
+SqUOSGNS 019g NOK pinom Aja¥I[ MOH] “| 
+
+
+ALL Yo Mmoys 
+Payeunue wowayoy ay, YDIEM NOK OG *g 
+
+
+Ajoxutun 12, 
+Ajoytun ieymawog 
+jou 1YTiW 40 TWIT 
+
+AjyIP yMoWOS PF 
+Apo Kean OD 
+
+
+éspreo Supe uowgx0q [euoNIppe 
+aseyaund 0} no axe Ajoyt] MOH] “L 
+
+
+YB se paarsoay 
+JIS 403 paseysing © 
+
+
+2YIS k Se I DALD9Ar IO JJasNOK 405 
+DOL wowgyxeg ap nok pid “1 
+
+
+[49N0q UdAd owes sty 9yeUI sn 
+jay [4 sjusuraod sno 4 “YUL NO jeg 
+AOU SN 39] 0} SOINUTUL My B DYR} DSv>]q_ 
+
+‘(QOL eure’ pro Fupen y,woMr%0g 
+2p Surseyound soy nox yuey], 
+
+
+“SAME “OPUTIWIN 6661 PUR “R661 “9661 “6610 
+
+
+FIdVLS LON 04 ‘2880/9 0} ade} esn esveid 
+uy ‘saydioag, £q woRezuowpne 29pun pase) ‘pIAz9521 SIYSLA |] “PIT WYSE] R66IG WF wa SAEAA 4¥IS “DUI “ISLO-) 24 40 SPIEZI A, 
+o syzowapen paiaistau are Aupayyws ayy :2kSeyy Pue 1S¥O> IAL JO SAAVZIAA “DU] “ISCO_) 4p JO SPIEZIA 6661" OPUAIUIN Jo SYseUIAPEN, 
+
+
+aie peas opuarutyy feroi{Jo stp pue |||" WE, Yore> ENON "og JUNE “UOUIPYOY “AVI¥{ANVD 
+
+
+J 
+
+
+Poisoned 
+If a Pokémon is Poisoned, place a “poison marker” on it to show that 
+it’s Poisoned. 
+
+
+As long as it’s still Poisoned, the Pokémon takes 10 damage after each 
+player's turn, ignoring Weakness and Resistance. If an attack would poison a 
+Pokémon that’s already Poisoned, it doesn’t get doubly Poisoned; instead, the 
+new Poison condition replaces the old one. 
+
+
+Make sure whatever you use for a poison marker looks different from a 
+SD sss cn 
+
+
+Can Your Pokémon Be Asleep and Confused 
+
+at the Same Time? 
+
+If a Pokémon is Asleep, Confused, or Paralyzed, and a new attack is made 
+against it that causes it to become Asleep, Confused, or Paralyzed, the old 
+condition is erased and only the new one counts. But these three conditions 
+are the only attack effects that erase each other. For example, a Pokémon 
+can be Confused and Poisoned at the same time. 
+
+
+STOP READING NOW! 
+
+
+Y | You know enough to start playing, so play a few 
+games before you go on to the Expert Rules! 
+
+
+Why Are There So Many Different Cards? 
+One of the things that makes Pokémon different from other card games 
+is that it’s a trading card game. This means that there are lots of different 
+cards that you can collect and trade with your friends. Also, you aren't 
+limited to just playing the decks you buy—you can use all the different 
+cards you have to create totally new decks! A lot of the fun of a trading 
+card game comes from making different decks that use different strategies, 
+
+
+How Do You Make a New Deck? 
+
+Your deck has to have exactly 60 cards, and you can't have more than 4 
+of any one card other than basic Energy cards in your deck (the basic Energy 
+cards are @, @, ©, 4, ©, and @).A card counts as the same as 
+another card if it has the same name—it doesn’t matter whether the cards 
+have different art or come from different sets. 
+
+To make a new deck, first notice that all the cards other than the Trainers 
+have different Energy types on them. Your deck should probably include one 
+or two of the basic Energy types, and you can choose to add some Colorless 
+(3%) Pokémon if you like. If you just choose one Energy type, you will always 
+have the right kind of Energy for your Pokémon, but not as much variety. 
+If you have several Energy types, you'll have more Pokémon to choose from, 
+but you'll run the risk of sometimes not drawing the right type of Energy 
+for your Pokémon. And be sure your deck has enough Energy cards (most 
+decks need 25 to 30), 
+
+Once you've chosen your Energy types, pick Pokémon and Trainer cards that 
+work well together. Do you want to build up big Pokémon to crush your 
+opponent? Then put in a lot of Evolution cards and some Trainers like 
+Pokédex that help you find those Evolution cards. Do you want to do a lot 
+of damage to your opponent's Pokémon very quickly? Then pick Pokémon 
+that don’t need to be evolved and cards like PlusPower that do extra damage. 
+After you've made your deck, play it as often as you can against as many 
+other decks as you can. See what works and what doesn’t, and then make 
+changes. If you keep working at it, you'll have a deck that will show everyone 
+you're the greatest Pokémon Master of all time! 
+
+
+16 
+
+
+the league that ever 
+Pokémon trainer 
+belongs to! 
+
+
+© Earn badges just fike the ones \\ 
+in the Game Boy game, 
+
+© Play “Ry other trainers with your 
+own Pokémon trading card deck or 
+your own Game Boy. 
+
+® Discover brand-new fun and unique 
+Pokémon activities. 
+
+
+= 
+
+
+TE: 
+Become the World's OREA" po\emon Trainer! 
+
+
+For more information on 
+the Pokémon League, 
+call Wizards of the Coast at 
+(800) 324-6496 
+or send email to <questions @wizards.com>. 
+
+
+Visit our website at 
+www.wizards.com/Pokemon 
+for more information 
+about the exciting new Pokémon League! 
+
+
+17 
+
+
+Complete Pokémon Base Set Card List 
+
+
+| Alakazam 
+O 2 Blastoise 
+(I 3 Chansey 
+O 4 Charizard 
+O 5 Clefairy 
+QO) 6 Gyarados 
+Q 7 Hitmonchan 
+8 Machamp 
+QO 9 Magneton 
+O10 Mewtwo 
+Q II Nidoking 
+12 Ninetales 
+13 Poliwrath 
+14 Raichu 
+O 15 Venusaur 
+Q 16 Zapdos 
+O17 Beedrill 
+(2 18 Dragonair 
+Oi 19 Dugtrio 
+©) 20 Electabuzz 
+Ci 2I Electrode 
+O 22 Pidgeotto 
+23 Arcanine 
+Q 24 Charmeleon 
+O 25 Dewgong 
+© 26 Dratini 
+
+0 27 Farfetchd 
+Q) 28 Growlithe 
+Q 29 Haunter 
+© 30 Inysaur 
+O31 Jynx 
+
+© 32 Kadabra 
+(©) 33 Kakuna 
+©) 34 Machoke 
+
+
+HO 35 Magikarp 
+eH Ol 36 Magmar 
+eH 2 37 Nidorino 
+eH O38 Poliwhirl 
+eH 2 39 Porygon 
+eH O40 Raticate 
+mH OAL Seel 
+
+*H O42 Wartortle 
+WH Ol 43 Abra 
+eH 1 44 Bulbasaur 
+eH Ol 45 Caterpie 
+eH 46 Charmander 
+HH C1 47 Diglett 
+48 Doduo 
+
+
+== 
+
+
+Ooococooocoocooccvoococoocooo 
+
+
+3 Magnemite 
+4 Metapod 
+
+
+7 Pidgey 
+8 Pikachu 
+
+
+3 Squirtle 
+4 Starmie 
+
+
+POSS SSSSHSSSOOHHH HHH HHH 
+
+
+. 
+
+
+SOCHOOHOHOHHSHSSHHOSHOHOOOSHHOHOOH HHO OOO 
+
+
+Ci 69 Weedle 
+
+Qi 70 Clefairy Doll 
+
+Q 71 Computer Search 
+
+T2 Devolution Spray 
+
+73 Impostor Professor Oak 
+74 Item Finder 
+
+
+1 
+
+76 Pokémon Breeder 
+7] Pokémon Trader 
+78 Scoop Up 
+
+79 Super Energy Removal 
+80 Defender 
+
+81 Energy Retrieval 
+82 Full Heal 
+
+83 Maintenance 
+
+84 PlusPower 
+
+85 Pokémon Center 
+6 Pokémon Flute 
+
+7 Pokédex 
+
+}8 Professor Oak 
+
+9 Revive 
+
+10 Super Potion 
+
+| Bill 
+
+
+SPOOOOSHHSSEHHSSHOHHHHHHHHHHO 
+
+
+6 Double Colorless Energy @ 
+18 Fighting Energy 
+
+8 @ Fire Energy 
+
+99 @ Grass Energy 
+
+2 100 % Lightning Energy 
+C2 101 © Psychic Energy 
+
+O 102 © Water Energy 
+
+
+OooocoooooocoococococoOcOoocooooooo 
+
+
+Complete Pokémon: Jungle™ Card List 
+
+A dense jungle, undiscovered by humans... Here, Pokémon have evolved 
+into many strange and marvelous forms as yet unknown to scientists. Drawn 
+here in their neverending quest for Pokémon, the trainers of the world have 
+come to call this forest the “Pokémon Jungle.” 
+
+
+OQ | Clefable  %H 123 Nidoqueen *% 145 Rhydon 
+OG 2 Electrode eH 1 24 Pidgeot *% © 46 Seaking 
+OG 3 Flareon eH (© 25 Pinsir * 0141 Tauros a 
+4 Jolteon  *wH 26 Scyther % 1 48 Weepinbell @ 
+C1 5 Kangaskhan eH © 27 Snorlax % ©) 49 Bellsprout @ 
+G6 Mr. Mime eH [28 Vaporeon * (150 Cubone @ 
+QQ TNidoqueen *H [29 Venomoth * (1 5! Eevee e 
+C8 Pidgeot  %H (©) 30 Victreebel x 1 52 Exeggcute @ 
+9 Pinsir *H 231 Vileplume % © 53 Golden @ 
+(2 10 Scyther eH © 32 Wigglytuff % © 54 Jigglypuff @ 
+II Snorlax eH 1 33 Butterfree @ 155 Mankey @ 
+(112 Vaporeon =H 134 Dodrio §=9 «= 56 Meowth = @ 
+C1 13 Venomoth eH ©) 35 Exeggutor ® 1 57 Nidoran? @ 
+14 Victreebel eH 1 36 Fearow @ 1 58 Oddish @ 
+1 15 Vileplume %*H © 37 Gloom @ © 59 Paras e 
+2 16 Wigglytuff eH © 38 Lickitung @ (1 60 Pikachu @ 
+OI7 Clefable % [139 Marowak @ 1 61 Rhyhorn @ 
+C118 Electrode x 140 Nidorina @ 2 62 Spearow @ 
+(219 Flareon = %&  L4I Parasect @ (163 Venonat @ 
+& 20 Jolteon x (42 Persian © © 64 Poké Ball @ 
+2 21 Kangaskhan % ©) 43 Primeape @ 
+
+22 Mr. Mime x ©) 44 Rapidash 
+
+
+Cards I-16 are holo versions of cards 17-32. Otherwise, these cards are 
+exactly the same as their non-holo versions. 
+
+
+19 
+
+
+Collect Both Pokémon: Jungle™ Theme Decks! 
+
+Train with both of these theme decks and you'll be on your way to 
+mastering all types of Pokémon. Each theme deck has a different strategy 
+and different Pokémon. Follow these deckbuilding suggestions by adding cards 
+from other theme decks and boosters, and power up your deck! 
+
+
+Water Blast 
+Hold your opponent's Pokémon at bay until it’s time to bring out the big 
+guns with the Fighting and Water Pokémon in this “Water Blast” deck! 
+
+
+14 © Energy 
+4 Poliwag 4 Eevee 
+2 Poliwhirl - 4 Meowth 
+| Sel 2 Persian 
+| Vaporeon 
+
+2 Gust of Wind 
+14 @ Energy 2 Potion 
+2 Machop | Professor Oak 
+| Rhydon 2 Super Potion 
+3 Rhyhorn | Switch 
+
+
+The goal of the “Water Blast” deck is to use Fighting and other Pokémon 
+to stall for time while you build up a Water Pokémon that uses a Water 
+Gun. You can also build up a better evolved Pokémon to help you win, like 
+Rhydon or Persian. To improve your deck, you'll need to collect some more 
+Pokémon cards! This version of the deck focuses more on the Water 
+Guns by adding Poliwrath and another Vaporeon. Adding Dewgong and 
+another Seel gives the deck some needed Water power (as does swapping 
+out @ Energy for © Energy). 
+
+
+Remove: Add*: 
+
+| @ Energy 4 © Energy 
+2 Meowth | Dewgong 
+| Persian | Poliwrath 
+| Rhyhorn I Seel 
+
+20 
+
+
+Power Reserve 
+Pokémon, unite! With this “Power Reserve” deck, your Grass and Psychic 
+Pokémon will come swarming to each other's aid! 
+
+
+17 @ Energy 
+4 Bellsprout | Kangaskhan 
+| Gloom 
+4 Nidoran ? 2 Bill 
+2 Nidorina 2 Gust of Wind 
+2 Oddish | Pokédex 
+2 Weepinbell 3 Potion 
+| Switch 
+11 ® Energy 
+4 Abra 
+| Jynx 
+2 Kadabra 
+
+
+The goal of the “Power Reserve” deck is for your Pokémon to bring out 
+more and more friends and family Pokémon, with Nidoran °, Bellsprout, and 
+Oddish leading the charge. Then, once you have filled your Bench, you can 
+upgrade to Nidorina, Weepinbell, and Gloom to turn the tide in your favor! 
+Use Jynx, Abra, and Kadabra to back up your Grass Pokémon, and you'll be 
+Victorious. To improve your deck, you'll need to collect some more 
+Pokémon cards! Here is one way to give this “Power Reserve” deck even 
+more awesome Pokémon power. Wigglytuff’s Do the Wave attack works very 
+well with the Power Reserve theme—you can ensure that Wigglytuff will 
+have 5 Benched Pokémon to work with at all times! 
+
+
+Remove: Add*: 
+
+| Gloom 4 Jigglypuff 
+
+2 Oddish 2 Wigglytuff — * These additional 
+
+! Jy Repel oh icted 
+in ru 
+
+| Kangaskhan fe eae 
+
+
+| Gust of Wind 
+21 
+
+
+Expert Rules 
+
+
+This section answers some questions that don't come up very often—but 
+if they do, you'll be glad to have the answers! 
+
+
+In What Order Do You Do Your Attack? 
+
+The exact steps to go through when attacking are listed here. For most 
+attacks, it won't matter in what order you do things, but if you have to 
+work your way through a really complicated attack, follow these steps in 
+order and you should be fine. 
+
+
+a) Announce which attack your Active Pokémon is using. Make sure your 
+Pokémon has enough Energy cards attached to it to use the attack. 
+
+
+If necessary, make any choices the attack requires you to make. (For 
+example, Poliwhirl’s Amnesia attack says “Choose | of the Defending 
+Pokémon’s attacks.” So you choose now.) 
+
+
+If necessary, do anything the attack requires you to do in order to use 
+it. (For example, discard Energy cards, as in Charmander’s Ember attack, 
+which makes you discard one @® Energy card in order to use it) 
+
+
+If necessary, apply any effects that might alter or cancel the attack. (For 
+example, if your Pokémon was hit last turn by Sandshrew’s Sand-attack, 
+that attack said that if you tried to attack with 
+
+that Pokémon during your next turn, you 
+should flip a coin. If tails, your Pokémon’s 
+attack does nothing.) 
+
+
+If your Active Pokémon is Confused, check 
+now to see if the attack fails. 
+
+
+b 
+
+
+¢g 
+
+
+qd 
+
+
+f) Do whatever the attack says. Do any 
+damage first, then do any other effects, 
+and finally, Knock Out any Pokémon that 
+have damage greater than or equal to their 
+Hit Points. 
+
+
+22 
+
+
+How Do You Figure Out the Damage? 
+
+Usually the amount of damage an attack does won't depend on the order 
+in which you do things. But if you have to figure out an attack in which 
+a lot of different things might change the damage, follow these steps in 
+order (skip any steps that don’t apply to that attack). 
+
+
+Start with the base damage. This is the number written to the right of 
+the attack—or, if that number has an x, —, +, or ? sign next to it, 
+it’s the amount of damage the attack text tells you to do. 
+
+
+b) Apply any effects the Active Pokémon has that will affect the base 
+damage dealt (for example, Scyther’s Swords Dance). Then if the base 
+damage is 0 (or if the attack doesn’t do any damage at all), just stop 
+figuring the damage. You're done now. Otherwise, keep going. 
+
+
+) Double the damage if the Defending Pokémon has a Weakness to the 
+Active Pokémon’s type. y, 
+
+d) Subtract 30 damage if the Defending 
+Pokémon has Resistance to the 
+attacking Pokémon’s type. 
+
+e) Figure out effects of Trainer cards 
+attached to the Active Pokémon. 
+
+
+f) Figure out effects of Trainer cards 
+attached to the Defending Pokémon. 
+
+
+Apply any effects resulting from the 
+Defending Pokémon’s last attack (for 
+example, Onix’s Harden) or any relevant Pokémon Powers. 
+
+
+For each 10 damage the attack ends up doing, put one damage counter 
+on the Defending Pokémon. (If at this point the damage done turns out 
+to be less than 0, don’t do anything.) 
+
+
+Now that damage has been done, if the attack does anything other than 
+damage, do all of that. 
+
+
+a 
+
+
+CJ 
+
+
+= 
+
+
+23 
+
+
+How Do You Retreat Using Double Energy Cards? 
+Paying Retreat Costs can get confusing with Double Energy cards. Here’s the 
+way it works: Discard Energy cards one at a time until you've paid the 
+Retreat Cost (or maybe more). Once you've paid the cost, you can't discard 
+any more cards. For example, suppose your Pokémon has a Retreat Cost of 
+3 % and it has two @ Energy cards and a a a Energy card attached. 
+You can pay the Retreat Cost in several ways—by discarding a a, by 
+discarding 2 @, or by discarding @ first and then a a. You can’t discard 
+all 3 cards, though. 
+
+
+What Happens if You Can’t Do What a Card 
+
+Tells You to Do? 
+
+Sometimes a card will tell you to draw more cards than you have in your 
+deck or to search for cards that you don’t have in your deck. If this 
+happens, do as much as you can (draw as many cards as you have left or 
+get those cards that are in your deck) and continue play as normal. 
+Remember, you lose if you can’t draw a card at the beginning of your turn, 
+not if you can't draw one because a card told you to. 
+
+
+What Happens if Neither Player Gets a Basic 
+Pokémon in His or Her First 7 Cards? 
+
+Sometimes neither you nor your opponent will get any Basic Pokémon in 
+your first hands of 7 cards. If this happens, both players shuffle and draw 7 
+new cards. In this case, neither player gets to draw the extra 2 cards. Repeat 
+this process until at least one of the players has a Basic Pokémon card in 
+his or her hand of 7 cards. If the other player still 
+
+doesn't have a Basic Pokémon card in his or her 
+
+hand, that player can shuffle and draw 7 new 
+
+cards, but the player who already has a 
+
+Basic Pokémon can draw up to 2 extra 
+
+cards as usual. Continue this process until 
+
+both players have a Basic Pokémon in their 
+
+first hand of 7 cards. 
+
+
+24 
+
+
+What Happens if Both Players Win 
+
+at the Same Time? 
+
+You win if you take your last Prize or if your opponent can't replace his 
+or her Knocked Out Pokémon with one from his or her Bench. But it might 
+happen that both players “win” in one of these ways at the same time. If 
+this happens, play Sudden Death. But 
+
+if you win in both ways and your 
+opponent wins in only one 
+way, you win! 
+
+
+What’s Sudden 
+Death? 
+
+If Sudden Death occurs, play a 
+new game of Pokémon, 
+but have each player use 
+only | Prize instead of 
+the usual 6, Except for 
+the number of Prizes, 
+treat the Sudden Death 
+game like a whole new 
+game of Pokémon: 
+Set everything up again, 
+including flipping a coin to 
+see who goes first. The 
+winner of this game is 
+
+
+the overall winner, It may 
+happen that the Sudden read 
+Death game also ends in to become 
+Sudden Death; if that hap- a 
+pens, just keep playing Pokémon 
+Sudden Death games until Master? 
+somebody wins. 
+
+25 
+
+
+Glossary 
+
+
+Active Pokémon: Your Pokémon that's in front of all your other Pokémon. 
+Only the Active Pokémon can attack. 
+
+Attach: To take a card from your hand and put it on one of your Pokémon 
+in play. 
+
+Attack: 1) When your Active Pokémon fights your opponent's Defending 
+Pokémon. 2) The text written on each Pokémon that shows what it does 
+when it attacks (a Pokémon can have one or two attacks on it). 
+
+Basic Energy card: A Grass @, Fire @®, Water ©, Lightning 4, Psychic ©, 
+or Fighting @ Energy card. 
+
+
+Basic Pokémon card: A card that you can play directly from your hand on 
+your turn to put a Pokémon into play. See Evolution card, 
+
+
+Bench: Your Pokémon that are in play but aren't actively fighting sit here, 
+They're ready to come out and fight if the Active Pokémon retreats or 
+is Knocked Out. 
+
+
+Damage: When one Pokémon attacks another, it will usually cause damage. 
+If a Pokémon has total damage greater than or equal to its Hit Points, 
+it is Knocked Out. 
+
+
+Defending Pokémon: Your opponent's Active Pokémon during your attack. 
+
+
+Discard pile: The pile of cards you've discarded. These cards are always face- 
+up. Anyone can look at these cards at any time. 
+
+
+Energy card: The cards that power your Pokémon and make them able to 
+attack. See Basic Energy card. 
+
+
+Evolution card: A card you can play on top of a Basic Pokémon card (or 
+sometimes on top of another Evolution card) to make it stronger. 
+
+
+Hit Points: A number every Pokémon has, telling you how much damage it 
+can take before it's Knocked Out. 
+
+
+26 
+
+
+\n play:Your cards on the table are considered to be in play. Basic Pokémon, 
+Evolution cards, and Energy cards can’t be used unless they are in play. 
+(The cards in your deck, your discard pile, and your Prizes are not 
+considered to be in play, but your Benched Pokémon are.) 
+
+Knocked Out: If a Pokémon has damage greater than or equal to its Hit 
+Points, it's Knocked Out. That Pokémon goes to the discard pile, along 
+with any cards attached to it. When one of your opponent's Pokémon 
+is Knocked Out, you take one of your Prizes. 
+
+Pokémon: The colorful creatures that fight for you in the Pokémon 
+trading card game. They are represented in the game by Basic Pokémon 
+and Evolution cards. 
+
+Pokémon Power: The special abilities some Pokémon have. These are written 
+in the same place attacks are, but they always have the words “Pokémon 
+Power” in front of them so that you can tell theyre not attacks. 
+
+Prizes: The 6 cards you put face-down at the start of the game. Every time 
+one of your opponent's Pokémon is Knocked Out, you take | of your 
+Prizes into your hand. When you take your last Prize, you win! 
+
+Resistance: If a Pokémon has Resistance, it takes 30 less damage whenever 
+attacked by Pokémon of a certain other type. Resistance is indicated in 
+the lower middle of the card. 
+
+Retreat: The act of taking your Active Pokémon and switching it with one 
+of your Benched Pokémon. To retreat, you must discard from the 
+retreating Pokémon Energy equal to the Retreat Cost of that Pokémon. 
+This cost is written in the lower right-hand corner of the card. 
+
+Sudden Death: Sometimes both players will win at the same time. In this 
+case, you play a shorter version of the Pokémon game called 
+“Sudden Death” (using only | Prize each instead of 6). 
+
+Trainer card: These are cards that you play during your turn by following 
+the instructions on the card and then discarding it. 
+
+Weakness: If a Pokémon has Weakness, it takes double damage when 
+attacked by Pokémon of a certain other type. Weakness is indicated in 
+the lower left-hand corner of the card. 27 
+
+
+Index 
+
+Active Pokémon 45 
+Asleep 13-15 
+Attacking I-12 
+
+order n 
+Basic Pokémon 4-5, 24 
+Bench 45,9 
+Benched Pokémon 9,12 
+Cards, different kinds 5 
+
+drawing 9,24 
+Confused 13-15 
+Damage, figuring 12, 23 
+Damage counters 12 
+Deckbuilding 16 
+Defending Pokémon 4 
+Energy cards 5, 10, 12, 24 
+Evolving, Evolution cards 5, 10 
+Hit Points 12 
+In play 7 
+Knocked Out 4,12 
+Paralyzed 13-15 
+Poisoned 13, 1 
+Pokémon Power iT] 
+Prizes 45 
+Resistance 12 
+Retreating 10-11, 24 
+Sleep See Asleep 
+Sudden Death 3b 
+Trainer cards 5, 10 
+Turn, order of 9-13 
+Weakness 12 
+Winning 4,25 
+
+
+28 
+
+
+Questions? 
+
+
+U.S., CANADA, ASIA PACIFIC 
+& LATIN AMERICA 
+Wizards of the Coast, Inc. 
+P.O. Box 707 
+Renton, WA 98057-0707 
++1-800-324-6496 
+custserv @wizards.com 
+
+
+EUROPEAN HEADQUARTERS 
+Wizards of the Coast, Belgium 
++32-70-233-277 
+
+
+FRANCE 
+Wizards of the Coast, France 
+BP 103 
+94222 Charenton Cedex 
++33-1-43-96-35-65 
+
+
+ITALY 
+Wizards of the Coast, Italia S.r.l. 
+via Giovanni da Udine 34 
+20156 Milano 
++39-02-38-09-33-56 
+
+
+UK 
+Wizards of the Coast, UK 
+P.O. Box 61 
+Maidenhead, Berkshire 
+SL6 1FX 
+0345-12-55-99 
+
+
+EIRE & SOUTH AFRICA 
++44-1628-780-530 
+
+
+Credits 
+
+
+Original Japanese Game 
+
+Producer: Tsunekaz Ishihara 
+
+Directors: Tsunekaz Ishihara, Kouichi Goyama, Takumi Akabane 
+
+Game Designers: Tsunekaz Ishihara, Kouichi Ooyama, Takumi Akabane 
+
+Card Text Director: Akihiko Miura 
+
+Art Directors: Milky Isobe, Takumi Akabane 
+
+Card Illustrators: Ken Sugimori, Mitsuhiro Arita, Keiji Kinebuchi, Tomoaki Imakuni, 
+Kagemaru Himeno 
+
+Manual Editor: Yuichi Konno 
+
+Playtesters: Eiji Sumitomo, Daisuke Doi, Hideto Yoshimi, Tomohiro Nakata 
+
+Special Thanks to: Satoshi Tajiri, Shigeki Morimoto, Ken Sugimoni, Hiroyuki Jinnai, 
+Hitoshi Matsui 
+
+
+English-Language Version 
+
+English Translation: Ron Foster 
+
+English Game Development: Jim Lin, Charlie Catinobell, Robert Gutschera, 
+Tom Wylie, Shawn Carnes, Glenn Elliott, Paul Peterson, Teeuwynn Woodruff 
+
+Rulebook Writing: Robert Gutschera 
+
+Art Direction: Jayne L Ulander 
+
+Graphic Design: Maria Cabardo, Corey Macourek, Christopher Rush 
+
+Editing: Michael G. Ryan 
+
+Typesetting & Layout: Jill Waller, Chris Nitz 
+
+Production: Michelle Lewis, Hans Reifenrath, and Wizards of the Coast prepress staff 
+
+Print Management: (allise Janikula 
+
+Project Coordination (Wizards): Jill Waller, Juliane Parsons 
+
+Project Coordination (Nintendo): Kenji Okubo 
+
+Brand Management (Wizards): Michael Brooks, Paul Verner 
+
+Senior Vice President of Non-Magic Trading Card Games: Rick Arons 
+
+
+Have questions? (all Wizards of the Coast at (800) 324-6496 
+or send email to <questions @ wizards.com.> 
+You can also visit our Web page at 
+www.wizards.com/Pokemon 
+©1995, 1996, and 1998 Nintendo, Creatures, GAMEFREAK. Pokémon, Jungle, 
+Game Boy, Gotta catch ‘em all, and the ofcial Nintendo seal are trademarks of Nintendo, 
+‘Weanas oF rae Coast and the play-level logos are trademarks of Wizards of the Coast, Inc. 
+©1999 Wizards of the Coast, Inc. 
+
+
+The Pokémon Tiwo-Player Starter 
+Set is perfect for players who are 
+ready to learn the basics of the 
+Pokémon trading card game 
+Recommended for beginning players 
+
+
+With preconstructed theme decks, 
+players will learn advanced Pokémon 
+strategies and deckbuilding 
+Recommended for 
+
+experienced players 
+
+
+i a ~ Expert-level booster packs are for the 
+" player who's ready to build decks from 
+
+
+the full range of Pokémon trading 
+cards and who already knows the rules 
+of Pokémon gameplay. 
+
+

@@ -1,0 +1,502 @@
+[
+  {
+    "text": "Introduction",
+    "url": "introduction.html"
+  },
+  {
+    "text": "Collation Overview",
+    "url": "collation-overview.html"
+  },
+  {
+    "text": "Striped Collation",
+    "url": "striped-collation.html"
+  },
+  {
+    "text": "Sequential Collation",
+    "url": "sequential-collation.html"
+  },
+  {
+    "text": "The 101 Common Problem",
+    "url": "101-commons.html"
+  },
+  {
+    "text": "C1/C2 Common Collation",
+    "url": "c1-c2-common-collation.html"
+  },
+  {
+    "text": "Limited Edition Alpha",
+    "url": "lea.html"
+  },
+  {
+    "text": "Limited Edition Beta",
+    "url": "leb.html"
+  },
+  {
+    "text": "Unlimited Edition",
+    "url": "2ed.html"
+  },
+  {
+    "text": "Revised Edition",
+    "url": "3ed.html"
+  },
+  {
+    "text": "Fourth Edition",
+    "url": "4ed.html"
+  },
+  {
+    "text": "Fifth Edition",
+    "url": "5ed.html"
+  },
+  {
+    "text": "Sixth Edition",
+    "url": "6ed.html"
+  },
+  {
+    "text": "Magic 2013",
+    "url": "m13.html"
+  },
+  {
+    "text": "Magic 2014",
+    "url": "m14.html"
+  },
+  {
+    "text": "Magic 2015",
+    "url": "m15.html"
+  },
+  {
+    "text": "Magic Origins",
+    "url": "ori.html"
+  },
+  {
+    "text": "Core Set 2019",
+    "url": "m19.html"
+  },
+  {
+    "text": "Core Set 2020",
+    "url": "m20.html"
+  },
+  {
+    "text": "Core Set 2021",
+    "url": "m21.html"
+  },
+  {
+    "text": "Arabian Nights",
+    "url": "arn.html"
+  },
+  {
+    "text": "Antiquities",
+    "url": "atq.html"
+  },
+  {
+    "text": "Legends",
+    "url": "leg.html"
+  },
+  {
+    "text": "The Dark",
+    "url": "drk.html"
+  },
+  {
+    "text": "Fallen Empires",
+    "url": "fem.html"
+  },
+  {
+    "text": "Ice Age",
+    "url": "ice.html"
+  },
+  {
+    "text": "Mirage",
+    "url": "mir.html"
+  },
+  {
+    "text": "Visions",
+    "url": "vis.html"
+  },
+  {
+    "text": "Weatherlight",
+    "url": "wth.html"
+  },
+  {
+    "text": "Tempest",
+    "url": "tmp.html"
+  },
+  {
+    "text": "Stronghold",
+    "url": "sth.html"
+  },
+  {
+    "text": "Exodus",
+    "url": "exo.html"
+  },
+  {
+    "text": "Urza's Saga",
+    "url": "usg.html"
+  },
+  {
+    "text": "Urza's Legacy",
+    "url": "ulg.html"
+  },
+  {
+    "text": "Urza's Destiny",
+    "url": "uds.html"
+  },
+  {
+    "text": "Mercadian Masques",
+    "url": "mmq.html"
+  },
+  {
+    "text": "Nemesis",
+    "url": "nem.html"
+  },
+  {
+    "text": "Prophecy",
+    "url": "pcy.html"
+  },
+  {
+    "text": "Invasion",
+    "url": "inv.html"
+  },
+  {
+    "text": "Planeshift",
+    "url": "pls.html"
+  },
+  {
+    "text": "Apocalypse",
+    "url": "apc.html"
+  },
+  {
+    "text": "Odyssey",
+    "url": "ody.html"
+  },
+  {
+    "text": "Torment",
+    "url": "tor.html"
+  },
+  {
+    "text": "Judgment",
+    "url": "jud.html"
+  },
+  {
+    "text": "Onslaught",
+    "url": "ons.html"
+  },
+  {
+    "text": "Lorwyn",
+    "url": "lrw.html"
+  },
+  {
+    "text": "Shadowmoor",
+    "url": "shm.html"
+  },
+  {
+    "text": "Shards of Alara",
+    "url": "ala.html"
+  },
+  {
+    "text": "Zendikar",
+    "url": "zen.html"
+  },
+  {
+    "text": "Worldwake",
+    "url": "wwk.html"
+  },
+  {
+    "text": "Rise of the Eldrazi",
+    "url": "roe.html"
+  },
+  {
+    "text": "Scars of Mirrodin",
+    "url": "som.html"
+  },
+  {
+    "text": "Mirrodin Besieged",
+    "url": "mbs.html"
+  },
+  {
+    "text": "New Phyrexia",
+    "url": "nph.html"
+  },
+  {
+    "text": "Innistrad",
+    "url": "isd.html"
+  },
+  {
+    "text": "Dark Ascension",
+    "url": "dka.html"
+  },
+  {
+    "text": "Avacyn Restored",
+    "url": "avr.html"
+  },
+  {
+    "text": "Return to Ravnica",
+    "url": "rtr.html"
+  },
+  {
+    "text": "Gatecrash",
+    "url": "gtc.html"
+  },
+  {
+    "text": "Dragon's Maze",
+    "url": "dgm.html"
+  },
+  {
+    "text": "Theros",
+    "url": "ths.html"
+  },
+  {
+    "text": "Born of the Gods",
+    "url": "bng.html"
+  },
+  {
+    "text": "Journey Into Nyx",
+    "url": "jou.html"
+  },
+  {
+    "text": "Khans of Tarkir",
+    "url": "ktk.html"
+  },
+  {
+    "text": "Fate Reforged",
+    "url": "frf.html"
+  },
+  {
+    "text": "Dragons of Tarkir",
+    "url": "dtk.html"
+  },
+  {
+    "text": "Battle for Zendikar",
+    "url": "bfz.html"
+  },
+  {
+    "text": "Oath of the Gatewatch",
+    "url": "ogw.html"
+  },
+  {
+    "text": "Shadows Over Innistrad",
+    "url": "soi.html"
+  },
+  {
+    "text": "Eldritch Moon",
+    "url": "emn.html"
+  },
+  {
+    "text": "Kaladesh",
+    "url": "kld.html"
+  },
+  {
+    "text": "Aether Revolt",
+    "url": "aer.html"
+  },
+  {
+    "text": "Amonkhet",
+    "url": "akh.html"
+  },
+  {
+    "text": "Hour of Devastation",
+    "url": "hou.html"
+  },
+  {
+    "text": "Ixalan",
+    "url": "xln.html"
+  },
+  {
+    "text": "Rivals of Ixalan",
+    "url": "rix.html"
+  },
+  {
+    "text": "Dominaria",
+    "url": "dom.html"
+  },
+  {
+    "text": "Guilds of Ravnica",
+    "url": "grn.html"
+  },
+  {
+    "text": "Ravnica Allegiance",
+    "url": "rna.html"
+  },
+  {
+    "text": "War of the Spark",
+    "url": "war.html"
+  },
+  {
+    "text": "Throne of Eldraine",
+    "url": "eld.html"
+  },
+  {
+    "text": "Theros Beyond Death",
+    "url": "thb.html"
+  },
+  {
+    "text": "Ikoria",
+    "url": "iko.html"
+  },
+  {
+    "text": "Zendikar Rising",
+    "url": "znr.html"
+  },
+  {
+    "text": "Kaldheim",
+    "url": "khm.html"
+  },
+  {
+    "text": "Strixhaven",
+    "url": "stx.html"
+  },
+  {
+    "text": "Adventures in the Forgotten Realms",
+    "url": "afr.html"
+  },
+  {
+    "text": "Innistrad: Midnight Hunt",
+    "url": "mid.html"
+  },
+  {
+    "text": "Innistrad: Crimson Vow",
+    "url": "vow.html"
+  },
+  {
+    "text": "Kamigawa: Neon Dyntasy",
+    "url": "neo.html"
+  },
+  {
+    "text": "Streets of New Capenna",
+    "url": "snc.html"
+  },
+  {
+    "text": "Dominaria United",
+    "url": "dmu.html"
+  },
+  {
+    "text": "The Brothers' War",
+    "url": "bro.html"
+  },
+  {
+    "text": "Phyrexia: All Will Be One",
+    "url": "one.html"
+  },
+  {
+    "text": "March of the Machine",
+    "url": "mom.html"
+  },
+  {
+    "text": "The Lost Caverns of Ixalan",
+    "url": "lci.html"
+  },
+  {
+    "text": "Murders at Karlov Manor",
+    "url": "mkm.html"
+  },
+  {
+    "text": "Portal",
+    "url": "por.html"
+  },
+  {
+    "text": "Portal Second Age",
+    "url": "p02.html"
+  },
+  {
+    "text": "Starter 1999",
+    "url": "s99.html"
+  },
+  {
+    "text": "Unglued",
+    "url": "ugl.html"
+  },
+  {
+    "text": "Unstable",
+    "url": "ust.html"
+  },
+  {
+    "text": "Conspiracy",
+    "url": "cns.html"
+  },
+  {
+    "text": "Conspiracy: Take the Crown",
+    "url": "cn2.html"
+  },
+  {
+    "text": "Modern Masters",
+    "url": "mma.html"
+  },
+  {
+    "text": "Modern Masters 2015",
+    "url": "mm2.html"
+  },
+  {
+    "text": "Eternal Masters",
+    "url": "ema.html"
+  },
+  {
+    "text": "Modern Masters 2017",
+    "url": "mm3.html"
+  },
+  {
+    "text": "Iconic Masters",
+    "url": "ima.html"
+  },
+  {
+    "text": "Masters 25",
+    "url": "a25.html"
+  },
+  {
+    "text": "Ultimate Masters",
+    "url": "uma.html"
+  },
+  {
+    "text": "Double Masters",
+    "url": "2xm.html"
+  },
+  {
+    "text": "Double Masters 2022",
+    "url": "2x2.html"
+  },
+  {
+    "text": "Battlebond",
+    "url": "bbd.html"
+  },
+  {
+    "text": "Modern Horizons",
+    "url": "mh1.html"
+  },
+  {
+    "text": "Modern Horizons 2",
+    "url": "mh2.html"
+  },
+  {
+    "text": "Mystery Booster",
+    "url": "mb1.html"
+  },
+  {
+    "text": "Commander Legends",
+    "url": "cmr.html"
+  },
+  {
+    "text": "Commander Legends: Battle for Baldur's Gate",
+    "url": "clb.html"
+  },
+  {
+    "text": "Time Spiral Remastered",
+    "url": "tsr.html"
+  },
+  {
+    "text": "Dominaria Remastered",
+    "url": "dmr.html"
+  },
+  {
+    "text": "Innistrad: Double Feature",
+    "url": "dbl.html"
+  },
+  {
+    "text": "Acknowledgments",
+    "url": "acknowledgments.html"
+  },
+  {
+    "text": "Support the Project",
+    "url": "support-the-project.html"
+  },
+  {
+    "text": "Contact",
+    "url": "contact.html"
+  }
+]

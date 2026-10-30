@@ -1,0 +1,88 @@
+{
+  "requested_url": "https://html.duckduckgo.com/html/?q=pokemon+base+set+wrapper+%22odds%22+%221%22",
+  "final_url": "https://html.duckduckgo.com/html/?q=pokemon+base+set+wrapper+%22odds%22+%221%22",
+  "status": 200,
+  "title": "pokemon base set wrapper \"odds\" \"1\" at DuckDuckGo",
+  "accessed": "2026-10-30T12:16:11.079631-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+pokemon base set wrapper "odds" "1" at DuckDuckGo
+All Regions
+Argentina
+Australia
+Austria
+Belgium (fr)
+Belgium (nl)
+Brazil
+Bulgaria
+Canada (en)
+Canada (fr)
+Catalonia
+Chile
+China
+Colombia
+Croatia
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Germany
+Greece
+Hong Kong
+Hungary
+Iceland
+India (en)
+Indonesia (en)
+Ireland
+Israel (en)
+Italy
+Japan
+Korea
+Latvia
+Lithuania
+Malaysia (en)
+Mexico
+Netherlands
+New Zealand
+Norway
+Pakistan (en)
+Peru
+Philippines (en)
+Poland
+Portugal
+Romania
+Russia
+Saudi Arabia
+Singapore
+Slovakia
+Slovenia
+South Africa
+Spain (ca)
+Spain (es)
+Sweden
+Switzerland (de)
+Switzerland (fr)
+Taiwan
+Thailand (en)
+Turkey
+US (English)
+US (Spanish)
+Ukraine
+United Kingdom
+Vietnam (en)
+Any Time
+Past Day
+Past Week
+Past Month
+Past Year
+Base Pull Rates — Modelled Pack Odds | CardTrack
+cardtrack.com/pokemon/pull-rates/base
+Home › Pokémon › Pull rates › Base Base pull rates (modelled) Modelled odds for a single Base booster pack. CardTrack does not open packs: the pack is modelled as 7 commons · 3 uncommons · 1 rare/holo slot, with the hit slot weighted Rare 67 : Holo / V / ex 33 across the rarities this set actually prints. The card counts, the pack price and the chase-card prices below are real; the ...
+No more results found for pokemon base set wrapper "odds" "1"
+Suggestions :
+Check spelling
+Try related keywords
+Remove unnecessary punctuation
+Feedback

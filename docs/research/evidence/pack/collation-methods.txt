@@ -1,0 +1,150 @@
+{
+  "requested_url": "https://www.lethe.xyz/mtg/collation/",
+  "final_url": "https://www.lethe.xyz/mtg/collation/",
+  "status": 200,
+  "title": "The Collation Project",
+  "accessed": "2026-10-30T12:18:45.122228-05:00",
+  "content_type": "text/html"
+}
+
+The Collation Project
+The Collation Project
+The website and project are works-in-progress. Missing sets and missing information are being filled in continually.
+Recent Updates
+2024-02-25: Lost Caverns of Ixalan Japanese data and US A commons
+2024-02-24: New Phyrexia
+2024-02-24: Murders at Karlov Manor Japanese
+2023-04-27: March of the Machine Japanese A commons
+2023-04-23: March of the Machine Japanese B and C commons
+2023-02-27: Phyrexia: All Will Be One US and Japanese commons
+2023-02-27: Dominaria Remastered US commons and uncommons
+Introduction
+Collation Overview
+Striped Collation
+Sequential Collation
+The 101 Common Problem
+C1/C2 Common Collation
+Core Sets
+Limited Edition Alpha
+Limited Edition Beta
+Unlimited Edition
+Revised Edition
+Fourth Edition
+Fifth Edition
+Sixth Edition
+Magic 2013
+Magic 2014
+Magic 2015
+Magic Origins
+Core Set 2019
+Core Set 2020
+Core Set 2021
+Expansions
+Arabian Nights
+Antiquities
+Legends
+The Dark
+Fallen Empires
+Ice Age
+Mirage
+Visions
+Weatherlight
+Tempest
+Stronghold
+Exodus
+Urza's Saga
+Urza's Legacy
+Urza's Destiny
+Mercadian Masques
+Nemesis
+Prophecy
+Invasion
+Planeshift
+Apocalypse
+Odyssey
+Torment
+Judgment
+Onslaught
+Lorwyn
+Shadowmoor
+Shards of Alara
+Zendikar
+Worldwake
+Rise of the Eldrazi
+Scars of Mirrodin
+Mirrodin Besieged
+New Phyrexia
+Innistrad
+Dark Ascension
+Avacyn Restored
+Return to Ravnica
+Gatecrash
+Dragon's Maze
+Theros
+Born of the Gods
+Journey Into Nyx
+Khans of Tarkir
+Fate Reforged
+Dragons of Tarkir
+Battle for Zendikar
+Oath of the Gatewatch
+Shadows Over Innistrad
+Eldritch Moon
+Kaladesh
+Aether Revolt
+Amonkhet
+Hour of Devastation
+Ixalan
+Rivals of Ixalan
+Dominaria
+Guilds of Ravnica
+Ravnica Allegiance
+War of the Spark
+Throne of Eldraine
+Theros Beyond Death
+Ikoria
+Zendikar Rising
+Kaldheim
+Strixhaven
+Adventures in the Forgotten Realms
+Innistrad: Midnight Hunt
+Innistrad: Crimson Vow
+Kamigawa: Neon Dyntasy
+Streets of New Capenna
+Dominaria United
+The Brothers' War
+Phyrexia: All Will Be One
+March of the Machine
+The Lost Caverns of Ixalan
+Murders at Karlov Manor
+Starter Sets
+Portal
+Portal Second Age
+Starter 1999
+Supplemental Sets
+Unglued
+Unstable
+Conspiracy
+Conspiracy: Take the Crown
+Modern Masters
+Modern Masters 2015
+Eternal Masters
+Modern Masters 2017
+Iconic Masters
+Masters 25
+Ultimate Masters
+Double Masters
+Double Masters 2022
+Battlebond
+Modern Horizons
+Modern Horizons 2
+Mystery Booster
+Commander Legends
+Commander Legends: Battle for Baldur's Gate
+Time Spiral Remastered
+Dominaria Remastered
+Innistrad: Double Feature
+Acknowledgments
+Support the Project
+Contact
+Magic: The Gathering, the names of Magic: The Gathering sets, the names and text of Magic: The Gathering Cards, and images of Magic: The Gathering cards are copyright Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. This website is not affiliated with Wizards of the Coast LLC in any way.

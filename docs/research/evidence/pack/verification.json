@@ -1,0 +1,131 @@
+{
+  "checked_at": "2026-10-30T12:29:24.712498-05:00",
+  "report": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\Pack_Composition_Findings.md",
+  "quotes": [
+    {
+      "source_file": "pokemaster.txt",
+      "quote": "Each booster pack contained 11 trading cards; one rare, three uncommon, five commons, and two energy cards.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "pokemaster.txt",
+      "quote": "The rare had a 1 in 3 chance of being a holographic rare.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-sequence.txt",
+      "quote": "We are all familiar with the base set unlimited having 5 commons, 2 energies, the rare, and then the 3 uncommons from front to back.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-order.txt",
+      "quote": "Been a long time since I opened but it thought it was energy, uncommons and commons, rare at 7 then remaining energy/commons",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "The ultimate output will be a table for each set which assigns to each card a “best-estimate” rarity.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "Machamp which was not obtainable from booster packs",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "Base 2000 rares: 121 card sheet; since the Unlimited and Base 2000 commons and uncommons are both the same, this is assumed to apply to the rares as well",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "a few cards on the sheet are obscured by objects placed on the sheet",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "the sample size available is not nearly large enough for these older sets to say anything for certain.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "however I am going to be using a sequence length 216 packs",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "Reorganizing the sheets may have been in order to avoid getting duplicate cards in one pack",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-rarity.txt",
+      "quote": "sheet size / (pack insertion rate * magnitude)",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "rulebook-v2-ocr.txt",
+      "quote": "In addition, some rare cards are printed using holographic foil.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "rulebook-v2-ocr.txt",
+      "quote": "you can't have more than 4 of any one card other than basic Energy cards in your deck",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "uncut-sheets.txt",
+      "quote": "Unlimited Base Uncommon - 8th Run: Company: Yaquinto, Date: 30-7-99 , Form 5, Job # 1739",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "uncut-sheets.txt",
+      "quote": "Unlimited Common - 11th Run: Company: PBM Graphics, Date: 10/1/99 , Form 4, Job # P06057270 10 140, PBM # 81369",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "efour-wrapper.txt",
+      "quote": "All packs will be copyright dated either 1999, or 1999-2000.",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "bulbapedia-base.txt",
+      "quote": "Unlimited (©1999–2000) – The fourth print run, identical to the Unlimited print except for the updated copyright line, which reads ©1999–2000 instead of ©1999 .",
+      "in_source": true,
+      "in_report": true
+    },
+    {
+      "source_file": "collation-methods.txt",
+      "quote": "This website is not affiliated with Wizards of the Coast LLC in any way.",
+      "in_source": true,
+      "in_report": true
+    }
+  ],
+  "missing_source_labels": [],
+  "arithmetic_only_not_simulation": {
+    "pack_total": 11,
+    "holo_positions": 110,
+    "rare_positions": 121,
+    "common_uncommon_positions": 121,
+    "energy_positions": 121,
+    "twelve_over_thirtysix": 0.3333333333333333
+  },
+  "bundled_media_files": [],
+  "passed": true
+}

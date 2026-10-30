@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://www.google.com/search?q=1999+base+set+booster+11+cards+5+common+3+uncommon+energy",
+  "final_url": "https://www.google.com/search?q=1999+base+set+booster+11+cards+5+common+3+uncommon+energy",
+  "status": 200,
+  "title": "Google Search",
+  "accessed": "2026-10-30T12:15:48.720745-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+Google Search
+Please click here if you are not redirected within a few seconds.
+If you're having trouble accessing Google Search, please click here , or send feedback .

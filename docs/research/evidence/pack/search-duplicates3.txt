@@ -1,0 +1,85 @@
+{
+  "requested_url": "https://html.duckduckgo.com/html/?q=%22base+set%22+%22same+energy%22+pack",
+  "final_url": "https://html.duckduckgo.com/html/?q=%22base+set%22+%22same+energy%22+pack",
+  "status": 200,
+  "title": "\"base set\" \"same energy\" pack at DuckDuckGo",
+  "accessed": "2026-10-30T12:18:44.278417-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+"base set" "same energy" pack at DuckDuckGo
+All Regions
+Argentina
+Australia
+Austria
+Belgium (fr)
+Belgium (nl)
+Brazil
+Bulgaria
+Canada (en)
+Canada (fr)
+Catalonia
+Chile
+China
+Colombia
+Croatia
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Germany
+Greece
+Hong Kong
+Hungary
+Iceland
+India (en)
+Indonesia (en)
+Ireland
+Israel (en)
+Italy
+Japan
+Korea
+Latvia
+Lithuania
+Malaysia (en)
+Mexico
+Netherlands
+New Zealand
+Norway
+Pakistan (en)
+Peru
+Philippines (en)
+Poland
+Portugal
+Romania
+Russia
+Saudi Arabia
+Singapore
+Slovakia
+Slovenia
+South Africa
+Spain (ca)
+Spain (es)
+Sweden
+Switzerland (de)
+Switzerland (fr)
+Taiwan
+Thailand (en)
+Turkey
+US (English)
+US (Spanish)
+Ukraine
+United Kingdom
+Vietnam (en)
+Any Time
+Past Day
+Past Week
+Past Month
+Past Year
+No results found for "base set" "same energy" pack
+Suggestions :
+Check spelling
+Try related keywords
+Remove unnecessary punctuation
+Feedback

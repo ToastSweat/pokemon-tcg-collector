@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "modelId": "base-en-unlimited1999-sheet-informed",
+  "modelVersion": "0.1.0",
+  "status": "approved-provisional",
+  "printingId": "base-en-unlimited1999",
+  "rngAlgorithm": "xorshift32-v1",
+  "researchRegister": "docs/research/Pack_Research_Register.md",
+  "approvalRecord": "docs/research/Provisional_Model_Proposal.md",
+  "approximations": [
+    "Independent exact 1/3 holo operationalizes collector convention; factory rate and independence unverified.",
+    "Reported 5C,2E,R/H,3U sequence has orientation and sub-run uncertainty.",
+    "Candidate sheet weights include rare-sheet equivalence and obscured Energy inference.",
+    "Weighted C/U sampling without replacement is an approved simulation policy, not verified factory collation; later conditional/marginal inclusion probabilities differ from sheet proportions.",
+    "Two independent weighted Energy draws with replacement approximate unknown pair correlations.",
+    "Packs use fresh pools with no box quotas, shared depletion or error-pack model."
+  ],
+  "pools": [
+    {
+      "id": "holo",
+      "uniqueWithinPack": false,
+      "entries": [
+        {
+          "cardId": "pkmn-base-en-unlimited1999-001-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-002-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-003-holo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-004-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-005-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-006-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-007-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-009-holo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-010-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-011-holo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-012-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-013-holo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-014-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-015-holo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-016-holo-standard",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "rare",
+      "uniqueWithinPack": false,
+      "entries": [
+        {
+          "cardId": "pkmn-base-en-unlimited1999-017-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-018-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-019-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-020-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-021-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-022-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-070-nonholo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-071-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-072-nonholo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-073-nonholo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-074-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-075-nonholo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-076-nonholo-standard",
+          "weight": 8
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-077-nonholo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-078-nonholo-standard",
+          "weight": 7
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-079-nonholo-standard",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "id": "uncommon",
+      "uniqueWithinPack": true,
+      "entries": [
+        {
+          "cardId": "pkmn-base-en-unlimited1999-023-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-024-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-025-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-026-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-027-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-028-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-029-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-030-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-031-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-032-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-033-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-034-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-035-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-036-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-037-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-038-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-039-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-040-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-041-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-042-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-080-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-081-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-082-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-083-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-084-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-085-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-086-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-087-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-088-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-089-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-090-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-096-nonholo-standard",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "common",
+      "uniqueWithinPack": true,
+      "entries": [
+        {
+          "cardId": "pkmn-base-en-unlimited1999-043-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-044-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-045-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-046-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-047-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-048-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-049-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-050-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-051-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-052-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-053-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-054-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-055-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-056-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-057-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-058-nonholo-yellow-cheeks",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-059-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-060-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-061-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-062-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-063-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-064-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-065-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-066-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-067-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-068-nonholo-standard",
+          "weight": 4
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-069-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-091-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-092-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-093-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-094-nonholo-standard",
+          "weight": 3
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-095-nonholo-standard",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "uniqueWithinPack": false,
+      "entries": [
+        {
+          "cardId": "pkmn-base-en-unlimited1999-097-nonholo-standard",
+          "weight": 9
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-098-nonholo-standard",
+          "weight": 9
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-099-nonholo-standard",
+          "weight": 17
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-100-nonholo-standard",
+          "weight": 35
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-101-nonholo-standard",
+          "weight": 34
+        },
+        {
+          "cardId": "pkmn-base-en-unlimited1999-102-nonholo-standard",
+          "weight": 17
+        }
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "poolId": "common",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "common",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "common",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "common",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "common",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "energy",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "energy",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "rare",
+      "alternativePoolId": "holo",
+      "alternativeNumerator": 1,
+      "alternativeDenominator": 3
+    },
+    {
+      "poolId": "uncommon",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "uncommon",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    },
+    {
+      "poolId": "uncommon",
+      "alternativePoolId": "",
+      "alternativeNumerator": 0,
+      "alternativeDenominator": 1
+    }
+  ]
+}

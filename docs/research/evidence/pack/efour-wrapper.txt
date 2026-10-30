@@ -1,0 +1,1034 @@
+{
+  "requested_url": "https://www.elitefourum.com/t/guide-to-identifying-all-wotc-base-set-booster-packs/41521",
+  "final_url": "https://www.elitefourum.com/t/guide-to-identifying-all-wotc-base-set-booster-packs/41521",
+  "status": 200,
+  "title": "Guide To Identifying All WotC Base Set Booster Packs - Articles - Elite Fourum",
+  "accessed": "2026-10-30T12:16:28.227877-05:00",
+  "content_type": "text/html; charset=utf-8"
+}
+
+Guide To Identifying All WotC Base Set Booster Packs - Articles - Elite Fourum
+Elite Fourum
+Guide To Identifying All WotC Base Set Booster Packs
+Articles
+article ,
+curated ,
+base-set ,
+booster-packs ,
+guide
+packyman
+May 15, 2023, 4:03pm
+1
+Identifying WotC Base Set Booster Packs
+This is a guide to help identify all known versions of booster packs for the original Wizards of the Coast (WotC) Base set. The Base set was first released in Japan in 1996 via Media Factory and then later released in English and other foreign language versions via WotC in 1999. There are already extensive guides on the Japanese booster packs so this will not cover those. I have started making videos which cover the packs in detail:
+YouTube
+PackyMan
+@Packyman on E4
+Email me at:
+Packymancard@gmail.com
+Languages
+WotC released Base set booster packs in several languages for distribution around the world. Base set can be found in the following languages:
+English
+Spanish
+French
+German
+Dutch
+Portuguese
+Italian
+Korean
+Chinese
+What to look for
+1st edition stamp
+The presence of a first edition stamp on the booster pack is the easiest way to determine if the cards inside will contain the 1st edition stamp or will be Unlimited. Each language released a 1st edition and an Unlimited version. Spanish was the only variant to release two unique versions of 1st edition. The 1st edition stamp appears differently depending upon the language. The 1st edition stamp on the booster pack may not match the stamp that appears on the cards inside the booster packs.
+1st edition stamp 798×1417 353 KB
+Unlimited 787×1419 341 KB
+Crimps
+Base set booster packs come in 3 different seal or crimp types. These are known as long crimp, short crimp, and hanger. The long and short crimp packs are found in various languages, the hanger packs are only found in English. One important identifying factor when looking for Shadowless cards is that they are guaranteed to come from English long crimp booster packs and have a chance appearing in short crimp packs. There are no foreign language Shadowless cards. It is common to find slits in the long crimps and it is not indicative of tampering.
+Long crimp 798×1417 356 KB
+Short crimp 769×1334 345 KB
+Hanger 1378×2586 364 KB
+Text on front
+Shadowless cards can be found in booster packs that look slightly different from Unlimited. One key identifier is the text on the front of the booster packs. On the older versions which are more likely to contain Shadowless cards you will find different verbiage and placement of text on the front of the cards. Another important thing to look at is the thinness or thickness of the front on the front. This will vary between variants and languages. “11 Tradeable Game Cards” will be found on the Shadowless packs, and “11 ADDITIONAL GAME CARDS” is found on the Unlimited packs.
+Pack layout 1 827×1422 335 KB
+Pack layout 2 797×1366 368 KB
+Wizards of the Coast logo
+You can find the WotC logo on the top right corner on the backs of all Base set booster packs. The logo changed in October of 1999 from a rectangle to a curved version. The logo can be used to help determine the authenticity.
+Rectangle WotC logo 849×394 60.3 KB
+Curved WotC logo 221×147 12 KB
+Nintendo copyright seal
+You can find the Nintendo copyright seal in the top right on the back of most of the Base set booster packs. There are a few exceptions where the seal is not present, but the vast majority all have the seal. The seal came in two different versions depending upon if the product was for US domestic distribution or international distribution.
+USA Nintendo seal 194×144 11.1 KB
+International Nintendo seal 151×147 11 KB
+Copyright date
+You can find the copyright date under the flap on the back of all Base set booster packs. All packs will be copyright dated either 1999, or 1999-2000.
+1999 Copyright date 2083×499 264 KB
+1999-2000 Copyright date 1 2036×749 326 KB
+1999-2000 Copyright date 2 2592×872 490 KB
+“Made in” location
+You can find the manufacturing location under the flap on the back of all Base set booster packs. There are many versions of it due to the different languages, but all packs were manufactured in either USA, Australia, UK, or Belgium.
+Made in the U.K. 2592×872 489 KB
+Made in the U.S.A. 2036×749 326 KB
+Made in Belgium 2083×499 261 KB
+The variants
+Depending upon slight variations, there are somewhere between 34-38 unique booster pack variants. Below is a list of the variants, pack identifiers, as well as the what cards you will find inside.
+English
+#
+Language
+Crimp
+Copyright
+Card Copyright
+Made in
+WotC logo
+Nintendo Seal
+Pack Font
+1st Edition?
+1st Edt Pack Text
+1st Edt Card Text
+Shadowless
+1
+English
+Long
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+No
+-
+-
+Yes
+2
+English
+Long
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+Yes
+Blue 1st Edition
+1st Edition
+Yes
+3
+English
+Long
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+Yes
+Black 1st Edition
+1st Edition
+Yes
+4
+English
+Long
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+No
+-
+-
+Yes
+5
+English
+Short
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+No
+-
+-
+50/50 Chance
+6
+English
+Hanger
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+No
+-
+-
+No
+7
+English
+Short
+1999
+1999
+USA
+Rectangle
+USA
+Thin
+No
+-
+-
+No
+8
+English
+Short
+1999
+1999
+USA
+Rectangle
+USA
+Thick
+Yes
+1st Edition
+Unlimited
+No
+9
+English
+Short
+1999
+1999
+USA
+Rectangle
+USA
+Thick
+Yes
+Black triangle
+Unlimited
+No
+10
+English
+Short
+1999
+1999
+USA
+Rectangle
+USA
+Thick
+No
+-
+-
+No
+11
+English
+Short
+1999-2000
+1999-2000
+USA
+Curved
+USA
+Thick
+No
+-
+-
+No
+12
+English
+Short Extra Small
+1999-2000
+1999-2000
+USA
+Curved
+USA
+Thick
+No
+-
+-
+No
+13
+English
+Long
+1999-2000
+1999-2000
+Australia
+Curved
+International
+Thick
+No
+-
+-
+No
+14
+English
+Long Extra Wide
+1999-2000
+1999-2000
+Australia
+Curved
+International
+Thick
+No
+-
+-
+No
+15
+English
+Long
+1999-2000
+1999-2000
+UK
+Curved
+International
+Thick
+No
+-
+-
+No
+16
+English
+Extra Long
+1999-2000
+1999-2000
+UK
+Curved
+International
+Thick
+No
+-
+-
+No
+17
+English
+Long
+1999-2000
+1999-2000
+UK/Poland Sticker v1
+Curved
+International
+Thick
+No
+-
+-
+No
+18
+English
+Long
+1999-2000
+1999-2000
+UK/Poland Sticker v2
+Curved
+International
+Thick
+No
+-
+-
+No
+19
+English
+Long
+1999-2000
+1999-2000
+UK/Poland Sticker v3
+Curved
+International
+Thick
+No
+-
+-
+No
+Foreign Language
+#
+Language
+Crimp
+Copyright
+Card Copyright
+Made in
+WotC logo
+Nintendo Seal
+Pack Font
+1st Edition?
+1st Edt Pack Text
+1st Edt Card Text
+Shadowless
+‘e’ Shadow Error
+20
+German
+Long
+1999
+1999
+Belgium
+Rectangle
+International
+Thick
+Yes
+1st Edition
+1st Edition
+No
+No
+21
+German
+Long
+1999
+1999
+Belgium
+Rectangle
+International
+Thick
+No
+-
+-
+No
+Yes
+22
+French
+Long
+1999
+1999
+Belgium
+Rectangle
+International
+Thick
+Yes
+1st Edition
+1st Edition
+No
+No
+23
+French
+Long
+1999
+1999
+Belgium
+Rectangle
+International
+Thick
+No
+-
+-
+No
+Yes
+24
+Spanish
+Long
+1999
+1999
+Belgium
+Curved
+International
+Thick
+Yes
+1st Edition
+1st Edicion
+No
+No
+25
+Spanish
+Long
+1999
+1999
+Belgium
+Curved
+International
+Thick
+no
+-
+-
+No
+Yes
+26
+Portuguese
+Long
+1999
+1999
+Belgium
+Curved
+International
+Thick
+Yes
+1st Edition
+1st Edicao
+No
+No
+27
+Portuguese
+Long
+1999
+1999
+Belgium
+Curved
+International
+Thick
+No
+-
+-
+No
+Yes
+28
+Dutch
+Long
+1999-2000
+1999-2000
+Belgium
+Curved
+International
+Thin
+Yes
+1st Editie
+1st Editie
+No
+Yes
+29
+Dutch
+Long
+1999-2000
+1999-2000
+Belgium
+Curved
+International
+Thin
+No
+-
+-
+No
+Yes
+30
+Italian
+Long
+1999-2000
+1999-2000
+Belgium
+Curved
+International
+Thin
+Yes
+1st Edizione
+1st Edizione
+No
+Yes
+31
+Italian
+Long
+1999-2000
+1999-2000
+Belgium
+Curved
+International
+Thin
+No
+-
+-
+No
+Yes
+32
+Korean
+Short
+1999-2000
+1999-2000
+Australia
+Curved
+-
+-
+Yes
+1st Edition
+1st Edition
+No
+-
+33
+Korean
+Short
+1999-2000
+1999-2000
+Australia
+Curved
+-
+-
+No
+-
+-
+No
+-
+34
+Chinese
+Short
+1999-2000
+1999-2000
+USA
+Curved
+-
+-
+Yes
+1st Edition
+1st Edition
+No
+-
+35
+Chinese
+Short
+1999-2000
+1999-2000
+USA
+Curved
+-
+-
+No
+-
+-
+No
+-
+36
+Spanish
+Short
+1999-2000
+1999-2000
+USA
+Curved
+USA
+Thin
+Yes
+1st Edicion
+1st Edicion
+No
+No
+37
+Spanish
+Short
+1999-2000
+1999-2000
+USA
+Curved
+USA
+Thin
+No
+-
+-
+No
+No
+38
+German
+Short
+1999-2000
+1999
+USA
+Curved
+International
+Thin
+No
+-
+-
+No
+No
+39
+French
+Short
+1999-2000
+1999
+USA
+Curved
+International
+Thin
+No
+-
+-
+No
+No
+40
+Italian
+Short
+1999-2000
+1999-2000
+USA
+Curved
+International
+Thin
+No
+-
+-
+No
+No
+41
+Portuguese
+Short
+1999-2000
+1999
+USA
+Curved
+USA
+Thin
+No
+-
+-
+No
+No
+Demo Game Booster Pack
+These are considered to be the first release of USA Pokemon cards. They were released in December of 1998, but the pack shows Copyright 1999 and the cards show Copyright 1999. They pre-date 1st Edition, but contain shadowless cards.
+Demo Game Pack Front Text 527×288 257 KB
+* If anyone has access to cards pulled from one of these packs, let me know!
+1st Edition English Blue vs Black Stamp
+There are two version of 1st edition packs. One with a blue stamp in a slightly shorter pack, and one with a black stamp in a slightly longer pack. It is unclear if the thick vs thin stamps can be found in these or if they contain the same cards.
+I believe the blue stamp are the true 1st edition version. Shadowless packs match the black stamp in size, and the later 1st edition unlimited error and black triangle packs use a black stamp.
+1st Edition Blue
+Screenshot 2026-08-02 at 10.58.13 AM 658×505 121 KB
+1st Edition Black
+IMG_7202 1380×818 246 KB
+1st Edition Error
+Screenshot 2026-07-29 at 9.36.01 AM 443×336 201 KB
+1st Edition Black Triangle
+Screenshot 2026-07-29 at 9.36.24 AM 609×466 401 KB
+They are also slightly different in size.
+usa_1st_edition_front 1920×3435 3.78 MB
+Screenshot 2026-09-22 at 10.48.16 PM 473×823 167 KB
+* If anyone has access to cards pulled from the BLUE packs, let me know!
+Polish Booster Packs ( UK Sticker )
+There are also several versions of the sticker variant. The sticker variant were packs that were intended for distribution in Poland. Rather than making an additional foreign language pack, they just applied stickers to them. They were found in booster boxes with the same sticker on them.
+Sticker on booster box 1792×1284 282 KB
+Sticker on booster pack 1 794×1464 403 KB
+Sticker on booster pack 2 1488×2402 316 KB
+Sticker on booster pack 3 219×399 47.8 KB
+Made in the UK Booster Packs
+The made in the UK booster packs may have a few unrecognized variants. While collecting I noticed that there appear to be two versions with different lengths. One has additional space between the artwork and the long crimps and is noticeably longer.
+Comparing the two side by side:
+Made in UK crimp variation 1 1403×1330 641 KB
+Comparing the two and a Polish sticker pack on the right. The Polish one has slightly lighter coloring so I don’t believe the pack on the left is just a Polish sticker pack with the sticker removed.
+Made in UK crimp variation 2 2112×1368 953 KB
+Foreign Language USA Booster Packs
+There are 6 known versions of USA-made foreign language Base set booster packs. These packs are copyright 1999-2000 but some contain 1999 copyrighted cards. They feature short crimps, older styled artwork, and are noticeably different looking compared to the standard Belgium made foreign language booster packs. It is unknown if a 7th variant exists for Dutch, there have been no pictures found of a Dutch short crimp USA-made variant. The foreign language packs were manufactured in Belgium so it is unlikely they would have needed a USA variant to be made.
+USA Foreign language booster pack fronts 1161×1342 2.81 MB
+USA Foreign language booster pack backs 1136×1321 2.98 MB
+USA Foreign language booster box 1 2835×2886 2.24 MB
+USA Foreign language booster box 2 2663×2392 1.03 MB
+Manufacturing Error Booster packs
+There are a few examples of manufacturer error booster packs. They can be miscut vertically, horizontally, or the artwork can be offset.
+3137257 812×1358 340 KB
+2738279 790×1362 324 KB
+IMG_5170 742×1278 128 KB
+IMG_5171 724×1238 254 KB
+IMG_5169 1284×277 84.4 KB
+Made in Belgium ‘e’ error packs
+It was recently discovered by @nightvulture and @ocdcompletist that there are several print runs of foreign language ‘Made in Belgium’ cards which contain a small printing error where a shadow is missing. It is visible within the ‘e’ on the back of the card. I have done my best to add which packs contain the errors to the table.
+Read more about it here:
+Base-Fossil deep dive 99-00
+Articles
+[Base-Fossil deep dive(secrets of the third prints)]
+Video starts a bit rough(4am recording) and i apologize for the length but this is almost all the information we have been able to gather on the print runs for 99-00 so far, all the secrets of the third print base, jungle and fossil as well. We set out down a rabbit hole and it was deep. Had some pretty amazing discoveries and i highly recommend watching the video through if you care about what card prints are in your binder. If a…
+First editions or shadowless with stamps?
+General
+So we recently discovered that shadowless thick stamp 1st eds have a -15 magenta layer(parallel to N) back and all other following shadowless have +15(other image). With this knowledge, machamp and all the theme deck pokemon now become discoverable. Thin stamp 1st editions appear to have +15.
+What is everyones thoughts on this for potential value of the alpha theme deck foils vs the beta thin stamps? Personally have a tough time calling thin stamp foils true first editions.
+[IMG_3938]
+[IMG_3…
+Pictures - English
+English - 1999 Demo Game
+usa_demo_game_front 1920×3557 3.63 MB
+usa_demo_game_back 1920×3519 1.28 MB
+English - 1999 1st Edition Shadowless Blue Stamp
+usa_1st_edition_front 1920×3435 3.78 MB
+usa_1st_edition_back 1920×3414 2.67 MB
+English - 1999 1st Edition Shadowless Black Stamp
+Screenshot 2026-09-22 at 10.28.09 PM 627×1122 292 KB
+Screenshot 2026-09-22 at 10.28.22 PM 501×896 208 KB
+English - 1999 Unlimited Shadowless Long Crimp
+usa_shadowless_long_front 1920×3471 3.43 MB
+usa_shadowless_long_back 1920×3407 2.39 MB
+English - 1999 Unlimited Shadowless Short Crimp
+usa_shadowless_short_front 1920×3407 3.73 MB
+usa_shadowless_short_back 1920×3270 2.3 MB
+English - 1999 Unlimited Hanger Crimp
+usa_thin_long_front 1920×3681 3.99 MB
+usa_thin_long_back 1920×3746 2.85 MB
+English - 1999 Unlimited Thin Font
+usa_thin_front 1920×3194 3.69 MB
+usa_thin_back 1920×3141 2.4 MB
+English - 1999 1st Edition Unlimited Error
+usa_1st_edition_error_front 1920×3279 2.57 MB
+usa_1st_edition_error_back 1920×3294 2.31 MB
+English - 1999 Unlimited Black Triangle Error
+usa_1st_edition_black_triangle_front 1920×3252 2.7 MB
+usa_1st_edition_black_triangle_back 1920×3190 2.05 MB
+English - 1999 Unlimited
+usa_thick_front 1920×3425 2.74 MB
+usa_thick_back 1920×3452 2.44 MB
+English - 1999-2000 Unlimited (USA Normal Crimp)
+Screenshot 2026-09-22 at 10.34.58 PM 416×756 142 KB
+English - 1999-2000 Unlimited (USA Extra Small Crimp)
+usa_1999-2000_front 1920×3426 3.71 MB
+usa_1999-2000_back 1920×3420 2.79 MB
+English - 1999-2000 Unlimited (Australia Normal Crimp)
+australia_1999-2000_front 1920×3345 3.69 MB
+australia_1999-2000_back 1920×3382 2.8 MB
+English - 1999-2000 Unlimited (Australia Extra Wide Crimp)
+IMG_2364 1920×1440 449 KB
+English - 1999-2000 Unlimited (UK, Extra Long Crimp)
+uk_1999-2000_extra_long_front 1920×3606 2.69 MB
+uk_1999-2000_extra_long_back 1920×3680 1.87 MB
+English - 1999-2000 Unlimited (UK)
+uk_1999-2000_long_front 1920×3545 2.66 MB
+uk_1999-2000_long_back 1920×3525 1.78 MB
+English - 1999-2000 Unlimited (UK Polish Sticker)
+uk_1999-2000_polish_long_front 1920×3425 2.72 MB
+uk_1999-2000_polish_long_back 1920×3414 1.76 MB
+Screenshot 2026-09-22 at 10.42.02 PM 442×801 363 KB
+Screenshot 2026-09-22 at 10.41.53 PM 453×801 359 KB
+Pictures - German
+German - 1999 1st Edition
+german_1st_edition_front 1920×3525 3.27 MB
+german_1st_edition_back 1920×3508 2.72 MB
+German - 1999 Unlimited
+german_front 1920×3454 2.97 MB
+german_back 1920×3429 2.51 MB
+German - 1999-2000 Unlimited ( USA )
+german_1999-2000_usa_front 1920×3186 4.01 MB
+german_1999-2000_usa_back 1920×3266 3.58 MB
+Pictures - French
+French - 1999 1st Edition
+french_1st_edition_front 1920×3479 3.06 MB
+french_1st_edition_back 1920×3503 2.21 MB
+French - 1999 Unlimited
+french_front 1920×3474 3.01 MB
+french_back 1920×3388 2.22 MB
+French - 1999-2000 Unlimited ( USA )
+french_1999-2000_usa_front 1920×3258 4.19 MB
+french_1999-2000_usa_back 1920×3245 3.62 MB
+Pictures - Spanish
+Spanish - 1999 1st Edition
+spanish_1st_edition_front 1920×3379 2.82 MB
+spanish_1st_edition_back 1920×3323 2.19 MB
+Spanish - 1999 Unlimited
+spanish_front 1920×3367 3.26 MB
+spanish_back 1920×3414 2.23 MB
+Spanish - 1999-2000 1st Edition ( USA )
+spanish_1st_edition_1999-2000_usa_front 1920×3545 4.4 MB
+spanish_1st_edition_1999-2000_usa_back 1920×3427 3.4 MB
+Spanish - 1999-2000 Unlimited ( USA )
+spanish_1999-2000_usa_front 1920×3361 4.37 MB
+spanish_1999-2000_usa_back 1920×3391 3.52 MB
+Pictures - Portuguese
+Portuguese - 1999 1st Edition
+portuguese_1st_edition_front 1920×3489 2.64 MB
+portuguese_1st_edition_back 1920×3412 2.03 MB
+Portuguese - 1999 Unlimited
+portuguese_front 1920×3454 3.25 MB
+portuguese_back 1920×3451 2.22 MB
+Portuguese - 1999-2000 Unlimited ( USA )
+portuguese_1999-2000_usa_front 1920×3381 4.21 MB
+portuguese_1999-2000_usa_back 1920×3419 3.57 MB
+Pictures - Dutch
+Dutch - 1999-2000 1st Edition
+dutch_1st_edition_front 1920×3393 2.76 MB
+dutch_1st_edition_back 1920×3378 2.31 MB
+Dutch - 1999-2000 Unlimited
+dutch_front 1920×3487 3.44 MB
+dutch_back 1920×3533 2.66 MB
+Pictures - Italian
+Italian - 1999-2000 1st Edition
+italian_1st_edition_front 1920×3472 3.18 MB
+italian_1st_edition_back 1920×3490 2.58 MB
+Italian - 1999-2000 Unlimited
+italian_front 1920×3435 3.13 MB
+italian_back 1920×3456 2.61 MB
+Italian - 1999-2000 Unlimited ( USA )
+italian_1999-2000_usa_front 1920×3278 4.07 MB
+italian_1999-2000_usa_back 1920×3311 3.3 MB
+Pictures - Korean
+Korean - 1999-2000 1st Edition
+korean_1st_edition_front 1920×3252 3.67 MB
+korean_1st_edition_back 1920×3237 2.72 MB
+Korean - 1999-2000 Unlimited
+Korean - 1999-2000 Unlimited front 615×1000 194 KB
+korean_front 1920×3235 4.19 MB
+korean_back 1920×3310 3.27 MB
+Pictures - Chinese
+Chinese - 1999-2000 1st Edition
+chinese_1st_edition_front 1920×3301 3.44 MB
+chinese_1st_edition_back 1920×3232 2.4 MB
+Chinese - 1999-2000 Unlimited
+chinese_front 1920×3244 3.56 MB
+chinese_back 1920×3280 2.38 MB
+Pictures - Blisters
+English - 1999 1st Edition Shadowless Blue Stamp
+Screenshot 2026-09-22 at 11.11.42 PM 648×1143 162 KB
+English - 1999 1st Edition Shadowless Black Stamp
+466142010_18024985160529993_6868254514905415454_n 456×837 127 KB
+English - 1999 Shadowless Long Crimp
+Screenshot 2026-09-22 at 11.29.13 PM 368×644 370 KB
+English - 1999 Shadowless Short Crimp
+1600 793×1462 142 KB
+English - 1999 Thin Font
+Screenshot 2026-09-22 at 11.31.48 PM 540×1141 181 KB
+English - Thin Font Costco 10 Pack Blister
+s-l1600 1029×1509 327 KB
+English - 1999 Thick Font
+Untitled_-_2025-07-02T124944.336 466×861 127 KB
+English - Thick Font Costco 10 Pack Blister
+limyv4tl4gac1 1920×2864 899 KB
+English - 2002 Pokemon League Blister
+league-WOTC-PRMO-BLI-UL-EN-V3 509×781 97.2 KB
+French - 1st Edition Blister
+s-l1600-5 513×822 179 KB
+French - Unlimited Blister
+587754943_18087718895321122_1122037678150207204_n 481×910 186 KB
+Italian - Unlimited Blister
+629476000_18383492176084174_4951553752905335576_n 680×1310 328 KB
+37 Likes
+Fake or real?
+Second Opinion on a Base Set Pack
+Jaws's Charizard collecting journey
+List of Pokemon TCG Resources
+WTB: Base Unlimited Korean Booster Pack Sealed
+Guide to Identifying Japanese Media Factory Base Set Booster Packs
+Did Australia have Pokémon cards in the country prior to Red logo?
+Do people collect booster packs?
+Base set 1st edition Shadowless
+Is this a fake or resealed first edition pack?
+Pokémon: Real or Fake ??
+MoistureDisgustsMe
+May 15, 2023, 4:18pm
+2
+Let’s see Paul Allen’s booster pack.
+Jokes. This is an impressive post and your videos are incredibly detailed.
+5 Likes
+holoshedinja
+May 15, 2023, 4:20pm
+3
+Absolutely incredible post!
+Thank you so much for taking your time to make this, I’ll definitely refer to it if I ever find myself on the market for a base set pack
+2 Likes
+Quuador
+May 15, 2023, 6:31pm
+4
+Amazing article, thanks a lot for making it! Especially love that you’ve also added all foreign releases including the tables and pictures. And apart from the Spanish ©1999-2000 variants, I wasn’t even aware most of the other foreign languages had a USA print that’s different from their Belgium made ones. TIL.
+Greetz,
+Quuador
+6 Likes
+pfm
+May 15, 2023, 6:34pm
+5
+Thanks for the thorough write-up. Would it be okay if i added a table of contents and change the way the images appear?
+6 Likes
+packyman
+May 15, 2023, 7:11pm
+6
+Sure if you think it will be easier to view.
+3 Likes
+nic
+October 6, 2023, 5:48am
+7
+Is there any guides similar to explaining Japanese base sets?
+packyman
+July 30, 2024, 10:12pm
+8
+I want to do one, but ran out of money. Maybe one day. It is pretty complex. Base/Jungle/Gym earlier sets had 3 or 4 different variants. The most basic is the 291/300 yen stamp, the 300 yen sticker over 291 stamp, the short crimp, and then different variations on the barcodes on the back. For Neo sets some of them had 3 different versions of barcodes. The OG, an updated one that was applied with a sticker over the OG, and an entirely new one printed.
+4 Likes
+scarecrowman88
+July 31, 2024, 12:33am
+9
+It is well known that most English 1999-2000 booster packs do not actually contain 1999-2000 holos, just the regular 1999 holos. The non-theme deck holos stamped 1999-2000 are therefore the rarest variant in English, even rarer than 1st edition. So, for English base 1999-2000 holo cards, do we know which variant / print location they came from? One specific or multiple?
+packyman
+July 31, 2024, 1:13am
+10
+The USA ones supposedly never contain 1999-2000 holos. The UK and Australia ones usually only contain 1999. I am trying to test out my theory on pack variants. I think there are 3 unique UK variants and one of them has a much higher rate of hitting 1999-2000 holos.
+2 Likes
+cwebfan23
+July 31, 2024, 1:31am
+11
+I feel like the only type of pack I’ve seen 1999-2000 holo’s pulled out of are the polish packs.
+3 Likes
+packyman
+August 21, 2024, 7:36pm
+13
+Sharing for the first time, all the pack variants together. I don’t think they have ever been seen together like this even after 25 years.
+packs_final 1772×2036 863 KB
+25 Likes
+c0ll3ct0r
+August 21, 2024, 7:40pm
+14
+Incredible!
+lyleberr
+August 21, 2024, 7:50pm
+15
+Sneaky blastoise pack. It all looks amazing!
+1 Like
+packyman
+August 21, 2024, 7:54pm
+16
+Yeah pretty frustrating. Korean Unlimited is the only one I can’t seem to source. I only know of 1 Charizard art pack in existence. If anyone else knows of any, ping me.
+8ypv6p 774×500 69.2 KB
+9 Likes
+lyleberr
+August 21, 2024, 8:11pm
+17
+Completely understand. The team aqua international deck has been a pain to try finding for my collection. Not as rare but one of those items that only has the other version show up every time i see it.
+2 Likes
+jaws
+August 21, 2024, 9:04pm
+18
+I know one person with the trio of unlimited packs and I don’t think they’ll ever sell them. I am also on the hunt for any Unlimited Korean pack. Can’t wait to see some videos!
+4 Likes
+packyman
+August 21, 2024, 9:17pm
+19
+I already reached out to them. He said maybe in the future last time I checked. He has the only other collection like this from what I have researched.
+4 Likes
+meta
+August 22, 2024, 6:43am
+20
+Incredible collection!
+PokeMasterCenter
+September 24, 2024, 5:34am
+21
+Hey anyone know the story behind the 1st edition error base pack? I know they printed triangles over to fix the error but population wise is that pack pretty hard to find? I read somewhere wotc employees were given the unlimited 1st edition error packs but I’m not sure if that’s true.
+next page →
+Related topics
+Topic
+Replies
+Views
+Activity
+Identifying Shadowless & Unlimited Base set Boxes & Packs
+Articles
+booster-packs
+,
+shadowless
+,
+booster-boxes
+,
+guide
+45
+88757
+June 5, 2023
+Across the Universe - a Comparitive Langauge Study of Base Set's Two Distinct Print Runs
+General
+holo
+,
+holo-pattern
+12
+229
+August 6, 2026
+The Curious Case Of The 1999-2000 USA Foreign Language Base Set Packs ( New Card Variants )
+Collecting
+base-set
+,
+booster-packs
+2
+789
+April 14, 2026
+Base Set 1999-2000 USA Made Foreign Language
+General
+base-set
+,
+base-2000
+11
+769
+July 8, 2025
+Collectors guide to Eevee cards in all languages
+Collecting
+eevee
+,
+list
+,
+collecting
+,
+species
+4
+1659
+August 23, 2026
+Home
+Categories
+Guidelines
+Terms of Service
+Privacy Policy
+Powered by Discourse , best viewed with JavaScript enabled

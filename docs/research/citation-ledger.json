@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://raw.githubusercontent.com/PokemonTCG/pokemon-tcg-data/master/cards/en/base1.json",
+      "title": "Pokemon TCG Data: Base Set JSON",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "\"name\": \"Alakazam\", \"supertype\": \"Pokémon\",",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://www.pokellector.com/Base-Set-Expansion",
+      "title": "Base Set Pokemon Card Set List",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "#73 - Imposter Professor Oak",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://relentlessdragon.com/pokemon-card-game/base-set-machamp",
+      "title": "Identifying Early Pokemon Cards: Base Set Machamp",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "Card #8/102, Machamp could never actually be found in Base Set booster packs!",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://www.elitefourum.com/t/base-set-packs-variations-of-card-sequence/23674",
+      "title": "Base Set Packs variations of card sequence",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "We are all familiar with the base set unlimited having 5 commons, 2 energies, the rare, and then the 3 uncommons from front to back.",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762",
+      "title": "The English Pokemon card rarity guide",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "The ultimate output will be a table for each set which assigns to each card a “best-estimate” rarity.",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://www.pokemastercenter.com/pokemon-base-set-guide",
+      "title": "The Ultimate Pokemon 1999 WotC Base Set Guide",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "The rare had a 1 in 3 chance of being a holographic rare.",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Impostor_Professor_Oak_(Base_Set_73)",
+      "title": "Imposter Professor Oak (Base Set 73)",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "The 1st Edition and Shadowless print runs of this card were spelled Impostor Professor Oak and changed to Imposter for all further print runs and reprints.",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": "https://relentlessdragon.com/pokemon-card-game/identifying-early-pokemon-cards",
+      "title": "Identifying Early Pokemon Cards",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "note that shadows were only ever used on Pokémon themselves—trainer cards never had drop shadows",
+          "added": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Machamp_(Base_Set_8)",
+      "title": "Machamp (Base Set 8)",
+      "accessed": "2026-10-30",
+      "quotes": [
+        {
+          "text": "While an Unlimited Edition version of the Base Set print of this card was never officially released",
+          "added": "2026-10-30"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1164 @@
+{
+  "requested_url": "https://www.pokemastercenter.com/pokemon-base-set-guide/",
+  "final_url": "https://www.pokemastercenter.com/pokemon-base-set-guide/",
+  "status": 200,
+  "title": "The Ultimate Pokemon Base Set Guide - Poke Master Center",
+  "accessed": "2026-10-30T12:16:13.197168-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+The Ultimate Pokemon Base Set Guide - Poke Master Center
+Home
+Buy
+Card Restoration Kits
+Card Grading Kit
+Graded Cards
+Live Rip
+Merch
+Testimonials & Reviews
+Resources
+CCC Video
+Podcast
+Tutorials
+Guides
+Grading Guide
+Base Set Guide
+Banned Cards
+Ancient Mew
+eBay Tips
+Tools
+Centering Calculator
+Friends
+Gem Card Care
+Card Conservation
+Amazon List
+Submit
+Contact
+Contact Giovanni
+Restoration Artists
+Patreon
+Discord
+My Account
+Select Page
+The Ultimate Pokemon 1999 WotC Base Set Guide
+Base Set is the first Pokémon expansion released for the Pokémon Trading Card Game. It was first released on October 20th, 1996 in Japan, and January 9th, 1999, for the rest of the world. The cards were produced under contracts by Media Factory and Wizards of the Coast (WotC). Media Factory produced the Japanese versions of the cards. Because of this Base Set is known to many collectors as a WotC era set.
+In this guide, I will answer many questions including:
+How to Identify a Base Set Card
+What Cards are in Base Set?
+What Languages was Base Set Printed In?
+What Variants Did Base Set Have?
+What is a No Rarity Symbol Base Set Card?
+What is a 1 st Edition Base Set Card?
+What is a Shadowless Base Set Card?
+What is a 1999-2000 Base Set Card?
+What is an Unlimited Base Set Card?
+What is a Trainer Deck Card?
+What are the Error/Misprint Cards in Base Set?
+What Other Variants are in Base Set?
+1 st Edition Stamp Variants
+Sealed Pokemon Base Set Product List
+The goal of this guide is to take anyone from beginner to expert on Pokémon Base Set. While not everything can be covered, I will provide extra links to help get just about the information you could possibly want.
+How to Identify a Base Set Card
+A Base Set card is easily recognized by the absence of a set symbol and its set number, which appears as "/102" at the bottom right corner of the card. You can refer to the image below, where I have highlighted these two key features.
+It’s important to note that Base Set cards aren’t the only ones missing set symbols. A printing error led to some English Jungle cards being printed without set symbols, but the difference is easy to spot since Jungle cards have a set number of "/64."
+Japanese Base Set cards don’t feature a set number at all; the only way to identify them is by the lack of a set symbol.
+What Cards are in Base Set?
+The Base Set comprises a total of 102 cards. These include 69 Pokémon, 26 Trainer cards, and 6 Energy cards. Among them, 16 are Holographic Foil rares, 16 are regular rares, 32 are uncommons, 32 are commons, and 6 are no-rarity Energy cards. You’ll find the full list of these cards in the table below:
+Image
+Card Name
+Card Type
+Rarity
+Set Number
+Alakazam
+Pokémon
+Holographic Foil Rare
+1/102
+Blastoise
+Pokémon
+Holographic Foil Rare
+2/102
+Chansey
+Pokémon
+Holographic Foil Rare
+3/102
+Charizard
+Pokémon
+Holographic Foil Rare
+4/102
+Clefairy
+Pokémon
+Holographic Foil Rare
+5/102
+Gyarados
+Pokémon
+Holographic Foil Rare
+6/102
+Hitmonchan
+Pokémon
+Holographic Foil Rare
+7/102
+Machamp
+Pokémon
+Holographic Foil Rare
+8/102
+Magneton
+Pokémon
+Holographic Foil Rare
+9/102
+Mewtwo
+Pokémon
+Holographic Foil Rare
+10/102
+Nidoking
+Pokémon
+Holographic Foil Rare
+11/102
+Ninetales
+Pokémon
+Holographic Foil Rare
+12/102
+Poliwrath
+Pokémon
+Holographic Foil Rare
+13/102
+Raichu
+Pokémon
+Holographic Foil Rare
+14/102
+Venusaur
+Pokémon
+Holographic Foil Rare
+15/102
+Zapdos
+Pokémon
+Holographic Foil Rare
+16/102
+Beedrill
+Pokémon
+Rare
+17/102
+Dragonair
+Pokémon
+Rare
+18/102
+Dugtrio
+Pokémon
+Rare
+19/102
+Electabuzz
+Pokémon
+Rare
+20/102
+Electrode
+Pokémon
+Rare
+21/102
+Pidgeotto
+Pokémon
+Rare
+22/102
+Arcanine
+Pokémon
+Uncommon
+23/102
+Charmeleon
+Pokémon
+Uncommon
+24/102
+Dewgong
+Pokémon
+Uncommon
+25/102
+Dratini
+Pokémon
+Uncommon
+26/102
+Farfetch’d
+Pokémon
+Uncommon
+27/102
+Growlithe
+Pokémon
+Uncommon
+28/102
+Haunter
+Pokémon
+Uncommon
+29/102
+Ivysaur
+Pokémon
+Uncommon
+30/102
+Jynx
+Pokémon
+Uncommon
+31/102
+Kadabra
+Pokémon
+Uncommon
+32/102
+Kakuna
+Pokémon
+Uncommon
+33/102
+Machoke
+Pokémon
+Uncommon
+34/102
+Magikarp
+Pokémon
+Uncommon
+35/102
+Magmar
+Pokémon
+Uncommon
+36/102
+Nidorino
+Pokémon
+Uncommon
+37/102
+Poliwhirl
+Pokémon
+Uncommon
+38/102
+Porygon
+Pokémon
+Uncommon
+39/102
+Raticate
+Pokémon
+Uncommon
+40/102
+Seel
+Pokémon
+Uncommon
+41/102
+Wartortle
+Pokémon
+Uncommon
+42/102
+Abra
+Pokémon
+Common
+43/102
+Bulbasaur
+Pokémon
+Common
+44/102
+Caterpie
+Pokémon
+Common
+45/102
+Charmander
+Pokémon
+Common
+46/102
+Diglett
+Pokémon
+Common
+47/102
+Doduo
+Pokémon
+Common
+48/102
+Drowzee
+Pokémon
+Common
+49/102
+Gastly
+Pokémon
+Common
+50/102
+Koffing
+Pokémon
+Common
+51/102
+Machop
+Pokémon
+Common
+52/102
+Magnemite
+Pokémon
+Common
+53/102
+Metapod
+Pokémon
+Common
+54/102
+Nidoran♂
+Pokémon
+Common
+55/102
+Onix
+Pokémon
+Common
+56/102
+Pidgey
+Pokémon
+Common
+57/102
+Pikachu
+Pokémon
+Common
+58/102
+Poliwag
+Pokémon
+Common
+59/102
+Ponyta
+Pokémon
+Common
+60/102
+Rattata
+Pokémon
+Common
+61/102
+Sandshrew
+Pokémon
+Common
+62/102
+Squirtle
+Pokémon
+Common
+63/102
+Starmie
+Pokémon
+Common
+64/102
+Staryu
+Pokémon
+Common
+65/102
+Tangela
+Pokémon
+Common
+66/102
+Voltorb
+Pokémon
+Common
+67/102
+Vulpix
+Pokémon
+Common
+68/102
+Weedle
+Pokémon
+Common
+69/102
+Clefairy Doll
+Trainer
+Rare
+70/102
+Computer Search
+Trainer
+Rare
+71/102
+Devolution Spray
+Trainer
+Rare
+72/102
+Imposter Professor Oak
+Trainer
+Rare
+73/102
+Itemfinder
+Trainer
+Rare
+74/102
+Lass
+Trainer
+Rare
+75/102
+Pokémon Breeder
+Trainer
+Rare
+76/102
+Pokémon Trader
+Trainer
+Rare
+77/102
+Scoop Up
+Trainer
+Rare
+78/102
+Super Energy Removal
+Trainer
+Rare
+79/102
+Defender
+Trainer
+Uncommon
+80/102
+Energy Retrieval
+Trainer
+Uncommon
+81/102
+Full Heal
+Trainer
+Uncommon
+82/102
+Maintenance
+Trainer
+Uncommon
+83/102
+Plus Power
+Trainer
+Uncommon
+84/102
+Pokémon Center
+Trainer
+Uncommon
+85/102
+Pokémon Flute
+Trainer
+Uncommon
+86/102
+Professor Oak
+Trainer
+Uncommon
+87/102
+Pokédex
+Trainer
+Uncommon
+88/102
+Revive
+Trainer
+Uncommon
+89/102
+Super Potion
+Trainer
+Uncommon
+90/102
+Bill
+Trainer
+Common
+91/102
+Energy Removal
+Trainer
+Common
+92/102
+Gust of Wind
+Trainer
+Common
+93/102
+Potion
+Trainer
+Common
+94/102
+Switch
+Trainer
+Common
+95/102
+Double Colorless
+Energy
+Uncommon
+96/102
+Fighting
+Energy
+97/102
+Fire
+Energy
+98/102
+Grass
+Energy
+99/102
+Lightning
+Energy
+100/102
+Psychic
+Energy
+101/102
+Water
+Energy
+102/102
+What Languages was Base Set Printed In?
+Base Set was released in several languages, including Chinese, Dutch, English, French, German, Italian, Japanese, Portuguese, Spanish, and Korean. From a collector’s perspective, Korean cards are the rarest to find, while English and Japanese cards are the most widely collected.
+Own Base Set cards? Keep them clean, not “restored.”
+Base Set cards are over 25 years old, and most have picked up fingerprints, smudges or light spots along the way. Card conservation means removing what doesn’t belong without pressing, filling or changing the card. The gentlest place to start is a card spray and a microfiber pad. Practice on a common card first.
+Shop Card Spray →
+Dealing with creases or dents? See our restoration kits .
+What Variants Did Base Set Have?
+The Base Set stands out for having the most variants of any released set. These include:
+No rarity symbol Japanese cards
+1st Edition cards
+Shadowless English cards
+Unlimited cards
+1999-2000 English cards
+Trainer Deck cards
+Error/Misprint cards
+These variations occurred across multiple languages. For example, 1st Edition cards exist for every language except Japanese. Japanese is also the only language to feature no rarity symbol cards. Meanwhile, 1999-2000 cards are unique to English and Spanish sets, and Trainer Deck cards were only made in English. More details about these variants are covered in the following sections.
+What is a No Rarity Symbol Base Set Card?
+During the initial production of Japanese Base Set cards, 96 were printed without rarity symbols, making them highly sought after by collectors. These "no rarity symbol" cards were part of the first print run, after which all Japanese Base Set cards were printed with rarity symbols (except for Energy cards).
+You can find the rarity symbol on the bottom right corner of most cards, denoted by a star (rare), diamond (uncommon), or circle (common). To help you spot a no rarity symbol card, check the image below.
+What is a 1st Edition Base Set Card?
+The term "1st Edition" refers to the very first release of a Base Set card. You can identify a 1st Edition card by the stamp located on the right side of the card, featuring a circle with the number "1" inside. If the card lacks this stamp, it falls into one of the other variants, such as Shadowless or Unlimited.
+The one exception to this rule is the Base Set Machamp, which was always printed with a 1st Edition stamp, except for its Trainer Deck A version. Although Machamp cards always carry the 1st Edition stamp, the shadowless version is considered the first print. This applies to all languages except Japanese, where 1st Edition cards were never produced. However, it's still possible to determine the first print of Japanese Base Set cards, as explained earlier.
+What is a Shadowless Base Set Card?
+The first print run of English Base Set cards used a template that became known as "Shadowless." These Shadowless cards are distinctive because they lack the shadow box seen in later prints. While 1st Edition cards were created using this template, the remaining cards without the stamp were dubbed Shadowless.
+Wizards of the Coast (WotC) altered the template in the second print run, adding shadows and slightly changing the card layout. Shadowless cards are known for having brighter colors, a more zoomed-in card image, and bolder HP text. The copyright date on Shadowless cards reads "©1995 96 98 99 Nintendo Creatures GAMEFREAK ©1999," which differs from Unlimited cards. Shadowless cards are the first print run of Base Set but lack the 1st Edition stamp, making them highly collectible.
+The first print run was used for both 1st Edition and Shadowless cards. According to the story, Wizards of the Coast (WotC) produced the initial batch of Pokémon cards. Some of these cards were stamped with the 1st Edition symbol, which we discussed earlier. The rest, which didn’t receive the stamp, became known as Shadowless cards. When WotC began the second print run, they made changes to the card template. Collectors quickly noticed differences between the two. The most obvious change was the addition of a shadow around the card artwork. As a result, cards without the shadow box were labeled as Shadowless, while the ones with it became known as Unlimited Edition. There are several key differences between Shadowless and Unlimited cards.
+The HP text is bolder for Unlimited
+On Unlimited, the image of the card is zoomed out
+Shadowless has more vibrant colors
+To the right of the image’s art box, there’s no drop shadow for shadowless
+The copyright date reads © 1995, 96, 98 Nintendo, Creatures, GAMEFREAK, © 1999 on Unlimited and © 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK, © 1999 for shadowless. Notice the added 99 in the text, this is the best identifying characteristic for all shadowless cards.
+So, the reality is Shadowless cards are the first print run of the Base Set but lack the 1st edition stamps. They’re best identified by their copyright date of ©1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK, © 1999. Shadowless cards only occurred for English Base Set.
+What is a 1999-2000 Base Set Card?
+The eighth print run of English Base Set cards is referred to as the 1999-2000 set, as the copyright on these cards reads "©1995 96 98 Nintendo Creatures GAMEFREAK ©1999-2000." While visually similar to Unlimited cards, this small copyright date change is significant for collectors.
+This set is sometimes called the "4th print" by those who assume there are only four prints of the Pokémon Base Set: 1st Edition, Shadowless, Unlimited, and 1999-2000. However, the Base Set had eight print runs in total. These cards were also known as the "UK release" initially, but this term is misleading, as they were distributed in Australia and the United States as well. Other languages, including Chinese, Dutch, Italian, Korean, and Spanish, also have versions with the 1999-2000 copyright.
+Notably, Spanish Base Set cards feature four different variants, including those with both 1999 and 1999-2000 copyright dates.
+1 st edition 1999 copyright
+1 st edition 1999-2000 copyright
+Unlimited 1999 copyright
+Unlimited 1999-2000 copyright
+What is an Unlimited Base Set Card?
+Unlimited Base Set cards are the most commonly found variant, as they were produced in every language and accounted for the second through seventh print runs of the English set. They are easily identified by their lack of a 1st Edition symbol and the shadowed border around the card's image.
+The only exception is the Base Set Machamp, which always carried a 1st Edition stamp despite being printed in Unlimited quantities. In the technical sense, any card without a 1st Edition stamp is considered Unlimited. However, this guide treats Unlimited cards separately from Shadowless and other variants.
+What is a Trainer Deck Card?
+Trainer Deck cards come in two variations: Trainer Deck A and Trainer Deck B. These special cards were originally produced to help players learn the Pokémon Trading Card Game at official Pokémon Leagues, often hosted in stores like Toys "R" Us. When the leagues no longer needed these decks, many organizers sold or gave away the cards, making them available to the public.
+Trainer Deck A was more commonly used, and thus, cards from this deck often show wear. Trainer Deck B cards, on the other hand, are usually found in better condition due to their limited use. The key differences between these cards and regular Base Set cards are on the back: Trainer Deck cards have a red border and either "Trainer Deck A" or "Trainer Deck B" printed on the back in red. The Machamp from Trainer Deck A and the Blastoise from Trainer Deck B were printed without holographic foil, further distinguishing them from their standard Base Set counterparts.
+Only the following carry this Trainer Deck A/B writing on the back as listed below:
+Trainer Deck A
+Trainer Deck B
+1 Machamp
+1 Blastoise
+2 Machoke
+2 Pidgeotto
+2 Raticate
+2 Wartortle
+4 Machop
+4 Seel
+4 Onix
+4 Pidgey
+4 Rattata
+4 Squirtle
+4 Sandshrew
+3 Starmie
+4 Defender
+4 Staryu
+2 Super Potion
+1 Computer Search
+4 Potion
+2 Pokémon Trader
+2 Switch
+3 Energy Removal
+27 Fighting Energy
+3 Switch
+27 Water Energy
+What are the Error/Misprint Cards in Base Set?
+As the first released set, Base Set contains numerous errors and misprints, some of which are highly sought after by collectors. These can be grouped into two categories:
+Errors/misprints that occurred on every card within a specific variant
+Errors/misprints found on only a select number of cards
+Cards with errors that are exclusive to a limited number of prints tend to be more valuable to collectors. Examples of such desirable errors include:
+No Stage Blastoise : A printing error omitted the word "stage" from Blastoise’s text. These were found in Unlimited booster packs.
+No Damage Ninetales : Some Shadowless Ninetales cards are missing the damage value for the Fire Blast attack. These were distributed in Bushfire Theme Decks.
+Ghost Stamp Pikachu : Certain Shadowless Pikachu cards have an outline where the 1st Edition stamp would normally be, creating a "ghost" appearance. These can be found in Zap theme decks.
+English Evolution Box Wartortle : Unlimited versions of English Wartortle had a printing error/misprint where the evolution box contains Wartortle instead of Squirtle. To find these cards you need to get lucky and find one in a booster pack. There is also a Portuguese version of this so take care to look at the text if you plan on buying one to price it right.
+Margin Spacing Water Energy: Unlimited Water Energy cards had a large number of their cards printed with a lack of space in the top margin of the card’s name. These cards were found in booster packs.
+C ards With Errors/Misprint Printed on E very Card Within the Same Variant(s):
+Japanese Evolution Box Holographic Foil Error
+Every Japanese Holographic card that contains an evolution box was printed with the evolution box being covered with holographic foil.
+Height and Weight Box Charizard
+All No Rarity Charizard cards have their height and weight box misprinted. It reads かしいりきボケモン: 身長1.5m. 体重70.5kg . The correct text is かえんボケモン: 身長1.7m. 体重90.5Kg .
+Wrong Pokédex Number Raichu
+All No Rarity Raichu Cards have the wrong Pokédex number of 25 instead of 26.
+Wrong Pokédex Number Vensaur
+All No Rarity Venusaur cards have the wrong Pokédex number of 68 instead of 3.
+6/102 Spacing Error Gyarados
+All unlimited and 1999-2000 Gyarados have their set number spaced too far left.
+Length Instead of Weight Kakuna
+All 1 st edition and shadowless Kakuna cards have their weight printed as length.
+Portuguese Evolution Box Wartortle
+All 1 st edition and unlimited versions of Portuguese Wartortle had a printing where the evolution box contains Wartortle instead of Squirtle.
+Length instead of Weight Bulbasaur
+All 1 st edition and shadowless Bulbasaur cards have their weight printed as length.
+HP 40 Caterpie
+All 1 st edition and shadowless Caterpie cards have their HP printed as HP 40 instead of 40 HP.
+Wrong Text On Destiny Bond Attack Gastly
+All No Rarity Gastly cards have the wrong text for their Destiny Bond attack it reads みちずれ instead of the correct みちづれ .
+HP 70 Metapod
+All 1 st edition and shadowless Metapod cards have their HP printed as HP 70 instead of 70 HP.
+Spacing in name Nidoran♂
+Every Nidoran card, except Chinese, Japanese, and Korean prints, have a space between the n and ♂.
+" this attack does nothing" Sandshrew
+All 1 st edition and shadowless Sanshrew cards have text that reads "this attack does nothing" instead of "that attack does nothing"
+Monster Ball Voltorb
+All 1 st edition and shadowless Voltorb cards have Monster Ball printed instead of the properly translated Poké Ball.
+HP 50 Vulpix
+All 1 st edition, shadowless, and unlimited Vulpix cards have their HP printed as HP 50 instead of 50 HP.
+Impostor Imposter Professor Oak
+All 1 st edition and shadowless Imposter Professor Oak cards were printed as Impostor Professor Oak, while the Unlimited and 1999-2000 were printed as Imposter Professor Oak.
+" your own Bench Pokémon" Switch
+All 1 st edition and shadowless Switch cards have text that reads "Switch 1 of your own Bench Pokémon" instead of "Switch 1 of your Bench Pokémon"
+Other Error/Misprint Cards
+There are a bunch of one-off errors like Pokémon cards being printed with the backs upside down, crimps on cards caused by factory machinery leaving indents, and so many more that aren’t going to be mentioned in this article. I’ve decided to only include well-known errors and ignore the huge list of cards that have surfaced over the years. With that said I will mention some of the errors that have occurred enough that might interest individuals to know about them:
+There are a number of Base Set cards that have been come from the factory without their corners properly-rounded, this is known as square cut cards and can occur one to all four corners. Most of these cards aren’t created in a Wizards of the Coast factory and instead were cut directly from an uncut sheet.
+A good number of Base Set cards have minor ink stains, these stains come from the factory accidentally dripping ink on the cards.
+A few Dragonair cards have what looks like a rainbow printed on their Slam attack, blocking the u in number from being fully printed.
+Off-Center cards. Many cards when they were getting cut weren’t cut correctly resulting in their yellow borders being very wide and thin.
+Text Error/Misprints. A lot of cards have had ink not print correctly resulting in text not printing properly.
+Missing color cards. When going through the printing process sometimes one of the inks will become empty, the result will be a card printed without that color. The three colors used for the printing process was magenta, cyan, yellow, and black. There have even been cards found to be missing all except black ink resulting in black and white cards. Note, the borders of these cards are still yellow, the boarders are done on a different machine printing process.
+What Other Variants are in Base Set?
+The Base Set also contains other variants, each bringing something unique to the set. Some of these include Galaxy Machamp, which can be found in the 2-Player CD-ROM Starter Set. This version of Machamp has a cosmic or galaxy foil background instead of the regular starry foil seen on other holographic cards. While some people might think of it as an error or misprint, this was an intentional design choice.
+Another notable variant is the Red Cheeks Pikachu . The early 1st Edition and Shadowless versions of Pikachu featured red cheeks instead of the yellow cheeks later used. These cards were only available in booster packs, making them harder to find.
+The Red Cheeks Shadowless E3 Pikachu is even rarer, as it was distributed at the 1999 Electronic Entertainment Expo (E3). It features the same red cheeks as the earlier Pikachu card but includes an "E3" stamp where the set symbol would normally be. This makes it distinct from other Shadowless Pikachu cards.
+Additionally, there’s an Unlimited Yellow Cheeks E3 Pikachu variant, which was given out in Nintendo Power magazine in September 1999. Although it has corrected yellow cheeks, it retains the "E3" stamp.
+The PokéTour Pikachu is another variant, given out during the 1999 Australian PokéTour. It also has a unique stamp, this time in the top right corner of the card’s artwork, distinguishing it from other Unlimited Pikachu cards.
+Lastly, there’s the CD Promo Shadowless Pikachu . This card is practically indistinguishable from regular Shadowless Pikachu cards, but its smoother card stock gives it away. This card was produced by Media Factory in Japan and was included with the Pokémon Song Best Collection CD.
+This card is had to tell a difference between any other shadowless Pikachu; however, this card was produced by Media Factory in Japan and was included in the Pokémon Song Best Collection CD. The difference between this card and it’s shadowless counterpart is the card stock used. The Japanese card stock is smoother and less grainy. It can’t be seen well without proper lighting angles, I’ve done my best to highlight this in the image below.
+1st Edition Stamp Variants
+The 1st Edition stamp on Base Set cards is also subject to various inconsistencies, creating collectible variations. The primary variations are the Thick and Thin 1st Edition stamps, which refer to the thickness of the "1" inside the circle of the stamp. The difference in thickness is due to the varying pressure applied during the stamping process. Thin stamps are more common on holographic cards, while thick stamps are rarer.
+There are also Gray 1st Edition Stamps , caused by ink transfer between card sheets during production. This results in a faint, gray appearance of the stamp. These stamps are much less common and highly sought after by collectors.
+Here's an image of some of the stamp ink getting on the back of another card.
+Another interesting variant is the Off-Aligned 1st Edition Stamp , where the stamp is not correctly aligned with its intended placement. This misalignment gives the stamp a slightly "3D" effect and is more noticeable on non-holographic cards. While off-aligned stamps aren't rarer than their correctly aligned counterparts, they are still a notable variant.
+To understand how this stamp got like this, let's first look at the Pikachu ghost stamp
+As you can see there is an outline, now lets look at a close up of the off-aligned 1st edition stamp and you'll see this same outline.
+When soomed out, you can see the stamp looks "3D"
+I’m unaware of why these outlines are there, but they are only on non-holographic foil cards. If the 1 st edition stamp is applied directly on this outline you’ll get an aligned 1 st edition stamp, and if you not you’ll get an off-aligned 1 st edition stamp.
+In my experience, off-aligned 1 st edition stamps aren’t any rarer than an aligned 1 st edition stamp.
+Sealed Product
+Base Set cards were released in a variety of sealed products, including booster boxes, booster packs, blister packs, theme decks, gift boxes, and starter decks. These products contained different combinations of Base Set cards, and the packaging often provides clues about the specific cards that could be found inside.
+With Pokemon coming being so popular during its first release there was a lot of sealed product that was available. There are blister packs, booster packs, booster boxes, theme decks, and all the differences between them can be confusing.
+In this guide, I’ll take you through just about everything you need to know to help your collection.
+English Released Product
+Demo Booster Pack
+Booster Box
+Booster Packs
+Blister Packs
+Theme Decks
+Gift Boxes
+Demo Booster Pack
+Before the Pokémon Trading Card Game was released in America, demo booster packs were produced to display on shelves to promote the game. These packs are now more commonly known to collectors as Demo Packs.
+Like it says on the back of the pack, inside are “a 2-player Demo Guide and 24 ready-to play tradable game cards.” Specifically, the cards inside are Shadowless cards of the following:
+Two Pikachus
+One Machoke
+Two Machops
+One Potion
+Two Lightning Energy
+Three Fighting Energy
+Two Nidoran♂
+One Ponyta
+One Charmeleon
+Two Charmanders
+One Switch
+Two Grass Energy
+Three Fire Energy
+One Doduo
+Here is a video of an opening.
+Booster Boxes
+The main product produced would be booster boxes. Inside were 36 booster packs 12 of which contained holographic foil cards. Booster boxes can have a variety of changes. There there are 1st edition markers, Wizard’s logos, Charizards artwork changes, and county codes that can all be different.
+Base booster boxes can either have a 1st edition marker or not. Obviously, only 1st edition booster packs can be found inside a box with a 1st edition marker.
+Base Set booster boxes can come with either square Wizards of the Coast logos, curved Wizards of the Coast logos, or no logos at all.
+One one side of the booster box will be Charizard, there are two images that Charizard could have, they’re commonly referred to as either Green Wing or Blue Wing Charizard. The green wing artwork was produced by Mitsuhiro Arita and the blue wing is Ken Sugimori.
+On the bottom of the booster box, the manufacturing county can be found. There are three different countries that produced booster boxes the USA, UK, and Australia. The UK and Australia booster boxes also have copyright information of 1999-2000.
+The final difference in base booster boxes is their contact information again found on the bottom of the booster box. This is oftentimes called the country code, I’m not sure why but it’s a term that been used for so long that it’s seemed to have stuck. There’s either no contact information, a single contact, or multiple contacts on the bottom of the box.
+Now for the combinations of all the booster boxes. Because, yes, all these differences in the booster boxes can come in multiple combinations. So I’ve created the table below to help, I’ve also included the types of cards booster packs found inside. Please check the next section to see what types of cards can be found inside. For example, I call a booster pack shadowless but not all shadowless booster packs have shadowless cards inside.
+1st Edition Marker
+Logo
+Wings
+Manufacturing
+Country
+Contact Info
+Booster Packs Inside
+Yes
+None
+Green
+USA
+None
+1st Edition
+No
+None
+Green
+USA
+None
+Shadowless or Unlimited
+No
+Square
+Green
+USA
+None
+Shadowless or Unlimited
+No
+Square
+Green
+USA
+Multiple
+Shadowless
+or Unlimited
+No
+None
+Blue
+USA
+Multiple
+Shadowless or Unlimited
+No
+Square
+Blue
+USA
+Multiple
+Unlimited or Triangle Error
+No
+Square
+Blue
+USA
+Single
+Unlimited
+No
+Curved
+Blue
+United Kingdom
+Multiple
+1999-2000
+No
+Curved
+Blue
+Australia
+Multiple
+1999-2000
+Here is a 1st Edition Booster Box opening if you’re interested.
+Booster Packs
+Base set booster packs are best identified by their three artworks on the front. When it comes to booster packs there are 10 different booster packs and three artworks of each type. This makes a total of 30 base set booster packs variations. Each booster pack contained 11 trading cards; one rare, three uncommon, five commons, and two energy cards. The rare had a 1 in 3 chance of being a holographic rare.
+Not all the cards inside the booster packs are the same variant. I’ll first go through all the variations of booster packs and then explain the types of cards that could be found in each one.
+First, let’s discuss the identifying characteristics of the booster pack. There is the artwork, 1st edition stamp, the seal type, the trading card game logo placement, the copyright dates, and the manufacturing country.
+As said before there are three artworks for Base set booster packs , they include artwork featuring Charizard, Blastoise, or Venusaur .
+A 1st edition stamp, which can be seen in the image below, was always placed on the same spot. However, there are some booster packs that have a 1st edition stamp without first edition cards. This is one of the reasons why the trading card logo placement is important. We’ll discuss this error booster pack later in this guide. Besides that exception, any booster pack with a 1st edition stamp is called a 1st edition booster pack.
+The Trading Card Game logo placement can either be found at the top of the pack underneath Pokemon or it’ll be at the bottom of the pack above the text “11 Tradable Game Cards”. If it’s found on the bottom of the text, there will also be the backs of three pokemon cards on the top right corner of the logo. Booster packs with the logo on the bottom of the pack are called Shadowless booster packs . Boosters with the logo on top are considered Unlimited.
+The seal type refers to the way the booster pack was sealed. There are a few different ways they have been sealed, the most common are short seal and long-sealed booster packs, while seals for hanging racks were less common.
+To find the copyright date and the country of manufacture, you have to look under the flap on the back of the booster pack.
+The copyright dates can be either the common 1999 or 1999-2000. If a booster pack has a 1999-2000 copyright date, it’s considered a 1999-2000 booster pack.
+Three countries manufactured English booster packs, just like the booster boxes, they are the USA, UK, and Australia.
+There are also booster packs with a triangle printed on them. Due to a printing error, some booster packs were produced with a 1st edition stamp on them. To prevent people from thinking they were buying 1st edition cards Wizards of the Coast placed triangles to cover up the 1st edition stamp. These booster packs are considered Triangle Error packs.
+Very few of the booster packs with the misprinted 1st edition stamp were released without the triangle. I haven’t personally seen any come released accidentally. Instead, they came directly from a staff member of Wizards of the Coast. You can tell they’re different due to their logo placement though. This is only true for English versions, other languages always have their logo in the same spot.
+When it comes to which cards can be found inside it’s not always a guarantee. For example, booster packs are considered shadowless when they don’t have a 1st edition stamp and their TCG logo is on the bottom; however, it’s never a guarantee you’ll find shadowless cards inside.
+1st Edition Stamp
+TCG Logo
+Seal Type
+Copyright Date
+Manufacturing
+Country
+Card Variants Inside
+Yes
+Bottom
+Long
+1999
+USA
+1st Edition
+No
+Bottom
+Long
+1999
+USA
+About 80% Shadowless 20% Unlimited
+No
+Bottom
+Short
+1999
+USA
+About 50% Shadowless 50% Unlimited
+No
+Top
+Rack
+1999
+USA
+Unlimited
+No
+Top
+Short
+1999
+USA
+Unlimited
+Yes
+Top
+Short
+1999
+USA
+Unlimited
+Triangle
+Top
+Short
+1999
+USA
+Unlimited
+No
+Top
+Short
+1999-2000
+USA
+1999-2000
+(All Holographic cards 1999.)
+No
+Top
+Short
+1999-2000
+Australia
+1999-2000 (Sometimes Holographic Cards 1999)
+No
+Top
+Short
+1999-2000
+United Kingdom
+1999-2000 (Sometimes Holographic Cards 1999)
+Blister Packs
+Holographic cards have slightly more weight than the other cards, so many people open booster boxes and weight the booster packs inside using a jeweler’s scale. They take the twelve holofoil packs for themselves and sell off the non-holographic booster packs. This practice is called weighing booster packs. Due to the extra cardboard on back blister packs, they aren’t as easily weighed.
+I’m not going to judge the practice of weighing but instead comment on it to help my readers understand why blister packs tend to sell for a premium compared to booster packs. There’s also a visual appeal that might account for this, but the highest factor is the weighing aspect.
+Blister packs don’t need as much detail as the other post, they were simply packaging used to house booster packs, the packaging made it easier to hang the packs for shop displays. The majority of the booster packs variations could be found inside a blister pack. The only ones I’m not aware of any 1999-2000 booster packs and booster packs designed to hang on display hooks, for obvious reasons.
+There is also a special blister pack that contained a Base Booster pack and a Jungle Booster pack.
+Here is a blister pack opening for your enjoyment.
+Theme Decks
+There are five theme decks for base set. They are:
+2-Player Starter Set
+Blackout
+Brushfire
+Overgrowth
+Zap!
+Each theme deck has very specific cards included.
+2-Player Starter Set
+The 2-Player Starter Set is unique as it’s the only way to get the exclusive card Machamp. The set was intended to be used as in introduction to the Pokemon Trading Card Game and was designed to be two decks of 30 cards. One deck centered around fighting type Pokemon while the other focused on fire type Pokemon. In addition to the two decks and Machamp, there was also a starter rules sheet, rulebook, damage counters, and a card checklist. Below are the cards included in the two decks.
+Fighting Deck
+Fire Deck
+One Pokedex
+One Energy Retrieval
+One Energy Removal
+Two Switch
+Two Potion
+One Gust of Wind
+One Dratini
+One Bill
+Two Rattata
+One Growlithe
+Two Machoke
+Two Charmeleon
+Four Machop
+Four Charmander
+Three Diglett
+Four Ponyta
+Fourteen Fighting Energy
+Fourteen Fire Energy
+The video below is an opening of the 2-Player Starter Set.
+Blackout
+Blackout featured cards in the fighting and water typing, the holographic foil card inside was a Hitmonchan. In addition to the cards listed below, there was also a rulebook, damage counters, a Chansey coin, and a card checklist found inside.
+One Hitmonchan
+Four Energy Removal
+One Gust of Wind
+One Professor Oak
+One Plus Power
+One Super Energy Removal
+Four Machop
+Two Machoke
+Two Farfetch’d
+Two Wartortle
+Four Squirtle
+Four Staryu
+Three Onix
+Three Sandshrew
+Sixteen Water Energy
+Twelve Fighting Energy
+Here’s an unboxing video.
+Brushfire
+Brushfire featured cards in the fire and grass typing, the holographic foil card inside was a Ninetales. In addition to the cards listed below, there was also a rulebook, damage counters, a Chansey coin, and a card checklist found inside.
+One Ninetales
+Four Weedle
+Two Tangela
+Four Nidoran♂
+One Arcanine
+Two Growlithe
+Two Charmeleon
+Two Vulpix
+Four Charmander
+One Lass
+One PlusPower
+Two Energy Retrieval
+One Switch
+Three Potion
+One Gust of Wind
+Ten Grass Energy
+Eighteen Fire Energy
+Here’s a Brushfire theme deck, the video covers information we’ll discuss further in the article.
+Overgrowth
+Overgrowth featured cards in the grass and water typing, the holographic foil card inside was a Gyarados. In addition to the cards listed below, there was also a rulebook, damage counters, a Chansey coin, and a card checklist found inside.
+One Gyarados
+Two Magikarp
+Three Starmie
+Four Staryu
+One Beedrill
+Two Kakuna
+Two Ivysaur
+Four Weedle
+Four Bulbasaur
+One Potion
+Two Bill
+Two Super Potion
+Two Switch
+Two Gust of Wind
+Twelve Water Energy
+Sixteen Grass Energy
+Here’s an Overgrowth theme deck opening.
+Zap!
+Zap! featured cards in the lightning and psychic typing, the holographic foil card inside was a Mewtwo. In addition to the cards listed below, there was also a rulebook, damage counters, a Chansey coin, and a card checklist found inside.
+One Mewtwo
+One Kadabra
+Two Jynx
+Two Haunter
+Three Gastly
+Two Drowzee
+Three Abra
+Four Pikachu
+Three Magnemite
+One Computer Search
+One Defender
+One Super Potion
+One Professor Oak
+Two Switch
+One Potion
+Two Gust of Wind
+Two Bill
+Twelve Lightning Energy
+Sixteen Psychic Energy
+Here’s another theme deck opening by Rusty (TCA gaming). He again gives a preview to more information I’ll be discussing below.
+Card Variants Inside Theme Decks
+Inside theme deck you can get Shadowless, Unlimited, and 1999-2000 copyright date cards. The only 1st edition card you can find is Machap in the 2-Player Starter Set which can be found in both with and without a drop shadow. The theme decks are also where you can find some error cards, No Damage Ninetales, Ghost/Phantom Pikachu, and Sideways Fighting Symbol Diglett.
+Theme Deck Variants
+There are a lot of different variations to the theme decks that help determine which variants of cards might be found inside. When discussing the differences the 2-Player Starter Sets have more differences than the other four theme decks, so I’ll discuss that box separately later.
+The differences between the theme decks can be found in the pull strips, cards being stored on the top or bottom of the box, the artwork on the back of the box, and of course the copyright dates on the box. Let’s go over all these differences.
+The pull strips can come in three variations, either a vertical pull strip, a horizontal pull strip, and a gold-colored pull strip. It should be noted the gold-colored pull strip will always be horizontal.
+The cards stored inside the box can’t be seen unless the box is opened. However, you can feel the box and determine if the cards are stored at the top or bottom of the box. Once the box is opened you can see the difference that I’m talking about.
+You can rewatch this video to see this:
+The artwork of the cards on the back of the box that either feature:
+Grass Energy, Charmeleon, and Fire Energy – For Bushfire
+Grass Energy, Ivysaur, and Water Energy – For Overgrowth
+Fighting Energy, Onix, and Water Energy – For Blackout
+Lightning Energy, Pikachu, and Psychic Energy – For Zap!
+There are three different layouts these cards will take.
+You’ll either see the middle card in the in front of the two energy cards with damage counters featured in the artwork:
+You could see the middle card behind the energy cards with damage counters featured in the artwork:
+Or you can see the middle card again in front of the two energy cards but no damage counters in the artwork:
+The final variation within the boxes is their copyright date. If you’ve been following along with this article you can probably guess that it’ll either be copyright 1999 or 1999-2000.
+With all those different variations down, here’s a chart for all the combinations and what variant of cards can be found inside.
+Pull Strip
+Top/Bottom Stored
+Artwork
+Copyright
+Card Variants
+Gold
+Top
+Middle card in front with damage counters
+1999
+Shadowless only
+*For Zap! Theme Deck there is a chance of pulling a Ghost/Phantom Pikachu from this deck.
+*For Bushfire there is a chance of pulling a no damage Ninetales from this deck.
+Horizontal
+Top
+Middle card in front with damage counters
+1999
+Nearly 50/50 split on shadowless or unlimited
+Horizontal
+Bottom
+Middle card in front with damage counters
+1999
+About 1/4 will be shadowless the majority will be unlimited
+Vertical
+Bottom
+Middle card behind with damage counters
+1999
+About 1/4 will be shadowless the majority will be unlimited
+Horizontal
+Bottom
+Middle card behind with damage counters
+1999
+About 1/4 will be shadowless the majority will be unlimited
+Horizontal
+Bottom
+Middle card in front no damage counters
+1999
+Unlimited only
+Horizontal
+Bottom
+Middle card in front no damage counters
+1999-2000
+Almost all will be 1999-2000 it’s very rare to have unlimited. Except for the holographic foil card which is about 50/50 unlimited or 1999-2000
+Now we can talk about the 2-Player Starter Set. There are a bunch of variations on this box as well. There are differences in how the box opens, an asterisk or might not be present after the TM on the front, the back of the cards artwork has different cards, Pokemon is sometimes centered aligned on the back of the box and sometimes aligned left, the pull strip can be gold or clear, and the copyright dates could be 1999 or 1999-2000.
+The first variant I’ll discuss is the way the boxes can open. 2-Player Starter Sets boxes can either open from the top of the box or you’ll find one that opens up from the side.
+Here’s a video of a box that can be opened from the top
+Here is one of a box that opens from the side
+On the front of the box sometimes there’s an asterisk next to the TM for the Pokemon Logo.
+One of the biggest differences that helps determine what might be inside the box is the artwork on the back. You will either see the art feature Pokemon species or just energy cards. If it features Pokemon species the Pokemon cards on the back will be Fire Energy, Charmander, Rattata, a back image of a card, Potion, Machop, and a Fighting Energy the art with only energy cards shows one Pokemon card back and Grass, Fire, Water, Lightning, Psychic, and Fighting energy cards.
+On the back of some boxes, the Pokemon logo will either be centered aligned or aligned left.
+The pull strip on the box could either be gold or clear.
+The copyright date in 2-Player Starter Sets will either be © 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK, © 1999, © 1995, 96, 98 Nintendo, Creatures, GAMEFREAK, © 1999, or © 1995, 96, 98 Nintendo, Creatures, GAMEFREAK, © 1999-2000.
+For this guide, I will call the © 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK, © 1999 copyright Shadowless.
+The © 1995, 96, 98 Nintendo, Creatures, GAMEFREAK, ©1999 will be referred to as 1999.
+© 1995, 96, 98 Nintendo, Creatures, GAMEFREAK, © 1999-2000 will be referred to as 1999-2000.
+*Please note the guides referenced names is so I don’t have to type out each copyright date and can instead refer to them by my given name. This will come in handy for my table below.*
+The final change can’t be shown through an image without opening the box. The cards inside the box could either be loaded on towards the top of the box or the bottom, much like the other theme decks.
+Now for the part where I give you the chart for all the combinations and what variant of cards can be found inside.
+Pull Strip
+Open Top or Bottom
+Asterisk
+Back Box Art
+Pokemon Logo Centered or Left Aligned
+Copyright
+Top or Bottom Stored
+Card Variants
+Gold
+Side
+No
+Energy Cards
+Centered
+Shadowless
+Top
+Shadowless
+Clear
+Side
+No
+Energy Cards
+Centered
+Shadowless
+Top
+Shadowless
+Clear
+Side
+No
+Energy Cards
+Centered
+Shadowless
+Bottom
+About 1/4 will be shadowless the majority will be unlimited
+Clear
+Side
+No
+Energy Cards
+Centered
+1999
+Bottom
+Unlimited
+*has Diglett sideways fighting symbol error card
+Clear
+Side
+Yes
+Energy Cards
+Centered
+1999
+Bottom
+Unlimited
+*has Diglett sideways fighting symbol error card
+Clear
+Side
+No
+Energy Cards
+Left
+1999
+Bottom
+Unlimited
+Clear
+Side
+Yes
+Energy Cards
+Left
+1999
+Bottom
+Unlimited
+Clear
+Top
+No
+Pokemon Species
+Left
+1999
+Bottom
+Unlimited
+Clear
+Top
+Yes
+Pokemon Species
+Left
+1999
+Bottom
+Unlimited
+Clear
+Top
+No
+Pokemon Species
+Left
+1999-2000
+Bottom
+1999-2000 (Machamp 50/50 unlimited or 1999-2000)
+Clear
+Top
+Yes
+Pokemon Species
+Left
+1999-2000
+Bottom
+1999-2000 (Machamp 50/50 unlimited or 1999-2000)
+Trainer Decks
+Trainer Decks have two versions, Trainer Deck A Brock’s Deck and Trainer Deck B Misty’s Deck.
+These Decks were not intended for public release and even say on them “Not For Resale”.
+What’s interesting about the decks is they say for Pewter City Season and Cerulean City Season on them and on the back, they mention they will be used “season to season”. I’m not sure, but I’m guessing Wizards of the Coast had the intention of releasing many of these trainer decks for Pokemon Leagues but that changed for unknown reasons.
+I mentioned in my other guide, The exception guide to everything base set , Trainer Deck As were the main deck to get used for its original intention. Trainer Deck Bs, on the other hand, was unknown Pokemon collectors for years.
+Unsurprisingly, I was unable to find a Trainer Deck A opening, and I refuse to open my own, but I did find an old video of a B deck opening.
+Gift Box
+The Starter Gift Set is a larger box that holds two theme decks a Jungle Set booster pack, a play mat with deck building tips on the reverse, and an Eevee coin.
+One theme deck will be the 2-Player Starter Set I mentioned above, the other theme deck will be a Jungle set theme deck, either Power Reserve or Water Blast.
+Here’s a deck opening.
+UK Promotional Gift Box
+Another product produced was a 1999 UK Promotional Box. I believe these were intended for European distribution, but information on this item is hard to come by. It is very rare and was never intended for resale.
+Inside this box is:
+Three Base Set Booster Packs
+A 2-Player Starter Set
+One Window Poster
+A Promotional Booklet
+The booklet is essentially a sales pitch to whoever opens the box. I’ve attached scans below so you may see the pages yourself.
+Here is a scan of the window sticker.
+Japanese Base Set
+Booster Packs
+Starter Decks
+Gift Box
+Booster Packs
+Japanese booster packs have 10 cards inside them; one rare, five commons, and three uncommon cards. The rare that gets pulled has a 50/50 chance of being either a holographic foil rare or a regular rare. Energy cards, except double colorless energy, weren’t available through the booster packs.
+Japanese booster packs come in three versions. A short pack where the seals at the top were sealed horizontally. These short packs were the first released booster packs, they’re speculated to sometimes contain No Rarity cards. It’s still very unlikely to open a booster pack containing No Rarity cards considering how limited the No Rarity print was.
+All short packs have the 291円 price printed on them. There’s a long booster pack with 291円 price the difference between the short pack and long is the seals on the top and the bottom being vertical with short and a more textured seal for the long. There’s also a hang tab, which is the main reason for the production change.
+The final booster pack is the long pack with 300円 printed on them. This change was needed due to a tax increase from 3% to 5% in Japan which went into effect April 1, 1997.
+Here’s an opening video if you enjoy those.
+Starter Deck
+Japanese starter decks contain 60 cards, a guide book, and a Chansey coin. The cards inside were random but contained the following:
+One holographic foil
+One regular rare
+Eight uncommon
+Twenty commons
+Five of each basic energy (thirty total basic energy cards)
+There are four versions of starter decks, but only two differences can be viewed, due to their postal code change that happened on February 2nd, 1998. The first postcode used was 104-01, which can be viewed on the side of the deck box. When the postcode changed it became 104-0061.
+The other difference between the decks is the rulebooks. There were four changes to the rulebook, but it’s unknown exactly which book is inside till the decks are open. A 104-04 postcode can have either a 1st edition rulebook or a 2nd edition. The 104-0061 postcode box will have the 3rd or 4th edition rulebook.
+The cards inside are most likely going to be unlimited, but in the event of a 104-04 postcode box with the 1st edition rulebook, you have a very slight chance of pulling no rarity cards.
+Here’s a video showing this.
+1996 Gold Gift Box
+The final product exclusively for Japan we’ll talk about was the rare 1996 Gold Gift box. First released on December 12th, 1996, there was very little sales of this gift box. Pokemon card sales started out slow in Japan and finding this box even opened is extremely challenging.
+This gift box personally took me many years to locate a sealed one, and I haven’t seen another one since. Inside is the first print Asobikata Magazine ( Easily Understand How to Play Pokémon Cards Magazine ). A playmat, damage counters, poison markers, and two starter decks.
+The starter decks inside are 104-01 postcode decks with 1st edition rulebooks. The decks inside are the correct boxes to pull no rarity cards; however, it’s not likely to pull no rarity cards out of them.
+Thank You
+Thank you for taking the time to read this guide! I hope it has provided valuable insights into the Pokémon Base Set. If you found this information useful, feel free to share it with others who may also be interested in learning more about Pokémon cards. Should you spot any corrections that need to be made, please reach out to me via the contact page. Also, be sure to check out my other guides, as I put a lot of effort into creating comprehensive and informative content.
+About
+Poke Master Center is a trusted company in the Pokemon Community. Giovanni has been collecting since 1998 and loves restoring cards from our childhood. We sell thousands of raw, graded, and sealed products every year. We've created a group of restoration experts to curate tools, kits, and guides for others to learn. Browse our site for kits, tools, or just free knowledge. If you're looking for cards, check out our eBay which has tons of great listings.
+Contact
+[email protected]
+(702) 850-0466‬
+Newsletter
+Sign up for our Pokemon Card Restoration Newsletter to receive tips, updates, and more.
+Email
+Please wait...
+Subscribe
+Thank you for sign up trainer! Stay locked in to your inbox for our monthly newsletter.
+Learn More
+Join the Patreon to learn more about Card Restoration.
+Visit CardConservation.com for more detailed restoration methods, tools, & guides.
+Cardboard Alchemists Podcast
+Card Restoration Tools
+Wiki
+Privacy Policy
+Return Policy
+Contact Us
+Legal
+Safety Data Sheets
+Facebook
+X
+Instagram
+RSS
+Poke Master Center - OVERMIND LLC - A Nevada Limited Liability Company · Card care supplies by Gem Card Care

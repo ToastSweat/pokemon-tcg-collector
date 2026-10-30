@@ -1,0 +1,1313 @@
+{
+  "requested_url": "https://bulbapedia.bulbagarden.net/wiki/Base_Set_(TCG)",
+  "final_url": "https://bulbapedia.bulbagarden.net/wiki/Base_Set_(TCG)",
+  "status": 200,
+  "title": "Base Set (TCG) - Bulbapedia, the community-driven Pokémon encyclopedia",
+  "accessed": "2026-10-30T12:16:00.151930-05:00",
+  "content_type": "text/html; charset=UTF-8"
+}
+
+Base Set (TCG) - Bulbapedia, the community-driven Pokémon encyclopedia
+Open search input
+Notifications
+Main navigation
+Close search input
+Bulbapedia
+News
+Forums
+Socials
+More
+Editors
+Account
+Search
+Current Events
+TCG Pocket
+Games
+Animation
+Manga
+Trading Card Game
+Pokédex
+Characters
+Items
+World
+Walkthroughs
+Socials
+YouTube
+Twitch
+X (Twitter)
+Facebook
+Instagram
+Tumblr
+Mastodon
+Apps
+Android
+iOS
+Bulbapedia
+Getting started
+Bulletin board
+Help
+FAQ
+Bulbawiki forum
+Recent changes
+Random page
+Special pages
+Archives
+Main page
+FAQ
+To-do list
+Upload file
+Recent changes
+Recent uploads
+Random file
+Bulbapedia login
+Forum login
+New Accounts
+Create Bulbapedia Account
+Create Forum Account
+Main navigation
+News
+Forums
+Socials
+More
+Editors
+Account
+Current Events
+TCG Pocket
+Games
+Animation
+Manga
+Trading Card Game
+Pokédex
+Characters
+Items
+World
+Walkthroughs
+Back
+Socials
+YouTube
+Twitch
+X (Twitter)
+Facebook
+Instagram
+Tumblr
+Mastodon
+Back
+Apps
+Android
+iOS
+Back
+Bulbapedia
+Getting started
+Bulletin board
+Help
+FAQ
+Bulbawiki forum
+Recent changes
+Random page
+Special pages
+Archives
+Main page
+FAQ
+To-do list
+Upload file
+Recent changes
+Recent uploads
+Random file
+Back
+Bulbapedia login
+Forum login
+New Accounts
+Create Bulbapedia Account
+Create Forum Account
+Contents
+Namespaces
+Article
+Discussion
+Views
+Read
+View source
+View history
+More
+Views
+Read
+View source
+View history
+Actions
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Printable version
+Permanent link
+Page information
+Cite this page
+Base Set (TCG)
+6 Languages
+Deutsch
+Español
+Français
+Italiano
+日本語
+中文
+TCG expansions
+Jungle →
+Base Set
+拡張パック
+Cards in set
+English: 102
+Japanese: 102
+Set number
+English: 1
+Japanese: 1
+Release date
+English: January 9, 1999
+Japanese: October 20, 1996
+Theme Decks
+Overgrowth ( )
+Zap! ( )
+Brushfire ( )
+Blackout ( )
+Previous
+None Previous
+[[(TCG)|]]
+Japanese:
+Expansion Pack
+Next
+Pokémon Jungle
+Base Set (Japanese: ポケットモンスター カードゲーム 第1弾 Pokémon Card Game Volume 1 ) is the name given to the first main expansion of cards of the Pokémon Trading Card Game . The set features Pokémon from Generation I . It is commonly referred to in Japanese sources as Expansion Pack (Japanese: 拡張パック Expansion Pack ), after one of its primary distribution products.
+Contents
+Hide
+Close table of contents
+(Return to top)
+Blurb
+Information
+Set lists
+Gallery
+Languages this set is released in
+In other languages
+External links
+References
+Blurb
+Put the power in your hand with the Pokémon trading card game!
+The hugely successful Pokémon Game Boy® game was just the beginning of the Pokémon phenomenon. Now, with the trading card game, you can train your favorite Pokémon to pit them against a rival's Pokémon in a fight to the finish! Increase their powers with Energy, and your Pokémon will launch the special attacks you've seen in the popular Pokémon animated TV show!
+Choose your favorite Pokémon from the random cards in this booster pack to customize a Pokémon theme deck or starter set. Or design your own undefeatable deck by combining prized Pokémon and trainers. The possibilities are endless!
+Do you have the skills to become the world's number-one Pokémon Master? Master the Pokémon trading card game and find out!
+Information
+An advertisement for the Base Set
+Base Set is the name given to the first main expansion of the Pokémon Trading Card Game . In Japan, it was released as a starter deck ( Starter Pack , スターターパック) alongside separately purchasable Base Set packs ( Expansion Pack , 拡張パック) [ 1 ] [ 2 ] . The Base Set was promoted through the giveaway of the first TCG cards, a Pikachu and Jigglypuff promo that were peeled from a CoroCoro magazine 5 days ahead of the main release. The promos were advertised to be collected alongside the main set, making CoroCoro readers feel that they had already started the collection [ 2 ] . The Base Set is based on Pokémon Red, Blue , and Green , featuring Generation I Pokémon. The English expansion was released on January 9, 1999, while the Japanese expansion was released on October 20, 1996.
+The English release are ordered by card type (Pokémon, Trainer, and Energy cards), then by rarity (Rare Holo, Rare, Uncommon, Common), lastly, alphabetically by card name. The Japanese release are ordered by the types first, then ascending rarity (Rare and Rare Holo are considered the same), then National Pokédex number, followed by Trainer and Energy cards.
+Additional cards
+No.
+Image
+Card name
+Type
+Rarity
+Promotion
+2/102
+Blastoise
+—
+Celebrations Classic Collection " Pokémon 25th Anniversary " Stamp Holofoil reprint
+4/102
+Charizard
+—
+Celebrations Classic Collection " Pokémon 25th Anniversary " Stamp Holofoil reprint
+4/102
+Charizard [Metal]
+—
+Celebrations Ultra-Premium Collection metal card reprint
+4/102
+Charizard
+—
+30th Celebration Classic Collection " Pokémon 30th Anniversary " Stamp Holofoil reprint
+8/102
+Machamp
+—
+Cosmos Holo 2-Player CD-ROM Starter Set exclusive
+15/102
+Venusaur
+—
+Celebrations Classic Collection " Pokémon 25th Anniversary " Stamp Holofoil reprint
+44/102
+Bulbasaur [Jumbo]
+—
+Kanto First Partner Pack
+46/102
+Charmander [Jumbo]
+—
+Kanto First Partner Pack
+58/102
+Pikachu
+—
+Red Cheeks Original Print
+58/102
+Pikachu
+—
+"Red Cheek" E3 Stamp - E3 Convention (May 1999)
+58/102
+Pikachu
+—
+"Yellow Cheek" E3 Stamp - Nintendo Power Magazine (September 1999)
+58/102
+Pikachu
+—
+"PokéTour 1999" Stamp - PokéTour 1999 (Australia)
+58/102
+Pikachu [Jumbo]
+—
+First Partner Collector's Binder
+58/102
+Pikachu [Metal]
+—
+Celebrations Ultra-Premium Collection metal card reprint
+63/102
+Squirtle [Jumbo]
+—
+Kanto First Partner Pack
+73/102
+Imposter Professor Oak
+T
+—
+Celebrations Classic Collection " Pokémon 25th Anniversary " Stamp Holofoil reprint
+Corrected error cards
+No.
+Image
+Card name
+Type
+Rarity
+Promotion
+2/102
+Blastoise
+—
+Printed without the word "Stage"
+12/102
+Ninetales
+—
+Shadowless Ninetales missing attack damage
+14/102
+Raichu
+—
+Pre-release stamp
+17/102
+Beedrill
+—
+"D.efending" typo
+42/102
+Wartortle
+—
+Wartortle in its Evolution box
+47/102
+Diglett
+—
+Attack energy cost symbols rotated 90 degrees
+58/102
+Pikachu
+—
+"1st“ and the letter "d“ in " 1st edition " missing
+102/102
+Water Energy
+—
+No space between the margin and the water symbol, along with "ENERGY"
+Set lists
+Base Set
+No.
+Image
+Card name
+Type
+Rarity
+Promotion
+1/102
+Alakazam
+Promotion
+2/102
+Blastoise
+Promotion
+3/102
+Chansey
+Promotion
+4/102
+Charizard
+Promotion
+5/102
+Clefairy
+Promotion
+6/102
+Gyarados
+Promotion
+7/102
+Hitmonchan
+Promotion
+8/102
+Machamp
+Promotion
+9/102
+Magneton
+Promotion
+10/102
+Mewtwo
+Promotion
+11/102
+Nidoking
+Promotion
+12/102
+Ninetales
+Promotion
+13/102
+Poliwrath
+Promotion
+14/102
+Raichu
+Promotion
+15/102
+Venusaur
+Promotion
+16/102
+Zapdos
+Promotion
+17/102
+Beedrill
+Promotion
+18/102
+Dragonair
+Promotion
+19/102
+Dugtrio
+Promotion
+20/102
+Electabuzz
+Promotion
+21/102
+Electrode
+Promotion
+22/102
+Pidgeotto
+Promotion
+23/102
+Arcanine
+Promotion
+24/102
+Charmeleon
+Promotion
+25/102
+Dewgong
+Promotion
+26/102
+Dratini
+Promotion
+27/102
+Farfetch'd
+Promotion
+28/102
+Growlithe
+Promotion
+29/102
+Haunter
+Promotion
+30/102
+Ivysaur
+Promotion
+31/102
+Jynx
+Promotion
+32/102
+Kadabra
+Promotion
+33/102
+Kakuna
+Promotion
+34/102
+Machoke
+Promotion
+35/102
+Magikarp
+Promotion
+36/102
+Magmar
+Promotion
+37/102
+Nidorino
+Promotion
+38/102
+Poliwhirl
+Promotion
+39/102
+Porygon
+Promotion
+40/102
+Raticate
+Promotion
+41/102
+Seel
+Promotion
+42/102
+Wartortle
+Promotion
+43/102
+Abra
+Promotion
+44/102
+Bulbasaur
+Promotion
+45/102
+Caterpie
+Promotion
+46/102
+Charmander
+Promotion
+47/102
+Diglett
+Promotion
+48/102
+Doduo
+Promotion
+49/102
+Drowzee
+Promotion
+50/102
+Gastly
+Promotion
+51/102
+Koffing
+Promotion
+52/102
+Machop
+Promotion
+53/102
+Magnemite
+Promotion
+54/102
+Metapod
+Promotion
+55/102
+Nidoran♂
+Promotion
+56/102
+Onix
+Promotion
+57/102
+Pidgey
+Promotion
+58/102
+Pikachu
+Promotion
+59/102
+Poliwag
+Promotion
+60/102
+Ponyta
+Promotion
+61/102
+Rattata
+Promotion
+62/102
+Sandshrew
+Promotion
+63/102
+Squirtle
+Promotion
+64/102
+Starmie
+Promotion
+65/102
+Staryu
+Promotion
+66/102
+Tangela
+Promotion
+67/102
+Voltorb
+Promotion
+68/102
+Vulpix
+Promotion
+69/102
+Weedle
+Promotion
+70/102
+Clefairy Doll
+T
+Promotion
+71/102
+Computer Search
+T
+Promotion
+72/102
+Devolution Spray
+T
+Promotion
+73/102
+Imposter Professor Oak
+T
+Promotion
+74/102
+Item Finder
+T
+Promotion
+75/102
+Lass
+T
+Promotion
+76/102
+Pokémon Breeder
+T
+Promotion
+77/102
+Pokémon Trader
+T
+Promotion
+78/102
+Scoop Up
+T
+Promotion
+79/102
+Super Energy Removal
+T
+Promotion
+80/102
+Defender
+T
+Promotion
+81/102
+Energy Retrieval
+T
+Promotion
+82/102
+Full Heal
+T
+Promotion
+83/102
+Maintenance
+T
+Promotion
+84/102
+PlusPower
+T
+Promotion
+85/102
+Pokémon Center
+T
+Promotion
+86/102
+Pokémon Flute
+T
+Promotion
+87/102
+Pokédex
+T
+Promotion
+88/102
+Professor Oak
+T
+Promotion
+89/102
+Revive
+T
+Promotion
+90/102
+Super Potion
+T
+Promotion
+91/102
+Bill
+T
+Promotion
+92/102
+Energy Removal
+T
+Promotion
+93/102
+Gust of Wind
+T
+Promotion
+94/102
+Potion
+T
+Promotion
+95/102
+Switch
+T
+Promotion
+96/102
+Double Colorless Energy
+E
+Promotion
+97/102
+Fighting Energy
+E
+—
+Promotion
+98/102
+Fire Energy
+E
+—
+Promotion
+99/102
+Grass Energy
+E
+—
+Promotion
+100/102
+Lightning Energy
+E
+—
+Promotion
+101/102
+Psychic Energy
+E
+—
+Promotion
+102/102
+Water Energy
+E
+—
+Promotion
+Expansion Pack
+No.
+Image
+Card name
+Type
+Rarity
+Promotion
+—
+Bulbasaur
+Promotion
+—
+Caterpie
+Promotion
+—
+Metapod
+Promotion
+—
+Weedle
+Promotion
+—
+Nidoran♂
+Promotion
+—
+Koffing
+Promotion
+—
+Tangela
+Promotion
+—
+Ivysaur
+Promotion
+—
+Kakuna
+Promotion
+—
+Nidorino
+Promotion
+—
+Venusaur
+Promotion
+—
+Beedrill
+Promotion
+—
+Nidoking
+Promotion
+—
+Charmander
+Promotion
+—
+Vulpix
+Promotion
+—
+Ponyta
+Promotion
+—
+Charmeleon
+Promotion
+—
+Growlithe
+Promotion
+—
+Arcanine
+Promotion
+—
+Magmar
+Promotion
+—
+Charizard
+Promotion
+—
+Ninetales
+Promotion
+—
+Squirtle
+Promotion
+—
+Poliwag
+Promotion
+—
+Staryu
+Promotion
+—
+Starmie
+Promotion
+—
+Wartortle
+Promotion
+—
+Poliwhirl
+Promotion
+—
+Seel
+Promotion
+—
+Dewgong
+Promotion
+—
+Magikarp
+Promotion
+—
+Blastoise
+Promotion
+—
+Poliwrath
+Promotion
+—
+Gyarados
+Promotion
+—
+Pikachu
+Promotion
+—
+Magnemite
+Promotion
+—
+Voltorb
+Promotion
+—
+Raichu
+Promotion
+—
+Magneton
+Promotion
+—
+Electrode
+Promotion
+—
+Electabuzz
+Promotion
+—
+Zapdos
+Promotion
+—
+Abra
+Promotion
+—
+Gastly
+Promotion
+—
+Drowzee
+Promotion
+—
+Kadabra
+Promotion
+—
+Haunter
+Promotion
+—
+Jynx
+Promotion
+—
+Alakazam
+Promotion
+—
+Mewtwo
+Promotion
+—
+Sandshrew
+Promotion
+—
+Diglett
+Promotion
+—
+Machop
+Promotion
+—
+Onix
+Promotion
+—
+Machoke
+Promotion
+—
+Dugtrio
+Promotion
+—
+Machamp
+Promotion
+—
+Hitmonchan
+Promotion
+—
+Pidgey
+Promotion
+—
+Rattata
+Promotion
+—
+Doduo
+Promotion
+—
+Raticate
+Promotion
+—
+Farfetch'd
+Promotion
+—
+Porygon
+Promotion
+—
+Dratini
+Promotion
+—
+Pidgeotto
+Promotion
+—
+Clefairy
+Promotion
+—
+Chansey
+Promotion
+—
+Dragonair
+Promotion
+—
+Energy Removal
+T
+Promotion
+—
+Potion
+T
+Promotion
+—
+Gust of Wind
+T
+Promotion
+—
+Switch
+T
+Promotion
+—
+Bill
+T
+Promotion
+—
+Super Potion
+T
+Promotion
+—
+Energy Retrieval
+T
+Promotion
+—
+Professor Oak
+T
+Promotion
+—
+Revive
+T
+Promotion
+—
+Defender
+T
+Promotion
+—
+Full Heal
+T
+Promotion
+—
+PlusPower
+T
+Promotion
+—
+Pokédex
+T
+Promotion
+—
+Pokémon Center
+T
+Promotion
+—
+Pokémon Flute
+T
+Promotion
+—
+Maintenance
+T
+Promotion
+—
+Devolution Spray
+T
+Promotion
+—
+Item Finder
+T
+Promotion
+—
+Super Energy Removal
+T
+Promotion
+—
+Impostor Professor Oak
+T
+Promotion
+—
+Computer Search
+T
+Promotion
+—
+Clefairy Doll
+T
+Promotion
+—
+Scoop Up
+T
+Promotion
+—
+Pokémon Trader
+T
+Promotion
+—
+Pokémon Breeder
+T
+Promotion
+—
+Lass
+T
+Promotion
+—
+Double Colorless Energy
+E
+Promotion
+—
+Grass Energy
+E
+—
+Promotion
+—
+Fire Energy
+E
+—
+Promotion
+—
+Water Energy
+E
+—
+Promotion
+—
+Lightning Energy
+E
+—
+Promotion
+—
+Psychic Energy
+E
+—
+Promotion
+—
+Fighting Energy
+E
+—
+Promotion
+Gallery
+English
+English Venusaur pack (Shadowless)
+English Charizard pack (Shadowless)
+English Blastoise pack (Shadowless)
+[[File:{{{image4}}}|170px|center]]
+{{{caption4}}}
+English Venusaur pack (Unlimited)
+English Charizard pack (Unlimited)
+English Blastoise pack (Unlimited)
+[[File:{{{image8}}}|170px|center]]
+{{{caption8}}}
+English Venusaur pack (Long pack)
+English Charizard pack (Long pack)
+English Blastoise pack (Long pack)
+[[File:{{{image12}}}|170px|center]]
+{{{caption12}}}
+[[File:{{{image13}}}|170px|center]]
+{{{caption13}}}
+[[File:{{{image14}}}|170px|center]]
+{{{caption14}}}
+[[File:{{{image15}}}|170px|center]]
+{{{caption15}}}
+[[File:{{{image16}}}|170px|center]]
+{{{caption16}}}
+[[File:{{{image17}}}|170px|center]]
+{{{caption17}}}
+[[File:{{{image18}}}|170px|center]]
+{{{caption18}}}
+[[File:{{{image19}}}|170px|center]]
+{{{caption19}}}
+[[File:{{{image20}}}|170px|center]]
+{{{caption20}}}
+English Base Set booster box
+[[File:{{{image2}}}|170px|center]]
+{{{caption2}}}
+[[File:{{{image3}}}|170px|center]]
+{{{caption3}}}
+[[File:{{{image4}}}|170px|center]]
+{{{caption4}}}
+[[File:{{{image5}}}|170px|center]]
+{{{caption5}}}
+[[File:{{{image6}}}|170px|center]]
+{{{caption6}}}
+[[File:{{{image7}}}|170px|center]]
+{{{caption7}}}
+[[File:{{{image8}}}|170px|center]]
+{{{caption8}}}
+[[File:{{{image9}}}|170px|center]]
+{{{caption9}}}
+[[File:{{{image10}}}|170px|center]]
+{{{caption10}}}
+[[File:{{{image11}}}|170px|center]]
+{{{caption11}}}
+[[File:{{{image12}}}|170px|center]]
+{{{caption12}}}
+[[File:{{{image13}}}|170px|center]]
+{{{caption13}}}
+[[File:{{{image14}}}|170px|center]]
+{{{caption14}}}
+[[File:{{{image15}}}|170px|center]]
+{{{caption15}}}
+[[File:{{{image16}}}|170px|center]]
+{{{caption16}}}
+[[File:{{{image17}}}|170px|center]]
+{{{caption17}}}
+[[File:{{{image18}}}|170px|center]]
+{{{caption18}}}
+[[File:{{{image19}}}|170px|center]]
+{{{caption19}}}
+[[File:{{{image20}}}|170px|center]]
+{{{caption20}}}
+Japanese
+The pack artwork for Expansion Pack was illustrated by Mitsuhiro Arita . [ 3 ]
+Japanese Expansion Pack pack
+Artwork
+[[File:{{{image3}}}|170px|center]]
+{{{caption3}}}
+[[File:{{{image4}}}|170px|center]]
+{{{caption4}}}
+[[File:{{{image5}}}|170px|center]]
+{{{caption5}}}
+[[File:{{{image6}}}|170px|center]]
+{{{caption6}}}
+[[File:{{{image7}}}|170px|center]]
+{{{caption7}}}
+[[File:{{{image8}}}|170px|center]]
+{{{caption8}}}
+[[File:{{{image9}}}|170px|center]]
+{{{caption9}}}
+[[File:{{{image10}}}|170px|center]]
+{{{caption10}}}
+[[File:{{{image11}}}|170px|center]]
+{{{caption11}}}
+[[File:{{{image12}}}|170px|center]]
+{{{caption12}}}
+[[File:{{{image13}}}|170px|center]]
+{{{caption13}}}
+[[File:{{{image14}}}|170px|center]]
+{{{caption14}}}
+[[File:{{{image15}}}|170px|center]]
+{{{caption15}}}
+[[File:{{{image16}}}|170px|center]]
+{{{caption16}}}
+[[File:{{{image17}}}|170px|center]]
+{{{caption17}}}
+[[File:{{{image18}}}|170px|center]]
+{{{caption18}}}
+[[File:{{{image19}}}|170px|center]]
+{{{caption19}}}
+[[File:{{{image20}}}|170px|center]]
+{{{caption20}}}
+In other languages
+German Venusaur pack
+German Charizard pack
+German Blastoise pack
+[[File:{{{image4}}}|170px|center]]
+{{{caption4}}}
+Spanish Venusaur pack
+Spanish Charizard pack
+Spanish Blastoise pack
+[[File:{{{image8}}}|170px|center]]
+{{{caption8}}}
+French Venusaur pack
+French Charizard pack
+French Blastoise pack
+[[File:{{{image12}}}|170px|center]]
+{{{caption12}}}
+[[File:{{{image13}}}|170px|center]]
+{{{caption13}}}
+[[File:{{{image14}}}|170px|center]]
+{{{caption14}}}
+[[File:{{{image15}}}|170px|center]]
+{{{caption15}}}
+[[File:{{{image16}}}|170px|center]]
+{{{caption16}}}
+[[File:{{{image17}}}|170px|center]]
+{{{caption17}}}
+[[File:{{{image18}}}|170px|center]]
+{{{caption18}}}
+[[File:{{{image19}}}|170px|center]]
+{{{caption19}}}
+[[File:{{{image20}}}|170px|center]]
+{{{caption20}}}
+Italian Venusaur pack
+Italian Charizard pack
+Italian Blastoise pack
+[[File:{{{image4}}}|170px|center]]
+{{{caption4}}}
+Brazilian Venusaur pack
+Brazilian Charizard pack
+Brazilian Blastoise pack
+[[File:{{{image8}}}|170px|center]]
+{{{caption8}}}
+[[File:{{{image9}}}|170px|center]]
+{{{caption9}}}
+[[File:{{{image10}}}|170px|center]]
+{{{caption10}}}
+[[File:{{{image11}}}|170px|center]]
+{{{caption11}}}
+[[File:{{{image12}}}|170px|center]]
+{{{caption12}}}
+[[File:{{{image13}}}|170px|center]]
+{{{caption13}}}
+[[File:{{{image14}}}|170px|center]]
+{{{caption14}}}
+[[File:{{{image15}}}|170px|center]]
+{{{caption15}}}
+[[File:{{{image16}}}|170px|center]]
+{{{caption16}}}
+[[File:{{{image17}}}|170px|center]]
+{{{caption17}}}
+[[File:{{{image18}}}|170px|center]]
+{{{caption18}}}
+[[File:{{{image19}}}|170px|center]]
+{{{caption19}}}
+[[File:{{{image20}}}|170px|center]]
+{{{caption20}}}
+Korean Venusaur pack
+Korean Charizard pack
+Korean Blastoise pack
+[[File:{{{image4}}}|170px|center]]
+{{{caption4}}}
+Chinese Venusaur pack
+Chinese Charizard pack
+Chinese Blastoise pack
+[[File:{{{image8}}}|170px|center]]
+{{{caption8}}}
+[[File:{{{image9}}}|170px|center]]
+{{{caption9}}}
+[[File:{{{image10}}}|170px|center]]
+{{{caption10}}}
+[[File:{{{image11}}}|170px|center]]
+{{{caption11}}}
+[[File:{{{image12}}}|170px|center]]
+{{{caption12}}}
+[[File:{{{image13}}}|170px|center]]
+{{{caption13}}}
+[[File:{{{image14}}}|170px|center]]
+{{{caption14}}}
+[[File:{{{image15}}}|170px|center]]
+{{{caption15}}}
+[[File:{{{image16}}}|170px|center]]
+{{{caption16}}}
+[[File:{{{image17}}}|170px|center]]
+{{{caption17}}}
+[[File:{{{image18}}}|170px|center]]
+{{{caption18}}}
+[[File:{{{image19}}}|170px|center]]
+{{{caption19}}}
+[[File:{{{image20}}}|170px|center]]
+{{{caption20}}}
+Languages this set is released in
+The Expansion Pack is released in Japanese, of which all cards are available both with and without rarity symbol. The set without rarity symbols is believed to be the earlier or "1st Edition" print run as it contained errors that were later corrected (such as Venusaur being incorrectly printed as Pokemon #68 instead of #3). It is commonly referred to as No Rarity Base Set.
+The Base Set was released in English, Dutch, German, French, Italian, Spanish, Portuguese, Korean, and Chinese, with most languages receiving both 1st Edition and Unlimited print runs. The English release consists of four distinct print runs:
+Japanese, 1st Edition, Shadowless, Unlimited, Unlimited (©1999–2000)
+1st Edition (Shadowless) – The first print run, featuring the 1st Edition stamp, thinner HP and attack text, and no drop shadow around the illustration window.
+Shadowless – The second print run, identical to the 1st Edition print except for the absence of the 1st Edition stamp. It also features thinner HP and attack text and lacks the illustration drop shadow.
+Unlimited – The third print run, introducing the drop shadow around the illustration window and thicker HP and attack text.
+Unlimited (©1999–2000) – The fourth print run, identical to the Unlimited print except for the updated copyright line, which reads ©1999–2000 instead of ©1999 .
+The English 1st Edition Holofoil cards can be further distinguished between thin stamp and thick stamp variants, referring to the width of the numeral "1" in the 1st Edition stamp.
+A non-English 1st Edition lacking the Shadowless treatment.
+Unlike the English release, 1st Edition prints in other languages were not produced using the Shadowless layout. Instead, they feature the same card design as their respective Unlimited prints, including the drop shadow around the illustration window and the thicker HP and attack text, with the only distinguishing feature being the presence of the 1st Edition stamp.
+The Spanish release also has unique print variations. Non-Holo cards from both the 1st Edition and Unlimited print runs were printed with either a ©1999 or ©1999–2000 copyright line. Cards with the ©1999 copyright date were released in Spain, while those with the ©1999–2000 copyright date were distributed in Latin America. Spanish Holofoil Rare cards were only printed with the ©1999 copyright date.
+In 2020, it was revealed that the first card test printed for the English Pokémon Trading Card Game was Blastoise , bearing the unique test print identifier 009/165R . Five prototype versions of the card were produced before the final Base Set design was adopted: one featuring a black border similar to those used on Magic: The Gathering cards, followed by four yellow-bordered variants that experimented with different card layouts.
+In other languages
+Language
+Title
+Chinese
+Cantonese
+基础版 Gēichó Báan
+Mandarin
+基础版 Jīchǔ Bǎn
+Dutch
+Basis Set
+French
+Set de Base
+German
+Grundset
+Italian
+Set Base
+Brazilian Portuguese
+Coleção Básica
+Russian
+Базовое Расширение Bazovoye Rasshireniye
+Spanish
+Edición Básica
+External links
+Set checklist (Archive)
+References
+↑
+Page 32 of the December 1996 monthly CoroCoro comic. The base set itself was just called Volume 1. The cards were found in a deck called "Starter Pack" and in packs called "Expansion Pack" which was named as such because more cards could be found from the packs. Relevant translations in the December 1996 ad for the base set:
+Top banner, in gold:
+ポケモンカードシリーズ第1弾 – Pokémon Card Series Volume 1
+Large red letters just below it:
+ポケットモンスター カードゲーム – Pocket Monsters Card Game
+To the left of the decks:
+スターターパック — "Starter Pack" [This is what the Starter Deck was called]
+Beneath the base set pack:
+拡張パック — "Expansion Pack" [This refers to the base set packs]
+↑ 2.0 2.1
+The Japanese base set poster included as a furoku in the December 1996 monthly CoroCoro comic. The heading of the poster invites readers to collect 全102枚＋2枚 cards: The 102 base set cards pictured and the 2 CoroCoro promos that readers already got for free in the previous month's issue.
+The base set is referred to as Pocket Monsters Card Series Volume 1 (ポケットモンスター カードゲーム 第1弾), consistent with the advert.
+↑ Bあの時の拡張パック、覚えてますか？～第4回 PTCG15th記念企画～ | PTCG Blog , archived Jan 15, 2012 on Internet Archive
+This article is part of Project TCG , a Bulbapedia project that aims to report on every aspect of the Pokémon Trading Card Game .
+Pokémon Trading Card Game expansions and releases
+Bold indicates a main expansion. Italics indicate a special set. Releases that are entirely composed of prints from other releases are small .
+Original Series
+Wizards Black Star Promos
+Demo Game • Trainer Deck A • Trainer Deck B
+Base Set : 2-Player Starter Set • Overgrowth • Zap! • Brushfire • Blackout
+Jungle : Power Reserve • Water Blast
+Fossil : BodyGuard • LockDown
+Base Set 2 : 2-Player CD-ROM Starter Set • Grass Chopper • Hot Water • Lightning Bug • Psych Out
+Team Rocket : Devastation • Trouble
+Gym Heroes : Brock • Misty • Lt. Surge • Erika
+Thunderstorm
+Pikachu World Collection
+Gym Challenge : Sabrina • Koga • Blaine • Giovanni
+Original Era
+Unnumbered Promotional cards
+Expansion Pack : Starter Deck
+Pokémon Jungle
+Mystery of the Fossils
+Rocket Gang
+Expansion Sheet 1 • Nivi City Gym • Hanada City Gym • Expansion Sheet 2 • Kuchiba City Gym • Tamamushi City Gym
+Leaders' Stadium
+Expansion Sheet 3 • Quick Starter Gift Set • Yamabuki City Gym • Guren Town Gym
+Challenge from the Darkness
+Southern Islands • Intro Pack
+Retrieved from " https://bulbapedia.bulbagarden.net/w/index.php?title=Base_Set_(TCG)&oldid=4635801 "
+Category
+Pokémon Trading Card Game expansions
+This page was last edited on 25 September 2026, at 22:49.
+Content is available under Attribution-NonCommercial-ShareAlike 2.5 . (see Copyrights for details)
+Privacy policy
+About Bulbapedia
+Disclaimers

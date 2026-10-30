@@ -1,0 +1,244 @@
+{
+  "verified_at": "2026-10-30T12:29:24.617816-05:00",
+  "primary_record_count": 102,
+  "independent_checklist_count": 102,
+  "number_coverage": "1-102, unique, no missing or extras",
+  "kind_counts": {
+    "Pokémon": 69,
+    "Trainer": 26,
+    "Energy": 7
+  },
+  "primary_rarity_counts": {
+    "Rare Holo": 16,
+    "Rare": 16,
+    "Uncommon": 32,
+    "Common": 32,
+    "OMITTED": 6
+  },
+  "primary_missing_rarity_numbers": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+  ],
+  "supplementary_record_count": 11,
+  "primary_independent_name_differences": [
+    {
+      "number": 55,
+      "primary": "Nidoran ♂",
+      "independent": "Nidoran M"
+    },
+    {
+      "number": 73,
+      "primary": "Impostor Professor Oak",
+      "independent": "Imposter Professor Oak"
+    },
+    {
+      "number": 76,
+      "primary": "Pokémon Breeder",
+      "independent": "Pokemon Breeder"
+    },
+    {
+      "number": 77,
+      "primary": "Pokémon Trader",
+      "independent": "Pokemon Trader"
+    },
+    {
+      "number": 85,
+      "primary": "Pokémon Center",
+      "independent": "Pokemon Center"
+    },
+    {
+      "number": 86,
+      "primary": "Pokémon Flute",
+      "independent": "Pokemon Flute"
+    },
+    {
+      "number": 87,
+      "primary": "Pokédex",
+      "independent": "Pokedex"
+    }
+  ],
+  "table_holo_count": 16,
+  "table_non_holo_count": 86,
+  "metadata_media_pricing_keys_absent": true,
+  "quote_checks": [
+    {
+      "label": "Catalog README",
+      "quote": "This repository contains the card data historically used by the",
+      "verified": true,
+      "evidence": "api-readme.txt"
+    },
+    {
+      "label": "Catalog README",
+      "quote": "The Pokémon TCG API is scheduled to be taken offline on March 1, 2027.",
+      "verified": true,
+      "evidence": "api-readme.txt"
+    },
+    {
+      "label": "API card schema",
+      "quote": "The supertype of the card, such as Pokémon, Energy, or Trainer.",
+      "verified": true,
+      "evidence": "api-card-docs.txt"
+    },
+    {
+      "label": "API card schema",
+      "quote": "The energy types for a card, such as Fire, Water, Grass, etc.",
+      "verified": true,
+      "evidence": "api-card-docs.txt"
+    },
+    {
+      "label": "API card schema",
+      "quote": "The legality ruling for Unlimited. Can be either Legal, Banned, or not present.",
+      "verified": true,
+      "evidence": "api-card-docs.txt"
+    },
+    {
+      "label": "Pokellector checklist",
+      "quote": "#1 - Alakazam",
+      "verified": true,
+      "evidence": "pokellector.txt"
+    },
+    {
+      "label": "Pokellector checklist",
+      "quote": "#8 - Machamp",
+      "verified": true,
+      "evidence": "pokellector.txt"
+    },
+    {
+      "label": "Pokellector checklist",
+      "quote": "#73 - Imposter Professor Oak",
+      "verified": true,
+      "evidence": "pokellector.txt"
+    },
+    {
+      "label": "Pokellector checklist",
+      "quote": "#102 - Water Energy",
+      "verified": true,
+      "evidence": "pokellector.txt"
+    },
+    {
+      "label": "Bulbapedia Base Set",
+      "quote": "The first print run, featuring the 1st Edition stamp, thinner HP and attack text, and no drop shadow around the illustration window.",
+      "verified": true,
+      "evidence": "bulbapedia-base-extracted.md"
+    },
+    {
+      "label": "Bulbapedia Base Set",
+      "quote": "The third print run, introducing the drop shadow around the illustration window and thicker HP and attack text.",
+      "verified": true,
+      "evidence": "bulbapedia-base-extracted.md"
+    },
+    {
+      "label": "Bulbapedia Base Set",
+      "quote": "The fourth print run, identical to the Unlimited print except for the updated copyright line, which reads ©1999–2000 instead of ©1999.",
+      "verified": true,
+      "evidence": "bulbapedia-base-extracted.md"
+    },
+    {
+      "label": "Relentless Dragon identification",
+      "quote": "note that shadows were only ever used on Pokémon themselves—trainer cards never had drop shadows",
+      "verified": true,
+      "evidence": "relentlessdragon-early.md"
+    },
+    {
+      "label": "Relentless Dragon identification",
+      "quote": "There were reportedly six separate printings of the Unlimited Edition of the",
+      "verified": true,
+      "evidence": "relentlessdragon-early.md"
+    },
+    {
+      "label": "Bulbapedia Machamp",
+      "quote": "While an Unlimited Edition version of the Base Set print of this card was never officially released",
+      "verified": true,
+      "evidence": "bulbapedia-machamp.md"
+    },
+    {
+      "label": "Bulbapedia Machamp",
+      "quote": "a Non Holofoil version of this card lacking the 1st Edition stamp was included in the Trainer Deck A",
+      "verified": true,
+      "evidence": "bulbapedia-machamp.md"
+    },
+    {
+      "label": "Bulbapedia Machamp",
+      "quote": "Another 1st Edition Base Set version of this card, with the Cosmos Holofoil treatment",
+      "verified": true,
+      "evidence": "bulbapedia-machamp.md"
+    },
+    {
+      "label": "Relentless Dragon Machamp",
+      "quote": "Card #8/102, Machamp could never actually be found in Base Set booster packs!",
+      "verified": true,
+      "evidence": "relentlessdragon-machamp.md"
+    },
+    {
+      "label": "Relentless Dragon Machamp",
+      "quote": "Every print run of Machamp was printed with an",
+      "verified": true,
+      "evidence": "relentlessdragon-machamp.md"
+    },
+    {
+      "label": "Bulbapedia Pikachu",
+      "quote": "print runs only feature the yellow cheeks version.",
+      "verified": true,
+      "evidence": "bulbapedia-pikachu-release.md"
+    },
+    {
+      "label": "Bulbapedia Pikachu",
+      "quote": "Both cheek versions have promotional variants with a gold foil",
+      "verified": true,
+      "evidence": "bulbapedia-pikachu-release.md"
+    },
+    {
+      "label": "Bulbapedia Jynx",
+      "quote": "Jynx's face was changed from black to dark purple for the Base Set and lightened even more so for subsequent reprints.",
+      "verified": true,
+      "evidence": "bulbapedia-jynx.md"
+    },
+    {
+      "label": "Bulbapedia Oak",
+      "quote": "The 1st Edition and Shadowless print runs of this card were spelled Impostor Professor Oak and changed to Imposter for all further print runs and reprints.",
+      "verified": true,
+      "evidence": "bulbapedia-oak.md"
+    },
+    {
+      "label": "Bulbapedia Energy",
+      "quote": "Energy cards provide Energy of a specified Energy type.",
+      "verified": true,
+      "evidence": "bulbapedia-energy.md"
+    },
+    {
+      "label": "Bulbapedia Energy",
+      "quote": "Basic Fighting Energy",
+      "verified": true,
+      "evidence": "bulbapedia-energy.md"
+    },
+    {
+      "label": "Bulbapedia Energy",
+      "quote": "Double Colorless Energy",
+      "verified": true,
+      "evidence": "bulbapedia-energy.md"
+    },
+    {
+      "label": "Relentless Dragon identification",
+      "quote": "© 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK. © 1999 Wizards.",
+      "verified": true,
+      "evidence": "relentlessdragon-early.md"
+    },
+    {
+      "label": "Relentless Dragon identification",
+      "quote": "© 1995, 96, 98 Nintendo, Creatures, GAMEFREAK. ©1999 Wizards.",
+      "verified": true,
+      "evidence": "relentlessdragon-early.md"
+    },
+    {
+      "label": "Relentless Dragon identification",
+      "quote": "©1995, 96, 98 Nintendo, Creatures, GAMEFREAK. ©1999-2000 Wizards.",
+      "verified": true,
+      "evidence": "relentlessdragon-early.md"
+    }
+  ],
+  "quote_failures": []
+}
