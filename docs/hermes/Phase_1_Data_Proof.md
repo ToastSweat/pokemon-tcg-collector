@@ -64,6 +64,8 @@ Citation verifier compatibility: the installed helper strips literal closing par
 
 ## Independent review
 
+Verified implementation checkpoint: `cda1fc1` (`[verified] feat: prove provisional Base Set pack generation and Unity diagnostics`). Closing documentation is a separate nonbehavioral checkpoint. Working tree and absence of remotes were checked after the implementation commit.
+
 See [review verdict and code/data pins](../verification/Independent_Review.json) and [parent execution summary](../verification/Phase_1_Execution_Summary.json). The reviewer freshly reran the pure-code/runner/authoring/distribution checks, inspected existing Unity evidence without launching Unity, and reconciled Unity seed-4 output with fresh Mono output. No code/data changed after the approved review. Closing status-document edits are not behavioral changes.
 
 Nonblocking research-helper suggestion retained for future cleanup: replace assert-only label validation in the one-time pack retrieval script with an explicit exception before using that script under optimized Python. This is not a game/runtime path; no new retrieval is required to use the offline generator. The review's stale-documentation suggestion was resolved here. Generated evidence/OCR whitespace and Unity's generated empty metadata values are deliberately preserved; handwritten production/test code retains normal whitespace checks.

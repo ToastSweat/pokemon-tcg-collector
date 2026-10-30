@@ -10,7 +10,9 @@ The exact factory holo rate and pack-to-pack independence were not established; 
 
 A collector's candidate sheet model provides unequal per-card weights, but its rare-sheet attribution and obscured Energy positions involve explicit assumptions. Exact feeder sequence, pair correlations and all-run applicability remain unverified.[5]
 
-The 102-number checklist includes Machamp.[1][2] That card is not booster-obtainable, and ordinary shadowed starter Machamp is stamped, so it needs a deliberate exception if included in the collection target.[3][9]
+The 102-number checklist includes Machamp.[1][2]
+
+That card is not booster-obtainable, and ordinary shadowed starter Machamp is stamped, so it needs a deliberate exception if included in the collection target.[3][9]
 
 ## Model A — recommended sheet-informed provisional v0.1
 
