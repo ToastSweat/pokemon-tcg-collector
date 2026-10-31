@@ -1,0 +1,24 @@
+{
+  "status": "accepted-by-user",
+  "userStatement": "good shit. looks great thank you. i approve of this",
+  "scope": "Focused mouse-over tilt / holo and booster metallic visibility / feel retest immediately preceding approval",
+  "implementationCommit": "0837c6c",
+  "testedBuild": "parent-tilt-build-36",
+  "player": "Builds/Phase3TiltWindows/VintageCardCollector.exe",
+  "recordedAt": "2026-10-31T12:31:57.764335-05:00",
+  "checks": [
+    {"name": "booster mouse-over tilt and visible masked metallic response", "result": "APPROVED", "source": "direct user approval of the focused retest"},
+    {"name": "card / inspected holo angle-dependent light response", "result": "APPROVED", "source": "direct user approval of the focused retest"},
+    {"name": "motion feel / original controls preserved", "result": "APPROVED", "source": "direct user approval of the focused retest"}
+  ],
+  "priorArtAndOtherFunctionalityPassPreserved": true,
+  "phase4AcceptancePreserved": true,
+  "immutablePlayerManifestRechecked": true,
+  "immutableFileCount": 136,
+  "manifestSha256": "07dd4624b3beaabbd3f31cf023c44ee5425e60438b3ce567953b10e18f6bf560",
+  "savesAndLogsPrunedBeforeTraversal": true,
+  "rebuiltOrLaunchedForAcceptance": false,
+  "liveSaveInspectionPerformed": false,
+  "additionalPrintingOrSetScopeAuthorized": false,
+  "phase5Authorized": false
+}

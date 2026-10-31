@@ -1,6 +1,6 @@
 # Hover tilt / catching-light correction — focused human retest
 
-Status: **NOT YET REPORTED**. The user's PASS on supplied art and all other existing functionality is preserved. Only the requested pointer-driven tilt and holo/wrapper finish visibility are reopened; no Phase5 scope.
+Status: **APPROVED — direct user feedback: “good shit. looks great thank you. i approve of this”.** The focused booster/card/holo tilt and feel gate is accepted for build36/commit0837c6c. All136immutable player members were rechecked unchanged without save/log traversal, rebuild or player launch; see `../verification/Hover_Tilt_Human_Acceptance.json`. Prior supplied-art and other functionality PASS remain preserved. No Phase5 scope is inferred.
 
 ## Separate player
 

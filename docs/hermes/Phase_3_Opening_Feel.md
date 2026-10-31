@@ -1,6 +1,8 @@
 # Phase 3 — Opening feel and supplied materials
 
-Status: PHASE 3A REST PASSED / CLARIFIED TABLE FLOW VERIFIED AND REVIEWED. The fullscreen interpretation was rejected and replaced: card11 stops on the ordinary opening table. Final_Card_Table_Flow.md is current. User conditionally permitted continuation after this correction; no unreported human retest is invented. Branded materials remain deferred; next-phase identity discovery is now appropriate.
+Status: **SUPPLIED ART / OPENING FEEL / POINTER-TILT FINISHES ACCEPTED.** The user approved the focused tilt/reflection build after previously passing art and all other functionality. Accepted player: `Builds/Phase3TiltWindows/VintageCardCollector.exe`, source scene `BootstrapTilt.unity`, implementation0837c6c. The136immutable player files were rechecked unchanged without save traversal/rebuild. See `../verification/Hover_Tilt_Human_Acceptance.json`. Unlimited rules,101targets excludingMachamp and priorPhase4 acceptance remain preserved; provided first-edition scans remain user-approved replaceable visuals, not a rule/printing change. No Phase5 authorization is inferred.
+
+The sections below retain the historical initial Phase3A discovery/execution and earlier deferral/unresolved-decision wording. They are superseded for current status by the accepted supplied-art/tilt checkpoint above.
 
 ## Current process
 
