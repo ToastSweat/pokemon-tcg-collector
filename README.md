@@ -6,7 +6,7 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 **Phase 4 is accepted:** the user reported **all five review checks PASS**. The136-member player manifest was rechecked unchanged without reading live saves, and no rebuild was performed. The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**. See [human acceptance](docs/verification/Phase_4_Human_Acceptance.json).
 
-The supplied-materials candidate is built, automated-player verified and independently reviewed. It uses the provided faces unchanged as replaceable art for the existing Unlimited simulation, as explicitly approved. Provenance records the source printing; no rules, identities, probabilities or101-target changes were made. Human visual feedback remains pending. Phase5 stays unopened.
+The supplied-materials candidate is built, automated-player verified and independently reviewed. The user confirms the art is present and all other functionality PASS, but cannot perceive the holo/metallic response. Only that interaction is reopened: a separate mouse-over tilt/light-response correction is in progress. The provided faces remain unchanged visual references for the existing Unlimited simulation; no rules, identities, probabilities or101-target changes. Phase5 stays unopened. [Feedback](docs/verification/Materials_Human_Feedback.json) · [Tilt contract](docs/technical/Hover_Tilt_Contract.md).
 
 ## Supplied-art / foil candidate — ready for visual review
 

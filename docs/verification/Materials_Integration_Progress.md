@@ -2,6 +2,10 @@
 
 The user accepted all five Phase4 checks and authorized the provided first-edition scans as unchanged replaceable art for the existing Unlimited simulation. Phase4Windows, its live saves, original114files, catalog/IDs/model and old empty media manifest remain preserved. New materials use a separate manifest and candidate. No Phase5 work.
 
+## User feedback / reopened slice
+
+The user reports art present and all other functionality PASS, but cannot tell whether holo/metallic parts work. Preserve those passes; reopen only perceptibility and requested mouse-over pitch/yaw tilt with angle-dependent light for both cards and pack. Previous GPU-delta proof did not establish human-visible finish or the requested interaction. `Materials_Human_Feedback.json` records the exact statement and unchanged136-member baseline. Implement separately under `Hover_Tilt_Contract.md`, keeping the current material player and all saves intact. No Phase5.
+
 ## Closing verification status
 
 Separate candidate `parent-materials-stage-safe-build-35` is built/Succeeded0errors0warnings, real demo/services/native-input/restart suites passed, and final independent guard/player plus host/renderer reviews passed. Parent rechecked exact414source/418compiler/136candidate closure and unchanged prior-player maps after review. Current source/pin records are `Materials_Player_Execution.json` and `Materials_Player_Manifest.json`. Authoring now passes30tests including explicitly pinned native-meta preservation, while all114originals/110derived PNG pixels and old empty manifest remain unchanged. The earlier reporting-only rejection is resolved by its exact reviewed cache-key accounting correction. No supplied binaries are to be staged in Git; only code, text/provenance manifests and reviews. Human visual feedback is the remaining gate: [three-item review](../hermes/Materials_Human_Visual_Review.md). No Phase5 work.

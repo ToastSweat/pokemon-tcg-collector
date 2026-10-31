@@ -1,6 +1,6 @@
 # Supplied Base Set art — focused visual review
 
-Status: **NOT YET REPORTED**. Phase4's existing five PASS checks remain accepted; this is a separate visual-material gate, not a request to repeat the entire earlier checklist or permission for Phase5.
+Status: **PARTIAL PASS — user confirms art present and all other functionality PASS; holo/metallic perceptibility not accepted.** User requests mouse-over left/right/up/down tilt and changing light response for cards and booster packs. Preserve other passes; do not repeat the entire review or claim the subtle existing overlay is accepted. Details: `../verification/Materials_Human_Feedback.json`; implementation: `../technical/Hover_Tilt_Contract.md`. Phase4 remains accepted. No Phase5.
 
 ## Separate candidate
 

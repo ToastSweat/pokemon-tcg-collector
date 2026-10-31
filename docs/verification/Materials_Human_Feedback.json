@@ -1,0 +1,19 @@
+{
+  "status": "partial-pass-reflection-interaction-reopened",
+  "testedBuild": "parent-materials-stage-safe-build-35",
+  "implementationCommit": "299d060",
+  "userStatement": "i cannot tell if the holos and metallic parts are working, there needs to be some shifting light source to show that, realistically i was expecting you to be able to sort of 'wiggle' the cars left, right, up and down by scrolling over it with your house, this way the card would tilt and catch the light differently and make the holo and foil apparant. same with the booster pack, no way to tell if the metaliic parts are working.\n\nthe art is there, present and everythng else is functioning with a PASS",
+  "artPresence": "PASS-direct-user-report",
+  "otherFunctionality": "PASS-direct-user-report-preserved",
+  "holoAndWrapperMetallicPerceptibility": "not-accepted-user-cannot-tell",
+  "requestedCorrection": "Mouse-over pitch/yaw card and booster tilt, normal-dependent clearly visible masked light response, smooth return on leave",
+  "inputInterpretation": "Pointer movement across the surface, not wheel scroll or required click/drag",
+  "immutablePlayerRechecked": true,
+  "immutableFileCount": 136,
+  "savesAndLogsPrunedBeforeTraversal": true,
+  "acceptedPlayerRebuiltOrLaunchedForRecord": false,
+  "wholeMaterialsVisualPassClaimed": false,
+  "phase4AcceptancePreserved": true,
+  "phase5Authorized": false,
+  "implementationContract": "docs/technical/Hover_Tilt_Contract.md"
+}
