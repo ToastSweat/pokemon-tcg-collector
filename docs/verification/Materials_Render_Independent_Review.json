@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "summary": "PASS for the exact isolated host/renderer/shader source and retained native fixture evidence reviewed; no specific blocking defect found. This does not approve or complete the parent candidate.",
+  "findings": [
+    {
+      "area": "Trusted host selection/budget",
+      "result": "pass",
+      "references": [
+        "Phase3MediaHost.cs:15-17,32-57",
+        "MaterialsPresentationChecks.cs:22-82,115-133"
+      ],
+      "detail": "Legacy default remains Assets/Supplied/AssetManifest.json with fullBaseSetBudget=false. The two trusted serialized fields flow only into Load(root,catalog,manifest,test,fullBaseSetBudget). No manifest/environment/process budget escalation was added. Actual native default/full fixture admits two/four unique large faces respectively. Unsafe/missing configured paths preserve generic art/foley and gameplay."
+    },
+    {
+      "area": "Root/path/profile/smoke policy",
+      "result": "pass",
+      "references": [
+        "Phase3MediaHost.cs:60-92",
+        "GamePaths.cs:16-96",
+        "MediaFiles.cs:25-83"
+      ],
+      "detail": "Smoke override is the exact existing artifact media-manifest.json only for existing smoke Paths. MediaFiles.Resolve performs lexical and root-to-leaf reparse validation before the File.Exists delegate. Failure falls back to configured safe manifest; an arbitrary configured .artifacts path does not enable test mode. Root/network checks and BaseSaveDirectory -> WithProfile(CollectionProfileId) -> selected save/artifact comparisons remain present. Handle validation/revalidation precedes reading bytes. Initial null/foreign/error/session prerequisites and Retry observation remain, without executing Retry."
+    },
+    {
+      "area": "Ownership/lifecycle/silence/state authority",
+      "result": "pass",
+      "references": [
+        "Phase3MediaHost.cs:24-57,95-104",
+        "TabletopPresentation.cs:27-39,67-109,137-144,193-205"
+      ],
+      "detail": "Host neither requests playback nor creates an AudioSource, generates, saves, consumes RNG, acknowledges actions or mutates session state. Shutdown detaches bound library before disposing resources, stays terminal/idempotent and preserves external providers. Renderer owns and destroys its wrapper material in OnDestroy; it never destroys provider textures. Native deferred-destruction, external-texture-survival, silent bind and exact isolated restore/save-byte comparisons pass."
+    },
+    {
+      "area": "Role-aligned wrapper and shader",
+      "result": "pass",
+      "references": [
+        "TabletopPresentation.cs:169-205,400-424",
+        "WrapperMetallic.shader:1-29",
+        "PresentationMediaLibrary.cs:67-105,122-125"
+      ],
+      "detail": "The chosen front-or-back face selects only that same role mask. Missing/dimension-mismatched masks skip the effect rather than borrowing the other mask or inferring full-face coverage. Both passes use the same ScaleToFit-derived fitted rectangle. Loader creates masks with linear=true and bilinear/clamped sampling after corresponding face validation. Shader uses mask.r*mask.a and a low-opacity neutral silver response driven by existing motion.Clock, not shader _Time/RNG. Resources path is retained in a release D3D11 fixture; owned material destruction is exercised."
+    },
+    {
+      "area": "Existing holo/full print/generic fallback",
+      "result": "pass",
+      "references": [
+        "TabletopPresentation.cs:435-490,501-517,548-561",
+        "PresentationRules.cs:53-66"
+      ],
+      "detail": "Supplied faces/back use full neutral ScaleToFit and return before generic labels/badges. Existing explicit holo finish plus aligned same-dimension illustration mask remains required; Phase3Foil bytes match every checked historical RED pin. Default generic labels/art, no-mask fallback, accepted hover outline outside print and outside-art physical/NEW/duplicate information are retained. No edition warning or new printing identity is added."
+    },
+    {
+      "area": "Controls/clock/consumed-once audio",
+      "result": "pass",
+      "references": [
+        "TabletopPresentation.cs:73-134,242-287,383-397,494-561",
+        "PresentationRules.cs:69-106",
+        "OpeningGame.cs:124-176,232-249,277-297"
+      ],
+      "detail": "Accepted hitboxes and request authority remain separate from animation. Ordinary reveal 11 keeps the explicit results gate; Skip, inspection Back/Escape, Binder gate and pause/focus/error clock freezes remain. Existing volume, lazy source and acknowledged-only once-consumed cues are unchanged in the reviewed bodies and supported by all retained legacy suites. Whole-candidate Binder/generation flows are not inferred from fixture screenshots."
+    },
+    {
+      "area": "GPU evidence oracle",
+      "result": "pass",
+      "references": [
+        "RenderFixture.cs:67-97,158-224"
+      ],
+      "detail": "Retained oracle permits only explicit one-source-texel transition support, not arbitrary outside-mask differences. Reviewer independently decoded every retained final PNG and evaluated whole-frame actual front/back/holo deltas against original mask red/alpha bilinear support without that padding: zero changes outside mask support or fitted rectangle. Synthetic wrapper boundary rows require the documented bounded transition allowance; none change solid black beyond it or letterboxing. Actual wrapper maximum channel delta is 30/255 and later movement 25/255. Inspection is visibly nonblank and byte-identical to its full production neutral-reference capture."
+    }
+  ],
+  "test_gaps": [
+    {
+      "severity": "nonblocking",
+      "area": "Transparent-alpha renderer control",
+      "detail": "The renderer fixture does not contain a dedicated positive-red/zero-alpha wrapper mask control. Shader red-times-alpha and linear mask construction are explicit in source; current actual/synthetic imagery is not a replacement for that adversarial GPU test."
+    },
+    {
+      "severity": "nonblocking",
+      "area": "Current native reparse-specific control",
+      "detail": "The 87-check legacy-host all slice does not invoke its separate ReviewFixPaths symlink/existence-delegate slice. Resolve-before-exists and the resolver/handle checks were reviewed in full; do not describe the 576 total as a fresh native symlink-race or review-fix-slice execution."
+    },
+    {
+      "severity": "nonblocking",
+      "area": "Fixture oracle sampling region",
+      "detail": "Author Compare() scans an inset target region and uses a conservative one-source-texel transition classification. Reviewer whole-frame offline checks cover the entire retained effect images including wrapper fitted edges; synthetic normalized-texel-center modeling differences are confined to a boundary row and vanish within the declared transition footprint. This is not a claim that all possible GPU sampler/backend behavior was verified."
+    },
+    {
+      "severity": "nonblocking",
+      "area": "Candidate integration/GUID closure",
+      "detail": "Native source staging copies shader bytes and proves Resources retention but generates isolated metadata. Source WrapperMetallic.shader.meta is pinned by this review, not proof that the parent scene/build has exact resource/GUID closure. Trusted full-budget/new-manifest setup on the actual new candidate and a real generated full-pack/Binder/retry/restore playthrough remain parent gates."
+    }
+  ],
+  "limitations": [
+    "No native suites were rerun because execution of the shared renderer project was explicitly prohibited. Review independently checked retained native exits/reports/logs/current hashes and performed offline PNG/pixel calculations only.",
+    "576 is the sum of retained named assertion entries, including repeated layout assertions; it is not 576 independent end-to-end scenarios.",
+    "Actual private material loader bindings and representative GPU fixtures are real supplied-texture evidence, but the results screenshot manually projects eleven representative copies and is not a generated pack or probability test. The host restore fixture explicitly generates one isolated pack but is not a full candidate GUI/Binder playtest.",
+    "No human hearing, speaker quality, human acceptance, universal resolutions, additional graphics APIs/platforms, sustained performance, accepted-build safety by traversal, or phase completion is claimed.",
+    "Historical RED/GREEN provenance is retained report/exit/source-hash evidence; historical staged source bodies and per-run fixture binaries are not immutable archived source/build copies in the reviewed index. The corrected staged defect is independently reconstructable from current source and its exact recorded mutation.",
+    "Current 121 declarations and actual supplied files were verified against retained pins; original raw-art provenance/pixel authoring review and the separate authoring-report-count correction are outside this renderer review."
+  ],
+  "exact_source_pins": {
+    "Assets/VintageCollector/Runtime/Phase3MediaHost.cs": "f719a72c91b53b870814109a9067ae504232c15e988171f61d9e580a6475399d",
+    "Assets/VintageCollector/Presentation/TabletopPresentation.cs": "a0444a521913d3dc26b1461d6faf26c2d6c28d5e0a58fd17af60daecc36dac97",
+    "Assets/VintageCollector/Resources/Presentation/WrapperMetallic.shader": "7b5c9e56b97c96831a1c3cbe8b7953b42142e1c295a01f96c78ecfe4fca2d3ef",
+    "Assets/VintageCollector/Resources/Presentation/Phase3Foil.shader": "10d4d851b5e32e4d0da25063f8f7d346e177eb86af4913f731fecc63981bc7fa",
+    "Assets/VintageCollector/Media/PresentationMediaLibrary.cs": "1cfd7e620f6ff87886e3a3d1ceee5b9564eb78181fbfac9410d44833a4775c85",
+    "Assets/VintageCollector/Resources/Presentation/WrapperMetallic.shader.meta": "4ee117f46b371eb09ce9881e3c14cdee8fed974cbbbf0183b508afa10fbb20e7"
+  },
+  "fullArtifact": ".artifacts/materials-render-review/review.json",
+  "fullArtifactSha256": "3de6dc0c1d88a51bb89967bf28071aff272297f3c17c4bafa410221716e9efc4",
+  "parentVerifiedAllSourcePinsCurrent": true
+}

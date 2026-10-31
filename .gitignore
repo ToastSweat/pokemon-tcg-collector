@@ -28,6 +28,10 @@ __pycache__/
 # Private supplied materials: track only an explicit provenance manifest, never art by accident
 /Assets/Supplied/**
 !/Assets/Supplied/AssetManifest.json
+!/Assets/Supplied/BaseSetMaterials/
+/Assets/Supplied/BaseSetMaterials/**
+!/Assets/Supplied/BaseSetMaterials/Manifest.json
+/Pokemon-Base-Set/
 
 # Secrets and local environment
 .env

@@ -6,9 +6,19 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 **Phase 4 is accepted:** the user reported **all five review checks PASS**. The136-member player manifest was rechecked unchanged without reading live saves, and no rebuild was performed. The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**. See [human acceptance](docs/verification/Phase_4_Human_Acceptance.json).
 
-The user supplied the local `Pokemon-Base-Set` art folder for the deferred materials pass. Inspection is authorized; sampled card faces visibly have1stEdition stamps and need a printing-art decision before mapping to Unlimited identities. No supplied images have been integrated yet. Phase5 remains unopened.
+The supplied-materials candidate is built, automated-player verified and independently reviewed. It uses the provided faces unchanged as replaceable art for the existing Unlimited simulation, as explicitly approved. Provenance records the source printing; no rules, identities, probabilities or101-target changes were made. Human visual feedback remains pending. Phase5 stays unopened.
 
-**Core/runtime and final build/probe/evidence independent reviews passed; the user gate has now passed too.** Existing player/save folders below remain separate and preserved; no automatic migration or merge is performed. See [current status](docs/hermes/Phase_4_Binder_Discovery.md), [implementation contract](docs/technical/Phase_4_Implementation_Contract.md), [collection core](docs/technical/Phase_4_Collections.md), [runtime](docs/technical/Phase_4_Runtime.md), and [actual player evidence](docs/technical/Phase_4_Build_Player.md).
+## Supplied-art / foil candidate — ready for visual review
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase3MaterialsWindows\VintageCardCollector.exe`
+
+Keep the entire folder together inside this project. Source scene: **Assets/VintageCollector/Scenes/BootstrapMaterials.unity**. The supplied101eligible card faces, back,15holo-mask bindings and masked wrapper materials load at original resolution. Reflection is mask-confined; printed HP/attacks/copyright remain unobscured. Charizard is the initial wrapper front; alternate supplied fronts remain available without changing pack RNG. Binder keeps its accepted checklist layout.
+
+This candidate has its own save root; accepted Phase4Windows and all previous collections remain untouched. The old empty media manifest is unchanged, so adding these materials does not silently change accepted older binaries. Optional progress transfer uses exported ZIP/reviewed new-profile restore, not raw-save overwrite; see the checklist.
+
+[Three-item visual review](docs/hermes/Materials_Human_Visual_Review.md) · [Build / actual input and restart proof](docs/technical/Materials_Build_Player.md) · [Exact execution and pins](docs/verification/Materials_Player_Execution.json). Native build succeeded with0errors/0warnings, full source/compiler/player closure and independent reviews passed. All art remains private/local; no uploads or source-image changes.
+
+**The earlier Phase4 baseline passed independent reviews and the user's five checks.** Its accepted player/save folders below remain preserved and separate from the new materials visual-feedback gate; no automatic migration or merge is performed. See [current status](docs/hermes/Phase_4_Binder_Discovery.md), [implementation contract](docs/technical/Phase_4_Implementation_Contract.md), [collection core](docs/technical/Phase_4_Collections.md), [runtime](docs/technical/Phase_4_Runtime.md), and [actual player evidence](docs/technical/Phase_4_Build_Player.md).
 
 ## Phase 4 — binder / physical ownership candidate
 

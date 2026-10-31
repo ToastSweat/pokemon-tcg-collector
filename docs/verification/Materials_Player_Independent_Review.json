@@ -1,0 +1,217 @@
+{
+  "passed": true,
+  "security": [],
+  "logicerrors": [],
+  "summary": "MAT-BUILD-001 is corrected in the exact reviewed source; both C# entrypoints fail closed before mutation outside the canonical owned stage, and fresh build35/player36-38 evidence matches the current candidate.",
+  "resolvedFinding": {
+    "id": "MAT-BUILD-001",
+    "status": "corrected-and-independently-rereviewed",
+    "scope": "Focused stage-only guard correction and exact candidate/evidence reconciliation, not renewed Core/asset/renderer or human approval."
+  },
+  "testgaps": [
+    {
+      "blocking": false,
+      "description": "The repository 14-test policy suite now exercises main rejection through forward/native slash forms and exact stage acceptance. It does not dynamically invoke both actual Unity entrypoints with mutation sentinels. Both complete entrypoint bodies and the private Project/Admission route were manually read; static route assertions verify Admission is first in each. No real main-project operation was executed."
+    },
+    {
+      "blocking": false,
+      "description": "The independent 54-check Mono matrix adds mixed root/project case, slash, trailing separator, dot and parent-segment normalization, sibling/child/parent/foreign and relative/null/empty rejection. It does not create Windows junctions or exercise concurrent directory replacement. Existing Full/CheckAncestors reparse rejection remains unchanged and was source-reviewed; this is not a hostile concurrent-workspace or exhaustive filesystem alias proof."
+    },
+    {
+      "blocking": false,
+      "description": "Native Editor/player/GPU operations were not rerun by this reviewer. The actual new build35 log/report/compiled assemblies and all five new process reports, persisted zero-exit checks, runner pins and PNG bytes were independently read back. Prior Core/asset/renderer limitations, physical focus/audio and human visual/hearing acceptance remain unchanged."
+    }
+  ],
+  "notes": [
+    "Complete MaterialsBuild.cs (86 lines), MaterialsBuildPolicy.cs (66 lines), and TestsMaterials/BuildPolicyTests.cs (45 lines) were read. Across the exact 414 source-input manifest only the two Editor C# files changed from the prior review. Among all prior-reviewed code/runtime/probe/driver/test/shader pins, only those two Editor files and BuildPolicyTests.cs changed. The parent technical document also changed and was read completely; no runtime, image, library, Core, scene, settings or other previously reviewed code change is silently approved.",
+    "RequireOwnedStage canonicalizes the approved root, current project via ValidateProject/Full, and exact root/.artifacts/materials-build-project, then uses equality with StringComparison.OrdinalIgnoreCase. ValidateProject intentionally remains discovery-only and accepts main/stage; it is no longer the operational admission. RequireOwnedStage rejects the canonical main path regardless of slash representation. Equality is not a prefix/subpath test; sibling/child/main and normalized escapes cannot bypass it.",
+    "Project is private and exclusively calls RequireOwnedStage. Admission calls Project before Resolve and the read-only build-scene check. CreateBootstrap calls Admission before even the save prompt, then data/type validation, NewScene, GameObject/component/serialized-property mutations, SaveScene and SaveAssets. BuildWindows calls Admission first, then Project/Resolve again, before OpenScene, evidence directory creation, every PlayerSettings call, input-evidence writes, output creation, BuildPlayer and report writes. Both former project==ApprovedRoot literal comparisons are absent; there is no other public operational method in this class.",
+    "The old policy reconstructed solely by removing the new helper hashes exactly to the prior reviewed policy bytes. Fresh bundled-Mono warnings-as-errors compilation of that exact old policy plus the current tests independently reproduces real RED: compile exit0, ten passes, stage_only_guard_exists exception, execution exit1. Current exact policy/tests independently compile and pass14/14 exit0. A separate independently authored fresh fixture passes54/54 canonical-path checks. Parent red33/green34 logs, result counts and input hashes also reconcile exactly.",
+    "Current source derives414 inputs, current stage/compiler derives418, and current candidate derives136 immutable files. Every delivered byte matches build35 source/compiler pins and actual stage membership. Exactly the same four additional folder metas have actual matching hashes, existing directory counterparts and folderAsset: yes. Current staged runtime/Editor assemblies match the build receipt. Candidate membership/hash equality is independently derived with Saves/Logs pruned before stat/descent/read.",
+    "Build35 actual command and build-report sourceProject point to the exact owned stage and separate Materials output. Its native log records Build Successful, Result: Success and return code0; the receipt is admitted/built/Succeeded with zero errors/warnings. Protected-player preservation is checked only as recorded before/after manifests, not by reading accepted builds or live Saves.",
+    "Fresh demo36/services37/input38 reports are all actual files equal to embedded reports; all native/external declared counts equal enumerated checks and all pass. The five material reports are complete, nonsynthetic, failure-free, with121 full-RGBA native binding checks,107 textures and51,479,000 pixels each. Unchanged probe source sets complete and publishes before releasing legacy automation; premature quit cannot mark a report passed. Five persisted native-process-exit checks record0. Demo has no fabricated legacy report.",
+    "Fresh evidence layers remain separate:650 external checks,248 gameplay-native checks,2026 material-native checks, five processes,200 PNG paths and143 distinct contents. All200 actual PNG signatures/chunk CRCs/IEND boundaries/dimensions/decompressed scanline lengths/filter bytes were rechecked. All82 input acknowledgements match actual PNG hashes, and all11 result inspection targets appear. The historical30-32 snapshot had133 distinct contents; that figure is not reused for36-38.",
+    "The current parent Materials_Player_Execution.json and Materials_Player_Manifest.json now reconcile exactly to build35, source/compiler/candidate pins, fresh mode counts, report hashes and all200 framebuffer hashes/143 contents. Old build23 and player30-32 remain immutable historical truth, not approval of current bytes. HumanPassReported and phase5Authorized remain false.",
+    "No source fixes, task closure, Git, Editor/player launch, network/install or profile/skill/parent-file writes were performed. All reviewer writes, compiled executables and disposable synthetic fixtures are confined to .artifacts/materials-stage-guard-rereview. The scoped readback remained stable at completion; parent final-artifact readback is still required before handoff."
+  ],
+  "scopeIssues": [
+    {
+      "blockingProductReview": false,
+      "description": "An initial overbroad filename-only search under .artifacts returned pre-existing accepted-build and fixture-save path names, contrary to the intended no-traversal discovery boundary. No accepted-build/live-save contents were opened or hashed. Subsequent enumeration was narrowed to explicit review/build/fresh-run folders, source trees and the separate candidate with Saves/Logs excluded before descent. This deviation is disclosed rather than claiming zero accepted-path enumeration."
+    },
+    {
+      "blockingProductReview": false,
+      "description": "The terminal rejected a bracket-containing workdir before execution. All executed commands instead used C:/Users/pada1 as the shell workdir and absolute approved-root paths; no alternate repository, install or workaround write was used."
+    }
+  ],
+  "reviewedfiles": [
+    {
+      "path": "Assets/VintageCollector/Editor/MaterialsBuild.cs",
+      "sha256": "b827034d557567e9e0a3c0e7b1229f60ad5a794990a4418bd5b1ad54a15a3300",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/MaterialsBuildPolicy.cs",
+      "sha256": "39c452185ac91400b0f42e61687749bdbae68a624c9d6a9a596ad6e28fca59c4",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "TestsMaterials/BuildPolicyTests.cs",
+      "sha256": "0555f34885024d0b3813a1eec72560e552b0b880604493cd8bdaab3b7290af78",
+      "coverage": "complete source read"
+    }
+  ],
+  "exactpins": {
+    "allCurrentSourceInputs": {
+      "path": ".artifacts/materials-stage-guard-rereview/source-pins.json",
+      "sha256": "1bfc7d72b69cffe43e3cdf08f7d06b3a19a24bbdd6f107145d2e18a9bb85079e"
+    },
+    "currentCandidateImmutableMembers": {
+      "path": ".artifacts/materials-stage-guard-rereview/candidate-pins.json",
+      "sha256": "e476b8a9a21fd1585d3fa2bd5ca452ba798988ebfce1f01908e3d2bd8ce15090"
+    },
+    "allPreviouslyReviewedMembersAndCurrentInputs": {
+      "path": ".artifacts/materials-stage-guard-rereview/reviewed-pins.json",
+      "sha256": "949b1164845f5c70ea9cb6b77c30afa3b38351907c69be4790e08a92c5f65746"
+    },
+    "readBackBuildTestsModesAndDocumentation": {
+      "path": ".artifacts/materials-stage-guard-rereview/artifact-pins.json",
+      "sha256": "d6da1a73aa2ef854bae60688f9e81a1ac8bbd3b38fd0a201334cee468988e215"
+    },
+    "actualNativeReportsAndVerificationFiles": {
+      ".artifacts/phase4-player/parent-materials-demo-final-36/verification.json": "a49127eafc07b0b0d8d4433023366d886f8639e76f789bc009ceccf006d7f588",
+      ".artifacts/phase4-player/parent-materials-demo-final-36/input/materials-report.json": "b40f2d59e66181b7bfd0738668d26b89d4506125cf975b15d2e8a7241c1c23f4",
+      ".artifacts/phase4-player/parent-materials-services-final-37/verification.json": "6a42f1e407f10de8658112faf719ffcaa2e91382bb2045b9f0ce8c1a252ee1cc",
+      ".artifacts/phase4-player/parent-materials-services-final-37/services/report.json": "0d3f298f85b942ddf1392a68a91b3626465914177ef86524dc9be7a051175ac5",
+      ".artifacts/phase4-player/parent-materials-services-final-37/reopen/report.json": "f3f4c6cb0489d778fb8782ff52b386e30846b541bf770d6ac551fd119163781f",
+      ".artifacts/phase4-player/parent-materials-services-final-37/services/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817",
+      ".artifacts/phase4-player/parent-materials-services-final-37/reopen/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817",
+      ".artifacts/phase4-player/parent-materials-input-final-38/verification.json": "2f756765c9431e2ae35fc644a13f3b353c28322f719056f8bbdc05ba657ee10f",
+      ".artifacts/phase4-player/parent-materials-input-final-38/input/report.json": "9bb6906395c799a12d0ed53f11bd31bd0b5834e566ee81e088688cb43602f4bb",
+      ".artifacts/phase4-player/parent-materials-input-final-38/reopen/report.json": "21257793cc9a235f7662e9fd8cad20e6577ac435685fe49d9b98a8689a0ff347",
+      ".artifacts/phase4-player/parent-materials-input-final-38/input/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817",
+      ".artifacts/phase4-player/parent-materials-input-final-38/reopen/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817"
+    },
+    "allActualPngPaths": {
+      "path": ".artifacts/materials-stage-guard-rereview/png-pins.json",
+      "sha256": "c03032305e398693328b785e7b5e4ec0ddf3d6b8391d60d9eea8ccbd50f43573"
+    },
+    "independentExecutions": {
+      "path": ".artifacts/materials-stage-guard-rereview/executions.json",
+      "sha256": "38364f1b3c3cf042d704392706f650db9a67e327b6416a579b418aabdb2605bf"
+    },
+    "audit": {
+      "path": ".artifacts/materials-stage-guard-rereview/evidence-audit.json",
+      "sha256": "6f5e8e9546472713482bf3ac02da1adb86899b1ce67af9d558b83d54d684ed40"
+    },
+    "independentGuardFixture": {
+      "path": ".artifacts/materials-stage-guard-rereview/IndependentGuardTests.cs",
+      "sha256": "59d53c0e6ff8c4f5d2f86417cb04572c4c8b63b801e443f6eb85f43c5e460626"
+    },
+    "reconstructedPriorPolicy": {
+      "path": ".artifacts/materials-stage-guard-rereview/PriorMaterialsBuildPolicy.cs",
+      "sha256": "41799748d0e8803379b88f5b794479e2a4d24674d9c8a75dc8007777922ca193"
+    },
+    "policyDelta": {
+      "path": ".artifacts/materials-stage-guard-rereview/policy.diff",
+      "sha256": "ddf08ee6575b3027bc6d60ae89c3341dc668aa96e0460130f8c8f77a8be5ab93"
+    },
+    "auditScript": {
+      "path": ".artifacts/materials-stage-guard-rereview/audit.py",
+      "sha256": "0c1e083f3938d8283d7efa676ad50a865683229c03ff9ff3170488b1ac40e037"
+    }
+  },
+  "evidence": {
+    "buildLabel": "parent-materials-stage-safe-build-35",
+    "independentReadbackChecks": 495,
+    "sourceCount": 414,
+    "compilerCount": 418,
+    "candidateImmutableFiles": 136,
+    "folderMetaExceptions": {
+      "Assets/Supplied/BaseSetMaterials.meta": "38540b54576a3f67be0ce70b3dd91ca791e4ee7d4046ec511f72e895addc985d",
+      "Assets/Supplied/BaseSetMaterials/generations.meta": "c66d1e44f1c76f3eed8695f34a545de7af5f233e0849ec3037968dfb06fc4cfe",
+      "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb.meta": "bbda4ed8b2cf0f80a53840cd1bd9dd0e3dde8c2c9591d6b0e3454769dab7ed99",
+      "Assets/VintageCollector/Collections.meta": "ea426c53650cef8e13ea30b9f2f3142333d7d903c853d79a50c5115ff9d07656"
+    },
+    "independentRedPriorPasses": 10,
+    "independentGreenPasses": 14,
+    "independentCanonicalPathPasses": 54,
+    "modes": {
+      "demo": {
+        "label": "parent-materials-demo-final-36",
+        "external": 23,
+        "gameplayNative": 0,
+        "materialNative": 426,
+        "gameplayPngPaths": 0,
+        "materialPngPaths": 15,
+        "processes": 1
+      },
+      "services": {
+        "label": "parent-materials-services-final-37",
+        "external": 36,
+        "gameplayNative": 73,
+        "materialNative": 800,
+        "gameplayPngPaths": 11,
+        "materialPngPaths": 6,
+        "processes": 2
+      },
+      "input": {
+        "label": "parent-materials-input-final-38",
+        "external": 591,
+        "gameplayNative": 175,
+        "materialNative": 800,
+        "gameplayPngPaths": 162,
+        "materialPngPaths": 6,
+        "processes": 2
+      }
+    },
+    "aggregate": {
+      "externalChecks": 650,
+      "gameplayNativeChecks": 248,
+      "materialNativeChecks": 2026,
+      "processes": 5,
+      "pngPaths": 200,
+      "distinctPngContents": 143,
+      "inputAcknowledgements": 82
+    }
+  },
+  "sourceDelta": {
+    "Assets/VintageCollector/Editor/MaterialsBuild.cs": {
+      "before": "ff34a2ea954fa03a76d217c2daf38ce90a8954680dafa9fd11af37904d0947e6",
+      "after": "b827034d557567e9e0a3c0e7b1229f60ad5a794990a4418bd5b1ad54a15a3300"
+    },
+    "Assets/VintageCollector/Editor/MaterialsBuildPolicy.cs": {
+      "before": "41799748d0e8803379b88f5b794479e2a4d24674d9c8a75dc8007777922ca193",
+      "after": "39c452185ac91400b0f42e61687749bdbae68a624c9d6a9a596ad6e28fca59c4"
+    }
+  },
+  "createdfiles": {
+    "directory": ".artifacts/materials-stage-guard-rereview",
+    "reportsAndPins": [
+      "review.json",
+      "evidence-audit.json",
+      "source-pins.json",
+      "candidate-pins.json",
+      "reviewed-pins.json",
+      "artifact-pins.json",
+      "native-report-pins.json",
+      "png-pins.json",
+      "executions.json"
+    ],
+    "harnessAndFixtures": [
+      "audit.py",
+      "finalize.py",
+      "IndependentGuardTests.cs",
+      "PriorMaterialsBuildPolicy.cs",
+      "policy.diff",
+      "independent-red.exe",
+      "independent-green.exe",
+      "independent-paths.exe",
+      "tmp/",
+      "fixtures-red*/",
+      "fixtures-green*/",
+      "fixtures-paths*/"
+    ]
+  },
+  "reportpath": ".artifacts/materials-stage-guard-rereview/review.json"
+}

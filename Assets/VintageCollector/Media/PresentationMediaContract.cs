@@ -2,6 +2,12 @@ using UnityEngine;
 
 namespace VintageCollector.Media
 {
+    public interface IWrapperMetallicMedia
+    {
+        Texture2D WrapperFrontMask { get; }
+        Texture2D WrapperBackMask { get; }
+    }
+
     // Passive presentation dependency. Implementations never generate, save or award cards.
     public interface IPresentationMedia
     {

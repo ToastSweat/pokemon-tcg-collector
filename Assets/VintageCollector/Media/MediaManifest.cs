@@ -44,7 +44,7 @@ namespace VintageCollector.Media
             var d=entry as Dictionary<string,object>; Require(d!=null);
             Fields(d,"role,cardId,relativePath,source,rights,restrictions,sha256");
             string role=Text(d,"role"), id="";
-            Require(Array.IndexOf(new[]{"card-face","holo-mask","card-back","wrapper-front","wrapper-back","sound-generate","sound-open","sound-next","sound-skip"},role)>=0);
+            Require(Array.IndexOf(new[]{"card-face","holo-mask","card-back","wrapper-front","wrapper-back","wrapper-front-mask","wrapper-back-mask","sound-generate","sound-open","sound-next","sound-skip"},role)>=0);
             object raw; if(d.TryGetValue("cardId",out raw)) { Require(raw is string || raw==null); id=(string)raw??""; }
             if(role=="card-face" || role=="holo-mask") {
                 Require(catalog!=null && !string.IsNullOrEmpty(id));

@@ -50,7 +50,7 @@ namespace VintageCollector.Presentation
 
         private Font font;
         private Texture2D disc, diamond;
-        private Material foilMaterial;
+        private Material foilMaterial, wrapperMetallicMaterial;
         private readonly Phase3PresentationMotion motion = new Phase3PresentationMotion();
         private GUIStyle textStyle, hitStyle;
         private float tearRemaining;
@@ -138,6 +138,7 @@ namespace VintageCollector.Presentation
         {
             StopFoley();
             if (foilMaterial != null) Destroy(foilMaterial);
+            if (wrapperMetallicMaterial != null) Destroy(wrapperMetallicMaterial);
             if (disc != null) Destroy(disc);
             if (diamond != null) Destroy(diamond);
         }
@@ -188,6 +189,19 @@ namespace VintageCollector.Presentation
             foilMaterial.SetTexture("_MaskTex",mask);
             foilMaterial.SetFloat("_PresentationTime",motion.Clock);
             Graphics.DrawTexture(rect,Texture2D.whiteTexture,foilMaterial);
+        }
+        private void DrawWrapperMetallic(Rect rect,Texture2D face,Texture2D mask)
+        {
+            // No role inference, full-face substitute or independent animation clock.
+            if (mask == null || mask.width != face.width || mask.height != face.height || Event.current.type != EventType.Repaint) return;
+            if (wrapperMetallicMaterial == null) {
+                var shader=Resources.Load<Shader>("Presentation/WrapperMetallic");
+                if (shader == null || !shader.isSupported) return;
+                wrapperMetallicMaterial=new Material(shader) {hideFlags=HideFlags.HideAndDontSave};
+            }
+            wrapperMetallicMaterial.SetTexture("_MaskTex",mask);
+            wrapperMetallicMaterial.SetFloat("_PresentationTime",motion.Clock);
+            Graphics.DrawTexture(FittedTextureRect(rect,face),Texture2D.whiteTexture,wrapperMetallicMaterial);
         }
         private void Shadow(Rect r,float lift)
         {
@@ -387,8 +401,14 @@ namespace VintageCollector.Presentation
         {
             Rect r=new Rect(card.x-8,card.y-8,card.width+16,card.height+16);
             Shadow(r,0);
-            var supplied=Media==null?null:(Media.WrapperFront ?? Media.WrapperBack);
-            if (supplied!=null) { Texture(r,supplied); return; }
+            var front=Media==null?null:Media.WrapperFront;
+            var supplied=front ?? (Media==null?null:Media.WrapperBack);
+            if (supplied!=null) {
+                Texture(r,supplied);
+                var metallic=Media as IWrapperMetallicMedia;
+                if (metallic!=null) DrawWrapperMetallic(r,supplied,front!=null?metallic.WrapperFrontMask:metallic.WrapperBackMask);
+                return;
+            }
             Fill(r,new Color32(181,154,97,255));
             Fill(new Rect(r.x+9,r.y+25,r.width-18,r.height-50),new Color32(53,79,68,255));
             for(int i=0;i<17;i++) {

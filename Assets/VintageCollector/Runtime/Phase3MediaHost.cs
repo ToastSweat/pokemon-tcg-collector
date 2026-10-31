@@ -12,6 +12,9 @@ namespace VintageCollector.Runtime
     [DisallowMultipleComponent]
     public sealed class Phase3MediaHost : MonoBehaviour
     {
+        // Trusted scene configuration only. Legacy scenes retain the empty manifest and 16 MiPixel cap.
+        [SerializeField] public string manifestRelativePath = "Assets/Supplied/AssetManifest.json";
+        [SerializeField] public bool fullBaseSetBudget = false;
         public PresentationMediaLibrary Library { get; private set; }
         public bool UsesTestManifest { get; private set; }
         public string StatusMessage { get; private set; } = "Optional media awaiting usable game initialization.";
@@ -36,7 +39,7 @@ namespace VintageCollector.Runtime
                 // The same read-only TextAsset is parsed using the game's actual Unity serializer/catalog path.
                 Catalog catalog=Catalog.FromData(JsonUtility.FromJson<CatalogData>(game.catalogJson.text));
                 string root=ValidatedRoot(game);
-                string manifest="Assets/Supplied/AssetManifest.json";
+                string manifest=manifestRelativePath;
                 bool test=false;
                 if(game.Paths.IsSmokeTest) {
                     string optional=OptionalManifest(root,game.Paths.ArtifactDirectory,File.Exists);
@@ -44,7 +47,7 @@ namespace VintageCollector.Runtime
                 }
                 presentation=GetComponent<TabletopPresentation>();
                 if(presentation==null) return;
-                Library=PresentationMediaLibrary.Load(root,catalog,manifest,test);
+                Library=PresentationMediaLibrary.Load(root,catalog,manifest,test,fullBaseSetBudget);
                 UsesTestManifest=test;
                 presentation.Media=Library;
                 StatusMessage=Library.StatusText+(Library.Warnings.Count==0?"":"; optional media warnings; safe fallback active.");

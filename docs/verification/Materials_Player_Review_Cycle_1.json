@@ -1,0 +1,340 @@
+{
+  "passed": false,
+  "security": [
+    {
+      "id": "MAT-BUILD-001",
+      "severity": "high",
+      "kind": "approved-scope admission bypass",
+      "summary": "The advertised stage-only C# builder guard does not reject the approved main project on Windows.",
+      "reference": "logicerrors[0]",
+      "evidence": ".artifacts/materials-player-review/admission-reproduction.json"
+    }
+  ],
+  "logicerrors": [
+    {
+      "id": "MAT-BUILD-001",
+      "severity": "high",
+      "file": "Assets/VintageCollector/Editor/MaterialsBuild.cs",
+      "lines": [
+        29,
+        30,
+        36,
+        61,
+        62
+      ],
+      "summary": "Canonical project path is compared to the noncanonical forward-slash ApprovedRoot literal, so both main-project refusal branches are false on Windows.",
+      "cause": "MaterialsBuildPolicy.ValidateProject returns Path.GetFullPath(current), e.g. F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG. Admission and BuildWindows compare that result using project==ApprovedRoot, whose value uses forward slashes. ValidateProject deliberately accepts BOTH main and exact owned stage, so it does not enforce stage-only scope itself.",
+      "actualReproduction": [
+        "literal=F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG",
+        "validatedMain=F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG",
+        "currentBuilderMainRejection=False",
+        "canonicalMainIdentity=True"
+      ],
+      "impact": "With otherwise admitted output/settings, CreateBootstrap can pass Admission in the main Editor and proceed to NewScene/SaveScene/SaveAssets; BuildWindows can open the main scene and mutate main PlayerSettings before building. The Python staging driver is correctly scoped, but the exposed C# menu/execute-method entrypoints are not stage-only as required.",
+      "notClaimed": "No main Editor, Unity build entrypoint, player, or live Saves directory was executed/opened to demonstrate this. The final historical native build did run from the correct stage and its evidence remains valid.",
+      "requiredBeforeApproval": "Make the C# admission require the canonical exact owned stage (or compare canonical paths consistently), cover both entrypoints with a pre-mutation main-project rejection regression, and re-pin/rebuild/review the corrected source. No fix was made in this review."
+    }
+  ],
+  "testgaps": [
+    {
+      "blocking": true,
+      "relatedFinding": "MAT-BUILD-001",
+      "description": "Existing BuildPolicyTests verify ValidateProject accepts main and stage but do not exercise the stage-only Admission guard. Thus the exact Windows separator mismatch escaped all policy/build/player tests."
+    },
+    {
+      "blocking": false,
+      "description": "The shader oracle verifies full texture bytes, actual masks and animated inside pixels. Its outside-pixel check inspects red only and omits a 2-pixel border; it is not an exhaustive visual/compositing proof. Both reviewed shader sources multiply alpha by mask.r*mask.a."
+    },
+    {
+      "blocking": false,
+      "description": "Demo invokes the focus-loss callback through SendMessage, rather than independently inducing an OS focus transition. Pause/error clock and AudioSource silence checks are real runtime assertions, not proof of audible output or human visual/hearing acceptance."
+    },
+    {
+      "blocking": false,
+      "description": "I did not launch Editor/player/native UI or rerun operational drivers. Existing final reports were independently read back and matched to current source, staged compiler inputs, candidate bytes, actual PNGs and owned fixture stores. Accepted-build preservation was checked against recorded before/after manifests and the accepted Phase4 manifest only; prohibited accepted-build/live-save traversal was not performed."
+    }
+  ],
+  "notes": [
+    "Candidate/evidence integrity passes independently: 480 readback/pure-guard checks passed. Review is nevertheless blocked by MAT-BUILD-001; evidence validity and stage-only builder safety are separate decisions.",
+    "Current source derives 414 exact Assets/Packages/ProjectSettings inputs. Actual current stage derives 418 compiler inputs: the delivered 414 unchanged plus exactly four native folder metas with actual file hashes and folderAsset: yes. Candidate derives 136 immutable members, exact against build pins; no Saves/Logs were traversed.",
+    "The 113 adopted PNG/JSON metas match their original historical native-import hashes, current source hashes, current staged bytes, sizes and GUIDs. They were absent from historical source pins; previously supplied metas and every historical prepared PNG/JSON stayed byte-exact. This is legitimate explicit adoption, not an expanded non-folder compiler exception.",
+    "New scene GUID closure resolves uniquely to exactly seven canonical project scripts and the original two catalog/model TextAssets. It explicitly selects the new manifest/full budget. Legacy scenes, OpeningGame, Phase4CollectionHost, Phase4SmokeProbe and default EditorBuildSettings remain byte-exact to historical source pins; manifest0 remains f75e096eae99b26eebb69e91729099ad2f1c71f7538658a6a79be4b278935fb8.",
+    "Materials probe startup order is coherent: real host -200 initializes the game and paths; opted-in probe -150 validates the exact bounded marker/scoped save/artifact paths and disables only the legacy smoke probe; its yield permits media host +100 to bind. Materials Verify/Guard publishes complete success before legacy services/input/reopen automation is re-enabled. A failure is recorded, legacy automation is not released, and exit is nonzero. Normal/unrelated launches yield without marker/oracle/asset work or legacy-probe suppression.",
+    "All five native material reports are actual disk files equal to their embedded reports, with every check passing: full GetPixels32 readbacks for all 121 role/card bindings, 107 distinct native textures, 51,479,000 unique pixels; native linear masks versus sRGB diffuse, no mipmaps/fallback/warnings, shared masks/cache, default/full budgets, two deferred idempotent disposal/reload cycles, generic foley presence and real GPU shader proofs. The oracle is freshly rederived from original full-resolution user PNGs; not synthetic/resized fixture art.",
+    "Demo actual report has 426 checks, real seed-4 generation, full pack/card-back/reveal, failed-save retry with no reroll, pause/error/focus/audio-source behavior, final-card-11 hold, holo/nonholo inspection, Binder Back and explicit Results. Its wrapper-back adapter is explicitly isolated demonstration only. No report.json exists or is fabricated for demo; its own complete materials-report.json is mandatory.",
+    "Services/input/reopen reports are mandatory real Phase4SmokeProbe JSON. Input driver requires false-before/true-after actions, same current repaint DTO/control geometry, native messages targeted to the launched process HWND, acknowledged PNGs, genuine physical/import failure and retry, backup/read-only preview/cancel/clone/next-process reload. All 82 actual input acknowledgements were read back, checked against current controls and exact PNG hashes; all eleven native inspection targets occurred.",
+    "The six authoritative default/clone file bytes, report profile hashes, envelope checksums, preserved complete ordered session JSON, revision, physical buckets and zero generation on reload were independently checked only in the explicitly owned services/input fixture roots.",
+    "Counts are separated layers, not a merged assertion claim: external driver 650, gameplay native 248, material native 2026. There are five processes, 200 distinct PNG paths and 133 distinct contents; all actual PNG chunk CRCs, dimensions, zlib scanline lengths and filters revalidated. Repeated shader captures are valid duplicate contents, not additional unique images.",
+    "Viewed actual final demo stills: card11-held visibly shows PlusPower, REVEAL 11 OF 11 and View pack results; holo inspection shows supplied Alakazam art and Back to table; Binder shows read-only 10/101 eligible printings with 11 revealed pulls and normal text-based slots. No animation/audio/input acceptance is inferred from stills. Existing WRAPPER OPENED status strip overlaps the lower art region in the held frame; no new renderer blocker is asserted here (renderer review is separate).",
+    "Materials_Build_Player.md remains historical pending parent reconciliation. It is not treated as a current code blocker. The new docs/verification/Materials_Player_Execution.json PNG accounting matches this independent derivation.",
+    "No fixes, phase closures, Git, network, installation, main Editor/player/native-UI launch, source/profile/skills changes, accepted-build traversal, or live-save writes occurred. Review artifacts/fixtures are confined to .artifacts/materials-player-review."
+  ],
+  "evidence": {
+    "buildLabel": "parent-materials-coordinated-build-23",
+    "evidenceIntegrityPassed": true,
+    "independentEvidenceChecks": 480,
+    "sourceCount": 414,
+    "compilerCount": 418,
+    "folderMetaExceptions": {
+      "Assets/Supplied/BaseSetMaterials.meta": "38540b54576a3f67be0ce70b3dd91ca791e4ee7d4046ec511f72e895addc985d",
+      "Assets/Supplied/BaseSetMaterials/generations.meta": "c66d1e44f1c76f3eed8695f34a545de7af5f233e0849ec3037968dfb06fc4cfe",
+      "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb.meta": "bbda4ed8b2cf0f80a53840cd1bd9dd0e3dde8c2c9591d6b0e3454769dab7ed99",
+      "Assets/VintageCollector/Collections.meta": "ea426c53650cef8e13ea30b9f2f3142333d7d903c853d79a50c5115ff9d07656"
+    },
+    "adoptedAssetMetaCount": 113,
+    "candidateImmutableFiles": 136,
+    "modes": {
+      "demo": {
+        "processes": 1,
+        "external": 23,
+        "gameplayNative": 0,
+        "materialNative": 426,
+        "gameplayPngPaths": 0,
+        "materialPngPaths": 15,
+        "totalPngPaths": 15
+      },
+      "services": {
+        "processes": 2,
+        "external": 36,
+        "gameplayNative": 73,
+        "materialNative": 800,
+        "gameplayPngPaths": 11,
+        "materialPngPaths": 6,
+        "totalPngPaths": 17
+      },
+      "input": {
+        "processes": 2,
+        "external": 591,
+        "gameplayNative": 175,
+        "materialNative": 800,
+        "gameplayPngPaths": 162,
+        "materialPngPaths": 6,
+        "totalPngPaths": 168
+      }
+    },
+    "aggregate": {
+      "externalChecks": 650,
+      "gameplayNativeChecks": 248,
+      "materialNativeChecks": 2026,
+      "processes": 5,
+      "pngPaths": 200,
+      "distinctPngContents": 133,
+      "inputAcknowledgements": 82
+    },
+    "nativeReportAndVerificationPins": {
+      ".artifacts/phase4-player/parent-materials-demo-final-30/verification.json": "3f52f0e4fc85b31a36624c66601e4fe8198bd542e80f0a7717d4b1b1817947b9",
+      ".artifacts/phase4-player/parent-materials-demo-final-30/input/materials-report.json": "b40f2d59e66181b7bfd0738668d26b89d4506125cf975b15d2e8a7241c1c23f4",
+      ".artifacts/phase4-player/parent-materials-services-final-31/verification.json": "94ad950bcb0c5db4b15c09edbf92b2af95a203287b984da50f7f9192eb5b5366",
+      ".artifacts/phase4-player/parent-materials-services-final-31/services/report.json": "dffe13294816f52b9b565c9a6bf13427b1f5e02bb5837dd53cb3d0306978b9f3",
+      ".artifacts/phase4-player/parent-materials-services-final-31/reopen/report.json": "6974f383c260131452f88290dc7878b490b2e8b11c73e84c24a1a308d888dd5b",
+      ".artifacts/phase4-player/parent-materials-services-final-31/services/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817",
+      ".artifacts/phase4-player/parent-materials-services-final-31/reopen/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817",
+      ".artifacts/phase4-player/parent-materials-input-final-32/verification.json": "a2bcfb780bf0916e05115666b2fc8a09d9c6ed6ecb666eb87bbbebc37fe7f226",
+      ".artifacts/phase4-player/parent-materials-input-final-32/input/report.json": "f828cebdd9ba2625e8c4737c1fac476ec8874d139d3b228b674378aa5c319d3d",
+      ".artifacts/phase4-player/parent-materials-input-final-32/reopen/report.json": "859b08c4711067311d96c5f753abcb3a6e531e4b03d1ec82e5f67c3367b51448",
+      ".artifacts/phase4-player/parent-materials-input-final-32/input/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817",
+      ".artifacts/phase4-player/parent-materials-input-final-32/reopen/materials-report.json": "ecf125d5baa66ffaef9f6c6b5e17d06ebda1f4c57ed97543862946860ae38817"
+    },
+    "auditReport": ".artifacts/materials-player-review/evidence-audit.json",
+    "pureAdmissionReproduction": ".artifacts/materials-player-review/admission-reproduction.json"
+  },
+  "reviewedfiles": [
+    {
+      "path": "Assets/VintageCollector/Editor/MaterialsBuild.cs",
+      "sha256": "ff34a2ea954fa03a76d217c2daf38ce90a8954680dafa9fd11af37904d0947e6",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/MaterialsBuildPolicy.cs",
+      "sha256": "41799748d0e8803379b88f5b794479e2a4d24674d9c8a75dc8007777922ca193",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/MaterialsSmokeProbe.cs",
+      "sha256": "4bfc4dd798c5511af6c341590b10af34212607fe7e723328610b4bff2b42cbe6",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "tools/run_materials_build.py",
+      "sha256": "13ab51ef3417517e12cfaf01e9b6c72700f602451c86ddc6ee272936198c2833",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "tools/run_materials_build_compile.py",
+      "sha256": "f504bcb40d71f85140a23cb7ee7bf0999c29863bc2b13333023cff3dc06226f5",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "tools/run_materials_build_policy.py",
+      "sha256": "664b395d9910ac1d7cda0c3ace486803cb8ab91a17893e72bc002b44b3339deb",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "tools/verify_materials_player.py",
+      "sha256": "3bf57dc3bf2d7e7c3fb894716710ea1bc94334ec5c37340497cc13fd4317200d",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "TestsMaterials/BuildPolicyTests.cs",
+      "sha256": "69d3da89a9e34411184f267732841f06f0753fc6241abd2d7319e9f1be5880f4",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "TestsMaterials/BuildToolTests.py",
+      "sha256": "779cfcf57fbd1d54c3d5c21c5dc3d6dd52549745855dae5c25c5ab4e2046b001",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "TestsMaterials/PlayerOptInTests.cs",
+      "sha256": "def57655ae5d0ff9b79a79bd2214841a5ca7cef17e79c37036d27cdc9c8f06c3",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "TestsMaterials/PlayerVerifierTests.py",
+      "sha256": "527064be35ff9db90efe4a010df1ca80b597129328b6f3af48ee42eee6b8d480",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Scenes/BootstrapMaterials.unity",
+      "sha256": "802b7b79f37e3cca8478323a420ca0a647ad102c219ea4b855d0ef94faf76690",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Scenes/BootstrapMaterials.unity.meta",
+      "sha256": "b54e617fcc2ebdd9a7c8f65d0dcfae82dffb9bcd911bc94fe7c1d2b44202132e",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "docs/verification/Base_Set_Materials_Unity_Meta_Pins.json",
+      "sha256": "35f024fec720639da6f51f87f52825d50de5000cb55f2723da24de0ab7c5702c",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "docs/technical/Materials_Build_Player.md",
+      "sha256": "abf36cefab70cc2b142cb08819d6908f4da0ae1e7415c3a37893cedf1b94f202",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs",
+      "sha256": "b42c6edfcebfde79f88e20c458a925c9cca4ce12734a40949bf7342bd5bd9ef0",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "sha256": "d8c4255ac4b004683313c36c1bcbbd5910a34f833970d7b4114fa0ff88609d71",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs",
+      "sha256": "35363c5ce082331a80b95025a50e3e75ce4d3109644660e8593ad89f5056bb77",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase3MediaHost.cs",
+      "sha256": "f719a72c91b53b870814109a9067ae504232c15e988171f61d9e580a6475399d",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/GamePaths.cs",
+      "sha256": "9458de389a173ee1dc9cac5139f89ff2678df89ac06ec2f39106017d53151641",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "tools/verify_phase3_player.py",
+      "sha256": "c8dbe372479e14556c81c08a65ead4857d3504f643108c754d4ae0dfad96ce26",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "tools/verify_phase4_player.py",
+      "sha256": "89da51163c094d81178ecd148aee3b2e3accefdef9bb80b8f03e65732b2ced91",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Resources/Presentation/Phase3Foil.shader",
+      "sha256": "10d4d851b5e32e4d0da25063f8f7d346e177eb86af4913f731fecc63981bc7fa",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Resources/Presentation/WrapperMetallic.shader",
+      "sha256": "7b5c9e56b97c96831a1c3cbe8b7953b42142e1c295a01f96c78ecfe4fca2d3ef",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "sha256": "c7c992ea0f42d2db009130d222c1bf7dbeab8d9f92b09dc275d67c843e20ad75",
+      "coverage": "complete source read"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/MaterialsBuild.cs.meta",
+      "sha256": "7162941e8dfae17c49857311540a86bbf197c3589f2346752d98b4c8689a92a7",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/MaterialsBuildPolicy.cs.meta",
+      "sha256": "7561eb92550d08201ee155d5066093d01566499639d9bc61fea233f12ba86bc0",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/MaterialsSmokeProbe.cs.meta",
+      "sha256": "126e672110d31af3cd22faa2ffe97f5758036c01771e5644ae16a640d60703e9",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs.meta",
+      "sha256": "6d25824068f8a67039f7c0bae0f2d6c06271b3f1d846c29a77e305b3f47f4010",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/OpeningGame.cs.meta",
+      "sha256": "8384b33f12e1a3c3c8397697daca534a51914a7e70655a1ab5598436151d75d7",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs.meta",
+      "sha256": "43a607465d45c9f2c94707b59e36594709e648b7ba420b8d662416c73f48f2b7",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase3MediaHost.cs.meta",
+      "sha256": "c2e0a756f621bb540745e9765b26d9bb311083a11d4c01631724282be0064b33",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/GamePaths.cs.meta",
+      "sha256": "3d7f07e5a055b9d3aacf5a1e47ce33f6c605e9d5e3100aeadd940c84c848d142",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Resources/Presentation/Phase3Foil.shader.meta",
+      "sha256": "9adf017c5932548bd554ecaa84d1cc3177b7f62da10f2c24da6f85818722c8a1",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    },
+    {
+      "path": "Assets/VintageCollector/Resources/Presentation/WrapperMetallic.shader.meta",
+      "sha256": "4ee117f46b371eb09ce9881e3c14cdee8fed974cbbbf0183b508afa10fbb20e7",
+      "coverage": "GUID/metadata bytes inspected and hashed"
+    }
+  ],
+  "sourcepins": {
+    "all414SourceInputs": ".artifacts/materials-player-review/source-pins.json",
+    "sha256": "b6d6b71987dcf4104ad7e598e957289f00c5870453b6e91a65d82702ed234e56",
+    "equalCurrentSourceAndBuildPins": true,
+    "buildSourcePins": ".artifacts/materials-build/parent-materials-coordinated-build-23/source-pins.json",
+    "buildSourcePinsSha256": "b6d6b71987dcf4104ad7e598e957289f00c5870453b6e91a65d82702ed234e56",
+    "materialsBuildCs": "ff34a2ea954fa03a76d217c2daf38ce90a8954680dafa9fd11af37904d0947e6",
+    "materialsBuildPolicyCs": "41799748d0e8803379b88f5b794479e2a4d24674d9c8a75dc8007777922ca193",
+    "materialsSmokeProbeCs": "4bfc4dd798c5511af6c341590b10af34212607fe7e723328610b4bff2b42cbe6"
+  },
+  "createdfiles": [
+    ".artifacts/materials-player-review/review.json",
+    ".artifacts/materials-player-review/evidence-audit.json",
+    ".artifacts/materials-player-review/source-pins.json",
+    ".artifacts/materials-player-review/admission-reproduction.json",
+    ".artifacts/materials-player-review/AdmissionProbe.cs",
+    ".artifacts/materials-player-review/admission-probe.exe",
+    ".artifacts/materials-player-review/audit.py",
+    ".artifacts/materials-player-review/finalize.py",
+    ".artifacts/materials-player-review/fixtures/Assets/Folder.meta"
+  ],
+  "reportpath": ".artifacts/materials-player-review/review.json"
+}

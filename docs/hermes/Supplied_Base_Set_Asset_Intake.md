@@ -25,8 +25,8 @@ Visually inspected representatives: Charizard, Alakazam, Pikachu, Professor Oak 
 4. Add correctly masked card and wrapper reflections only where supplied masks align; retain independent generic fallbacks and existing audio. Verify native decode, bounded memory/lifecycle, readable faces and no effect on packs or saves.
 5. Preserve accepted Phase4Windows and its real save root; use an independently scoped candidate/test saves. Stop for the visual-material user gate. Do not begin Jungle/Fossil, shopping or finance.
 
-## Decision required
+## Resolved visual-reference decision
 
-Should the first pass keep the Unlimited printing accurate by using backs/wrappers now and waiting for matching Unlimited card faces, or may the supplied1stEdition card scans be used as clearly labelled visual stand-ins while all game rules/identities remain Unlimited? A different matching-art folder can also be supplied.
+The user answered: **“ignore that the car faces are 1st edition and use them as you would with unlimited. i can edit them later”**. Use the supplied faces unchanged as replaceable art for the existing Unlimited simulation. No stamp removal, printing/model/identity change, or intrusive on-card edition warning. Preserve the source mismatch and user approval in provenance. Original files and the accepted Phase4 player remain untouched.
 
-No supplied bindings or production manifest changes have been made pending this decision.
+Implementation is frozen in `../technical/Base_Set_Materials_Contract.md`. The new candidate uses its own `Assets/Supplied/BaseSetMaterials/Manifest.json`. Keep the old empty `Assets/Supplied/AssetManifest.json` unchanged because accepted binaries read it at runtime; otherwise merely adding art would change the accepted presentation without changing player-file hashes. No Phase5 authorization is inferred.

@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "summary": "CORE-01 is corrected for the exact pinned authoring tool and added regression. Runtime resource, pixel and RGBA-payload accounting now matches the native library cache identity; no hidden authoring derivation or publication change was found.",
+  "report_path": ".artifacts/materials-accounting-rereview/review.json",
+  "scope": {
+    "root": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG",
+    "reviewed": [
+      "tools/prepare_base_set_materials.py:321-330 accounting delta; full file reconciled to original review pin after reversing only that delta",
+      "TestsMaterials/AuthoringTests.py:123-142 new regression; full file reconciled to original review pin after removing only that method",
+      "Assets/VintageCollector/Media/PresentationMediaLibrary.cs:67-109 cache, validation and admission order; unchanged original full-file pin",
+      ".artifacts/materials-core-review/review.json original CORE-01 and broader point-in-time findings",
+      ".artifacts/materials-authoring/accounting-red.log and accounting-green.log",
+      "Exact actual manifest, generation inventory and Prepared_Report.json accounting fields; no new full actual-image audit"
+    ],
+    "writes": "Only review artifacts and disposable synthetic fixtures below .artifacts/materials-accounting-rereview. All owned fixtures were removed; product sources and actual materials were not overwritten.",
+    "not_performed": "No Git operations, Unity/native execution, player, renderer/build-worker review, live-save or accepted-build traversal, network, install, profile/skill write, documentation update or task closure."
+  },
+  "findings": [
+    {
+      "id": "CORE-01",
+      "status": "resolved-for-pinned-fix",
+      "evidence": "Authoring now groups (asset derived SHA-256, linear-mask versus srgb-face semantics, width, height), exactly matching native cacheKey constituents. Each unique key contributes width*height once; runtimeRgbaBytes is that total times four. distinctRuntimeFileCount separately counts relative paths. Binding/provenance counts are not deduplicated.",
+      "references": [
+        "tools/prepare_base_set_materials.py:323-330",
+        "Assets/VintageCollector/Media/PresentationMediaLibrary.cs:67,85-105",
+        "TestsMaterials/AuthoringTests.py:123-142",
+        "verification.json",
+        "reporting-only.diff"
+      ]
+    },
+    {
+      "topic": "No hidden authoring/output behavior changes",
+      "evidence": "Reversing only the reporting block reproduces the exact original full tool SHA-256 590d08d7c39ca4377e47eca304cc7f75df0224409e33136488e9a211ffdf84ee. Removing only the newly added regression reproduces original full test SHA-256 fa08a304c7c0f0422414c8bb7b3cfbb344abd3d3982ba715ea3b81039de7ff16. Consequently normalization/pixels, recipe, generation identity, inventory/manifest schema and content generation, preflight, locking and manifest-last publication code are unchanged. The additive report field is the intended reporting change. Actual manifest and generation inventory also retain their original review pins."
+    },
+    {
+      "topic": "Validation and memory-claim boundary",
+      "evidence": "Authoring validates source pins/dimensions, fully decodes PNGs, compares normalized RGBA arrays, constructs entries from internally derived hashes and rechecks inputs before publication. Native independently validates schema/identity/provenance, reads/path-checks/hash-checks each binding and inspects PNG dimensions; every mask requires its own decoded aligned face BEFORE cache reuse, then unique budget and real decode success gate retention. Report totals describe intended complete supplied-texture resources under successful native admission; they do not assert that default-budget loading admits all entries. runtimeRgbaBytes is uncompressed RGBA32 pixel payload only, not measured native/GPU/process memory, object overhead or foley memory. The fix changes none of these admission rules."
+    }
+  ],
+  "verification": {
+    "command": "python -B 'F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/materials-accounting-rereview/independent_controls.py'",
+    "workdir": "C:/Users/pada1",
+    "final_execution_exit_code": 0,
+    "environment": {
+      "python": "3.14.9",
+      "pillow": "13.0.0",
+      "zlib": "1.3.1.zlib-ng"
+    },
+    "observed_tdd": {
+      "retained_red": "accounting-red.log contains one test, expected AssertionError 107 != 106 and FAILED (failures=1).",
+      "retained_green": "accounting-green.log contains exactly all 19 current named test methods, Ran 19 tests in 28.576s, and OK. These logs were parsed and count-matched, not inferred from filenames.",
+      "independent_retrospective_red": "Executed the current new regression against the hash-verified original tool reconstructed only in memory: one test, one expected 107 != 106 assertion failure, zero errors. No actual tool/source overwrite.",
+      "independent_current_green": "Executed the exact current test_runtime_accounting_deduplicates_content_across_different_filenames with its fixture directory redirected into this report tree: one test, OK. The test requires 106 independently grouped resources, matching runtime pixels and RGBA bytes, while retaining 121 bindings.",
+      "boundary": "Retained logs support the reported RED/GREEN sequence but contain no independently authenticated historical process exit or chronological proof. This reviewer independently reproduced the correct old-fails/current-passes behavior, not the parent's historical timing. The full 19-test suite was not rerun here."
+    },
+    "independent_owned_api_control": {
+      "description": "Real prepare API over owned synthetic fixture: copied face 001 bytes to distinct face 002 and holo-mask paths, and copied wrapper-front bytes to both distinct wrapper-mask paths; repinned only owned fixture intake.",
+      "bindings": 121,
+      "distinct_runtime_files": 107,
+      "unique_runtime_resources": 105,
+      "runtime_texture_pixels": 50860500,
+      "runtime_rgba_bytes": 203442000,
+      "assertions": [
+        "Duplicate-content different-path faces share one resource.",
+        "Byte-identical face and holo mask remain two resources due to sRGB/linear semantics.",
+        "Byte-identical front/back wrapper masks share their linear resource but not the sRGB front resource.",
+        "All 110 synthetic source/derived PNG full RGBA arrays and dimensions match, and all 114 fixture source hashes remain unchanged.",
+        "Second prepare preserves report, manifest bytes, generation file hashes and generation file mtimes."
+      ]
+    },
+    "dimension_control": {
+      "description": "Executed the exact AST-extracted report-only accounting block using a shared digest, duplicate path-independent records, a mask semantic difference, a width-only difference and a height-only difference.",
+      "paths": 5,
+      "resources": 4,
+      "pixels": 29,
+      "rgba_bytes": 116,
+      "boundary": "Same digest with different dimensions is a synthetic key/arithmetic control, not a possible ordinary byte-identical valid PNG pair or evidence of native admission. Valid real PNG dimensions are bound to their verified bytes and independently inspected."
+    },
+    "actual_manifest_inventory_reconciliation": {
+      "bindings": 121,
+      "resources": 107,
+      "pixels": 51479000,
+      "rgba_bytes": 205916000,
+      "manifest_sha256": "7fef4c77cb34195b4195715fa99c6c01c400ee31bf73f4a5ede963d86eee93be",
+      "generation_inventory_sha256": "2b6c8a7def6319819104c37c632660fab5a4ae37ea06152dd07aca903f7a868f",
+      "boundary": "Independently grouped all actual manifest records using the unchanged pinned inventory's derived hashes/dimensions; agrees with current parent Prepared_Report.json. No actual prepare rerun or actual pixel-file reaudit by this reviewer."
+    },
+    "input_pins_unchanged_before_after_and_final": true,
+    "owned_fixtures_removed": true
+  },
+  "exact_pins": {
+    "tools/prepare_base_set_materials.py": "25a5d5a4061cef6b061279ccad05fb9d49043a087bc207e9bb423363b5c81098",
+    "TestsMaterials/AuthoringTests.py": "27111140b198a7e23727f7a3b3ea38be9728e5f28cded459e24131d4d5cc9f0a",
+    "Assets/VintageCollector/Media/PresentationMediaLibrary.cs": "1cfd7e620f6ff87886e3a3d1ceee5b9564eb78181fbfac9410d44833a4775c85",
+    ".artifacts/materials-authoring/accounting-red.log": "17256ad55e8e828a49610aaa2590838e16901613291ef666dd061e134730d261",
+    ".artifacts/materials-authoring/accounting-green.log": "6f2164f370e3fd4944f244f6ac69a73fa601133281ca2f11c3c9d4c5df140432",
+    ".artifacts/materials-authoring/Prepared_Report.json": "49f1d3cf5138a87cf2eb70b914eeef883f8ea2e219ba723271b5c5379dba4049",
+    ".artifacts/materials-core-review/review.json": "db7148ad9520b14f3f685bed33332aaec6e382d9c2e1a1797a3d4ee2ef25f660",
+    "independent_controls.py": "b0b7b8dc1cd35d37dac9fcd86edb4f031877ef5bf715949bfed8227f6ac52095",
+    "verification.json": "ec29acc2e805edd1415e51b1f2c69b27290ecb7fccc7af1bc7892d84a3676f33",
+    "full_input_pin_file": "pins.json",
+    "full_review_artifact_pin_file": "artifact-pins.json"
+  },
+  "test_gaps": [
+    {
+      "severity": "nonblocking",
+      "detail": "The committed regression does not itself assert distinctRuntimeFileCount or exercise shared face/mask bytes and dimension separation. This rereview supplies independent controls for those properties; retaining a small permanent semantic-key control would improve future regression coverage."
+    },
+    {
+      "severity": "scope-boundary",
+      "detail": "Original broader core review pass conditions remain point-in-time evidence. This narrow approval neither refreshes all 315 original snapshot members nor supersedes their original limits. No new native Editor, player, renderer, human visual/hearing, GPU-memory, accepted-build or save-integrity claim is made. Remaining original non-accounting gaps and parent acceptance gates are unchanged."
+    }
+  ],
+  "issues_encountered": "A bracketed-workdir tool refusal and an initial old-block reconstruction assumption were reviewer-harness issues only; details retained in harness-issues.json. Final independent execution exited 0.",
+  "original_review_preserved": true,
+  "task_or_phase_closed": false
+}

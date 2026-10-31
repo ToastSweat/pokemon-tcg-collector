@@ -1,0 +1,203 @@
+{
+  "logic_errors": [
+    {
+      "description": "The publisher sums distinct relativePath values and reports them as uniqueRuntimeImageCount/runtimeTexturePixels/runtimeRgbaBytes. Distinct source filenames are allowed to contain identical pinned PNG bytes; PresentationMediaLibrary instead shares by verified SHA-256, linear-mask/sRGB semantics and dimensions. The publication report therefore overstates retained resource counts and memory for accepted duplicate-content inputs.",
+      "evidence": ".artifacts/materials-core-review/supplemental-accounting.json",
+      "file": "tools/prepare_base_set_materials.py",
+      "fix": "Compute reported runtime resource/memory totals from unique (derived SHA-256, mask-vs-face semantics, width, height) keys; optionally expose a separate distinct-runtime-file count. Add the duplicate-content/different-filename regression to AuthoringTests.",
+      "id": "CORE-01",
+      "impact": "Reporting-only correctness defect, not a native cache/budget/publication corruption bug. Actual supplied corpus independently reconciles to 107 unique textures and is unaffected. This blocks an unconditional COMPLETE-tool correctness verdict; it does not negate the existing actual native PASS evidence.",
+      "lines": "321-323",
+      "reproduction": "Supplemental disposable fixture copied base1-001.png bytes over base1-002.png, updated only that fixture's intake bytes/SHA-256, then called the real prepare API. Publication succeeded with all catalog bindings. The report returned 107 / 51,479,000 pixels / 205,916,000 RGBA bytes; independent grouping using the production cache key returned 106 / 50,984,000 pixels / 203,936,000 bytes.",
+      "severity": "low",
+      "title": "Reported runtime texture totals count paths rather than the media library's verified unique resources"
+    }
+  ],
+  "notes": [
+    {
+      "detail": "Independent read-only supplied-assets/media review only. No production source, source art, supplied outputs, Git, profile, main Editor, accepted build, live save or task/phase closure was modified. Renderer worker's Phase3MediaHost/Tabletop/shader edits are intentionally outside this freeze. passed:false is solely CORE-01; no security finding and no native-media logic defect was found.",
+      "topic": "Scope/verdict"
+    },
+    {
+      "detail": "Read all pages of Base_Set_Materials_Contract.md, Materials_Asset_Preparation.md, Materials_Media.md, authoring tool/tests, every in-scope media source, materials runners/native tests, legacy fixture runner and original 13/49 test sources. Large structured manifests/inventories/oracles were fully parsed and every original/derived/binding record reconciled, not approved from excerpts.",
+      "topic": "Full reading"
+    },
+    {
+      "detail": "Independently read/hash-checked all 114 original files and fully verified/decoded all 110 original PNGs and 110 derived PNGs with installed Pillow. Compared entire top-down RGBA byte arrays, original dimensions, source/derived byte hashes and strict derived IHDR (8-bit RGBA, noninterlaced). Cards/back/holo stay 600x825; wrappers stay 260x475. No resize/crop/repaint/edition-mark removal/color transform was performed or required. Per-image top-down and bottom-up full RGBA SHA-256 are retained in actual_pixel_audit.json.",
+      "topic": "Authoring/full pixel proof"
+    },
+    {
+      "detail": "Exactly 101 unchanged catalog IDs and 15 eligible holo-mask bindings share one base1-foil.png; no nonholo mask, no #8 face/mask/runtime path. Machamp archive derivation remains unbound. Charizard is the single initial front; all three 260x475 fronts remain. Exact role uniqueness and schema fields/hashes reconcile across 121 bindings / 107 unique native-compatible keys / 51,479,000 pixels for the actual corpus. Catalog byte pin and model pin remain unchanged across review. Rights unknown/no redistribution and user-approved first-edition visual substitute for Unlimited identities are preserved honestly; no intrusive edition-warning UI requirement was introduced.",
+      "topic": "Mapping/provenance"
+    },
+    {
+      "detail": "Strict JSON, canonical catalog semantics and exact source inventory/count/lowercase hashes precede derivation. Ancestors are checked root-first; traversal/UNC/device, symlink/junction/reparse and regular-file hardlinks are refused. CLI root is fenced to project/authoring fixtures. Cooperative lock is authoring-artifact-local, exclusive and identity/content checked on removal. Post-decode preflight rehashes source inputs. Foreign/mutated destinations/generations are refused. Complete owned generation is installed before manifest-last atomic publication; first manifest uses no-replace hardlink, update rechecks expected prior bytes before replace. Prior generations remain; orphan complete generations support retry. This is not atomic compare-and-swap against arbitrary external writers, an OS sandbox or a power-loss durability guarantee.",
+      "references": [
+        "tools/prepare_base_set_materials.py:104-170,176-249,252-325,328-360"
+      ],
+      "topic": "Authoring safety/publication"
+    },
+    {
+      "detail": "Fresh independent run of the real 18-test AuthoringTests.py suite exited 0, ran 18 tests and reported OK in 27.824 seconds. Fixtures were exclusively below .artifacts/materials-authoring and removed by unittest cleanup; output log is in this report directory. The pure suite re-proved idempotent bytes/mtime, readonly sources, real Windows junction/hardlink refusal, source mutation after decode, CLI and publication failures. Actual-corpus idempotent rerun/mtime proof is separately retained worker evidence (Actual_Verification.json + actual-rerun.log), not a publisher rerun by this reviewer.",
+      "topic": "Authoring execution/idempotence"
+    },
+    {
+      "detail": "IPresentationMedia is unchanged and IWrapperMetallicMedia is separate/optional. Wrapper masks use exact added roles with no cardId; strict unknown/schema/duplicate handling remains. Masks are second-pass and each requires its own successfully decoded, exactly aligned face BEFORE every shared-cache hit. Hash/path/header checks precede reuse. Default remains 16MiPixel; only explicit caller flag selects bounded 64MiPixel, never manifest data. Existing per-file/dimension/entry caps remain.",
+      "references": [
+        "Assets/VintageCollector/Media/PresentationMediaContract.cs:5-21",
+        "Assets/VintageCollector/Media/MediaManifest.cs:30-56",
+        "Assets/VintageCollector/Media/PresentationMediaLibrary.cs:16-23,50-55,85-108"
+      ],
+      "topic": "Optional media contract/budget"
+    },
+    {
+      "detail": "Native textures share only by verified file digest + mask-linear/face-sRGB semantics + inspected dimensions. Unique resources/pixels are charged once; failed decode is destroyed and not cached/charged; every binding retains provenance and successful binding count. Lookup has no I/O. Ownership list contains resources once; idempotent disposal clears counters and references. Foley synthesis uses local xorshift, creates no AudioSource/playback and has no save/generation/network API. RNG/no-autoplay checks also remain in the 49 native regression suite.",
+      "references": [
+        "Assets/VintageCollector/Media/PresentationMediaLibrary.cs:68-109,118-137",
+        "Assets/VintageCollector/Media/MediaSamples.cs:7-25"
+      ],
+      "topic": "Media cache/lifetime/isolation"
+    },
+    {
+      "detail": "parent-actual-materials-01 is a count-matched 30-check PASS with execution EXIT 0 and all source/stage/protected/native-integrity flags true. Oracle synthetic:false selects Assets/Supplied/BaseSetMaterials/Manifest.json with production allowTestInputs:false. Independently regenerated full bottom-up RGBA SHA-256 plus five samples for EVERY one of its 121 bindings from actual derived bytes; all match the stored oracle. Reviewed test uses real Texture2D.GetPixels32 for full hashes and GetPixel samples, once per native object with assertions per binding. Two reload/dispose records both report 121 bindings, 107 textures, 51,479,000 pixels, 67,108,864-pixel cap, 206,011,872 measured retained native-texture bytes, fullPixelHashBindings:121 and synthetic:false; reference equality, actual native-null destruction, zero counters/no-owned-resource leaks and no AudioSources are asserted. Default actual-set load separately refuses over-budget full coverage. Native report is evidence of real Editor library decoding, NOT player/renderer/human acceptance. WorkingSet unavailable/zero is not a memory-use claim.",
+      "topic": "Actual native proof"
+    },
+    {
+      "detail": "Reconciled original pure13, native49, synthetic30 and actual30 reports with real exits, nonzero exact counts, current compiled-input pins and protected data pins. Native49 stage differs from original test source only by the documented four distinct-content large-image fixture substitution (plus Windows text newline conversion); the original assertions/count remain. Three feature RED/GREEN pairs and the separate cache-before-face mutant RED/GREEN retain actual failing assertions and EXIT 1; no old failure was relabelled. Authoring initial missing-API TypeError and corrected assertion RED remain. Historical native run14 protected-inputs.json remains unchanged:false despite its native assertion pass. Documentation/index's synthetic-only scope is historical worker scope, not a mislabel of the separate later parent actual run.",
+      "topic": "Retained regressions/failure transparency"
+    },
+    {
+      "detail": "Review harness run01 wrongly compared raw LF source hashes to Windows read_text/write_text CRLF staged hashes and stopped before the authoring rerun. review-harness-run01-failure.log preserves it. Reviewed runner's exact newline transform was then reproduced and matched all staged media/test pins; corrected audit exited 0. This was a reviewer-harness assertion, not a product failure, and verification.json records only its four checked subsets; it is not the overall verdict after supplemental CORE-01.",
+      "topic": "Review-harness failure retained"
+    },
+    {
+      "detail": "All 315 snapshot members (254 source/input files including all 114 originals/110 derived, plus 61 scoped evidence files) were hash-checked unchanged before/after the core audit and again after the supplemental probe. Exact source/evidence byte counts and SHA-256 pins are in source_hash_pins.json. Native stage was not read or modified live; its retained per-run pin file was reconciled. No accepted builds, save trees or all-root artifact traversal was performed.",
+      "topic": "Pins/final preservation"
+    },
+    {
+      "detail": "Created only review reports/scripts/logs under .artifacts/materials-core-review, plus disposable authoring fixture trees created/removed by the explicitly permitted pure authoring tests/probe. No product fixes were made. All original failed evidence remained intact.",
+      "topic": "Artifacts/changes"
+    }
+  ],
+  "passed": false,
+  "report_path": ".artifacts/materials-core-review/review.json",
+  "reviewed_files": [
+    "docs/technical/Base_Set_Materials_Contract.md",
+    "docs/technical/Materials_Asset_Preparation.md",
+    "docs/technical/Materials_Media.md",
+    "docs/technical/Phase_3_Media.md",
+    "tools/prepare_base_set_materials.py",
+    "TestsMaterials/AuthoringTests.py",
+    "TestsMaterials/MediaNativeChecks.cs",
+    "Assets/VintageCollector/Media/PresentationMediaContract.cs",
+    "Assets/VintageCollector/Media/MediaManifest.cs",
+    "Assets/VintageCollector/Media/PresentationMediaLibrary.cs",
+    "Assets/VintageCollector/Media/MediaFiles.cs",
+    "Assets/VintageCollector/Media/MediaPng.cs",
+    "Assets/VintageCollector/Media/MediaWave.cs",
+    "Assets/VintageCollector/Media/MediaSamples.cs",
+    "tools/run_materials_media.py",
+    "tools/run_materials_media_native.py",
+    "tools/run_materials_media_fullset.py",
+    "tools/run_materials_media_audit.py",
+    "tools/run_phase3_media.py (read only; broad protected() never invoked)",
+    "TestsPhase3/MediaPureTests.cs",
+    "TestsPhase3/MediaNativeChecks.cs",
+    ".gitignore",
+    "docs/verification/Supplied_Base_Set_Intake.json (all 114 records)",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.catalog.json (all 101 identities)",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.model-a-v0.1.json (context/pin)",
+    "Assets/Supplied/AssetManifest.json",
+    "Assets/Supplied/BaseSetMaterials/Manifest.json (all 121 bindings)",
+    "Assets/Supplied/BaseSetMaterials/Owner.json",
+    "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/Inventory.json (all source/derived records)",
+    "Pokemon-Base-Set: exactly all 114 intake members (byte-hashed, PNG full-decoded; exact file list in source_hash_pins.json)",
+    "BaseSetMaterials generation: all 110 derived PNGs (byte-hashed/full-decoded/full-RGBA compared; exact file list in source_hash_pins.json)",
+    ".artifacts/materials-authoring/audit_actual_materials.py (read only, not executed)",
+    ".artifacts/materials-authoring: Prepared_Report.json, Source_Hash_Pins.json, Actual_Verification.json, actual-rerun.log and final publication RED/GREEN logs",
+    ".artifacts/materials-media/evidence-index.json plus specifically named final 13/49/synthetic30/actual30 and feature/mutation RED/GREEN evidence; exact 61-member list in source_hash_pins.json",
+    ".artifacts/materials-media/parent-actual-materials-01: full oracle, native-results, execution/unity logs, compiled/staged/protected/native-library pins",
+    ".artifacts/materials-media/14-synthetic-full-set-final/protected-inputs.json (retained overall integrity failure)"
+  ],
+  "security_concerns": [],
+  "source_hash_pins": {
+    "before_after_unchanged": true,
+    "generation": "ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb",
+    "generation_inventory_sha256": "2b6c8a7def6319819104c37c632660fab5a4ae37ea06152dd07aca903f7a868f",
+    "original_ordered_114_source_pin_list_sha256": "be22d072b0334b874fec51b79804245618fccf0d20fdf2d895aeca4139e1cdd9",
+    "path": ".artifacts/materials-core-review/source_hash_pins.json",
+    "review_artifact_sha256": {
+      "actual_pixel_audit.json": "7a10fd06d71b2b78c1eefb647f347490f69996a437b6811f1cc9ece66eed5265",
+      "authoring-rerun.log": "106674bfaa998b69d695882652a20096041f76c0afbe24f6656b97c574dd8e13",
+      "independent_checks.py": "53c1b91a74bdb141ff83d58e7cba65895175071fd14c3907a7f87733dd037529",
+      "review-harness-run01-failure.log": "101a929a192436c688fcb89b45bc8036574aeddb699d96ecb3c93d71dfaefe17",
+      "source_hash_pins.before.json": "f8b930427508c09b023e5a226f808c3ed3b292093abf06aeec0c106ecea08426",
+      "source_hash_pins.json": "61a90b1f3a82614f607d766c25f463891810007e4bbe9324ce00e08578183070",
+      "supplemental-accounting.json": "f131679565c594bd743a5213b233951e7558251b04c7e546aa28fde00e897fb6",
+      "supplemental_checks.py": "bf46dd2ab7bc71e5c969a0b601b3e64ba9b3bfd7b593a60a3675643a1892498d",
+      "verification.json": "7f6bb15a27cd6b26cab39dee5d0f841361fa4fc43678a21c7ce45bc266181b6c"
+    },
+    "selected_source_sha256": {
+      "Assets/Supplied/AssetManifest.json": "f75e096eae99b26eebb69e91729099ad2f1c71f7538658a6a79be4b278935fb8",
+      "Assets/Supplied/BaseSetMaterials/Manifest.json": "7fef4c77cb34195b4195715fa99c6c01c400ee31bf73f4a5ede963d86eee93be",
+      "Assets/VintageCollector/Data/base-en-unlimited1999.catalog.json": "0a72cd298d70a2039a9e25b092f76d8d13929117cbe7a2948c2286279122b680",
+      "Assets/VintageCollector/Data/base-en-unlimited1999.model-a-v0.1.json": "058c2027dde6633a576997359c688e461796cc5ec9689515d43d2a2880b1dbec",
+      "Assets/VintageCollector/Media/MediaManifest.cs": "894ab425269e060e05f6f1754407f7da9111039ba94fde9d11eae6dc743a3c95",
+      "Assets/VintageCollector/Media/PresentationMediaContract.cs": "9387ece1843ff2e79e63b380d4024f78d35ac38d295fa4dcb02ecb8ed5412f14",
+      "Assets/VintageCollector/Media/PresentationMediaLibrary.cs": "1cfd7e620f6ff87886e3a3d1ceee5b9564eb78181fbfac9410d44833a4775c85",
+      "TestsMaterials/AuthoringTests.py": "fa08a304c7c0f0422414c8bb7b3cfbb344abd3d3982ba715ea3b81039de7ff16",
+      "TestsMaterials/MediaNativeChecks.cs": "609683fb457c700ecbd5a1f44f7ecd7638bd1e26876f19817155064c56705b33",
+      "tools/prepare_base_set_materials.py": "590d08d7c39ca4377e47eca304cc7f75df0224409e33136488e9a211ffdf84ee"
+    },
+    "sha256": "61a90b1f3a82614f607d766c25f463891810007e4bbe9324ce00e08578183070",
+    "snapshot_file_count": 315
+  },
+  "test_gaps": [
+    {
+      "detail": "The 18-test suite assumes distinct-content fixtures for distinct runtime paths; its expected 107 cannot detect CORE-01. Supplemental read-only-to-live-source fixture supplies the missing counterexample.",
+      "references": [
+        "TestsMaterials/AuthoringTests.py:118-121",
+        "tools/prepare_base_set_materials.py:321-323"
+      ],
+      "scope": "Authoring unique accounting"
+    },
+    {
+      "detail": "Verified ordinary first/update manifest failures, prior-content mismatch, late foreign collision and retry preservation. Not an exhaustive OS-failure/power-loss test: failures during initial Owner.json creation, directory rename, lock cleanup, abrupt termination and disk durability are not all fault-injected. Existing documentation correctly disclaims crash-atomic multi-file publication and hostile filesystem race immunity.",
+      "references": [
+        "tools/prepare_base_set_materials.py:215-226,296-325",
+        "TestsMaterials/AuthoringTests.py:206-245,296-307,389-402"
+      ],
+      "scope": "Publication fault boundaries"
+    },
+    {
+      "detail": "Tests exercise readonly file attributes and byte preservation; they do not establish a directory ACL denying all writes. Source inspection confirms no source-side write/lock/chmod, and this review rehashed all 114 originals.",
+      "references": [
+        "TestsMaterials/AuthoringTests.py:309-325",
+        "tools/prepare_base_set_materials.py:229-249,265-274,296-298"
+      ],
+      "scope": "Read-only originals"
+    },
+    {
+      "detail": "Ignore policy excludes all supplied/source art while allowing the two explicit runtime manifests. Git/index/commit inspection was prohibited, so absence of already tracked or force-staged binaries is NOT independently certified; parent must check its explicit publication/staging set.",
+      "references": [
+        ".gitignore:22-34"
+      ],
+      "scope": "Git inclusion boundary"
+    },
+    {
+      "detail": "No Unity or player process was launched by this reviewer, avoiding the shared stage. Retained source-pinned actual native Editor evidence was reconciled. Deferred play-mode destruction, integrated renderer/host/shaders, pause/mute/playback, candidate build/GUID closure, GPU/player memory, physical hearing and human visual acceptance remain parent gates.",
+      "references": [
+        "TestsMaterials/MediaNativeChecks.cs:199-242",
+        "Assets/VintageCollector/Media/PresentationMediaLibrary.cs:127-137"
+      ],
+      "scope": "Native/player boundary"
+    },
+    {
+      "detail": "Existing actual run records six installed-library SHA-256 pins and nativeLibrariesUnchanged:true. Root-only review did not access installed binaries outside the project or independently rehash them now.",
+      "references": [
+        "tools/run_materials_media_native.py:92-103"
+      ],
+      "scope": "Installed-native pin boundary"
+    }
+  ]
+}

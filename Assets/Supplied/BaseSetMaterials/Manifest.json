@@ -1,0 +1,1099 @@
+{
+  "assets": [
+    {
+      "cardId": "pkmn-base-en-unlimited1999-001-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-001.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "79ca686da2df2abe03890111f13292f1488cd76b95a1f4b666f4cd0862f841e0",
+      "source": "local user folder Pokemon-Base-Set/base1-001.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-002-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-002.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "bb330fffea48db5e78ac02b3a8f77f0e1796351cbfdbf17c59b39833798cefe9",
+      "source": "local user folder Pokemon-Base-Set/base1-002.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-003-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-003.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "5331e1a0bab314573b259acfdcfa54d9dc3274344898cca0d3b614c79647c187",
+      "source": "local user folder Pokemon-Base-Set/base1-003.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-004-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-004.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "5a0231c57e4857151f880df323916f401bef10c6a8f9a5b012da592239e2ec04",
+      "source": "local user folder Pokemon-Base-Set/base1-004.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-005-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-005.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "261e1ed2a065c2f8865a69cf5c2666862c4eb361ab5edc130a222ad062ae5034",
+      "source": "local user folder Pokemon-Base-Set/base1-005.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-006-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-006.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "fb41ac85dabe7fd88945fe244a2cf5f7cc812af781e09c10758c4d622dade5e4",
+      "source": "local user folder Pokemon-Base-Set/base1-006.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-007-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-007.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "6225d1a82aa77cdf2df87700d0fb4c3458266e3fd602d80354c524b57ded33f5",
+      "source": "local user folder Pokemon-Base-Set/base1-007.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-009-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-009.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "029b88871f28d37fc651de4cb1c3cc637a067ed5b50dae46bbf44e1f87fba595",
+      "source": "local user folder Pokemon-Base-Set/base1-009.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-010-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-010.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "9c4504e5b6238e5dffd9b7ba017ac81f11b03c056c90231e515d329ba2c864f3",
+      "source": "local user folder Pokemon-Base-Set/base1-010.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-011-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-011.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "f064781751fb817e1784b30aece684390aa13c000f1aa069b1398720c6162312",
+      "source": "local user folder Pokemon-Base-Set/base1-011.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-012-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-012.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "36f1ab43c99e1b6bbee509c8afc602c711d78368500268730e7efeed50aaf631",
+      "source": "local user folder Pokemon-Base-Set/base1-012.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-013-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-013.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "aa048a944baf9d0b0d64c8fdf23860436bd29322997c83f4538d55dcd6da58b2",
+      "source": "local user folder Pokemon-Base-Set/base1-013.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-014-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-014.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "4fe17fc70b5379a94cd3af4b55edcfce397e55a94cfc805b6140b42a94ec591a",
+      "source": "local user folder Pokemon-Base-Set/base1-014.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-015-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-015.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "73885ba30ab9c872104592d6bb83d53409de6ab88b44eb58d34b7d2b7b1ae76f",
+      "source": "local user folder Pokemon-Base-Set/base1-015.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-016-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-016.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "b6c94059228c83f51c8a30a35f41fddf5a51440b9954eec8437cb749514c181c",
+      "source": "local user folder Pokemon-Base-Set/base1-016.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-017-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-017.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "7b95e51e02e08bc593ebdbceed0f720f2fcd56491d2acadd779647a2318a0c22",
+      "source": "local user folder Pokemon-Base-Set/base1-017.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-018-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-018.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "b9f2d13c624dbfc518ebf74f87e309e73684c45e69524d053bf2c1cb7286429b",
+      "source": "local user folder Pokemon-Base-Set/base1-018.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-019-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-019.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "ede9d9cb53c544c4082bec85a4cde1cd2eba7d914f7b7fa6c0e4f47db656d535",
+      "source": "local user folder Pokemon-Base-Set/base1-019.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-020-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-020.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "678ec2f56e88298268296b28f71c7718516689ad19fc1e4263702ea0e247acf0",
+      "source": "local user folder Pokemon-Base-Set/base1-020.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-021-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-021.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "b4fc1ac79f9c94595753634a858492488fdb3f08589476323322bac8be2414c9",
+      "source": "local user folder Pokemon-Base-Set/base1-021.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-022-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-022.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "9a4e3e7a93b4972c348ffbea6d5271d410d12b8c2b5c72522fb8cdc53ccff9e1",
+      "source": "local user folder Pokemon-Base-Set/base1-022.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-023-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-023.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "cdb36f671bdb2fa314b8832513812e823d3cbe62b25614b5c6b529513c3d887a",
+      "source": "local user folder Pokemon-Base-Set/base1-023.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-024-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-024.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "e843024d102dea2a46022ca710af456a6db2029ad416649ae4c1b7a9b82381cb",
+      "source": "local user folder Pokemon-Base-Set/base1-024.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-025-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-025.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "5f1c1cf629154e441cfb9af0426996be926d2348847bf3f69e1cd5786772b148",
+      "source": "local user folder Pokemon-Base-Set/base1-025.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-026-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-026.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "c3d4a5f2cce7f415e86c6b44c1d1611c99343656ac44d2474e7cf24c4617db8f",
+      "source": "local user folder Pokemon-Base-Set/base1-026.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-027-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-027.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "d9089479d7608ff1257882638d370703d7336d07b6bffd583237bd5e1336ede8",
+      "source": "local user folder Pokemon-Base-Set/base1-027.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-028-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-028.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "a6f4343e7f399920f126d383e53908809091aa3ad4789986dab2303f4e062e79",
+      "source": "local user folder Pokemon-Base-Set/base1-028.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-029-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-029.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "424a779ec617109488de9a5efb6d27d3a37054344c731139c35f9afb20019b7a",
+      "source": "local user folder Pokemon-Base-Set/base1-029.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-030-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-030.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "a042f8d4c6bcbb325c762a787b2cb36d5e474b5c1cc1a96dbdb2cfba57d1c172",
+      "source": "local user folder Pokemon-Base-Set/base1-030.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-031-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-031.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "b5472306c8b699424dadae4bc805c5697f45b5c33d62318e074c8405fae17fc7",
+      "source": "local user folder Pokemon-Base-Set/base1-031.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-032-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-032.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "965ba7568476bb18541507eb4f5955ad70816be40ca97ad638d39b277d2a87a7",
+      "source": "local user folder Pokemon-Base-Set/base1-032.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-033-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-033.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "18795b16eb8780bb741921fd8571c015a79c41cb9ed982f6e52cfdef4406c48f",
+      "source": "local user folder Pokemon-Base-Set/base1-033.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-034-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-034.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "228a2f1cb04c197d4f5ad7c5980e5642a2151615d59e971416140e6b9a2388ab",
+      "source": "local user folder Pokemon-Base-Set/base1-034.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-035-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-035.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "1720b503a6c260bf6cb1ca3c46fe31217f3a95615cbbf82aba4da729bdd8b0b7",
+      "source": "local user folder Pokemon-Base-Set/base1-035.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-036-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-036.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "906d09310c76f134d53022bd54972bdeaeb81f52e7a4afc2eecc043a5ae1d419",
+      "source": "local user folder Pokemon-Base-Set/base1-036.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-037-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-037.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "3a31016e352b67a272668b7f58555fa96174a7dde3953e45c7da221c78ff8eba",
+      "source": "local user folder Pokemon-Base-Set/base1-037.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-038-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-038.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "8f04555ad2048434a5753a1cf5a83669c6746b91844aacfa91db77e4db31e954",
+      "source": "local user folder Pokemon-Base-Set/base1-038.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-039-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-039.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "371a4db2b3d4fe3e5a18e348789f86b7695d1882efbb51df46603a0b24c2e1c7",
+      "source": "local user folder Pokemon-Base-Set/base1-039.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-040-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-040.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "4d2af430348f2d0f8e16c528e29b5458a4c08d2ffdce9bb8f945608a445141dd",
+      "source": "local user folder Pokemon-Base-Set/base1-040.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-041-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-041.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "da8194305cd49408508feb102b3beb757c157c3878a498a152c3daa772497650",
+      "source": "local user folder Pokemon-Base-Set/base1-041.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-042-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-042.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "94efee0cd4236ebb7c6aabcf321d6263bd606e00fbf0f0dab21edb03fdf5fb91",
+      "source": "local user folder Pokemon-Base-Set/base1-042.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-043-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-043.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "998f27423d9ebdf71dc5387a8e8717aada8c477b80176964ed5c659d6e7d7e21",
+      "source": "local user folder Pokemon-Base-Set/base1-043.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-044-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-044.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "00210151b57392c5a4625fba58e44c526fb79c2dbc2f8a67099ed778432e79cb",
+      "source": "local user folder Pokemon-Base-Set/base1-044.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-045-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-045.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "05108ef2b47cebea2498028a18360cf68a90b3c05121b70317a481a8c1c3f1be",
+      "source": "local user folder Pokemon-Base-Set/base1-045.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-046-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-046.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "f2fa9287ca491add7739e68b7553b4e333a26b6bc85f18af34facd55beba14d9",
+      "source": "local user folder Pokemon-Base-Set/base1-046.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-047-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-047.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "de4cefe774a4ed701a577da6fd99a3fa92f5863d27060959b70ac3f852b32a79",
+      "source": "local user folder Pokemon-Base-Set/base1-047.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-048-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-048.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "af3044f2e16b90b2b954b5ef7c66a6f9c56bb59e257eb796ddf8a3f3cd8b77ab",
+      "source": "local user folder Pokemon-Base-Set/base1-048.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-049-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-049.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "4a283d3fbec5b2f283b7088bb80e081014ec434d3d5a4b52591bdc26f7909292",
+      "source": "local user folder Pokemon-Base-Set/base1-049.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-050-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-050.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "e669f6c79e1ff1579233f5a56fc71f8d9d1e4f096f62453d10181d8992cee521",
+      "source": "local user folder Pokemon-Base-Set/base1-050.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-051-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-051.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "7d3c99d9b8ccce6f95e4a46560c1bda5ced7f857103822b7c6df72dacfd4e5e9",
+      "source": "local user folder Pokemon-Base-Set/base1-051.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-052-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-052.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "ef02af23149bb7d3c8d4a046a02d197adf57773dfbb48d1e8729d3a033cac0c9",
+      "source": "local user folder Pokemon-Base-Set/base1-052.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-053-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-053.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "90ab8c28ef0bb898a380898404467ef11aead597207b15f7700abc66b5cd3c76",
+      "source": "local user folder Pokemon-Base-Set/base1-053.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-054-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-054.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "a020f4200c84c947846d4cca5589cdea293ac2598b038eae467bd84e0e758c2d",
+      "source": "local user folder Pokemon-Base-Set/base1-054.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-055-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-055.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "2722548214b70fa7baceefcdd10e6e8966a9383b968e36d7e397d1e3c25342f1",
+      "source": "local user folder Pokemon-Base-Set/base1-055.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-056-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-056.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "dbc20f5b5625053ffddf01c3921bcce868f28476e293ea1ab46f5bd38a463d53",
+      "source": "local user folder Pokemon-Base-Set/base1-056.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-057-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-057.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "8c36819109f3d25bd4e56e1fcdbf16220f1ccadd64cefbcf23cfde0a334e70e4",
+      "source": "local user folder Pokemon-Base-Set/base1-057.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-058-nonholo-yellow-cheeks",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-058.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "9a10fd3a82708274874262f89312cace4c53489127fd5a51c5bf00defbec7b5c",
+      "source": "local user folder Pokemon-Base-Set/base1-058.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-059-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-059.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "5840376f0f41e47ea4832b913b8a00cc7a54345894a19f83716ab71c7ffb4a4b",
+      "source": "local user folder Pokemon-Base-Set/base1-059.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-060-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-060.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "df28f68b21db889655dcb7ca0725e495a7b06c8d6e3ccd6bb8ca5fabd45d786e",
+      "source": "local user folder Pokemon-Base-Set/base1-060.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-061-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-061.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "64bd3a61e4bfdd8a8bb9ba8390ccbc91ee61cd4fc33d69da29f4707df76082ee",
+      "source": "local user folder Pokemon-Base-Set/base1-061.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-062-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-062.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "de77a13deca23c83a4b4279ffe6a457e409e0ed3240fedda750570dbc51f611e",
+      "source": "local user folder Pokemon-Base-Set/base1-062.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-063-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-063.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "6124e72b9cdb331e4c366aca9b2d8e50c7af4902d377e6259decc4e8faa9dc75",
+      "source": "local user folder Pokemon-Base-Set/base1-063.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-064-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-064.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "3dc187ec46c72d56abddc5c5dccdbae9de9a238aea0affc5b9dc7813ad885811",
+      "source": "local user folder Pokemon-Base-Set/base1-064.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-065-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-065.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "3d13b4134b17d955ad5983942a68bc5a86d90f013564ed59b1cf982f71804949",
+      "source": "local user folder Pokemon-Base-Set/base1-065.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-066-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-066.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "054d42abe0ab89f71418e20a62456615bbc6e8d33e80f7b4f68fea2f0c1f0917",
+      "source": "local user folder Pokemon-Base-Set/base1-066.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-067-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-067.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "1ad9aa1020b9fdce05bba198b738fa0082131e5532a19eaa264c95dec2466c71",
+      "source": "local user folder Pokemon-Base-Set/base1-067.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-068-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-068.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "5cade3dd0d0b8bce7933591c8ea3c157b89d17823f934eb3dfc41b8225bbe4cc",
+      "source": "local user folder Pokemon-Base-Set/base1-068.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-069-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-069.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "d52e7daad7a7cff12209878dc8c4b4a1cd2914464f0f27d2efc7b2a8459ef362",
+      "source": "local user folder Pokemon-Base-Set/base1-069.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-070-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-070.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "f674c2b315e942e406fd50b538dde671ffeb39b1592e3f7569504c47b1ae98d6",
+      "source": "local user folder Pokemon-Base-Set/base1-070.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-071-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-071.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "7401a5579ed311fc02470f257a207d90f859779ea3bcbf9619efceb08144c161",
+      "source": "local user folder Pokemon-Base-Set/base1-071.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-072-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-072.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "f1db3d12f553a29ead9d768206cfab253eec89ea9da5862830c5cba7f0ad90d0",
+      "source": "local user folder Pokemon-Base-Set/base1-072.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-073-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-073.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "5cc1beeeba1e5da5acd7d8bbf12aedce142714283e9ed7bb48c8093ac06ca6df",
+      "source": "local user folder Pokemon-Base-Set/base1-073.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-074-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-074.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "3407cba9856a745611fdac03da1b94c620ee741895e23b3a7af474f2a65e4ebb",
+      "source": "local user folder Pokemon-Base-Set/base1-074.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-075-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-075.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "f6b0862bb305df7e4b7cf09de740016e540aee9c9c13d58044a884173680bdd6",
+      "source": "local user folder Pokemon-Base-Set/base1-075.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-076-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-076.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "daaefd0131415f54efd8b01337256b14c6097ab32728e9e60f85321c5f09c339",
+      "source": "local user folder Pokemon-Base-Set/base1-076.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-077-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-077.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "97cd3724d219a7edfa9caa5d5279e79eda5b038e2926fd3478e7e2c5f62520ca",
+      "source": "local user folder Pokemon-Base-Set/base1-077.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-078-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-078.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "c13545784ef7d0fe73814a01467c6d445fe3eaf6f7b6791c5d9933205c483bc1",
+      "source": "local user folder Pokemon-Base-Set/base1-078.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-079-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-079.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "7371c8b281611bc0deb781b15dbfbd8103a202ca0c067f0738cff5d161493b75",
+      "source": "local user folder Pokemon-Base-Set/base1-079.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-080-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-080.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "1b19350c3c05a85ff07101411cf6897a515ce698f939402611b59938d0247cd6",
+      "source": "local user folder Pokemon-Base-Set/base1-080.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-081-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-081.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "6d231aa2b16d7e349db38412ef419440de7a6d8f0b32a6219864a9f5908da799",
+      "source": "local user folder Pokemon-Base-Set/base1-081.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-082-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-082.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "b2226e8d2b3f347e8880e22187f97d9a4e3c0190156e446690400ca9bff191e4",
+      "source": "local user folder Pokemon-Base-Set/base1-082.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-083-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-083.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "e1ea5d2f42b386f0eaca7e0a970550b752d28eb88866982a7c181d0072000f57",
+      "source": "local user folder Pokemon-Base-Set/base1-083.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-084-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-084.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "a4c16d5f77d62e6afe8bece7d91a961a5e01f56736c2a7bc447ba44472c30503",
+      "source": "local user folder Pokemon-Base-Set/base1-084.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-085-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-085.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "b2b19d9a769063f2aa92758326a253055c54e0bb88a953791fa83e152cf5101f",
+      "source": "local user folder Pokemon-Base-Set/base1-085.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-086-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-086.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "6286737cdd7699e816fc4b49a3888e3c60279832a1d63d6233415b0741dfafbe",
+      "source": "local user folder Pokemon-Base-Set/base1-086.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-087-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-087.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "31ecc570e4a73c35a03254a59e0404b0199d34e629020b8566389203ae3edcc7",
+      "source": "local user folder Pokemon-Base-Set/base1-087.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-088-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-088.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "14b73a027c7111f1eb92d65aba1a88489b17a68cc5431c76dd40564fd697054b",
+      "source": "local user folder Pokemon-Base-Set/base1-088.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-089-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-089.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "a92af59e4d884ff34f411f823cc8ad24f54e0512409948c9a2e94dca96f200da",
+      "source": "local user folder Pokemon-Base-Set/base1-089.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-090-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-090.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "647bd7ed7a4a489cd7d17ce2bbd616df303b04c2699d903e7967252631e9f531",
+      "source": "local user folder Pokemon-Base-Set/base1-090.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-091-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-091.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "987048b634b94377f8e214f5519c1a7e50e91e30e1f3494e55691caf0e44378a",
+      "source": "local user folder Pokemon-Base-Set/base1-091.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-092-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-092.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "4cb6dd159778a722dd459c416ce4bd421d8499e727d49220a5d3c8f0dbaba415",
+      "source": "local user folder Pokemon-Base-Set/base1-092.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-093-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-093.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "8c25fbf45aae515159651c869ba2a9f7a195e5b6d69d2963ce57f87fb8705212",
+      "source": "local user folder Pokemon-Base-Set/base1-093.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-094-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-094.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "e56918243e934fe3b3350988099bb0c789b9ee6bd52fcc2e5043579fbab77297",
+      "source": "local user folder Pokemon-Base-Set/base1-094.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-095-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-095.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "292acb354d303417c6669b906b02f59fbf139cbb67cb55a6bc4bae712821df18",
+      "source": "local user folder Pokemon-Base-Set/base1-095.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-096-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-096.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "4b9ec018290e8320f17d641ae19c8c37bd365289445c17ca0a746b5d3fb260fa",
+      "source": "local user folder Pokemon-Base-Set/base1-096.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-097-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-097.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "1223c0ec859d80e93cbe2625f46b7155bd1221d8c61f9a53aa36b6119ea64845",
+      "source": "local user folder Pokemon-Base-Set/base1-097.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-098-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-098.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "3246396493df816efc65bda84f8be04b33c8bf08a6f717acab41fdf918aa9bf6",
+      "source": "local user folder Pokemon-Base-Set/base1-098.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-099-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-099.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "23eda6db8a89d0c5483af946c1750c48fea907e1b08a6299c29e9b35214b29fe",
+      "source": "local user folder Pokemon-Base-Set/base1-099.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-100-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-100.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "131a24fa4724d79a9312a9e5cc3d4b91a344fb0891b1986a626347f518d1e143",
+      "source": "local user folder Pokemon-Base-Set/base1-100.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-101-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-101.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "305b64344ba67817a7d899de2f36d4fc4c561f965d8f8926fa4f0808d134b87b",
+      "source": "local user folder Pokemon-Base-Set/base1-101.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-102-nonholo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-102.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-face",
+      "sha256": "e85ff7bfcb1c2ddb339140897e51239e86189d13217aa6385068d59815901b75",
+      "source": "local user folder Pokemon-Base-Set/base1-102.png; user-approved first-edition scan visual substitute for Unlimited simulation; printing identity unchanged"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-001-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-002-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-003-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-004-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-005-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-006-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-007-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-009-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-010-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-011-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-012-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-013-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-014-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-015-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "pkmn-base-en-unlimited1999-016-holo-standard",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-foil.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "holo-mask",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "source": "local user folder Pokemon-Base-Set/base1-foil.png"
+    },
+    {
+      "cardId": "",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-back.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "card-back",
+      "sha256": "2de9eec4af0f4d236180c07411348dd8bbbffdb14d16cafe1ae64f1177e4c9b2",
+      "source": "local user folder Pokemon-Base-Set/base1-back.png"
+    },
+    {
+      "cardId": "",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-base-set-booster-charizard-unlimited.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "wrapper-front",
+      "sha256": "ecf0de35ec3d57975b688ff55db56b6ea99b81ab92c69432351fd46ba913af64",
+      "source": "local user folder Pokemon-Base-Set/base1-base-set-booster-charizard-unlimited.png"
+    },
+    {
+      "cardId": "",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-base-set-booster-unlimited-back-diffuse.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "wrapper-back",
+      "sha256": "75d8176b2e4be436840390f0af5e620eec810de28cb05e9c6164d6802919ea2a",
+      "source": "local user folder Pokemon-Base-Set/base1-base-set-booster-unlimited-back-diffuse.png"
+    },
+    {
+      "cardId": "",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-base-set-booster-unlimited-front-metallic.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "wrapper-front-mask",
+      "sha256": "b47b032257b2c518ff5f1263f415da54af56a7d12d8693ffbc9e447569aa2c13",
+      "source": "local user folder Pokemon-Base-Set/base1-base-set-booster-unlimited-front-metallic.png"
+    },
+    {
+      "cardId": "",
+      "relativePath": "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb/base1-base-set-booster-unlimited-back-metallic.png",
+      "restrictions": "private personal project use only; no redistribution; permission not established",
+      "rights": "unknown",
+      "role": "wrapper-back-mask",
+      "sha256": "2827bd68a5acff1f8d268f8d51d8d11a89405b6c3e907e352c8816a423d67378",
+      "source": "local user folder Pokemon-Base-Set/base1-base-set-booster-unlimited-back-metallic.png"
+    }
+  ],
+  "intendedUse": "private-personal-desktop-project",
+  "notes": "Replaceable user-supplied visual art only. User approved first-edition card scans as visual substitutes for existing Unlimited simulation identities; originals and decoded pixels preserved. No rights or redistribution permission granted.",
+  "redistributionPermission": "not-established",
+  "rightsDefault": "unknown",
+  "schemaVersion": 1,
+  "status": "user-supplied-private-materials"
+}
