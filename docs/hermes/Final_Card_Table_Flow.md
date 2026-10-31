@@ -1,6 +1,6 @@
 # Final card — normal opening-table stop (clarified requirement)
 
-Status: native execution and independent review passed. This supersedes the automatic inspection/modal workaround in 51b4a8c. That workaround was my misunderstanding, not the user's intended flow. The user's conditional continuation permission is now fulfilled by the verified corrected behavior; no unreported human retest is invented.
+Status: native execution and independent review passed; checkpoint `61f6f52`. This supersedes the automatic inspection/modal workaround in 51b4a8c. That workaround was my misunderstanding, not the user's intended flow. The user's conditional continuation permission is now fulfilled by the verified corrected behavior; no unreported human retest is invented.
 
 ## Current process / requested behavior
 
