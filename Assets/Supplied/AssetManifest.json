@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "status": "awaiting-first-supplied-batch",
+  "intendedUse": "private-personal-desktop-project",
+  "redistributionPermission": "not-established",
+  "rightsDefault": "unknown",
+  "notes": "No supplied image or audio files were present when this manifest was initialized. Record actual source, relative path, stable printing ID or presentation role, content hash and known restrictions only after inspecting received files. This manifest does not grant rights or permit publication.",
+  "assets": []
+}

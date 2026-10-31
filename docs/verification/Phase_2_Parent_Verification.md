@@ -1,6 +1,6 @@
 # Phase 2 parent verification — production Unity opening slice
 
-Status: execution gates, both independent pre-commit reviews and the subsequent five-item human playtest all passed. User reported “all PASS”; see Phase_2_Human_Acceptance.json. Phase 3 still requires separate approval. Independent-review/execution JSONs retain their original point-in-time human-pending flags rather than rewriting historical evidence.
+Status: execution gates, both independent pre-commit reviews and the subsequent five-item human playtest all passed. User reported “all PASS”; see Phase_2_Human_Acceptance.json. Phase 3 was subsequently authorized separately; current work is tracked in ../hermes/Phase_3_Opening_Feel.md. Independent-review/execution JSONs retain their original point-in-time human-pending flags rather than rewriting historical evidence.
 
 ## Artifact
 

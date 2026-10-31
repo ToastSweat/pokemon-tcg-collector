@@ -1,6 +1,6 @@
 # Phase 2 — Playable opening slice
 
-Status: COMPLETE / USER ACCEPTED. User reported “all PASS” for the delivered five-item human checklist. The pinned candidate is the accepted behavioral baseline; see Phase_2_Human_Playtest.md. Phase 3 still requires explicit authorization.
+Status: COMPLETE / USER ACCEPTED. User reported “all PASS” for the delivered five-item human checklist. The pinned candidate is the accepted behavioral baseline; see Phase_2_Human_Playtest.md. User subsequently authorized Phase 3 separately; current work is recorded in Phase_3_Opening_Feel.md.
 
 ## Current process
 
@@ -66,4 +66,4 @@ Player saves: <executable-directory>/Saves. Editor saves: <project>/Saves/Phase2
 
 ## Session handoff
 
-Phase 2 is explicitly human-accepted via “all PASS” on the five-item handoff. All 135 non-save build files matched the frozen manifest when acceptance was recorded; no game/source/save changes were needed. Preserve d649e46 and its manifest as the accepted baseline. Do not reinterpret this as Phase 3 authorization or final audio/art/performance acceptance. Next proposed phase is opening-feel and a small representative supplied-material batch, awaiting approval. Binder/physical/marketplace/finance and the unanswered Machamp completion-target choice remain gated. Preserve the untracked user settings and live saves.
+Phase 2 remains the accepted baseline. The user subsequently gave separate explicit Phase 3 approval; do not infer that approval from the earlier playtest or broaden it to Phase 4+. Current intake/protection/work plan is Phase_3_Opening_Feel.md. Preserve d649e46 and its player/save behavior, the untracked user settings and all live saves. Final branded material/audio/performance acceptance and the Machamp completion target remain unresolved; binder/physical/marketplace/finance remain gated.

@@ -4,12 +4,14 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-**Phase 2 is complete and user-accepted:** all five presented human playtest items passed. Implementation, actual-player checks and independent reviews also passed. Preserve checkpoint `d649e46` and its pinned build as the accepted behavioral baseline. Model A `0.1.0` remains provisional and unchanged; Machamp's collection-target exception is unanswered. Phase 3 still requires explicit approval.
+**Phase 2 is complete and user-accepted. Phase 3 is explicitly authorized**, starting with a small representative media batch and replaceable-asset setup. Preserve checkpoint `d649e46` and its pinned player as the accepted behavioral baseline; no Phase 3 gameplay changes exist yet. Model A `0.1.0` remains provisional and unchanged; Machamp's collection-target exception is unanswered. Phase 4+ remain gated.
 
 - [Authoritative phased handoff](docs/hermes/Hermes_Vintage_Card_Collector_Handoff.md)
 - [Approved discovery proposal](docs/hermes/Phase_0_Discovery.md)
 - [Accepted Phase 1 checkpoint](docs/hermes/Phase_1_Data_Proof.md)
-- [Current Phase 2 status and session handoff](docs/hermes/Phase_2_Playable_Slice.md)
+- [Accepted Phase 2 checkpoint](docs/hermes/Phase_2_Playable_Slice.md)
+- [Current Phase 3 status and session handoff](docs/hermes/Phase_3_Opening_Feel.md)
+- [Small representative asset request](docs/hermes/Phase_3_Asset_Request.md)
 - [Pack research register](docs/research/Pack_Research_Register.md)
 
 Confirmed direction: Windows desktop, Unity 6000.2.14f1, and 1999 English Base Set Unlimited. Other date/printing variants require separate research before support.

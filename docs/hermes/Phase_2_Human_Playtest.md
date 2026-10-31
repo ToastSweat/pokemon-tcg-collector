@@ -1,6 +1,6 @@
 # Phase 2 human playtest — accepted
 
-Status: ALL FIVE ITEMS PASS / USER ACCEPTED. User reported “all PASS” in direct response to the delivered five-item checklist. Acceptance is limited to that checklist and the pinned Phase 2 candidate; it does not establish final art/audio, exact factory collation, measured sustained performance, or unpresented recovery cases. Phase 3 remains unapproved.
+Status: ALL FIVE ITEMS PASS / USER ACCEPTED. User reported “all PASS” in direct response to the delivered five-item checklist. Acceptance is limited to that checklist and the pinned Phase 2 candidate; it does not establish final art/audio, exact factory collation, measured sustained performance, or unpresented recovery cases. Phase 3 was subsequently authorized in a separate user reply; this does not expand what this playtest accepted.
 
 ## Launch
 
