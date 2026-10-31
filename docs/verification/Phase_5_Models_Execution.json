@@ -1,0 +1,55 @@
+{
+  "status": "approved-model-authoring-and-pure-generation-proof-independently-reviewed",
+  "models": [
+    {
+      "printingId": "jungle-en-unlimited1999",
+      "catalogVersion": "jungle-en-unlimited1999-0.1.0",
+      "modelId": "jungle-en-unlimited1999-sheet-informed",
+      "modelVersion": "0.1.0",
+      "catalogSha256": "60fc385e944778008e284c96d0038411238c0b44607b370537c825b9c88a0355",
+      "rulesSha256": "0d58b66ee91099bf6ad47845d62751d523404bd0dc866a62f1897041972bff12",
+      "primaryDiagnosticPacks": 100000,
+      "holoPacks": 33454,
+      "statisticalChecks": 289,
+      "exhaustiveTicketCases": 1253
+    },
+    {
+      "printingId": "fossil-en-unlimited1999",
+      "catalogVersion": "fossil-en-unlimited1999-0.1.0",
+      "modelId": "fossil-en-unlimited1999-sheet-informed",
+      "modelVersion": "0.1.0",
+      "catalogSha256": "e724f63927dd66a819c02ab4dd14408ccd0affd2bee6d5a8caa7908ed5f69860",
+      "rulesSha256": "eff5082e6f11efbe638d62cfbd314bda1e2fb8d54b5c7534d3a77956cd10353e",
+      "primaryDiagnosticPacks": 100000,
+      "holoPacks": 33360,
+      "statisticalChecks": 283,
+      "exhaustiveTicketCases": 1254
+    }
+  ],
+  "provenanceSha256Unchanged": "ee2a9a5d575b872b20611a49e1a1dadbf7b29b7cfcf2fd1ac9764b680ba92fed",
+  "userApproval": "docs/verification/Phase_5_Model_Approval.json",
+  "independentCorrectedReview": "docs/verification/Phase_5_Models_Independent_Review.json",
+  "historicalRejectedReview": "docs/verification/Phase_5_Models_Review_Cycle_1.json",
+  "originalProof": {
+    "path": ".artifacts/phase5-models/full-5202c4269df44719b705067e46d64c63/report.json",
+    "sha256": "f1b783938554dfd6e7b36672fae27a6ecbd6a6366a855ef3c349e7161dd54edb"
+  },
+  "correctedProof": {
+    "path": ".artifacts/phase5-model-repro-fix/execution/MODEL-REPRO-001-full/report.json",
+    "sha256": "b76f8aebae9150b6d6a27f7be23dc95a8cc1047fa16709d249d315bc952c72db"
+  },
+  "pythonTestsAfterCorrection": 21,
+  "csharpProofGroups": 14,
+  "statisticalChecksPerPrimaryExecution": 572,
+  "replayAdditionalStatisticalTrials": 0,
+  "parentFullOrderedTicketReadback": ".artifacts/phase5-model-review/parent-archive-readback.json",
+  "cliCheckAndIdempotentWritePass": true,
+  "fiveApprovedFilesBytesAndMtimesPreserved": true,
+  "historicalPublicationDigestRetained": true,
+  "currentPublicationBytesAuditedSeparately": true,
+  "existingNumericAuthorityGuardsRetained": true,
+  "domainRngOrGeneratorChanged": false,
+  "factoryAccuracyOrPhysicalOrientationAuthenticated": false,
+  "nativeJsonUtilityOrPlayerAcceptanceClaimed": false,
+  "remainingGate": "Actual native source-byte/model admission, mixed-set recovery and separate three-set player verification"
+}

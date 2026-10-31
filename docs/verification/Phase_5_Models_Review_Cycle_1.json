@@ -1,0 +1,40 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "MODEL-REPRO-001",
+      "severity": "blocking",
+      "path": "tools/prepare_phase5_models.py",
+      "lines": [
+        34,
+        43
+      ],
+      "problem": "source_pins imports every historical review member except .gitattributes as generation authority. The legitimate later publication update to docs/technical/Phase_5_Data_Preparation.md therefore disables the documented --check and --write paths, read_approved, and proof-runner setup despite unchanged actual approval, catalogs and numeric vectors. Current CLI exits 1. Historical passing proofs remain valid point-in-time evidence, not a passing current reproduction.",
+      "observedHistoricalSha256": "fc4685b96b932cc805ceacd81a71b61fa19657c78647a13aec637f4f70f05f5e",
+      "observedCurrentSha256": "0e0275d9e14c0d5381ca9558e8ad87659089454441a5c56ed1300e4feadbad63",
+      "minimalRemediation": "Keep the historical document entry and digest in provenance intact; classify this exact publication-only document as historical-review evidence rather than enforcing its obsolete bytes as numeric generation authority. Continue enforcing every actual approval/vector/candidate/domain/schema guard and audit the current document digest separately before/after. Simply removing the key from source_pins would regenerate a different Provenance.json and still fail exact-document validation, so preserve historical membership and digest without repinning or overwriting old review/provenance. Retain .gitattributes' separate audit policy. Add publication-only update and actual numeric-source-drift refusal fixtures; independently review and rerun the corrected exact source snapshot."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "PROOF-STRICT-001",
+      "suggestion": "For defense in depth, make validate_proof require the exact expected named group set and boundaryCases totals for the chosen --packs mode, rather than any nonempty unique check list. The reviewed compiled harness itself currently emits the full named set and this review independently reconciled it."
+    },
+    {
+      "id": "PUBLICATION-ATOMIC-001",
+      "suggestion": "If crash-atomic publication becomes a requirement, stage all five files in a fresh sibling and publish by a separately reviewed atomic directory step. Present code safely refuses existing partial output but does not promise rollback after a new-directory I/O failure."
+    }
+  ],
+  "originalReport": {
+    "path": ".artifacts/phase5-model-independent/review.json",
+    "sha256": "aa3356bb59040f0e9a0a6f03d2e12f1f92edbd9f61b07faeec54ae3945665525"
+  },
+  "historicalRejectionPreserved": true,
+  "numericModelsAndCanonicalDataChangedByFinding": false,
+  "originalFullProof": {
+    "path": ".artifacts/phase5-models/full-5202c4269df44719b705067e46d64c63/report.json",
+    "sha256": "f1b783938554dfd6e7b36672fae27a6ecbd6a6366a855ef3c349e7161dd54edb"
+  },
+  "fixScope": "Publication-document historical evidence versus numeric generator authority; preserve all five approved-data files"
+}
