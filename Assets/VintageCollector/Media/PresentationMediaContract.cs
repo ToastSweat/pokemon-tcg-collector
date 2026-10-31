@@ -2,6 +2,12 @@ using UnityEngine;
 
 namespace VintageCollector.Media
 {
+    // Optional acknowledgement-driven reveal audio; null preserves generic Foley.
+    public interface IRevealSoundMedia
+    {
+        AudioClip RevealSound(int oneBasedPosition, string kind, string finish);
+    }
+
     public interface IWrapperMetallicMedia
     {
         Texture2D WrapperFrontMask { get; }

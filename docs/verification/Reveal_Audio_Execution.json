@@ -1,0 +1,53 @@
+{
+  "status": "automated-native-verified-independent-reviews-passed-awaiting-focused-human-listening",
+  "recordedAt": "2026-10-31T13:57:27.075860-05:00",
+  "userScope": "Eleven individually assignable reveal-position sounds plus non-Pokemon rare, Pokemon non-holo rare and holo placeholder musical stingers",
+  "build": "native-build-fixed-14",
+  "player": "Builds/Phase3RevealAudioWindows/VintageCardCollector.exe",
+  "sourceScene": "Assets/VintageCollector/Scenes/BootstrapRevealAudio.unity",
+  "profile": "Assets/VintageCollector/Audio/DefaultRevealAudioProfile.asset",
+  "playerManifest": {
+    "path": "docs/verification/Reveal_Audio_Player_Manifest.json",
+    "sha256": "06d7ed7bfa5c2eea883599710362c01e67c20d02ec82cc0551966e476f7a997a"
+  },
+  "independentReviews": {
+    "runtimeAudio": "docs/verification/Reveal_Audio_Runtime_Independent_Review.json",
+    "runtimeOriginalArtifactSha256": "934427de14d1c132ec807263416ec50dab3021e4969e52cb132ed34c5d011cbd",
+    "runtimeVersionedCopySha256": "baf3eadfad8d4063a7594538db484bc24255cf0ac303f87db3e3664a18c47a26",
+    "runtimeCopyNote": "LF-normalized per existing Git attributes; original raw report remains unchanged and JSON semantics match",
+    "correctedBuild": "docs/verification/Reveal_Audio_Build_Independent_Review.json",
+    "correctedBuildReviewSha256": "b672418aa6859f9a9682b2db7a68d28ec5406b9346c80bd76ec845c80a0618cd",
+    "historicalRejectedBuildReview": "docs/verification/Reveal_Audio_Build_Review_Cycle_1.json",
+    "historicalOriginalManifest": "docs/verification/Reveal_Audio_Player_Manifest_Cycle_1.json"
+  },
+  "verified": {
+    "unityBuildErrors": 0,
+    "unityBuildWarnings": 0,
+    "sourceInputs": 480,
+    "compilerInputs": 484,
+    "immutablePlayerMembers": 137,
+    "distinctAssignedClips": 14,
+    "observedNativeSourceAndListenerPlaybacks": 36,
+    "audioNativeChecks": 279,
+    "silentReloadNativeChecks": 40,
+    "freshActualPlayerSuitesPassed": 5,
+    "validatedPngPaths": 209,
+    "distinctPngContents": 148,
+    "preservedAcceptedPlayers": 7,
+    "preservedAcceptedPlayerMembers": 951,
+    "preservedSharedFiles": 694,
+    "preservedBaselineRuntimeFiles": 22,
+    "savesAndLogsPrunedBeforeTraversal": true,
+    "catalogRngModelOrderSaveSchemaAwardsUnchanged": true
+  },
+  "parentIndependentReadback": ".artifacts/reveal-audio-review/parent-readback-corrected.json",
+  "humanHearingAcceptance": false,
+  "earlierArtTiltLightingBinderAcceptancePreserved": true,
+  "focusedListeningGuide": "docs/hermes/Reveal_Audio_Human_Review.md",
+  "rarePreview": ".artifacts/reveal-audio-preview/Rare_Fanfare_Preview.wav",
+  "continuationApproved": true,
+  "nextExpansionCheckpoint": "Independent research for English Jungle Unlimited and English Fossil Unlimited",
+  "newSetProbabilityModelsApproved": false,
+  "newSetsImplemented": false,
+  "shoppingMarketplaceFinanceScopeOpened": false
+}

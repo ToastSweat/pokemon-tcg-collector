@@ -150,6 +150,12 @@ namespace VintageCollector.Presentation
         }
         private OpeningView view;
         private IPresentationMedia media;
+        private IRevealSoundMedia revealSounds;
+        // Optional presentation-only assignments. Replacement stops an old cue, never replays one.
+        public IRevealSoundMedia RevealSounds {
+            get { return revealSounds; }
+            set { if (ReferenceEquals(revealSounds,value)) return; StopFoley(); revealSounds=value; }
+        }
         public OpeningView View { get { return view; } set { view = value; SyncAudio(); } }
         public IPresentationMedia Media {
             get { return media; }
@@ -200,7 +206,7 @@ namespace VintageCollector.Presentation
         private void SyncAudio()
         {
             if (foleySource != null) foleySource.volume = Volume;
-            if (CollectionInputBlocked || View == null || View.paused || View.stage == "error" || Volume <= 0 || !focused) StopFoley();
+            if (CollectionInputBlocked || CollectionOverlayVisible || View == null || View.paused || View.stage == "error" || Volume <= 0 || !focused) StopFoley();
         }
         private bool IsCommittedShape(string command)
         {
@@ -225,11 +231,18 @@ namespace VintageCollector.Presentation
             if (cueTransaction != View.transactionId) { cueTransaction = View.transactionId; consumedCues.Clear(); }
             string key = command + ":" + View.revealedCount.ToString(CultureInfo.InvariantCulture);
             if (!consumedCues.Add(key)) return;
-            if (View.paused || !focused || View.stage == "error") return;
+            if (CollectionInputBlocked || CollectionOverlayVisible || View.paused || !focused || View.stage == "error") return;
             if (command == "open") tearRemaining = TearDuration;
             if (command == "next" || command == "skip") motion.PulseReveal();
-            if (Media == null || Volume <= 0) return;
-            var clip = Media.Sound(command);
+            if (Volume <= 0) return;
+            AudioClip clip = null;
+            if (command == "next" && RevealSounds != null) {
+                // The current acknowledgement grants only this revealed card's metadata;
+                // never classify a concealed future card or catch up a skipped prefix.
+                var revealed = View.cards[View.revealedCount-1];
+                if (revealed != null) clip = RevealSounds.RevealSound(View.revealedCount,revealed.kind,revealed.finish);
+            }
+            if (clip == null && Media != null) clip = Media.Sound(command);
             if (clip == null) return;
             var source = FoleySource;
             source.Stop(); source.volume = Volume; source.clip = clip; source.Play();

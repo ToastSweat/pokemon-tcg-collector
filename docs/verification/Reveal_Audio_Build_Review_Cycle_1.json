@@ -1,0 +1,979 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "BUILD-01",
+      "severity": "high",
+      "location": "tools/run_reveal_audio_build.py:40-52",
+      "issue": "Stale Editor-code refusal covers only Assets, but restaging deletes Packages and ProjectSettings as well. An extra embedded-package Editor script is silently deleted rather than refusing the stage without mutation.",
+      "reproduction": "An independently owned stage containing Packages/com.example.stale/Editor/Surprise.cs and package.json, with a valid ownership marker, was passed to stage_exact({}, fixture, restage=True). The call succeeded, wrote staged-inputs.json, and deleted the stale script/package. The existing Assets/Editor negative test passes, so it does not cover this path.",
+      "evidence": ".artifacts/reveal-audio-independent-build/guard-tests.json (stale-embedded-package-Editor-must-refuse-without-deletion: passed=false)",
+      "impact": "Violates the requested/documented refuse-without-deletion guarantee and destroys retained stale stage evidence. This reproduction affected only this review's isolated fixture, not the real build stage or accepted outputs.",
+      "recommendation": "Before writing the marker or removing any copied tree, enumerate all staged compiler-input trees, including embedded/local Packages, and refuse undeclared Editor-capable code. Add a retained embedded-package negative test."
+    },
+    {
+      "id": "PLAYER-01",
+      "severity": "medium",
+      "location": "Assets/VintageCollector/Runtime/RevealAudioSmokeProbe.cs:12,56-58; Assets/VintageCollector/Runtime/Phase4CollectionHost.cs:12,42,55-58",
+      "issue": "The new probe and the host both have DefaultExecutionOrder(-200), but the probe immediately reads game.Paths and permanently exits when it is null. Paths are initialized in the host's Start, so their equal-order Start callbacks have an undeclared initialization dependency.",
+      "reproduction": "An exact-source extraction of the probe's initial Start control flow, with explicitly labelled managed doubles, yields no admission when the probe runs before the host; setting Paths afterward does not restart the completed iterator. Host-before-probe admits. Both script metas omit an executionOrder override. This is a source/control-flow reproduction, not a claim that the retained native executions failed.",
+      "evidence": ".artifacts/reveal-audio-independent-build/start-order-tests.json: PROBE_BEFORE_HOST_ADMITTED=False; AFTER_HOST_RETRY=False; HOST_BEFORE_PROBE_ADMITTED=True",
+      "impact": "A valid exact audio/legacy fixture can silently lose the new probe and leave old Phase4 fixture validation active, causing failure/timeouts rather than reliable opt-in execution. All supplied native runs happened to succeed; those runs do not establish an ordering guarantee.",
+      "recommendation": "Give the probe a distinct order after host initialization and before the other smoke probes, or explicitly wait for/init-check the host before treating null Paths as ordinary startup. Add a regression covering probe-before-host scheduling without enabling ordinary-startup automation."
+    }
+  ],
+  "suggestions": [
+    {
+      "location": "tools/verify_reveal_audio_player.py:21-34",
+      "suggestion": "Reuse the common admitted_build gate, including its comparison against the build's toolPins, rather than only recording current helper pins and checking they remain stable during this invocation. Actual retained build/verification helper hashes independently matched in this review."
+    },
+    {
+      "location": "docs/verification/Reveal_Audio_Player_Manifest.json:imageMapSha256",
+      "suggestion": "Publish the aggregate image-map preimage or define its canonical serialization. The 208 actual PNGs, their decoded rows/CRCs, 150 distinct contents and report handles were independently reconciled, but this opaque aggregate digest was not recreated from a declared encoding."
+    },
+    {
+      "location": "human acceptance",
+      "suggestion": "Retain humanHearingAcceptance=false. Imported samples, actual child source/listener signal, native automation and screenshots do not establish physical listening or musical/device acceptance."
+    }
+  ],
+  "summary": "Frozen native evidence and preservation reconcile, including the supplemental actual audio rerun, but approval is blocked by destructive embedded-package stale-code admission and the probe/host Start-order dependency.",
+  "report_path": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/reveal-audio-independent-build/review.json",
+  "scope": {
+    "root": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG",
+    "controlledWriteRoot": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/reveal-audio-independent-build",
+    "productionEdits": false,
+    "commits": false,
+    "nativeRebuildOrLaunchByReviewer": false,
+    "liveSavesOrLogsTraversed": false,
+    "scopeDiffCoverage": [
+      {
+        "path": "Assets/VintageCollector/Editor/RevealAudioBuild.cs",
+        "diffBytes": 6548,
+        "sha256": "db43c752764e1ef46395b739419d5c9681a48402752f30e3b6cb597497571586"
+      },
+      {
+        "path": "Assets/VintageCollector/Editor/RevealAudioBuild.cs.meta",
+        "diffBytes": 353,
+        "sha256": "f0645aa43107220f6c9f3808cf011c0360eb7bd68546b1ef552cb5ef409386fd"
+      },
+      {
+        "path": "Assets/VintageCollector/Editor/RevealAudioBuildPolicy.cs",
+        "diffBytes": 3213,
+        "sha256": "0c5a6f24c30cc3758e5e6c6095aa56dfa9ce40063c2eb1e58a89c598b163e2d4"
+      },
+      {
+        "path": "Assets/VintageCollector/Editor/RevealAudioBuildPolicy.cs.meta",
+        "diffBytes": 371,
+        "sha256": "0921886763254f8ec71478e15a329da158e68b4364ddf23ca67dfa99949bb747"
+      },
+      {
+        "path": "Assets/VintageCollector/Editor/RevealAudioNativeChecks.cs",
+        "diffBytes": 6820,
+        "sha256": "5d7735a9e07a33d5cf167f9636b737810c5f5cb21d3302d61c34ed411e34f76d"
+      },
+      {
+        "path": "Assets/VintageCollector/Editor/RevealAudioNativeChecks.cs.meta",
+        "diffBytes": 374,
+        "sha256": "6c8bc0e2996195eb8deffc5bb8e8b476fc9c16bf45fa19703985c01b4159287f"
+      },
+      {
+        "path": "Assets/VintageCollector/Runtime/RevealAudioSmokeProbe.cs",
+        "diffBytes": 18222,
+        "sha256": "ce20d13d00a1f8b260e3bfb347067e536a6be9772ff2c652dd29f00b6cb22aba"
+      },
+      {
+        "path": "Assets/VintageCollector/Runtime/RevealAudioSmokeProbe.cs.meta",
+        "diffBytes": 371,
+        "sha256": "62026a917b6576c811b22fedf86c56abf1e5da9ff0afe657872122b29ac15111"
+      },
+      {
+        "path": "Assets/VintageCollector/Scenes/BootstrapRevealAudio.unity",
+        "diffBytes": 12329,
+        "sha256": "e45b509ee0db8e5864b5241481be269730ad960c6a12ac6dc8ff4b04391c6d10"
+      },
+      {
+        "path": "Assets/VintageCollector/Scenes/BootstrapRevealAudio.unity.meta",
+        "diffBytes": 446,
+        "sha256": "5e7ff2392c10268f88a7d2cc6e4a61705cfb952180bf3c45f988b7054d9748c8"
+      },
+      {
+        "path": "TestsRevealAudio/BuildAdmissionTests.py",
+        "diffBytes": 3512,
+        "sha256": "ee64560663a96c3b4a4342d7b3ecd9db3d33fdea4ccddc0fe7b9962c87d3975f"
+      },
+      {
+        "path": "TestsRevealAudio/BuildEntrypointTests.py",
+        "diffBytes": 1847,
+        "sha256": "70b99d3805ff5be25380e2017e586b126a94df9e22b61d17e4020d11291104a5"
+      },
+      {
+        "path": "TestsRevealAudio/BuildPolicyTests.cs",
+        "diffBytes": 3233,
+        "sha256": "24044dc2073e2a5008ea4a5b912a3ab650a7e32dd48ecc4749bbcb1d60f103fc"
+      },
+      {
+        "path": "TestsRevealAudio/PlayerOptInTests.cs",
+        "diffBytes": 3757,
+        "sha256": "877afd1aaec0c101b88bf33f0892f291dcf84db48cb7df191121481d53f29270"
+      },
+      {
+        "path": "TestsRevealAudio/PlayerVerifierTests.py",
+        "diffBytes": 2127,
+        "sha256": "ff7bf2bfc53cbc9444994b511b08576a4906febaac1330f859d499ae68f2608c"
+      },
+      {
+        "path": "docs/technical/Reveal_Audio_Build_Player.md",
+        "diffBytes": 9874,
+        "sha256": "462c379edf30274215cdf14aa2085fa7c1184a01a0e71db30b73c93c02d90dca"
+      },
+      {
+        "path": "docs/verification/Reveal_Audio_Player_Manifest.json",
+        "diffBytes": 23214,
+        "sha256": "f39b2d5a285acfde37fdb94b5b3b6573a440cf32d391efc7b4378650b801fccc"
+      },
+      {
+        "path": "tools/run_reveal_audio_build.py",
+        "diffBytes": 14603,
+        "sha256": "c08862a0634c5c49fcff4c4430dd1ece05336989d9ba21626c0440b11483bbbe"
+      },
+      {
+        "path": "tools/run_reveal_audio_compile.py",
+        "diffBytes": 3738,
+        "sha256": "1d162c865778559d1feaf44378ab948a373c8eed6b529c78a8c8ab98b05954c8"
+      },
+      {
+        "path": "tools/verify_reveal_audio_legacy.py",
+        "diffBytes": 8306,
+        "sha256": "4b9ebae8886d0aa63892ff50d966aadca489b7cdf379f4b759bce5dd0905e437"
+      },
+      {
+        "path": "tools/verify_reveal_audio_native.py",
+        "diffBytes": 8919,
+        "sha256": "0b48b61f3dc0048e73568504a98d422e9335123a5b8af3c25a175a40f15a4eb7"
+      },
+      {
+        "path": "tools/verify_reveal_audio_player.py",
+        "diffBytes": 20115,
+        "sha256": "c5999aa52be462315bd6e5c089ec2f344a84483d95822f4ce5c4707c7590cbe4"
+      }
+    ],
+    "frozenDiff": {
+      "bytes": 262745,
+      "sha256": "fa40a7f7a1c09eedde9bcb4abb374e57bef7df3bd1fa813fcd50f44119827310",
+      "matchesCurrentCachedDiff": true
+    },
+    "reviewPinCount": 75,
+    "reviewPinReadback": {
+      "Assets/VintageCollector/Audio.meta": {
+        "expected": {
+          "live": "6a97d15472e968a6b952454f7c1c71fd75cfc0df04dedff53b935f285a4e738a",
+          "index": "6a97d15472e968a6b952454f7c1c71fd75cfc0df04dedff53b935f285a4e738a"
+        },
+        "live": "6a97d15472e968a6b952454f7c1c71fd75cfc0df04dedff53b935f285a4e738a",
+        "index": "6a97d15472e968a6b952454f7c1c71fd75cfc0df04dedff53b935f285a4e738a"
+      },
+      "Assets/VintageCollector/Audio/Clips.meta": {
+        "expected": {
+          "live": "55fe001bfff292d2fed6163ee1f388293592ab8f6ba4899b364c8cd03c9a7b85",
+          "index": "55fe001bfff292d2fed6163ee1f388293592ab8f6ba4899b364c8cd03c9a7b85"
+        },
+        "live": "55fe001bfff292d2fed6163ee1f388293592ab8f6ba4899b364c8cd03c9a7b85",
+        "index": "55fe001bfff292d2fed6163ee1f388293592ab8f6ba4899b364c8cd03c9a7b85"
+      },
+      "Assets/VintageCollector/Audio/Clips/OriginalRevealAudio.manifest.json": {
+        "expected": {
+          "live": "0295e2550387a4f000e3ff6b5a8bce9f2c31fa6bf0d6d49518ffce9c72bea85d",
+          "index": "0295e2550387a4f000e3ff6b5a8bce9f2c31fa6bf0d6d49518ffce9c72bea85d"
+        },
+        "live": "0295e2550387a4f000e3ff6b5a8bce9f2c31fa6bf0d6d49518ffce9c72bea85d",
+        "index": "0295e2550387a4f000e3ff6b5a8bce9f2c31fa6bf0d6d49518ffce9c72bea85d"
+      },
+      "Assets/VintageCollector/Audio/Clips/OriginalRevealAudio.manifest.json.meta": {
+        "expected": {
+          "live": "4f03c9d98ab49c43ec788a88085bc822cef5d9f3595e16e50eac92ababcf22f2",
+          "index": "4f03c9d98ab49c43ec788a88085bc822cef5d9f3595e16e50eac92ababcf22f2"
+        },
+        "live": "4f03c9d98ab49c43ec788a88085bc822cef5d9f3595e16e50eac92ababcf22f2",
+        "index": "4f03c9d98ab49c43ec788a88085bc822cef5d9f3595e16e50eac92ababcf22f2"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_01.wav": {
+        "expected": {
+          "live": "ef5a70e3fec861d4c552c93fff7ad60b0515472da913ca8f7b55528575dbfe83",
+          "index": "ef5a70e3fec861d4c552c93fff7ad60b0515472da913ca8f7b55528575dbfe83"
+        },
+        "live": "ef5a70e3fec861d4c552c93fff7ad60b0515472da913ca8f7b55528575dbfe83",
+        "index": "ef5a70e3fec861d4c552c93fff7ad60b0515472da913ca8f7b55528575dbfe83"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_01.wav.meta": {
+        "expected": {
+          "live": "a98fc1b0af71c9d6d9431502cfb99c0f9f63ab5b0f8a2debb95f04020cac6d35",
+          "index": "a98fc1b0af71c9d6d9431502cfb99c0f9f63ab5b0f8a2debb95f04020cac6d35"
+        },
+        "live": "a98fc1b0af71c9d6d9431502cfb99c0f9f63ab5b0f8a2debb95f04020cac6d35",
+        "index": "a98fc1b0af71c9d6d9431502cfb99c0f9f63ab5b0f8a2debb95f04020cac6d35"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_02.wav": {
+        "expected": {
+          "live": "a2bbc15b0f65d02f7f37319e886d233f2511cf6220f3f8c6c0c9ffb560f4e217",
+          "index": "a2bbc15b0f65d02f7f37319e886d233f2511cf6220f3f8c6c0c9ffb560f4e217"
+        },
+        "live": "a2bbc15b0f65d02f7f37319e886d233f2511cf6220f3f8c6c0c9ffb560f4e217",
+        "index": "a2bbc15b0f65d02f7f37319e886d233f2511cf6220f3f8c6c0c9ffb560f4e217"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_02.wav.meta": {
+        "expected": {
+          "live": "e56ccfeb49ee6923e404e0629f0c0168da780cc90642f80b6f0f3ee5359b1f14",
+          "index": "e56ccfeb49ee6923e404e0629f0c0168da780cc90642f80b6f0f3ee5359b1f14"
+        },
+        "live": "e56ccfeb49ee6923e404e0629f0c0168da780cc90642f80b6f0f3ee5359b1f14",
+        "index": "e56ccfeb49ee6923e404e0629f0c0168da780cc90642f80b6f0f3ee5359b1f14"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_03.wav": {
+        "expected": {
+          "live": "bde413e11d9c2f1a561a5502da4e3034c9f176051dd887e2bd9715c1e2d2312c",
+          "index": "bde413e11d9c2f1a561a5502da4e3034c9f176051dd887e2bd9715c1e2d2312c"
+        },
+        "live": "bde413e11d9c2f1a561a5502da4e3034c9f176051dd887e2bd9715c1e2d2312c",
+        "index": "bde413e11d9c2f1a561a5502da4e3034c9f176051dd887e2bd9715c1e2d2312c"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_03.wav.meta": {
+        "expected": {
+          "live": "3092134c0d8337f2ce5314af39dcf1da23a76a2e68898f3329af43ec13583843",
+          "index": "3092134c0d8337f2ce5314af39dcf1da23a76a2e68898f3329af43ec13583843"
+        },
+        "live": "3092134c0d8337f2ce5314af39dcf1da23a76a2e68898f3329af43ec13583843",
+        "index": "3092134c0d8337f2ce5314af39dcf1da23a76a2e68898f3329af43ec13583843"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_04.wav": {
+        "expected": {
+          "live": "1d2b4c53fa911680140e2b88a541987a780268e4ac0794c1e7f223651c7df06e",
+          "index": "1d2b4c53fa911680140e2b88a541987a780268e4ac0794c1e7f223651c7df06e"
+        },
+        "live": "1d2b4c53fa911680140e2b88a541987a780268e4ac0794c1e7f223651c7df06e",
+        "index": "1d2b4c53fa911680140e2b88a541987a780268e4ac0794c1e7f223651c7df06e"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_04.wav.meta": {
+        "expected": {
+          "live": "a2567720da34e11c70f536862331fc48128fbdbb3a60c5d182173a18f2bf98ac",
+          "index": "a2567720da34e11c70f536862331fc48128fbdbb3a60c5d182173a18f2bf98ac"
+        },
+        "live": "a2567720da34e11c70f536862331fc48128fbdbb3a60c5d182173a18f2bf98ac",
+        "index": "a2567720da34e11c70f536862331fc48128fbdbb3a60c5d182173a18f2bf98ac"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_05.wav": {
+        "expected": {
+          "live": "273fbd7485364b025a759a0a53ac37c79625e8378188d48e2f4ca211d0300057",
+          "index": "273fbd7485364b025a759a0a53ac37c79625e8378188d48e2f4ca211d0300057"
+        },
+        "live": "273fbd7485364b025a759a0a53ac37c79625e8378188d48e2f4ca211d0300057",
+        "index": "273fbd7485364b025a759a0a53ac37c79625e8378188d48e2f4ca211d0300057"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_05.wav.meta": {
+        "expected": {
+          "live": "0701f7c689b2de948c4019e087fc9a1916ff809946b2ec6df8120f63e94f0965",
+          "index": "0701f7c689b2de948c4019e087fc9a1916ff809946b2ec6df8120f63e94f0965"
+        },
+        "live": "0701f7c689b2de948c4019e087fc9a1916ff809946b2ec6df8120f63e94f0965",
+        "index": "0701f7c689b2de948c4019e087fc9a1916ff809946b2ec6df8120f63e94f0965"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_06.wav": {
+        "expected": {
+          "live": "ac964a1845bafe57acd751f20dfbf52237e25578d93d651610776043c70fa3f8",
+          "index": "ac964a1845bafe57acd751f20dfbf52237e25578d93d651610776043c70fa3f8"
+        },
+        "live": "ac964a1845bafe57acd751f20dfbf52237e25578d93d651610776043c70fa3f8",
+        "index": "ac964a1845bafe57acd751f20dfbf52237e25578d93d651610776043c70fa3f8"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_06.wav.meta": {
+        "expected": {
+          "live": "d10af45635a3c888aec9084a44765458ed83bb9e544b240837f2d5448cdeb313",
+          "index": "d10af45635a3c888aec9084a44765458ed83bb9e544b240837f2d5448cdeb313"
+        },
+        "live": "d10af45635a3c888aec9084a44765458ed83bb9e544b240837f2d5448cdeb313",
+        "index": "d10af45635a3c888aec9084a44765458ed83bb9e544b240837f2d5448cdeb313"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_07.wav": {
+        "expected": {
+          "live": "2ff37669f2e47701e422e463d13abc98f3b5d2af394c8cd1ab6dbd1396e0bdfc",
+          "index": "2ff37669f2e47701e422e463d13abc98f3b5d2af394c8cd1ab6dbd1396e0bdfc"
+        },
+        "live": "2ff37669f2e47701e422e463d13abc98f3b5d2af394c8cd1ab6dbd1396e0bdfc",
+        "index": "2ff37669f2e47701e422e463d13abc98f3b5d2af394c8cd1ab6dbd1396e0bdfc"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_07.wav.meta": {
+        "expected": {
+          "live": "80dd666f578c7c0836fa73c5ba8a795f4f80913830b708fa3f8a7dec47120db5",
+          "index": "80dd666f578c7c0836fa73c5ba8a795f4f80913830b708fa3f8a7dec47120db5"
+        },
+        "live": "80dd666f578c7c0836fa73c5ba8a795f4f80913830b708fa3f8a7dec47120db5",
+        "index": "80dd666f578c7c0836fa73c5ba8a795f4f80913830b708fa3f8a7dec47120db5"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_08.wav": {
+        "expected": {
+          "live": "e1bd386db23651cb1b19830be5709ad6959736f0796666e35f295964a8a2ab12",
+          "index": "e1bd386db23651cb1b19830be5709ad6959736f0796666e35f295964a8a2ab12"
+        },
+        "live": "e1bd386db23651cb1b19830be5709ad6959736f0796666e35f295964a8a2ab12",
+        "index": "e1bd386db23651cb1b19830be5709ad6959736f0796666e35f295964a8a2ab12"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_08.wav.meta": {
+        "expected": {
+          "live": "06cea8ff3f14d4fc78a5d88ebca4e28d2a93b7927b15ad675361bf6fdcd18422",
+          "index": "06cea8ff3f14d4fc78a5d88ebca4e28d2a93b7927b15ad675361bf6fdcd18422"
+        },
+        "live": "06cea8ff3f14d4fc78a5d88ebca4e28d2a93b7927b15ad675361bf6fdcd18422",
+        "index": "06cea8ff3f14d4fc78a5d88ebca4e28d2a93b7927b15ad675361bf6fdcd18422"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_09.wav": {
+        "expected": {
+          "live": "336336b44c14eaa5d703cbf596adf5ae74ab48da4eebe440918747a36a5784c5",
+          "index": "336336b44c14eaa5d703cbf596adf5ae74ab48da4eebe440918747a36a5784c5"
+        },
+        "live": "336336b44c14eaa5d703cbf596adf5ae74ab48da4eebe440918747a36a5784c5",
+        "index": "336336b44c14eaa5d703cbf596adf5ae74ab48da4eebe440918747a36a5784c5"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_09.wav.meta": {
+        "expected": {
+          "live": "9cacc3aeeaa0aeb1910e95109aed8d9fbbe2aa91ff9bedcac31bb0174a80171b",
+          "index": "9cacc3aeeaa0aeb1910e95109aed8d9fbbe2aa91ff9bedcac31bb0174a80171b"
+        },
+        "live": "9cacc3aeeaa0aeb1910e95109aed8d9fbbe2aa91ff9bedcac31bb0174a80171b",
+        "index": "9cacc3aeeaa0aeb1910e95109aed8d9fbbe2aa91ff9bedcac31bb0174a80171b"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_10.wav": {
+        "expected": {
+          "live": "f99345109a9cc9a8c418400c6de36a0dda9de43c46931eaf63ab9c0a84e4ece1",
+          "index": "f99345109a9cc9a8c418400c6de36a0dda9de43c46931eaf63ab9c0a84e4ece1"
+        },
+        "live": "f99345109a9cc9a8c418400c6de36a0dda9de43c46931eaf63ab9c0a84e4ece1",
+        "index": "f99345109a9cc9a8c418400c6de36a0dda9de43c46931eaf63ab9c0a84e4ece1"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_10.wav.meta": {
+        "expected": {
+          "live": "2f716fe4a134804698960c8daf0991b45ceef2ff1efff5ca62407a10e471bdb8",
+          "index": "2f716fe4a134804698960c8daf0991b45ceef2ff1efff5ca62407a10e471bdb8"
+        },
+        "live": "2f716fe4a134804698960c8daf0991b45ceef2ff1efff5ca62407a10e471bdb8",
+        "index": "2f716fe4a134804698960c8daf0991b45ceef2ff1efff5ca62407a10e471bdb8"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_11.wav": {
+        "expected": {
+          "live": "29ab3ca3b1ca3f5ede87ffce9f6e2f4887fb302ef8abe1ab9407b99d5bd3db09",
+          "index": "29ab3ca3b1ca3f5ede87ffce9f6e2f4887fb302ef8abe1ab9407b99d5bd3db09"
+        },
+        "live": "29ab3ca3b1ca3f5ede87ffce9f6e2f4887fb302ef8abe1ab9407b99d5bd3db09",
+        "index": "29ab3ca3b1ca3f5ede87ffce9f6e2f4887fb302ef8abe1ab9407b99d5bd3db09"
+      },
+      "Assets/VintageCollector/Audio/Clips/Pull_11.wav.meta": {
+        "expected": {
+          "live": "4d41c0e0382f189228a24d47685e4ca5a13a21a0b939356a0d16fed8431b7e51",
+          "index": "4d41c0e0382f189228a24d47685e4ca5a13a21a0b939356a0d16fed8431b7e51"
+        },
+        "live": "4d41c0e0382f189228a24d47685e4ca5a13a21a0b939356a0d16fed8431b7e51",
+        "index": "4d41c0e0382f189228a24d47685e4ca5a13a21a0b939356a0d16fed8431b7e51"
+      },
+      "Assets/VintageCollector/Audio/Clips/Rare_Holo.wav": {
+        "expected": {
+          "live": "65ab64f38b19e1aa0b31bad575b1dfe8b3a3ca6edf14a032c7e0579c1ba41bf5",
+          "index": "65ab64f38b19e1aa0b31bad575b1dfe8b3a3ca6edf14a032c7e0579c1ba41bf5"
+        },
+        "live": "65ab64f38b19e1aa0b31bad575b1dfe8b3a3ca6edf14a032c7e0579c1ba41bf5",
+        "index": "65ab64f38b19e1aa0b31bad575b1dfe8b3a3ca6edf14a032c7e0579c1ba41bf5"
+      },
+      "Assets/VintageCollector/Audio/Clips/Rare_Holo.wav.meta": {
+        "expected": {
+          "live": "0d97a4db2332bf63ed58a70184f26972ca9a75d1df306e345fd204cbfb6ded8d",
+          "index": "0d97a4db2332bf63ed58a70184f26972ca9a75d1df306e345fd204cbfb6ded8d"
+        },
+        "live": "0d97a4db2332bf63ed58a70184f26972ca9a75d1df306e345fd204cbfb6ded8d",
+        "index": "0d97a4db2332bf63ed58a70184f26972ca9a75d1df306e345fd204cbfb6ded8d"
+      },
+      "Assets/VintageCollector/Audio/Clips/Rare_NonPokemon.wav": {
+        "expected": {
+          "live": "d70d36df4078ff6a1682a59106a776c2f5180b72db085f2b5cf580dcc8fd4dad",
+          "index": "d70d36df4078ff6a1682a59106a776c2f5180b72db085f2b5cf580dcc8fd4dad"
+        },
+        "live": "d70d36df4078ff6a1682a59106a776c2f5180b72db085f2b5cf580dcc8fd4dad",
+        "index": "d70d36df4078ff6a1682a59106a776c2f5180b72db085f2b5cf580dcc8fd4dad"
+      },
+      "Assets/VintageCollector/Audio/Clips/Rare_NonPokemon.wav.meta": {
+        "expected": {
+          "live": "7aa11502954b118a9c8bed239d278c026b1c927559dab368027d3f8ad59a041d",
+          "index": "7aa11502954b118a9c8bed239d278c026b1c927559dab368027d3f8ad59a041d"
+        },
+        "live": "7aa11502954b118a9c8bed239d278c026b1c927559dab368027d3f8ad59a041d",
+        "index": "7aa11502954b118a9c8bed239d278c026b1c927559dab368027d3f8ad59a041d"
+      },
+      "Assets/VintageCollector/Audio/Clips/Rare_Pokemon.wav": {
+        "expected": {
+          "live": "a8f54286cb3e6644e8fd2c6ec5be44abe258f40a33e63761e398251dc65ec10c",
+          "index": "a8f54286cb3e6644e8fd2c6ec5be44abe258f40a33e63761e398251dc65ec10c"
+        },
+        "live": "a8f54286cb3e6644e8fd2c6ec5be44abe258f40a33e63761e398251dc65ec10c",
+        "index": "a8f54286cb3e6644e8fd2c6ec5be44abe258f40a33e63761e398251dc65ec10c"
+      },
+      "Assets/VintageCollector/Audio/Clips/Rare_Pokemon.wav.meta": {
+        "expected": {
+          "live": "b04ebf55ac394734cf6c36664cb815270ca9197642d04d66664a3ba5178780ed",
+          "index": "b04ebf55ac394734cf6c36664cb815270ca9197642d04d66664a3ba5178780ed"
+        },
+        "live": "b04ebf55ac394734cf6c36664cb815270ca9197642d04d66664a3ba5178780ed",
+        "index": "b04ebf55ac394734cf6c36664cb815270ca9197642d04d66664a3ba5178780ed"
+      },
+      "Assets/VintageCollector/Audio/DefaultRevealAudioProfile.asset": {
+        "expected": {
+          "live": "d92b82b51812c37eb79f8398afdcd86fe3c2a4cd5ab15409e9631a8005f16458",
+          "index": "d92b82b51812c37eb79f8398afdcd86fe3c2a4cd5ab15409e9631a8005f16458"
+        },
+        "live": "d92b82b51812c37eb79f8398afdcd86fe3c2a4cd5ab15409e9631a8005f16458",
+        "index": "d92b82b51812c37eb79f8398afdcd86fe3c2a4cd5ab15409e9631a8005f16458"
+      },
+      "Assets/VintageCollector/Audio/DefaultRevealAudioProfile.asset.meta": {
+        "expected": {
+          "live": "4d0d210302e4a7751bed0b72910210c824483c716f33f326a94ae9f03236cff9",
+          "index": "4d0d210302e4a7751bed0b72910210c824483c716f33f326a94ae9f03236cff9"
+        },
+        "live": "4d0d210302e4a7751bed0b72910210c824483c716f33f326a94ae9f03236cff9",
+        "index": "4d0d210302e4a7751bed0b72910210c824483c716f33f326a94ae9f03236cff9"
+      },
+      "Assets/VintageCollector/Audio/RevealAudioHost.cs": {
+        "expected": {
+          "live": "e73f3b6d583016d0cbe55716855dc562bef4953fe1f27afadb8338c48d60da4b",
+          "index": "e73f3b6d583016d0cbe55716855dc562bef4953fe1f27afadb8338c48d60da4b"
+        },
+        "live": "e73f3b6d583016d0cbe55716855dc562bef4953fe1f27afadb8338c48d60da4b",
+        "index": "e73f3b6d583016d0cbe55716855dc562bef4953fe1f27afadb8338c48d60da4b"
+      },
+      "Assets/VintageCollector/Audio/RevealAudioHost.cs.meta": {
+        "expected": {
+          "live": "61c40b789f48a4831a6fef85429db9f7c142a664fff6987c33644dcc55618695",
+          "index": "61c40b789f48a4831a6fef85429db9f7c142a664fff6987c33644dcc55618695"
+        },
+        "live": "61c40b789f48a4831a6fef85429db9f7c142a664fff6987c33644dcc55618695",
+        "index": "61c40b789f48a4831a6fef85429db9f7c142a664fff6987c33644dcc55618695"
+      },
+      "Assets/VintageCollector/Audio/RevealAudioProfile.cs": {
+        "expected": {
+          "live": "97aeeb57ab0a89d53548f60f5b2c7d20d653500d749db264b4fc4fa67f4405a1",
+          "index": "97aeeb57ab0a89d53548f60f5b2c7d20d653500d749db264b4fc4fa67f4405a1"
+        },
+        "live": "97aeeb57ab0a89d53548f60f5b2c7d20d653500d749db264b4fc4fa67f4405a1",
+        "index": "97aeeb57ab0a89d53548f60f5b2c7d20d653500d749db264b4fc4fa67f4405a1"
+      },
+      "Assets/VintageCollector/Audio/RevealAudioProfile.cs.meta": {
+        "expected": {
+          "live": "1b77191b4251425decb9e062ddee282bfb1f37fd7d4418e76dad4fc1d5d5134b",
+          "index": "1b77191b4251425decb9e062ddee282bfb1f37fd7d4418e76dad4fc1d5d5134b"
+        },
+        "live": "1b77191b4251425decb9e062ddee282bfb1f37fd7d4418e76dad4fc1d5d5134b",
+        "index": "1b77191b4251425decb9e062ddee282bfb1f37fd7d4418e76dad4fc1d5d5134b"
+      },
+      "Assets/VintageCollector/Editor/RevealAudioBuild.cs": {
+        "expected": {
+          "live": "7f512c97445e672807d04d6ce285aaa1429f4bff6448b56b1fb65c924d127ba5",
+          "index": "7f512c97445e672807d04d6ce285aaa1429f4bff6448b56b1fb65c924d127ba5"
+        },
+        "live": "7f512c97445e672807d04d6ce285aaa1429f4bff6448b56b1fb65c924d127ba5",
+        "index": "7f512c97445e672807d04d6ce285aaa1429f4bff6448b56b1fb65c924d127ba5"
+      },
+      "Assets/VintageCollector/Editor/RevealAudioBuild.cs.meta": {
+        "expected": {
+          "live": "a549d65a136f3f8b8296335ab3be2369ab6f3c1fd74732f72509ba59c38d7dc6",
+          "index": "a549d65a136f3f8b8296335ab3be2369ab6f3c1fd74732f72509ba59c38d7dc6"
+        },
+        "live": "a549d65a136f3f8b8296335ab3be2369ab6f3c1fd74732f72509ba59c38d7dc6",
+        "index": "a549d65a136f3f8b8296335ab3be2369ab6f3c1fd74732f72509ba59c38d7dc6"
+      },
+      "Assets/VintageCollector/Editor/RevealAudioBuildPolicy.cs": {
+        "expected": {
+          "live": "ea733fc1ded071267ad8610489f41c908f8ee4c10d1b716274dc2a3bfa97526a",
+          "index": "ea733fc1ded071267ad8610489f41c908f8ee4c10d1b716274dc2a3bfa97526a"
+        },
+        "live": "ea733fc1ded071267ad8610489f41c908f8ee4c10d1b716274dc2a3bfa97526a",
+        "index": "ea733fc1ded071267ad8610489f41c908f8ee4c10d1b716274dc2a3bfa97526a"
+      },
+      "Assets/VintageCollector/Editor/RevealAudioBuildPolicy.cs.meta": {
+        "expected": {
+          "live": "beac155e4113783234b692e471bc6152c6708b580c02e4e670fc07ff2daace0f",
+          "index": "beac155e4113783234b692e471bc6152c6708b580c02e4e670fc07ff2daace0f"
+        },
+        "live": "beac155e4113783234b692e471bc6152c6708b580c02e4e670fc07ff2daace0f",
+        "index": "beac155e4113783234b692e471bc6152c6708b580c02e4e670fc07ff2daace0f"
+      },
+      "Assets/VintageCollector/Editor/RevealAudioNativeChecks.cs": {
+        "expected": {
+          "live": "0e7ba14cb002b60f059d5ee3838f52e96496f9cb74747443927707bc8685dc2a",
+          "index": "0e7ba14cb002b60f059d5ee3838f52e96496f9cb74747443927707bc8685dc2a"
+        },
+        "live": "0e7ba14cb002b60f059d5ee3838f52e96496f9cb74747443927707bc8685dc2a",
+        "index": "0e7ba14cb002b60f059d5ee3838f52e96496f9cb74747443927707bc8685dc2a"
+      },
+      "Assets/VintageCollector/Editor/RevealAudioNativeChecks.cs.meta": {
+        "expected": {
+          "live": "070df99e7b6e181957f0121c4144fca3e0e60e6f34eee581713c7cfa1a0e2761",
+          "index": "070df99e7b6e181957f0121c4144fca3e0e60e6f34eee581713c7cfa1a0e2761"
+        },
+        "live": "070df99e7b6e181957f0121c4144fca3e0e60e6f34eee581713c7cfa1a0e2761",
+        "index": "070df99e7b6e181957f0121c4144fca3e0e60e6f34eee581713c7cfa1a0e2761"
+      },
+      "Assets/VintageCollector/Media/PresentationMediaContract.cs": {
+        "expected": {
+          "live": "d642981a9a4cbbeb1d9cf4ed49053f2260265f44b786fb6a9b73a036ace6a31e",
+          "index": "d642981a9a4cbbeb1d9cf4ed49053f2260265f44b786fb6a9b73a036ace6a31e"
+        },
+        "live": "d642981a9a4cbbeb1d9cf4ed49053f2260265f44b786fb6a9b73a036ace6a31e",
+        "index": "d642981a9a4cbbeb1d9cf4ed49053f2260265f44b786fb6a9b73a036ace6a31e"
+      },
+      "Assets/VintageCollector/Presentation/TabletopPresentation.cs": {
+        "expected": {
+          "live": "fcabe5a234857e819ff39662df911b18242c6249cb8588aaa6b4a16bd72a5fde",
+          "index": "fcabe5a234857e819ff39662df911b18242c6249cb8588aaa6b4a16bd72a5fde"
+        },
+        "live": "fcabe5a234857e819ff39662df911b18242c6249cb8588aaa6b4a16bd72a5fde",
+        "index": "fcabe5a234857e819ff39662df911b18242c6249cb8588aaa6b4a16bd72a5fde"
+      },
+      "Assets/VintageCollector/Runtime/RevealAudioSmokeProbe.cs": {
+        "expected": {
+          "live": "d0c7d2824ac790d5db57ebda53d3d2121aac0d2e3c87fcbf580a67b8e9723132",
+          "index": "d0c7d2824ac790d5db57ebda53d3d2121aac0d2e3c87fcbf580a67b8e9723132"
+        },
+        "live": "d0c7d2824ac790d5db57ebda53d3d2121aac0d2e3c87fcbf580a67b8e9723132",
+        "index": "d0c7d2824ac790d5db57ebda53d3d2121aac0d2e3c87fcbf580a67b8e9723132"
+      },
+      "Assets/VintageCollector/Runtime/RevealAudioSmokeProbe.cs.meta": {
+        "expected": {
+          "live": "af94ef693079f7a894444e0556a77563a321951e9c9f19e99887f44774447cfb",
+          "index": "af94ef693079f7a894444e0556a77563a321951e9c9f19e99887f44774447cfb"
+        },
+        "live": "af94ef693079f7a894444e0556a77563a321951e9c9f19e99887f44774447cfb",
+        "index": "af94ef693079f7a894444e0556a77563a321951e9c9f19e99887f44774447cfb"
+      },
+      "Assets/VintageCollector/Scenes/BootstrapRevealAudio.unity": {
+        "expected": {
+          "live": "1281935d4ca203a4c7073bb0fdb2d5c89ea4d9c72d24909eb2e1c504837cc4b6",
+          "index": "1281935d4ca203a4c7073bb0fdb2d5c89ea4d9c72d24909eb2e1c504837cc4b6"
+        },
+        "live": "1281935d4ca203a4c7073bb0fdb2d5c89ea4d9c72d24909eb2e1c504837cc4b6",
+        "index": "1281935d4ca203a4c7073bb0fdb2d5c89ea4d9c72d24909eb2e1c504837cc4b6"
+      },
+      "Assets/VintageCollector/Scenes/BootstrapRevealAudio.unity.meta": {
+        "expected": {
+          "live": "5ce3ed2a31782d09cf7796f99b86aee888abf0c2f55245ff3e46c191efade3c9",
+          "index": "5ce3ed2a31782d09cf7796f99b86aee888abf0c2f55245ff3e46c191efade3c9"
+        },
+        "live": "5ce3ed2a31782d09cf7796f99b86aee888abf0c2f55245ff3e46c191efade3c9",
+        "index": "5ce3ed2a31782d09cf7796f99b86aee888abf0c2f55245ff3e46c191efade3c9"
+      },
+      "TestsRevealAudio/AudioProfileNativeChecks.cs": {
+        "expected": {
+          "live": "dbbf8b63e97042a968f0c23bcfde8ffa7cc2acc0e770da39c0aa77bc7f463684",
+          "index": "dbbf8b63e97042a968f0c23bcfde8ffa7cc2acc0e770da39c0aa77bc7f463684"
+        },
+        "live": "dbbf8b63e97042a968f0c23bcfde8ffa7cc2acc0e770da39c0aa77bc7f463684",
+        "index": "dbbf8b63e97042a968f0c23bcfde8ffa7cc2acc0e770da39c0aa77bc7f463684"
+      },
+      "TestsRevealAudio/AudioProfileRunNative.py": {
+        "expected": {
+          "live": "71eb2d1d472032c9fe6d977db8a581fc045b10a235122ad5c4eb49e95be0f6f9",
+          "index": "71eb2d1d472032c9fe6d977db8a581fc045b10a235122ad5c4eb49e95be0f6f9"
+        },
+        "live": "71eb2d1d472032c9fe6d977db8a581fc045b10a235122ad5c4eb49e95be0f6f9",
+        "index": "71eb2d1d472032c9fe6d977db8a581fc045b10a235122ad5c4eb49e95be0f6f9"
+      },
+      "TestsRevealAudio/AudioProfileRunSelection.py": {
+        "expected": {
+          "live": "2f855b90a8dd042c732c840f296bac4a8f8726eb9b811bed0629a69027d02944",
+          "index": "2f855b90a8dd042c732c840f296bac4a8f8726eb9b811bed0629a69027d02944"
+        },
+        "live": "2f855b90a8dd042c732c840f296bac4a8f8726eb9b811bed0629a69027d02944",
+        "index": "2f855b90a8dd042c732c840f296bac4a8f8726eb9b811bed0629a69027d02944"
+      },
+      "TestsRevealAudio/AudioProfileRunSynthesis.py": {
+        "expected": {
+          "live": "9ad08ffa96f5f5ec1f12c09de900b77dea5407ed19e2beb7cbba28ced9416aaf",
+          "index": "9ad08ffa96f5f5ec1f12c09de900b77dea5407ed19e2beb7cbba28ced9416aaf"
+        },
+        "live": "9ad08ffa96f5f5ec1f12c09de900b77dea5407ed19e2beb7cbba28ced9416aaf",
+        "index": "9ad08ffa96f5f5ec1f12c09de900b77dea5407ed19e2beb7cbba28ced9416aaf"
+      },
+      "TestsRevealAudio/AudioProfileSelectionTests.cs": {
+        "expected": {
+          "live": "d2f9d4c2d691ca8417a5d3eeb2170831121ee754783594612ad04cf6e28dc1d8",
+          "index": "d2f9d4c2d691ca8417a5d3eeb2170831121ee754783594612ad04cf6e28dc1d8"
+        },
+        "live": "d2f9d4c2d691ca8417a5d3eeb2170831121ee754783594612ad04cf6e28dc1d8",
+        "index": "d2f9d4c2d691ca8417a5d3eeb2170831121ee754783594612ad04cf6e28dc1d8"
+      },
+      "TestsRevealAudio/AudioProfileSynthesisTests.py": {
+        "expected": {
+          "live": "0f1ae6ed85f71790d53db082e5b7eebfbe7acbc51a05b098da20a26e60367d35",
+          "index": "0f1ae6ed85f71790d53db082e5b7eebfbe7acbc51a05b098da20a26e60367d35"
+        },
+        "live": "0f1ae6ed85f71790d53db082e5b7eebfbe7acbc51a05b098da20a26e60367d35",
+        "index": "0f1ae6ed85f71790d53db082e5b7eebfbe7acbc51a05b098da20a26e60367d35"
+      },
+      "TestsRevealAudio/AudioProfileUnityDoubles.cs": {
+        "expected": {
+          "live": "adda84a3840671c62ea2f0076ef0beb9a7926db17573bd23eb61490c942b0a82",
+          "index": "adda84a3840671c62ea2f0076ef0beb9a7926db17573bd23eb61490c942b0a82"
+        },
+        "live": "adda84a3840671c62ea2f0076ef0beb9a7926db17573bd23eb61490c942b0a82",
+        "index": "adda84a3840671c62ea2f0076ef0beb9a7926db17573bd23eb61490c942b0a82"
+      },
+      "TestsRevealAudio/BuildAdmissionTests.py": {
+        "expected": {
+          "live": "afc6f4a768fdd44aec438ba82bef3c7824dd2e7ed46743019367159714ba4282",
+          "index": "afc6f4a768fdd44aec438ba82bef3c7824dd2e7ed46743019367159714ba4282"
+        },
+        "live": "afc6f4a768fdd44aec438ba82bef3c7824dd2e7ed46743019367159714ba4282",
+        "index": "afc6f4a768fdd44aec438ba82bef3c7824dd2e7ed46743019367159714ba4282"
+      },
+      "TestsRevealAudio/BuildEntrypointTests.py": {
+        "expected": {
+          "live": "1a3bdddf71c2c18b020ac49b0b7722e0a583035b0194284a8663b70055c42d18",
+          "index": "1a3bdddf71c2c18b020ac49b0b7722e0a583035b0194284a8663b70055c42d18"
+        },
+        "live": "1a3bdddf71c2c18b020ac49b0b7722e0a583035b0194284a8663b70055c42d18",
+        "index": "1a3bdddf71c2c18b020ac49b0b7722e0a583035b0194284a8663b70055c42d18"
+      },
+      "TestsRevealAudio/BuildPolicyTests.cs": {
+        "expected": {
+          "live": "4783be5c79be99d69839b5517d08f245a55d6f0edf9fe6905c9b21838abe65f9",
+          "index": "4783be5c79be99d69839b5517d08f245a55d6f0edf9fe6905c9b21838abe65f9"
+        },
+        "live": "4783be5c79be99d69839b5517d08f245a55d6f0edf9fe6905c9b21838abe65f9",
+        "index": "4783be5c79be99d69839b5517d08f245a55d6f0edf9fe6905c9b21838abe65f9"
+      },
+      "TestsRevealAudio/PlayerOptInTests.cs": {
+        "expected": {
+          "live": "757a6ca100086d357f5577e6fb0d1bf72f4f4565eea8a86ccfcfab16573844bc",
+          "index": "757a6ca100086d357f5577e6fb0d1bf72f4f4565eea8a86ccfcfab16573844bc"
+        },
+        "live": "757a6ca100086d357f5577e6fb0d1bf72f4f4565eea8a86ccfcfab16573844bc",
+        "index": "757a6ca100086d357f5577e6fb0d1bf72f4f4565eea8a86ccfcfab16573844bc"
+      },
+      "TestsRevealAudio/PlayerVerifierTests.py": {
+        "expected": {
+          "live": "5a1958f4b5b0a5370940242805e0e8804ba4b58b0580cb284f157667b163d26e",
+          "index": "5a1958f4b5b0a5370940242805e0e8804ba4b58b0580cb284f157667b163d26e"
+        },
+        "live": "5a1958f4b5b0a5370940242805e0e8804ba4b58b0580cb284f157667b163d26e",
+        "index": "5a1958f4b5b0a5370940242805e0e8804ba4b58b0580cb284f157667b163d26e"
+      },
+      "TestsRevealAudio/RendererBoundaryChecks.cs": {
+        "expected": {
+          "live": "a575a78bc19f207ddbc56a18fe65e3e140ba8d6d24c073a0e7fdc79cc0ad0db5",
+          "index": "a575a78bc19f207ddbc56a18fe65e3e140ba8d6d24c073a0e7fdc79cc0ad0db5"
+        },
+        "live": "a575a78bc19f207ddbc56a18fe65e3e140ba8d6d24c073a0e7fdc79cc0ad0db5",
+        "index": "a575a78bc19f207ddbc56a18fe65e3e140ba8d6d24c073a0e7fdc79cc0ad0db5"
+      },
+      "docs/technical/Reveal_Audio_Build_Player.md": {
+        "expected": {
+          "live": "3b5b2936c7699d9148fbb2e219b68877cd8b05435eb525336bb8f38549cf4a74",
+          "index": "3b5b2936c7699d9148fbb2e219b68877cd8b05435eb525336bb8f38549cf4a74"
+        },
+        "live": "3b5b2936c7699d9148fbb2e219b68877cd8b05435eb525336bb8f38549cf4a74",
+        "index": "3b5b2936c7699d9148fbb2e219b68877cd8b05435eb525336bb8f38549cf4a74"
+      },
+      "docs/technical/Reveal_Audio_Contract.md": {
+        "expected": {
+          "live": "f0016c86ab66e8575216712ff98fa3cb14c3baf73e92dbfded1798b72e1254ea",
+          "index": "f0016c86ab66e8575216712ff98fa3cb14c3baf73e92dbfded1798b72e1254ea"
+        },
+        "live": "f0016c86ab66e8575216712ff98fa3cb14c3baf73e92dbfded1798b72e1254ea",
+        "index": "f0016c86ab66e8575216712ff98fa3cb14c3baf73e92dbfded1798b72e1254ea"
+      },
+      "docs/technical/Reveal_Audio_Profile.md": {
+        "expected": {
+          "live": "67cd6bf89723f4d423165eee9cf94e417e4a6c01eb9463bab03642e2f9505ff3",
+          "index": "67cd6bf89723f4d423165eee9cf94e417e4a6c01eb9463bab03642e2f9505ff3"
+        },
+        "live": "67cd6bf89723f4d423165eee9cf94e417e4a6c01eb9463bab03642e2f9505ff3",
+        "index": "67cd6bf89723f4d423165eee9cf94e417e4a6c01eb9463bab03642e2f9505ff3"
+      },
+      "docs/technical/Reveal_Audio_Renderer.md": {
+        "expected": {
+          "live": "0167b07a7791237a06060292851d2f6d59c02ff8599e7fe39b88e57f47055c3f",
+          "index": "0167b07a7791237a06060292851d2f6d59c02ff8599e7fe39b88e57f47055c3f"
+        },
+        "live": "0167b07a7791237a06060292851d2f6d59c02ff8599e7fe39b88e57f47055c3f",
+        "index": "0167b07a7791237a06060292851d2f6d59c02ff8599e7fe39b88e57f47055c3f"
+      },
+      "docs/verification/Reveal_Audio_Player_Manifest.json": {
+        "expected": {
+          "live": "41a472807d192f46aaa007bf3327cd14bf48871a6250b1ec58aa3edfe8dea55b",
+          "index": "41a472807d192f46aaa007bf3327cd14bf48871a6250b1ec58aa3edfe8dea55b"
+        },
+        "live": "41a472807d192f46aaa007bf3327cd14bf48871a6250b1ec58aa3edfe8dea55b",
+        "index": "41a472807d192f46aaa007bf3327cd14bf48871a6250b1ec58aa3edfe8dea55b"
+      },
+      "tools/prepare_reveal_audio.py": {
+        "expected": {
+          "live": "0d127e4b8cb965016ee7807af36e1a35a198c94432e5b99db80c5b43a534db26",
+          "index": "0d127e4b8cb965016ee7807af36e1a35a198c94432e5b99db80c5b43a534db26"
+        },
+        "live": "0d127e4b8cb965016ee7807af36e1a35a198c94432e5b99db80c5b43a534db26",
+        "index": "0d127e4b8cb965016ee7807af36e1a35a198c94432e5b99db80c5b43a534db26"
+      },
+      "tools/run_reveal_audio_build.py": {
+        "expected": {
+          "live": "f7ffafef85e7ef48caa482060d299200e806c094dd485d6e7b92233242b5e1ce",
+          "index": "f7ffafef85e7ef48caa482060d299200e806c094dd485d6e7b92233242b5e1ce"
+        },
+        "live": "f7ffafef85e7ef48caa482060d299200e806c094dd485d6e7b92233242b5e1ce",
+        "index": "f7ffafef85e7ef48caa482060d299200e806c094dd485d6e7b92233242b5e1ce"
+      },
+      "tools/run_reveal_audio_compile.py": {
+        "expected": {
+          "live": "04cc793130ee51214672a5f11bd8f6416913ddd03e7ef70913e768a69892e891",
+          "index": "04cc793130ee51214672a5f11bd8f6416913ddd03e7ef70913e768a69892e891"
+        },
+        "live": "04cc793130ee51214672a5f11bd8f6416913ddd03e7ef70913e768a69892e891",
+        "index": "04cc793130ee51214672a5f11bd8f6416913ddd03e7ef70913e768a69892e891"
+      },
+      "tools/run_reveal_audio_renderer.py": {
+        "expected": {
+          "live": "7adfc376a741d550bf2a3aa5a722bf27de9a35c92fdbc8d91b28eb4923ba4fe5",
+          "index": "7adfc376a741d550bf2a3aa5a722bf27de9a35c92fdbc8d91b28eb4923ba4fe5"
+        },
+        "live": "7adfc376a741d550bf2a3aa5a722bf27de9a35c92fdbc8d91b28eb4923ba4fe5",
+        "index": "7adfc376a741d550bf2a3aa5a722bf27de9a35c92fdbc8d91b28eb4923ba4fe5"
+      },
+      "tools/verify_reveal_audio_legacy.py": {
+        "expected": {
+          "live": "646142134e4f438ee5b0ee7e20ccc4cc278ad1b7a9e4d330d9f826e8a2c5fea3",
+          "index": "646142134e4f438ee5b0ee7e20ccc4cc278ad1b7a9e4d330d9f826e8a2c5fea3"
+        },
+        "live": "646142134e4f438ee5b0ee7e20ccc4cc278ad1b7a9e4d330d9f826e8a2c5fea3",
+        "index": "646142134e4f438ee5b0ee7e20ccc4cc278ad1b7a9e4d330d9f826e8a2c5fea3"
+      },
+      "tools/verify_reveal_audio_native.py": {
+        "expected": {
+          "live": "a9c9a50c7d1198b5971d7577412606cdcff3c2c2745f39743130672b925a8f6b",
+          "index": "a9c9a50c7d1198b5971d7577412606cdcff3c2c2745f39743130672b925a8f6b"
+        },
+        "live": "a9c9a50c7d1198b5971d7577412606cdcff3c2c2745f39743130672b925a8f6b",
+        "index": "a9c9a50c7d1198b5971d7577412606cdcff3c2c2745f39743130672b925a8f6b"
+      },
+      "tools/verify_reveal_audio_player.py": {
+        "expected": {
+          "live": "4a1fb24a89b98cbd88e675a300449463ca3f0eb5d9d2843444184f770b542e29",
+          "index": "4a1fb24a89b98cbd88e675a300449463ca3f0eb5d9d2843444184f770b542e29"
+        },
+        "live": "4a1fb24a89b98cbd88e675a300449463ca3f0eb5d9d2843444184f770b542e29",
+        "index": "4a1fb24a89b98cbd88e675a300449463ca3f0eb5d9d2843444184f770b542e29"
+      }
+    },
+    "dependencyPins": {
+      "tools/run_tilt_build.py": "8f9ad9e8a871395c07926f6b0a0538634e05b60f6a4d3a28275fb7d84d3adc4a",
+      "tools/verify_tilt_player.py": "e9dd4d27b65d0f05c17622b1265e7032f2581772b4ae5539a110fbfcf657f9cf",
+      "tools/verify_phase3_player.py": "c8dbe372479e14556c81c08a65ead4857d3504f643108c754d4ae0dfad96ce26",
+      "tools/verify_phase4_player.py": "89da51163c094d81178ecd148aee3b2e3accefdef9bb80b8f03e65732b2ced91",
+      "Assets/VintageCollector/Editor/TiltBuildPolicy.cs": "cf9c5478ed360594b6dec3bca9c140c9b0966e2d21135a11f65b25ac303fbfd1",
+      "Assets/VintageCollector/Runtime/GamePaths.cs": "9458de389a173ee1dc9cac5139f89ff2678df89ac06ec2f39106017d53151641",
+      "Assets/VintageCollector/Runtime/OpeningGame.cs": "d8c4255ac4b004683313c36c1bcbbd5910a34f833970d7b4114fa0ff88609d71",
+      "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs": "35363c5ce082331a80b95025a50e3e75ce4d3109644660e8593ad89f5056bb77",
+      "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs": "b42c6edfcebfde79f88e20c458a925c9cca4ce12734a40949bf7342bd5bd9ef0",
+      "Assets/VintageCollector/Runtime/MaterialsSmokeProbe.cs": "4bfc4dd798c5511af6c341590b10af34212607fe7e723328610b4bff2b42cbe6",
+      "Assets/VintageCollector/Runtime/TiltSmokeProbe.cs": "71e9c1b96f9d7fedb22f24a17cf4dc88ed04d356be567c7a88f247c29f792a3e",
+      "Assets/VintageCollector/Runtime/Phase2SmokeRunner.cs": "82a88b427aa2401afbf73ef9abc494e982a5baf140559e29423999f7e7c2c11c"
+    }
+  },
+  "verification": {
+    "build": {
+      "nativeReport": {
+        "result": "Succeeded",
+        "outputPath": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase3RevealAudioWindows/VintageCardCollector.exe",
+        "sourceProject": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\reveal-audio-build-project",
+        "target": "StandaloneWindows64",
+        "backend": "Mono",
+        "graphicsApi": "Direct3D11",
+        "totalBytes": "87241749",
+        "errors": 0,
+        "warnings": 0
+      },
+      "sourceCount": 480,
+      "compilerCount": 484,
+      "validatedFolderMetaExtras": {
+        "Assets/Supplied/BaseSetMaterials/generations.meta": "ba72f54a69229bd48512c3491c53d5c958a016e47677f582bc6781ba19e7961d",
+        "Assets/VintageCollector/Collections.meta": "43f3868ea3c947686ce68758eba3a16f24e3855102a2c318d4cec53b0dc24a03",
+        "Assets/Supplied/BaseSetMaterials.meta": "d2c71a1667ad95157af66a3a8673c95ce96541896c64de0f97c58b6959b12651",
+        "Assets/Supplied/BaseSetMaterials/generations/ac0a72cb65e509f252c73d7692d84c691f9b71718127a5ecf45563db4ab75bbb.meta": "8506b1c35e5566c485b5e7cb329f54b1e050f1d52ba6d90ef248dd75333f69d1"
+      },
+      "candidateMemberCount": 137,
+      "fullCandidateAndCompilerAndPreservationMaps": ".artifacts/reveal-audio-independent-build/independent-audit.json",
+      "sourceAndIndex75PinsExactAtFinalReadback": true,
+      "allDeclaredBuildAndRunFileHandlesVerified": true
+    },
+    "originalNativeRuns": [
+      {
+        "path": ".artifacts/reveal-audio-player/native-audio-08/verification.json",
+        "externalCheckCount": 17,
+        "nativeCases": {
+          "audio": 279,
+          "reopen": 40
+        },
+        "materialCases": {},
+        "listedImages": 9
+      },
+      {
+        "path": ".artifacts/phase4-player/reveal-services-09/verification.json",
+        "externalCheckCount": 36,
+        "nativeCases": {
+          "services": 62,
+          "reopen": 11
+        },
+        "materialCases": {
+          "services": 400,
+          "reopen": 400
+        },
+        "listedImages": 17
+      },
+      {
+        "path": ".artifacts/phase4-player/reveal-input-10/verification.json",
+        "externalCheckCount": 589,
+        "nativeCases": {
+          "input": 162,
+          "reopen": 11
+        },
+        "materialCases": {
+          "input": 400,
+          "reopen": 400
+        },
+        "listedImages": 166
+      },
+      {
+        "path": ".artifacts/reveal-audio-legacy/reveal-restart-11/verification.json",
+        "externalCheckCount": 30,
+        "nativeCases": {
+          "prepare": 12,
+          "resume": 23,
+          "error": 8
+        },
+        "materialCases": {},
+        "listedImages": 12
+      },
+      {
+        "path": ".artifacts/reveal-audio-legacy/reveal-crash-12/verification.json",
+        "externalCheckCount": 23,
+        "nativeCases": {
+          "after-kill": 1
+        },
+        "materialCases": {},
+        "listedImages": 4
+      }
+    ],
+    "images": {
+      "paths": 208,
+      "distinctContents": 150,
+      "signatureCrcIendDecodedRowChecks": true,
+      "visuallyInspected": [
+        "audio-rare-holo-seed-2.png",
+        "audio-save-error.png",
+        "audio-results.png"
+      ],
+      "visualFindings": "Reveal 8 Clefairy holo, Retry blocked-error view, and eleven supplied-art results are visible with their existing controls; no visible exception panels. No hearing inference."
+    },
+    "audio": {
+      "playbacks": 36,
+      "sourcePeakRange": [
+        0.0018733444157987833,
+        0.16777411103248596
+      ],
+      "allSourceAndListenerNonzero": true,
+      "rareBranches": [
+        "non-pokemon",
+        "holo",
+        "pokemon"
+      ],
+      "generatedPacks": 5,
+      "awardedCards": 55,
+      "independentReloadExact": true,
+      "humanHearingAcceptance": false
+    },
+    "nativeImportedSourceSampleReconciliation": {
+      "clips": 14,
+      "method": "Independently decoded source PCM16, converted each sample to float32, matched every native float32 SHA-256, peak, frames/channels/rate and .meta GUID.",
+      "report": ".artifacts/reveal-audio-independent-build/native-sample-reconciliation.json"
+    },
+    "preservation": {
+      "acceptedPlayers": 7,
+      "acceptedMembers": 951,
+      "sharedMembers": 694,
+      "runtimeMembers": 22,
+      "criesMembers": 302,
+      "prunedBeforeAttributesDescentRead": true,
+      "PackageManagerSettingsSha256": "19f2f51d323cc40d57feceb562a49ff00fdd34e82f335a7babe05d2e4633e943"
+    },
+    "gameplay": ".artifacts/reveal-audio-independent-build/gameplay-reconciliation.json",
+    "hardKillEvidence": "Before-kill case is an actual observation with nonzero process exit and no report.json; after-kill real report and persisted save envelopes independently reconcile exact transaction/order/flags/revision and once-only awards.",
+    "supplemental": {
+      "path": ".artifacts/reveal-audio-player/parent-native-audio-13/verification.json",
+      "sha256": "2749c3e46c9f13e65ac42f255bfa5266b222aec6fd830bc6eac9270b4000eef5",
+      "externalChecks": 17,
+      "audioChecks": 279,
+      "playbacks": 36,
+      "reloadChecks": 40,
+      "reloadPlaybacks": 0,
+      "reloadGenerations": 0,
+      "reloadExactCards": 55,
+      "validPngs": 9,
+      "humanHearingAcceptance": false
+    },
+    "executedTests": {
+      "authoredPurePython": {
+        "tests": 12,
+        "failures": 0,
+        "fixtureRelocationOnly": true,
+        "log": ".artifacts/reveal-audio-independent-build/authored-python-tests.log"
+      },
+      "managedBuildPolicy": {
+        "checks": 13,
+        "compiledExactProductionPolicies": true,
+        "testFixturePathRelocatedOnly": true
+      },
+      "managedOptIn": {
+        "checks": 10,
+        "kind": "Exact ValidateOptIn/Safe method extraction with only fixed root relocated and GamePaths DTO stub; not a native playback test."
+      },
+      "perMessageAndCompilerAndStaleStage": {
+        "records": 20,
+        "passingRecords": 19,
+        "failedExpectedContractRecords": 1,
+        "report": ".artifacts/reveal-audio-independent-build/guard-tests.json"
+      },
+      "currentManagedFullRuntimeAndBuilder": {
+        "passed": true,
+        "warningsAsErrors": true,
+        "compilerExits": [
+          0,
+          0
+        ],
+        "report": ".artifacts/reveal-audio-independent-build/current-managed-compilation.json"
+      },
+      "startOrderReproduction": ".artifacts/reveal-audio-independent-build/start-order-tests.json"
+    },
+    "limitations": [
+      "No new native player launched or native build performed by this reviewer; existing exact-hash native execution artifacts and supplemental parent execution were independently read and reconciled.",
+      "Opaque imageMapSha256 lacks a declared preimage/serialization; individual evidence map and report hashes were independently recreated.",
+      "Earlier retained managed compile labels have some historical source drift and were not treated as final-current-source approval; the reviewer compiled current full runtime and builder against actual Unity assemblies successfully."
+    ],
+    "reviewHarnessIssues": [
+      "Initial audit used git diff --cached --binary while the frozen diff used the nonbinary/default representation; exact blob pins agreed. Correcting only the independent audit command made the complete 262745-byte frozen diff agree. The failed diagnostic is retained.",
+      "Terminal tool rejected the bracketed workdir; read-only git and compiler processes were executed via Python subprocess with the exact explicit project cwd instead."
+    ]
+  },
+  "evidenceArtifacts": {
+    "independent-audit.json": "56345c79f24f857bfa06f7a19abba1bab57c3cf6c73fb7a97a7cc42eb8f49c8d",
+    "guard-tests.json": "5d59fe2a03c0ffb7fc327e213b5356e4a129ecedff1a03ed8ac3d50250bef16a",
+    "managed-policy-tests.json": "7a729907fc79bd4055fffaf92b3f76aa1e8cc2545b457126cbcc95b5b4c8fb73",
+    "start-order-tests.json": "e38c64621a2c982acd44432ee2fdbfe59031b4cf2c06d72fdd5940298eed5f8c",
+    "native-sample-reconciliation.json": "2fa43ce08ff44f8f7570f801b87358360883beb26a3a88037824e986bcc98f2d",
+    "gameplay-reconciliation.json": "b00c0e28f12bd0c6f60eb8e6d705b720ae11cb3adeee6f19f79c80f04e47342a",
+    "current-managed-compilation.json": "d200cf097821c3a783f16dee4f80eac534f04650ee516b266f5f260a084a865e",
+    "audit-final-execution.json": "ca1847ddadc97a69536a5af4aa31d271da02b868f1c4a4b4e1f1e4153e15d29f",
+    "dependency-pins.json": "69e289025c1fd0f27ddce1d2dc9959bc198c1c575265bae276bb473624d47886"
+  }
+}

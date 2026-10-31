@@ -1,0 +1,133 @@
+{
+  "schema": "original-reveal-audio-v1",
+  "provenance": "Original locally composed additive synthesis; no supplied recordings or external services.",
+  "composition": "D-major mallet/dyad pulses, rising through slot 8 then relaxing; three original rare gestures.",
+  "clips": [
+    {
+      "file": "Pull_01.wav",
+      "sha256": "ef5a70e3fec861d4c552c93fff7ad60b0515472da913ca8f7b55528575dbfe83",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 9702,
+      "durationSeconds": 0.22
+    },
+    {
+      "file": "Pull_02.wav",
+      "sha256": "a2bbc15b0f65d02f7f37319e886d233f2511cf6220f3f8c6c0c9ffb560f4e217",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 11113,
+      "durationSeconds": 0.2519954648526077
+    },
+    {
+      "file": "Pull_03.wav",
+      "sha256": "bde413e11d9c2f1a561a5502da4e3034c9f176051dd887e2bd9715c1e2d2312c",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 12524,
+      "durationSeconds": 0.28399092970521544
+    },
+    {
+      "file": "Pull_04.wav",
+      "sha256": "1d2b4c53fa911680140e2b88a541987a780268e4ac0794c1e7f223651c7df06e",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 13936,
+      "durationSeconds": 0.3160090702947846
+    },
+    {
+      "file": "Pull_05.wav",
+      "sha256": "273fbd7485364b025a759a0a53ac37c79625e8378188d48e2f4ca211d0300057",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 15347,
+      "durationSeconds": 0.34800453514739227
+    },
+    {
+      "file": "Pull_06.wav",
+      "sha256": "ac964a1845bafe57acd751f20dfbf52237e25578d93d651610776043c70fa3f8",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 16758,
+      "durationSeconds": 0.38
+    },
+    {
+      "file": "Pull_07.wav",
+      "sha256": "2ff37669f2e47701e422e463d13abc98f3b5d2af394c8cd1ab6dbd1396e0bdfc",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 18169,
+      "durationSeconds": 0.4119954648526077
+    },
+    {
+      "file": "Pull_08.wav",
+      "sha256": "e1bd386db23651cb1b19830be5709ad6959736f0796666e35f295964a8a2ab12",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 19580,
+      "durationSeconds": 0.4439909297052154
+    },
+    {
+      "file": "Pull_09.wav",
+      "sha256": "336336b44c14eaa5d703cbf596adf5ae74ab48da4eebe440918747a36a5784c5",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 13230,
+      "durationSeconds": 0.3
+    },
+    {
+      "file": "Pull_10.wav",
+      "sha256": "f99345109a9cc9a8c418400c6de36a0dda9de43c46931eaf63ab9c0a84e4ece1",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 13230,
+      "durationSeconds": 0.3
+    },
+    {
+      "file": "Pull_11.wav",
+      "sha256": "29ab3ca3b1ca3f5ede87ffce9f6e2f4887fb302ef8abe1ab9407b99d5bd3db09",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 13230,
+      "durationSeconds": 0.3
+    },
+    {
+      "file": "Rare_NonPokemon.wav",
+      "sha256": "d70d36df4078ff6a1682a59106a776c2f5180b72db085f2b5cf580dcc8fd4dad",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 32634,
+      "durationSeconds": 0.74
+    },
+    {
+      "file": "Rare_Pokemon.wav",
+      "sha256": "a8f54286cb3e6644e8fd2c6ec5be44abe258f40a33e63761e398251dc65ec10c",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 46746,
+      "durationSeconds": 1.06
+    },
+    {
+      "file": "Rare_Holo.wav",
+      "sha256": "65ab64f38b19e1aa0b31bad575b1dfe8b3a3ca6edf14a032c7e0579c1ba41bf5",
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 67914,
+      "durationSeconds": 1.54
+    }
+  ]
+}

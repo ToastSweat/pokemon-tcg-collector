@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d82be2ff7d86242ae3fd2b88225e36, type: 3}
+  m_Name: DefaultRevealAudioProfile
+  m_EditorClassIdentifier: Assembly-CSharp::VintageCollector.Audio.RevealAudioProfile
+  pullSounds:
+  - {fileID: 8300000, guid: 32144a1530d0c68439a2197a3ca55b03, type: 3}
+  - {fileID: 8300000, guid: c8a6d4cf347044440909f7a0a3829cac, type: 3}
+  - {fileID: 8300000, guid: de8af5396d93a924a98fca267580f28d, type: 3}
+  - {fileID: 8300000, guid: ee2e11f3a0f0f064da3d3793c1884d4f, type: 3}
+  - {fileID: 8300000, guid: aa82470288d3ecf49920a4e6dbef596d, type: 3}
+  - {fileID: 8300000, guid: 70c778ede891eec45aa6100687792486, type: 3}
+  - {fileID: 8300000, guid: b163c7f9fdc82c344b38be03e13be0a5, type: 3}
+  - {fileID: 8300000, guid: aac45481c8fc5224e8d8ec111e6d136d, type: 3}
+  - {fileID: 8300000, guid: db1cddce5b9d212459b5644c321f8eff, type: 3}
+  - {fileID: 8300000, guid: 367f4c8c1d116684788c749501caddd5, type: 3}
+  - {fileID: 8300000, guid: 46c2ce3abc80a4e4fb20414a1b825838, type: 3}
+  rareRevealPosition: 8
+  nonPokemonRare: {fileID: 8300000, guid: 0ca09edd830a4b6408d57dd90f63fb14, type: 3}
+  pokemonRare: {fileID: 8300000, guid: 6961a9e17dd03594aadc0ba552a1d74a, type: 3}
+  holoRare: {fileID: 8300000, guid: 5ae1fc02deef4904481032271825c816, type: 3}
