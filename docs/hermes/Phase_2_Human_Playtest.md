@@ -1,6 +1,6 @@
-# Phase 2 human playtest — pending
+# Phase 2 human playtest — accepted
 
-Status: NOT TESTED BY USER. Implementation, automated native-player execution and independent review passed; none substitutes for human feel/hardware acceptance. Phase 3 remains unapproved.
+Status: ALL FIVE ITEMS PASS / USER ACCEPTED. User reported “all PASS” in direct response to the delivered five-item checklist. Acceptance is limited to that checklist and the pinned Phase 2 candidate; it does not establish final art/audio, exact factory collation, measured sustained performance, or unpresented recovery cases. Phase 3 remains unapproved.
 
 ## Launch
 
@@ -12,18 +12,20 @@ This build is deliberately silent and uses clearly labelled generic artwork/wrap
 
 ## One bounded test group
 
-Reply **PASS / FAIL / NOT TESTED** per item (a short description/screenshot for failures is enough):
+The following previously delivered group is accepted as **all PASS**; no retest is requested by this documentation update:
 
-1. **Opening and inspection:** Generate a Base Set Unlimited pack, Open it, reveal a few cards, inspect a revealed card, and return with Back/Escape. Nothing should require dragging or precision gestures.
-2. **Quit/resume:** While only a few cards are revealed, Quit and reopen the same player. The same pack, visible card order and reveal count should resume; no new pack is generated merely by restarting.
-3. **Results and awards:** Skip the rest. All eleven positions should appear in original order with sensible NEW/DUPLICATE labels. Virtual quantity increases once per generated pack, not per reveal/inspection/completion. Physical tracking must remain labelled not configured.
-4. **Controls and window:** Test Escape/Pause, explicit Resume, switching away/back, and resizing (1280×720 or larger recommended). Back/Resume/Quit must remain reachable. Tiny-height windows use smaller typography.
-5. **Feel/readability:** Report whether the placeholder flow is comfortable enough to continue, plus any unwanted delays, missed/double clicks, confusing labels or layout problems. Silence is expected; audio/material polish is Phase 3.
+1. **PASS — Opening and inspection:** Generate/Open, partial reveal, inspection and Back/Escape; no precision drag required.
+2. **PASS — Quit/resume:** Same incomplete pack/order/reveal count after reopening; no startup regeneration.
+3. **PASS — Results and awards:** Eleven ordered results, sensible NEW/DUPLICATE labels and no per-reveal/completion awards; physical tracking stays not configured.
+4. **PASS — Controls and window:** Escape/Pause, explicit Resume, switching away/back and resizing; controls remain reachable.
+5. **PASS — Feel/readability:** Placeholder timing, click behavior, labels and readability are comfortable enough to continue. Silence remains expected, not audio acceptance.
 
 Do not intentionally corrupt/delete your save to test recovery. Automated tests already exercised failure, hard kill and Retry in isolated directories. If an ordinary storage error occurs, use Retry or Quit and report the message without clearing files.
 
 ## Record of acceptance
 
-No human item is marked passed yet. A generic scope approval is not evidence that unreported physical subchecks were performed. Record the tested build manifest digest with any future acceptance: `29ed47956943fbb520133e2d5044e41e2102f22e11a5ad182b153c74dc19e271`.
+User report: **“all PASS”**. Recorded 2026-10-30 at 19:27 CDT. Parent rechecked all 135 non-save build files against the tested manifest before binding acceptance; bytes and membership were unchanged. Save folders were excluded and untouched. Accepted implementation checkpoint: `d649e46`; manifest digest: `29ed47956943fbb520133e2d5044e41e2102f22e11a5ad182b153c74dc19e271`.
+
+This accepts the actual preceding five-item group, not a generic scope approval. Keep this candidate as the accepted behavioral baseline. Do not mark final branded visuals, audible sound, exhaustive storage-failure/power-loss guarantees or performance benchmarks human-approved. See ../verification/Phase_2_Human_Acceptance.json for the structured record.
 
 Machamp's collection-target exception remains unanswered and need not block this opening test. No binder, physical editing, marketplace or financial work is part of this checkpoint.

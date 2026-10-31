@@ -4,7 +4,7 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-Phase 1 is accepted. Phase 2's **working Windows opening slice is ready for your playtest**: implementation, actual-player verification and both independent reviews passed. Approved provisional Model A `0.1.0` is unchanged. Human acceptance remains pending, Machamp's collection-target exception is unanswered, and Phase 3 remains gated.
+**Phase 2 is complete and user-accepted:** all five presented human playtest items passed. Implementation, actual-player checks and independent reviews also passed. Preserve checkpoint `d649e46` and its pinned build as the accepted behavioral baseline. Model A `0.1.0` remains provisional and unchanged; Machamp's collection-target exception is unanswered. Phase 3 still requires explicit approval.
 
 - [Authoritative phased handoff](docs/hermes/Hermes_Vintage_Card_Collector_Handoff.md)
 - [Approved discovery proposal](docs/hermes/Phase_0_Discovery.md)

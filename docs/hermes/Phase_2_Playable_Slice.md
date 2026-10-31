@@ -1,6 +1,6 @@
 # Phase 2 — Playable opening slice
 
-Status: PHASE 2 DELIVERY READY — implementation, production-player verification and both independent reviews passed. Human playtest/acceptance remains pending; see Phase_2_Human_Playtest.md. Phase 3 is not authorized.
+Status: COMPLETE / USER ACCEPTED. User reported “all PASS” for the delivered five-item human checklist. The pinned candidate is the accepted behavioral baseline; see Phase_2_Human_Playtest.md. Phase 3 still requires explicit authorization.
 
 ## Current process
 
@@ -37,7 +37,7 @@ The accepted generator is now connected to durable persistence, passive tabletop
 - Actual production player: five suites, 111 driver checks, 60 validated screenshots and ten process logs; counts programmatically reconciled. Tests include full saved opening, clean separate-process restart, actual forced Unity termination and exact resume, repeat-completion/duplicate flags, prepared-write error/Retry without reroll, real HWND mouse-button effects and Escape/back/pause key-message effects. No cursor movement or foreground input API used.
 - Actual captures were viewed for reveal/results/inspection/error, ultrawide inspection and short-window Pause. Ordinary-size labels/controls are readable and in bounds; tiny-height typography is small. Native injected input is not human hardware/feel acceptance.
 - All tests used isolated .artifacts save directories; default Editor/player saves were not created or reset. No user collection data was overwritten.
-- Still unverified: human enjoyment/timing/preferences, physical hardware/focus behavior and sustained performance. Presentation is intentionally silent and generic; real art/audio/foil/tear polish belongs to Phase 3.
+- User subsequently passed all five presented human checks: opening/inspection, quit/resume, results/awards, controls/focus/window and placeholder feel/readability. This is not a sustained-performance benchmark or acceptance of final branded visuals/audio. Presentation remains silent and generic; art/audio/foil/tear polish belongs to Phase 3.
 
 ## Tasks
 
@@ -50,6 +50,7 @@ The accepted generator is now connected to durable persistence, passive tabletop
 - [x] Inspect actual production screenshots and reconcile reports/build pins.
 - [x] Both independent reviews passed; no blocking security/correctness findings. Parent rechecked all 65 staged/live source entries and 135 player file hashes/membership against the frozen manifest.
 - [x] Verified local implementation checkpoint recorded: `d649e46` (`[verified] feat: add durable Unity pack opening slice and Windows player proof`). Stop for the linked human checklist; Phase 3 remains unapproved.
+- [x] User reported all five human checklist items PASS; exact candidate file pins rechecked before recording acceptance. Preserve this baseline; do not rebuild/rewrite gameplay as part of the acceptance update.
 
 Closing documentation is a separate nonbehavioral checkpoint. The sole pre-existing untracked PackageManagerSettings.asset is preserved and deliberately not included in the implementation commit.
 
@@ -65,4 +66,4 @@ Player saves: <executable-directory>/Saves. Editor saves: <project>/Saves/Phase2
 
 ## Session handoff
 
-Both independent reviews and parent pin verification passed. Freeze the tested source/build and stop for the bounded human checklist, not another implementation phase. Preserve the user-owned untracked PackageManagerSettings.asset and accepted Domain/data. User acceptance is not inferred from automation. No Phase 3/binder/physical/marketplace/finance work is authorized. Current asset request: none; request only a small representative batch when Phase 3 is approved. Intentionally silent generic presentation, physical/focus/feel/performance judgment and the unanswered Machamp completion target remain explicit limitations.
+Phase 2 is explicitly human-accepted via “all PASS” on the five-item handoff. All 135 non-save build files matched the frozen manifest when acceptance was recorded; no game/source/save changes were needed. Preserve d649e46 and its manifest as the accepted baseline. Do not reinterpret this as Phase 3 authorization or final audio/art/performance acceptance. Next proposed phase is opening-feel and a small representative supplied-material batch, awaiting approval. Binder/physical/marketplace/finance and the unanswered Machamp completion-target choice remain gated. Preserve the untracked user settings and live saves.

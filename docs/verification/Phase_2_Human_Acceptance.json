@@ -1,0 +1,31 @@
+{
+  "phase": 2,
+  "status": "complete-user-accepted",
+  "userReport": "all PASS",
+  "recordedAt": "2026-10-30T19:27:02.688406-05:00",
+  "implementationCheckpoint": "d649e46",
+  "playerManifestSha256": "29ed47956943fbb520133e2d5044e41e2102f22e11a5ad182b153c74dc19e271",
+  "parentRecheckedBuildFileCount": 135,
+  "parentRecheckedBytesAndMembershipUnchanged": true,
+  "saveFoldersExcludedAndUntouched": true,
+  "checkCount": 5,
+  "checks": [
+    {"name": "opening-and-inspection", "status": "PASS"},
+    {"name": "quit-and-resume", "status": "PASS"},
+    {"name": "ordered-results-and-once-only-awards", "status": "PASS"},
+    {"name": "pause-resume-focus-and-window-controls", "status": "PASS"},
+    {"name": "placeholder-feel-and-readability", "status": "PASS"}
+  ],
+  "acceptedBaseline": "The previously delivered five-item human test group on the unchanged pinned Phase 2 candidate.",
+  "notEstablished": [
+    "Final branded artwork, wrapper materials or foil realism",
+    "Audible playback or final sound design; the accepted placeholder is silent",
+    "Measured sustained performance or exhaustive hardware coverage",
+    "Human execution of unpresented corruption, hard-kill or power-loss tests",
+    "Exact factory collation or historical probability truth",
+    "Machamp completion-target exception"
+  ],
+  "phase3Authorized": false,
+  "gameplayOrBuildChangesDuringAcceptance": false,
+  "liveSaveChangesDuringAcceptance": false
+}

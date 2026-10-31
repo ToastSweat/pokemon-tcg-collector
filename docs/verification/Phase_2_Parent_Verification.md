@@ -1,6 +1,6 @@
 # Phase 2 parent verification — production Unity opening slice
 
-Status: execution gates and both independent pre-commit reviews passed. Phase 2 delivery is ready for human review, not human opening-feel acceptance or Phase 3 authorization. See Phase_2_Independent_Review.json for the two verdicts and source/build pins.
+Status: execution gates, both independent pre-commit reviews and the subsequent five-item human playtest all passed. User reported “all PASS”; see Phase_2_Human_Acceptance.json. Phase 3 still requires separate approval. Independent-review/execution JSONs retain their original point-in-time human-pending flags rather than rewriting historical evidence.
 
 ## Artifact
 
@@ -70,7 +70,7 @@ Normal saves: Editor `<project>/Saves/Phase2`; player `<executable-directory>/Sa
 
 ## Remaining limits / human gate
 
-- Opening timing, enjoyment, visual preference, physical mouse/keyboard/focus behavior and sustained performance still need the user's judgment. Native injected messages do not prove those.
+- User subsequently accepted the presented opening/inspection, quit/resume, results/awards, controls/focus/window and placeholder feel/readability checks. Native-message automation itself did not establish these human passes; the direct “all PASS” report did. Sustained performance benchmarks, exhaustive hardware coverage and final material/audio preferences remain unestablished.
 - Placeholder visuals and intentionally **silent** presentation. Volume/mute controls work as state but are not evidence of audio playback. Supplied art, wrapper textures, sounds and authentic foil/tear polish belong to Phase 3.
 - No full binder editor, physical-ownership edits, completion denominator, other sets, marketplace, funds or transfers. Physical ownership is labelled not configured. Machamp completion exception remains unanswered and #8 remains absent from boosters.
 - Save protection covers documented process-crash/recoverable-I/O cases, not arbitrary power loss, device failure, hostile edits or deletion of all evidence. Archive work is proportional to history and has a 32 MiB cap. No migration/compaction/import UI is promised here.
