@@ -4,7 +4,7 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-**Phase 2 is complete and user-accepted. Phase 3 is explicitly authorized**, starting with a small representative media batch and replaceable-asset setup. Preserve checkpoint `d649e46` and its pinned player as the accepted behavioral baseline; no Phase 3 gameplay changes exist yet. Model A `0.1.0` remains provisional and unchanged; Machamp's collection-target exception is unanswered. Phase 4+ remain gated.
+**Phase 3A’s generic media-ready candidate is ready for your feedback.** The focused fixes, rebuilt-player tests and both fresh independent reviews passed. The accepted Phase 2 player/collection remain preserved; this separate candidate has its own collection. Human sound/visual approval and branded materials remain pending, so full Phase 3 and Phase 4+ are not complete/authorized.
 
 - [Authoritative phased handoff](docs/hermes/Hermes_Vintage_Card_Collector_Handoff.md)
 - [Approved discovery proposal](docs/hermes/Phase_0_Discovery.md)
@@ -20,7 +20,26 @@ All project-controlled files, future Unity project folders, builds, test artifac
 
 No supplied art is present. Do not scrape or bundle branded assets, publish materials/builds, implement marketplace services, or connect financial accounts under the current phase.
 
-## Play Phase 2
+## Test Phase 3A — separate generic-polish candidate
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase3Windows\VintageCardCollector.exe`
+
+This candidate starts its **own collection** in `Builds/Phase3Windows/Saves`. Your accepted Phase 2 player/collection below are unchanged; nothing is migrated, merged or reset. Keep the whole candidate directory together and inside this project root.
+
+Open `Assets/VintageCollector/Scenes/BootstrapPhase3.unity` to preview source in Unity. Editor play continues to use the existing Editor-only save folder, not either standalone folder. The interactive original Editor was left open; this candidate was built from a byte-verified project-local stage.
+
+Changes: original generic committed-action foley, immediate mute/pause/no-replay behavior, subtle depth/motion/foil cues and optional stable-ID images/WAVs through the empty private manifest. The actual production manifest has **zero supplied assets**. Real faces are never repainted; their foil requires an aligned explicit mask. Branded materials and human audio/visual approval remain deferred.
+
+- [Phase 3A production/audio/render verification](docs/verification/Phase_3A_Parent_Verification.md)
+- [Six-item generic audio/visual playtest](docs/hermes/Phase_3A_Human_Playtest.md)
+- [Corrected independent reviews and exact pins](docs/verification/Phase_3A_Independent_Review.json)
+- [Candidate execution summary](docs/verification/Phase_3A_Corrected_Execution_Summary.json)
+- [Candidate file/hash manifest](docs/verification/Phase_3A_Corrected_Player_Manifest.json)
+- [Media formats, provenance and limits](docs/technical/Phase_3_Media.md)
+
+The Phase 3 build helper refuses populated candidate saves. Do not delete a collection to rebuild; close and preserve the whole save directory or use an explicitly reviewed new candidate path.
+
+## Play the accepted Phase 2 baseline
 
 Windows player:
 

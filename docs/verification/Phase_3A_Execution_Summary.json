@@ -1,0 +1,162 @@
+{
+  "verifiedAt": "2026-10-30T20:57:40.182096-05:00",
+  "phase": "3A-placeholder-first",
+  "status": "execution-passed-independent-review-pending",
+  "humanAccepted": false,
+  "brandedMaterialsSupplied": false,
+  "fullPhase3Complete": false,
+  "phase4Authorized": false,
+  "build": {
+    "result": "Succeeded",
+    "outputPath": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase3Windows/VintageCardCollector.exe",
+    "sourceProject": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase3-build-project",
+    "approvedRoot": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG",
+    "target": "StandaloneWindows64",
+    "backend": "Mono",
+    "graphicsApi": "Direct3D11",
+    "totalBytes": "86459905",
+    "errors": 0,
+    "warnings": 0
+  },
+  "candidateManifestSha256": "51ff925803e931c9d95141c83c694fee0119ee7f87630936e94259e43bc965b0",
+  "suites": {
+    "mediaPure": {
+      "passed": true,
+      "count": 13,
+      "report": ".artifacts/phase3-media/parent-pure/results.json"
+    },
+    "motion": {
+      "passed": true,
+      "count": 39,
+      "report": ".artifacts/phase3-presentation/parent-motion.json"
+    },
+    "buildPolicy": {
+      "passed": true,
+      "count": 2,
+      "report": ".artifacts/phase3-build-policy/parent-final.json"
+    },
+    "hostNative": {
+      "passed": true,
+      "count": 87,
+      "report": ".artifacts/phase3-host/final-native-integration/results.json"
+    },
+    "hostPlayMode": {
+      "passed": true,
+      "count": 18,
+      "report": ".artifacts/phase3-host/final-native-play/results.json"
+    },
+    "sourceScene": {
+      "passed": true,
+      "count": 4,
+      "report": ".artifacts/phase3-build-project/.artifacts/phase3-build/scene-checks.json"
+    },
+    "coreRegression": {
+      "passed": true,
+      "count": 13,
+      "report": ".artifacts/phase3-build-project/.artifacts/phase2-runtime/phase3-regression.json",
+      "assertionCount": 297
+    },
+    "persistenceRegression": {
+      "passed": true,
+      "count": 109,
+      "report": ".artifacts/phase2-persistence/phase3-regression/results.json"
+    },
+    "generatorRegression": {
+      "passed": true,
+      "count": 21,
+      "report": ".artifacts/domain/phase3-regression-tests.json"
+    },
+    "distributionRegression": {
+      "passed": true,
+      "count": 183,
+      "report": ".artifacts/domain/phase3-regression-distribution.json"
+    },
+    "pixels": {
+      "passed": true,
+      "count": 3,
+      "report": ".artifacts/phase3-media-player/media-01/pixel-verification.json"
+    }
+  },
+  "playerSuites": {
+    "integrated-01": {
+      "passed": true,
+      "checkCount": 29,
+      "screenshots": 12,
+      "report": ".artifacts/phase3-player/integrated-01/verification.json"
+    },
+    "layouts-01": {
+      "passed": true,
+      "checkCount": 29,
+      "screenshots": 21,
+      "report": ".artifacts/phase3-player/layouts-01/verification.json"
+    },
+    "mouse-01": {
+      "passed": true,
+      "checkCount": 20,
+      "screenshots": 12,
+      "report": ".artifacts/phase3-player/mouse-01/verification.json"
+    },
+    "hardkill-01": {
+      "passed": true,
+      "checkCount": 14,
+      "screenshots": 4,
+      "report": ".artifacts/phase3-player/hardkill-01/verification.json"
+    },
+    "keyboard-01": {
+      "passed": true,
+      "checkCount": 19,
+      "screenshots": 11,
+      "report": ".artifacts/phase3-player/keyboard-01/verification.json"
+    }
+  },
+  "corePlayerDriverChecks": 111,
+  "corePlayerValidatedScreenshots": 60,
+  "mediaPlayerDriverChecks": 61,
+  "mediaPlayerValidatedScreenshots": 34,
+  "nativePlayerLogCount": 14,
+  "nativePlayerDiagnostics": {
+    ".artifacts/phase3-player/mouse-01/input/player.log": [],
+    ".artifacts/phase3-player/layouts-01/1280x360/player.log": [],
+    ".artifacts/phase3-player/layouts-01/1600x900/player.log": [],
+    ".artifacts/phase3-player/layouts-01/2560x1080/player.log": [],
+    ".artifacts/phase3-player/keyboard-01/keyboard/player.log": [],
+    ".artifacts/phase3-player/integrated-01/error/player.log": [],
+    ".artifacts/phase3-player/integrated-01/prepare/player.log": [],
+    ".artifacts/phase3-player/integrated-01/resume/player.log": [],
+    ".artifacts/phase3-player/hardkill-01/after-kill/player.log": [],
+    ".artifacts/phase3-player/hardkill-01/before-kill/player.log": [],
+    ".artifacts/phase3-media-player/media-01/bad-hash/player.log": [],
+    ".artifacts/phase3-media-player/media-01/default-original/player.log": [],
+    ".artifacts/phase3-media-player/media-01/no-mask/player.log": [],
+    ".artifacts/phase3-media-player/media-01/valid/player.log": []
+  },
+  "actualGenericAudio": {
+    "suppliedAssets": 0,
+    "testManifest": false,
+    "cues": 4,
+    "everPlaying": true,
+    "maxOutputPeak": 0.0265501718968153,
+    "sourceVolume": 0.5,
+    "warnings": 0
+  },
+  "preservedAcceptedPhase2ManifestSha256": "29ed47956943fbb520133e2d5044e41e2102f22e11a5ad182b153c74dc19e271",
+  "preservedAcceptedPhase2Files": 135,
+  "frozenCoreSha256": {
+    "Assets/VintageCollector/Domain/Catalog.cs": "d18752e2ef4162d0e32b89b7b1d2e9fe86a58aba57dbd85c4dbb97b52755d2d0",
+    "Assets/VintageCollector/Domain/Data.cs": "33994c8b47a15bf1242312ef557b614a7c664c870c17673d86e6031db39280c9",
+    "Assets/VintageCollector/Domain/PackGenerator.cs": "40d09007bd912735c06f8b6648d799cd2a25ee1fedf1aaa955e9146d013d6c95",
+    "Assets/VintageCollector/Domain/Random.cs": "816ca6ffe236feeb64381bfb1620dcba47426caa70ab53dbb8933b20b32151fc",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.catalog.json": "6cb7bde97dc93895c68914add445216cc1583dd68161faedf32e76bf4dcec6b6",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.model-a-v0.1.json": "058c2027dde6633a576997359c688e461796cc5ec9689515d43d2a2880b1dbec",
+    "Assets/VintageCollector/Persistence/SaveProtocol.cs": "c1cdf32c693c6dbedb1f68620e7929408c3dff0d463865c57da76c55c6304999",
+    "Assets/VintageCollector/Persistence/SessionData.cs": "560db24646bd3469fcec8ded357115167fd2c15ac7fc6969d827aad7d9dc617e",
+    "Assets/VintageCollector/Persistence/SessionStore.cs": "c10f8d2670fc170eb3b6bb5caa05032d01fa19b09f627725df96e6511b448ec6",
+    "Assets/VintageCollector/Persistence/StateValidation.cs": "06d23cc557b698eaeaf53d378e785327a011d16a2947dd8df8789303268f2184",
+    "Assets/VintageCollector/Runtime/GamePaths.cs": "6fffff2490ca4963eb2c5c3f22b06eb47a5f22ba0663dbb649e16a6134872d1f",
+    "Assets/VintageCollector/Runtime/OpeningGame.cs": "57838eb335e346708ef8db790c020ffa67ac47dba056d6a6e34ddf096cd48ae7",
+    "Assets/VintageCollector/Runtime/UnityStateSerializer.cs": "12735723d80e043befd44a2a0133cd7185a9f06abfaf53ec4e6c5c41721588df"
+  },
+  "productionManifestStillEmpty": true,
+  "candidateSaveDirectoryExists": false,
+  "scope": "Actual core-connected Windows x64/Mono/D3D11 player; original generic foley and explicit synthetic-media integration. No physical hearing/feel or real branded-material approval. Candidate collection is isolated; live accepted saves untouched."
+}

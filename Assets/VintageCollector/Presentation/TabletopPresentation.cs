@@ -1,19 +1,44 @@
 using System;
 using System.Globalization;
 using UnityEngine;
+using VintageCollector.Media;
 
 namespace VintageCollector.Presentation
 {
     /// <summary>Passive, original placeholder tabletop. No generator, awards, file IO or save authority.</summary>
     public sealed class TabletopPresentation : MonoBehaviour
     {
-        public OpeningView View { get; set; }
+        private OpeningView view;
+        private IPresentationMedia media;
+        public OpeningView View { get { return view; } set { view = value; SyncAudio(); } }
+        public IPresentationMedia Media {
+            get { return media; }
+            set { if (ReferenceEquals(media,value)) return; StopFoley(); media=value; }
+        }
+        public AudioSource FoleySource {
+            get {
+                if (foleySource == null) {
+                    foleySource = gameObject.AddComponent<AudioSource>();
+                    foleySource.playOnAwake = false; foleySource.loop = false; foleySource.spatialBlend = 0;
+                    foleySource.volume = Volume;
+                }
+                return foleySource;
+            }
+        }
+        public int CommittedCueCount { get; private set; }
+        public string LastCommittedCue { get; private set; }
+        private AudioSource foleySource;
+        private bool focused = true;
+        private string cueTransaction;
+        private readonly System.Collections.Generic.HashSet<string> consumedCues = new System.Collections.Generic.HashSet<string>(StringComparer.Ordinal);
         public event Action<string> Command;
         // Internal test observer receives labels actually passed to native OnGUI, never hidden DTO fields.
         internal Action<string> TextObserver { get; set; }
 
         private Font font;
         private Texture2D disc, diamond;
+        private Material foilMaterial;
+        private readonly Phase3PresentationMotion motion = new Phase3PresentationMotion();
         private GUIStyle textStyle, hitStyle;
         private float tearRemaining;
         private float lastAudibleVolume = 0.5f;
@@ -26,11 +51,49 @@ namespace VintageCollector.Presentation
         private static readonly Color Panel = new Color32(28, 39, 35, 255);
         private static readonly Color Teal = new Color32(113, 177, 156, 255);
 
+        private void StopFoley()
+        {
+            if (foleySource == null) return;
+            foleySource.Stop(); foleySource.clip = null;
+        }
+        private float Volume { get { return View == null ? 0.5f : Mathf.Clamp01(float.IsNaN(View.volume) ? 0.5f : View.volume); } }
+        private void SyncAudio()
+        {
+            if (foleySource != null) foleySource.volume = Volume;
+            if (View == null || View.paused || View.stage == "error" || Volume <= 0 || !focused) StopFoley();
+        }
+        private bool IsCommittedShape(string command)
+        {
+            var v = View;
+            if (v == null || string.IsNullOrEmpty(v.transactionId) || v.inspectIndex >= 0) return false;
+            if (command == "generate") return v.stage == "sealed" && v.revealedCount == 0;
+            if (v.cards == null || v.cards.Length != 11) return false;
+            if (command == "open") return v.stage == "revealing" && v.revealedCount == 0;
+            if (command == "next") return (v.stage == "revealing" && v.revealedCount > 0 && v.revealedCount < 11) || (v.stage == "results" && v.revealedCount == 11);
+            return command == "skip" && v.stage == "results" && v.revealedCount == 11;
+        }
         public void NotifyCommitted(string command)
         {
-            // Optional audio intentionally omitted: volume/mute remain real parent commands.
-            // No view mutation or positive action cue can occur on an uncommitted click.
+            // The host is acknowledgement authority; only a compatible published postcommit
+            // projection may cue. Consumption precedes suppression: Resume/Unmute cannot replay.
+            SyncAudio();
+            // Legacy visual-only acknowledgement seam remains compatible with the Phase 2
+            // fixture's already-partially-revealed view. Audio still requires exact poststate.
+            if (command == "open" && View != null && View.stage == "revealing" && !View.paused && focused)
+                tearRemaining = TearDuration;
+            if (!IsCommittedShape(command)) return;
+            if (cueTransaction != View.transactionId) { cueTransaction = View.transactionId; consumedCues.Clear(); }
+            string key = command + ":" + View.revealedCount.ToString(CultureInfo.InvariantCulture);
+            if (!consumedCues.Add(key)) return;
+            if (View.paused || !focused || View.stage == "error") return;
             if (command == "open") tearRemaining = TearDuration;
+            if (command == "next" || command == "skip") motion.PulseReveal();
+            if (Media == null || Volume <= 0) return;
+            var clip = Media.Sound(command);
+            if (clip == null) return;
+            var source = FoleySource;
+            source.Stop(); source.volume = Volume; source.clip = clip; source.Play();
+            CommittedCueCount++; LastCommittedCue = command;
         }
 
         private void RequestCommand(string command)
@@ -42,16 +105,24 @@ namespace VintageCollector.Presentation
 
         private void OnApplicationFocus(bool focused)
         {
+            this.focused = focused;
+            if (!focused) StopFoley();
             if (!focused && View != null && !View.paused) RequestCommand("pause");
         }
 
         private void Update()
         {
-            if (View != null && !View.paused) tearRemaining = Mathf.Max(0, tearRemaining-Time.unscaledDeltaTime);
+            SyncAudio();
+            bool running=focused && View != null && !View.paused && View.stage != "error";
+            motion.Inspect(View!=null && PresentationRules.CanInspect(View,View.inspectIndex)?View.inspectIndex:-1);
+            motion.Advance(Time.unscaledDeltaTime,running);
+            if (running) tearRemaining = Mathf.Max(0, tearRemaining-Time.unscaledDeltaTime);
         }
 
         private void OnDestroy()
         {
+            StopFoley();
+            if (foilMaterial != null) Destroy(foilMaterial);
             if (disc != null) Destroy(disc);
             if (diamond != null) Destroy(diamond);
         }
@@ -78,6 +149,38 @@ namespace VintageCollector.Presentation
         private void Fill(Rect rect,Color color)
         {
             var old=GUI.color; GUI.color=color; GUI.DrawTexture(rect,Texture2D.whiteTexture); GUI.color=old;
+        }
+        private void Texture(Rect rect,Texture2D texture)
+        {
+            var old=GUI.color; GUI.color=Color.white;
+            GUI.DrawTexture(rect,texture,ScaleMode.ScaleToFit,true);
+            GUI.color=old;
+        }
+        private static Rect FittedTextureRect(Rect r,Texture2D texture)
+        {
+            float scale=Mathf.Min(r.width/texture.width,r.height/texture.height);
+            float w=texture.width*scale,h=texture.height*scale;
+            return new Rect(r.center.x-w/2,r.center.y-h/2,w,h);
+        }
+        private void DrawFoil(Rect rect,Texture2D mask)
+        {
+            if (Event.current.type != EventType.Repaint) return;
+            if (foilMaterial == null) {
+                var shader=Resources.Load<Shader>("Presentation/Phase3Foil");
+                if (shader == null || !shader.isSupported) return;
+                foilMaterial=new Material(shader) {hideFlags=HideFlags.HideAndDontSave};
+            }
+            foilMaterial.SetTexture("_MaskTex",mask);
+            foilMaterial.SetFloat("_PresentationTime",motion.Clock);
+            Graphics.DrawTexture(rect,Texture2D.whiteTexture,foilMaterial);
+        }
+        private void Shadow(Rect r,float lift)
+        {
+            // Layered contact shadow moves; the printed face and accepted hit rectangle do not.
+            float drop=5+lift*5;
+            Fill(new Rect(r.x+3,r.y+drop,r.width,r.height),new Color(0,0,0,0.12f));
+            Fill(new Rect(r.x+6+lift*2,r.y+drop+4,r.width,r.height),new Color(0,0,0,0.09f));
+            Fill(new Rect(r.x+10+lift*3,r.y+drop+8,r.width,r.height),new Color(0,0,0,0.045f));
         }
         private void Outline(Rect r,Color color,float thickness=1)
         {
@@ -159,7 +262,7 @@ namespace VintageCollector.Presentation
         {
             Label(new Rect(48,37,690,47),"Vintage Card Collector",36,Paper,true);
             Label(new Rect(50,89,760,26),"1999  /  English Base Set Unlimited",20,Muted);
-            Label(new Rect(l.width-508,43,460,25),"PLACEHOLDER  /  TABLETOP STUDY",18,Gold,true,TextAnchor.UpperRight);
+            Label(new Rect(l.width-508,43,460,25),Media!=null && Media.SuppliedAssetCount>0?"OPTIONAL MEDIA  /  TABLETOP STUDY":"GENERIC  /  ASSET-READY TABLETOP",18,Gold,true,TextAnchor.UpperRight);
             Label(new Rect(l.width-608,82,560,29),"Virtual cards  "+(v==null?"—":v.totalVirtualCards.ToString(CultureInfo.InvariantCulture))+"   ·   Physical tracking not configured",17,Muted,false,TextAnchor.UpperRight);
             Label(new Rect(50,145,900,25),StageLabel(v),18,Gold,true);
         }
@@ -180,10 +283,12 @@ namespace VintageCollector.Presentation
         private void DrawOpening(PresentationLayout l,OpeningView v)
         {
             Rect table=R(l.table), side=R(l.sidebar);
-            Fill(table,Felt); Outline(Inset(table,10),new Color32(74,99,77,255));
+            Shadow(table,0); Fill(table,Felt); Outline(Inset(table,10),new Color32(74,99,77,255));
+            Fill(new Rect(table.x+12,table.y+12,table.width-24,1),new Color(0.8f,0.85f,0.67f,0.13f));
+            Fill(new Rect(table.x+12,table.yMax-13,table.width-24,2),new Color(0,0,0,0.13f));
             // Corner rule marks leave the central opening area quiet.
             Label(new Rect(table.x+26,table.y+22,300,24),"THE OPENING TABLE",16,Muted,true);
-            Label(new Rect(table.x+26,table.yMax-45,table.width-52,25),"Original abstract visuals  ·  63:88 cards  ·  No branded artwork",16,Muted,false,TextAnchor.MiddleCenter);
+            Label(new Rect(table.x+26,table.yMax-45,table.width-52,25),Media==null?"Generic fallback art  ·  Silent without a media provider":Safe(Media.StatusText,"Optional media provider / generic fallback art"),16,Muted,false,TextAnchor.MiddleCenter);
             Fill(side,Panel); Outline(side,new Color32(68,86,70,255));
             Rect hero=R(l.heroCard);
             if(v==null || v.stage=="ready" || v.stage=="sealed") DrawWrapper(hero,v!=null && v.stage=="sealed");
@@ -224,7 +329,7 @@ namespace VintageCollector.Presentation
             switch(stage)
             {
                 case "ready": heading="A small ritual.\nEleven discoveries."; body="Only supported option\n1999 English Base Set Unlimited\n\nGenerate requests a new pack. The runtime must save it before the wrapper appears."; break;
-                case "sealed": heading="A saved pack.\nReady when you are."; body="Open the placeholder wrapper with one click.\n\nIts contents and order are already fixed. Opening does not roll any cards."; break;
+                case "sealed": heading="A saved pack.\nReady when you are."; body="Open the saved wrapper with one click.\n\nIts contents and order are already fixed. Opening does not roll any cards."; break;
                 case "revealing":
                     int i=PresentationRules.VisibleCount(v)-1;
                     heading=i>=0 && PresentationRules.CanInspect(v,i)?Safe(v.cards[i].name,"Unnamed card"):"The first card\nis waiting.";
@@ -252,7 +357,9 @@ namespace VintageCollector.Presentation
         private void DrawWrapper(Rect card,bool sealedPack)
         {
             Rect r=new Rect(card.x-8,card.y-8,card.width+16,card.height+16);
-            Fill(new Rect(r.x+9,r.y+12,r.width,r.height),new Color(0,0,0,0.23f));
+            Shadow(r,0);
+            var supplied=Media==null?null:(Media.WrapperFront ?? Media.WrapperBack);
+            if (supplied!=null) { Texture(r,supplied); return; }
             Fill(r,new Color32(181,154,97,255));
             Fill(new Rect(r.x+9,r.y+25,r.width-18,r.height-50),new Color32(53,79,68,255));
             for(int i=0;i<17;i++) {
@@ -278,7 +385,9 @@ namespace VintageCollector.Presentation
 
         private void DrawBack(Rect r)
         {
-            Fill(new Rect(r.x+7,r.y+9,r.width,r.height),new Color(0,0,0,0.22f));
+            Shadow(r,0);
+            var supplied=Media==null?null:Media.CardBack;
+            if (supplied!=null) { Texture(r,supplied); return; }
             Fill(r,Paper); Fill(Inset(r,r.width*0.035f),new Color32(47,75,74,255));
             Outline(Inset(r,r.width*0.075f),Gold,2);
             Diamond(At(r,0.19f,0.27f,0.62f,0.44f),new Color32(124,150,126,255));
@@ -289,8 +398,19 @@ namespace VintageCollector.Presentation
         private void DrawFace(Rect r,OpeningCardView c,int index)
         {
             if(c==null) { DrawBack(r); return; }
+            var supplied = Media == null ? null : Media.CardFace(c.id);
+            if (supplied != null) {
+                Shadow(r,motion.RevealLift);
+                Texture(r,supplied);
+                if (PresentationRules.IsFoil(c.finish)) {
+                    var mask = Media.HoloMask(c.id);
+                    if (mask != null && mask.width == supplied.width && mask.height == supplied.height)
+                        DrawFoil(FittedTextureRect(r,supplied),mask);
+                }
+                return; // Full print owns the face: no locally repainted names, borders or badges.
+            }
             bool small=r.width<230; float fs=r.width/350;
-            Fill(new Rect(r.x+6,r.y+8,r.width,r.height),new Color(0,0,0,0.23f));
+            Shadow(r,motion.RevealLift);
             Fill(r,new Color32(219,184,112,255));
             Rect inner=Inset(r,r.width*0.035f); Fill(inner,Paper);
             Outline(inner,new Color32(160,146,104,255));
@@ -318,13 +438,14 @@ namespace VintageCollector.Presentation
             Fill(new Rect(0,h*0.87f,w,h*0.13f),new Color32(44,65,58,255));
             if(foil) for(int i=0;i<5;i++) Diamond(new Rect(w*(0.15f+i*0.16f),h*(0.19f+(i%2)*0.19f),7,7),Paper);
             GUI.EndGroup();
+            if(foil) DrawFoil(art,Texture2D.whiteTexture);
             Outline(art,Ink);
         }
 
         private void FaceHit(Rect r,int index)
         {
             if(!PresentationRules.CanInspect(View,index)) return;
-            if(GUI.enabled && r.Contains(Event.current.mousePosition)) Outline(r,Teal,3);
+            if(GUI.enabled && r.Contains(Event.current.mousePosition)) Outline(Inset(r,-3),Teal,2);
             if(GUI.Button(r,GUIContent.none,hitStyle)) RequestCommand("inspect:"+index.ToString(CultureInfo.InvariantCulture));
         }
 
@@ -346,7 +467,8 @@ namespace VintageCollector.Presentation
         {
             string model=Safe(v==null?null:v.modelLabel,"Model A 0.1.0");
             Label(new Rect(50,l.height-99,l.width-380,25),"PROVISIONAL RULES  ·  "+model,17,Gold,true);
-            string notice=v==null?"No runtime attached.":Safe(v.recoveryNotice,Safe(v.statusLine,"Placeholder visuals; physical tracking is not configured."));
+            string mediaStatus=Media==null?"Generic fallback art; silent without a media provider.":Safe(Media.StatusText,"Optional media provider; generic fallback art.");
+            string notice=v==null?"No runtime attached. "+mediaStatus:Safe(v.recoveryNotice,Media==null?Safe(v.statusLine,mediaStatus):mediaStatus);
             Label(new Rect(50,l.height-69,l.width-380,34),notice,16,Muted);
             Button(R(l.pause),"Pause","pause"); Button(R(l.quit),"Quit","quit");
         }
@@ -361,7 +483,7 @@ namespace VintageCollector.Presentation
             Label(new Rect(p.x+40,p.y+95,580,58),"Paused. Resume explicitly when you are ready.\nQuitting does not request a last-minute save.",20,Muted);
             float volume=Mathf.Clamp01(float.IsNaN(v.volume)?0.5f:v.volume);
             if(volume>0) lastAudibleVolume=volume;
-            Label(new Rect(p.x+40,p.y+172,580,29),"Volume  "+Mathf.RoundToInt(volume*100)+"%  ·  Silent placeholder presentation",19,Gold);
+            Label(new Rect(p.x+40,p.y+172,580,29),"Volume  "+Mathf.RoundToInt(volume*100)+"%  ·  "+(Media==null?"Silent generic fallback":"Provider foley / see media status"),19,Gold);
             Button(R(l.quieter),"−","volume:"+Mathf.Clamp01(volume-0.1f).ToString("0.0",CultureInfo.InvariantCulture));
             Button(R(l.louder),"+","volume:"+Mathf.Clamp01(volume+0.1f).ToString("0.0",CultureInfo.InvariantCulture));
             Button(R(l.mute),volume>0?"Mute":"Unmute",volume>0?"volume:0":"volume:"+lastAudibleVolume.ToString("0.0",CultureInfo.InvariantCulture));
@@ -371,7 +493,7 @@ namespace VintageCollector.Presentation
 
         private void DrawInspection(PresentationLayout l,OpeningView v)
         {
-            Dim(l); Rect p=R(l.modal); Fill(p,Panel); Outline(p,Gold,2);
+            Dim(l); Rect p=R(l.modal); Shadow(p,motion.InspectionLift); Fill(p,Panel); Outline(p,Gold,2);
             int i=v.inspectIndex;
             if(PresentationRules.CanInspect(v,i)) {
                 Rect card=new Rect(p.x+30,p.y+30,620*63f/88,620);
@@ -380,7 +502,7 @@ namespace VintageCollector.Presentation
                 Label(new Rect(info.x,info.y,info.width,28),"REVEALED CARD  "+(i+1)+" / 11",18,Gold,true);
                 Label(new Rect(info.x,info.y+57,info.width,105),Safe(v.cards[i].name),32,Paper,true);
                 Label(new Rect(info.x,info.y+181,info.width,181),"Collector number  "+Safe(v.cards[i].collectorNumber)+"\n"+Safe(v.cards[i].kind)+"  ·  "+Safe(v.cards[i].rarity)+"\nFinish  "+Safe(v.cards[i].finish)+"\n\n"+(v.cards[i].isNew?"New to virtual collection":"Duplicate virtual card"),21,Muted);
-                Label(new Rect(info.x,info.y+382,info.width,105),"PLACEHOLDER VISUALS\nOriginal geometric illustration, not card artwork. Physical tracking not configured.",19,Gold);
+                Label(new Rect(info.x,info.y+382,info.width,105),(Media!=null && Media.CardFace(v.cards[i].id)!=null?"PROVIDER CARD FACE\nPrinted face shown unchanged. NEW / DUPLICATE status is outside the face.":"GENERIC FALLBACK ART\nOriginal abstract illustration, not supplied card artwork."),19,Gold);
             } else Label(new Rect(p.x+65,p.y+80,p.width-130,180),"This card is not available for inspection.\nUnrevealed names and faces remain hidden.",28,Paper,true);
             Button(R(l.back),"Back to table","close-inspect",true);
         }

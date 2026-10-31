@@ -166,9 +166,25 @@ namespace VintageCollector.Verification
             yield return new WaitForEndOfFrame();
             string file = Path.Combine(paths.ArtifactDirectory, name + ".png");
             ScreenCapture.CaptureScreenshot(file);
-            for (int i = 0; i < 4; i++) yield return null;
-            CheckThat("screenshot:" + name, File.Exists(file) && new FileInfo(file).Length > 0, "Graphics-enabled player capture.");
+            // CaptureScreenshot is asynchronous; a fixed frame count is not a completion fence.
+            float deadline = Time.realtimeSinceStartup + 3f;
+            bool complete = false;
+            do {
+                yield return null;
+                complete = CompletePng(file);
+            } while (!complete && Time.realtimeSinceStartup < deadline);
+            CheckThat("screenshot:" + name, complete, "Graphics-enabled player capture reached IEND before bounded deadline.");
             screenshots.Add(name + ".png");
+        }
+
+        private static bool CompletePng(string file)
+        {
+            try {
+                if (!File.Exists(file)) return false;
+                byte[] bytes = File.ReadAllBytes(file);
+                int n = bytes.Length;
+                return n >= 12 && bytes[n-8] == 73 && bytes[n-7] == 69 && bytes[n-6] == 78 && bytes[n-5] == 68;
+            } catch (IOException) { return false; }
         }
 
         private void Update()

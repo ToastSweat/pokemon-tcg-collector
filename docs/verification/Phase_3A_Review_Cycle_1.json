@@ -1,0 +1,28 @@
+{
+  "cycle": 1,
+  "passed": false,
+  "delegationId": "deleg_aaaec081",
+  "mediaHostReview": {
+    "reviewerId": "sa-0-3fc52aa0",
+    "passed": false,
+    "security_concerns": [
+      "Phase3MediaHost probes File.Exists on the optional smoke manifest before validating the leaf for reparse redirects. A local leaf-symlink reproduction confirmed host selection before the library rejected it; remote metadata access is a potential consequence, not a claimed observed network event.",
+      "Media verification protected() recursively traversed and content-hashed accepted-player Saves. This violated the intended no-live-save-read instrumentation boundary. No save writes were found. Prune those directories before traversal/read."
+    ],
+    "logic_errors": []
+  },
+  "presentationBuildReview": {
+    "reviewerId": "sa-1-649b388c",
+    "passed": false,
+    "security_concerns": [],
+    "logic_errors": [
+      "Source BootstrapPhase3 scene references Host and Probe MonoScript GUIDs without matching metadata in original Assets; the correct metadata exists in the staged build project. Working candidate binary is coherent, but source preview is incomplete."
+    ]
+  },
+  "fixesAuthorized": "Only the three reported boundary/source-coherence blockers plus focused regressions; assigned to separate fix worker.",
+  "newApprovalRequired": true,
+  "humanHandoffBlocked": true,
+  "brandedMaterialsDeferred": true,
+  "phase4Authorized": false,
+  "historicalEvidencePolicy": "Retain original execution successes and rejected review. Do not relabel prior hashing as no-read compliance or prior source-scene GUID checking as complete. Rebuild and reverify corrected candidate before fresh review."
+}

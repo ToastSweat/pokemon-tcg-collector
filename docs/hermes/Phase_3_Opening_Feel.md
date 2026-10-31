@@ -1,6 +1,6 @@
 # Phase 3 — Opening feel and supplied materials
 
-Status: AUTHORIZED / INITIAL ASSET INTAKE. User explicitly answered “yes” to the Phase 3 approval request. This authorizes Phase 3 only, not binder/physical tracking, other sets, shopping or finance. No Phase 3 gameplay implementation or candidate build exists yet.
+Status: PHASE 3A DELIVERY READY — corrected execution and both independent re-reviews passed. Stop for Phase_3A_Human_Playtest.md. This is not human hearing/feel acceptance, full real-material Phase 3 completion or Phase 4 authorization.
 
 ## Current process
 
@@ -26,18 +26,33 @@ Exact rendering/API details will be frozen after initial media readiness is know
 - Accepted Phase 2 build and interaction behavior preserved separately; original model/data/persistence remain authoritative.
 - Original/private materials only; no scraping, publication or inferred redistribution rights. Manifest starts empty because no supplied material was present.
 - Start with Pikachu #58 yellow-cheeks common, Electabuzz #20 nonholo rare and Alakazam #1 holo, plus one back and one wrapper design; sounds/mask optional. Different substitutions require exact printing verification, not filename inference.
-- Material readiness/source location is pending user response. Placeholder-first support is a valid alternative, not a reason to fabricate branded assets.
+- User chose placeholder-first support and generic polish; branded materials are deferred, not fabricated or scraped. The real supplied manifest remains empty. Concrete API/ownership and evidence gates are frozen in ../technical/Phase_3A_Implementation_Contract.md.
 
 ## Tasks
 
 - [x] Record explicit Phase 3 approval and inspect supplied-material inventory.
 - [x] Verify/copy accepted player baseline without copying or altering saves.
 - [x] Prepare project-local intake folders, empty provenance manifest and representative request.
-- [ ] Confirm initial asset readiness/location and inspect any supplied files.
-- [ ] Freeze one presentation/media contract, implement with test-first checkpoints.
-- [ ] Exercise a real candidate and regress behavior/persistence.
-- [ ] Independent review and bounded human Phase 3 feel/material gate.
+- [x] Confirm placeholder-first direction; no supplied files exist to inspect yet. Real-material intake stays deferred.
+- [x] Freeze shared media/renderer contract and exclusive work ownership.
+- [x] Prove separate candidate path/save-rebuild admission policy with observed RED/GREEN cycles: two pure Mono checks passed; populated candidate saves block rebuilding without modification.
+- [x] Complete safe media library/original foley and passive renderer polish with test-first evidence.
+- [x] Receive completed media and renderer implementations; parent reran 13 pure media checks, 39 motion/layout checks and two build-policy checks. Isolated native/graphics reports remain distinct from the main candidate.
+- [x] Build separate Windows candidate with zero errors/warnings and preserve original scene/player/source/save behavior.
+- [x] Run real production regression: five suites/111 driver checks/60 validated captures, including native mouse/Escape, hard kill/resume and failed-save Retry.
+- [x] Run core-connected media/audio suite: 61 driver checks/34 validated captures, actual cue PCM/DSP, mute/no replay, real-loader synthetic bindings and bad/missing-mask fallback. Pixel checks confirm effects stay in the explicit mask and printed bands remain unchanged.
+- [x] Regress 109 persistence checks, accepted generator/distribution and 13 controller groups/297 assertions using the exact-source stage.
+- [x] Both cycle-two independent reviews passed; parent rechecked 77 source pins, all 136 candidate files and all 135 accepted Phase 2 files before closing documentation. No reviewed source/build bytes changed afterward.
+- [ ] Record final local checkpoint and request the bounded generic Phase 3A human review. Branded-material gate remains deferred.
+
+Review record: ../verification/Phase_3A_Independent_Review.json. Historical rejected review and failed intermediate capture/audio attempts are retained, not relabelled as passes. Current corrected manifest digest: `c363cf2242c5e5b91089967f13ed5be67bf66284dc1175e6f8ba0cc659e21db9`.
+
+## Candidate / data separation
+
+Player: `F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase3Windows/VintageCardCollector.exe`. This candidate has its **own new collection** under its own Saves folder. Accepted Phase2 player/collection remain untouched; no automatic migration or merge. Source scene: Assets/VintageCollector/Scenes/BootstrapPhase3.unity. Editor play continues using the existing separate Editor save location.
+
+Real manifest still contains zero supplied assets. You should see generic art and hear original generic action foley, not branded material. The loaded samples and native DSP were verified, but hearing/quality still needs the user. Full test reproduction and limits: ../verification/Phase_3A_Parent_Verification.md; candidate pins: Phase_3A_Corrected_Player_Manifest.json.
 
 ## Session handoff
 
-Phase 3 is approved, but only intake/setup has been performed. Ask the user for the requested small batch or placeholder-first direction. Assets/Supplied/Phase3/{Cards,Back,Wrapper,Masks,Audio} exists under the allowed root; assets and rights are not invented. No code, model, player or live save was changed. Preserve the user's untracked PackageManagerSettings.asset. All project-controlled writes stay under this project root; the prior Unity-system-files exception remains unchanged.
+Cycle-two approval is complete and bound to corrected source/build pins. Preserve the accepted Phase 2 baseline and separate Phase3Windows candidate; do not merge/reset live collections. Closing edits are documentation only. Human hearing/timing/visual feedback is next, using the six-item checklist, not another feature implementation. Branded assets remain deferred and real-manifest assets remain empty; never mark full Phase 3 or Phase 4 approved from generic execution/review. Original interactive Editor was not closed/driven. Earlier save-hashing privacy error and source-metadata failure are honestly retained with their fixes; no data mutation is claimed or performed.

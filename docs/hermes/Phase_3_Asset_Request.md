@@ -17,7 +17,7 @@ Subfolders Cards, Back, Wrapper, Masks and Audio are prepared. Keep original fil
 | Alakazam #1, same target printing, holo | Same face specification; avoid strong sleeve/camera glare if possible | Opaque preferred | Holo face/finish proof while preserving print |
 | One English card back | Same 63:88 ratio/face dimensions | Opaque preferred | Stack, flip and inspection back |
 | One supported Unlimited wrapper design, front/back or a single unfolded scan | PNG preferred; original aspect and full crimps/seams; about 2048 px tall or larger if available | Opaque fine; alpha only if already cleanly cut out | Wrapper texture and controlled opening cue |
-| Optional Alakazam holo mask | Grayscale PNG exactly aligned to the face dimensions; white only where holo is permitted, black elsewhere | Opaque grayscale preferred | Bounded foil cue, never whole-card rainbow |
+| Optional Alakazam holo mask | RGB/RGBA PNG containing a grayscale mask exactly aligned to the face dimensions; white only where holo is permitted, black elsewhere (not grayscale-mode/interlaced PNG) | Opaque grayscale preferred | Bounded foil cue, never whole-card rainbow |
 | Optional tear/slide/flip sounds | WAV preferred, 44.1 or 48 kHz, mono/stereo; original clean files | Not applicable | Actual action-coupled cues with volume/mute |
 
 Dimensions are preferred, not a demand to upscale low-resolution originals. Keep the correct full-card proportions and best available source; do not crop away identity/copyright details or invent missing image detail. A flat scan is preferable to a perspective photo, but send what is available for inspection. No logo or music is needed for this first batch.
