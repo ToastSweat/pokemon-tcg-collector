@@ -1,6 +1,6 @@
 # Phase 3A generic-media playtest — pending
 
-Status: NOT HUMAN ACCEPTED. The generic candidate's corrected execution and both independent reviews passed; checkpoint `5c4566a` is ready for this checklist. This is the explicitly selected generic/replaceable-media subset, not full real-material Phase 3 or Phase 4 acceptance.
+Status: PARTIALLY ACCEPTED — user passed the rest and reported one final-card transition defect. The tested checkpoint is 5c4566a. Preserve accepted sound/mute/readability/resume/overall behavior; only the 11th ordinary-reveal preview is reopened. Generic Phase 3A is not fully closed, nor are real materials/Phase 4 approved.
 
 ## Use the separate candidate
 
@@ -23,4 +23,6 @@ Do not intentionally corrupt saves; automated failure/Retry/hard-kill checks ran
 
 ## Acceptance record
 
-All items are currently NOT TESTED by the user. Bind any future report only to this group and candidate manifest digest `c363cf2242c5e5b91089967f13ed5be67bf66284dc1175e6f8ba0cc659e21db9`, after verifying immutable file membership/bytes again while excluding Saves. Native DSP samples do not prove physical hearing; this checklist supplies that missing human judgment. Real branded materials remain deferred even if this generic checkpoint passes.
+User reported everything working great, passed the rest, and identified that the 11th card goes directly to the grid without a large preview. Items 1,2,3,5,6 are PASS within the originally presented scope; item4 is PASS except the explicitly reported final-card transition, which remains open. This is not a blanket failure or permission to rework accepted audio/material timing.
+
+Parent rechecked all 136 immutable files against manifest `c363cf2242c5e5b91089967f13ed5be67bf66284dc1175e6f8ba0cc659e21db9` on 2026-10-30 before recording feedback; live saves were neither read nor changed. A separate fix candidate must receive its focused retest, without transferring acceptance automatically. See Final_Card_Preview_Fix.md. Real branded materials remain deferred.

@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-10-30T22:45:45.735240-05:00",
+  "status": "execution-and-independent-review-passed-focused-human-retest-pending",
+  "nativeChecks": 46,
+  "editorChecks": 11,
+  "coreRegressionGroups": 13,
+  "coreRegressionAssertions": 297,
+  "build": {
+    "result": "Succeeded",
+    "outputPath": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase3FinalCardWindows/VintageCardCollector.exe",
+    "sourceProject": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase3-build-project",
+    "errors": 0,
+    "warnings": 0
+  },
+  "manifestSha256": "f30997b22436d650441aab4c5dd725bdf6caad3652556646dd72e511fcaf40aa",
+  "humanRetestPending": true,
+  "liveSavesCopiedOrChanged": false
+}

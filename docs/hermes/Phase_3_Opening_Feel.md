@@ -1,6 +1,6 @@
 # Phase 3 — Opening feel and supplied materials
 
-Status: PHASE 3A DELIVERY READY — corrected execution and both independent re-reviews passed. Stop for Phase_3A_Human_Playtest.md. This is not human hearing/feel acceptance, full real-material Phase 3 completion or Phase 4 authorization.
+Status: PHASE 3A REST PASSED / FINAL-CARD FIX RETEST PENDING. User accepted the rest and reported only the missing eleventh-card large preview. The focused fix passed native execution and review; use Final_Card_Preview_Fix.md for the narrow retest. Preserve accepted audio/visual/input/resume behavior. Real-material Phase 3 and Phase 4 remain deferred.
 
 ## Current process
 
@@ -57,4 +57,4 @@ Real manifest still contains zero supplied assets. You should see generic art an
 
 ## Session handoff
 
-Cycle-two approval is complete and bound to corrected source/build pins. Preserve the accepted Phase 2 baseline and separate Phase3Windows candidate; do not merge/reset live collections. Closing edits are documentation only. Human hearing/timing/visual feedback is next, using the six-item checklist, not another feature implementation. Branded assets remain deferred and real-manifest assets remain empty; never mark full Phase 3 or Phase 4 approved from generic execution/review. Original interactive Editor was not closed/driven. Earlier save-hashing privacy error and source-metadata failure are honestly retained with their fixes; no data mutation is claimed or performed.
+User passed the six-item group except final ordinary-Next card preview. Keep those passes; don't reopen accepted foley/volume/feel. The minimal OpeningGame presentation patch reuses final inspection after durable acknowledgement/cue; Skip and completed restart stay direct, with unchanged model/schema/awards. It is built separately under Phase3FinalCardWindows and reviewed, with its own new test collection; all previous players/saves remain untouched. Stop for only the focused final-card/Back/Skip retest. Branded material/Machamp target/Phase 4 remain deferred.

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [],
+  "delegationId": "deleg_1aef6418",
+  "reviewerId": "sa-0-14cf9abc",
+  "summary": "Full scoped review passed. Final ordinary Next opens the durable eleventh card only after acknowledgement and cue; Retry, duplicates, direct Skip and completed restart remain correct. Existing scene is reused and separate output protects existing players/saves.",
+  "reviewedSourcePinCount": 9,
+  "verifiedStagedInputCount": 120,
+  "verifiedPlayerFileCount": 136,
+  "candidateManifestSha256": "f30997b22436d650441aab4c5dd725bdf6caad3652556646dd72e511fcaf40aa",
+  "execution": {"focusedEditorChecks": 11, "coreRegressionGroups": 13, "coreRegressionAssertions": 297, "nativeChecks": 46, "validatedPngs": 25},
+  "parentRecheckedPinsAfterReview": true,
+  "humanFocusedRetestPending": true,
+  "otherHumanPassesPreserved": true,
+  "brandedMaterialsDeferred": true,
+  "phase4Authorized": false,
+  "closingChanges": "Documentation only after approval; no reviewed game or build bytes changed."
+}

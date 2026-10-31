@@ -4,7 +4,7 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-**Phase 3A’s generic media-ready candidate is ready for your feedback.** The focused fixes, rebuilt-player tests and both fresh independent reviews passed. The accepted Phase 2 player/collection remain preserved; this separate candidate has its own collection. Human sound/visual approval and branded materials remain pending, so full Phase 3 and Phase 4+ are not complete/authorized.
+**Phase 3A is passed except the final-card issue, now fixed in a separately reviewed test build.** Reveal-next on card 11 opens the large saved-card inspection; Back exposes results. Skip remains direct, with unchanged awards/save schema/audio. Only the focused human retest remains; existing players/collections and prior passes are preserved. Branded materials/Phase 4 stay deferred.
 
 - [Authoritative phased handoff](docs/hermes/Hermes_Vintage_Card_Collector_Handoff.md)
 - [Approved discovery proposal](docs/hermes/Phase_0_Discovery.md)

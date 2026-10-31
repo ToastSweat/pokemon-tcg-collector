@@ -192,6 +192,13 @@ namespace VintageCollector.Runtime
             pending = null;
             PublishView();
             presentation.NotifyCommitted(action.command);
+            // The last ordinary reveal is still a card reveal, not an immediate grid jump.
+            // Acknowledge its cue first, then expose the existing large inspection view
+            // in the same synchronous action. Skip and completed-pack resume stay direct.
+            if (action.command == "next" && acknowledged.CurrentPack != null && acknowledged.CurrentPack.IsComplete) {
+                inspectIndex = acknowledged.CurrentPack.OrderedCardIds.Count - 1;
+                PublishView();
+            }
         }
 
         private void PublishError(Exception error)
