@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-10-30T23:24:10.255945-05:00",
+  "status": "execution-and-independent-review-passed-user-conditional-continuation-permitted",
+  "nativeChecks": 49,
+  "focusedEditorChecks": 14,
+  "coreRegressionGroups": 13,
+  "coreRegressionAssertions": 297,
+  "build": {
+    "result": "Succeeded",
+    "outputPath": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase3TableFlowWindows/VintageCardCollector.exe",
+    "sourceProject": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase3-build-project",
+    "errors": 0,
+    "warnings": 0
+  },
+  "candidateManifestSha256": "0976c2be2ed1a3e5ef01d4ff5f3a47c0ee7fe5c381f4dcc32f7b87004ca52837",
+  "userRequirement": "Card 11 stays on the normal opening table; no automatic inspection; explicit View pack results continues.",
+  "priorPassesPreserved": true,
+  "humanRetestReported": false,
+  "conditionalContinuationAuthorizedByUser": true,
+  "brandedAssetsDeferred": true,
+  "phase4ExplicitlyAuthorized": false
+}

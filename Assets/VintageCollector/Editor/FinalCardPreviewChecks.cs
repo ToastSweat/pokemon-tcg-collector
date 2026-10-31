@@ -64,14 +64,19 @@ namespace VintageCollector.EditorTools
                     int before = f.presentation.CommittedCueCount;
                     string id = f.game.CurrentSession.CurrentPack.OrderedCardIds[10];
                     f.game.DispatchCommand("next");
-                    Require("eleventh-next-shows-large-preview-before-grid",f.game.CurrentView.stage=="results" && f.game.CurrentView.inspectIndex==10 && PresentationRules.CanInspect(f.game.CurrentView,10));
-                    Require("large-preview-is-exact-saved-eleventh-card",f.game.CurrentView.cards[10].id==id && f.game.CurrentSession.CurrentPack.RevealedCount==11);
+                    Require("eleventh-next-stops-on-normal-table-not-modal-or-grid",f.game.CurrentView.stage=="revealing" && f.game.CurrentView.revealedCount==11 && f.game.CurrentView.inspectIndex==-1 && PresentationRules.CanInspect(f.game.CurrentView,10));
+                    Require("table-shows-exact-saved-eleventh-card",f.game.CurrentView.cards[10].id==id && f.game.CurrentSession.CurrentPack.RevealedCount==11);
                     Require("final-next-retains-one-committed-sound",f.presentation.CommittedCueCount==before+1 && f.presentation.LastCommittedCue=="next");
                     long revision=f.game.CurrentSession.Revision;
                     f.game.DispatchCommand("next"); f.game.DispatchCommand("skip");
                     Require("duplicate-final-input-has-no-award-or-save",f.game.CurrentSession.Revision==revision && f.game.CurrentSession.TotalVirtualCards==11 && f.game.GeneratedResultCount==1);
+                    Require("final-table-only-results-continues-flow",PresentationRules.CanEmit(f.game.CurrentView,"results") && !PresentationRules.CanEmit(f.game.CurrentView,"next") && !PresentationRules.CanEmit(f.game.CurrentView,"skip") && !PresentationRules.CanEmit(f.game.CurrentView,"generate"));
+                    f.game.DispatchCommand("inspect:10");
+                    Require("inspection-is-still-optional",f.game.CurrentView.inspectIndex==10);
                     f.game.DispatchCommand("close-inspect");
-                    Require("back-shows-grid-without-new-save-award",f.game.CurrentView.stage=="results" && f.game.CurrentView.inspectIndex==-1 && f.game.CurrentSession.Revision==revision && f.game.CurrentSession.TotalVirtualCards==11);
+                    Require("optional-inspection-back-returns-to-final-table",f.game.CurrentView.stage=="revealing" && f.game.CurrentView.inspectIndex==-1 && f.game.CurrentSession.Revision==revision);
+                    f.game.DispatchCommand("results");
+                    Require("explicit-results-shows-grid-without-new-save-award",f.game.CurrentView.stage=="results" && f.game.CurrentView.inspectIndex==-1 && f.game.CurrentSession.Revision==revision && f.game.CurrentSession.TotalVirtualCards==11);
                     completed=f.folder;
                 }
             });
@@ -88,7 +93,7 @@ namespace VintageCollector.EditorTools
                     f.game.FailNextCommitForSmoke(); f.game.DispatchCommand("next");
                     Require("failed-final-save-exposes-no-preview",f.game.CurrentView.stage=="error" && f.game.CurrentView.inspectIndex==-1 && f.presentation.CommittedCueCount==cues);
                     f.game.DispatchCommand("retry");
-                    Require("successful-final-retry-opens-same-large-preview",f.game.CurrentView.inspectIndex==10 && f.game.CurrentSession.CurrentPack.RevealedCount==11 && f.game.GeneratedResultCount==1 && f.game.CurrentSession.TotalVirtualCards==11);
+                    Require("successful-final-retry-stops-on-same-normal-table",f.game.CurrentView.stage=="revealing" && f.game.CurrentView.inspectIndex==-1 && f.game.CurrentSession.CurrentPack.RevealedCount==11 && f.game.GeneratedResultCount==1 && f.game.CurrentSession.TotalVirtualCards==11);
                     Require("successful-final-retry-cues-once",f.presentation.CommittedCueCount==cues+1);
                 }
             });

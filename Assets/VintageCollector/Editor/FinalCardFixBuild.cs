@@ -13,12 +13,12 @@ namespace VintageCollector.EditorTools
     {
         private const string Root = "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG";
         [Serializable] private sealed class Evidence { public string result, outputPath, sourceProject; public int errors, warnings; }
-        [MenuItem("Tools/Vintage Collector/Phase 3/Build Final Card Fix Separately")]
+        [MenuItem("Tools/Vintage Collector/Phase 3/Build Final Card Table Flow Separately")]
         public static void Run()
         {
             string project=Path.GetFullPath(Path.GetDirectoryName(Application.dataPath)).Replace('\\','/');
             if(project!=Root && project!=Root+"/.artifacts/phase3-build-project") throw new InvalidOperationException("Unexpected project root.");
-            string output=Path.Combine(Root,"Builds","Phase3FinalCardWindows");
+            string output=Path.Combine(Root,"Builds","Phase3TableFlowWindows");
             var scoped=GamePaths.Resolve(Root,Path.Combine(output,"VintageCardCollector_Data"),false,new string[0]);
             if(Directory.Exists(scoped.SaveDirectory) && Directory.GetFileSystemEntries(scoped.SaveDirectory).Length>0)
                 throw new InvalidOperationException("Existing fix-candidate saves must be preserved; refusing rebuild.");

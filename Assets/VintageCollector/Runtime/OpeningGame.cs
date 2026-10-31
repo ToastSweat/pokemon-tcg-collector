@@ -33,6 +33,7 @@ namespace VintageCollector.Runtime
         private bool paused;
         private float volume = 0.5f;
         private int inspectIndex = -1;
+        private string finalTableTransaction;
         private Exception lastError;
 
         private sealed class SmokeFaults : ISaveFaultInjector
@@ -107,6 +108,12 @@ namespace VintageCollector.Runtime
                 LastCommand = command;
                 Shutdown();
                 if (!Application.isEditor) Application.Quit();
+                return;
+            }
+            if (command == "results") {
+                LastCommand = command;
+                finalTableTransaction = null;
+                PublishView();
                 return;
             }
             if (command == "pause" || command == "resume" || command == "close-inspect" ||
@@ -190,15 +197,14 @@ namespace VintageCollector.Runtime
             var acknowledged = store.Snapshot;
             CurrentSession = acknowledged;
             pending = null;
+            // Keep the final ordinary reveal on the same table as every earlier card.
+            // This is presentation-only: the eleven-card transaction is already durable.
+            if (action.command == "next" && acknowledged.CurrentPack != null && acknowledged.CurrentPack.IsComplete)
+                finalTableTransaction = acknowledged.CurrentPack.TransactionId;
+            else if (action.command == "generate" || action.command == "skip")
+                finalTableTransaction = null;
             PublishView();
             presentation.NotifyCommitted(action.command);
-            // The last ordinary reveal is still a card reveal, not an immediate grid jump.
-            // Acknowledge its cue first, then expose the existing large inspection view
-            // in the same synchronous action. Skip and completed-pack resume stay direct.
-            if (action.command == "next" && acknowledged.CurrentPack != null && acknowledged.CurrentPack.IsComplete) {
-                inspectIndex = acknowledged.CurrentPack.OrderedCardIds.Count - 1;
-                PublishView();
-            }
         }
 
         private void PublishError(Exception error)
@@ -240,7 +246,7 @@ namespace VintageCollector.Runtime
                 };
             }
             SetView(new OpeningView {
-                stage=pack == null ? "ready" : pack.IsComplete ? "results" : pack.WrapperOpened ? "revealing" : "sealed",
+                stage=pack == null ? "ready" : pack.IsComplete && finalTableTransaction != pack.TransactionId ? "results" : pack.WrapperOpened ? "revealing" : "sealed",
                 transactionId=pack == null ? null : pack.TransactionId, cards=cards,
                 revealedCount=pack == null ? 0 : pack.RevealedCount,
                 totalVirtualCards=CurrentSession.TotalVirtualCards, recoveryNotice=CurrentSession.RecoveryNotice,

@@ -69,7 +69,7 @@ namespace VintageCollector.Presentation
             if (command == "generate") return v.stage == "sealed" && v.revealedCount == 0;
             if (v.cards == null || v.cards.Length != 11) return false;
             if (command == "open") return v.stage == "revealing" && v.revealedCount == 0;
-            if (command == "next") return (v.stage == "revealing" && v.revealedCount > 0 && v.revealedCount < 11) || (v.stage == "results" && v.revealedCount == 11);
+            if (command == "next") return (v.stage == "revealing" && v.revealedCount > 0 && v.revealedCount <= 11) || (v.stage == "results" && v.revealedCount == 11);
             return command == "skip" && v.stage == "results" && v.revealedCount == 11;
         }
         public void NotifyCommitted(string command)
@@ -344,8 +344,12 @@ namespace VintageCollector.Presentation
             if(stage=="ready") Button(R(l.primary),"Generate pack","generate",true);
             if(stage=="sealed") Button(R(l.primary),"Open wrapper","open",true);
             if(stage=="revealing") {
-                Button(R(l.primary),"Reveal next card","next",true);
-                Button(R(l.secondary),"Skip to results","skip");
+                if(v.cards != null && v.revealedCount == v.cards.Length) {
+                    Button(R(l.primary),"View pack results","results",true);
+                } else {
+                    Button(R(l.primary),"Reveal next card","next",true);
+                    Button(R(l.secondary),"Skip to results","skip");
+                }
             }
             if(stage=="error") {
                 Button(R(l.primary),"Retry pending action","retry",true);

@@ -1,6 +1,6 @@
 # Phase 3 — Opening feel and supplied materials
 
-Status: PHASE 3A REST PASSED / FINAL-CARD FIX RETEST PENDING. User accepted the rest and reported only the missing eleventh-card large preview. The focused fix passed native execution and review; use Final_Card_Preview_Fix.md for the narrow retest. Preserve accepted audio/visual/input/resume behavior. Real-material Phase 3 and Phase 4 remain deferred.
+Status: PHASE 3A REST PASSED / CLARIFIED TABLE FLOW VERIFIED AND REVIEWED. The fullscreen interpretation was rejected and replaced: card11 stops on the ordinary opening table. Final_Card_Table_Flow.md is current. User conditionally permitted continuation after this correction; no unreported human retest is invented. Branded materials remain deferred; next-phase identity discovery is now appropriate.
 
 ## Current process
 
@@ -57,4 +57,4 @@ Real manifest still contains zero supplied assets. You should see generic art an
 
 ## Session handoff
 
-User passed the six-item group except final ordinary-Next card preview. Keep those passes; don't reopen accepted foley/volume/feel. The minimal OpeningGame presentation patch reuses final inspection after durable acknowledgement/cue; Skip and completed restart stay direct, with unchanged model/schema/awards. It is built separately under Phase3FinalCardWindows and reviewed, with its own new test collection; all previous players/saves remain untouched. Stop for only the focused final-card/Back/Skip retest. Branded material/Machamp target/Phase 4 remain deferred.
+User clarified that no special fullscreen/modal view was wanted. The corrected candidate under Phase3TableFlowWindows holds card11 on the same table/hero rectangle, inspectIndex=-1, then explicit View pack results continues without saving/awarding/cueing. Optional inspection/Back remains on the table; Skip and completed restart stay direct. Fourteen native checks,297 controller assertions and49 actual-player checks passed; independent review is pending. Existing players/saves and all other user passes are preserved. After approval/commit the user permits moving on, but current branded deferral and unresolved Machamp completion-target decision must be carried into next-phase discovery; no newly changed bytes are falsely marked human-passed.

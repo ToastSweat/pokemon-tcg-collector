@@ -90,6 +90,7 @@ namespace VintageCollector.Presentation
             {
                 case "generate": return v.stage == "ready" || (v.stage == "results" && v.cards != null && v.cards.Length == 11 && v.revealedCount == 11);
                 case "open": return v.stage == "sealed";
+                case "results": return v.stage == "revealing" && v.cards != null && v.cards.Length == 11 && v.revealedCount == 11;
                 case "next":
                 case "skip": return v.stage == "revealing" && v.cards != null && v.revealedCount >= 0 && v.revealedCount < v.cards.Length;
                 case "retry": return v.stage == "error";

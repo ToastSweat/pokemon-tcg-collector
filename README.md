@@ -4,7 +4,7 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-**Phase 3A is passed except the final-card issue, now fixed in a separately reviewed test build.** Reveal-next on card 11 opens the large saved-card inspection; Back exposes results. Skip remains direct, with unchanged awards/save schema/audio. Only the focused human retest remains; existing players/collections and prior passes are preserved. Branded materials/Phase 4 stay deferred.
+**The clarified card11 flow is corrected and reviewed.** It stops on the normal opening table, same layout as cards1–10, with View pack results to continue; no forced fullscreen view. Skip remains direct. User's other passes are preserved and the conditional permission to move on is recorded, without inventing a new human retest. Branded materials remain deferred; next-phase identity decisions are still unresolved.
 
 - [Authoritative phased handoff](docs/hermes/Hermes_Vintage_Card_Collector_Handoff.md)
 - [Approved discovery proposal](docs/hermes/Phase_0_Discovery.md)
@@ -19,6 +19,14 @@ Confirmed direction: Windows desktop, Unity 6000.2.14f1, and 1999 English Base S
 All project-controlled files, future Unity project folders, builds, test artifacts, supplied assets, and development saves must stay inside this directory. Unity's normal system-managed logs, licensing state, and global caches are explicitly permitted outside it. Do not create a sibling project or place project files in the parent directory.
 
 No supplied art is present. Do not scrape or bundle branded assets, publish materials/builds, implement marketplace services, or connect financial accounts under the current phase.
+
+## Latest corrected table flow
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase3TableFlowWindows\VintageCardCollector.exe`
+
+Card11 remains on the normal opening table, not a forced inspection. Click **View pack results** to continue. Optional inspection/Back returns to the table; Skip is still direct. This separate build has its own collection; older players/saves are preserved. The previous Phase3FinalCardWindows modal workaround is superseded.
+
+[Correction and evidence](docs/hermes/Final_Card_Table_Flow.md).
 
 ## Test Phase 3A — separate generic-polish candidate
 

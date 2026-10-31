@@ -1,6 +1,6 @@
 # Final-card preview — focused Phase 3A fix
 
-Status: implementation, native execution and independent review passed; committed as `51b4a8c`. Focused human retest is pending. Preserve user PASS feedback on the rest of Phase 3A. Do not start branded-material work or Phase 4.
+Status: SUPERSEDED — automatic fullscreen inspection was a misunderstanding. User clarified that card11 must remain on the ordinary opening table, same size/layout as cards1–10, with explicit continuation to results. See Final_Card_Table_Flow.md. Prior automated review/execution remain historical evidence, not user acceptance of the modal design.
 
 ## Current process / cause
 

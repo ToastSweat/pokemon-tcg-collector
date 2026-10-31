@@ -291,7 +291,7 @@ public static class Phase2RuntimeChecks
                     var before=g.CurrentSession; f.Command("next"); var p=g.CurrentSession.CurrentPack;
                     Require(p.RevealedCount==target && g.CurrentView.revealedCount==target && p.TransactionId==tx,"Next absolute boundary "+target);
                     Require(before.CurrentPack.RevealedCount==target-1 && g.CurrentSession.TotalVirtualCards==11,"Immutable prior snapshot and eleven awards at "+target);
-                    Require(g.CurrentView.stage==(target==11?"results":"revealing"),"Durable projected stage at "+target);
+                    Require(g.CurrentView.stage=="revealing" && g.CurrentView.inspectIndex==-1,"Ordinary reveal stays on the opening table at "+target);
                     Require(VintageCollector.Presentation.PresentationRules.VisibleCount(g.CurrentView)==target,"Only saved reveal count visible at "+target);
                 }
                 f.Command("next"); Require(g.GeneratedResultCount==1 && g.CurrentSession.Revision==13,"No next beyond eleventh card");
