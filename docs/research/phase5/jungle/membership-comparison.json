@@ -1,0 +1,1538 @@
+[
+  {
+    "number": 1,
+    "source1": {
+      "id": "base2-1",
+      "number": "1",
+      "name": "Clefable",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 1,
+      "name": "Clefable",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Clefable",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 2,
+    "source1": {
+      "id": "base2-2",
+      "number": "2",
+      "name": "Electrode",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 2,
+      "name": "Electrode",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Electrode",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 3,
+    "source1": {
+      "id": "base2-3",
+      "number": "3",
+      "name": "Flareon",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 3,
+      "name": "Flareon",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Flareon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 4,
+    "source1": {
+      "id": "base2-4",
+      "number": "4",
+      "name": "Jolteon",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 4,
+      "name": "Jolteon",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Jolteon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 5,
+    "source1": {
+      "id": "base2-5",
+      "number": "5",
+      "name": "Kangaskhan",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 5,
+      "name": "Kangaskhan",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Kangaskhan",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 6,
+    "source1": {
+      "id": "base2-6",
+      "number": "6",
+      "name": "Mr. Mime",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 6,
+      "name": "Mr. Mime",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Mr. Mime",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 7,
+    "source1": {
+      "id": "base2-7",
+      "number": "7",
+      "name": "Nidoqueen",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 7,
+      "name": "Nidoqueen",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Nidoqueen",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 8,
+    "source1": {
+      "id": "base2-8",
+      "number": "8",
+      "name": "Pidgeot",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 8,
+      "name": "Pidgeot",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Pidgeot",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 9,
+    "source1": {
+      "id": "base2-9",
+      "number": "9",
+      "name": "Pinsir",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 9,
+      "name": "Pinsir",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Pinsir",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 10,
+    "source1": {
+      "id": "base2-10",
+      "number": "10",
+      "name": "Scyther",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 10,
+      "name": "Scyther",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Scyther",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 11,
+    "source1": {
+      "id": "base2-11",
+      "number": "11",
+      "name": "Snorlax",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 11,
+      "name": "Snorlax",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Snorlax",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 12,
+    "source1": {
+      "id": "base2-12",
+      "number": "12",
+      "name": "Vaporeon",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 12,
+      "name": "Vaporeon",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Vaporeon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 13,
+    "source1": {
+      "id": "base2-13",
+      "number": "13",
+      "name": "Venomoth",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 13,
+      "name": "Venomoth",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Venomoth",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 14,
+    "source1": {
+      "id": "base2-14",
+      "number": "14",
+      "name": "Victreebel",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 14,
+      "name": "Victreebel",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Victreebel",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 15,
+    "source1": {
+      "id": "base2-15",
+      "number": "15",
+      "name": "Vileplume",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 15,
+      "name": "Vileplume",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Vileplume",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 16,
+    "source1": {
+      "id": "base2-16",
+      "number": "16",
+      "name": "Wigglytuff",
+      "rarity": "Rare Holo",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 16,
+      "name": "Wigglytuff",
+      "rarity": "holo",
+      "kind": "pokemon",
+      "finish": "holo"
+    },
+    "source2Name": "Wigglytuff",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 17,
+    "source1": {
+      "id": "base2-17",
+      "number": "17",
+      "name": "Clefable",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 17,
+      "name": "Clefable",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Clefable",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 18,
+    "source1": {
+      "id": "base2-18",
+      "number": "18",
+      "name": "Electrode",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 18,
+      "name": "Electrode",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Electrode",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 19,
+    "source1": {
+      "id": "base2-19",
+      "number": "19",
+      "name": "Flareon",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 19,
+      "name": "Flareon",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Flareon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 20,
+    "source1": {
+      "id": "base2-20",
+      "number": "20",
+      "name": "Jolteon",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 20,
+      "name": "Jolteon",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Jolteon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 21,
+    "source1": {
+      "id": "base2-21",
+      "number": "21",
+      "name": "Kangaskhan",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 21,
+      "name": "Kangaskhan",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Kangaskhan",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 22,
+    "source1": {
+      "id": "base2-22",
+      "number": "22",
+      "name": "Mr. Mime",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 22,
+      "name": "Mr. Mime",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Mr. Mime",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 23,
+    "source1": {
+      "id": "base2-23",
+      "number": "23",
+      "name": "Nidoqueen",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 23,
+      "name": "Nidoqueen",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Nidoqueen",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 24,
+    "source1": {
+      "id": "base2-24",
+      "number": "24",
+      "name": "Pidgeot",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 24,
+      "name": "Pidgeot",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Pidgeot",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 25,
+    "source1": {
+      "id": "base2-25",
+      "number": "25",
+      "name": "Pinsir",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 25,
+      "name": "Pinsir",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Pinsir",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 26,
+    "source1": {
+      "id": "base2-26",
+      "number": "26",
+      "name": "Scyther",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 26,
+      "name": "Scyther",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Scyther",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 27,
+    "source1": {
+      "id": "base2-27",
+      "number": "27",
+      "name": "Snorlax",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 27,
+      "name": "Snorlax",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Snorlax",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 28,
+    "source1": {
+      "id": "base2-28",
+      "number": "28",
+      "name": "Vaporeon",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 28,
+      "name": "Vaporeon",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Vaporeon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 29,
+    "source1": {
+      "id": "base2-29",
+      "number": "29",
+      "name": "Venomoth",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 29,
+      "name": "Venomoth",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Venomoth",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 30,
+    "source1": {
+      "id": "base2-30",
+      "number": "30",
+      "name": "Victreebel",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 30,
+      "name": "Victreebel",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Victreebel",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 31,
+    "source1": {
+      "id": "base2-31",
+      "number": "31",
+      "name": "Vileplume",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 31,
+      "name": "Vileplume",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Vileplume",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 32,
+    "source1": {
+      "id": "base2-32",
+      "number": "32",
+      "name": "Wigglytuff",
+      "rarity": "Rare",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 32,
+      "name": "Wigglytuff",
+      "rarity": "rare",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Wigglytuff",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 33,
+    "source1": {
+      "id": "base2-33",
+      "number": "33",
+      "name": "Butterfree",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 33,
+      "name": "Butterfree",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Butterfree",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 34,
+    "source1": {
+      "id": "base2-34",
+      "number": "34",
+      "name": "Dodrio",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 34,
+      "name": "Dodrio",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Dodrio",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 35,
+    "source1": {
+      "id": "base2-35",
+      "number": "35",
+      "name": "Exeggutor",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 35,
+      "name": "Exeggutor",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Exeggutor",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 36,
+    "source1": {
+      "id": "base2-36",
+      "number": "36",
+      "name": "Fearow",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 36,
+      "name": "Fearow",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Fearow",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 37,
+    "source1": {
+      "id": "base2-37",
+      "number": "37",
+      "name": "Gloom",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 37,
+      "name": "Gloom",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Gloom",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 38,
+    "source1": {
+      "id": "base2-38",
+      "number": "38",
+      "name": "Lickitung",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 38,
+      "name": "Lickitung",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Lickitung",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 39,
+    "source1": {
+      "id": "base2-39",
+      "number": "39",
+      "name": "Marowak",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 39,
+      "name": "Marowak",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Marowak",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 40,
+    "source1": {
+      "id": "base2-40",
+      "number": "40",
+      "name": "Nidorina",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 40,
+      "name": "Nidorina",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Nidorina",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 41,
+    "source1": {
+      "id": "base2-41",
+      "number": "41",
+      "name": "Parasect",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 41,
+      "name": "Parasect",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Parasect",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 42,
+    "source1": {
+      "id": "base2-42",
+      "number": "42",
+      "name": "Persian",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 42,
+      "name": "Persian",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Persian",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 43,
+    "source1": {
+      "id": "base2-43",
+      "number": "43",
+      "name": "Primeape",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 43,
+      "name": "Primeape",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Primeape",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 44,
+    "source1": {
+      "id": "base2-44",
+      "number": "44",
+      "name": "Rapidash",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 44,
+      "name": "Rapidash",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Rapidash",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 45,
+    "source1": {
+      "id": "base2-45",
+      "number": "45",
+      "name": "Rhydon",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 45,
+      "name": "Rhydon",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Rhydon",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 46,
+    "source1": {
+      "id": "base2-46",
+      "number": "46",
+      "name": "Seaking",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 46,
+      "name": "Seaking",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Seaking",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 47,
+    "source1": {
+      "id": "base2-47",
+      "number": "47",
+      "name": "Tauros",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 47,
+      "name": "Tauros",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Tauros",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 48,
+    "source1": {
+      "id": "base2-48",
+      "number": "48",
+      "name": "Weepinbell",
+      "rarity": "Uncommon",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 48,
+      "name": "Weepinbell",
+      "rarity": "uncommon",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Weepinbell",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 49,
+    "source1": {
+      "id": "base2-49",
+      "number": "49",
+      "name": "Bellsprout",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 49,
+      "name": "Bellsprout",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Bellsprout",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 50,
+    "source1": {
+      "id": "base2-50",
+      "number": "50",
+      "name": "Cubone",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 50,
+      "name": "Cubone",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Cubone",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 51,
+    "source1": {
+      "id": "base2-51",
+      "number": "51",
+      "name": "Eevee",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 51,
+      "name": "Eevee",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Eevee",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 52,
+    "source1": {
+      "id": "base2-52",
+      "number": "52",
+      "name": "Exeggcute",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 52,
+      "name": "Exeggcute",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Exeggcute",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 53,
+    "source1": {
+      "id": "base2-53",
+      "number": "53",
+      "name": "Goldeen",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 53,
+      "name": "Goldeen",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Goldeen",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 54,
+    "source1": {
+      "id": "base2-54",
+      "number": "54",
+      "name": "Jigglypuff",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 54,
+      "name": "Jigglypuff",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Jigglypuff",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 55,
+    "source1": {
+      "id": "base2-55",
+      "number": "55",
+      "name": "Mankey",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 55,
+      "name": "Mankey",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Mankey",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 56,
+    "source1": {
+      "id": "base2-56",
+      "number": "56",
+      "name": "Meowth",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 56,
+      "name": "Meowth",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Meowth",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 57,
+    "source1": {
+      "id": "base2-57",
+      "number": "57",
+      "name": "Nidoran ♀",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 57,
+      "name": "Nidoran♀",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Nidoran F",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 58,
+    "source1": {
+      "id": "base2-58",
+      "number": "58",
+      "name": "Oddish",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 58,
+      "name": "Oddish",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Oddish",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 59,
+    "source1": {
+      "id": "base2-59",
+      "number": "59",
+      "name": "Paras",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 59,
+      "name": "Paras",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Paras",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 60,
+    "source1": {
+      "id": "base2-60",
+      "number": "60",
+      "name": "Pikachu",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 60,
+      "name": "Pikachu",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Pikachu",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 61,
+    "source1": {
+      "id": "base2-61",
+      "number": "61",
+      "name": "Rhyhorn",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 61,
+      "name": "Rhyhorn",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Rhyhorn",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 62,
+    "source1": {
+      "id": "base2-62",
+      "number": "62",
+      "name": "Spearow",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 62,
+      "name": "Spearow",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Spearow",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 63,
+    "source1": {
+      "id": "base2-63",
+      "number": "63",
+      "name": "Venonat",
+      "rarity": "Common",
+      "supertype": "Pokémon"
+    },
+    "source3": {
+      "number": 63,
+      "name": "Venonat",
+      "rarity": "common",
+      "kind": "pokemon",
+      "finish": "nonholo"
+    },
+    "source2Name": "Venonat",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  },
+  {
+    "number": 64,
+    "source1": {
+      "id": "base2-64",
+      "number": "64",
+      "name": "Poké Ball",
+      "rarity": "Common",
+      "supertype": "Trainer"
+    },
+    "source3": {
+      "number": 64,
+      "name": "Poké Ball",
+      "rarity": "common",
+      "kind": "trainer",
+      "finish": "nonholo"
+    },
+    "source2Name": "Poke Ball",
+    "normalizedMatch": true,
+    "proposedPrintingId": "jungle-en-unlimited1999",
+    "proposedVariant": "standard",
+    "proposedBoosterEligible": true,
+    "policyApproval": "not-approved",
+    "sourceEditionOrFactoryBatchVerified": false
+  }
+]

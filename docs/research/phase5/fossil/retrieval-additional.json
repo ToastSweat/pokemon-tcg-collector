@@ -1,0 +1,44 @@
+[
+  {
+    "name": "search1",
+    "url": "https://www.google.com/search?q=Fossil%20booster%20pack%207%20common%203%20uncommon%201%20rare%20order",
+    "retrievedAt": "2026-10-31T20:09:52.469614+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/search1.html",
+    "bytes": 93147,
+    "sha256": "9dd1f3f899db72fb18b0040a9b59fd9907414d8964c1e6cb82be10ac4a532e0b"
+  },
+  {
+    "name": "search2",
+    "url": "https://www.google.com/search?q=Fossil%20unlimited%20booster%20pack%20card%20order%20rare%20fourth",
+    "retrievedAt": "2026-10-31T20:09:52.470050+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/search2.html",
+    "bytes": 93108,
+    "sha256": "4ce38f7c661b6b5288998f9941f0197ff5598ce354ee2157744209c8b8271794"
+  },
+  {
+    "name": "search3",
+    "url": "https://www.google.com/search?q=Fossil%20booster%20pack%20holographic%20one%20in%20three",
+    "retrievedAt": "2026-10-31T20:09:52.470330+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/search3.html",
+    "bytes": 92875,
+    "sha256": "c9abff94df1071477afd3cd3625d98a68fc287cb01806a5dc38a108acac355a2"
+  },
+  {
+    "name": "booster-bulba",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+    "retrievedAt": "2026-10-31T20:09:52.470590+00:00",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "name": "fossil-post",
+    "url": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762/4.json",
+    "retrievedAt": "2026-10-31T20:09:52.471001+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/fossil-post.json",
+    "bytes": 217270,
+    "sha256": "154aeb5a39c015c854bb2bb8f4101a10b8f1ade1e019241c5018038bcdc11432"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "bing-pokemon",
+    "url": "https://www.bing.com/search?q=pokemon%20%22Fossil%22%20%22booster%22%20%22common%22",
+    "retrievedAt": "2026-10-31T20:10:30.727728+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/bing-pokemon.html",
+    "bytes": 121468,
+    "sha256": "6a81810df928bdc7237dfa2150f2c28bb362f2f909882307fbbcb1ca4b0b47ef"
+  },
+  {
+    "name": "bing-order",
+    "url": "https://www.bing.com/search?q=pokemon%20%22fossil%22%20%22card%20order%22",
+    "retrievedAt": "2026-10-31T20:10:30.728202+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/bing-order.html",
+    "bytes": 120024,
+    "sha256": "a59259abf7ce3df46e4c81edc8c48b1b052082979b2c49564aedcd49b2642a56"
+  },
+  {
+    "name": "booster-archived",
+    "url": "https://web.archive.org/web/20261018191601id_/https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+    "retrievedAt": "2026-10-31T20:10:30.728473+00:00",
+    "error": "<HTTPError 429: 'Too Many Requests'>"
+  },
+  {
+    "name": "checklist-archived",
+    "url": "https://web.archive.org/web/20041221100237id_/http://www.wizards.com:80/default.asp?x=pokemon/fossilchecklists",
+    "retrievedAt": "2026-10-31T20:10:30.728700+00:00",
+    "error": "<HTTPError 429: 'Too Many Requests'>"
+  }
+]

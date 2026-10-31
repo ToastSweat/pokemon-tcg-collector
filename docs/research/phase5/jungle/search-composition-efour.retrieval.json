@@ -1,0 +1,33 @@
+{
+  "key": "search-composition-efour",
+  "requestedUrl": "https://www.elitefourum.com/search.json?q=%22jungle%22%20%22commons%22%20%22uncommons%22",
+  "retrievedUtc": "2026-10-31T20:12:32.764935+00:00",
+  "finalUrl": "https://www.elitefourum.com/search.json?q=%22jungle%22%20%22commons%22%20%22uncommons%22",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sat, 31 Oct 2026 20:12:31 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "72768",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "0",
+    "X-Content-Type-Options": "nosniff",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Discourse-Route": "search/show",
+    "X-Robots-Tag": "noindex",
+    "Cache-Control": "no-cache, no-store",
+    "X-Discourse-Cached": "skip",
+    "X-Request-Id": "95f53922-6992-4373-994f-f6c9e5c2b476",
+    "X-Runtime": "0.365831",
+    "Strict-Transport-Security": "max-age=63072000;"
+  },
+  "title": "search-composition-efour (no HTML title)",
+  "rawPath": "docs/research/phase5/jungle/search-composition-efour.raw.json",
+  "rawSha256": "40883cd65c61277e4e180558ded77cccd0a92f85f9d68e0eb8a413b0218ba2fd",
+  "textPath": "docs/research/phase5/jungle/search-composition-efour.text.txt",
+  "textSha256": "40883cd65c61277e4e180558ded77cccd0a92f85f9d68e0eb8a413b0218ba2fd",
+  "bytes": 72768
+}

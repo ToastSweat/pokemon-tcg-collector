@@ -1,0 +1,9 @@
+test_crosscheck_all_fields_against_independent_json_and_names_against_third_source (__main__.JungleAuthoringTests.test_crosscheck_all_fields_against_independent_json_and_names_against_third_source) ... ok
+test_parse_independent_bulbapedia_complete_membership (__main__.JungleAuthoringTests.test_parse_independent_bulbapedia_complete_membership) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.007s
+
+OK
+
+EXIT 0

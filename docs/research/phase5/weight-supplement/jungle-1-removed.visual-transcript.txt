@@ -1,0 +1,31 @@
+1) 1st Edition & Unlimited
+seq 216
+nseq 2376 np 11 set 64
+H sequence insertions 72; per-pack printed 0.333
+H n 14 m 7
+H n 2 m 6
+H distinct total 16 emitted position total 110
+H n 14 p 47.1
+H n 2 p 55.0
+H6    Victreebel, Wigglytuff
+R sequence insertions 144; per-pack printed 0.667
+R n 9 m 8
+R n 7 m 7
+R distinct total 16 emitted position total 121
+R n 9 p 22.7
+R n 7 p 25.9
+R7    Electrode, Jolteon, Mr. Mime, Nidoqueen, Scyther, Vaporeon, Victreebel
+U sequence insertions 648; per-pack printed 3
+U n 8 m 8
+U n 8 m 7
+U distinct total 16 emitted position total 120
+U n 8 p 5.0
+U n 8 p 5.7
+U7    Butterfree, Dodrio, Exeggutor, Fearow, Marowak, Persian, Rapidash, Seaking
+C sequence insertions 1512; per-pack printed 7
+C n 9 m 8
+C n 7 m 7
+C distinct total 16 emitted position total 121
+C n 9 p 2.2
+C n 7 p 2.5
+C7    Eevee, Meowth, Nidoran f, Oddish, Paras, Pikachu, Rhyhorn

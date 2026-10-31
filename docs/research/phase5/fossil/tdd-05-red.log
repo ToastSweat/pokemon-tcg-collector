@@ -1,0 +1,19 @@
+test_candidate_verification_rejects_mutations_and_reports_groups (__main__.FossilCatalogTests.test_candidate_verification_rejects_mutations_and_reports_groups) ... ok
+test_cli_publishes_only_authoring_candidate_and_rechecks_it (__main__.FossilCatalogTests.test_cli_publishes_only_authoring_candidate_and_rechecks_it) ... FAIL
+test_complete_real_retrieved_checklist_builds_proposed_candidate (__main__.FossilCatalogTests.test_complete_real_retrieved_checklist_builds_proposed_candidate) ... ok
+test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) ... ok
+test_third_source_and_complete_canonical_coverage_fail_closed (__main__.FossilCatalogTests.test_third_source_and_complete_canonical_coverage_fail_closed) ... ok
+
+======================================================================
+FAIL: test_cli_publishes_only_authoring_candidate_and_rechecks_it (__main__.FossilCatalogTests.test_cli_publishes_only_authoring_candidate_and_rechecks_it)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 112, in test_cli_publishes_only_authoring_candidate_and_rechecks_it
+    self.assertTrue(result.stdout.strip(), 'authoring CLI did not execute')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : authoring CLI did not execute
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.373s
+
+FAILED (failures=1)

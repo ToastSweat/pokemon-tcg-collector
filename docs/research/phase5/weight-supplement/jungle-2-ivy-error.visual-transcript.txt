@@ -1,0 +1,32 @@
+2) Error version (1st Edition)
+seq 216
+nseq 2376 np 11 set 65
+H sequence insertions 72; per-pack printed 0.333
+H n 14 m 7
+H n 2 m 6
+H distinct total 16 emitted position total 110
+H n 14 p 47.1
+H n 2 p 55.0
+R sequence insertions 144; per-pack printed 0.667
+R n 9 m 8
+R n 7 m 7
+R distinct total 16 emitted position total 121
+R n 9 p 22.7
+R n 7 p 25.9
+U sequence insertions 648; per-pack printed 3
+U n 8 m 8
+U n 8 m 7
+U n 1 m 1
+U distinct total 17 emitted position total 121
+U n 8 p 5.0
+U n 8 p 5.8
+U n 1 p 40.3
+U1    Pikachu (Promo)
+U7    Butterfree, Dodrio, Exeggutor, Fearow, Marowak, Persian, Rapidash, Seaking
+C sequence insertions 1512; per-pack printed 7
+C n 9 m 8
+C n 7 m 7
+C distinct total 16 emitted position total 121
+C n 9 p 2.2
+C n 7 p 2.5
+(other sheets assumed unchanged)

@@ -1,0 +1,486 @@
+The English Pokémon card rarity guide - Articles - Elite Fourum
+Elite Fourum
+The English Pokémon card rarity guide
+Articles
+supply,
+wotc,
+rarity,
+resource
+sturzflugbombardieru
+February 18, 2023, 5:19pm
+1
+Introduction
+The purpose of this guide is to compile all the known data on English set card rarities. It is a project I have been working on for quite a while. The objective is to provide the best possible estimates for card rarities for all English sets that were released with randomized booster packs. There are plenty of resources on this topic around, but none which both span the whole history of the TCG and employ a consistent methodology. I plan to go through all the sets here one by one, and hope the information will both prove useful and generate feedback in order to improve the data. The ultimate output will be a table for each set which assigns to each card a “best-estimate” rarity.
+When modelling something like this, there are two ways to go about it: You can either use brute force, collecting a large enough statistical sample to build a model, or you can try and figure out the underlying mechanism. I chose to do both, using the following main sources of information:
+Youtube videos of booster box openings. Watching a large number of videos and noting down the “hits” or rare cards in general is a good way to figure out approximate rarities - mainly for categories of cards, but with enough data you can infer some information about individual card rarities, though it is not always easy to tell if the information is statistically relevant or not.
+Uncut sheets. Photos of uncut sheets, which are quite abundant for the WOTC era but rare for sets released by Nintendo/TPCI, give exact information on rarities of individual cards. Knowledge about the layout of one sheet can help making assumptions about how another sheet of which no image exists may have looked.
+Miscuts. By these, I mean cards that are so miscut that parts of two cards are visible on the same card. If the two cards are of nominally “different” rarity (e.g. a “regular” Pokémon VMAX and an alt art Pokémon V, or a Gold Star and a rare holo), these two rarities can be inferred to have been printed on the same sheet, at least for the specific set.
+It is also possible to reconstruct uncut sheets (particularly commons and reverses sheets) from watching Youtube videos, since the cards are generally inserted into packs in sequence. For example, by taking the various sequences of seven common cards that appear in Neo Revelation booster packs, it is possible to reconstruct the 121 card commons sheet used for this set, even though no image of one is known to exist.
+Before explaining the format for the tables, I would like to recommend the following two web pages which I found very helpful:
+Uncut Sheets : This page (created by a guy who goes by the name darkrai) contains a collection of images of uncut Pokémon TCG sheets, with information I use here.
+The Collation Project : This page is devoted to Magic: The Gathering, but contains a lot of useful information on how trading cards in general are inserted into packs.
+Now, to the tables. The image below shows the rarity table for the unlimited print run of Base Set:
+image
+image881×826 21.1 KB
+The top row defines a sequence length, which describes the number of packs after which the sequence of inserted types of cards (i.e. cards from a specific sheet) starts to repeat itself. For Base Set, the actual sequence length could be as low as 3 (1 holo in every third pack, though it probably isn’t as that would mean all the holos would be in packs with the same pack art), however I am going to be using a sequence length 216 packs (1 case of 6 booster boxes with 36 packs each) for all (or at least most) sets from generation 1 to generation 5, as the lowest insertion rate I found for this era was 1 per case. Starting with generation 6, I have reason to believe the sequence length changed to 360 (10 booster boxes). This will be explained in due time; for the moment, the sequence length is of little importance.
+The next two rows show the insertion rates, i.e. how often cards from individual sheets are inserted both in the sequence and in the average pack. The first number by definition has to be an integer. The types of cards present in Base Set are “H” (holo rare), “R” (rare), “U” (uncommon), “C” (common), “E” (Basic Energy) and “O” (other, here denoting Machamp which was not obtainable from booster packs). “nseq” is the number of cards in the sequence, and “np” is the number of cards per pack (11 for Base Set). (It must be noted that the actual sequence may be using two or more stacks of cards of the same rarity, e.g. two stacks of commons inserted into packs alternatingly. For determining card rarities, this is not relevant.)
+The next couple of rows show how many cards (n) appeared how many times (m, “magnitude”) on the sheets. This is what causes (mostly) minor differences between individual card rarities; these small differences in rarity are considered “non-artificial” as they come from filling out a sheet with a number of cards which is usually not a divisor of the sheet size. In this example, of the 16 rares, 9 appeared on the sheet 8 times and 7 appeared 7 times. The total number of different cards printed on the sheet, the size of the sheet and the set size are shown as well.
+The last group of rows show the pull rates for the various cards. The pull rate is defined as 1 in how many packs a specific card is included in on average. It is calculated as 1 / (pack insertion rate * magnitude / sheet size), which simplifies to sheet size / (pack insertion rate * magnitude). The pull rates are colour coded as follows:
+greater than 1/12.5 packs: dark green (i.e. the very common cards)
+between 1/12.5 and 1/25 packs: light green
+between 1/25 packs and 1/50 packs: yellow
+between 1/50 packs and 1/100 packs: orange
+between 1/100 and 1/200 packs: red
+between 1/200 and 1/400 packs: dark red
+between 1/400 and 1/800 packs: purple
+lower than 1/800 packs: black (i.e. the very rare cards)
+Finally, individual cards are assigned to the different rarities. For example, R7 denotes the cards that appear on the rares sheet 7 times; in this case, there are seven of them. The 9 R8 cards are not separately listed here as they are defined by omission.
+As I go through the sets, I occasionally come across information which leads me to revise earlier posts. For this reason, starting with September 2023, I list all significant edits affecting card rarity below:
+2023/09/09:
+Black & White, Emerging Powers, Noble Victories: Fixed error in rarity table (10x10 card sheet used for full arts, not 10x11).
+HeartGold & SoulSilver Series introductory post, HeartGold & SoulSilver, Unleashed, Undaunted, Triumphant: changed size of Pokémon Prime sheet from 11x11 to 11x10 based on image of miscut
+2023/10/27:
+Gym Heroes, Digression on reconstructing uncut sheets: edited post as I came across images of uncut commons/uncommons sheets for this set
+2023/11/18
+Jungle: Added a new variant, where the blank space on the uncommons sheet is replaced by an Exeggutor.
+2023/11/19
+Introduction to HGSS Series, HeartGold & SoulSilver, Unleashed, Undaunted, Triumphant: Changed sheet size for Pokémon Prime in model from 10x11 to 10x10 to be more consistant with ultra rares from later sets
+2024/02/11
+Legendary Treasures: Changed model slightly with regard to Radiant Collection: all ultra rares have same pull rate now
+2024/03/24
+Introductory Post to XY Series, XY, Flashfire, Furious Fists, Phantom Forces: Changed sequence length from 216 to 360 packs, which affects various pull rates slightly. I also changed the sequence length for all other XY and XY BREAK series sets from 180 to 360; this does not affect any pull rates.
+Introductory post to Sun & Moon Series, Burning Shadows, Lost Thunder: Changed sequence length from 180 to 360 packs and slightly edited pull rates for the two sets mentioned. Changed sequence length for the other Sun & Moon series sets as well, leaving pull rates unchanged.
+This should do as an introduction. Now, on to the first set!
+Edit 2023/02/24: replaced image (one R7 card mistakenly omitted)
+Edit 2023/04/19: complete text slightly rewritten, different example used (Base Set Unlimited instead of Base Set 1st Edition)
+Edit 2023/09/09: added changelog
+Edit 2023/11/18: changed the example for reconstructing sheets from Gym Heroes to Neo Revelation, now that a photo of the Gym Heroes sheet has emerged
+12 Likes
+Best E4 articles?
+Where are the swirls possible? - Team Rocket Returns and FireRed&LeafGreen
+Pokemon TCG Production Numbers, Pull Rates, & more
+2023: The Year in Review
+Pokemon TCG Production Numbers, Pull Rates, & more
+Learning on relative reverse rarity from L2 reviving legends data
+sturzflugbombardieru
+February 18, 2023, 5:21pm
+2
+Base Set
+Base Set has four major variants: 1st Edition, Shadowless, Unlimited and “Base 2000” (i.e. with 1999-2000 copyright). Various uncut sheets are documented on Uncut Sheets. For the holo sheets, there are four known versions:
+1st Edition - thick stamps: This sheet also includes 32 Machamps (for the 2-player starter decks) and 32 shadowless Mewtwo, Gyarados, Ninetales and Hitmonchan (for the theme decks). Only 35 cards of the sheet actually went into the booster packs. Also it is worth noting that it was a 9x11 sheet, most later WOTC holos sheets contain 10x11 cards and more modern holos sheets contain 11x11 cards.
+1st Edition - thin stamps, and Shadowless - version 1: These two use the same layout, including 38 Machamps for the 2-player starter decks and 61 cards for the booster packs.
+Shadowless - version 2: This 9x11 sheet includes exclusively cards for the booster packs.
+Unlimited: This 10x11 sheet includes exclusively cards for the booster packs. Lacking any information to the contrary, it is the best assumption “Base 2000” used the same sheet layout.
+For the various non-holo sheets, the following are documented:
+Unlimited and Base 2000 commons: 121 card sheet
+Unlimited and Base 2000 uncommons: 121 card sheet
+Base 2000 rares: 121 card sheet; since the Unlimited and Base 2000 commons and uncommons are both the same, this is assumed to apply to the rares as well
+Unlimited Basic Energies: 121 card sheet; a few cards on the sheet are obscured by objects placed on the sheet, but since the rest of the sheet is identical to both the Chinese Base Set the (English) Base Set 2 Basic Energies sheets, the sheet is assumed to be the same as these.
+No non-holo 1st Edition or Shadowless sheets are documented.
+In addition, some foreign language sheets are documented. The various Chinese sheets are all the same as the English ones. So too are the German and Italian holos sheets, but not the French commons, uncommons and Basic Energies sheets. While I don’t know the reason for sure, I suspect it may be because these were printed by Carta Mundi in Belgium which used a method called “striped collation” for scooping up the cards into stacks after cutting them. English Pokémon cards have generally used sequential collation, except for some print runs of Jungle and Neo Discovery printed in Belgium. The difference between these two methods is explained in detail on The Collation Project. Basically, striped collation leads to cards that were placed directly above each other on the sheet appearing in sequence in a booster pack, while sequential collation doesn’t (they appear in a “normal” left to right, top to bottom order, or vice-versa). Reorganizing the sheets may have been in order to avoid getting duplicate cards in one pack (e.g. 2 Defenders placed directly above each other on the uncommons sheet.) For the holos (and rares) sheets, this would not be an issue.
+Let’s now look at the different print runs of Base Set and try to reconstruct the rarities, starting with 1st Edition and Shadowless. Logan Paul made two videos of 1st Edition Base Set box breaks, and there are a handful of other videos of people opening up 1st Edition or Shadowless booster boxes or packs. These videos lead to the following conclusions:
+The 1st Edition print run did not use the same commons, uncommons and Basic Energy sheets as the Unlimited print run did.
+For Shadowless, some packs and boxes used the same commons and uncommons sheets (see https://www.youtube.com/watch?v=eoHn5yt9e2A for example), while other did not (see https://www.youtube.com/watch?v=DSPrtcVMKRA).
+I was able to reconstruct the “sheets” used for the 1st Edition and some of the Shadowless print runs of the commons, uncommons and Basic Energies. I use quotation marks because they are actually parts of sheets, likely of the same 121 card sheet: a sequence of 77 commons and Basic Energies, and a sequence of 44 uncommons. They look as follows (the dagger marks signifying the fact that it is impossible to tell the beginning and end of the sequences):
+† Nidoran m, Diglett, Abra, Fire Energy, Starmie, Ponyta, Fighting Energy, Koffing, Pikachu, Doduo, Fire Energy, Gust of Wind, Machop, Lightning Energy, Gastly, Ponyta, Tangela, Grass Energy, Squirtle, Voltorb, Psychic Energy, Sandshrew, Weedle, Rattata, Water Energy, Drowzee, Poliwag, Fighting Energy, Charmander, Potion, Onix, Lightning Energy, Koffing, Magnemite, Psychic Energy, Pidgey, Abra, Metapod, Water Energy, Diglett, Staryu, Fighting Energy, Caterpie, Switch, Vulpix, Fire Energy, Voltorb, Machop, Grass Energy, Poliwag, Nidoran m, Rattata, Lightning Energy, Gastly, Doduo, Psychic Energy, Tangela, Sandshrew, Bill, Fighting Energy, Vulpix, Squirtle, Fire Energy, Pikachu, Bulbasaur, Drowzee, Grass Energy, Onix, Pidgey, Lightning Energy, Staryu, Charmander, Metapod, Psychic Energy, Energy Removal, Magnemite, Water Energy †
+† Poliwhirl, Maintenance, Farfetch’d, Ivysaur, Pokémon Center, Machoke, Jynx, Full Heal, Kakuna, Double Colorless Energy, Porygon, Charmeleon, Maintenance, Poliwhirl, Raticate, Pokédex, Nidorino, Magikarp, Professor Oak, Magmar, Pokémon Flute, Porygon, Haunter, Energy Retrieval, Seel, Dratini, Double Colorless Energy, Growlithe, Wartortle, Full Heal, Dewgong, Defender, Kakuna, Magmar, Pokémon Center, Raticate, Seel, Revive, Nidorino, Kadabra, PlusPower, Dewgong, Super Potion, Arcanine †
+The length of the sequences (77 and 44) which add up to 121 cards are too much of a coincidence to assume anything other than that they were printed on one single sheet and then separated before being inserted into packs.
+That poses a problem, however: the ratio of uncommons to commons is too high (44 to 77 instead of 33 to 77 which would be required). That is why I propose the following idea: WotC used two sheets, one with 77 commons/Basic Energies and 44 uncommons, and one with 77 commons/Basic Energies and 44 rares. Doing so would have allowed WotC to economize the number of different sheets for printing the set to only three (including holos), plus those required for the starter decks and theme decks.
+That would still yield a small surplus of uncommons and rares (depending of the exact ratio of the sheets). The 1st Edition uncommons in Shadowless packs mentioned in another thread (Identifying Shadowless & Unlimited Base set Boxes & Packs) could be an indication of such a surplus. The problem would have been resolved with printing pure Basic Energies, commons, uncommons and likely also rares sheets with the same design as those later used for Unlimited in appropriate quantities taking the existing surplus into account. That would mean that some Shadowless packs should exist which use the “new” commons and Basic Energies sheets while still using the “old” sheets for the uncommons and/or rares.
+The proposed solution is also an elegant way to explain why red cheeks and yellow cheeks Pikachu exist in both 1st Edition and Shadowless versions: There is no need to assume some correction which applied to part of the 1st Edition print run but not to all of the Shadowless print run; instead, one of the two Sheets (commons/Energies/uncommons or commons/Energies/rares) likely had red cheeks Pikachu and the other had yellow cheeks Pikachu.
+Thus, the rarity tables look as follows:
+image
+image881×795 20.7 KB
+image
+image881×607 12.5 KB
+image
+image949×418 13.3 KB
+image
+image881×826 21.1 KB
+For 1st Edition, it is noteworthy that there are pretty significant, if non-artificial, differences in pull rates, particularly between the different commons and uncommons. A noteworthy example is Bulbasaur compared to Charmander and Squirtle. This difference, and not only popularity of the Pokémon, may explain the differences in the PSA population report, which for 1st Edition lists 4345 Charmander, 4179 Squirtle and only 2273 Bulbasaur.
+The table for Shadowless reflects the fact that it is not known which combinations of different sheets were used in packs, thus all variants are shown together. The sheets presumed to be printed later (a Shadowless-exclusive holos sheet as well as commons, uncommons and Basic Energies sheets matching those used for Unlimited) are highlighted in grey.
+For the Unlimited print run, the Energies sheet is noteworthy because the differences in rarity between the various Basic Energy cards are very large. They can be explained as follows:
+Fire and Fighting Energy appeared both in the 2-player starter deck as well as one theme deck each, and thus appear the least frequently in the booster packs.
+Grass and Water Energy appeared in two theme decks each, and appear moderately frequently in the booster packs.
+Psychic and Lightning Energy only appeared in one Theme deck, thus they appear the most frequently in the booster packs.
+I noted down the Energy cards obtained from two box opening videos on Youtube and these rarities appear to be confirmed.
+Aside from that, no artificial rarity difference between cards of the same nominal rarity are introduced. For the Unlimited print run, the trainer cards tend to appear on the sheets fewer times than the Pokémon when there are non-artificial rarity differences, and on the Unlimited holos sheet, the final evolutions of the starter Pokémon as well as the four holos appearing in the theme decks are among those appearing once fewer.
+Edit 2023/02/24: replaced image (one R7 card mistakenly omitted)
+Edit 2023/03/16: edited information regarding use of striped collation in English sets
+Edit 2023/04/19: completely rewritten and tables updated with data for 1st Edition and Shadowless commons, uncommons, Basic Energies and rares
+9 Likes
+sturzflugbombardieru
+February 20, 2023, 8:40pm
+3
+Jungle
+Just like for Base Set, all the sheets for Jungle are known (see Uncut Sheets for the photos).
+The only thing remarkable about the sheets is that the uncommons sheet depicted at the link above has a blank spot in the top left corner. Such fillers are apparently sometimes used in other TCGs (see The Collation Project on the topic of Magic: The Gathering) and are discarded after cutting (though I wouldn’t be surprised if there are Jungle packs accidentally containing a blank card out there somewhere).
+Another variant of the sheet, auctioned recently on Ebay, replaces the gap with an Exeggutor:
+image
+image550×681 201 KB
+The sheet is labelled “Pokémon Jungle EN Asia Form”; I don’t know if that meens these cards were intended for sale in Asia.
+In my opinion it can be assumed pretty much for sure that the blank spot was where the “Ivy” promo Pikachu was originally printed on the 1st Edition uncommons sheet (it is known to appear in the uncommons slot). If someone captures one being pulled from a pack on camera and the sequence of the uncommons is either Persian - Lickitung - Pikachu, Lickitung - Pikachu - Rhydon or Pikachu - Rhydon - Nidorina (or any of these sequences in reverse, the direction of the card sequence can vary), that would practically confirm this theory. The question if it was ever intended to be included in packs is not completely clear, but the discovery of E4 member styluspt that the cards was actually advertised to be in the set in a Japanese Trainers Magazine as well as on early concept designs of Jungle booster packs certainly makes this appear likely (see PIKACHU 1ST ED JUNGLE BLACK STAR PROMO - WAS IT INTENTIONAL? for his thread). The decision to exclude promo Pikachu from the set was probably taken in the last minute when WotC decided to release the card as part of their promotion for the Pokémon League instead, and some made it into packs and boxes before the production process could be adjusted to remove these cards after cutting.
+One very curious discovery was made by streamer Murkd_ when he opened three Jungle packs containing ONLY promo Pikachus in the uncommon slot (see https://www.youtube.com/watch?v=4-NZIN7f0ig for a summary of the stream). This error probably arose when a stack of removed Pikachus was filled into packs instead of discarded. I have never heard of a whole box containing such error packs, though.
+Based on the two different sheets, there would be three different variants of the set:
+those where the Ivy Pikachu was either removed after cutting or replaced with a blank that was removed. These would be 1st Edition as well as unlimited cards.
+those where the Ivy Pikachu was not removed, whether by mistake or not. Those are only 1st Edition cards.
+those where the blank has been replaced by an Exeggutor. Those would be unlimited cards. It is not clear if this variant was only distributed in Asia.
+The tables for the three variants are given below:
+image
+image881×670 15.5 KB
+image
+image881×638 13.9 KB
+image
+image881×607 12.1 KB
+There are no artificial rarity differences between cards. The choice of which cards appear more frequently on the sheets appears more or less random (non-holo Flareon is more common than non-holo Jolteon and Vaporeon, for example). The promo Pikachu in not that rare (slightly less than 1 per box) in the particular “error” batch it appears in, but since the ratio of error packs and boxes to “normal” 1st Edition packs and boxes is not known, it’s actual rarity is unclear.
+In addition, there is a fourth variant of the Jungle set as well:
+In my post on Neo Discovery further below, I discussed the “Belgian variant” boxes that used striped collation. There is a second WotC set with a variant which was printed in Belgium, namely Jungle. TCA Gaming explains about it in his Youtube video: https://www.youtube.com/watch?v=xfsHRJnU2c8.
+There are two threads on E4 discussing Belgian Jungle booster boxes:
+Jungle Booster Box Made in Belgium - the box in the video is in fact an Australian (red logo) box though, which uses sequential collation and matches the uncut sheets
+1999-2000 Jungle Booster Box Opened - the box in the video is a Belgian box, the sequence of cards doesn’t match the known uncut sheets.
+Here is the rarity table for this variant:
+image
+image881×670 11.8 KB
+The commons and uncommons sheets are different to accomodate striped collation without including duplicate cards in booster packs. I am assuming the uncommons sheet now has no blank anymore. The rare and holo sheets may be the same as for the other variants, or they may be different.
+Edit 2023/04/16: Added Belgian variant
+Edit 2023/11/18: Added variant where the blank on the uncommons sheet is replaced by an Exeggutor
+3 Likes
+sturzflugbombardieru
+February 22, 2023, 6:58pm
+4
+Fossil
+There isn’t a terrible lot to say about this set. Three of the four English sheets (holo, rares, uncommons) are known, as is a German commons sheet. Verification with box opening videos shows the English sheet to be the same as the German one. If my hunch regarding collation is correct (see the post on Base Set above), that would indicate the non-English variants of this set used sequential collation just like the English version, which constitutes a change compared to Base Set.
+(Looking at The Collation Project, I see English MTG sets in this era - fall 2000 was when Fossil was released in German - sometimes used striped collation, sometimes sequential collation.)
+The rarity table for Fossil is given below:
+image
+image881×670 14.7 KB
+There are no artificial rarity differences, and the choice which cards appear on the sheet more often seems random.
+3 Likes
+pfm
+February 22, 2023, 7:16pm
+5
+This is a really cool and thought out thread. I had to bookmark it and come back when I had enough time to digest it all. Basically you are calculating the relative rarity of each individual card using sheets. I wonder if a visualization/infographic version of the data will make it more intuitive. I don’t mind taking a shot at it if I have free time - if you want, that is
+3 Likes
+livindavido
+February 22, 2023, 7:24pm
+6
+This is incredible! Thanks, I’m going to really dive into reading this. I’ve had a recurring thought for so long now about pricing and rarity and pull rates of vintage cards and what correlation there is if any. Obviously this is just a start but it satisfies me so much because I know that we would never get solid details from any official source.
+2 Likes
+sturzflugbombardieru
+February 24, 2023, 7:43pm
+8
+pfm:
+This is a really cool and thought out thread. I had to bookmark it and come back when I had enough time to digest it all. Basically you are calculating the relative rarity of each individual card using sheets. I wonder if a visualization/infographic version of the data will make it more intuitive. I don’t mind taking a shot at it if I have free time - if you want, that is
+Thanks! Yes, some sort of visualization may be more intuitive. Feel free to do so if you have any good ideas - I will gladly take them up and credit you.
+sturzflugbombardieru
+February 24, 2023, 7:48pm
+9
+Digression: What observed pull rates actually tell us
+Spoiler: It’s less than you may think.
+The next set discussed here will be Base Set 2. Unlike the sets covered so far, NOT all the uncut sheets are known (the rares, uncommons and Basic Energy sheets are, the holos and commons sheets are not). This lack of complete information will apply to all subsequent sets, and here is where reconstructed sheets and/or observed data from Youtube videos will come in.
+It is possible to reconstruct sheets by observing the sequence in which cards appear in packs, but this generally only works if there are either enough cards from a sheet going into each pack (i.e. commons sheets; uncommons sheets with only 2-3 cards per pack I found to be far too time-consuming to bother with in general) or individual cards only appear once or twice on the sheet (i.e. reverses sheets). Rares and holos sheets are not really possible to reconstruct, since they are generally 1 card per pack and the cards appear multiple times on the sheet.
+That brings us to Youtube videos. For most WotC era sets, there are 10 or more videos of complete box openings on Youtube, which for the holos means approximately 1-2 sheets worth of cards in total, for rares around 2-3 sheets. Is this enough to make any reasonable statement as to which cards appear how many times on a sheet which is otherwise not known? To get a feeling for this, let’s compare the actual number of times cards from Base Set (only unlimited print run), Jungle and Fossil appear on the sheets with estimates calculated from samples observed from Youtube videos. On the graphics below, the actual number of times a card appears on the sheet is shown in blue, the calculated value (number of pulls in sample / total number of holos or rares in sample * sheet size) in red:
+image
+image758×639 10.3 KB
+image
+image758×638 10.1 KB
+image
+image758×571 9.45 KB
+image
+image758×589 11.1 KB
+image
+image758×590 9.93 KB
+image
+image758×597 9.69 KB
+While a little bit of a correlation is observable, it is clear that the sample size available is not nearly large enough for these older sets to say anything for certain. So unless there is some pattern where similar cards appear to be rarer or more common, or the sample size is a lot larger, “brute force” won’t deliver definitive answers (though it is still interesting of course).
+As a final note, the most extreme outlier observed was holo Clefable from the Jungle set. While it is most likely only a coincidence, a conspiracy theorist might claim some unlucky person at WotC or the printing company received the unenviable task of fishing thousands of Clefable cards out of stacks of cut cards as they were needed as prerelease promos. (In fact, the prerelease Clefable seems to have been printed together with Base Set theme deck holos, alongside a Raichu of which some copies somehow ended up getting a prerelease stamp, too. What happened to the other ones is not known. Maybe they were discarded, maybe they were inserted into booster backs in some manner, making Raichu slightly more common than the sheet layout would suggest.)
+1 Like
+sturzflugbombardieru
+February 26, 2023, 11:31am
+10
+Base Set 2
+Base Set 2, as mentioned in my last post, is the first set for which not all sheets are known. Images exist for the rares, uncommons (a cyan-only error sheet) and Basic Energies sheets, though some of the cards on the uncommons sheet are undecipherable.
+I was able to reconstruct the commons sheet from Youtube videos (I plan to make a post on how I go about this later on) and also determine the undecipherable cards on the uncommons sheet. There is not enough information to give exact estimates for the holo pull rates.
+The rarity table for Base Set 2 is give below:
+image
+image881×763 16.9 KB
+The uncommons sheet (including the obscured cards) is as follows:
+Dodrio, Butterfree, Machoke, Defender, Arcanine, Dratini, Exeggutor, Dewgong, Energy Retrieval, Haunter, Farfetch’d, Ivysaur, Marowak, Full Heal, Fearow, Kakuna, Magikarp, Maintenance, Charmeleon, Lickitung, Nidorina, Rhydon, PlusPower, Growlithe, Persian, Nidorino, Poliwhirl, Pokémon Center, Growlithe, Raticate, Parasect, Machoke, Pokédex, Pokémon Center, Tauros, Weepinbell, Seaking, Professor Oak, Jynx, Double Colorless Energy, Butterfree, Marowak, Super Potion, Magikarp, Magmar, Haunter, Exeggutor, Dodrio, Seel, Defender, Arcanine, Seaking, Kadabra, Weepinbell, Energy Retrieval, Jynx, Dewgong, Farfetch’d, Ivysaur, Rhydon, Full Heal, Haunter, Fearow, Kakuna, Wartortle, Maintenance, Charmeleon, Lickitung, Nidorina, Machoke, PlusPower, Magikarp, Persian, Nidorino, Dewgong, Pokémon Center, Growlithe, Raticate, Parasect, Poliwhirl, Double Colorless Energy, Marowak, Tauros, Weepinbell, Charmeleon, Pokédex, Magmar, Double Colorless Energy, Seel, Professor Oak, Arcanine, Dratini, Butterfree, Super Potion, Rhydon, Defender, Farfetch’d, Parasect, Poliwhirl, Kadabra, Fearow, Exeggutor, Seaking, Energy Retrieval, Lickitung, Ivysaur, Full Heal, Professor Oak, Dratini, Kakuna, Super Potion, Wartortle, Maintenance, Raticate, Nidorina, Seel, PlusPower, Persian, Nidorino, Wartortle, Kadabra
+The commons sheet has the card sequence shown below. It is not possible to say where the sequence begins and ends, thus the dagger marks:
+† Abra, Switch, Staryu, Nidoran m, Spearow, Gastly, Voltorb, Paras, Bellsprout, Goldeen, Venonat, Bill, Bulbasaur, Cubone, Doduo, Magnemite, Caterpie, Poliwag, Jigglypuff, Energy Removal, Rhyhorn, Diglett, Drowzee, Charmander, Exeggcute, Sandshrew, Meowth, Bellsprout, Nidoran f, Machop, Pidgey, Potion, Nidoran m, Gust of Wind, Gastly, Goldeen, Paras, Onix, Rattata, Gust of Wind, Diglett, Tangela, Pikachu, Doduo, Starmie, Rhyhorn, Venonat, Abra, Poké Ball, Pikachu, Weedle, Doduo, Staryu, Sandshrew, Poliwag, Vulpix, Bellsprout, Voltorb, Energy Removal, Pidgey, Potion, Cubone, Venonat, Drowzee, Magnemite, Bill, Bulbasaur, Jigglypuff, Switch, Spearow, Caterpie, Staryu, Magnemite, Bill, Exeggcute, Abra, Meowth, Squirtle, Machop, Metapod, Gastly, Starmie, Exeggcute, Nidoran f, Vulpix, Energy Removal, Onix, Nidoran m, Pidgey, Poliwag, Rattata, Paras, Rhyhorn, Meowth, Gust of Wind, Squirtle, Tangela, Switch, Poké Ball, Weedle, Sandshrew, Vulpix, Jigglypuff, Goldeen, Bulbasaur, Weedle, Rattata, Metapod, Charmander, Spearow, Starmie, Potion, Squirtle, Diglett, Pikachu, Charmander, Metapod, Cubone, Drowzee, Voltorb, Nidoran f †
+For the holos, the raw Youtube data from 10 boxes (121 holos in total) is as follows (the dashed line marking where the transition from H7 to H6 would occur):
+image
+image302×693 8.26 KB
+A few general observations can be made:
+The energy sheet is the same as for Base Set, even though the rarity distribution only partially makes sense. Psychic and Lightning Energies, the most common, still feature in only one theme deck, but so does Fire Energy, one of the two rarest. Grass, which is moderately common, still features in two theme decks. Fighting Energy, the other of the two rarest, still features in the starter deck and in one theme deck. Water is still one of the moderately common energies despite featuring in the starter deck and two theme decks. This means Fire Energy is kind of hard to come by, despite Fire decks requiring a lot of it.
+The rares sheet shows a lot of instances where the same card appears in close proximity, which leads to lots of double rares appearing in booster boxes. If the holos sheet looks similar, this may partially explain the high variance in the observed pull rates (a random run of 12 holos from the sheet is more likely to contain duplicates and thus impact the observed statistics more).
+I would not be surprised if Charizard, Blastoise and Venusaur are all among the rarer (H6) holos just like in Base Set unlimited.
+bk2021
+February 26, 2023, 12:58pm
+11
+I know the thread is only at Base Set 2 but for ultra modern/very recent sets where the sets are so large, do you think that all rarities fit on one sheet?
+For some sets the reverse slot would be impossible to fit in one sheet I am pretty sure.
+sturzflugbombardieru
+February 26, 2023, 2:40pm
+12
+No, larger sets use multiple sheets for the reverses. I will have something to say about that once we get to Expedition.
+sturzflugbombardieru
+February 27, 2023, 10:36pm
+13
+Team Rocket
+For this set, all the sheets are known. The set contains one secret rare (Dark Raichu) which is printed on the holos sheet. Were it not for a strange error on the uncommons sheet, there would not be much to discuss here.
+The uncommons sheet contains a Dark Dragonite with the number 5/82 (the holo version’s number) printed on it. If you count how many times the other cards appear on the sheet, you will notice it takes up the space where there should have been a Dark Vaporeon. The error Dark Dragonite is known to exist in both 1st Edition and Unlimited variants, though only the second has ever been filmed being pulled from a pack to my knowledge. Furthermore, the error is quite rare, so obviously it was corrected for the larger part of both the 1st Edition and Unlimited print runs (else it would have a rarity of just slightly less than 1 per box). The question is, how was it corrected?
+One solution would be to just discard the 72nd card from each sheet, which is the error card (I am assuming this is technically possible, it apparently worked for the blank 1st card on the Jungle uncommons sheet, but I can’t say for sure if it’s possible to discard a card from the middle of the sheet).
+The other solution would be to redesign the sheet and replace the error card with the missing Dark Vaporeon. I think that both solutions were used, namely the first for the 1st Edition print run (which may have already been printed when the error was discovered) and the second for the Unlimited print run. I say that because of the following Youtube videos:
+• https://www.youtube.com/watch?v=VTAxNiaxvqc: at 01:04:45, PokeRev gets the following uncommons from a 1st Edition pack: Digger - Dark Kadabra - Dark Dragonair. Not rock-solid evidence, cards can be missing in the sequence or get flipped around, but from the same box he also got packs containing the preceding (Nightly Garbage Run - Dark Jolteon - Dark Primeape) and following (Dark Charmeleon - The Boss’s Way - Dark Machoke) 3 cards on the sheet, so it looks like whatever was in the Dark Dragonite’s position is missing from the sequence entirely.
+• https://www.youtube.com/watch?v=hMAR55qhvdo: at 0:29:40 and at 0:32:35, Randolph Pokemon gets the following uncommons from Unlimited packs: Dark Kadabra - Dark Vaporeon - Dark Dragonair and Dark Vaporeon - Dark Dragonair - Dark Charmeleon, confirming the missing Dark Vaporeon was inserted.
+(I did not study the uncommons in any other videos, but more evidence is certainly available as each box receives nearly a full sheet of uncommons.)
+So how did some packs end up containing the error Dark Dragonite? Maybe the error wasn’t noticed until after some cards were already packaged (though this would imply 1st Edition and Unlimited was being packaged in parallel), or maybe the printing company in some instances discarded some other card instead of Dark Dragonite - not an unheard-of type of error for processes like that.
+Based on this, the rarity tables for Team Rocket are as follows:
+image
+image881×701 14 KB
+image
+image881×607 11.4 KB
+image
+image881×670 14.2 KB
+Some final observations on the rarities for this set:
+• Like in previous sets, there are no artificial rarity differences between cards of the same nominal rarity.
+• Dark Raichu, nominally a secret rare, is not rarer than the other holos.
+• The choice of the two H7 cards, Dark Arbok and Dark Weezing, is probably not random.
+• Unlike the sheets for previous sets which appear to have a more or less random layout, the order of cards on the sheets follow a more regular pattern.
+sturzflugbombardieru
+March 2, 2023, 7:03pm
+14
+Gym Heroes
+At the time I first wrote this post, there were no sheets known to me from this set. Since then, images of the commons and uncommons sheet have appeared on the internet: Uncut Sheets
+At the time, I was able to reconstruct the commons sheet, and while it was not possible to do the same for the uncommons sheet, by looking at the possible combinations of cards that can appear in packs I felt fairly confident as to which cards have U2 rarity, particularly as their choice didn’t seem random and they were also among the ones that appeared the fewest time in the videos I watched for analysis purposes. The results I obtained proved to be correct; you can check out the sheets at the link provided above. The next post of mine down below is a digression on how to reconstruct uncut sheets.
+The rarity table for Gym Heroes is as follows:
+image
+image881×763 18.2 KB
+If you look at the individual rarities of the uncommons and commons, you will see a clear preference for Pokémon with two different variants as well as Trainer cards to be among the rarer ones.
+For the holos and rares, the raw Youtube data from 9 boxes was as follows (the dashed line showing where the transition from H6 to H5 and from R6 to R5 would occur):
+image
+image421×662 9.75 KB
+image
+image421×787 11.8 KB
+There isn’t enough information to say anything certain about the individual rarities for the holos, rares and Basic Energy cards. While there aren’t any really clear trends for individual cards aside from the fact that (just like the uncommon Trainer cards associated with Team Rocket) the Rocket’s Pokémon were among those to appear less frequently in the sample, it is noteworthy that despite smaller sample size the variance is much lower than for the Base Set 2 holos and for the Base Set, Jungle and Fossil samples I showed in an earlier post. This probably is due to the sheet being organized more regularly, eliminating to a large degree duplicate rares and holos from booster boxes. There also don’t seem to be any artificial rarity differences.
+For the Basic Energies, Lightning Energy was observed the most often (in a smaller sample), which happens to be the Energy which appeared the most times on the Base Set and Base Set 2 Basic Energy sheets. This may be just a coincidence. In any case, the Basic Energies have similar pull rates all in all, leading me to assume that, unlike in Base Set and Base Set 2, there are no artificial rarity differences.
+Edit 23/04/20: corrected the reconstructed commons sheet, a piece had gone missing when copying from my Excel spreadsheet
+Edit 23/04/25: corrected tables for raw data of holos and rares (The Rocket’s Trap was mistakenly included among the rares).
+Edit 23/19/27: edited post now that images of commons and uncommons sheet have surfaced
+bk2021
+March 3, 2023, 3:14am
+15
+How easy is it to reconstruct the sheet? Does it only work because sets were small?
+It’s not very random - but perhaps it is impossible to randomise - if the same cards are grouped together?
+sturzflugbombardieru
+March 5, 2023, 11:31am
+16
+Digression: How to reconstruct uncut sheets
+Note: At the time of writing this post, the commons and uncommons sheets for Gym Heroes were not known to me. The results I obtained turned out to be correct - see post above for link to image of uncut sheets.
+In this digression I want to give a bit of an overview how an uncut sheet (usually a commons sheet) can be reconstructed from Youtube videos. The basic principle is as follows:
+In sequential collation which with the exception of some prints runs of Jungle and Neo Discovery is the only kind of collation used for English Pokémon cards, each pack contains a run of cards from the sheet going left to right, top to bottom, or vice versa. (For the different methods of collation check out The Collation Project). The length varies between sets - from 4 in some E-series or early Ex era packs containing a holo card, to 9 in Legendary Collection, where commons and uncommons were printed on the same sheet.
+If you note down the contents of all the packs from a box, you have a good chance of seeing overlaps (not all commons in box apparently come from the same sheet, there are usually 2-3 stacks of commons getting inserted into packs alternatingly). Since multiple sheets are cut and the cards stacked before being inserted into packs, the end of the sheet is followed by the beginning of the next, so it is in fact a circular sequence. That is also the reason it is not possible to say where the sheet starts and where it ends.
+Generally, I have considered an overlap of 3 cards to be a solid (but not 100%) indication that two pieces of the sheet belong together. So after watching a handful of box opening videos, I end up with a handful of longer sequences. Then I can check for overlaps of 2 (or if the rest of the sheet is nearly complete I sometimes only go with 1) and assemble the complete sequence. If it ends up having a length of 121 cards and there are no artificial rarity differences (i.e. each card appears either n or n-1 times on the sheet), I consider the result to be pretty much assured, particularly if there is a pattern in which cards are rarer than others.
+As a tool, I use Microsoft Excel. Here is an excerpt of my worksheet for Gym Heroes:
+image
+image949×492 116 KB
+In the top row I note down the links of the videos I’m using so I can make sure I don’t use the same video twice. The next row is just to keep track of which column I have already entered the contents of a pack in (sum of cards per column has to always be 6). The left two columns contain the cards as well as a place for me to indicate likely overlaps such as the overlap of 2 with Brock’s Mankey (Fidget) and Erika’s Oddish. When I find an overlap of 3 or more I just combine the sequence. I use a second worksheet with a few simple formulas to count how many times each card appears on the sheet.
+Generally, the whole exercise would be quite simple, but there are three pitfalls:
+• Some sequences of 3 are repeated on the sheet (there are three such instances on the Gym Heroes commons sheet). This means on rare occasions it is necessary to correct a place where I have combined two sequences due to an overlap of three. I always check at the end for any repeat sequences which could lead to there being more than one possible reconstruction. So far the only set I have come across where there are long repeated sequences on a commons sheet and there is more than one possible reconstruction is Gym Challenge.
+• The direction the cards are inserted into the packs varies sometimes within a set, i.e. one box may be left to right, top to bottom and another right to left, bottom to top.
+• Occasionally, cards are out of sequence, the most common “error” being when two cards are flipped in sequence. This means that once most of sheet is reconstructed, I sometimes end up with “sequences” which appear only once and don’t fit in with the rest. This seems to happen more often with some sets than with others.
+So far I have reconstructed all the unknown WotC era commons sheets (Base Set 2, Gym Heroes, Gym Challenge, Neo Revelation, Neo Destiny, Legendary Collection, Expedition, Aquapolis and Skyridge) as well as a select sample from the Nintendo/TPCI era to make sure the cards are still inserted into packs the same way. The most recent commons sheet I reconstructed was Evolving Skies and it is a 121 card sheet just like earlier sets. This is a valuable piece of information as it shows the principles of Pokémon card collation have not changed radically in what is now close to a quarter of a century (yes, some of us are getting old!).
+So much for the commons sheets. As to the uncommons, the method I used is somewhat different. Like for the commons, you get sequences of cards in packs, but since they are only 3 (or 2) cards long, it is generally not possible to reconstruct the sheet as there are usually mulpiple repeated sequences of 2 which means there are multiple possible reconstructions of the sheet. So I simply list the different sequences of 3 I observed, again using Microsoft Excel:
+image
+image949×496 192 KB
+Here, all the sequences I saw twice or more are marked in green, the ones I saw only once in white, and one I deemed to be the result of cards being out of sequence in yellow. I assumed that because Sabrina’s Haunter already appears three times in the middle position and Misty’s Seaking three times in the third position, and there is no reason for these cards to be more common than other ones (for Gym Heroes, the 42 uncommons are expected to appear on the 121 card sheet either 2 or 3 times, i.e. U2 or U3 rarity, no U4).
+I used columns N and O to mark where the different sequences could fit together (overlap of 2). This left me with some lose ends and beginnings, and at the bottom I added (in cursive) some sequences I assumed to appear twice and some I had not observed but which would allow me to complete a sheet of 121.
+While this “reconstruction” involves a lot of “voodoo”, the good thing about it is that you don’t actually have see all sequences to figure out which cards likely appear fewer times on the sheet. This is because you effectively have three samples: the first card (column B), the second card (column C) and the third card (column D). For Gym Heroes, this means you can look at the maximum amount of times each card appears in the three samples. If, after removing some sequences which would lead to cards having U4 rarity, you end up with the sum of these maximum values (U2 and U3) amounting to 121, you likely have it figured out.
+To validate the results you can combine analytics with “brute force” and compare this “reconstruction” with the total amount of times you saw each card appearing in the analyzed boxes. If the ones that appear only twice on the sheet according to the reconstruction are among the ones observed the fewest times, the results are likely correct. This was the case for Gym Heroes, as is shown below:
+image
+image396×1349 21 KB
+While brute force alone would give you a number of “candidates” for U2 rarity, the sheet analysis pretty much seals it.
+As this method is somewhat tedious, I have only analyzed the uncommons of three sets so far: Gym Heroes, Neo Destiny and Expedition (despite this set only having two uncommons per pack, it seems to have worked out since there are not many repeated sequences). I am currently working on the Neo Genesis uncommons.
+One final note, to address the question raised by @bk2021:
+The larger the set, or to be more precise the more commons or uncommons a set has, the easier it is to reconstruct the corresponding sheet. This is because when cards appear fewer times on a sheet it is easier to see where they belong, and the chance for repeated sequences is smaller. For example it was easier to reconstruct the commons sheet for Skyridge (73 different commons) than for Neo Revelation (20 commons). (Hint to collectors: some of those Skyridge commons are actually kind of rare!)
+Edit 2023/03/08: Updated text to reflect that there is in fact one instance (Gym Challenge) where there is more than one possible way to reconstruct the commons sheet.
+Edit 2023/05/21: Updated text to reflect fact that in rare instances, striped collation was used for English Pokémon cards.
+Edit 2023/10/27: Added note mentioning images of commons and uncommons sheets for Gym Heroes have now surfaced.
+4 Likes
+bk2021
+March 5, 2023, 12:37pm
+17
+Thanks for the detailed reply!
+I recently observed a French YouTuber opening the new Scarlet and Violet set (2 ETBs and 2 3 pack blisters) and saw a sequence of commons that were the same at least twice, so was wondering if it was a consistent and reproducible method which from your research seems to suggest so.
+sturzflugbombardieru
+March 8, 2023, 5:50pm
+18
+Gym Challenge
+This one is pretty straightforward. The rarity table for Gym Challenge is as follows:
+image
+image881×732 17 KB
+No sheets are known from photos. I was able to determine the C2 and C3 cards on the commons sheet, however unlike the commons sheets of Base Set 2 and Gym Heroes I was not able to completely reconstruct it, as it contains three repeated sequences: one of 5, one of 6 and one of 18 cards, each of which appears on the sheet twice. So there is more than one way to put the “pieces” together. Here is one possible reconstruction, with the three repeated segments underlined. The double dagger marks signify that it is not clear where the sheet begins and ends, and that the reconstruction is only one of multiple possibilities:
+†† Giovanni’s Magikarp, Koga’s Tangela, Misty’s Psyduck, Blaine’s Rhyhorn, Sabrina’s Psyduck, Lt. Surge’s Rattata, Misty’s Seel, Giovanni’s Meowth, Blaine’s Vulpix, Misty’s Staryu, Brock’s Diglett, Koga’s Zubat, Giovanni’s Nidoran f, Erika’s Paras, Transparent Walls, Lt. Surge’s Voltorb, Giovanni’s Nidoran m, Brock’s Geodude, Fervor, Blaine’s Doduo, Sabrina’s Abra (Pound), Misty’s Horsea, Blaine’s Charmander, Koga’s Ekans, Koga’s Grimer, Sabrina’s Gastly (Lick), Erika’s Oddish, Blaine’s Growlithe, Sabrina’s Drowzee, Misty’s Magikarp, Misty’s Poliwag, Giovanni’s Machop, Koga’s Koffing, Sabrina’s Porygon, Lt. Surge’s Pikachu, Blaine’s Mankey, Blaine’s Ponyta, Koga’s Tangela, Erika’s Jigglypuff, Giovanni’s Magikarp, Koga’s Pidgey, Sabrina’s Abra (Psyscan), Sabrina’s Psyduck, Misty’s Seel, Blaine’s Rhyhorn, Koga’s Weedle, Misty’s Psyduck, Lt. Surge’s Rattata, Blaine’s Vulpix, Brock’s Diglett, Giovanni’s Meowth, Misty’s Staryu, Warp Point, Sabrina’s Gastly (Gaseous Form), Transparent Walls, Brock’s Geodude, Erika’s Paras, Giovanni’s Nidoran m, Giovanni’s Nidoran f, Lt. Surge’s Voltorb, Koga’s Zubat, Sabrina’s Abra (Pound), Koga’s Ekans, Misty’s Horsea, Blaine’s Doduo, Sabrina’s Drowzee, Erika’s Oddish, Koga’s Grimer, Misty’s Magikarp, Blaine’s Growlithe, Sabrina’s Gastly (Lick), Lt. Surge’s Pikachu, Koga’s Koffing, Misty’s Poliwag, Blaine’s Mankey, Sabrina’s Porygon, Giovanni’s Machop, Koga’s Pidgey, Erika’s Jigglypuff, Blaine’s Ponyta, Sabrina’s Abra (Psyscan), Giovanni’s Magikarp, Koga’s Tangela, Misty’s Psyduck, Blaine’s Rhyhorn, Sabrina’s Psyduck, Lt. Surge’s Rattata, Koga’s Weedle, Misty’s Seel, Warp Point, Giovanni’s Meowth, Blaine’s Vulpix, Sabrina’s Gastly (Gaseous Form), Misty’s Staryu, Brock’s Diglett, Koga’s Zubat, Giovanni’s Nidoran f, Erika’s Paras, Lt. Surge’s Voltorb, Brock’s Geodude, Blaine’s Charmander, Sabrina’s Abra (Pound), Fervor, Koga’s Ekans, Misty’s Horsea, Blaine’s Doduo, Sabrina’s Drowzee, Erika’s Oddish, Koga’s Grimer, Misty’s Magikarp, Blaine’s Growlithe, Sabrina’s Gastly (Lick), Lt. Surge’s Pikachu, Koga’s Koffing, Misty’s Poliwag, Blaine’s Mankey, Sabrina’s Porygon, Giovanni’s Machop, Koga’s Pidgey, Erika’s Jigglypuff, Blaine’s Ponyta ††
+If you look at the individual rarities of the commons, you will notice a preference for Trainer cards and Pokémon with two different variants to be among the ones appearing fewer times on the sheet, just like in Gym Heroes. The C2 commons also generally appeared fewer times in my sample, pointing to the fact that the “reconstruction” is correct.
+I did not investigate the uncommons and Basic Energies. I assume there are no artificial rarity differences.
+For the holos and rares, the raw Youtube data from 11 boxes was as follows (the dashed line showing where the transition from H6 to H5 and from R6 to R5 would occur):
+image
+image396×693 10.6 KB
+image
+image396×724 11.3 KB
+There isn’t enough data to say anything definitive about individual card rarities here, but I would not be surprised if all the R5 cards were Trainer cards.
+The next discussed here will be Neo Genesis, with some surprising information!
+1 Like
+sturzflugbombardieru
+March 11, 2023, 12:17pm
+19
+Neo Genesis
+So far, this rarity guide has not featured any huge surprises as to card rarities. That is because so far, there has been almost no indication of artificial rarity differences (i.e. larger differences than the sheet size dictates) introduced between cards of the same nominal rarity. The sole exception were the Basic Energies in Base Set and Base Set 2, and, let’s face it, that isn’t a piece of information that will be of much value for most collectors.
+However, the differences in rarity between the Energies show that artificial rarity differences do in fact exist, and have existed since the very beginning of the TCG. I have also found a number of examples for more modern sets which will be discussed here in due time.
+Neo Genesis is the first set for which I believe there are such artificial rarity differences for valuable cards. The rarity table looks like this:
+image
+image881×857 24.7 KB
+My reason for believing that the two versions of Feraligatr, Meganium and Typhlosion are rarer than the other holos comes from the raw data of 12 complete box openings on Youtube:
+image
+image646×849 15.2 KB
+The six cards featuring the final states of the starters are among the seven cards with the lowest observed pull rates, and the observed pull rates are significantly lower on average than for the other holos. If I adjust the 144 holos pulled in the videos to account for a sheet size of 110 (which remained the sheet size for holos well into the Nintendo era), I get an average of 3.7 for the final forms of the starters and 6.8 for the other holos. This leads me to the assumption that the sheet fearures H7, H6 and H4 cards, meaning the final forms of the starters appear half as often (rounded up) than the most ubiquitous holos.
+This means that with a pull rate of 1 : 82.5, these are the rarest Pokémon cards to appear to date.
+It is important to note that this is not the first instance where certain cards have had quite high or quite low observed pull rates. Lt. Surge’s Jolteon and Giovanni’s Nidoqueen appeared quite a lot in the Gym Challenge sample I compiled, and Steelix appeared fewer times than one of the Typhlosions in Neo Genesis. But there is no apparent reason for these cards to have different rarities than others, while making the two variants of the fully evolved starter Pokémon rarer makes the pull rates for the different Pokémon species more balanced. That is why I give more weight to observed differences in rarity if there is a plausible explanation.
+The other sheets don’t contain any major surprises. For the rares, there is too little data to say anything about individual card rarity (the dashed line shows where the transition from R8 to R7 would occur):
+image
+image396×568 7.82 KB
+Using the method described in an earlier post, I was able to reconstruct how many times the individual uncommons likely appeared on the sheet, and the data is in good agreement with the raw data below (the dashed line showing the transition from U4 to U3):
+image
+image396×1131 15.3 KB
+The commons sheet is known (see Uncut Sheets).
+Note that for the starters and their middle evolutions, one version is always C3 or U3 and the other is C4 or U4.
+For the Basic Energies, there is not enough data for any definitive conclusion. From a small sample, Lightning and Psychic Energy appeared the most often (in Gym Heroes it was Lightning Energy, Gym Challenge I did not look at). This is the last WotC era set to feature Basic Energy cards in booster packs.
+3 Likes
+sturzflugbombardieru
+March 16, 2023, 10:09pm
+20
+Neo Discovery
+Last Saturday, when I last updated this thread, I thought this post on Neo Discovery would not involve any lengthly discussion. After all, three of four sheets (commons, uncommons and rares) are documented, there don’t seem to be any artificial rarity differences, and the only information to add would be the raw data for the holos based on Youtube videos.
+I was wrong.
+When looking at the sheets on Uncut Sheets in order to check individual card rarities, I noticed two things about the commons sheet:
+All 20 commons appear six times on the sheet; one Grass type Pokémon appears seven times, but it is unfortunately obscured by a purple sticker.
+Some commons appear in such close proximity that if you assume sequential collation, you could get duplicates in one pack (for example the two Poliwag on the last row, two Sentret on the tenth and two Unown E on the eighth). That is highly unusual and, having watched a few box opening videos on Youtube, I didn’t recall seeing this (though I wasn’t paying much attention to the commons).
+The uncommons and rares sheets also have these purple stickers, but none of the uncommon cards is completely obscured, and the one rare which is completely obscured can be assumed to be a Scizor, since it only appears in five other places on the sheet which ought to contain R6 and R7 cards.
+My next step was to re-watch some videos with the hope of seeing a pack getting opened which included the obscured common card in the top left corner of the sheet. And this is when things got even weirder: It was immediately obvious that the packs opened on Youtube were using a different commons sheet layout entirely!
+I reconstructed this sheet (see further below - the C7 common is a Caterpie), but the big question was: Why did Neo Discovery have two different commons sheet layouts?
+The most plausible explanation was that the “purple sticker” sheet was used in a different print run which used striped collation (see The Collation Project for the explanation on how this works).
+While re-watching the videos, I also noticed that the uncommons sequence couldn’t have come from the uncommons sheet over at Pokemuseum. And to make things even more complicated, I stumbled over the image of a German rares sheet with different layout and different card rarities over at Hansons Auctioneers (Pokemon: An uncut Pokemon printers sheet, 'Property of Wizards of the Coast - Pokemon - German - Neo 2 - card faces - Form 3 of 5 - Rare'. Comprising an uncut sheet of 121 cards including various uncut Neo Discovery cards. Measuring approx. 39.5" x 28.5".).
+Now, if you look at my post on Base Set, I pointed out that the French commons, uncommons and Basic Energies sheets differ from the English ones but the German rares sheet does not, and stated that the use of striped collation may have been the reason. But why change the rares sheet for Neo Discovery, since with only one rare per pack getting duplicates in one pack isn’t a possibility? This is probably because since Team Rocket, the sheet layout has also been designed with the intention of minimizing duplicates in booster boxes. If you look at the “purple sticker” rares sheet, it avoids placing duplicates above each other with only one row in between; the German rares sheet does not.
+This leads me to the hypothesis that the three “purple sticker” sheets all belong to the same (striped collation) print run, while the German rares sheet may be the same as the (undocumented) rares sheet which goes together with the commons sheet I reconstructed from Youtube videos. The German packs I saw being opened on Youtube featured the same commons sheet as the English videos, with striped collation.
+In any case, based on the Youtube data, the “purple sticker” print run seems to be quite small compared to the other one. But, I did find one video of such packs with striped collation being opened (https://www.youtube.com/watch?v=EA3BOKsiSJY)! In this video, PokiChloe explicitly states that these packs are from a Belgian variant box, which fits well with what is written over at the Collation Project about Magic: The Gathering, namely that print runs from Belgium used striped collation.
+Addendum from January 31st 2024: since then, PokeRev has recently uploaded a video opening such a Belgian Neo Discovery box.
+I visualized the commons from the four packs opened on the video (one has a break in the sequence, an Unown E has gone missing):
+image
+image943×1253 390 KB
+The three packs marked in red probably came from the same sheet, that one in green from the one before or after.
+After this lengthly discussion, it is time for the rarity tables (I took over the name “Belgian variant” from PokiChloe, instead of “Purple sticker”):
+image
+image881×701 14.8 KB
+image
+image881×701 16.2 KB
+Second addendum from January 31st 2024: I was able to acertain that the obscured card on the Belgian commons sheet is a Caterpie from PokeRev’s recent video opening a Neo Discovery box printed in Belgium.
+The reconstructed commons sheet for the 1st Edition/Unlimited variant is as follows (the dagger marks indicate that it is not known where the sheet begins or ends):
+† Kabuto, Caterpie, Poliwag, Unown O, Teddiursa, Wooper, Omanyte, Hoppip, Sentret, Unown E, Larvitar, Pineco, Unown I, Dunsparce, Mareep, Spinarak, Energy Ark, Natu, Weedle, Tyrogue, Poliwag, Caterpie, Kabuto, Wooper, Teddiursa, Unown O, Sentret, Hoppip, Omanyte, Larvitar, Unown E, Energy Ark, Unown I, Pineco, Dunsparce, Weedle, Mareep, Tyrogue, Spinarak, Poliwag, Kabuto, Caterpie, Natu, Omanyte, Teddiursa, Wooper, Unown O, Larvitar, Sentret, Unown E, Hoppip, Unown I, Energy Ark, Pineco, Dunsparce, Mareep, Weedle, Tyrogue, Spinarak, Kabuto, Poliwag, Caterpie, Natu, Teddiursa, Omanyte, Wooper, Unown O, Sentret, Larvitar, Unown E, Hoppip, Dunsparce, Energy Ark, Unown I, Spinarak, Pineco, Mareep, Tyrogue, Kabuto, Weedle, Caterpie, Natu, Poliwag, Unown O, Omanyte, Teddiursa, Hoppip, Wooper, Sentret, Larvitar, Unown E, Energy Ark, Pineco, Unown I, Dunsparce, Weedle, Tyrogue, Mareep, Spinarak, Poliwag, Caterpie, Kabuto, Natu, Omanyte, Wooper, Teddiursa, Unown O, Larvitar, Unown E, Sentret, Hoppip, Caterpie, Dunsparce, Unown I, Pineco, Energy Ark, Spinarak, Mareep, Tyrogue, Weedle, Natu †
+The raw data for the holos is as follows (the dashed line is where the transition from H7 to H6 would occur, assuming all boxes in the sample used the same holos sheet; since they all used sequential collation, I assume this is the case):
+image
+image396×599 7.18 KB
+image
+image881×702 15.5 KB
+Third addendum from January 31st 2024: The above raw data naturally excludes the PokeRev video, as the Belgian print run seems to have used a different sheet at least for the non-holo rares, and probably also for the holos. The raw data should thus be kept separate from the “main” print run.
+The raw data for the rares compared with the nominal rarity based on the sheet layouts is as follows:
+image
+image646×693 12 KB
+It seems to correlate marginally better with the rares sheet from Hansons Auctioneers than with the one with the purple sticker, which supports the hypothesis that the Hansons version was used for the main print run.
+To conclude, while there is nothing remarkable about the card rarities in this set, this is further proof that a lot can be learned from looking analyzing the uncut sheets.
+Edit 2024/01/31: Added some notes based on the fact that PokeRev opened a Neo Discovery box printed in Belgium on one of his livestreams, and I was able to figure out the obscured commons cards on the uncut Belgian commons sheet from it.
+1 Like
+bk2021
+March 17, 2023, 2:39am
+21
+Does this mean that there are only a set number of variants of common and uncommon card in every set?
+next page →
+Related topics
+Topic |
+|
+Replies |
+Views |
+Activity |
+Learning on relative reverse rarity from L2 reviving legends data
+Articles
+qotd
+|
+3
+|
+215
+|
+September 9, 2026
+|
+Everything we know about the 1st Edition Ivy Pikachu (WotC Black Star Promo #1) release in one place
+Articles
+wotc
+,
+black-star-promo
+,
+jungle
+,
+pikachu
+,
+promo
+|
+21
+|
+5084
+|
+February 25, 2026
+|
+EX Era variants
+General
+|
+9
+|
+3000
+|
+November 13, 2019
+|
+Protostoise - putting the puzzle pieces together
+Articles
+wotc
+,
+blastoise
+,
+article
+,
+prototype
+|
+246
+|
+20712
+|
+July 17, 2026
+|
+Total 64.8 billion cards produced (March 2024)
+News & Links
+news
+,
+tcg
+,
+supply
+|
+34
+|
+1609
+|
+May 26, 2024
+|
+Home
+Categories
+Guidelines
+Terms of Service
+Privacy Policy
+Powered by Discourse, best viewed with JavaScript enabled

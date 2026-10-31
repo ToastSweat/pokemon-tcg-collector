@@ -1,0 +1,6 @@
+{
+  "key": "jungle-pokewiki",
+  "requestedUrl": "https://pokemon.fandom.com/wiki/Jungle_(TCG)",
+  "retrievedUtc": "2026-10-31T20:10:48.981667+00:00",
+  "error": "HTTP Error 403: Forbidden"
+}

@@ -1,0 +1,36 @@
+COMMAND ["C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe", "-B", "C:/Users/pada1/AppData/Local/hermes/profiles/chatgpt/skills/research/grounded-citations/scripts/sources.py", "--ledger", "docs\\research\\phase5\\jungle\\ledger.json", "render", "--style", "evidence", "--replace-in", "docs\\research\\phase5\\jungle\\claim-register.md"]
+Sources block rewritten in docs\research\phase5\jungle\claim-register.md
+
+
+EXIT 0
+COMMAND ["C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe", "-B", "C:/Users/pada1/AppData/Local/hermes/profiles/chatgpt/skills/research/grounded-citations/scripts/sources.py", "--ledger", "docs\\research\\phase5\\jungle\\ledger.json", "verify", "docs\\research\\phase5\\jungle\\claim-register.md", "--evidence"]
+info: stats: 47 prose sentence(s), 3 with declared provenance (6%) — 3 cited, 0 marked [unverified] (a sentence may be both); 8 distinct source(s) cited, 21 in ledger (8 with evidence quotes)
+warn: registered in the ledger but not cited in this draft: [6], [7], [8], [9], [10], [11], [13], [14], [15], [17], [18], [19], [21]
+citations OK
+
+
+EXIT 0
+COMMAND ["C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe", "-B", "C:/Users/pada1/AppData/Local/hermes/profiles/chatgpt/skills/research/grounded-citations/scripts/sources.py", "--ledger", "docs\\research\\phase5\\jungle\\ledger.json", "render", "--style", "evidence", "--replace-in", "docs\\research\\phase5\\jungle\\provenance-and-normalization.md"]
+Sources block rewritten in docs\research\phase5\jungle\provenance-and-normalization.md
+
+
+EXIT 0
+COMMAND ["C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe", "-B", "C:/Users/pada1/AppData/Local/hermes/profiles/chatgpt/skills/research/grounded-citations/scripts/sources.py", "--ledger", "docs\\research\\phase5\\jungle\\ledger.json", "verify", "docs\\research\\phase5\\jungle\\provenance-and-normalization.md", "--evidence"]
+info: stats: 70 prose sentence(s), 3 with declared provenance (4%) — 3 cited, 0 marked [unverified] (a sentence may be both); 3 distinct source(s) cited, 21 in ledger (8 with evidence quotes)
+warn: registered in the ledger but not cited in this draft: [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21]
+citations OK
+
+
+EXIT 0
+COMMAND ["C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe", "-B", "C:/Users/pada1/AppData/Local/hermes/profiles/chatgpt/skills/research/grounded-citations/scripts/sources.py", "--ledger", "docs\\research\\phase5\\jungle\\ledger.json", "render", "--style", "evidence", "--replace-in", "docs\\research\\phase5\\jungle\\catalog-checklist.md"]
+Sources block rewritten in docs\research\phase5\jungle\catalog-checklist.md
+
+
+EXIT 0
+COMMAND ["C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe", "-B", "C:/Users/pada1/AppData/Local/hermes/profiles/chatgpt/skills/research/grounded-citations/scripts/sources.py", "--ledger", "docs\\research\\phase5\\jungle\\ledger.json", "verify", "docs\\research\\phase5\\jungle\\catalog-checklist.md", "--evidence"]
+info: stats: 3 prose sentence(s), 1 with declared provenance (33%) — 1 cited, 0 marked [unverified] (a sentence may be both); 3 distinct source(s) cited, 21 in ledger (8 with evidence quotes)
+warn: registered in the ledger but not cited in this draft: [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21]
+citations OK
+
+
+EXIT 0

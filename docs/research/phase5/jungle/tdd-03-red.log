@@ -1,0 +1,19 @@
+test_build_candidate_only_separates_policy_from_membership (__main__.JungleAuthoringTests.test_build_candidate_only_separates_policy_from_membership) ... FAIL
+test_crosscheck_all_fields_against_independent_json_and_names_against_third_source (__main__.JungleAuthoringTests.test_crosscheck_all_fields_against_independent_json_and_names_against_third_source) ... ok
+test_parse_independent_bulbapedia_complete_membership (__main__.JungleAuthoringTests.test_parse_independent_bulbapedia_complete_membership) ... ok
+
+======================================================================
+FAIL: test_build_candidate_only_separates_policy_from_membership (__main__.JungleAuthoringTests.test_build_candidate_only_separates_policy_from_membership)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\JungleAuthoringTests.py", line 31, in test_build_candidate_only_separates_policy_from_membership
+    self.assertTrue(callable(getattr(module, 'build_catalog', None)), 'missing candidate catalog builder')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing candidate catalog builder
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.008s
+
+FAILED (failures=1)
+
+EXIT 1

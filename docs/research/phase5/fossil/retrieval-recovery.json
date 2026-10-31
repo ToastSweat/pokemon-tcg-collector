@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ddg",
+    "url": "https://html.duckduckgo.com/html/?q=Fossil%20booster%20pack%207%20common%203%20uncommon%201%20rare%20order",
+    "retrievedAt": "2026-10-31T20:10:20.587127+00:00",
+    "status": 202,
+    "path": "docs/research/phase5/fossil/evidence/ddg.html",
+    "bytes": 14320,
+    "sha256": "df3a429f3d3c4b17b5a4df8b39510d57a8edcd326a0b2a9cf1dcc13c9881ee64"
+  },
+  {
+    "name": "bing",
+    "url": "https://www.bing.com/search?q=Fossil%20booster%20pack%20card%20order%207%20common%203%20uncommon",
+    "retrievedAt": "2026-10-31T20:10:20.587563+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/bing.html",
+    "bytes": 119974,
+    "sha256": "6f8afa3d8480fcea64501f2b3096840ac71cb4bb35634eb7f2283ee1d28e1f7c"
+  },
+  {
+    "name": "wayback-booster",
+    "url": "https://archive.org/wayback/available?url=https%3A%2F%2Fbulbapedia.bulbagarden.net%2Fwiki%2FBooster_pack_%28TCG%29",
+    "retrievedAt": "2026-10-31T20:10:20.587852+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/wayback-booster.json",
+    "bytes": 284,
+    "sha256": "091fad71b03fbeb0e5397f6b5aa7c589b16d4ff27b3b53106440a5fe355e51e2"
+  },
+  {
+    "name": "wayback-checklist",
+    "url": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.wizards.com%2Fdefault.asp%3Fx%3Dpokemon%2Ffossilchecklists",
+    "retrievedAt": "2026-10-31T20:10:20.588102+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/wayback-checklist.json",
+    "bytes": 293,
+    "sha256": "d487bff495f73ac59d4550bde230ac82474af8d2649069753696c7bfdeb05f7a"
+  }
+]

@@ -1,0 +1,21 @@
+test_build_candidate_only_separates_policy_from_membership (__main__.JungleAuthoringTests.test_build_candidate_only_separates_policy_from_membership) ... ok
+test_crosscheck_all_fields_against_independent_json_and_names_against_third_source (__main__.JungleAuthoringTests.test_crosscheck_all_fields_against_independent_json_and_names_against_third_source) ... ok
+test_crosscheck_rejects_changed_real_source (__main__.JungleAuthoringTests.test_crosscheck_rejects_changed_real_source) ... ok
+test_parse_independent_bulbapedia_complete_membership (__main__.JungleAuthoringTests.test_parse_independent_bulbapedia_complete_membership) ... ok
+test_validate_rejects_identity_membership_and_approval_drift (__main__.JungleAuthoringTests.test_validate_rejects_identity_membership_and_approval_drift) ... FAIL
+
+======================================================================
+FAIL: test_validate_rejects_identity_membership_and_approval_drift (__main__.JungleAuthoringTests.test_validate_rejects_identity_membership_and_approval_drift)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\JungleAuthoringTests.py", line 48, in test_validate_rejects_identity_membership_and_approval_drift
+    self.assertTrue(callable(getattr(module, 'validate_catalog', None)), 'missing fail-closed candidate validator')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing fail-closed candidate validator
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.081s
+
+FAILED (failures=1)
+
+EXIT 1

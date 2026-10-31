@@ -1,0 +1,19 @@
+test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy) ... FAIL
+
+======================================================================
+FAIL: test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\docs\research\phase5\weight-supplement\WeightEvidenceTests.py", line 16, in test_complete_sheet_vectors_match_catalog_and_exclude_ivy
+    result = module.build()
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\docs\research\phase5\weight-supplement\build_supplement.py", line 50, in build
+    assert fossil_start<image_pos<fossil_end, 'Fossil caption/source mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Fossil caption/source mismatch
+
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+FAILED (failures=1)
+
+exit_code=1

@@ -1,0 +1,18 @@
+test_crosscheck_all_fields_against_independent_json_and_names_against_third_source (__main__.JungleAuthoringTests.test_crosscheck_all_fields_against_independent_json_and_names_against_third_source) ... FAIL
+test_parse_independent_bulbapedia_complete_membership (__main__.JungleAuthoringTests.test_parse_independent_bulbapedia_complete_membership) ... ok
+
+======================================================================
+FAIL: test_crosscheck_all_fields_against_independent_json_and_names_against_third_source (__main__.JungleAuthoringTests.test_crosscheck_all_fields_against_independent_json_and_names_against_third_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\JungleAuthoringTests.py", line 24, in test_crosscheck_all_fields_against_independent_json_and_names_against_third_source
+    self.assertTrue(callable(getattr(module, 'crosscheck', None)), 'missing complete cross-source reconciliation')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing complete cross-source reconciliation
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+FAILED (failures=1)
+
+EXIT 1

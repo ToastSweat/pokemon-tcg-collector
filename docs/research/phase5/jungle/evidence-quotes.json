@@ -1,0 +1,322 @@
+[
+  {
+    "sourceId": 1,
+    "key": "tcg-data",
+    "quote": "\"id\": \"base2-1\", \"name\": \"Clefable\",",
+    "evidencePath": "docs/research/phase5/jungle/tcg-data.raw.json",
+    "evidenceSha256": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 1,
+    "key": "tcg-data",
+    "quote": "\"rarity\": \"Rare Holo\"",
+    "evidencePath": "docs/research/phase5/jungle/tcg-data.raw.json",
+    "evidenceSha256": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 1,
+    "key": "tcg-data",
+    "quote": "\"name\": \"Poké Ball\", \"supertype\": \"Trainer\",",
+    "evidencePath": "docs/research/phase5/jungle/tcg-data.raw.json",
+    "evidenceSha256": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 2,
+    "key": "pokellector",
+    "quote": "#1 - Clefable",
+    "evidencePath": "docs/research/phase5/jungle/pokellector.text.txt",
+    "evidenceSha256": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 2,
+    "key": "pokellector",
+    "quote": "#64 - Poke Ball",
+    "evidencePath": "docs/research/phase5/jungle/pokellector.text.txt",
+    "evidenceSha256": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 2,
+    "key": "pokellector",
+    "quote": "Cards 64 Released Jun 16th 1999",
+    "evidencePath": "docs/research/phase5/jungle/pokellector.text.txt",
+    "evidenceSha256": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "The Japanese release contained 48 cards; however, the English release was expanded to 64 cards since Wizards of the Coast decided to include Non Holofoil prints of the Rare Holo cards.",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "The English expansion was released on June 16, 1999, while the Japanese expansion was released on March 5, 1997.",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "The 1st Edition print run also accidentally included the extremely rare 1st Edition Promo Pikachu",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "All the English Holofoil Rares in the unlimited edition Jungle set were also accidentally printed as error cards without set symbol.",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "English Wigglytuff pack",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "English Scyther pack",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "English Flareon pack",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "In the Australian release, the Unlimited print used red lettering for the word \"Pokémon\" instead of yellow on relevant packaging.",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "Pokémon League Prerelease promo",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "Gold border Pokémon Rolls exclusive",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "Duelist Magazine W Promo",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "The only thing remarkable about the sheets is that the uncommons sheet depicted at the link above has a blank spot in the top left corner.",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "Another variant of the sheet, auctioned recently on Ebay, replaces the gap with an Exeggutor:",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "The choice of which cards appear more frequently on the sheets appears more or less random (non-holo Flareon is more common than non-holo Jolteon and Vaporeon, for example).",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "The commons and uncommons sheets are different to accomodate striped collation without including duplicate cards in booster packs.",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "The rare and holo sheets may be the same as for the other variants, or they may be different.",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "The direction the cards are inserted into the packs varies sometimes within a set, i.e. one box may be left to right, top to bottom and another right to left, bottom to top.",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "Occasionally, cards are out of sequence, the most common “error” being when two cards are flipped in sequence.",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 4,
+    "key": "rarity-guide",
+    "quote": "not all commons in box apparently come from the same sheet, there are usually 2-3 stacks of commons getting inserted into packs alternatingly",
+    "evidencePath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "evidenceSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 5,
+    "key": "booster-pack",
+    "quote": "From the first Base Set through to Neo Destiny expansion, internationally released boosters contained 11 cards.",
+    "evidencePath": "docs/research/phase5/jungle/booster-pack.text.txt",
+    "evidenceSha256": "31a968db71e518632c8734d9aece7ce73c98fdc1af868794679b0be8e70e7d8c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 12,
+    "key": "belgium-box",
+    "quote": "The most notable difference so far is the rarity order: Uncommons, Rare, Commons.",
+    "evidencePath": "docs/research/phase5/jungle/belgium-box.text.txt",
+    "evidenceSha256": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 12,
+    "key": "belgium-box",
+    "quote": "I sold a 1999-2000 Jungle Booster box recently that was made in Belgium.",
+    "evidencePath": "docs/research/phase5/jungle/belgium-box.text.txt",
+    "evidenceSha256": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 16,
+    "key": "order-thread",
+    "quote": "and yes - 7 commons, 1 rare - 3 uncommons in that order.",
+    "evidencePath": "docs/research/phase5/jungle/order-thread.text.txt",
+    "evidenceSha256": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 16,
+    "key": "order-thread",
+    "quote": "1st edition will NOT be found in any unlimited pack.",
+    "evidencePath": "docs/research/phase5/jungle/order-thread.text.txt",
+    "evidenceSha256": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 16,
+    "key": "order-thread",
+    "quote": "The uncommons were indeed 1st edition, and I even managed to pull a holo Wigglytuff",
+    "evidencePath": "docs/research/phase5/jungle/order-thread.text.txt",
+    "evidenceSha256": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 16,
+    "key": "order-thread",
+    "quote": "Yes, this happened often. Wizards never threw anything away which is why you found 1st ed non holos inside.",
+    "evidencePath": "docs/research/phase5/jungle/order-thread.text.txt",
+    "evidenceSha256": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 20,
+    "key": "wotc-chats",
+    "quote": "No, the same odds. Basically a 1 in 3 chance of a foil card in a booster pack.",
+    "evidencePath": "docs/research/phase5/jungle/wotc-chats.text.txt",
+    "evidenceSha256": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 20,
+    "key": "wotc-chats",
+    "quote": "When the cards are printed, the number of foils is 1 in 3 packs. Some people get better odds, some get worse.",
+    "evidencePath": "docs/research/phase5/jungle/wotc-chats.text.txt",
+    "evidenceSha256": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 20,
+    "key": "wotc-chats",
+    "quote": "Same price as before, same odds for holos (1 in 33 cards approximately).",
+    "evidencePath": "docs/research/phase5/jungle/wotc-chats.text.txt",
+    "evidenceSha256": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 20,
+    "key": "wotc-chats",
+    "quote": "Why are there holo and non-holos in jungle and fossil? After hearing many people’s comments on not wanting to play with their holo cards from base set, we decided to make the rare’s in both forms.",
+    "evidencePath": "docs/research/phase5/jungle/wotc-chats.text.txt",
+    "evidenceSha256": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 20,
+    "key": "wotc-chats",
+    "quote": "How do you get a 1st edition promo card? Those are very difficult to find. Here’s why: The only 1st ed. promo I know about is the #1 promo Pikachu that was accidentally inserted into 1st ed. Jungle packs.",
+    "evidencePath": "docs/research/phase5/jungle/wotc-chats.text.txt",
+    "evidenceSha256": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 20,
+    "key": "wotc-chats",
+    "quote": "I recently bought some Jungle boosters and all the holofoils didn’t have the Jungle stamp why is that? You lucky dog, you are the honored recipient of WotC’s most recent misprint, enjoy them while you can.",
+    "evidencePath": "docs/research/phase5/jungle/wotc-chats.text.txt",
+    "evidenceSha256": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "1st Edition - \"Edition d\"",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  },
+  {
+    "sourceId": 3,
+    "key": "bulbapedia",
+    "quote": "Dark line on top left where background meets border",
+    "evidencePath": "docs/research/phase5/jungle/bulbapedia.text.txt",
+    "evidenceSha256": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+    "verbatimVerified": true
+  }
+]

@@ -1,5 +1,19 @@
 # Phase 5 — Jungle / Fossil discovery and asset decisions
 
+## Active implementation checkpoint
+
+The user explicitly selected **“Use the sheet-informed provisional models for both sets”** after the concrete composition/order/weighting/duplicate/independence proposal. The exact decision and parameters are recorded in `../verification/Phase_5_Model_Approval.json`; no further blanket continuation/art approval is needed.
+
+Completed and exercised:
+- Independently cross-checked **64 Jungle + 62 Fossil candidate printings**; the unchanged production Catalog loader and read-only authoring index loaded all three catalogs (**227 cards**) in the actual bundled-Mono harness.
+- Created **six distinct wrapper-front placeholders** (three per set), two neutral card-face templates and a native-pixel contact sheet.
+- Both independent data/index and placeholder-generator reviews passed. See `../verification/Phase_5_Data_Independent_Review.json` and `../verification/Phase_5_Placeholder_Independent_Review.json`.
+- Retrieved and transcribed the source-qualified numerical Jungle J1 / Fossil F1 rarity tables rather than adopting uniform weights. The independent corrected supplement/appearance review passed; its original transcript-hash metadata rejection remains retained, and no card weights or user approval changed.
+
+In progress: approved Model A 0.1.0 authoring and actual production-generator/distribution proof, plus source-copy implementation of multi-set core validation/binder/archive services, passive UI/media, controller/hosts and guarded build tooling. The adopted coordination contract is `../technical/Phase_5_Runtime_Contract.md`. Promoted copies remain isolated from the frozen research candidates; accepted Base Set assets, eight players and all saves remain unchanged. A playable Jungle/Fossil build is not yet claimed.
+
+The initial decision record below is retained as historical context; its earlier “not yet implemented / no model approved” language is superseded by this checkpoint and the explicit approval record above.
+
 ## Current process
 
 The accepted Base Set presentation includes supplied art, mouse-over tilt/masked finishes, binder/physical tracking and the frozen assignable reveal audio. Audio implementation is `e1d78d4`; human acceptance is `6cf91dd`. Preserve accepted players, supplied originals, user-owned cry files, settings and every collection/save.

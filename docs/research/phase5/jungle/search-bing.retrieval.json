@@ -1,0 +1,32 @@
+{
+  "key": "search-bing",
+  "requestedUrl": "https://www.bing.com/search?q=Pokemon+Jungle+booster+pack+composition+7+3+1",
+  "retrievedUtc": "2026-10-31T20:10:48.980954+00:00",
+  "finalUrl": "https://www.bing.com/search?q=Pokemon+Jungle+booster+pack+composition+7+3+1",
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "private, max-age=0",
+    "Expires": "Sat, 31 Oct 2026 20:09:47 GMT",
+    "Vary": "User-Agent",
+    "X-EventID": "6ae64b47f0cf47498cfeadfc6b6d8f37",
+    "UserAgentReductionOptOut": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Permissions-Policy": "unload=()",
+    "Content-Security-Policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-4eTivXvjAYdPv5vj1lKqjuRtl9kP7ZrvOsRKIgCbwrA='; base-uri 'self';",
+    "P3P": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+    "X-Display-Context": "full",
+    "Date": "Sat, 31 Oct 2026 20:10:47 GMT",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "MUID=27F3557DCB8068E51B5C4D7ECAF469E5; domain=.bing.com; expires=Thu, 25-Nov-2027 20:10:47 GMT; path=/; secure; SameSite=None",
+    "Alt-Svc": "h3=\":443\"; ma=93600",
+    "X-CDN-TraceID": "0.1634d517.1793477447.80039db"
+  },
+  "title": "Pokemon Jungle booster pack composition 7 3 1 - Search",
+  "rawPath": "docs/research/phase5/jungle/search-bing.raw.html",
+  "rawSha256": "7bafcc481d4a8c33d292257454fad6d51ab8030902ffe296498169ac41e3178e",
+  "textPath": "docs/research/phase5/jungle/search-bing.text.txt",
+  "textSha256": "e16d81feeb61d04436e7ead012913b999007cbefd1e7b8cf5c2b66de33406dc7",
+  "bytes": 121967
+}

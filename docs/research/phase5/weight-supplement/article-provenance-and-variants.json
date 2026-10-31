@@ -1,0 +1,75 @@
+{
+  "supplementObservedAtUtc": "2026-10-31T20:32:42.809542+00:00",
+  "articleOriginalRetrieval": {
+    "key": "rarity-guide",
+    "requestedUrl": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762",
+    "retrievedUtc": "2026-10-31T20:09:44.840397+00:00",
+    "finalUrl": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762",
+    "status": 200,
+    "headers": {
+      "Server": "nginx",
+      "Date": "Sat, 31 Oct 2026 20:09:43 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "172390",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-XSS-Protection": "0",
+      "X-Content-Type-Options": "nosniff",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Discourse-Route": "topics/show",
+      "X-Discourse-Crawler-View": "true",
+      "Last-Modified": "Sun, 24 Mar 2024 22:06:35 GMT",
+      "Link": "<https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762.md>; rel=\"alternate\"; type=\"text/markdown\"",
+      "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+      "Cache-Control": "no-cache, no-store",
+      "Content-Security-Policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-NUp7oUwtKfKJxMpKOKR0clVY0' 'strict-dynamic' 'wasm-unsafe-eval'; worker-src 'self' blob: https://efour.b-cdn.net/assets/; frame-ancestors 'self'; manifest-src 'self'",
+      "X-Discourse-Cached": "store",
+      "X-Request-Id": "51511b66-5b9a-46a6-baa1-0df415bb03be",
+      "X-Runtime": "0.479720",
+      "X-Discourse-TrackView": "1",
+      "Strict-Transport-Security": "max-age=63072000;"
+    },
+    "title": "The English Pokémon card rarity guide - Articles - Elite Fourum",
+    "rawPath": "docs/research/phase5/jungle/rarity-guide.raw.html",
+    "rawSha256": "c260f60b9e3b110d35b67e550482e1e04e67165641344710d25c234390fbda57",
+    "textPath": "docs/research/phase5/jungle/rarity-guide.text.txt",
+    "textSha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+    "bytes": 172390
+  },
+  "articleNotRefetched": true,
+  "originalRawHtmlSha256": "c260f60b9e3b110d35b67e550482e1e04e67165641344710d25c234390fbda57",
+  "contextInterpretation": "Article list items 1/2/3 immediately precede the three supplied Jungle charts in that order; Fossil chart occurs in Fossil post body, not Jungle. Article source was read as text/HTML only; no linked sheet/card photos followed.",
+  "assessments": [
+    {
+      "tableId": "jungle-1-removed",
+      "scope": "Author says Ivy removed after cutting or blank removed; First Edition and Unlimited; emitted uncommon total120, no promo outcome."
+    },
+    {
+      "tableId": "jungle-2-ivy-error",
+      "scope": "Author says Ivy not removed; First Edition only; U1 promo outside existing standard Unlimited catalog. H/R/C exception assignments explicitly assumed unchanged."
+    },
+    {
+      "tableId": "jungle-3-exeggutor",
+      "scope": "Author says blank replaced with Exeggutor; Unlimited; Asia exclusivity unknown. H/R/C assignments explicitly assumed unchanged."
+    },
+    {
+      "tableId": "fossil-1",
+      "scope": "Heading First Edition & Unlimited; author reports H/R/U English sheets and German commons checked by videos. Neither sheets nor videos independently inspected here."
+    },
+    {
+      "scope": "Belgian fourth Jungle variant",
+      "assessment": "Discussed in text, not among the four authorized PNGs. Its numerical table was NOT fetched/viewed/transcribed. No attribution of these vectors to that variant."
+    }
+  ],
+  "notAuthenticated": [
+    "Factory sheet counts",
+    "Image authenticity/chain of custody",
+    "Which physical batch the generic candidate metadata depicts",
+    "Mixture prevalence between Jungle variants",
+    "Exact factory holo/pack odds",
+    "Blank/promo discard/error incidence",
+    "Sealed-box correlations, sheet traversal, physical pack orientation"
+  ]
+}

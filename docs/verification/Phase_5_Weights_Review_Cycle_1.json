@@ -1,0 +1,51 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "WEIGHTS-001",
+      "severity": "medium",
+      "location": "docs/research/phase5/weight-supplement/finalize_evidence.py:47-50; literal-evidence-quotes.json:85,93,101,109",
+      "title": "Four transcriptSha256 values do not hash the referenced saved transcript bytes",
+      "description": "The finalizer writes each transcript in Windows text mode (CRLF), then records SHA-256 of the pre-write LF string. All four declared transcript hashes match LF-normalized UTF-8 but differ from actual files. No normalization policy is declared for transcriptSha256. The independently correct raw hashes in verification-proof.json disagree with these four evidence fields. Numeric transcription and original PNG hashes are unaffected.",
+      "evidence": [
+        {
+          "path": "jungle-1-removed.visual-transcript.txt",
+          "declared": "fe8eca655e8d54ddb5a28670f12352d1114cb88d8a15ceb39da0a3fd7faee37b",
+          "actualByteSha256": "9422cdf217ae5f2cbd9b9b088a1164591eeac0263c36305a4cff33d30111aaa0",
+          "lfNormalizedSha256": "fe8eca655e8d54ddb5a28670f12352d1114cb88d8a15ceb39da0a3fd7faee37b"
+        },
+        {
+          "path": "jungle-2-ivy-error.visual-transcript.txt",
+          "declared": "93b822fce7a14e070426ef8943fbad978bead6cee860ad9c9a92682cf95abdbb",
+          "actualByteSha256": "64d4394202d70cf71b2229fe100cf2fcfdb070508552aa06c94bb43bd56bf53d",
+          "lfNormalizedSha256": "93b822fce7a14e070426ef8943fbad978bead6cee860ad9c9a92682cf95abdbb"
+        },
+        {
+          "path": "jungle-3-exeggutor.visual-transcript.txt",
+          "declared": "b3ce8376d3b8a311c8b5dadc3522bb21fd788590be6e7feac904d327a91e4bfa",
+          "actualByteSha256": "fa0c9b89e37d61cc2b27cfb228a0db21c43fe12ff7eb40d7b6cdb58617a1e6bd",
+          "lfNormalizedSha256": "b3ce8376d3b8a311c8b5dadc3522bb21fd788590be6e7feac904d327a91e4bfa"
+        },
+        {
+          "path": "fossil-1.visual-transcript.txt",
+          "declared": "c2d75155968bda8c3d7eaa91a4287f8933804a4c98553b824a59e4729a06400f",
+          "actualByteSha256": "14f2e9854e116a2ecde0eda127ef4c4be794d18d48af4e25a34e2c1dc72a7fb7",
+          "lfNormalizedSha256": "c2d75155968bda8c3d7eaa91a4287f8933804a4c98553b824a59e4729a06400f"
+        }
+      ],
+      "requiredCorrection": "Preserve existing evidence bytes. Compute transcriptSha256 from the saved file read_bytes(), or explicitly name/document a normalized hash and retain a separate raw-file hash. Add byte-level newline regression coverage; regenerate metadata/proof and independently review the new exact snapshot before approval."
+    }
+  ],
+  "suggestions": [
+    "Add regression tests that compare all evidence transcriptSha256 fields against the exact referenced bytes, covering CRLF and LF; existing three author tests do not cover finalization metadata."
+  ],
+  "summary": "Four actual PNGs, every numeric group/header/footer/exception, 254 ordinary rows, one excluded promo and 33 decimal checks reconcile; review is blocked only by four incorrectly labelled transcript byte hashes.",
+  "originalReport": {
+    "path": ".artifacts/phase5-independent-weights/review.json",
+    "sha256": "068ba4cc3018433d9ac9357d8bf601fd7147c690a164a8a229f2afebdf7f96db"
+  },
+  "historicalRejectionPreserved": true,
+  "quantitativeWeightValuesChangedByFinding": false,
+  "subsequentModelApproval": "docs/verification/Phase_5_Model_Approval.json"
+}

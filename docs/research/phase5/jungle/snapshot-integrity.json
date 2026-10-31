@@ -1,0 +1,517 @@
+{
+  "executedUtc": "2026-10-31T20:23:27.232793+00:00",
+  "retrievalAttempts": 21,
+  "retainedSnapshotChecks": 38,
+  "verifiedQuotes": 40,
+  "allPassed": true,
+  "checks": [
+    {
+      "path": "docs/research/phase5/jungle/australia-box.raw.html",
+      "expected": "969dbb23597a8b0f619ccfc4d4637a9240c6df69663728ba329ba54fcf2168b7",
+      "actual": "969dbb23597a8b0f619ccfc4d4637a9240c6df69663728ba329ba54fcf2168b7",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/australia-box.text.txt",
+      "expected": "e745647b48c2367b67beca89b454fda4253afc847340ded4315c405d41f2fadc",
+      "actual": "e745647b48c2367b67beca89b454fda4253afc847340ded4315c405d41f2fadc",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/belgium-box.raw.html",
+      "expected": "d548d18ecde0266d19c1cde74fd28d8ed196f4edff5fc566f9803145205fce44",
+      "actual": "d548d18ecde0266d19c1cde74fd28d8ed196f4edff5fc566f9803145205fce44",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/belgium-box.text.txt",
+      "expected": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+      "actual": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/booster-pack.raw.html",
+      "expected": "b7587a4cc4fd5bba598d2cbdb916b66a6bb54bdf838d3468be9776aa9c3be624",
+      "actual": "b7587a4cc4fd5bba598d2cbdb916b66a6bb54bdf838d3468be9776aa9c3be624",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/booster-pack.text.txt",
+      "expected": "31a968db71e518632c8734d9aece7ce73c98fdc1af868794679b0be8e70e7d8c",
+      "actual": "31a968db71e518632c8734d9aece7ce73c98fdc1af868794679b0be8e70e7d8c",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.raw.html",
+      "expected": "420417a6980801e43c830ae9ec30558848c05a736e15f694edb387f78246bbf4",
+      "actual": "420417a6980801e43c830ae9ec30558848c05a736e15f694edb387f78246bbf4",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/efour-search.raw.json",
+      "expected": "0d159f382a3bb8e4a5b09a2347e8c355cae5c775e8501c72eea206334e38666f",
+      "actual": "0d159f382a3bb8e4a5b09a2347e8c355cae5c775e8501c72eea206334e38666f",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/efour-search.text.txt",
+      "expected": "0d159f382a3bb8e4a5b09a2347e8c355cae5c775e8501c72eea206334e38666f",
+      "actual": "0d159f382a3bb8e4a5b09a2347e8c355cae5c775e8501c72eea206334e38666f",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/order-thread.raw.html",
+      "expected": "31645ec8ba407bb3b7db700bd9c2bb04194c8af002ee676b200c93dc8f04341b",
+      "actual": "31645ec8ba407bb3b7db700bd9c2bb04194c8af002ee676b200c93dc8f04341b",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/order-thread.text.txt",
+      "expected": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "actual": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokebeach.raw.html",
+      "expected": "e67e4ebbf5de92d55a1ff5dccec988da6f0d7756be2c321f7db2a955ee8ba67f",
+      "actual": "e67e4ebbf5de92d55a1ff5dccec988da6f0d7756be2c321f7db2a955ee8ba67f",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokebeach.text.txt",
+      "expected": "5a74e7ca0da45cbbbcfc367c2f628d831d1ea43c7a3c12675d71c6ebf7c7a185",
+      "actual": "5a74e7ca0da45cbbbcfc367c2f628d831d1ea43c7a3c12675d71c6ebf7c7a185",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokellector.raw.html",
+      "expected": "e3821dbb9bf5bca94bb6483ddb53627b3c70e831e9f3f8a8deb7f4fe4914ce25",
+      "actual": "e3821dbb9bf5bca94bb6483ddb53627b3c70e831e9f3f8a8deb7f4fe4914ce25",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokellector.text.txt",
+      "expected": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "actual": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.raw.html",
+      "expected": "c260f60b9e3b110d35b67e550482e1e04e67165641344710d25c234390fbda57",
+      "actual": "c260f60b9e3b110d35b67e550482e1e04e67165641344710d25c234390fbda57",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-bing.raw.html",
+      "expected": "7bafcc481d4a8c33d292257454fad6d51ab8030902ffe296498169ac41e3178e",
+      "actual": "7bafcc481d4a8c33d292257454fad6d51ab8030902ffe296498169ac41e3178e",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-bing.text.txt",
+      "expected": "e16d81feeb61d04436e7ead012913b999007cbefd1e7b8cf5c2b66de33406dc7",
+      "actual": "e16d81feeb61d04436e7ead012913b999007cbefd1e7b8cf5c2b66de33406dc7",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-composition-efour.raw.json",
+      "expected": "40883cd65c61277e4e180558ded77cccd0a92f85f9d68e0eb8a413b0218ba2fd",
+      "actual": "40883cd65c61277e4e180558ded77cccd0a92f85f9d68e0eb8a413b0218ba2fd",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-composition-efour.text.txt",
+      "expected": "40883cd65c61277e4e180558ded77cccd0a92f85f9d68e0eb8a413b0218ba2fd",
+      "actual": "40883cd65c61277e4e180558ded77cccd0a92f85f9d68e0eb8a413b0218ba2fd",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-composition.raw.html",
+      "expected": "674338168615a20875dceddf967eb57fee82b80ae13f108d34704a69c94ebb89",
+      "actual": "674338168615a20875dceddf967eb57fee82b80ae13f108d34704a69c94ebb89",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-composition.text.txt",
+      "expected": "d2f2c08a6c9671fd4eb3ea8ec36887ff8816bcd07be73e9bcbed1d03c4321c0c",
+      "actual": "d2f2c08a6c9671fd4eb3ea8ec36887ff8816bcd07be73e9bcbed1d03c4321c0c",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-ddg.raw.html",
+      "expected": "49996a448aa21e69fd1f7bd24847575704ad3e9b95ba1e3d7ba627ba15814a70",
+      "actual": "49996a448aa21e69fd1f7bd24847575704ad3e9b95ba1e3d7ba627ba15814a70",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-ddg.text.txt",
+      "expected": "85de64ad4e7a920e74ed86184fed26d7bafb998c4e91995412b4c5b23b8dafac",
+      "actual": "85de64ad4e7a920e74ed86184fed26d7bafb998c4e91995412b4c5b23b8dafac",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-holo-efour.raw.json",
+      "expected": "7c9e5a9f42a5ab1d3a4077c7629740b295e22924a58d773c184ec6fee7bb520a",
+      "actual": "7c9e5a9f42a5ab1d3a4077c7629740b295e22924a58d773c184ec6fee7bb520a",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-holo-efour.text.txt",
+      "expected": "7c9e5a9f42a5ab1d3a4077c7629740b295e22924a58d773c184ec6fee7bb520a",
+      "actual": "7c9e5a9f42a5ab1d3a4077c7629740b295e22924a58d773c184ec6fee7bb520a",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-order.raw.html",
+      "expected": "817e18c643232d6fac393e8b04e1d06922f6663e2656175e9fbbe9121d5dbe14",
+      "actual": "817e18c643232d6fac393e8b04e1d06922f6663e2656175e9fbbe9121d5dbe14",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/search-order.text.txt",
+      "expected": "d2f2c08a6c9671fd4eb3ea8ec36887ff8816bcd07be73e9bcbed1d03c4321c0c",
+      "actual": "d2f2c08a6c9671fd4eb3ea8ec36887ff8816bcd07be73e9bcbed1d03c4321c0c",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/serebii.raw.html",
+      "expected": "ed77579e108b9dc0da2c2d63fc137de594b535d61de68ce562bf83dd9bb577d3",
+      "actual": "ed77579e108b9dc0da2c2d63fc137de594b535d61de68ce562bf83dd9bb577d3",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/serebii.text.txt",
+      "expected": "dba025b51abd5b8fd83736acca92b68179a4407fa0248a53292718b9d10fbde1",
+      "actual": "dba025b51abd5b8fd83736acca92b68179a4407fa0248a53292718b9d10fbde1",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/tcg-data.raw.json",
+      "expected": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "actual": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/tcg-data.text.txt",
+      "expected": "8d588bcd8f7b174d99faa6dcddb51649bb640d836994a3a55af81d876693562c",
+      "actual": "8d588bcd8f7b174d99faa6dcddb51649bb640d836994a3a55af81d876693562c",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.raw.html",
+      "expected": "89601aee4967ac1709510814959ec0dcd937c1ab9cf75eb03da790eeb475f0e9",
+      "actual": "89601aee4967ac1709510814959ec0dcd937c1ab9cf75eb03da790eeb475f0e9",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-search.raw.json",
+      "expected": "c18d7cf04e721ad3072e14f138c47c5bef98a650b525c5f7d665a5da835eec50",
+      "actual": "c18d7cf04e721ad3072e14f138c47c5bef98a650b525c5f7d665a5da835eec50",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-search.text.txt",
+      "expected": "c18d7cf04e721ad3072e14f138c47c5bef98a650b525c5f7d665a5da835eec50",
+      "actual": "c18d7cf04e721ad3072e14f138c47c5bef98a650b525c5f7d665a5da835eec50",
+      "match": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/tcg-data.raw.json",
+      "expected": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "actual": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/tcg-data.raw.json",
+      "expected": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "actual": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/tcg-data.raw.json",
+      "expected": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "actual": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokellector.text.txt",
+      "expected": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "actual": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokellector.text.txt",
+      "expected": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "actual": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/pokellector.text.txt",
+      "expected": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "actual": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "expected": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "actual": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/booster-pack.text.txt",
+      "expected": "31a968db71e518632c8734d9aece7ce73c98fdc1af868794679b0be8e70e7d8c",
+      "actual": "31a968db71e518632c8734d9aece7ce73c98fdc1af868794679b0be8e70e7d8c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/belgium-box.text.txt",
+      "expected": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+      "actual": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/belgium-box.text.txt",
+      "expected": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+      "actual": "04cedf05345436bb8d502b92288ce3570eee6afc118e8dd6c6d4b1613e59d10c",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/order-thread.text.txt",
+      "expected": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "actual": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/order-thread.text.txt",
+      "expected": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "actual": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/order-thread.text.txt",
+      "expected": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "actual": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/order-thread.text.txt",
+      "expected": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "actual": "8814340a051e2b086a4fb6bf083857832218ea8f98caaf14135a1bdd921c214b",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/wotc-chats.text.txt",
+      "expected": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "actual": "8f1ca6847874da3a14a3ea3b3498dcaba2bef5bbcdd55dd27549657ebcad67ef",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    },
+    {
+      "path": "docs/research/phase5/jungle/bulbapedia.text.txt",
+      "expected": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "actual": "f6b39ce1d9437d5bbb6046414f4cc4ad89d5c336f1b8c41ac270a6ce053d3376",
+      "match": true,
+      "quoteMatch": true
+    }
+  ]
+}

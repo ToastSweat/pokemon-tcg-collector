@@ -1,0 +1,95 @@
+{
+  "schema": "research-approval-option-not-runtime/v1",
+  "discussionId": "source-qualified-J1-F1-marginal-weights",
+  "approved": false,
+  "implemented": false,
+  "mayBeLoadedAsGeneratorRules": false,
+  "explicitUserApprovalRequired": true,
+  "scope": "ONE conditional weights-only alternative to uniform pools, not a selected generator model",
+  "reason": "Retains the observed secondary-table differences rather than erasing them; exact applicability to a physical run remains unauthenticated",
+  "sources": "citations-ledger.json; REPORT.md; manual-transcription.json",
+  "sets": [
+    {
+      "setId": "jungle",
+      "sourceTableId": "jungle-1-removed",
+      "imageSourceId": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc",
+      "physicalRunAuthentication": false,
+      "emittedPoolDenominators": {
+        "H": 110,
+        "R": 121,
+        "U": 120,
+        "C": 121
+      },
+      "ordinaryCandidateMembers": 64,
+      "weightsReference": "sheet-weight-supplement.json#/tables/0/cards",
+      "weightMeaning": "Each card multiplicity from this source table only; normalization is magnitude / emitted pool denominator, not a pack-inclusion model",
+      "uniformFallbackComparator": {
+        "H": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 16
+        },
+        "R": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 16
+        },
+        "U": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 16
+        },
+        "C": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 16
+        }
+      }
+    },
+    {
+      "setId": "fossil",
+      "sourceTableId": "fossil-1",
+      "imageSourceId": "18d87beedd4eb026e3af510c22670f09e3d2ce30",
+      "physicalRunAuthentication": false,
+      "emittedPoolDenominators": {
+        "H": 110,
+        "R": 121,
+        "U": 121,
+        "C": 121
+      },
+      "ordinaryCandidateMembers": 62,
+      "weightsReference": "sheet-weight-supplement.json#/tables/3/cards",
+      "weightMeaning": "Each card multiplicity from this source table only; normalization is magnitude / emitted pool denominator, not a pack-inclusion model",
+      "uniformFallbackComparator": {
+        "H": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 15
+        },
+        "R": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 15
+        },
+        "U": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 16
+        },
+        "C": {
+          "perCardRelativeWeight": 1,
+          "memberCount": 16
+        }
+      }
+    }
+  ],
+  "unresolvedBeforeAnyUse": [
+    "Which physical/completion target and Jungle run to select",
+    "Whether to approve the provisional relative masses at all",
+    "Branch/insertion probabilities and replacement mechanism",
+    "Within-pack duplicate/replacement policy and multi-card inclusion marginals",
+    "Pack order/orientation",
+    "Loose-pack independence versus factory/box collation"
+  ],
+  "excluded": [
+    "Jungle J2 First Edition error promo",
+    "Removed blank/Ivy outcome",
+    "J3 averaging or automatic mixing",
+    "Uninspected Belgian Jungle weights",
+    "Authenticated factory-count claim",
+    "Any RNG/runtime/RuleData adoption"
+  ]
+}

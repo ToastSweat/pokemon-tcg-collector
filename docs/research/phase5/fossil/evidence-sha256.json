@@ -1,0 +1,237 @@
+[
+  {
+    "path": "docs/research/phase5/fossil/evidence/api.json",
+    "bytes": 85173,
+    "sha256": "1431ebd57a760359bee6240a892454d892e284230339e95c7bcab66a7139ad24"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/australian.html",
+    "bytes": 84767,
+    "sha256": "66e16db33a6abfd2fafc0ae4ced4b18705d3b02d13f65e4f4ac9a8e0601411ff"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/australian.txt",
+    "bytes": 14264,
+    "sha256": "7af7c96b39b903cd2fe580537995f1cdd0bd3da5667d73af45b9cc03fe311b3d"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bing-order.html",
+    "bytes": 120024,
+    "sha256": "a59259abf7ce3df46e4c81edc8c48b1b052082979b2c49564aedcd49b2642a56"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bing-order.txt",
+    "bytes": 2654,
+    "sha256": "62ad45fcd060149788207e5bee34309ba05ce2850625c820ac4593f1564ffa62"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bing-pokemon.html",
+    "bytes": 121468,
+    "sha256": "6a81810df928bdc7237dfa2150f2c28bb362f2f909882307fbbcb1ca4b0b47ef"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bing-pokemon.txt",
+    "bytes": 2744,
+    "sha256": "a899435c4625a23e8f4b41994054534185def76dea73c6135aa6854128222a6f"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bing.html",
+    "bytes": 119974,
+    "sha256": "6f8afa3d8480fcea64501f2b3096840ac71cb4bb35634eb7f2283ee1d28e1f7c"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/booster-extracted.txt",
+    "bytes": 726,
+    "sha256": "b1fbae01cfe4fbca88bf269d3f8091adf39899c51bcc05b63b128c5f969ad930"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bulbapedia.html",
+    "bytes": 345454,
+    "sha256": "05c2a4e6c33b1449d8dd52a6051256fc78f305f1f71457e3a6c87949c1fa71eb"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/bulbapedia.txt",
+    "bytes": 17157,
+    "sha256": "69a07f1647bb1d19718d5203ac9d9dafa03d2709c9b9220680cd6d0b230ecfa3"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/composition-search.json",
+    "bytes": 1914,
+    "sha256": "e7d4f03552a6a2d56d70a382280129d3249784749d74e2bf7757ed65aedd7cc0"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/ddg.html",
+    "bytes": 14320,
+    "sha256": "df3a429f3d3c4b17b5a4df8b39510d57a8edcd326a0b2a9cf1dcc13c9881ee64"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/fossil-post.json",
+    "bytes": 217270,
+    "sha256": "154aeb5a39c015c854bb2bb8f4101a10b8f1ade1e019241c5018038bcdc11432"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/fossil-search-efour-composition.json",
+    "bytes": 71490,
+    "sha256": "8c3e69b8e8d7fa567c85b5fa178d7b486938aea5c78f68c8d2b3e45d5405feaf"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/fossil-search-efour.json",
+    "bytes": 74538,
+    "sha256": "26c0d1682fd070f8696f4962587ab421e84a8d38c061b7b2e0f4cc0cc1cedc43"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/order-search.json",
+    "bytes": 1772,
+    "sha256": "ff5c6d4204aae5e64fdf009898b6ef6f8ee92b1d5165e4ba9ccac5c5d4942364"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/pokellector.html",
+    "bytes": 66425,
+    "sha256": "6618c5b2e8e63c0a77399d3539fc37dcb692ccbd0213e0579a426cc238700419"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/pokellector.txt",
+    "bytes": 1840,
+    "sha256": "b48533434e0e2a4b05b7781adf5edad550c62d66c68ae5856850bce0f9aca83d"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/rarity-guide.html",
+    "bytes": 172390,
+    "sha256": "38bce6c0b12da419e25cfe7d8dc5967aa7235d99cf6a9da0e5f70636820cc3e4"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/rarity-guide.txt",
+    "bytes": 66457,
+    "sha256": "5ca25490eeadd1f5bc2285e76e8b8731d46237c9c8142fc3e06658690fe01c0c"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/search1.html",
+    "bytes": 93147,
+    "sha256": "9dd1f3f899db72fb18b0040a9b59fd9907414d8964c1e6cb82be10ac4a532e0b"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/search2.html",
+    "bytes": 93108,
+    "sha256": "4ce38f7c661b6b5288998f9941f0197ff5598ce354ee2157744209c8b8271794"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/search3.html",
+    "bytes": 92875,
+    "sha256": "c9abff94df1071477afd3cd3625d98a68fc287cb01806a5dc38a108acac355a2"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/sheets.html",
+    "bytes": 180438,
+    "sha256": "b297f16d7f177a98f113528cbe37ce3c17e1f8599a6b568e284d42aa86845db0"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/sheets.txt",
+    "bytes": 19972,
+    "sha256": "1d89a5fd55442944c9a4d66b1ce1ebb3e8c5df6699d1c7815d53d07cc5f94f4e"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wayback-booster.json",
+    "bytes": 284,
+    "sha256": "091fad71b03fbeb0e5397f6b5aa7c589b16d4ff27b3b53106440a5fe355e51e2"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wayback-checklist.json",
+    "bytes": 293,
+    "sha256": "d487bff495f73ac59d4550bde230ac82474af8d2649069753696c7bfdeb05f7a"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-1.txt",
+    "bytes": 90774,
+    "sha256": "79aaeb023b181dc2e8220c6c8d3c4682da39a114b1ce78e5ef81468f387d9fe6"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-10.txt",
+    "bytes": 30803,
+    "sha256": "c5c4591b073bd0f56b3f363c484cca27c31c60287058eccbf2fefbd9e4705380"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-11.txt",
+    "bytes": 232388,
+    "sha256": "0edd68c6d2226287a58d05a79c69de05392d88089a92bccbbe4f985c7203e01a"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-12.txt",
+    "bytes": 116601,
+    "sha256": "0c6bf55ab35557c6d483b59ec37a3332527740f3d9470fb51a6d90cd34220e20"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-13.txt",
+    "bytes": 26,
+    "sha256": "2179741765dc3fc131b2a191bc0d5f2e049083e5313d6b0230ee0cf2d3bd0107"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-14.txt",
+    "bytes": 855,
+    "sha256": "af74455156754fecc1152b8acaab9f7dcbfcadcb0b12f0bbba903cde30e0812d"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-15.txt",
+    "bytes": 1053,
+    "sha256": "aa0901e67ea818a57f3b261c08861fcaa3e9770796d7209e1684efabd0be58fe"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-16.txt",
+    "bytes": 230,
+    "sha256": "de709aa01dff3aba02c3db5ceceb00ea4deb76eeb0c48372f30443cf5fca9734"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-17.txt",
+    "bytes": 122,
+    "sha256": "7e76e4f57c16c67eb5aee5bc42f501d7e2ff95833dd39e2ee1ef2e536216a0ea"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-18.txt",
+    "bytes": 24,
+    "sha256": "c9de5cde5c63bf7fede4e112a8c19155dbcca4aa399341efc0876a5c0f293dea"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-2.txt",
+    "bytes": 194844,
+    "sha256": "a01b3a4737948dbbd31be90791597d0247e02980d29caacbdb4e0023c27888bd"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-3.txt",
+    "bytes": 168008,
+    "sha256": "efe79f9570056f61417946d7f0e3bb30bf2b9bb148c8afe27ba6be0197bae870"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-4.txt",
+    "bytes": 126433,
+    "sha256": "b9bb06aaf30d7644eb240bc786ed15a36704f7aea58917ed2921a593c5a5083a"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-5.txt",
+    "bytes": 79249,
+    "sha256": "85dbfb788e1a079eb7a8bf593c66bcdd4d72de4e2bf5328ec6a52fa3c563b9fc"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-6.txt",
+    "bytes": 114901,
+    "sha256": "ba0c48382c8c071263de0a716edd218c27c100a25e0198d17a007fec56348546"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-7.txt",
+    "bytes": 158426,
+    "sha256": "f5fbdea33247faae694bc593e899a21cd2967add914fcf80de9c421e81847652"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-8.txt",
+    "bytes": 165365,
+    "sha256": "db5ef5980fbb9848e6cff3add3118198e76d432c29937e46647ffdb1552c1bcb"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat-post-9.txt",
+    "bytes": 104619,
+    "sha256": "68e091b4a868ccb1764939519f6ac4b768d06f8bb8ac82b4eb4723cf6389d7f3"
+  },
+  {
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat.json",
+    "bytes": 2292898,
+    "sha256": "c18d7cf04e721ad3072e14f138c47c5bef98a650b525c5f7d665a5da835eec50"
+  }
+]

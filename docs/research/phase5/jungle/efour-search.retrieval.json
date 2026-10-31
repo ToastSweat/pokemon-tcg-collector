@@ -1,0 +1,33 @@
+{
+  "key": "efour-search",
+  "requestedUrl": "https://www.elitefourum.com/search.json?q=jungle%20pack%20order",
+  "retrievedUtc": "2026-10-31T20:11:54.236349+00:00",
+  "finalUrl": "https://www.elitefourum.com/search.json?q=jungle%20pack%20order",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sat, 31 Oct 2026 20:11:53 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "75311",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "0",
+    "X-Content-Type-Options": "nosniff",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Discourse-Route": "search/show",
+    "X-Robots-Tag": "noindex",
+    "Cache-Control": "no-cache, no-store",
+    "X-Discourse-Cached": "skip",
+    "X-Request-Id": "463e47c2-e2df-4214-8677-b040bbf8411c",
+    "X-Runtime": "0.571505",
+    "Strict-Transport-Security": "max-age=63072000;"
+  },
+  "title": "efour-search (no HTML title)",
+  "rawPath": "docs/research/phase5/jungle/efour-search.raw.json",
+  "rawSha256": "0d159f382a3bb8e4a5b09a2347e8c355cae5c775e8501c72eea206334e38666f",
+  "textPath": "docs/research/phase5/jungle/efour-search.text.txt",
+  "textSha256": "0d159f382a3bb8e4a5b09a2347e8c355cae5c775e8501c72eea206334e38666f",
+  "bytes": 75311
+}

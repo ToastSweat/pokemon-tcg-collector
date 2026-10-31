@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://raw.githubusercontent.com/PokemonTCG/pokemon-tcg-data/master/cards/en/base2.json",
+      "title": "PokemonTCG/pokemon-tcg-data cards/en/base2.json (JSON; no page title)",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "\"id\": \"base2-1\", \"name\": \"Clefable\",",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "\"rarity\": \"Rare Holo\"",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "\"name\": \"Poké Ball\", \"supertype\": \"Trainer\",",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://www.pokellector.com/Jungle-Expansion",
+      "title": "Jungle Pokemon Card Set List",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "#1 - Clefable",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "#64 - Poke Ball",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Cards 64 Released Jun 16th 1999",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Jungle_(TCG)",
+      "title": "Jungle (TCG) - Bulbapedia, the community-driven Pokémon encyclopedia",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "The Japanese release contained 48 cards; however, the English release was expanded to 64 cards since Wizards of the Coast decided to include Non Holofoil prints of the Rare Holo cards.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The English expansion was released on June 16, 1999, while the Japanese expansion was released on March 5, 1997.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The 1st Edition print run also accidentally included the extremely rare 1st Edition Promo Pikachu",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "All the English Holofoil Rares in the unlimited edition Jungle set were also accidentally printed as error cards without set symbol.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "English Wigglytuff pack",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "English Scyther pack",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "English Flareon pack",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "In the Australian release, the Unlimited print used red lettering for the word \"Pokémon\" instead of yellow on relevant packaging.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Pokémon League Prerelease promo",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Gold border Pokémon Rolls exclusive",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Duelist Magazine W Promo",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "1st Edition - \"Edition d\"",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Dark line on top left where background meets border",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762",
+      "title": "The English Pokémon card rarity guide - Articles - Elite Fourum",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "The only thing remarkable about the sheets is that the uncommons sheet depicted at the link above has a blank spot in the top left corner.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Another variant of the sheet, auctioned recently on Ebay, replaces the gap with an Exeggutor:",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The choice of which cards appear more frequently on the sheets appears more or less random (non-holo Flareon is more common than non-holo Jolteon and Vaporeon, for example).",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The commons and uncommons sheets are different to accomodate striped collation without including duplicate cards in booster packs.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The rare and holo sheets may be the same as for the other variants, or they may be different.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The direction the cards are inserted into the packs varies sometimes within a set, i.e. one box may be left to right, top to bottom and another right to left, bottom to top.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Occasionally, cards are out of sequence, the most common “error” being when two cards are flipped in sequence.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "not all commons in box apparently come from the same sheet, there are usually 2-3 stacks of commons getting inserted into packs alternatingly",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "title": "Booster pack (TCG) - Bulbapedia, the community-driven Pokémon encyclopedia",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "From the first Base Set through to Neo Destiny expansion, internationally released boosters contained 11 cards.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://www.pokebeach.com/tcg/jungle",
+      "title": "Jungle - PokeBeach | PokéBeach",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 7,
+      "url": "https://www.google.com/search?q=Jungle+booster+pack+7+common+3+uncommon+1+rare+energy",
+      "title": "Google Search",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 8,
+      "url": "https://www.google.com/search?q=Jungle+booster+pack+card+order+rare+first+three+uncommon",
+      "title": "Google Search",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 9,
+      "url": "https://www.bing.com/search?q=Pokemon+Jungle+booster+pack+composition+7+3+1",
+      "title": "Pokemon Jungle booster pack composition 7 3 1 - Search",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 10,
+      "url": "https://html.duckduckgo.com/html/?q=Jungle+booster+pack+card+order+rare+energy",
+      "title": "DuckDuckGo",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 11,
+      "url": "https://pokemon.fandom.com/wiki/Jungle_(TCG)",
+      "title": "Retrieval failed",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 12,
+      "url": "https://www.elitefourum.com/t/1999-2000-jungle-booster-box-opened/23769",
+      "title": "1999-2000 Jungle Booster Box Opened - General - Elite Fourum",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "The most notable difference so far is the rarity order: Uncommons, Rare, Commons.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "I sold a 1999-2000 Jungle Booster box recently that was made in Belgium.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "url": "https://www.elitefourum.com/t/jungle-booster-box-made-in-belgium/16995",
+      "title": "Jungle Booster Box Made in Belgium - General - Elite Fourum",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 14,
+      "url": "https://www.serebii.net/card/jungle",
+      "title": "Jungle - Serebii.net Pokémon Card Database",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 15,
+      "url": "https://www.elitefourum.com/search.json?q=jungle%20pack%20order",
+      "title": "efour-search (no HTML title)",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 16,
+      "url": "https://www.elitefourum.com/t/21246",
+      "title": "Unlimited Jungle boosters with 1st uncommons? - General - Elite Fourum",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "and yes - 7 commons, 1 rare - 3 uncommons in that order.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "1st edition will NOT be found in any unlimited pack.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "The uncommons were indeed 1st edition, and I even managed to pull a holo Wigglytuff",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Yes, this happened often. Wizards never threw anything away which is why you found 1st ed non holos inside.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "url": "https://www.elitefourum.com/search.json?q=%22jungle%22%20%22commons%22%20%22uncommons%22",
+      "title": "search-composition-efour (no HTML title)",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 18,
+      "url": "https://www.elitefourum.com/search.json?q=%22jungle%22%20%221%20in%203%22",
+      "title": "search-holo-efour (no HTML title)",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 19,
+      "url": "https://www.elitefourum.com/search.json?q=%22jungle%22%20%22energy%22%20%22pack%22",
+      "title": "Retrieval failed",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 20,
+      "url": "https://www.elitefourum.com/t/complete-1999-2000-wotc-chats/16872",
+      "title": "WotC Chat Logs from Feb 2000 to Nov 2000 - Q&A w/ Employees - Articles - Elite Fourum",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "No, the same odds. Basically a 1 in 3 chance of a foil card in a booster pack.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "When the cards are printed, the number of foils is 1 in 3 packs. Some people get better odds, some get worse.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Same price as before, same odds for holos (1 in 33 cards approximately).",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Why are there holo and non-holos in jungle and fossil? After hearing many people’s comments on not wanting to play with their holo cards from base set, we decided to make the rare’s in both forms.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "How do you get a 1st edition promo card? Those are very difficult to find. Here’s why: The only 1st ed. promo I know about is the #1 promo Pikachu that was accidentally inserted into 1st ed. Jungle packs.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "I recently bought some Jungle boosters and all the holofoils didn’t have the Jungle stamp why is that? You lucky dog, you are the honored recipient of WotC’s most recent misprint, enjoy them while you can.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "url": "https://www.elitefourum.com/t/16872.json",
+      "title": "wotc-search (no HTML title)",
+      "accessed": "2026-10-31"
+    }
+  ]
+}

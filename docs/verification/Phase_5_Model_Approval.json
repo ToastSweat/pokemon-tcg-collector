@@ -1,0 +1,64 @@
+{
+  "status": "explicitly-approved-by-user",
+  "recordedAt": "2026-10-31T16:06:23.182459-05:00",
+  "userSelection": "Use the sheet-informed provisional models for both sets",
+  "approvalMechanism": "submitted clarification form",
+  "sets": [
+    {
+      "setId": "jungle",
+      "printingId": "jungle-en-unlimited1999",
+      "standardCompletionTarget": 64,
+      "sourceTableId": "jungle-1-removed"
+    },
+    {
+      "setId": "fossil",
+      "printingId": "fossil-en-unlimited1999",
+      "standardCompletionTarget": 62,
+      "sourceTableId": "fossil-1"
+    }
+  ],
+  "scope": "standard English Unlimited numbered holo and nonholo printings; no separate promo/error/alternate-print variants",
+  "modelVersion": "0.1.0",
+  "modelStatus": "approved-provisional",
+  "composition": {
+    "commons": 7,
+    "rareOrHolo": 1,
+    "uncommons": 3,
+    "energySlots": 0
+  },
+  "revealOrder": [
+    "common",
+    "common",
+    "common",
+    "common",
+    "common",
+    "common",
+    "common",
+    "rare-or-holo",
+    "uncommon",
+    "uncommon",
+    "uncommon"
+  ],
+  "orderIsProvisionalNotAuthenticatedWrapperOrientation": true,
+  "holoProbability": {
+    "numerator": 1,
+    "denominator": 3
+  },
+  "holoReplacesNonholoRare": true,
+  "poolWeights": "source-qualified per-card sheet magnitudes; not uniform rarity-pool weights",
+  "withoutReplacementPools": [
+    "common",
+    "uncommon"
+  ],
+  "independentLoosePacks": true,
+  "factoryBoxCollationOrFixedHoloQuota": false,
+  "sourceWeights": {
+    "path": "docs/research/phase5/weight-supplement/sheet-weight-supplement.json",
+    "sha256": "7ceb3d2b4a429c927301e77be965efcb506d41228a0324bc2ff43e3d012713ef"
+  },
+  "wrapperVariantsPerSet": 3,
+  "wrapperSelectionConsumesGeneratorRng": false,
+  "factoryAccuracyClaim": false,
+  "baseSetModelChanged": false,
+  "liveRuntimeAdmittedAtApproval": false
+}

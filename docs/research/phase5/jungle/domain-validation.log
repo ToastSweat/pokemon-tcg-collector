@@ -1,0 +1,14 @@
+COMMAND ["C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe", "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\4.5\\mcs.exe", "-warnaserror+", "-r:System.Web.Extensions", "-out:F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\phase5\\jungle\\JungleCatalogChecks.exe", "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\TestsPhase5\\JungleCatalogChecks.cs", "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Assets\\VintageCollector\\Domain\\Data.cs", "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Assets\\VintageCollector\\Domain\\Catalog.cs"]
+
+
+EXIT 0
+COMMAND ["C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe", "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\phase5\\jungle\\JungleCatalogChecks.exe", "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Authoring\\Phase5\\Data\\jungle-en-unlimited1999.catalog.json"]
+PASS real Catalog.FromData loads 64 Jungle members
+PASS proposed standard Unlimited identities preserved
+PASS proposed-not-approved status survives production deserialization
+PASS number 64 resolves as trainer, not energy
+PASS real Catalog.FromData rejects duplicate ID mutation
+CHECK_COUNT=5 PASSED=true
+
+
+EXIT 0

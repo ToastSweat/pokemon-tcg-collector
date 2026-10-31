@@ -1,0 +1,30 @@
+{
+  "cards": 62,
+  "uniqueIds": 62,
+  "rarityCounts": {
+    "holo": 15,
+    "rare": 15,
+    "uncommon": 16,
+    "common": 16
+  },
+  "kindCounts": {
+    "pokemon": 57,
+    "trainer": 5
+  },
+  "finishCounts": {
+    "holo": 15,
+    "nonholo": 47
+  },
+  "proposedBoosterEligible": 62,
+  "energyCards": 0,
+  "independentNumberNameRarityKindFinishMatches": 62,
+  "thirdSourceNumberNameMatches": 62,
+  "physicalPrintingVerified": false,
+  "runtimeAdmitted": false,
+  "sourceSha256": {
+    "api.json": "1431ebd57a760359bee6240a892454d892e284230339e95c7bcab66a7139ad24",
+    "bulbapedia.html": "05c2a4e6c33b1449d8dd52a6051256fc78f305f1f71457e3a6c87949c1fa71eb",
+    "pokellector.html": "6618c5b2e8e63c0a77399d3539fc37dcb692ccbd0213e0579a426cc238700419"
+  },
+  "catalogSha256": "555303b36387181e15a78fbf371dbd8c129b9ddadc2e7f2b586bfb4cba5dd5fa"
+}

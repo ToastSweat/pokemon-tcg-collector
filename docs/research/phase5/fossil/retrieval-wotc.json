@@ -1,0 +1,29 @@
+[
+  {
+    "name": "wotc-chat",
+    "url": "https://www.elitefourum.com/t/wotc-chat-logs-from-feb-2000-to-nov-2000-q-a-w-employees/16872.json",
+    "retrievedAt": "2026-10-31T20:15:00.760843+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/wotc-chat.json",
+    "bytes": 2292898,
+    "sha256": "c18d7cf04e721ad3072e14f138c47c5bef98a650b525c5f7d665a5da835eec50"
+  },
+  {
+    "name": "composition-search",
+    "url": "https://www.elitefourum.com/search.json?q=%22Fossil%22%20%227%20common%22",
+    "retrievedAt": "2026-10-31T20:15:02.027430+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/composition-search.json",
+    "bytes": 1914,
+    "sha256": "e7d4f03552a6a2d56d70a382280129d3249784749d74e2bf7757ed65aedd7cc0"
+  },
+  {
+    "name": "order-search",
+    "url": "https://www.elitefourum.com/search.json?q=%22Fossil%22%20%22card%20trick%22",
+    "retrievedAt": "2026-10-31T20:15:02.646345+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/order-search.json",
+    "bytes": 1772,
+    "sha256": "ff5c6d4204aae5e64fdf009898b6ef6f8ee92b1d5165e4ba9ccac5c5d4942364"
+  }
+]

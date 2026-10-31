@@ -1,0 +1,8 @@
+test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.016s
+
+OK
+
+exit_code=0

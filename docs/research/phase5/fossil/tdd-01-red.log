@@ -1,0 +1,18 @@
+test_complete_real_retrieved_checklist_builds_proposed_candidate (__main__.FossilCatalogTests.test_complete_real_retrieved_checklist_builds_proposed_candidate) ... FAIL
+
+======================================================================
+FAIL: test_complete_real_retrieved_checklist_builds_proposed_candidate (__main__.FossilCatalogTests.test_complete_real_retrieved_checklist_builds_proposed_candidate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 27, in test_complete_real_retrieved_checklist_builds_proposed_candidate
+    catalog = self.tool().build_catalog(*self.inputs())
+              ~~~~~~~~~^^
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 15, in tool
+    self.assertTrue(path.exists(), 'Fossil authoring implementation is missing')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Fossil authoring implementation is missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

@@ -1,0 +1,111 @@
+[
+  {
+    "citationId": 1,
+    "quote": "The objective is to provide the best possible estimates for card rarities for all English sets that were released with randomized booster packs.",
+    "textFile": "article-context.text.txt",
+    "line": 415,
+    "charOffset": 2348
+  },
+  {
+    "citationId": 1,
+    "quote": "The next couple of rows show how many cards (n) appeared how many times (m, “magnitude”) on the sheets.",
+    "textFile": "article-context.text.txt",
+    "line": 484,
+    "charOffset": 6842
+  },
+  {
+    "citationId": 1,
+    "quote": "It is calculated as 1 / (pack insertion rate * magnitude / sheet size), which simplifies to sheet size / (pack insertion rate * magnitude).",
+    "textFile": "article-context.text.txt",
+    "line": 487,
+    "charOffset": 7569
+  },
+  {
+    "citationId": 1,
+    "quote": "however I am going to be using a sequence length 216 packs (1 case of 6 booster boxes with 36 packs each) for all (or at least most) sets from generation 1 to generation 5",
+    "textFile": "article-context.text.txt",
+    "line": 478,
+    "charOffset": 5662
+  },
+  {
+    "citationId": 1,
+    "quote": "those where the Ivy Pikachu was either removed after cutting or replaced with a blank that was removed. These would be 1st Edition as well as unlimited cards.",
+    "textFile": "article-context.text.txt",
+    "line": 1060,
+    "charOffset": 24662
+  },
+  {
+    "citationId": 1,
+    "quote": "those where the Ivy Pikachu was not removed, whether by mistake or not. Those are only 1st Edition cards.",
+    "textFile": "article-context.text.txt",
+    "line": 1067,
+    "charOffset": 24827
+  },
+  {
+    "citationId": 1,
+    "quote": "those where the blank has been replaced by an Exeggutor. Those would be unlimited cards. It is not clear if this variant was only distributed in Asia.",
+    "textFile": "article-context.text.txt",
+    "line": 1074,
+    "charOffset": 24939
+  },
+  {
+    "citationId": 1,
+    "quote": "The sheet is labelled “Pokémon Jungle EN Asia Form”; I don’t know if that meens these cards were intended for sale in Asia.",
+    "textFile": "article-context.text.txt",
+    "line": 1040,
+    "charOffset": 22804
+  },
+  {
+    "citationId": 1,
+    "quote": "I am assuming the uncommons sheet now has no blank anymore. The rare and holo sheets may be the same as for the other variants, or they may be different.",
+    "textFile": "article-context.text.txt",
+    "line": 1201,
+    "charOffset": 26722
+  },
+  {
+    "citationId": 1,
+    "quote": "Three of the four English sheets (holo, rares, uncommons) are known,  as is a German commons sheet.",
+    "textFile": "article-context.text.txt",
+    "line": 1274,
+    "charOffset": 27577
+  },
+  {
+    "citationId": 1,
+    "quote": "Verification with box opening videos shows the English sheet to be the same as the German one.",
+    "textFile": "article-context.text.txt",
+    "line": 1274,
+    "charOffset": 27677
+  },
+  {
+    "citationId": 2,
+    "imageSourceId": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc",
+    "quote": "1) 1st Edition & Unlimited\nseq 216\nnseq 2376 np 11 set 64\nH sequence insertions 72; per-pack printed 0.333\nH n 14 m 7\nH n 2 m 6\nH distinct total 16 emitted position total 110\nH n 14 p 47.1\nH n 2 p 55.0\nH6    Victreebel, Wigglytuff\nR sequence insertions 144; per-pack printed 0.667\nR n 9 m 8\nR n 7 m 7\nR distinct total 16 emitted position total 121\nR n 9 p 22.7\nR n 7 p 25.9\nR7    Electrode, Jolteon, Mr. Mime, Nidoqueen, Scyther, Vaporeon, Victreebel\nU sequence insertions 648; per-pack printed 3\nU n 8 m 8\nU n 8 m 7\nU distinct total 16 emitted position total 120\nU n 8 p 5.0\nU n 8 p 5.7\nU7    Butterfree, Dodrio, Exeggutor, Fearow, Marowak, Persian, Rapidash, Seaking\nC sequence insertions 1512; per-pack printed 7\nC n 9 m 8\nC n 7 m 7\nC distinct total 16 emitted position total 121\nC n 9 p 2.2\nC n 7 p 2.5\nC7    Eevee, Meowth, Nidoran f, Oddish, Paras, Pikachu, Rhyhorn",
+    "textFile": "jungle-1-removed.visual-transcript.txt",
+    "origin": "MANUAL VISUAL TRANSCRIPTION, not fetched page text or automated OCR; pixels in the hashed PNG are the primary evidence",
+    "transcriptSha256": "9422cdf217ae5f2cbd9b9b088a1164591eeac0263c36305a4cff33d30111aaa0"
+  },
+  {
+    "citationId": 3,
+    "imageSourceId": "3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e",
+    "quote": "2) Error version (1st Edition)\nseq 216\nnseq 2376 np 11 set 65\nH sequence insertions 72; per-pack printed 0.333\nH n 14 m 7\nH n 2 m 6\nH distinct total 16 emitted position total 110\nH n 14 p 47.1\nH n 2 p 55.0\nR sequence insertions 144; per-pack printed 0.667\nR n 9 m 8\nR n 7 m 7\nR distinct total 16 emitted position total 121\nR n 9 p 22.7\nR n 7 p 25.9\nU sequence insertions 648; per-pack printed 3\nU n 8 m 8\nU n 8 m 7\nU n 1 m 1\nU distinct total 17 emitted position total 121\nU n 8 p 5.0\nU n 8 p 5.8\nU n 1 p 40.3\nU1    Pikachu (Promo)\nU7    Butterfree, Dodrio, Exeggutor, Fearow, Marowak, Persian, Rapidash, Seaking\nC sequence insertions 1512; per-pack printed 7\nC n 9 m 8\nC n 7 m 7\nC distinct total 16 emitted position total 121\nC n 9 p 2.2\nC n 7 p 2.5\n(other sheets assumed unchanged)",
+    "textFile": "jungle-2-ivy-error.visual-transcript.txt",
+    "origin": "MANUAL VISUAL TRANSCRIPTION, not fetched page text or automated OCR; pixels in the hashed PNG are the primary evidence",
+    "transcriptSha256": "64d4394202d70cf71b2229fe100cf2fcfdb070508552aa06c94bb43bd56bf53d"
+  },
+  {
+    "citationId": 4,
+    "imageSourceId": "412a4015bff1ef1eb12453acbc355cf7448ab776",
+    "quote": "3) Unlimited (new uncommons sheet)\nseq 216\nnseq 2376 np 11 set 64\nH sequence insertions 72; per-pack printed 0.333\nH n 14 m 7\nH n 2 m 6\nH distinct total 16 emitted position total 110\nH n 14 p 47.1\nH n 2 p 55.0\nR sequence insertions 144; per-pack printed 0.667\nR n 9 m 8\nR n 7 m 7\nR distinct total 16 emitted position total 121\nR n 9 p 22.7\nR n 7 p 25.9\nU sequence insertions 648; per-pack printed 3\nU n 9 m 8\nU n 7 m 7\nU distinct total 16 emitted position total 121\nU n 9 p 5.0\nU n 7 p 5.8\nU7    Butterfree, Dodrio, Fearow, Marowak, Persian, Rapidash, Seaking\nC sequence insertions 1512; per-pack printed 7\nC n 9 m 8\nC n 7 m 7\nC distinct total 16 emitted position total 121\nC n 9 p 2.2\nC n 7 p 2.5\n(other sheets assumed unchanged)",
+    "textFile": "jungle-3-exeggutor.visual-transcript.txt",
+    "origin": "MANUAL VISUAL TRANSCRIPTION, not fetched page text or automated OCR; pixels in the hashed PNG are the primary evidence",
+    "transcriptSha256": "fa0c9b89e37d61cc2b27cfb228a0db21c43fe12ff7eb40d7b6cdb58617a1e6bd"
+  },
+  {
+    "citationId": 5,
+    "imageSourceId": "18d87beedd4eb026e3af510c22670f09e3d2ce30",
+    "quote": "1) 1st Edition & Unlimited\nseq 216\nnseq 2376 np 11 set 62\nH sequence insertions 72; per-pack printed 0.333\nH n 5 m 8\nH n 10 m 7\nH distinct total 15 emitted position total 110\nH n 5 p 41.3\nH n 10 p 47.1\nH8    Aerodactyl, Articuno, Haunter, Kabutops, Magneton\nR sequence insertions 144; per-pack printed 0.667\nR n 1 m 9\nR n 14 m 8\nR distinct total 15 emitted position total 121\nR n 1 p 20.2\nR n 14 p 22.7\nR9    Ditto\nU sequence insertions 648; per-pack printed 3\nU n 9 m 8\nU n 7 m 7\nU distinct total 16 emitted position total 121\nU n 9 p 5.0\nU n 7 p 5.8\nU7    Gastly, Golbat, Golduck, Golem, Omastar, Slowbro, Tentacruel\nC sequence insertions 1512; per-pack printed 7\nC n 9 m 8\nC n 7 m 7\nC distinct total 16 emitted position total 121\nC n 9 p 2.2\nC n 7 p 2.5\nC7    Grimer, Krabby, Psyduck, Tentacool, Zubat, Gambler, Mysterious Fossil",
+    "textFile": "fossil-1.visual-transcript.txt",
+    "origin": "MANUAL VISUAL TRANSCRIPTION, not fetched page text or automated OCR; pixels in the hashed PNG are the primary evidence",
+    "transcriptSha256": "14f2e9854e116a2ecde0eda127ef4c4be794d18d48af4e25a34e2c1dc72a7fb7"
+  }
+]

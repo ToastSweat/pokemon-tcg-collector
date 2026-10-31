@@ -1,0 +1,728 @@
+{
+  "schema": "research-transcription-not-rules/v1",
+  "status": "unapproved-secondary-author-reconstruction",
+  "authenticatedFactoryCounts": false,
+  "tables": [
+    {
+      "tableId": "jungle-1-removed",
+      "imageSourceId": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc",
+      "citationId": 2,
+      "setId": "jungle",
+      "titleVerbatim": "1) 1st Edition & Unlimited",
+      "sequenceLength": 216,
+      "sequenceInsertions": {
+        "H": 72,
+        "R": 144,
+        "U": 648,
+        "C": 1512
+      },
+      "perPackInsertionsPrinted": {
+        "H": "0.333",
+        "R": "0.667",
+        "U": "3",
+        "C": "7"
+      },
+      "nseq": 2376,
+      "np": 11,
+      "setSize": 64,
+      "ocrUsed": false,
+      "uncertainReadings": [],
+      "method": "Manual native-vision transcription of saved original-resolution PNG; not OCR. Whitespace between exception code and names is normalized to four spaces; words/punctuation preserved.",
+      "pixelRegions": {
+        "title": [
+          0,
+          0,
+          881,
+          36
+        ],
+        "insertionMetrics": [
+          0,
+          35,
+          628,
+          133
+        ],
+        "nmGroups": [
+          0,
+          132,
+          502,
+          321
+        ],
+        "pRows": [
+          0,
+          321,
+          502,
+          510
+        ],
+        "exceptionNames": [
+          0,
+          540,
+          881,
+          670
+        ]
+      },
+      "pools": [
+        {
+          "symbol": "H",
+          "groups": [
+            {
+              "n": 14,
+              "m": 7
+            },
+            {
+              "n": 2,
+              "m": 6
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 110,
+          "pRows": [
+            {
+              "n": 14,
+              "p": "47.1"
+            },
+            {
+              "n": 2,
+              "p": "55.0"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "H6    Victreebel, Wigglytuff"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "R",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "22.7"
+            },
+            {
+              "n": 7,
+              "p": "25.9"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "R7    Electrode, Jolteon, Mr. Mime, Nidoqueen, Scyther, Vaporeon, Victreebel"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "U",
+          "groups": [
+            {
+              "n": 8,
+              "m": 8
+            },
+            {
+              "n": 8,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 120,
+          "pRows": [
+            {
+              "n": 8,
+              "p": "5.0"
+            },
+            {
+              "n": 8,
+              "p": "5.7"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "U7    Butterfree, Dodrio, Exeggutor, Fearow, Marowak, Persian, Rapidash, Seaking"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "C",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "2.2"
+            },
+            {
+              "n": 7,
+              "p": "2.5"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "C7    Eevee, Meowth, Nidoran f, Oddish, Paras, Pikachu, Rhyhorn"
+          ],
+          "exceptionNameInheritance": null
+        }
+      ],
+      "footerVerbatim": null
+    },
+    {
+      "tableId": "jungle-2-ivy-error",
+      "imageSourceId": "3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e",
+      "citationId": 3,
+      "setId": "jungle",
+      "titleVerbatim": "2) Error version (1st Edition)",
+      "sequenceLength": 216,
+      "sequenceInsertions": {
+        "H": 72,
+        "R": 144,
+        "U": 648,
+        "C": 1512
+      },
+      "perPackInsertionsPrinted": {
+        "H": "0.333",
+        "R": "0.667",
+        "U": "3",
+        "C": "7"
+      },
+      "nseq": 2376,
+      "np": 11,
+      "setSize": 65,
+      "ocrUsed": false,
+      "uncertainReadings": [],
+      "method": "Manual native-vision transcription of saved original-resolution PNG; not OCR. Whitespace between exception code and names is normalized to four spaces; words/punctuation preserved.",
+      "pixelRegions": {
+        "title": [
+          0,
+          0,
+          881,
+          36
+        ],
+        "insertionMetrics": [
+          0,
+          35,
+          628,
+          133
+        ],
+        "nmGroups": [
+          0,
+          132,
+          502,
+          321
+        ],
+        "pRows": [
+          0,
+          321,
+          502,
+          510
+        ],
+        "exceptionNames": [
+          0,
+          540,
+          881,
+          638
+        ]
+      },
+      "pools": [
+        {
+          "symbol": "H",
+          "groups": [
+            {
+              "n": 14,
+              "m": 7
+            },
+            {
+              "n": 2,
+              "m": 6
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 110,
+          "pRows": [
+            {
+              "n": 14,
+              "p": "47.1"
+            },
+            {
+              "n": 2,
+              "p": "55.0"
+            }
+          ],
+          "exceptionLinesVerbatim": [],
+          "exceptionNameInheritance": "jungle-1-removed:H; caption explicitly assumes other sheets unchanged"
+        },
+        {
+          "symbol": "R",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "22.7"
+            },
+            {
+              "n": 7,
+              "p": "25.9"
+            }
+          ],
+          "exceptionLinesVerbatim": [],
+          "exceptionNameInheritance": "jungle-1-removed:R; caption explicitly assumes other sheets unchanged"
+        },
+        {
+          "symbol": "U",
+          "groups": [
+            {
+              "n": 8,
+              "m": 8
+            },
+            {
+              "n": 8,
+              "m": 7
+            },
+            {
+              "n": 1,
+              "m": 1
+            }
+          ],
+          "distinctCardTotal": 17,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 8,
+              "p": "5.0"
+            },
+            {
+              "n": 8,
+              "p": "5.8"
+            },
+            {
+              "n": 1,
+              "p": "40.3"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "U1    Pikachu (Promo)",
+            "U7    Butterfree, Dodrio, Exeggutor, Fearow, Marowak, Persian, Rapidash, Seaking"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "C",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "2.2"
+            },
+            {
+              "n": 7,
+              "p": "2.5"
+            }
+          ],
+          "exceptionLinesVerbatim": [],
+          "exceptionNameInheritance": "jungle-1-removed:C; caption explicitly assumes other sheets unchanged"
+        }
+      ],
+      "footerVerbatim": "(other sheets assumed unchanged)"
+    },
+    {
+      "tableId": "jungle-3-exeggutor",
+      "imageSourceId": "412a4015bff1ef1eb12453acbc355cf7448ab776",
+      "citationId": 4,
+      "setId": "jungle",
+      "titleVerbatim": "3) Unlimited (new uncommons sheet)",
+      "sequenceLength": 216,
+      "sequenceInsertions": {
+        "H": 72,
+        "R": 144,
+        "U": 648,
+        "C": 1512
+      },
+      "perPackInsertionsPrinted": {
+        "H": "0.333",
+        "R": "0.667",
+        "U": "3",
+        "C": "7"
+      },
+      "nseq": 2376,
+      "np": 11,
+      "setSize": 64,
+      "ocrUsed": false,
+      "uncertainReadings": [],
+      "method": "Manual native-vision transcription of saved original-resolution PNG; not OCR. Whitespace between exception code and names is normalized to four spaces; words/punctuation preserved.",
+      "pixelRegions": {
+        "title": [
+          0,
+          0,
+          881,
+          36
+        ],
+        "insertionMetrics": [
+          0,
+          35,
+          628,
+          133
+        ],
+        "nmGroups": [
+          0,
+          132,
+          502,
+          321
+        ],
+        "pRows": [
+          0,
+          321,
+          502,
+          510
+        ],
+        "exceptionNames": [
+          0,
+          540,
+          881,
+          607
+        ]
+      },
+      "pools": [
+        {
+          "symbol": "H",
+          "groups": [
+            {
+              "n": 14,
+              "m": 7
+            },
+            {
+              "n": 2,
+              "m": 6
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 110,
+          "pRows": [
+            {
+              "n": 14,
+              "p": "47.1"
+            },
+            {
+              "n": 2,
+              "p": "55.0"
+            }
+          ],
+          "exceptionLinesVerbatim": [],
+          "exceptionNameInheritance": "jungle-1-removed:H; caption explicitly assumes other sheets unchanged"
+        },
+        {
+          "symbol": "R",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "22.7"
+            },
+            {
+              "n": 7,
+              "p": "25.9"
+            }
+          ],
+          "exceptionLinesVerbatim": [],
+          "exceptionNameInheritance": "jungle-1-removed:R; caption explicitly assumes other sheets unchanged"
+        },
+        {
+          "symbol": "U",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "5.0"
+            },
+            {
+              "n": 7,
+              "p": "5.8"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "U7    Butterfree, Dodrio, Fearow, Marowak, Persian, Rapidash, Seaking"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "C",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "2.2"
+            },
+            {
+              "n": 7,
+              "p": "2.5"
+            }
+          ],
+          "exceptionLinesVerbatim": [],
+          "exceptionNameInheritance": "jungle-1-removed:C; caption explicitly assumes other sheets unchanged"
+        }
+      ],
+      "footerVerbatim": "(other sheets assumed unchanged)"
+    },
+    {
+      "tableId": "fossil-1",
+      "imageSourceId": "18d87beedd4eb026e3af510c22670f09e3d2ce30",
+      "citationId": 5,
+      "setId": "fossil",
+      "titleVerbatim": "1) 1st Edition & Unlimited",
+      "sequenceLength": 216,
+      "sequenceInsertions": {
+        "H": 72,
+        "R": 144,
+        "U": 648,
+        "C": 1512
+      },
+      "perPackInsertionsPrinted": {
+        "H": "0.333",
+        "R": "0.667",
+        "U": "3",
+        "C": "7"
+      },
+      "nseq": 2376,
+      "np": 11,
+      "setSize": 62,
+      "ocrUsed": false,
+      "uncertainReadings": [],
+      "method": "Manual native-vision transcription of saved original-resolution PNG; not OCR. Whitespace between exception code and names is normalized to four spaces; words/punctuation preserved.",
+      "pixelRegions": {
+        "title": [
+          0,
+          0,
+          881,
+          36
+        ],
+        "insertionMetrics": [
+          0,
+          35,
+          628,
+          133
+        ],
+        "nmGroups": [
+          0,
+          132,
+          502,
+          321
+        ],
+        "pRows": [
+          0,
+          321,
+          502,
+          510
+        ],
+        "exceptionNames": [
+          0,
+          540,
+          881,
+          670
+        ]
+      },
+      "pools": [
+        {
+          "symbol": "H",
+          "groups": [
+            {
+              "n": 5,
+              "m": 8
+            },
+            {
+              "n": 10,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 15,
+          "emittedPositionTotal": 110,
+          "pRows": [
+            {
+              "n": 5,
+              "p": "41.3"
+            },
+            {
+              "n": 10,
+              "p": "47.1"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "H8    Aerodactyl, Articuno, Haunter, Kabutops, Magneton"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "R",
+          "groups": [
+            {
+              "n": 1,
+              "m": 9
+            },
+            {
+              "n": 14,
+              "m": 8
+            }
+          ],
+          "distinctCardTotal": 15,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 1,
+              "p": "20.2"
+            },
+            {
+              "n": 14,
+              "p": "22.7"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "R9    Ditto"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "U",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "5.0"
+            },
+            {
+              "n": 7,
+              "p": "5.8"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "U7    Gastly, Golbat, Golduck, Golem, Omastar, Slowbro, Tentacruel"
+          ],
+          "exceptionNameInheritance": null
+        },
+        {
+          "symbol": "C",
+          "groups": [
+            {
+              "n": 9,
+              "m": 8
+            },
+            {
+              "n": 7,
+              "m": 7
+            }
+          ],
+          "distinctCardTotal": 16,
+          "emittedPositionTotal": 121,
+          "pRows": [
+            {
+              "n": 9,
+              "p": "2.2"
+            },
+            {
+              "n": 7,
+              "p": "2.5"
+            }
+          ],
+          "exceptionLinesVerbatim": [
+            "C7    Grimer, Krabby, Psyduck, Tentacool, Zubat, Gambler, Mysterious Fossil"
+          ],
+          "exceptionNameInheritance": null
+        }
+      ],
+      "footerVerbatim": null
+    }
+  ],
+  "declaredNameAliases": [
+    {
+      "sourceLiteral": "Nidoran f",
+      "catalogDisplayName": "Nidoran♀",
+      "catalogSourceName": "Nidoran ♀",
+      "scope": "jungle C7 line only; not arbitrary gender or accent normalization"
+    }
+  ],
+  "interpretationRules": [
+    "n is number of distinct cards; m is appearances per card, per retrieved article definition.",
+    "Unlisted names receive the complementary magnitude only within the matching catalog rarity; not across holo/nonholo names.",
+    "Jungle second/third charts repeat all numeric groups but inherit H/R/C exception-name assignments from chart 1 under their explicit footer assumption.",
+    "Pikachu (Promo) in chart 2 is an excluded First Edition promo, NOT common Jungle Pikachu #60.",
+    "120 is the chart-1 emitted uncommon total; blank/removed Ivy is not a candidate card or an extra emitted outcome.",
+    "Chart headings do not authenticate physical printing, factory, geography or mixture prevalence."
+  ]
+}

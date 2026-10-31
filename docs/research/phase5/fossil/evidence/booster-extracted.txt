@@ -1,0 +1,6 @@
+# Booster pack (TCG) - Bulbapedia, the community-driven Pokémon encyclopedia
+URL: https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)
+
+Retrieved via web_extract on 2026-10-31; direct urllib returned HTTP 403. This is the exact returned Overview paragraph relevant to historical pack count, not a Fossil-specific collation source.
+
+Booster packs have contained varying amounts of cards over the years. From the first Base Set through to Neo Destiny expansion, internationally released boosters contained 11 cards. Beginning with the e-Card Series and continuing through the entirety of the EX Series, boosters had only 9 cards. Since the release of the first Diamond & Pearl expansion, these consistently had 10 cards.

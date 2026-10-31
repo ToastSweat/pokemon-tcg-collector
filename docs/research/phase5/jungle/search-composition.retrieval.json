@@ -1,0 +1,32 @@
+{
+  "key": "search-composition",
+  "requestedUrl": "https://www.google.com/search?q=Jungle+booster+pack+7+common+3+uncommon+1+rare+energy",
+  "retrievedUtc": "2026-10-31T20:10:24.079159+00:00",
+  "finalUrl": "https://www.google.com/search?q=Jungle+booster+pack+7+common+3+uncommon+1+rare+energy",
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=UTF-8",
+    "Content-Security-Policy": "object-src 'none';base-uri 'self';script-src 'nonce-mUZ6ehZYl55cmWo2kn2BQQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/xsrp",
+    "Accept-CH": "Sec-CH-Prefers-Color-Scheme",
+    "X-Content-Type-Options": "nosniff",
+    "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+    "Date": "Sat, 31 Oct 2026 20:10:22 GMT",
+    "Server": "gws",
+    "X-XSS-Protection": "0",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Expires": "Sat, 31 Oct 2026 20:10:22 GMT",
+    "Cache-Control": "private",
+    "Set-Cookie": "__Secure-STRP=ABNhA6jCtZA8YyUiwtmJ_KKELIphtric1IZUsADzH9Rp1eofxarxBjn0QUkWJ2bljCboqrlqE2KBPm31dOVHhWkRxutLtl0qDDOd; expires=Sat, 31-Oct-2026 20:15:22 GMT; path=/; domain=.google.com; Secure; SameSite=strict",
+    "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "Accept-Ranges": "none",
+    "Vary": "Accept-Encoding",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+  },
+  "title": "Google Search",
+  "rawPath": "docs/research/phase5/jungle/search-composition.raw.html",
+  "rawSha256": "674338168615a20875dceddf967eb57fee82b80ae13f108d34704a69c94ebb89",
+  "textPath": "docs/research/phase5/jungle/search-composition.text.txt",
+  "textSha256": "d2f2c08a6c9671fd4eb3ea8ec36887ff8816bcd07be73e9bcbed1d03c4321c0c",
+  "bytes": 93136
+}

@@ -1,0 +1,25 @@
+{
+  "key": "pokellector",
+  "requestedUrl": "https://www.pokellector.com/Jungle-Expansion",
+  "retrievedUtc": "2026-10-31T20:09:44.839914+00:00",
+  "finalUrl": "https://www.pokellector.com/Jungle-Expansion",
+  "status": 200,
+  "headers": {
+    "Date": "Sat, 31 Oct 2026 20:09:43 GMT",
+    "Server": "Apache/2.4.25 (CentOS) OpenSSL/1.0.1e-fips",
+    "X-Powered-By": "PHP/5.6.37",
+    "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+    "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+    "Pragma": "no-cache",
+    "Set-Cookie": "PHPSESSID=de9uobpv3mn9pqc4cur7qvfsc4; path=/",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "title": "Jungle Pokemon Card Set List",
+  "rawPath": "docs/research/phase5/jungle/pokellector.raw.html",
+  "rawSha256": "e3821dbb9bf5bca94bb6483ddb53627b3c70e831e9f3f8a8deb7f4fe4914ce25",
+  "textPath": "docs/research/phase5/jungle/pokellector.text.txt",
+  "textSha256": "8bd88b768946fa15cebb94c908a53d1c3a4772a4835bbf346333c6ba1909932a",
+  "bytes": 68136
+}

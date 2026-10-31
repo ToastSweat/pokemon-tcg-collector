@@ -1,0 +1,8 @@
+test_complete_real_retrieved_checklist_builds_proposed_candidate (__main__.FossilCatalogTests.test_complete_real_retrieved_checklist_builds_proposed_candidate) ... ok
+test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) ... ok
+test_third_source_and_complete_canonical_coverage_fail_closed (__main__.FossilCatalogTests.test_third_source_and_complete_canonical_coverage_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.075s
+
+OK

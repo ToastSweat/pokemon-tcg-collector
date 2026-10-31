@@ -1,0 +1,10 @@
+test_build_candidate_only_separates_policy_from_membership (__main__.JungleAuthoringTests.test_build_candidate_only_separates_policy_from_membership) ... ok
+test_crosscheck_all_fields_against_independent_json_and_names_against_third_source (__main__.JungleAuthoringTests.test_crosscheck_all_fields_against_independent_json_and_names_against_third_source) ... ok
+test_parse_independent_bulbapedia_complete_membership (__main__.JungleAuthoringTests.test_parse_independent_bulbapedia_complete_membership) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK
+
+EXIT 0

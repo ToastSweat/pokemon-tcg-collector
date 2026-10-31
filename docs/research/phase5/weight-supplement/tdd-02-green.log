@@ -1,0 +1,9 @@
+test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy) ... ok
+test_rejects_caption_variant_mixing (__main__.WeightEvidenceTests.test_rejects_caption_variant_mixing) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.020s
+
+OK
+
+exit_code=0

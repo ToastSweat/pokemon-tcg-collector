@@ -1,0 +1,47 @@
+test_complete_real_retrieved_checklist_builds_proposed_candidate (__main__.FossilCatalogTests.test_complete_real_retrieved_checklist_builds_proposed_candidate) ... ok
+test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) ... 
+  test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='number') ... FAIL
+  test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='name') ... FAIL
+  test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='rarity') ... FAIL
+  test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='supertype') ... FAIL
+
+======================================================================
+FAIL: test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='number')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 48, in test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia
+    with self.assertRaisesRegex(ValueError, 'crosscheck'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='name')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 48, in test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia
+    with self.assertRaisesRegex(ValueError, 'crosscheck'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='rarity')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 48, in test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia
+    with self.assertRaisesRegex(ValueError, 'crosscheck'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia (__main__.FossilCatalogTests.test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia) (field='supertype')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\TestsPhase5\FossilCatalogTests.py", line 48, in test_every_number_name_rarity_kind_finish_matches_independent_bulbapedia
+    with self.assertRaisesRegex(ValueError, 'crosscheck'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.009s
+
+FAILED (failures=4)

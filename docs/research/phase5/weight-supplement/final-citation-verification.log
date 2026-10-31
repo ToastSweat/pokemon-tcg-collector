@@ -1,0 +1,22 @@
+COMMAND: ('render', '--replace-in', 'F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\phase5\\weight-supplement\\REPORT.md')
+Sources block rewritten in F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\docs\research\phase5\weight-supplement\REPORT.md
+
+
+exit_code=0
+COMMAND: ('verify', 'F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\phase5\\weight-supplement\\REPORT.md', '--strict', '--evidence')
+info: stats: 39 prose sentence(s), 11 with declared provenance (28%) — 11 cited, 0 marked [unverified] (a sentence may be both); 5 distinct source(s) cited, 5 in ledger (5 with evidence quotes)
+citations OK
+
+
+exit_code=0
+COMMAND: ('render', '--replace-in', 'F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\phase5\\weight-supplement\\per-card-transcription.md')
+Sources block rewritten in F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\docs\research\phase5\weight-supplement\per-card-transcription.md
+
+
+exit_code=0
+COMMAND: ('verify', 'F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\research\\phase5\\weight-supplement\\per-card-transcription.md', '--strict', '--evidence')
+info: stats: 12 prose sentence(s), 5 with declared provenance (42%) — 5 cited, 0 marked [unverified] (a sentence may be both); 5 distinct source(s) cited, 5 in ledger (5 with evidence quotes)
+citations OK
+
+
+exit_code=0

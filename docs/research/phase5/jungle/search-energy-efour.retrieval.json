@@ -1,0 +1,6 @@
+{
+  "key": "search-energy-efour",
+  "requestedUrl": "https://www.elitefourum.com/search.json?q=%22jungle%22%20%22energy%22%20%22pack%22",
+  "retrievedUtc": "2026-10-31T20:12:32.765502+00:00",
+  "error": "HTTP Error 429: Too Many Requests"
+}

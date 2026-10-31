@@ -1,0 +1,10 @@
+test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy) ... ok
+test_rejects_caption_variant_mixing (__main__.WeightEvidenceTests.test_rejects_caption_variant_mixing) ... ok
+test_rejects_wrong_names_numbers_totals_and_source_ids (__main__.WeightEvidenceTests.test_rejects_wrong_names_numbers_totals_and_source_ids) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.051s
+
+OK
+
+exit_code=0

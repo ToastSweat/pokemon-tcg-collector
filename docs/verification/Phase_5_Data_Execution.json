@@ -1,0 +1,54 @@
+{
+  "status": "research-data-placeholder-appearance-checkpoint-independently-reviewed",
+  "scope": "Phase 5 authoring preparation only; not a playable new-set runtime acceptance",
+  "candidateCatalogs": {
+    "jungle": "Authoring/Phase5/Data/jungle-en-unlimited1999.catalog.json",
+    "jungleCards": 64,
+    "fossil": "Authoring/Phase5/Data/fossil-en-unlimited1999.catalog.json",
+    "fossilCards": 62,
+    "combinedNewCandidates": 126,
+    "threeCatalogIdentityReadbackIncludingBase": 227,
+    "sourceCandidatesRemainPointInTimeProposed": true
+  },
+  "actualDataProof": ".artifacts/phase5-catalog-index/actual-three-catalogs-09/results.json",
+  "actualDataProofNamedGroups": 8,
+  "placeholderManifest": "Authoring/Phase5/Placeholders/PlaceholderManifest.json",
+  "placeholderArtFiles": 8,
+  "wrapperFrontsPerNewSet": 3,
+  "validatedPngFilesIncludingContactSheet": 9,
+  "placeholderRuntimeBound": false,
+  "wrapperSelection": {
+    "source": "Authoring/Phase5/Code/WrapperVariant.cs",
+    "api": "VintageCollector.Presentation.WrapperVariant.ForTransaction(string transactionId)",
+    "namedGroupsPassed": 5,
+    "generationRngOrStoreDependency": false,
+    "nativeUnityIntegrationClaimed": false
+  },
+  "independentReviews": [
+    "docs/verification/Phase_5_Data_Independent_Review.json",
+    "docs/verification/Phase_5_Placeholder_Independent_Review.json",
+    "docs/verification/Phase_5_Weights_Independent_Review.json"
+  ],
+  "historicalRejection": "docs/verification/Phase_5_Weights_Review_Cycle_1.json",
+  "weightCorrection": "Raw saved transcript SHA-256 metadata corrected; all numeric weights/source images/transcript bytes preserved",
+  "approvedModelDecision": {
+    "path": "docs/verification/Phase_5_Model_Approval.json",
+    "sha256": "014260958e10bc3c2d9b28018b66026ca73490732e6f618c7b045233101fed9d",
+    "userSelection": "Use the sheet-informed provisional models for both sets",
+    "sourceWeightsSha256": "7ceb3d2b4a429c927301e77be965efcb506d41228a0324bc2ff43e3d012713ef"
+  },
+  "preservation": {
+    "before": ".artifacts/phase5-preservation/before.json",
+    "after": ".artifacts/phase5-preservation/after-data-art.json",
+    "oldPlayers": 8,
+    "immutableOldPlayerMembers": 1088,
+    "existingSourceMembers": 480,
+    "originalArtAndCryFiles": 416,
+    "allUnchangedAtAuthoringCheckpoint": true,
+    "savesAndLogsPrunedBeforeTraversal": true
+  },
+  "nextActiveWork": "Approved canonical model generation proof and isolated source-copy core/UI/controller/build implementation under FROZEN runtime contract",
+  "runtimeContract": "docs/technical/Phase_5_Runtime_Contract.md",
+  "playableJungleFossilClaimed": false,
+  "additionalBlanketApprovalNeeded": false
+}

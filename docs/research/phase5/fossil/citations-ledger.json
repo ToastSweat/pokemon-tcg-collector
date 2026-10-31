@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://raw.githubusercontent.com/PokemonTCG/pokemon-tcg-data/master/cards/en/base3.json",
+      "title": "api",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "\"rarity\": \"Rare Holo\"",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "\"id\": \"base3-1\",\n    \"name\": \"Aerodactyl\",\n    \"supertype\": \"Pokémon\",",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://www.pokellector.com/Fossil-Expansion",
+      "title": "pokellector",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "#62 - Mysterious Fossil",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Fossil_(TCG)",
+      "title": "bulbapedia",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "The non-holographic cards obtained from these red logo packs have a 1999-2000 copyright at the bottom of the card as well as a different card stock.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Note that the holographic cards obtained from these red logo packs have the standard 1999 copyright at the bottom.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Fossil was the final expansion to use the Starlight Holofoil.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "English Lapras pack",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "English Aerodactyl pack",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "English Zapdos pack",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Pokémon League Prerelease promo (Gold Version)",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "How these English Cosmos holofoil Fossil cards were released is unknown, but rumors state they were leaked by WotC employees.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762",
+      "title": "rarity-guide",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "Three of the four English sheets (holo, rares, uncommons) are known, as is a German commons sheet.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "Verification with box opening videos shows the English sheet to be the same as the German one.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "There are no artificial rarity differences, and the choice which cards appear on the sheet more often seems random.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://www.elitefourum.com/t/pokemon-fossil-1999-2000-australian-3rd-print-run/11344",
+      "title": "australian",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "We opened packs and found that holos do NOT have the 1999-2000 copyright date.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://pokemuseum.weebly.com/uncut-sheets.html",
+      "title": "sheets",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "Unlimited Rare - 4th Run: Company: PBM Graphics, Date: 11/1/99 - Form 4, Job # W06071110 03 140, PBM # 81647",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "title": "Booster pack (TCG); recovered extraction after direct 403",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "From the first Base Set through to Neo Destiny expansion, internationally released boosters contained 11 cards.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": "https://www.elitefourum.com/t/wotc-chat-logs-from-feb-2000-to-nov-2000-q-a-w-employees/16872.json",
+      "title": "Community reproduction of WotC chat logs, Feb-Nov 2000",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "Will there be better odds of getting foils in Base Set 2 and Rocket? No, the same odds. Basically a 1 in 3 chance of a foil card in a booster pack.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "When the cards are printed, the number of foils is 1 in 3 packs. Some people get better odds, some get worse.",
+          "added": "2026-10-31"
+        },
+        {
+          "text": "What is the pack design of TR? Like 11 cards. 1 Rare, 2 Rare, Etc. Should have the same odds as usual, 1 rare, 3 uncommon, 7 commons.",
+          "added": "2026-10-31"
+        }
+      ]
+    }
+  ]
+}

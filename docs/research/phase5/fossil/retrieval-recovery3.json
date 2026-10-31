@@ -1,0 +1,32 @@
+[
+  {
+    "name": "booster-archive-today",
+    "url": "https://archive.ph/newest/https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+    "retrievedAt": "2026-10-31T20:13:04.252974+00:00",
+    "error": "<HTTPError 429: 'Too Many Requests'>"
+  },
+  {
+    "name": "booster-raw",
+    "url": "https://bulbapedia.bulbagarden.net/w/index.php?title=Booster_pack_(TCG)&action=raw",
+    "retrievedAt": "2026-10-31T20:13:04.253464+00:00",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "name": "fossil-search-efour",
+    "url": "https://www.elitefourum.com/search.json?q=fossil%20pack%20order",
+    "retrievedAt": "2026-10-31T20:13:04.253759+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/fossil-search-efour.json",
+    "bytes": 74538,
+    "sha256": "26c0d1682fd070f8696f4962587ab421e84a8d38c061b7b2e0f4cc0cc1cedc43"
+  },
+  {
+    "name": "fossil-search-efour-composition",
+    "url": "https://www.elitefourum.com/search.json?q=fossil%207%20commons",
+    "retrievedAt": "2026-10-31T20:13:04.254029+00:00",
+    "status": 200,
+    "path": "docs/research/phase5/fossil/evidence/fossil-search-efour-composition.json",
+    "bytes": 71490,
+    "sha256": "8c3e69b8e8d7fa567c85b5fa178d7b486938aea5c78f68c8d2b3e45d5405feaf"
+  }
+]

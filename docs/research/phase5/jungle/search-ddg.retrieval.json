@@ -1,0 +1,31 @@
+{
+  "key": "search-ddg",
+  "requestedUrl": "https://html.duckduckgo.com/html/?q=Jungle+booster+pack+card+order+rare+energy",
+  "retrievedUtc": "2026-10-31T20:10:48.981413+00:00",
+  "finalUrl": "https://html.duckduckgo.com/html/?q=Jungle+booster+pack+card+order+rare+energy",
+  "status": 202,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sat, 31 Oct 2026 20:10:47 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Server-Timing": "total;dur=21;desc=\"Backend Total [n]\"",
+    "Vary": "Origin",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Robots-Tag": "noindex",
+    "Permissions-Policy": "interest-cohort=()",
+    "Content-Security-Policy": "default-src 'none' ; connect-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; manifest-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; media-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; script-src blob:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; font-src data:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; img-src data:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; style-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; object-src 'none' ; worker-src blob: ; child-src blob:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; frame-src blob:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; frame-ancestors 'self' ; base-uri 'self' ; block-all-mixed-content ;",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1;mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "origin",
+    "Expect-CT": "max-age=0"
+  },
+  "title": "DuckDuckGo",
+  "rawPath": "docs/research/phase5/jungle/search-ddg.raw.html",
+  "rawSha256": "49996a448aa21e69fd1f7bd24847575704ad3e9b95ba1e3d7ba627ba15814a70",
+  "textPath": "docs/research/phase5/jungle/search-ddg.text.txt",
+  "textSha256": "85de64ad4e7a920e74ed86184fed26d7bafb998c4e91995412b4c5b23b8dafac",
+  "bytes": 14300
+}

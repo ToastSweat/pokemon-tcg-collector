@@ -1,0 +1,180 @@
+{
+  "assets": [
+    {
+      "bindingId": "fossil.card-face-template.template",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 825,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/fossil-card-face-template.png",
+      "role": "card-face-template",
+      "setId": "fossil",
+      "sha256": "3198afe9a1e99a5cf753020208b5daa3b616b6731d70314c4f24f18efe2b7df7",
+      "variant": "template",
+      "width": 600
+    },
+    {
+      "bindingId": "fossil.wrapper-front.A",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 475,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/fossil-wrapper-A.png",
+      "role": "wrapper-front",
+      "setId": "fossil",
+      "sha256": "322109a123100803e284580197e99289648a67699300600408e6772239e36a82",
+      "variant": "A",
+      "width": 260
+    },
+    {
+      "bindingId": "fossil.wrapper-front.B",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 475,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/fossil-wrapper-B.png",
+      "role": "wrapper-front",
+      "setId": "fossil",
+      "sha256": "03af630e58f4b5e50a58f911c5c61b7f81dc9fcc04cfc505dbe97687fd7ee6e4",
+      "variant": "B",
+      "width": 260
+    },
+    {
+      "bindingId": "fossil.wrapper-front.C",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 475,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/fossil-wrapper-C.png",
+      "role": "wrapper-front",
+      "setId": "fossil",
+      "sha256": "89ed32d67606bb0b1ef27cd7917c4cd2a645798c363ed3388796e152226447c4",
+      "variant": "C",
+      "width": 260
+    },
+    {
+      "bindingId": "jungle.card-face-template.template",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 825,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/jungle-card-face-template.png",
+      "role": "card-face-template",
+      "setId": "jungle",
+      "sha256": "bdd7124b2f44a946929e5cedb96c8f6cc8ebaf5d6b276b61fb23eca28c50390a",
+      "variant": "template",
+      "width": 600
+    },
+    {
+      "bindingId": "jungle.wrapper-front.A",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 475,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/jungle-wrapper-A.png",
+      "role": "wrapper-front",
+      "setId": "jungle",
+      "sha256": "dd886ac36f1ccaad51fbf250ec6f6e158b98579e942c082dbe58555c8fbadb29",
+      "variant": "A",
+      "width": 260
+    },
+    {
+      "bindingId": "jungle.wrapper-front.B",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 475,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/jungle-wrapper-B.png",
+      "role": "wrapper-front",
+      "setId": "jungle",
+      "sha256": "af2d644d210b7aa43664c669f8724d96f94d87027b1ea69e57e50982dac569a0",
+      "variant": "B",
+      "width": 260
+    },
+    {
+      "bindingId": "jungle.wrapper-front.C",
+      "format": "PNG RGBA8 noninterlaced",
+      "height": 475,
+      "provenance": {
+        "historicalArtSubjectClaim": false,
+        "intendedUse": "replaceable private-project presentation; not a card identity",
+        "origin": "original procedural geometric placeholder",
+        "sourcePixelsReused": false
+      },
+      "relativePath": "Authoring/Phase5/Placeholders/jungle-wrapper-C.png",
+      "role": "wrapper-front",
+      "setId": "jungle",
+      "sha256": "02c6d9da8baddbccd2359a9f0760d48a8bc78031af8e1436ff242105f9235661",
+      "variant": "C",
+      "width": 260
+    }
+  ],
+  "dimensionReferences": [
+    {
+      "height": 825,
+      "relativePath": "Pokemon-Base-Set/base1-001.png",
+      "role": "card-face-template",
+      "sha256": "cdb5e747c2f20c84ad7b5449d498b450a590bf6ff082abd9fbbea67564e1d9f8",
+      "use": "dimension metadata only; no source pixels copied or decoded",
+      "width": 600
+    },
+    {
+      "height": 475,
+      "relativePath": "Pokemon-Base-Set/base1-base-set-booster-charizard-unlimited.png",
+      "role": "wrapper-front",
+      "sha256": "c84f23d8072fab6ffb42ff9ea4fb0bb8e572c2e9e6b598d92f9fb13681138571",
+      "use": "dimension metadata only; no source pixels copied or decoded",
+      "width": 260
+    }
+  ],
+  "distinctArtSha256Count": 8,
+  "generator": {
+    "pillow": "13.0.0",
+    "pngEncoding": "RGBA8 filter-0 stored-DEFLATE; no timestamps or random state",
+    "python": "3.14.9",
+    "relativePath": "tools/prepare_phase5_placeholders.py"
+  },
+  "kind": "Phase5PlaceholderAuthoring",
+  "previews": [
+    {
+      "height": 1842,
+      "nativePixelScale": 1,
+      "relativePath": "Authoring/Phase5/Placeholders/ContactSheet.png",
+      "sha256": "029405c86398110ee279bc80fa6272b4d5210eb13e86ed9cc98e4552e8a7674c",
+      "width": 1540
+    }
+  ],
+  "runtimeBound": false,
+  "schemaVersion": 1,
+  "status": "authoring-only-not-runtime-bound",
+  "supportedPlayableSetsAdded": [],
+  "wrapperSha256Count": 6
+}

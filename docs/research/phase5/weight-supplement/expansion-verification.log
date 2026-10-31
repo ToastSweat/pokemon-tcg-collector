@@ -1,0 +1,32 @@
+{
+  "tableCount": 4,
+  "totalMappedRows": 254,
+  "sums": {
+    "jungle-1-removed": {
+      "H": 110,
+      "R": 121,
+      "U": 120,
+      "C": 121
+    },
+    "jungle-2-ivy-error": {
+      "H": 110,
+      "R": 121,
+      "U": 121,
+      "C": 121
+    },
+    "jungle-3-exeggutor": {
+      "H": 110,
+      "R": 121,
+      "U": 121,
+      "C": 121
+    },
+    "fossil-1": {
+      "H": 110,
+      "R": 121,
+      "U": 121,
+      "C": 121
+    }
+  }
+}
+
+exit_code=0

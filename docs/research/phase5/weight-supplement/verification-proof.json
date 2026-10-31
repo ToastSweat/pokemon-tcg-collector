@@ -1,0 +1,279 @@
+{
+  "verifiedAtUtc": "2026-10-31T20:35:31.133867+00:00",
+  "offlineTestExitCode": 0,
+  "offlineTestCount": 3,
+  "corruptionSubcases": 10,
+  "separateCaptionMixRejection": true,
+  "tableCount": 4,
+  "groupCount": 16,
+  "mappedOrdinaryRows": 254,
+  "nonCatalogOutcomes": 1,
+  "printedPChecks": 33,
+  "independentExportedRowSums": {
+    "jungle-1-removed": {
+      "H": {
+        "distinctOutcomes": 16,
+        "positionSum": 110
+      },
+      "R": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      },
+      "U": {
+        "distinctOutcomes": 16,
+        "positionSum": 120
+      },
+      "C": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      }
+    },
+    "jungle-2-ivy-error": {
+      "H": {
+        "distinctOutcomes": 16,
+        "positionSum": 110
+      },
+      "R": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      },
+      "U": {
+        "distinctOutcomes": 17,
+        "positionSum": 121
+      },
+      "C": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      }
+    },
+    "jungle-3-exeggutor": {
+      "H": {
+        "distinctOutcomes": 16,
+        "positionSum": 110
+      },
+      "R": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      },
+      "U": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      },
+      "C": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      }
+    },
+    "fossil-1": {
+      "H": {
+        "distinctOutcomes": 15,
+        "positionSum": 110
+      },
+      "R": {
+        "distinctOutcomes": 15,
+        "positionSum": 121
+      },
+      "U": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      },
+      "C": {
+        "distinctOutcomes": 16,
+        "positionSum": 121
+      }
+    }
+  },
+  "allOriginalInputPinsUnchanged": true,
+  "sourceImageIdsExactlyMatchDownloadedSha1": true,
+  "bothCitationDocumentsPassedStrictEvidenceVerification": true,
+  "approvalGranted": false,
+  "generatorAdopted": false,
+  "gameplayOrUnityVerificationClaimed": false,
+  "writesScope": "docs/research/phase5/weight-supplement/* only",
+  "artifactSha256ExcludingThisProof": [
+    {
+      "path": "18d87beedd4eb026e3af510c22670f09e3d2ce30.png",
+      "bytes": 15085,
+      "sha256": "adba05f214b9f77d6a0807a5b77c29bda64fa6341362dc68b30d3bb3e09b6d46"
+    },
+    {
+      "path": "3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e.png",
+      "bytes": 14189,
+      "sha256": "866a0e96bb71b7b022a8f45ad616052e444a07db6c9b6c0c6990d5e71a3b497f"
+    },
+    {
+      "path": "412a4015bff1ef1eb12453acbc355cf7448ab776.png",
+      "bytes": 12406,
+      "sha256": "f424e5c3978c1fe27fb9189575a30cc90036856dccc70da641f35d30c3185b15"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 7307,
+      "sha256": "48453dda406c23af74f25bb8adf542a1c606ecc85ad90d6b75773c79c00bf33d"
+    },
+    {
+      "path": "WeightEvidenceTests.py",
+      "bytes": 4927,
+      "sha256": "a68eb2e3d7fd82b0fef0c37eb8cfea278eab973f890e51587756287d6ddc5636"
+    },
+    {
+      "path": "article-context.text.txt",
+      "bytes": 85332,
+      "sha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c"
+    },
+    {
+      "path": "article-provenance-and-variants.json",
+      "bytes": 4105,
+      "sha256": "83d30613c34b3f5360807acac23f1c6426144044c7a3afc65c3acb812fc5ca48"
+    },
+    {
+      "path": "build_supplement.py",
+      "bytes": 12019,
+      "sha256": "3d3b77d583d6499e18de53a6ab4b163c9b4de47cd850978a7b57039ca713aeb0"
+    },
+    {
+      "path": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc.png",
+      "bytes": 15842,
+      "sha256": "bac51b17b4f4be54da3ef5f7ce6f33f5abdeaa90bc3ca0e662e5516316b4be4d"
+    },
+    {
+      "path": "citation-evidence-attachment.log",
+      "bytes": 642,
+      "sha256": "f67796c81f0677f0f67b64ec8c14283461b377ed210b28f5b7c0cbc339b5ac54"
+    },
+    {
+      "path": "citation-initial-failure.log",
+      "bytes": 280,
+      "sha256": "7ed64f5ab2128ee19912ebd8bee3012b6b2f3eae67f69c8b325454613ea35d8f"
+    },
+    {
+      "path": "citations-ledger.json",
+      "bytes": 7451,
+      "sha256": "724d02e85b87e592a3681b695b00cd07b92e7d4f523df272c87da5aeccb79d4e"
+    },
+    {
+      "path": "expansion-verification.log",
+      "bytes": 489,
+      "sha256": "33a62c02122f93e0a746d8198b84001110bebf084569c61730216b3b80613e93"
+    },
+    {
+      "path": "final-citation-verification.log",
+      "bytes": 1426,
+      "sha256": "c5b4bb7d432490fac0e04bd567b4ac83ea670356e4dff0e75206ef3b57d5de96"
+    },
+    {
+      "path": "final-tests.log",
+      "bytes": 533,
+      "sha256": "1a2f212980168f2590f003527f08b29e335810fa55f894154ac9c89335a74cc0"
+    },
+    {
+      "path": "finalize_evidence.py",
+      "bytes": 8737,
+      "sha256": "b47e13e8805781db56a4147350d2e8cdcf71d921c16ecb7c95cd44385920a1b5"
+    },
+    {
+      "path": "fossil-1.visual-transcript.txt",
+      "bytes": 864,
+      "sha256": "14f2e9854e116a2ecde0eda127ef4c4be794d18d48af4e25a34e2c1dc72a7fb7"
+    },
+    {
+      "path": "jungle-1-removed.visual-transcript.txt",
+      "bytes": 902,
+      "sha256": "9422cdf217ae5f2cbd9b9b088a1164591eeac0263c36305a4cff33d30111aaa0"
+    },
+    {
+      "path": "jungle-2-ivy-error.visual-transcript.txt",
+      "bytes": 815,
+      "sha256": "64d4394202d70cf71b2229fe100cf2fcfdb070508552aa06c94bb43bd56bf53d"
+    },
+    {
+      "path": "jungle-3-exeggutor.visual-transcript.txt",
+      "bytes": 760,
+      "sha256": "fa0c9b89e37d61cc2b27cfb228a0db21c43fe12ff7eb40d7b6cdb58617a1e6bd"
+    },
+    {
+      "path": "literal-evidence-quotes.json",
+      "bytes": 7936,
+      "sha256": "b003732df5b0d70217cdbb6f22f62dc5d406b87b29866e4746a570ba7535cced"
+    },
+    {
+      "path": "manual-transcription.json",
+      "bytes": 17092,
+      "sha256": "552b9a4dbb58370ad629f74a2ebe39b4606387294a150c86533430de56c3da85"
+    },
+    {
+      "path": "per-card-transcription.md",
+      "bytes": 7935,
+      "sha256": "6de3b8f3436201ea57a973fbb466264cdf6280612bc10e42557474efcd99c55f"
+    },
+    {
+      "path": "provisional-option.json",
+      "bytes": 3318,
+      "sha256": "a79eb005ceeb5b71c1503f7c1d0ff6632df049eb616a5ad10c5a5e189bccd920"
+    },
+    {
+      "path": "retrieval-manifest.json",
+      "bytes": 6134,
+      "sha256": "6fed6118cd7901f85ddbe3f7577b033e93b1be110d2fb565060758966474cf69"
+    },
+    {
+      "path": "retrieve_evidence.py",
+      "bytes": 4427,
+      "sha256": "51b0e97fd547f8cfeedc03ea63eb473d4b63654bbec67c11f2b7ee8865ceec1a"
+    },
+    {
+      "path": "sheet-weight-supplement.json",
+      "bytes": 281292,
+      "sha256": "7ceb3d2b4a429c927301e77be965efcb506d41228a0324bc2ff43e3d012713ef"
+    },
+    {
+      "path": "tdd-01-green-after-context-fix.log",
+      "bytes": 272,
+      "sha256": "94facfea2912292fb084ea5638f31be1c8a12992c59aec1f11f705386f1e150d"
+    },
+    {
+      "path": "tdd-01-green.log",
+      "bytes": 1169,
+      "sha256": "f08351a7d2db29e0b93a572e2b2a05b2d8d886ec6e255bcdce812a46440faf51"
+    },
+    {
+      "path": "tdd-01-red.log",
+      "bytes": 1102,
+      "sha256": "fbd5fbf8bce4ba279dc96043ff2a41d11faf885b4a13dab836c58000d954993a"
+    },
+    {
+      "path": "tdd-02-green.log",
+      "bytes": 384,
+      "sha256": "88fda7a7ea556d9fd1547b22352c2a5dd6707f858497a1e4068af019df37d773"
+    },
+    {
+      "path": "tdd-02-red.log",
+      "bytes": 1050,
+      "sha256": "f40ea789aaf7f122aefbd4348ff2dc4759833d44fc6220f0a2b5cfadffb95126"
+    },
+    {
+      "path": "verify_delivery.py",
+      "bytes": 5850,
+      "sha256": "add3ae2b1604b56fe8e848c21fc45e7ea31c0a6ed8a2022ec8386f84c3db4a7b"
+    }
+  ],
+  "transcriptHashCorrection": {
+    "issueId": "WEIGHTS-001",
+    "policy": "transcriptSha256 hashes the exact saved transcript read_bytes(); no newline normalization",
+    "correctedRecords": 4,
+    "sourceTranscriptBytesChanged": false,
+    "originalProofFieldsAreHistorical": true,
+    "scope": "metadata-only correction; does not alter or supersede the separate user model approval",
+    "regressionTestArtifact": {
+      "pathRelativeToRepository": "TestsPhase5/WeightTranscriptHashTests.py",
+      "bytes": 3870,
+      "sha256": "ac577ab7d342b1fef55edcf6eaf7e5a6167145a255bf1ff1caa6356af37b793f"
+    },
+    "oldHelperRegressionExitCode": 1,
+    "correctedHelperRegressionExitCode": 0,
+    "regressionTests": 4,
+    "existingOfflineWeightTestExitCode": 0,
+    "existingOfflineWeightTests": 3,
+    "fixArtifactsRelativeToRepository": ".artifacts/phase5-weight-hash-fix"
+  }
+}

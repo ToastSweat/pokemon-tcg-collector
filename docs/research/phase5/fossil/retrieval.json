@@ -1,0 +1,62 @@
+[
+  {
+    "name": "api",
+    "url": "https://raw.githubusercontent.com/PokemonTCG/pokemon-tcg-data/master/cards/en/base3.json",
+    "retrievedAt": "2026-10-31T20:09:27.712580+00:00",
+    "status": 200,
+    "bytes": 85173,
+    "sha256": "1431ebd57a760359bee6240a892454d892e284230339e95c7bcab66a7139ad24",
+    "path": "docs/research/phase5/fossil/evidence/api.json",
+    "finalUrl": "https://raw.githubusercontent.com/PokemonTCG/pokemon-tcg-data/master/cards/en/base3.json"
+  },
+  {
+    "name": "pokellector",
+    "url": "https://www.pokellector.com/Fossil-Expansion",
+    "retrievedAt": "2026-10-31T20:09:27.713025+00:00",
+    "status": 200,
+    "bytes": 66425,
+    "sha256": "6618c5b2e8e63c0a77399d3539fc37dcb692ccbd0213e0579a426cc238700419",
+    "path": "docs/research/phase5/fossil/evidence/pokellector.html",
+    "finalUrl": "https://www.pokellector.com/Fossil-Expansion"
+  },
+  {
+    "name": "bulbapedia",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Fossil_(TCG)",
+    "retrievedAt": "2026-10-31T20:09:27.713281+00:00",
+    "status": 200,
+    "bytes": 345454,
+    "sha256": "05c2a4e6c33b1449d8dd52a6051256fc78f305f1f71457e3a6c87949c1fa71eb",
+    "path": "docs/research/phase5/fossil/evidence/bulbapedia.html",
+    "finalUrl": "https://bulbapedia.bulbagarden.net/wiki/Fossil_(TCG)"
+  },
+  {
+    "name": "rarity-guide",
+    "url": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762",
+    "retrievedAt": "2026-10-31T20:09:27.713503+00:00",
+    "status": 200,
+    "bytes": 172390,
+    "sha256": "38bce6c0b12da419e25cfe7d8dc5967aa7235d99cf6a9da0e5f70636820cc3e4",
+    "path": "docs/research/phase5/fossil/evidence/rarity-guide.html",
+    "finalUrl": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762"
+  },
+  {
+    "name": "australian",
+    "url": "https://www.elitefourum.com/t/pokemon-fossil-1999-2000-australian-3rd-print-run/11344",
+    "retrievedAt": "2026-10-31T20:09:27.713770+00:00",
+    "status": 200,
+    "bytes": 84767,
+    "sha256": "66e16db33a6abfd2fafc0ae4ced4b18705d3b02d13f65e4f4ac9a8e0601411ff",
+    "path": "docs/research/phase5/fossil/evidence/australian.html",
+    "finalUrl": "https://www.elitefourum.com/t/pokemon-fossil-1999-2000-australian-3rd-print-run/11344"
+  },
+  {
+    "name": "sheets",
+    "url": "https://pokemuseum.weebly.com/uncut-sheets.html",
+    "retrievedAt": "2026-10-31T20:09:27.714022+00:00",
+    "status": 200,
+    "bytes": 180438,
+    "sha256": "b297f16d7f177a98f113528cbe37ce3c17e1f8599a6b568e284d42aa86845db0",
+    "path": "docs/research/phase5/fossil/evidence/sheets.html",
+    "finalUrl": "https://pokemuseum.weebly.com/uncut-sheets.html"
+  }
+]

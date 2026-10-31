@@ -1,0 +1,23 @@
+{
+  "key": "serebii",
+  "requestedUrl": "https://www.serebii.net/card/jungle/",
+  "retrievedUtc": "2026-10-31T20:11:54.236083+00:00",
+  "finalUrl": "https://www.serebii.net/card/jungle/",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sat, 31 Oct 2026 20:11:52 GMT",
+    "Content-Type": "text/html; charset=ISO-8859-1",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "Strict-Transport-Security": "max-age=63072000"
+  },
+  "title": "Jungle - Serebii.net Pok\u00e9mon Card Database",
+  "rawPath": "docs/research/phase5/jungle/serebii.raw.html",
+  "rawSha256": "ed77579e108b9dc0da2c2d63fc137de594b535d61de68ce562bf83dd9bb577d3",
+  "textPath": "docs/research/phase5/jungle/serebii.text.txt",
+  "textSha256": "dba025b51abd5b8fd83736acca92b68179a4407fa0248a53292718b9d10fbde1",
+  "bytes": 115173
+}

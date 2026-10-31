@@ -1,0 +1,135 @@
+{
+  "startedAtUtc": "2026-10-31T20:28:37.159192+00:00",
+  "scope": "Numeric research charts only. No runtime/art permission.",
+  "inputs": [
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.raw.html",
+      "bytes": 172390,
+      "sha256": "c260f60b9e3b110d35b67e550482e1e04e67165641344710d25c234390fbda57",
+      "observedAtUtc": "2026-10-31T20:28:37.159428+00:00"
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.text.txt",
+      "bytes": 85332,
+      "sha256": "a05087035401a3fbcd4170883ef649ead9b2f3b04ef9c1d3fda526af94c44d1c",
+      "observedAtUtc": "2026-10-31T20:28:37.159563+00:00"
+    },
+    {
+      "path": "docs/research/phase5/jungle/rarity-guide.retrieval.json",
+      "bytes": 2030,
+      "sha256": "4a7c59e1a839ccfffda04aaa4dae65e449cd54920a1696a77c4d3edfd59addcb",
+      "observedAtUtc": "2026-10-31T20:28:37.159642+00:00"
+    },
+    {
+      "path": "docs/research/phase5/jungle/tcg-data.raw.json",
+      "bytes": 91956,
+      "sha256": "98a21716c7830eeb81f09c187b87cb7c70791fc0af777df7b8313f44447e3d97",
+      "observedAtUtc": "2026-10-31T20:28:37.159753+00:00"
+    },
+    {
+      "path": "docs/research/phase5/fossil/evidence/api.json",
+      "bytes": 85173,
+      "sha256": "1431ebd57a760359bee6240a892454d892e284230339e95c7bcab66a7139ad24",
+      "observedAtUtc": "2026-10-31T20:28:37.159859+00:00"
+    },
+    {
+      "path": "Authoring/Phase5/Data/jungle-en-unlimited1999.catalog.json",
+      "bytes": 34089,
+      "sha256": "cc8298c1e444ac6ba7d5c5397ef86a9adc4d70233f6ea25b44d502eafccf6bcd",
+      "observedAtUtc": "2026-10-31T20:28:37.159938+00:00"
+    },
+    {
+      "path": "Authoring/Phase5/Data/fossil-en-unlimited1999.catalog.json",
+      "bytes": 31902,
+      "sha256": "555303b36387181e15a78fbf371dbd8c129b9ddadc2e7f2b586bfb4cba5dd5fa",
+      "observedAtUtc": "2026-10-31T20:28:37.160022+00:00"
+    }
+  ],
+  "charts": [
+    {
+      "imageSourceId": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc",
+      "suppliedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/c/1/c10b7cdcae9c7f888eea6b72108aca993c11c6bc.png",
+      "attempts": [
+        {
+          "requestedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/c/1/c10b7cdcae9c7f888eea6b72108aca993c11c6bc.png",
+          "startedAtUtc": "2026-10-31T20:28:37.787261+00:00",
+          "status": 200,
+          "finalUrl": "https://efour.b-cdn.net/uploads/default/original/3X/c/1/c10b7cdcae9c7f888eea6b72108aca993c11c6bc.png",
+          "contentType": "image/png",
+          "success": true,
+          "bytes": 15842,
+          "sha256": "bac51b17b4f4be54da3ef5f7ce6f33f5abdeaa90bc3ca0e662e5516316b4be4d",
+          "sha1": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc",
+          "width": 881,
+          "height": 670,
+          "file": "c10b7cdcae9c7f888eea6b72108aca993c11c6bc.png",
+          "finishedAtUtc": "2026-10-31T20:28:38.006689+00:00"
+        }
+      ]
+    },
+    {
+      "imageSourceId": "3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e",
+      "suppliedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/3/a/3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e.png",
+      "attempts": [
+        {
+          "requestedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/3/a/3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e.png",
+          "startedAtUtc": "2026-10-31T20:28:37.787744+00:00",
+          "status": 200,
+          "finalUrl": "https://efour.b-cdn.net/uploads/default/original/3X/3/a/3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e.png",
+          "contentType": "image/png",
+          "success": true,
+          "bytes": 14189,
+          "sha256": "866a0e96bb71b7b022a8f45ad616052e444a07db6c9b6c0c6990d5e71a3b497f",
+          "sha1": "3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e",
+          "width": 881,
+          "height": 638,
+          "file": "3a4f6ceeac70e776f92552a6b0097d6c62e3ac4e.png",
+          "finishedAtUtc": "2026-10-31T20:28:38.045997+00:00"
+        }
+      ]
+    },
+    {
+      "imageSourceId": "412a4015bff1ef1eb12453acbc355cf7448ab776",
+      "suppliedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/4/1/412a4015bff1ef1eb12453acbc355cf7448ab776.png",
+      "attempts": [
+        {
+          "requestedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/4/1/412a4015bff1ef1eb12453acbc355cf7448ab776.png",
+          "startedAtUtc": "2026-10-31T20:28:37.788037+00:00",
+          "status": 200,
+          "finalUrl": "https://efour.b-cdn.net/uploads/default/original/3X/4/1/412a4015bff1ef1eb12453acbc355cf7448ab776.png",
+          "contentType": "image/png",
+          "success": true,
+          "bytes": 12406,
+          "sha256": "f424e5c3978c1fe27fb9189575a30cc90036856dccc70da641f35d30c3185b15",
+          "sha1": "412a4015bff1ef1eb12453acbc355cf7448ab776",
+          "width": 881,
+          "height": 607,
+          "file": "412a4015bff1ef1eb12453acbc355cf7448ab776.png",
+          "finishedAtUtc": "2026-10-31T20:28:38.005023+00:00"
+        }
+      ]
+    },
+    {
+      "imageSourceId": "18d87beedd4eb026e3af510c22670f09e3d2ce30",
+      "suppliedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/1/8/18d87beedd4eb026e3af510c22670f09e3d2ce30.png",
+      "attempts": [
+        {
+          "requestedUrl": "https://efour.b-cdn.net/uploads/default/original/3X/1/8/18d87beedd4eb026e3af510c22670f09e3d2ce30.png",
+          "startedAtUtc": "2026-10-31T20:28:37.788273+00:00",
+          "status": 200,
+          "finalUrl": "https://efour.b-cdn.net/uploads/default/original/3X/1/8/18d87beedd4eb026e3af510c22670f09e3d2ce30.png",
+          "contentType": "image/png",
+          "success": true,
+          "bytes": 15085,
+          "sha256": "adba05f214b9f77d6a0807a5b77c29bda64fa6341362dc68b30d3bb3e09b6d46",
+          "sha1": "18d87beedd4eb026e3af510c22670f09e3d2ce30",
+          "width": 881,
+          "height": 670,
+          "file": "18d87beedd4eb026e3af510c22670f09e3d2ce30.png",
+          "finishedAtUtc": "2026-10-31T20:28:37.982711+00:00"
+        }
+      ]
+    }
+  ],
+  "finishedAtUtc": "2026-10-31T20:28:38.046064+00:00"
+}

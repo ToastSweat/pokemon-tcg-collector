@@ -1,0 +1,17 @@
+test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy) ... FAIL
+
+======================================================================
+FAIL: test_complete_sheet_vectors_match_catalog_and_exclude_ivy (__main__.WeightEvidenceTests.test_complete_sheet_vectors_match_catalog_and_exclude_ivy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\docs\research\phase5\weight-supplement\WeightEvidenceTests.py", line 12, in test_complete_sheet_vectors_match_catalog_and_exclude_ivy
+    self.assertTrue(helper.exists(), 'research expansion/validation helper not implemented')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : research expansion/validation helper not implemented
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+
+exit_code=1
