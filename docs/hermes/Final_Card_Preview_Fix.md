@@ -1,6 +1,6 @@
 # Final-card preview — focused Phase 3A fix
 
-Status: implementation, native execution and independent review passed; focused human retest pending. Preserve user PASS feedback on the rest of Phase 3A. Do not start branded-material work or Phase 4.
+Status: implementation, native execution and independent review passed; committed as `51b4a8c`. Focused human retest is pending. Preserve user PASS feedback on the rest of Phase 3A. Do not start branded-material work or Phase 4.
 
 ## Current process / cause
 
