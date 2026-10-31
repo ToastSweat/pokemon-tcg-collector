@@ -8,6 +8,133 @@ namespace VintageCollector.Presentation
     /// <summary>Passive, original placeholder tabletop. No generator, awards, file IO or save authority.</summary>
     public sealed class TabletopPresentation : MonoBehaviour
     {
+        // Explicit scene opt-in; historical scenes retain the accepted axis-aligned path.
+        public bool pointerTiltEnabled = false;
+        [Serializable] public sealed class TiltObservation
+        {
+            public string key;
+            public Rect bounds;
+            public float pitchDegrees, yawDegrees;
+            public bool hovered;
+            public int finish, renderFrame;
+        }
+        private TiltObservation[] tiltObservations = new TiltObservation[0];
+        // Detached evidence of the last actual render, never an input or a controller cache.
+        public TiltObservation[] TiltObservations {
+            get {
+                if(!pointerTiltEnabled || CollectionOverlayVisible || View==null || View.paused || View.stage=="error" || CurrentTiltContext()!=tiltContextKey)return new TiltObservation[0];
+                var result=new TiltObservation[tiltObservations.Length];
+                for(int i=0;i<result.Length;i++) {
+                    var s=tiltObservations[i];
+                    result[i]=new TiltObservation {key=s.key,bounds=s.bounds,pitchDegrees=s.pitchDegrees,yawDegrees=s.yawDegrees,hovered=s.hovered,finish=s.finish,renderFrame=s.renderFrame};
+                }
+                return result;
+            }
+        }
+        private sealed class TiltSurface
+        {
+            public string key;
+            public Rect bounds, drawBounds;
+            public SurfaceFinish finish;
+            public HoverTiltMotion motion;
+            public bool hovered;
+        }
+        private readonly System.Collections.Generic.Dictionary<string,HoverTiltMotion> tiltControllers = new System.Collections.Generic.Dictionary<string,HoverTiltMotion>(StringComparer.Ordinal);
+        private readonly System.Collections.Generic.List<TiltSurface> renderedTiltSurfaces = new System.Collections.Generic.List<TiltSurface>();
+        private TiltedSurfaceRenderer tiltedRenderer;
+        private string tiltContextKey="";
+        private Vector2 tiltPointer;
+        private bool tiltPointerInside, collectingTilt;
+        private PresentationLayout tiltLayout;
+        public string TiltContextKey { get { return tiltContextKey; } }
+        public Vector2 TiltPointer { get { return tiltPointer; } }
+        public bool TiltFrozen { get { return !TiltRunning; } }
+        public int TiltControllerCount { get { return tiltControllers.Count; } }
+        public float TiltPresentationClock { get { return motion.Clock; } }
+        private bool TiltRunning { get { return pointerTiltEnabled && !CollectionInputBlocked && !CollectionOverlayVisible && focused && View!=null && !View.paused && View.stage!="error"; } }
+        private string CurrentTiltContext()
+        {
+            var v=View;if(v==null)return "";
+            string transaction=v.transactionId??"";
+            return transaction.Length.ToString(CultureInfo.InvariantCulture)+":"+transaction+"/"+v.stage+"/"+PresentationRules.VisibleCount(v).ToString(CultureInfo.InvariantCulture)+"/"+(v.inspectIndex>=0?"inspection:"+v.inspectIndex.ToString(CultureInfo.InvariantCulture):"table");
+        }
+        private void PrepareTiltFrame(PresentationLayout layout)
+        {
+            collectingTilt=pointerTiltEnabled && Event.current.type==EventType.Repaint;
+            if(!pointerTiltEnabled) { tiltObservations=new TiltObservation[0];tiltControllers.Clear();renderedTiltSurfaces.Clear();return; }
+            tiltLayout=layout;
+            if(TiltRunning) {
+                string context=CurrentTiltContext();
+                if(context!=tiltContextKey) {tiltContextKey=context;tiltControllers.Clear();tiltObservations=new TiltObservation[0];}
+                // Standalone IMGUI events and Screen dimensions share client-pixel units.
+                // Read before installing our matrix; invert the exact layout scale once.
+                if(Event.current.type==EventType.MouseLeaveWindow) tiltPointerInside=false;
+                else {
+                    tiltPointer=Event.current.mousePosition/layout.scale;
+                    tiltPointerInside=tiltPointer.x>=0 && tiltPointer.y>=0 && tiltPointer.x<layout.width && tiltPointer.y<layout.height;
+                }
+            }
+            if(collectingTilt) renderedTiltSurfaces.Clear();
+        }
+        private void CompleteTiltFrame()
+        {
+            if(!collectingTilt)return;
+            collectingTilt=false;
+            if(TiltRunning) {
+                TiltSurface winner=null;
+                for(int i=renderedTiltSurfaces.Count-1;i>=0;i--) if(tiltPointerInside && renderedTiltSurfaces[i].bounds.Contains(tiltPointer)) {winner=renderedTiltSurfaces[i];break;}
+                foreach(var surface in renderedTiltSurfaces) {
+                    surface.hovered=ReferenceEquals(surface,winner);
+                    surface.motion.SetPointer((tiltPointer.x-surface.bounds.x)/surface.bounds.width,(tiltPointer.y-surface.bounds.y)/surface.bounds.height,surface.hovered);
+                }
+            }
+            tiltObservations=new TiltObservation[renderedTiltSurfaces.Count];
+            for(int i=0;i<tiltObservations.Length;i++) {
+                var s=renderedTiltSurfaces[i];
+                tiltObservations[i]=new TiltObservation {key=s.key,bounds=s.bounds,pitchDegrees=s.motion.PitchDegrees,yawDegrees=s.motion.YawDegrees,hovered=s.hovered,finish=(int)s.finish,renderFrame=Time.frameCount};
+            }
+        }
+        private Rect SafeTiltRegion(string role,Rect fitted)
+        {
+            var l=tiltLayout;
+            if(role=="inspection") {
+                Rect modal=Inset(R(l.modal),5);
+                return Rect.MinMaxRect(modal.xMin,modal.yMin,R(l.back).x-12,modal.yMax);
+            }
+            // Result rows have labels only a few logical pixels below their original hit boxes.
+            if(role=="result" || role=="result-back")return new Rect(fitted.x-8,fitted.y-4,fitted.width+16,fitted.height+6);
+            if(role=="stack-back") {
+                Rect pad=Inset(fitted,-18);
+                return new Rect(pad.x,pad.y,pad.width,pad.height-2);
+            }
+            Rect table=R(l.table);
+            float right=table.xMax-16;
+            if(View!=null && View.stage=="revealing" && PresentationRules.VisibleCount(View)>0)right=R(l.revealedButtons[0]).x-12;
+            return new Rect(table.x+16,table.y+48,right-table.x-16,table.height-98);
+        }
+        private bool DrawTiltSurface(Rect rect,Texture2D face,Texture2D mask,SurfaceFinish finish,string role,int index=-1)
+        {
+            if(!pointerTiltEnabled || face==null)return false;
+            if(Event.current.type!=EventType.Repaint)return true;
+            Rect fitted=FittedTextureRect(rect,face);
+            bool eligible=View!=null && View.stage!="error" && !View.paused && !CollectionOverlayVisible && (View.inspectIndex<0 || role=="inspection");
+            string key=tiltContextKey+"/"+role+":"+index.ToString(CultureInfo.InvariantCulture);
+            HoverTiltMotion controller;
+            if(!tiltControllers.TryGetValue(key,out controller)) {
+                controller=new HoverTiltMotion();
+                // Current view has at most eleven results plus five backs. Never retain previous view/card poses.
+                if(eligible && tiltControllers.Count<32)tiltControllers.Add(key,controller);
+            }
+            Rect conservative=TiltedSurfaceRenderer.ConservativeDrawRect(fitted),safe=SafeTiltRegion(role,fitted);
+            Rect clip=Rect.MinMaxRect(Mathf.Max(conservative.xMin,safe.xMin),Mathf.Max(conservative.yMin,safe.yMin),Mathf.Min(conservative.xMax,safe.xMax),Mathf.Min(conservative.yMax,safe.yMax));
+            if(eligible && collectingTilt)renderedTiltSurfaces.Add(new TiltSurface {key=key,bounds=fitted,drawBounds=clip,finish=finish,motion=controller});
+            if(tiltedRenderer==null)tiltedRenderer=new TiltedSurfaceRenderer();
+            bool drawn;
+            GUI.BeginGroup(clip);
+            try { drawn=tiltedRenderer.Draw(new Rect(fitted.x-clip.x,fitted.y-clip.y,fitted.width,fitted.height),face,mask,finish,controller.PitchDegrees,controller.YawDegrees,motion.Clock); }
+            finally { GUI.EndGroup(); }
+            return drawn;
+        }
         // Optional read-only manual ownership projection; absent in earlier phases.
         public Func<string,bool> PhysicalOwnershipReader { get; set; }
         public string PhysicalResultLabel(int index) {
@@ -128,15 +255,18 @@ namespace VintageCollector.Presentation
         private void Update()
         {
             SyncAudio();
-            bool running=!CollectionInputBlocked && focused && View != null && !View.paused && View.stage != "error";
+            bool running=!CollectionInputBlocked && (!pointerTiltEnabled || !CollectionOverlayVisible) && focused && View != null && !View.paused && View.stage != "error";
             motion.Inspect(View!=null && PresentationRules.CanInspect(View,View.inspectIndex)?View.inspectIndex:-1);
             motion.Advance(Time.unscaledDeltaTime,running);
+            if(pointerTiltEnabled) foreach(var tilt in tiltControllers.Values) tilt.Advance(Time.unscaledDeltaTime,running && !CollectionOverlayVisible);
             if (running) tearRemaining = Mathf.Max(0, tearRemaining-Time.unscaledDeltaTime);
         }
 
         private void OnDestroy()
         {
             StopFoley();
+            if(tiltedRenderer!=null) {tiltedRenderer.Dispose();tiltedRenderer=null;}
+            tiltControllers.Clear();renderedTiltSurfaces.Clear();tiltObservations=new TiltObservation[0];
             if (foilMaterial != null) Destroy(foilMaterial);
             if (wrapperMetallicMaterial != null) Destroy(wrapperMetallicMaterial);
             if (disc != null) Destroy(disc);
@@ -257,6 +387,7 @@ namespace VintageCollector.Presentation
             if(CollectionOverlayVisible) return;
             EnsureResources();
             var l=PresentationRules.Layout(Screen.width,Screen.height);
+            PrepareTiltFrame(l);
             var oldMatrix=GUI.matrix; var oldColor=GUI.color; bool oldEnabled=GUI.enabled;
             try
             {
@@ -284,7 +415,7 @@ namespace VintageCollector.Presentation
                     if(GUI.Button(b,"Binder  [Tab]")) RequestCommand("binder-open");
                 }
             }
-            finally { GUI.matrix=oldMatrix; GUI.color=oldColor; GUI.enabled=oldEnabled; }
+            finally { CompleteTiltFrame();GUI.matrix=oldMatrix; GUI.color=oldColor; GUI.enabled=oldEnabled; }
         }
 
         private void DrawBackground(PresentationLayout l)
@@ -336,7 +467,7 @@ namespace VintageCollector.Presentation
                 int visible=PresentationRules.VisibleCount(v);
                 Rect stack=new Rect(hero.x-hero.width*0.70f,hero.y+hero.height*0.17f,hero.width*0.53f,hero.height*0.53f);
                 if(visible<11) {
-                    for(int i=3;i>=0;i--) DrawBack(new Rect(stack.x+i*3,stack.y-i*3,stack.width,stack.height));
+                    for(int i=3;i>=0;i--) DrawBackSurface(new Rect(stack.x+i*3,stack.y-i*3,stack.width,stack.height),"stack-back",i);
                     Label(new Rect(stack.x-18,stack.yMax+22,stack.width+36,44),(11-visible)+" unrevealed",18,Muted,false,TextAnchor.MiddleCenter);
                 }
                 if(visible>0 && PresentationRules.CanInspect(v,visible-1)) {
@@ -394,7 +525,8 @@ namespace VintageCollector.Presentation
                 Button(R(l.primary),"Retry pending action","retry",true);
                 Button(R(l.secondary),"Quit","quit");
             }
-            if(stage=="ready" || stage=="sealed") Label(R(l.secondary),"No dragging required.",18,Muted,false,TextAnchor.MiddleCenter);
+            if(pointerTiltEnabled && stage!="error") Label(new Rect(x,s.yMax-32,w,28),"Move mouse over card/pack to tilt and catch light",14,Muted,false,TextAnchor.MiddleCenter);
+            else if(stage=="ready" || stage=="sealed") Label(R(l.secondary),"No dragging required.",18,Muted,false,TextAnchor.MiddleCenter);
         }
 
         private void DrawWrapper(Rect card,bool sealedPack)
@@ -404,8 +536,10 @@ namespace VintageCollector.Presentation
             var front=Media==null?null:Media.WrapperFront;
             var supplied=front ?? (Media==null?null:Media.WrapperBack);
             if (supplied!=null) {
-                Texture(r,supplied);
                 var metallic=Media as IWrapperMetallicMedia;
+                var mask=metallic==null?null:(front!=null?metallic.WrapperFrontMask:metallic.WrapperBackMask);
+                if(DrawTiltSurface(r,supplied,mask,mask!=null && mask.width==supplied.width && mask.height==supplied.height?SurfaceFinish.Metallic:SurfaceFinish.Matte,"wrapper"))return;
+                Texture(r,supplied);
                 if (metallic!=null) DrawWrapperMetallic(r,supplied,front!=null?metallic.WrapperFrontMask:metallic.WrapperBackMask);
                 return;
             }
@@ -432,11 +566,12 @@ namespace VintageCollector.Presentation
             Label(strip,"WRAPPER OPENED",16,Paper,true,TextAnchor.MiddleCenter);
         }
 
-        private void DrawBack(Rect r)
+        private void DrawBack(Rect r) { DrawBackSurface(r,"back",-1); }
+        private void DrawBackSurface(Rect r,string role,int index)
         {
             Shadow(r,0);
             var supplied=Media==null?null:Media.CardBack;
-            if (supplied!=null) { Texture(r,supplied); return; }
+            if (supplied!=null) { if(!DrawTiltSurface(r,supplied,null,SurfaceFinish.Matte,role,index))Texture(r,supplied); return; }
             Fill(r,Paper); Fill(Inset(r,r.width*0.035f),new Color32(47,75,74,255));
             Outline(Inset(r,r.width*0.075f),Gold,2);
             Diamond(At(r,0.19f,0.27f,0.62f,0.44f),new Color32(124,150,126,255));
@@ -444,12 +579,16 @@ namespace VintageCollector.Presentation
             Label(At(r,0.1f,0.77f,0.8f,0.12f),"PLACEHOLDER\nCARD BACK",Mathf.RoundToInt(r.width*0.047f),Paper,true,TextAnchor.MiddleCenter);
         }
 
-        private void DrawFace(Rect r,OpeningCardView c,int index)
+        private void DrawFace(Rect r,OpeningCardView c,int index) { DrawFaceSurface(r,c,index,"hero"); }
+        private void DrawFaceSurface(Rect r,OpeningCardView c,int index,string role)
         {
             if(c==null) { DrawBack(r); return; }
             var supplied = Media == null ? null : Media.CardFace(c.id);
             if (supplied != null) {
                 Shadow(r,motion.RevealLift);
+                var tiltMask=pointerTiltEnabled && PresentationRules.IsFoil(c.finish)?Media.HoloMask(c.id):null;
+                var finish=tiltMask!=null && tiltMask.width==supplied.width && tiltMask.height==supplied.height?SurfaceFinish.Holo:SurfaceFinish.Matte;
+                if(DrawTiltSurface(r,supplied,tiltMask,finish,role,index))return;
                 Texture(r,supplied);
                 if (PresentationRules.IsFoil(c.finish)) {
                     var mask = Media.HoloMask(c.id);
@@ -504,16 +643,17 @@ namespace VintageCollector.Presentation
             int visible=Math.Min(11,PresentationRules.VisibleCount(v)), fresh=0;
             for(int i=0;i<visible;i++) {
                 if(v.cards[i]!=null && v.cards[i].isNew) fresh++;
-                DrawFace(R(l.resultsCards[i]),v.cards[i],i); FaceHit(R(l.resultsCards[i]),i);
+                DrawFaceSurface(R(l.resultsCards[i]),v.cards[i],i,"result"); FaceHit(R(l.resultsCards[i]),i);
                 string physical=PhysicalResultLabel(i);
                 if(physical!=null) {
                     Rect card=R(l.resultsCards[i]);
                     Label(new Rect(card.x,card.yMax+2,card.width,22),physical,14,physical=="PHYSICAL MISSING"?Gold:Muted,true,TextAnchor.MiddleCenter);
                 }
             }
-            for(int i=visible;i<11;i++) DrawBack(R(l.resultsCards[i]));
+            for(int i=visible;i<11;i++) DrawBackSurface(R(l.resultsCards[i]),"result-back",i);
             Label(new Rect(66,184,1000,28),visible+" revealed   ·   "+fresh+" new to virtual   ·   "+(visible-fresh)+" duplicates   ·   Click a card to inspect",18,Paper);
             Button(new Rect(l.width-310,140,266,34),"Generate new pack","generate",true);
+            if(pointerTiltEnabled) Label(new Rect(570,144,l.width-910,28),"Move mouse over card/pack to tilt and catch light",16,Muted,false,TextAnchor.MiddleCenter);
             Label(new Rect(64,l.height-(PhysicalOwnershipReader==null?151:125),l.width-128,24),"Original saved order, left to right. New / duplicate refers only to the virtual collection.",17,Muted,false,TextAnchor.MiddleCenter);
         }
 
@@ -551,13 +691,14 @@ namespace VintageCollector.Presentation
             int i=v.inspectIndex;
             if(PresentationRules.CanInspect(v,i)) {
                 Rect card=new Rect(p.x+30,p.y+30,620*63f/88,620);
-                DrawFace(card,v.cards[i],i);
+                DrawFaceSurface(card,v.cards[i],i,"inspection");
                 Rect info=new Rect(p.x+560,p.y+40,396,508);
                 Label(new Rect(info.x,info.y,info.width,28),"REVEALED CARD  "+(i+1)+" / 11",18,Gold,true);
                 Label(new Rect(info.x,info.y+57,info.width,105),Safe(v.cards[i].name),32,Paper,true);
                 Label(new Rect(info.x,info.y+181,info.width,181),"Collector number  "+Safe(v.cards[i].collectorNumber)+"\n"+Safe(v.cards[i].kind)+"  ·  "+Safe(v.cards[i].rarity)+"\nFinish  "+Safe(v.cards[i].finish)+"\n\n"+(v.cards[i].isNew?"New to virtual collection":"Duplicate virtual card"),21,Muted);
                 Label(new Rect(info.x,info.y+382,info.width,105),(Media!=null && Media.CardFace(v.cards[i].id)!=null?"PROVIDER CARD FACE\nPrinted face shown unchanged. NEW / DUPLICATE status is outside the face.":"GENERIC FALLBACK ART\nOriginal abstract illustration, not supplied card artwork."),19,Gold);
             } else Label(new Rect(p.x+65,p.y+80,p.width-130,180),"This card is not available for inspection.\nUnrevealed names and faces remain hidden.",28,Paper,true);
+            if(pointerTiltEnabled) Label(new Rect(p.x+560,p.y+535,396,44),"Move mouse over card/pack to tilt and catch light",16,Muted,false,TextAnchor.MiddleCenter);
             Button(R(l.back),"Back to table","close-inspect",true);
         }
     }

@@ -1,0 +1,346 @@
+{
+  "passed": true,
+  "security": [],
+  "logicerrors": [],
+  "summary": "INPUT-OWNERSHIP-001 is corrected end-to-end in the exact current input driver. All input-mode dispatch routes use the per-message live launched-PID fence; unchanged hover guard and bounded identical-request publisher verify. Fresh native evidence is exact to this driver and unchanged build-36 runtime/candidate.",
+  "scope": "Focused verification-tool correction re-review only. No new Core/renderer approval, human acceptance, task closure or Phase5 authorization.",
+  "resolvedFinding": {
+    "id": "INPUT-OWNERSHIP-001",
+    "status": "resolved-for-exact-pinned-driver",
+    "boundary": "tools/verify_tilt_player.py:92-122",
+    "inputIntegration": "tools/verify_tilt_player.py:410-498",
+    "dispatchContract": "For every individual mouse move/down/up, key down/up, and WM_CHAR: process.poll() must be None, GetWindowThreadProcessId(HWND) must equal the launched process.pid, process.poll() must still be None, then and only then PostMessageW.",
+    "coverage": [
+      "nested click/ensure",
+      "quantity focus, End and Backspace down/up, quantity characters",
+      "search focus and every search character",
+      "Escape down/up",
+      "quit move/down/up"
+    ],
+    "bypassAudit": "Exactly two direct PostMessageW call sites remain: _NativeWindowBackend.post at line 104 and separately fenced verify_hover.owned_message at line 198. No input-mode raw-post, old global message/key helper, post_click import/use, foreground-input or cursor API remains in the tilt driver. Legacy post_click remains unchanged in its unrelated legacy module but is neither imported nor called here.",
+    "nativeBinding": "The input path creates native = OwnedWindowInput(process) immediately after launch(input), before discovering the HWND; it remains bound to that launched process. Reopen is automatic native regression and sends no Python-driven input.",
+    "independentProof": "Exact AST-extracted current sender rejects stale/dead owners without posting. Death between owner query and second poll also posts zero. Owner changes after move or after button-down permit only the already-valid earlier posts and suppress every subsequent click message. Key-up and character rejection also verified.",
+    "hoverGuard": "Original hover owned_message still checks current HWND owner == launched PID and process.poll() is None before each post. Exact extracted guard and mocked WinDLL stale/dead rejection pass; fresh three-resolution native logs retain 139 messages and 139 unique passing ownership checks per run."
+  },
+  "requestPublication": {
+    "file": "tools/verify_tilt_player.py:124-133,221-233",
+    "verified": "The caller increments seq once and writes the complete work file once. publish_request retries only os.replace on the same work/destination; it cannot increment sequence or reissue the action. Up to 101 attempts, only Winerrors 5/32/33 retry, with 100 maximum sleeps of 0.01 seconds. The 101st failure or any unrelated OSError propagates unchanged. On persistent failure both complete work bytes and previous destination bytes remain intact. A successful replace is not an acknowledgement: caller separately waits for exactly sequence == seq, with captured JSON/PNG checks for capture actions.",
+    "independentTests": "All allowed Winerrors tested both transient and persistent; Winerrors 2/87 and missing winerror propagate on the first call. Exact nested request tested sequence 101 with three identical publication payloads, one exact-sequence wait, and explicit rejection of sequence 100/102.",
+    "historicalRaceEvidence": "Retained parent-tilt-owned-hover-720-45 failed with PermissionError(13, Access is denied); original request remains sequence 1 and complete .writing remains sequence 2. Historical failure is retained, not relabeled as success."
+  },
+  "gaps": [
+    {
+      "id": "bounded-mailbox-sharing",
+      "blocking": false,
+      "detail": "Retry count/backoff is bounded, not a guaranteed wall-clock deadline or universal Windows sharing cure. A long lock, real ACL denial (also Winerror 5), unrelated I/O failure, process exit or acknowledgement timeout still fails the verification. Fresh native passes do not prove a sharing collision occurred or a retry was used in those runs; mocked contention proves retry semantics separately."
+    },
+    {
+      "id": "native-adversarial-input",
+      "blocking": false,
+      "detail": "Reviewer did not launch a player or deliberately recycle a real HWND/kill a real player during input. Adversarial rejection proof is offline exact-source execution; actual native operation is the separate frozen six-run evidence. Input54 has no per-message ownership telemetry, so exact pinned path coverage plus native state/PNG acknowledgements establishes integration, not a newly observed native stale-owner incident."
+    },
+    {
+      "id": "check-then-post-not-atomic",
+      "blocking": false,
+      "detail": "Ownership/liveness checks and Win32 PostMessageW are separate calls; this is the requested per-message best-effort fence, not an atomic OS reservation of HWND ownership. No remaining unchecked caller/bypass was found."
+    },
+    {
+      "id": "human-and-prior-scope",
+      "blocking": false,
+      "detail": "No human tilt/reflection/feel acceptance is granted. Prior nonblocking optical-causality, hidden/empty-observation freeze and DPI/platform coverage limits remain. Surface/integration review is not reopened or expanded. Parent documentation still needs its planned final-label update; historical failures and other user passes remain unchanged."
+    }
+  ],
+  "notes": [
+    "Read the entire 517-line current driver, both exact new test files, unchanged builder manifest logic and inherited HWND/post-click definitions. Enumerated all nine input dispatch call sites, not only OwnedWindowInput methods.",
+    "Reviewer reran the four InputOwnershipTests and three RequestPublicationTests: all seven pass. Publication test fixture-directory literal alone was redirected in the in-memory AST under this review output; repository source and test bytes were untouched.",
+    "Additional exact-source offline proof covers eight sender cases, ten nested input-path live/stale cases, six mocked native-backend/hover-guard cases, nine publication cases and one nested request sequence/ack case. Nested click/quantity retain original nonlocal state via a synthetic enclosing scope; state acknowledgement/control-validation stubs in that offline fixture are not native behavioral proof.",
+    "Read and reconciled all six fresh verification JSONs, raw embedded native/material reports, exact driver/helper runner pins, protected-before/after maps, commands and eight player logs. All eight retained native exit checks pass zero; no Exception/Crash/error pattern is matched in those logs. No player or Editor was launched by this reviewer.",
+    "Fresh input54 reports 587 driver checks, 160 native input checks, 11 native reopen checks, and material 400/400. All declared counts match actual arrays. Its 82 native state acknowledgements pass the current Binder DTO/control validator and exact PNG hashes. Compared with old input42, the five-check reduction is five fewer framebuffer samples; native semantic check names are otherwise retained, with the real randomly revealed selected printing changed from card 062 to 048.",
+    "All 304 distinct report PNG paths passed full PNG chunk CRC/IEND/decompressed-row/filter validation. All 108 hover capture JSON and PNG hashes match exact saved state; each size has 36 captures. This validates retained files, not human perception or newly rerun framebuffer behavior.",
+    "Current complete source membership/bytes remain exactly 432 inputs matching prior review and admitted build36; retained compiler map has 436 members and exactly the same four folder-meta extras. Current complete candidate membership/bytes are exactly 136 files matching both build36 and prior review. No runtime/probe/renderer/binary changes are present.",
+    "Rechecked all six driver/helper/test hashes, every pinned native evidence file, all 432 source hashes and all 136 candidate hashes immediately before writing this report. Accepted/older build directories and live Saves were never traversed; old-player preservation comes only from retained maps.",
+    "Only .artifacts/tilt-input-guard-rereview was written. No source fix, Git, installation/network, profile/skill modification, parent-file update or task closure was performed.",
+    "Tool wrapper rejected the bracketed repository workdir; execution used the explicit native script path from C:/Users/pada1 with all reads/writes still bounded by ROOT. An initial independent search-loop fixture selected its nested expression twice; the reviewer corrected that artifact-only extraction and reran it successfully (10 actual search messages/queries). No product issue arose from either harness problem."
+  ],
+  "exact_driver_pins": {
+    "tools/verify_tilt_player.py": "e9dd4d27b65d0f05c17622b1265e7032f2581772b4ae5539a110fbfcf657f9cf",
+    "tools/run_tilt_build.py": "8f9ad9e8a871395c07926f6b0a0538634e05b60f6a4d3a28275fb7d84d3adc4a",
+    "tools/verify_phase3_player.py": "c8dbe372479e14556c81c08a65ead4857d3504f643108c754d4ae0dfad96ce26",
+    "tools/verify_phase4_player.py": "89da51163c094d81178ecd148aee3b2e3accefdef9bb80b8f03e65732b2ced91"
+  },
+  "exact_test_pins": {
+    "TestsTilt/InputOwnershipTests.py": "d2187ecb61cb937466333e7ace8e971950fc9d44a210b0c4aa0531ae5d4030b7",
+    "TestsTilt/RequestPublicationTests.py": "c84c1aec6607a256e606a9e279c271c94c456348c56a5c85a1eb7ecf1df5064e"
+  },
+  "exact_native_reports": {
+    "parent-tilt-final-hover-900-49": {
+      "passed": true,
+      "checkCount": 416,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "reportSha256": "61ec9e7cb3fb49574b597433bb62858a0937f84fac0ed239817d89fbdc2c44d5",
+      "nativeCases": {},
+      "materialCases": {},
+      "nativeExitChecks": [
+        {
+          "name": "actual-hover-player-exit-zero",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "messages": 139,
+      "ownershipGuards": 139,
+      "captures": 36,
+      "size": [
+        1600,
+        900
+      ],
+      "logs": {
+        "input": {
+          "sha256": "e204e0615899a3552cd38dd4f130ae7c9b2293069c354472ea8d5bd5deaefab2",
+          "errorPatternMatches": []
+        }
+      }
+    },
+    "parent-tilt-final-hover-720-50": {
+      "passed": true,
+      "checkCount": 416,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "reportSha256": "e1128e9d9dc0222defb06727d06407fb555371a054ce3a87ac817c520ecd30dd",
+      "nativeCases": {},
+      "materialCases": {},
+      "nativeExitChecks": [
+        {
+          "name": "actual-hover-player-exit-zero",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "messages": 139,
+      "ownershipGuards": 139,
+      "captures": 36,
+      "size": [
+        1280,
+        720
+      ],
+      "logs": {
+        "input": {
+          "sha256": "0a49f746857fc116470e1db690cee0d052279a0248a150f83ecb1e1be311fa56",
+          "errorPatternMatches": []
+        }
+      }
+    },
+    "parent-tilt-final-hover-wide-51": {
+      "passed": true,
+      "checkCount": 416,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "reportSha256": "982c90ff6fd02e99ef7b3be99b6a77afa29561c7f59b2034db76b44ee581769d",
+      "nativeCases": {},
+      "materialCases": {},
+      "nativeExitChecks": [
+        {
+          "name": "actual-hover-player-exit-zero",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "messages": 139,
+      "ownershipGuards": 139,
+      "captures": 36,
+      "size": [
+        2560,
+        1080
+      ],
+      "logs": {
+        "input": {
+          "sha256": "f82b7951dfc35ad607942ad1d880db226618c37ab153cac3988c0b97a6c91865",
+          "errorPatternMatches": []
+        }
+      }
+    },
+    "parent-tilt-final-demo-52": {
+      "passed": true,
+      "checkCount": 23,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "reportSha256": "02d8cf6bf81820421285a9080c5fa0b6b92562c8e9616b4d2ae23298c729cb7d",
+      "nativeCases": {},
+      "materialCases": {
+        "input": 426
+      },
+      "nativeExitChecks": [
+        {
+          "name": "input:native-process-exit",
+          "passed": true,
+          "detail": "0"
+        }
+      ],
+      "logs": {
+        "input": {
+          "sha256": "f7b46e35e3da625482822a1d8b39928a13d74e9bc7d2f05148a5a44c37e2cdfa",
+          "errorPatternMatches": []
+        }
+      }
+    },
+    "parent-tilt-final-services-53": {
+      "passed": true,
+      "checkCount": 36,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "reportSha256": "da45ad475170edbd0b5f39f7c107ae6c364cf2ed0eace8eb32d57f1df8a1d477",
+      "nativeCases": {
+        "services": 62,
+        "reopen": 11
+      },
+      "materialCases": {
+        "services": 400,
+        "reopen": 400
+      },
+      "nativeExitChecks": [
+        {
+          "name": "services:native-process-exit",
+          "passed": true,
+          "detail": "0"
+        },
+        {
+          "name": "reopen:native-process-exit",
+          "passed": true,
+          "detail": "0"
+        }
+      ],
+      "logs": {
+        "services": {
+          "sha256": "a04f339b178d4e252cec332e6fd9ef249c99b8187cfec5b99c4c16b4cd7bb43e",
+          "errorPatternMatches": []
+        },
+        "reopen": {
+          "sha256": "316d73fc2525321994bae35acaa11e187a74b5efa1efa81f53da64a81b01da45",
+          "errorPatternMatches": []
+        }
+      }
+    },
+    "parent-tilt-final-input-54": {
+      "passed": true,
+      "checkCount": 587,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "reportSha256": "307a8453e51e4e272a844a8304a2046815afd6ff2ef7799f9b2c5f0ba4d67383",
+      "nativeCases": {
+        "input": 160,
+        "reopen": 11
+      },
+      "materialCases": {
+        "input": 400,
+        "reopen": 400
+      },
+      "nativeExitChecks": [
+        {
+          "name": "input:native-process-exit",
+          "passed": true,
+          "detail": "0"
+        },
+        {
+          "name": "reopen:native-process-exit",
+          "passed": true,
+          "detail": "0"
+        }
+      ],
+      "logs": {
+        "input": {
+          "sha256": "0fc1b1b7be51e49d6cd8d84a5db16df2ec889183defaf152e9d05f51609d8495",
+          "errorPatternMatches": []
+        },
+        "reopen": {
+          "sha256": "510b9244f7638cbabe79a7286edf465281328b3bd835a61b0a23b95dee1af99a",
+          "errorPatternMatches": []
+        }
+      },
+      "acknowledgementCount": 82
+    }
+  },
+  "runtime_candidate_pins": {
+    "sourceCount": 432,
+    "compilerCount": 436,
+    "candidateFileCount": 136,
+    "sourceExactPriorAndBuild36": true,
+    "candidateExactPriorAndBuild36": true,
+    "sourceCurrentMembershipAndBytesExact": true,
+    "candidateCurrentMembershipAndBytesExact": true,
+    "fourCompilerExtrasMatchRetainedClosure": true,
+    "sourcePinsSha256": "338e42eb309514fb6239ca26e11831c69321d558ece964405027e8bf1717aacf",
+    "candidatePriorPinsSha256": "b73222a795170d7c31b6d138395341e0e4c6acf700b5ea1f272e29b03d9b5ee3",
+    "buildResultsSha256": "206d6c1b4923942fb12af66d0e289dde5acb1ee59ccdeaec791d81fff91d8442"
+  },
+  "tests": {
+    "InputOwnershipTests": {
+      "count": 4,
+      "passed": true,
+      "failures": 0,
+      "errors": 0,
+      "fixtureAdaptation": "None"
+    },
+    "RequestPublicationTests": {
+      "count": 3,
+      "passed": true,
+      "failures": 0,
+      "errors": 0,
+      "fixtureAdaptation": "Only publication directory literal redirected in AST"
+    }
+  },
+  "evidence": {
+    "audit.py": {
+      "path": ".artifacts/tilt-input-guard-rereview/audit.py",
+      "sha256": "6e7395067e0d14a52e298323af1aa698d3fd999a53cb2557dc9b0ab775fd47ff"
+    },
+    "integration_proof.py": {
+      "path": ".artifacts/tilt-input-guard-rereview/integration_proof.py",
+      "sha256": "727bded1af88a4d229eefcd5b97065bf4015498f3024236b642f58a501b4ff62"
+    },
+    "unit-tests.log": {
+      "path": ".artifacts/tilt-input-guard-rereview/unit-tests.log",
+      "sha256": "f6cc2c3081417a45f9ec4ebd6cead2258fe506a0430467baad4e24dd61a3517c"
+    },
+    "unit-results.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/unit-results.json",
+      "sha256": "7bfb3c49a4659fb3a5b1e79baa57d36220c66e698aee62dd32c8e31425f9196c"
+    },
+    "reviewed-pins.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/reviewed-pins.json",
+      "sha256": "c384839d38c1e399035394e3dd58b2cb5a957a8961513e852f5be2c1d1c1c218"
+    },
+    "driver-boundary-audit.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/driver-boundary-audit.json",
+      "sha256": "e732eb764d3786951a6822b7aa500670944bdf671c0061ace650adc884cc66c6"
+    },
+    "independent-input-proof.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/independent-input-proof.json",
+      "sha256": "3298d4f684867e4a1215b96630b3b178ed1e98c20061d3bdf322083c629fcd28"
+    },
+    "independent-publication-proof.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/independent-publication-proof.json",
+      "sha256": "29fb75b84dc8ecd2ed6093b4459e35e4c77a51940a9b98882aa600a85ce37578"
+    },
+    "nested-integration-proof.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/nested-integration-proof.json",
+      "sha256": "690db47bd9ce59314cfd162110d638625bfa3c18c7166c219871fbfc6b2f855b"
+    },
+    "native-evidence-audit.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/native-evidence-audit.json",
+      "sha256": "12ea2bd0f876817930c2e0b38a731cab2d79f52caad1add64e3adf64aaf1cd35"
+    },
+    "native-evidence-pins.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/native-evidence-pins.json",
+      "sha256": "0d54fa1a75d3ec20131ebd14a5a6235d46bc79e21895929a269d9f83de2bbf55"
+    },
+    "drift-audit.json": {
+      "path": ".artifacts/tilt-input-guard-rereview/drift-audit.json",
+      "sha256": "ade256418e9021e2f47657f96b43d7843a33d97559ed3fdaa48a6654e7a55b74"
+    }
+  },
+  "report": ".artifacts/tilt-input-guard-rereview/review.json",
+  "humanAcceptance": false,
+  "phase5Authorized": false,
+  "taskClosureGranted": false
+}

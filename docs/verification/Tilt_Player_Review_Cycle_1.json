@@ -1,0 +1,194 @@
+{
+  "passed": false,
+  "summary": "Candidate/source/native evidence closure verifies, but handoff approval is blocked by input-mode missing per-message owned-PID/liveness safety checks; hover mode satisfies that fence.",
+  "security_concerns": [
+    {
+      "id": "INPUT-OWNERSHIP-001",
+      "severity": "medium",
+      "blocking": true,
+      "files": [
+        "tools/verify_tilt_player.py:92-98",
+        "tools/verify_tilt_player.py:375-397",
+        "tools/verify_tilt_player.py:435-437",
+        "tools/verify_tilt_player.py:452",
+        "tools/verify_tilt_player.py:462",
+        "tools/verify_phase3_player.py:301-316"
+      ],
+      "summary": "The new tilt driver enforces PID/liveness before every message only in hover mode; its input mode bypasses that fence.",
+      "detail": "Input mode discovers an owned HWND once, then calls inherited post_click plus local message/key without GetWindowThreadProcessId or process.poll before each PostMessageW. This contradicts the requested owned-PID-before-EACH-message constraint. On a stale/reused HWND it can post mouse/key/WM_CHAR messages to a different process. The real final input run passed, and there is no evidence that it sent foreign input; the defect is the missing safety enforcement, not a claimed observed cross-process incident.",
+      "reproduction": ".artifacts/tilt-player-review/input-message-ownership-repro.json",
+      "observedOfflineResult": {
+        "ownershipQueries": 0,
+        "messagesSentWithoutOwnershipCheck": 6,
+        "nativeAPIsCalled": false
+      },
+      "requiredCorrection": "Fence EVERY input-mode mouse/key/char/quit post with the launched live process PID check, including every element within multi-message helpers; add an offline changed-owner/dead-process regression and fresh affected native input evidence. Do not edit accepted players or unrelated legacy helpers merely to repair the new driver."
+    }
+  ],
+  "logic_errors": [],
+  "test_gaps": [
+    {
+      "blocking": false,
+      "summary": "Whole-player gate pose-frozen checks are vacuous when observations are suppressed.",
+      "detail": "Error/pause/Binder/focus-pause captures publish zero eligible observations, so retained-observation pose equality alone cannot prove nonzero internal controller pose was preserved. Real clock freeze and no-side-effect checks are nonvacuous; source running gates freeze advances. A nonzero internal pose freeze assertion belongs to the separately reviewed integration fixture; do not describe whole-player empty-array comparison as that proof."
+    },
+    {
+      "blocking": false,
+      "summary": "Player deltas establish response, not isolated optical causality or human feel.",
+      "detail": "Player captures are taken at different presentation times and include real chrome/animation; quantitative image/pose changes are strong practical response evidence but fixed-clock mask/light causality comes from separate GPU proof. No human feel, all GPU/DPI/platform or every possible overlap claim is warranted."
+    },
+    {
+      "blocking": false,
+      "summary": "Managed opt-in suite was read but not rerun because its hardcoded output paths would leave this review-only directory.",
+      "detail": "Current full runtime/probe were really compiled by native build-36; scoped independent execution reran 13 Python tests and all 18 exact C# policy checks. No unexecuted managed parser suite is mislabeled as a fresh test run."
+    }
+  ],
+  "notes": [
+    "Read all new builder/policy/probe/scene/owned tools and explicit Build*/Player* tests; read inherited native probes and HWND helper implementation. Surface/Tabletop/shader behavior has separately delegated independent review and is not re-approved wholesale here.",
+    "Actual native build-36 is Succeeded, Editor exit 0, zero errors/warnings, Mono/Direct3D11. Current 432 delivered source inputs equal admitted source pins; 436 current stage/compiler members reconcile with only four bounded real folder metas. Candidate current complete immutable membership/bytes is 136 files exact.",
+    "Actual scene has EIGHT MonoBehaviour scripts, not seven: OpeningGame, TabletopPresentation, Phase3MediaHost, Phase4CollectionHost, BinderPresentation, Phase4SmokeProbe, MaterialsSmokeProbe, TiltSmokeProbe; plus Camera/AudioListener/Transforms. Catalog/model GUIDs resolve uniquely. Only BootstrapTilt among five delivered scenes enables pointerTiltEnabled; trusted material manifest/full budget are explicit.",
+    "213 delivered Asset meta GUIDs are all unique; scanned delivered serialized reference GUIDs all resolve or are built-ins. No source asset meta is missing. TiltPresentationChecks meta adoption is byte/hash exact to the recorded current integration native stage and its source hash; all eight new asset metas match current native build stage.",
+    "Probe normal/unrelated-smoke paths remain inert. Dedicated hover requires exact bounded BOM-free marker, owned sandbox/save scope and sequential bounded capture/seed4/fault requests; it disables legacy autoquit probes before Start. It observes actual render DTOs and captures framebuffer, never injects pointer or fabricates legacy reports. Actual viewJson captures contain no hidden card metadata; keys contain context/role/index, not unrevealed identities.",
+    "All SIX final reports reconcile real enumerated check counts, embedded/raw native reports, current driver/helper hashes and preservation before/after maps. All EIGHT recorded native process exits are zero; player logs have no matched runtime exception/crash/error. No Editor or player was launched by this review.",
+    "All 309 PNG paths independently passed chunk CRC/IEND/decompressed row/filter/dimension checks; 245 distinct file contents. All 108 hover snapshot/PNG hashes match raw bytes and detached state. Recomputed all 60 four-direction pixel cases from real baseline/images, including safe crop bounds, edges and interiors. Minimum 9334 changed pixels, 538 edge-band pixels, 8702 interior pixels, 11.16179996825158 mean RGB delta.",
+    "Each hover size has 139 recorded posts with 139 matching before-message ownership guards. Focus loss/recovery uses only the owned window activation/app/focus messages; no foreground/cursor APIs. All five target surfaces have four signed pose changes, pointer acknowledgement, stable original bounds, leave-neutral, no-hover game/save/cue invariants. Correct current results-primary rectangle and direct Skip secondary match the actual renderer. Each final owned hover save has exactly two real packs/22 cards, both fully revealed, confirming new-pack direct Skip without duplicate award.",
+    "82 native input acknowledgements independently reconcile actual current Binder DTO/control source and PNG hashes. Services/input actual backup archives contain the exact six authoritative bytes; imported selected profiles match all six old authoritative bytes. Parsed session envelopes/checksums match reopened reports with exact transaction/provenance/order/newToVirtual/reveal/wrapper flags and revisions. Physical edit envelopes preserve actual condition buckets at revisions 2 and 3. Full material oracles independently recalculate all 121 bottom-up RGBA bindings and match retained oracles; native texture totals remain 107/51479000 with no synthetic/fallback claims.",
+    "No UserMetadata/userMetadata field exists in the inspected delivered source; no such invented field or preservation assertion is added. Actual persisted fields and provenance/flags are compared exactly.",
+    "Inspected actual 1600x900 holo inspection left/right and wrapper-right framebuffers: opposing perspective silhouettes and different illustration light responses are apparent; no obvious clipping or text/control overlap in those samples. This is bounded visual evidence, not human acceptance or universal platform coverage.",
+    "Historical Tilt_Build_Player.md still describes the old blocked attempt and needs parent closing updates; failures remain retained history. Current Tilt_Player_Execution.json and Manifest match actual current source/compiler/candidate/reports and explicitly leave human reflection acceptance and Phase5 authorization false.",
+    "No source, Git, live saves, accepted build traversal, Editor/player launch, foreground input, network/install/profile/skill or parent files were changed. Old-player preservation is reconciled from retained maps only, not newly traversed. Only review-directory evidence/test fixtures were written."
+  ],
+  "report": ".artifacts/tilt-player-review/review.json",
+  "exact_source_pins": {
+    "path": ".artifacts/tilt-player-review/source-pins.json",
+    "sha256": "0742506c6d5b1ef4939a8ddafe0decd3a284faa2533439ce755d3b68cfdc5db4",
+    "fileCount": 432,
+    "equalToAdmittedBuild36": true,
+    "compilerCount": 436,
+    "candidatePinsPath": ".artifacts/tilt-player-review/candidate-pins.json",
+    "candidatePinsSha256": "b73222a795170d7c31b6d138395341e0e4c6acf700b5ea1f272e29b03d9b5ee3",
+    "candidateFileCount": 136,
+    "reviewedFilePins": {
+      "Assets/VintageCollector/Editor/TiltBuild.cs": "706d5d62fe5aaffd29010a30e35e1efcaaaeddd4811e84b650ad46d5fa37a406",
+      "Assets/VintageCollector/Editor/TiltBuildPolicy.cs": "cf9c5478ed360594b6dec3bca9c140c9b0966e2d21135a11f65b25ac303fbfd1",
+      "Assets/VintageCollector/Runtime/TiltSmokeProbe.cs": "71e9c1b96f9d7fedb22f24a17cf4dc88ed04d356be567c7a88f247c29f792a3e",
+      "Assets/VintageCollector/Scenes/BootstrapTilt.unity": "c5335b4c5fad4f27a8d246aa48b4a0e62cbffbce6c3a3ed12d2027305f672219",
+      "Assets/VintageCollector/Scenes/BootstrapTilt.unity.meta": "8fbb595a6d3f9866f4cf85904be081fe193f77032187ab87475b8382f2f9674f",
+      "tools/run_tilt_build.py": "8f9ad9e8a871395c07926f6b0a0538634e05b60f6a4d3a28275fb7d84d3adc4a",
+      "tools/run_tilt_build_policy.py": "d6448267b1acf44cba88fdbdfff3ec11fea8437fb54b7520b73f377d22421864",
+      "tools/run_tilt_build_compile.py": "305eb3a2c075a2a7572d87073aa35b3b816650b7c98edd51aabb91339a3ddcc4",
+      "tools/verify_tilt_player.py": "d2439e4f8a44055a568da9730d3c41d177038691b877dc5f27c6cb9bd9927a5c",
+      "TestsTilt/BuildToolTests.py": "4e1b1b8259174f143195d6df86b04fc3955223ca56c61c5c3a8ca4cc6a04db3b",
+      "TestsTilt/BuildEntrypointTests.py": "8e96cc7fd18052fb87f3b231873fb1b605fa1666bb8d2c19e2feb99444413805",
+      "TestsTilt/BuildPolicyTests.cs": "e65a25efd4c2f24a7a81932d5c27b8633aa3aa4d19968dc931918fc930ffc416",
+      "TestsTilt/PlayerOptInTests.cs": "2e087db080a162b0c6c8aaf4f4e05b0b8f49291215218bae7391ca81bca59217",
+      "TestsTilt/PlayerVerifierTests.py": "198850030b5518402577f1782811d162cee11c4663593a1774e8ee55b77cddff",
+      "tools/verify_phase3_player.py": "c8dbe372479e14556c81c08a65ead4857d3504f643108c754d4ae0dfad96ce26",
+      "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs": "b42c6edfcebfde79f88e20c458a925c9cca4ce12734a40949bf7342bd5bd9ef0",
+      "Assets/VintageCollector/Runtime/MaterialsSmokeProbe.cs": "4bfc4dd798c5511af6c341590b10af34212607fe7e723328610b4bff2b42cbe6",
+      "Assets/VintageCollector/Runtime/GamePaths.cs": "9458de389a173ee1dc9cac5139f89ff2678df89ac06ec2f39106017d53151641",
+      "docs/verification/Tilt_Meta_Adoption.json": "4476f109c15681ed8605ae4ddbcc2b530cde41edcb0d0ff93103ead84361a67a",
+      "docs/verification/Tilt_Player_Execution.json": "966d6da6adfb2d3b0164f299fca33911b122f7501d16aa6f27821dfa89be6071",
+      "docs/verification/Tilt_Player_Manifest.json": "07dd4624b3beaabbd3f31cf023c44ee5425e60438b3ce567953b10e18f6bf560",
+      "docs/technical/Tilt_Build_Player.md": "3fbc2be7d251cff426bf6abfcb73634de2e9770bd612a4ce4c313233216d11e5",
+      "docs/technical/Hover_Tilt_Contract.md": "1f2b8135c134f23bf288ded3380ced6a512c2faa11d87a77d0b5717ff3141adc"
+    }
+  },
+  "actualReports": {
+    "parent-tilt-targets-skip-green-37": {
+      "passed": true,
+      "checks": 416,
+      "nativeCases": {},
+      "materialCases": {},
+      "pngCount": 36,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "messages": 139,
+      "ownedMessageGuards": 139,
+      "directionalPixelCases": 20
+    },
+    "parent-tilt-hover-720-final-38": {
+      "passed": true,
+      "checks": 416,
+      "nativeCases": {},
+      "materialCases": {},
+      "pngCount": 36,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "messages": 139,
+      "ownedMessageGuards": 139,
+      "directionalPixelCases": 20
+    },
+    "parent-tilt-hover-wide-final-39": {
+      "passed": true,
+      "checks": 416,
+      "nativeCases": {},
+      "materialCases": {},
+      "pngCount": 36,
+      "runnerPinsExact": true,
+      "protectedEvidenceEqual": true,
+      "messages": 139,
+      "ownedMessageGuards": 139,
+      "directionalPixelCases": 20
+    },
+    "parent-tilt-demo-final-40": {
+      "passed": true,
+      "checks": 23,
+      "nativeCases": {},
+      "materialCases": {
+        "input": 426
+      },
+      "pngCount": 15
+    },
+    "parent-tilt-services-final-41": {
+      "passed": true,
+      "checks": 36,
+      "nativeCases": {
+        "services": 62,
+        "reopen": 11
+      },
+      "materialCases": {
+        "services": 400,
+        "reopen": 400
+      },
+      "pngCount": 17
+    },
+    "parent-tilt-input-final-42": {
+      "passed": true,
+      "checks": 592,
+      "nativeCases": {
+        "input": 165,
+        "reopen": 11
+      },
+      "materialCases": {
+        "input": 400,
+        "reopen": 400
+      },
+      "pngCount": 169
+    }
+  },
+  "evidenceAudit": ".artifacts/tilt-player-review/evidence-audit.json",
+  "regressionAudit": ".artifacts/tilt-player-review/regression-audit.json",
+  "executedByReviewer": {
+    "pythonTests": {
+      "count": 13,
+      "passed": true,
+      "log": ".artifacts/tilt-player-review/pure-tests.log",
+      "adaptation": "only fixture-directory literals redirected in memory under review; original source untouched"
+    },
+    "nativePolicyTests": {
+      "count": 18,
+      "compilerAndExecutionExits": [
+        0,
+        0
+      ],
+      "log": ".artifacts/tilt-player-review/policy/execution.log"
+    },
+    "unsafeInputOfflineRepro": ".artifacts/tilt-player-review/input-message-ownership-repro.json",
+    "nativePlayerOrEditorExecutions": 0
+  },
+  "candidateIntegrityVerified": true,
+  "humanAcceptance": false,
+  "phase5Authorized": false,
+  "taskClosureGranted": false
+}

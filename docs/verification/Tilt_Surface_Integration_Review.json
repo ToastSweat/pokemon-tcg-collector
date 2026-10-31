@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "security": [],
+  "logicerrors": [],
+  "testgaps": [
+    {
+      "id": "scope-candidate-human",
+      "blockingForThisReview": false,
+      "detail": "This approves the exact frozen helper/integration source and retained isolated proof only. New assembled candidate build, real game save/award/generation invariance, game retry/import/restart/physical-edit regressions and focused human four-direction tilt/reflection feedback remain parent-owned acceptance gates. Existing partial/user passes remain intact. No human perceptibility, task closure, publication or further phase is approved."
+    },
+    {
+      "id": "os-dpi",
+      "blockingForThisReview": false,
+      "files": [
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:69-75",
+        "tools/run_tilt_presentation_input.py:72-86,184-188"
+      ],
+      "detail": "Actual client-event/layout-scale parity is proven at 1280x720,1600x900,2560x1080. These are resolution/layout-scale changes, not a retained multi-monitor/Windows per-monitor DPI transition matrix. Do not describe them as exhaustive OS DPI coverage."
+    },
+    {
+      "id": "native-leave-window",
+      "blockingForThisReview": false,
+      "files": [
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:71-75",
+        "tools/run_tilt_presentation_input.py:94-96"
+      ],
+      "detail": "Leaving the fitted surface for other UI is exercised. A retained actual WM_MOUSELEAVE/cross-window departure and reentry sequence is absent. The MouseLeaveWindow branch and following Repaint behavior are statically reviewed but not independently exercised here; no demonstrated runtime defect is asserted."
+    },
+    {
+      "id": "fixture-binary-provenance",
+      "blockingForThisReview": false,
+      "files": [
+        "tools/run_tilt_presentation_native.py:78-81",
+        "tools/run_tilt_presentation_input.py:40-46"
+      ],
+      "detail": "Retained source/stage/after pins match the final3 source, and the driver checks the player executable hash. These runners do not retain a complete immutable compiled payload membership/hash pin (managed assembly, resources.assets and every player file), and normal/fallback runs share a mutable stage player path. The executable alone is not proof of exact Unity embedded payload bytes. Native outcomes and source provenance are admitted as isolated behavioral evidence, not immutable packaged-candidate attestation."
+    },
+    {
+      "id": "sampling-mask-print",
+      "blockingForThisReview": false,
+      "files": [
+        "TestsTilt/SurfaceGpuFixture.cs:44-99"
+      ],
+      "detail": "GPU geometry/mask classification samples every second framebuffer pixel; CPU/GPU source-color landmarks have documented footprint/color tolerance. Independent reanalysis also samples every second pixel and excludes a separately disclosed three-source-texel mask-transition footprint. This is not all-pixel OCR/readability or arbitrary same-sized semantic-mask validation. Actual supplied masks/roles pass; null/wrong-size masks are matte."
+    }
+  ],
+  "notes": [
+    {
+      "topic": "motion",
+      "files": [
+        "Assets/VintageCollector/Presentation/HoverTiltMotion.cs:3-22"
+      ],
+      "finding": "Both target axes map normalized pointer coordinates to +/-12 degrees, nonfinite/outside input neutralizes targets, and input is clamped without accumulating. Exact exponential response uses double intermediates, a convex no-overshoot interpolation. Invalid/nonpositive delta and running=false leave pose unchanged; finite huge delta settles safely; Reset clears pose and targets. Recompiled and executed exact source independently: 215 assertions, including 200 repeated bounded reversals, not 215 distinct behaviors."
+    },
+    {
+      "topic": "projection-camera-normal-reflection",
+      "files": [
+        "Assets/VintageCollector/Resources/Presentation/TiltedSurface.shader:22-57",
+        "Assets/VintageCollector/Presentation/TiltedSurfaceRenderer.cs:18-26,28-34"
+      ],
+      "finding": "Ry(yaw)*Rx(pitch) basis and normal are orthonormal; inverse ray-plane t=-N.C/(N.D) with C=(0,0,2.4), shared recovered face/mask UV, source alpha and discard produce perspective silhouette/texture. Reflect(-view,N) intersects fixed light plane z=2 with two broad super-Gaussian softboxes. No _Time animation exists; caller clock is sanitized but unused by light. Independent forward/inverse/outward-overscan sampling passed 625 fractional/extreme-aspect cases with maximum UV error 9.592326932761353e-14; sampled minimum camera depth 2.1943599938221703. Not a claim of 625 unique runtime tests."
+    },
+    {
+      "topic": "independent-decoded-native-pixels",
+      "finding": "Independent native-PNG reanalysis passes 45 analytical silhouette frames, 27 same-projection finish/matte pairs, 24 non-neutral surface-UV-binned reflection movements at clock7.25, zero outside-mask/background changes away from explicitly excluded transition footprint, and achromatic added wrapper energy. Eighteen matte same-pose/different-clock decoded images are exact; null/wrong-size masks and extreme clamps exactly equal their matte reference. Author GPU checks additionally cover corners, landmarks, synthetic projected alpha holes and actual deferred material destruction."
+    },
+    {
+      "topic": "role-fallback-retention-lifecycle",
+      "files": [
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:532-544,569-598,265-274",
+        "Assets/VintageCollector/Presentation/TiltedSurfaceRenderer.cs:11-26,36-38"
+      ],
+      "finding": "Actual selected wrapper front/back chooses its matching mask; holo uses only selected card holo mask; nonholo/backs are matte. Renderer rejects absent/misaligned dimensions or unknown finish to matte, never full-metallic fallback. New shader is Resources.Load-loaded and demonstrably retained in normal native fixture (missing/unsupported controls return false). Draw false uses unchanged 2D path; successful full face returns before old print/finish paint. Owned material disposal is idempotent/permanent and preserves provider textures."
+    },
+    {
+      "topic": "current-pointer-surfaces-priority",
+      "files": [
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:23-137,385-418,453-490,633-658,688-702"
+      ],
+      "finding": "Actual Event.current.mousePosition is read before GUI scale and divided once by layout.scale. Repaint clears/rebuilds the current eligible surface set, reverse paint order picks one original fitted hit rectangle. No historical union; stack-back roles do not include hidden identity; modal inspection excludes all background surfaces and rejected hidden inspection exposes none. Length-prefixed transaction/stage/visible-count/inspection context clears controllers, role/index distinguish surfaces, cache insertion caps32. Returned observation arrays and entries are detached and frame-current in retained native states. Hover targets advance in Update, with existing accepted click rectangles unchanged."
+    },
+    {
+      "topic": "passivity-freeze-legacy",
+      "files": [
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:54-89,248-274,385-418"
+      ],
+      "finding": "Hover path only samples/targets/renders: no generator/save/award/command/audio calls. Running gates freeze pointer/context/targets/pose/light clock under pause/focus/error/Binder/hidden overlay. Native state comparisons verify exact fingerprints/clock/context/pointer across each admitted freeze. Focus pause request and six explicit button clicks are separate from hover. Serialized opt-in defaults false and old 2D path is preserved. Retained unchanged legacy checks: Phase2=62,Phase3=29,materials=67 with31 PNGs. Fixture has no host/save authority; no fake real-game save invariance claim."
+    },
+    {
+      "topic": "quiet-layout-fallback",
+      "files": [
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:97-136,528-529,656-657,701-702"
+      ],
+      "finding": "Shader full-face path is clipped against conservative/quiet layout intersection, with original fitted hover/hit authority, away from inspection info/Back, result footer and unrevealed labels. Retained native bounds assertions and inspected integrated screenshots show no demonstrated print/control overpaint. Hint outside art and accepted Skip area equality are proved. Fallback native control has11 checks and2 complete PNGs: real poses vary but old2D pixels remain stable."
+    },
+    {
+      "topic": "actual-input-and-state-provenance",
+      "files": [
+        "TestsTilt/IntegrationFixture.cs:14-15,35-43,55-85",
+        "tools/run_tilt_presentation_input.py:21-32,59-69,110-120,231-244"
+      ],
+      "finding": "Driver enumerates visible windows, calls GetWindowThreadProcessId and selects the launched PID-owned HWND, then PostMessageW WM_MOUSEMOVE. Retained full run reconciles60 moves and6 explicit down/up click pairs (eventCount66),194 passed checks,43 full PNGs. Fixture mailbox contains no pointer/pose setter; pose is read from production controllers and capture reads actual native framebuffer. No global cursor/foreground APIs or fabricated poststates appear in the reviewed path. Historical OS ownership is evidenced by retained records plus reviewed code, not by pretending to re-observe an exited HWND."
+    },
+    {
+      "topic": "red-green-and-oracle-corrections",
+      "finding": "Actual no-op motion RED and yaw-only RED fail behavior before GREEN. Corrected geometry RED fails1130 left-silhouette pixels; geometry-only reflection RED yields zero highlight; isolated disposal-leak mutant fails deferred destruction. Initial geometry-red misclassified dark source ink and is not admitted as valid geometric RED. Corrected oracle retains out-of-silhouette detection and positive corner/texture landmark checks; explicit outward raster rounding/offset fixes fractional projection instead of relaxing solid-background/mask exactness. Interrupted reflection-green-v2 and mailbox-sharing failures remain failures, not renamed successes. Integration retained RED assertions cover opt-in/observations/pointer/faces/Binder/overlay/hint/Skip/seams/bounds."
+    },
+    {
+      "topic": "compile-closure-and-metadata",
+      "finding": "TiltSurfaceChecks resolves isolated SurfaceGpuFixture by assembly string/reflection only, with no compile-time fixture reference; TiltPresentationChecks also depends only on production/Unity. Retained production-compile-final-green has native exit0 and source pins excluding fixture, while final GPU build reports Succeeded errors=0 warnings=0. Original CS0246 raw failure was not present in the scoped surface evidence logs; closure is established by corrected source and retained fixture-free compile, not by inventing an original log. Current mutable stage is not asserted fixture-free. Parent meta adoption record matches exact source hash and byte-equal actual-stage TiltPresentationChecks meta/guid; stale earlier source hash is not used."
+    },
+    {
+      "topic": "historical-contract-fixture-pin",
+      "finding": "The first audit attempt rejected older final2-contract IntegrationFixture.cs hash72ad168500eff552cd9eefa50255940c2454ed03c806e9aba5fb078770012add versus current12e65e3ed57afb3cb56aa7bb04b611d9420de6d06ab723819a77b85578cf1f05. That run is contract-only; its production check/source pins match. Final3 normal and fallback native runs pin the current fixture and production sources exactly. The historical difference is disclosed, not silently represented as current full integration evidence."
+    },
+    {
+      "topic": "visual-inspection",
+      "finding": "Viewed both actual native contact sheets and actual integrated inspection-up,wrapper-1280-right,results-hover screenshots. Opposing horizontal/vertical perspective edges are visible; holo illustration color response shifts, wrapper highlights stay silver, matte/cardback printing remains present. Integrated modal card and results grid do not visibly overpaint controls in those captures. Tiny contact-sheet legal text and subjective strength/smoothness are not established. No blanket human-perceptibility claim."
+    }
+  ],
+  "exactsourcepins": {
+    "Assets/VintageCollector/Presentation/HoverTiltMotion.cs": "37187ab5a5cb0447f21a200e5193b25679fa78f68218aabafedd4b133107e895",
+    "Assets/VintageCollector/Presentation/TiltedSurfaceRenderer.cs": "11293d0013225b4a524f752eaad65043bdcc8a634882db240d902ff94ac96ad4",
+    "Assets/VintageCollector/Presentation/TabletopPresentation.cs": "6de88cb41726963420560da6ad754206df1473333605582e571352186ec460bf",
+    "Assets/VintageCollector/Resources/Presentation/TiltedSurface.shader": "a38acf9855c59ccaa504fd6ecdbb8df8252c23006d9b9656f7b67ddd4a473861",
+    "Assets/VintageCollector/Editor/TiltSurfaceChecks.cs": "8c7b588289710b6a2b3d855543fb140f995c4ef3823b90a53290f6513af080ff",
+    "Assets/VintageCollector/Editor/TiltPresentationChecks.cs": "a73cf1dd7c2a6da895b8e8df418847f82de5e8f706ec0a04ca886033dd483823",
+    "Assets/VintageCollector/Presentation/HoverTiltMotion.cs.meta": "92619f18a1d19593b8c5d958564a0e8c2a505db596957e689cc567779e1da995",
+    "Assets/VintageCollector/Presentation/TiltedSurfaceRenderer.cs.meta": "8d77c9b744cd9a964a2d5a5f5620a56aaeb0881caf5ec3efcd68c08bf8e7c935",
+    "Assets/VintageCollector/Presentation/TabletopPresentation.cs.meta": "70dd6fb8601ed57bb9926fb1603cf4cb4eb9a4477830d83f86ec43651ba596bf",
+    "Assets/VintageCollector/Resources/Presentation/TiltedSurface.shader.meta": "2500a69e8b5cd4cfb37ddadd90dcff0f224ee4f3ea021147015caefd8920937c",
+    "Assets/VintageCollector/Editor/TiltSurfaceChecks.cs.meta": "20c060d6ded7529b1b1c4c0596684fadf6b0eefb365553e2533291c6560cf967",
+    "Assets/VintageCollector/Editor/TiltPresentationChecks.cs.meta": "95ad4e36b8897ac4a6889f6f03716ee64555461799f57f7cf4299d08b56d1892",
+    "TestsTilt/SurfaceGpuFixture.cs": "227e6b7affff11909f1abd699c4300f42b9ad93c25abb26b17aefa3a1078234d",
+    "TestsTilt/SurfaceMotionTests.cs": "a47c6bc62077282e70dd77c5d5648dc662fa40b69ddc423be0d695a63738ffbd",
+    "TestsTilt/IntegrationFixture.cs": "12e65e3ed57afb3cb56aa7bb04b611d9420de6d06ab723819a77b85578cf1f05",
+    "TestsTilt/IntegrationFixtureBuild.cs": "c5216f19c885761a5529db88356c89dfa2ebafb6992a5a14b6e9784b556fc11e",
+    "tools/run_tilt_surface_analyze.py": "fe842aecacf3049eed2b1792a0d98d00cd02d40559a7ac64eba58f156855e826",
+    "tools/run_tilt_surface_native.py": "31e4325feec949f5d4a4993b8fbdb375d69fbf7e4b9a2ccd9272959fa212aac9",
+    "tools/run_tilt_surface_proof.py": "9f0478aeb94a9969002e891e637f7211608800ab43a7c9f4e181b343573a5a9a",
+    "tools/run_tilt_surface_pure.py": "323053ec44277221d7d32d91ebb207b104dd1dd3546185ad63847335cfcf1088",
+    "tools/run_tilt_presentation_input.py": "9b85f7ada8743860b08ee0e776f050739e2a80291a4b9706a39fc783ef6a04c8",
+    "tools/run_tilt_presentation_native.py": "953fa60ff97b580a4bec4d4b93ee9e3fc08226e019c050163e8fde4eaeb8854f",
+    "docs/technical/Hover_Tilt_Contract.md": "1f2b8135c134f23bf288ded3380ced6a512c2faa11d87a77d0b5717ff3141adc",
+    "docs/technical/Tilt_Surface.md": "0a02c37503c28321e653e6cf7e89e88a44024b007b33a0deedc36dc0c7a7e897",
+    "docs/technical/Tilt_Presentation.md": "64e010b73da1dfb9d7b84c21be6607c8c197765108714a7a2e9165b8e48f80d8",
+    "docs/verification/Tilt_Meta_Adoption.json": "4476f109c15681ed8605ae4ddbcc2b530cde41edcb0d0ff93103ead84361a67a"
+  },
+  "reviewedfiles": [
+    "Assets/VintageCollector/Presentation/HoverTiltMotion.cs",
+    "Assets/VintageCollector/Presentation/TiltedSurfaceRenderer.cs",
+    "Assets/VintageCollector/Presentation/TabletopPresentation.cs",
+    "Assets/VintageCollector/Resources/Presentation/TiltedSurface.shader",
+    "Assets/VintageCollector/Editor/TiltSurfaceChecks.cs",
+    "Assets/VintageCollector/Editor/TiltPresentationChecks.cs",
+    "Assets/VintageCollector/Presentation/HoverTiltMotion.cs.meta",
+    "Assets/VintageCollector/Presentation/TiltedSurfaceRenderer.cs.meta",
+    "Assets/VintageCollector/Presentation/TabletopPresentation.cs.meta",
+    "Assets/VintageCollector/Resources/Presentation/TiltedSurface.shader.meta",
+    "Assets/VintageCollector/Editor/TiltSurfaceChecks.cs.meta",
+    "Assets/VintageCollector/Editor/TiltPresentationChecks.cs.meta",
+    "TestsTilt/SurfaceGpuFixture.cs",
+    "TestsTilt/SurfaceMotionTests.cs",
+    "TestsTilt/IntegrationFixture.cs",
+    "TestsTilt/IntegrationFixtureBuild.cs",
+    "tools/run_tilt_surface_analyze.py",
+    "tools/run_tilt_surface_native.py",
+    "tools/run_tilt_surface_proof.py",
+    "tools/run_tilt_surface_pure.py",
+    "tools/run_tilt_presentation_input.py",
+    "tools/run_tilt_presentation_native.py",
+    "docs/technical/Hover_Tilt_Contract.md",
+    "docs/technical/Tilt_Surface.md",
+    "docs/technical/Tilt_Presentation.md",
+    "docs/verification/Tilt_Meta_Adoption.json"
+  ],
+  "report": {
+    "path": ".artifacts/hover-tilt-review/review.json",
+    "verdict": "PASS for the exact frozen helper/surface/shader/passive-pointer integration review; no demonstrated blocking security or logic defect. Nonblocking proof limits remain explicit.",
+    "sourcePinStability": "All26 reviewed source/test/runner/doc/meta hashes match before/after and finalization.",
+    "retainedProof": {
+      "pureAssertions": 215,
+      "surfaceGPUAssertions": 434,
+      "surfacePNGs": 106,
+      "integrationChecks": 194,
+      "integrationPNGs": 43,
+      "actualMouseMoves": 60,
+      "explicitClickPairs": 6,
+      "integrationEventCount": 66,
+      "fallbackChecks": 11,
+      "fallbackPNGs": 2,
+      "legacyPhase2Checks": 62,
+      "legacyPhase3Checks": 29,
+      "legacyMaterialsChecks": 67,
+      "legacyMaterialsPNGs": 31,
+      "protectedMediaAndManifestFilesUnchanged": 109
+    },
+    "countsMeaning": "Named/assertion/check counts include repeated poses/reversals and are not unique requirements or human acceptance counts.",
+    "independentExecution": {
+      "nativeProjectLaunched": false,
+      "pureProductionRecompiledAndExecuted": true,
+      "pureExitCodes": [
+        0,
+        0
+      ],
+      "pixelReanalysisPassed": true,
+      "geometryMathSamples": 625
+    },
+    "artifacts": [
+      "audit.py",
+      "source-pins-before.json",
+      "audit-facts.json",
+      "independent_pixels.py",
+      "independent-pixels.json",
+      "SurfaceMotionTests.exe",
+      "write_report.py",
+      "review.json"
+    ],
+    "writeScope": "Only .artifacts/hover-tilt-review. No source fixes, Git, parent/shared native launch, accepted build traversal, live saves, network, installs, profile/skills changes or task closure.",
+    "detailedEvidence": {
+      "retainedAudit": ".artifacts/hover-tilt-review/audit-facts.json",
+      "independentDecodedPixels": ".artifacts/hover-tilt-review/independent-pixels.json"
+    }
+  }
+}

@@ -6,7 +6,15 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 **Phase 4 is accepted:** the user reported **all five review checks PASS**. The136-member player manifest was rechecked unchanged without reading live saves, and no rebuild was performed. The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**. See [human acceptance](docs/verification/Phase_4_Human_Acceptance.json).
 
-The supplied-materials candidate is built, automated-player verified and independently reviewed. The user confirms the art is present and all other functionality PASS, but cannot perceive the holo/metallic response. Only that interaction is reopened: a separate mouse-over tilt/light-response correction is in progress. The provided faces remain unchanged visual references for the existing Unlimited simulation; no rules, identities, probabilities or101-target changes. Phase5 stays unopened. [Feedback](docs/verification/Materials_Human_Feedback.json) · [Tilt contract](docs/technical/Hover_Tilt_Contract.md).
+The user confirmed the supplied art and other functionality PASS; that acceptance is preserved. The requested mouse-over tilt / catching-light correction is now implemented in a separate, automated-player-verified and independently reviewed candidate. Moving across cards or the pack controls pitch/yaw and normal-dependent masked reflection; leaving eases neutral. Only focused human tilt/finish feedback remains pending; no Phase5. [Feedback](docs/verification/Materials_Human_Feedback.json) · [Tilt contract](docs/technical/Hover_Tilt_Contract.md).
+
+## Mouse-over tilt candidate — focused retest
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase3TiltWindows\VintageCardCollector.exe`
+
+Keep the whole folder under this project. Move the mouse across the pack, revealed cards or inspection left/right/up/down—no click, drag or wheel needed for tilt. Perspective and masked light respond to the viewing angle; ordinary cards remain matte. Original hitboxes, card11 stop, Binder, saves, odds and supplied images are unchanged. This separate candidate has its own save root and does not overwrite the previous material/Phase4 players. Source scene: **Assets/VintageCollector/Scenes/BootstrapTilt.unity**.
+
+[Focused tilt retest](docs/hermes/Hover_Tilt_Human_Retest.md) · [Actual native input/build proof](docs/technical/Tilt_Build_Player.md) · [Frozen player pins](docs/verification/Tilt_Player_Execution.json). Build36 succeeded0errors0warnings; actual hover at1280x720/1600x900/2560x1080, full game/retry/import/restart and independent review gates passed. Human feel/perceptibility is not inferred from those tests.
 
 ## Supplied-art / foil candidate — ready for visual review
 
