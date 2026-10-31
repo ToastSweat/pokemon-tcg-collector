@@ -1,6 +1,6 @@
 # Reveal audio — focused listening review
 
-Status: automated build/native audio/gameplay checks and both independent review gates **PASSED** for corrected `native-build-fixed-14`. Human hearing and musical preference are **NOT YET REPORTED**. Earlier accepted art, tilt, lighting, opening flow and binder passes remain accepted.
+Status: **ACCEPTED / COMPLETE / FROZEN.** Direct user feedback: **“sounds perfect. workds great”**, responding to the delivered buildup/rare-outcome listening handoff. This is overall audio acceptance, not an invented separately itemized physical-control checklist. Implementation `e1d78d4`, corrected `native-build-fixed-14`; all137immutable player members were rechecked unchanged without launching, rebuilding or inspecting live saves. See `../verification/Reveal_Audio_Human_Acceptance.json`. Earlier accepted art, tilt, lighting, opening flow and binder passes remain accepted. The guide below is retained for reference.
 
 ## Start
 

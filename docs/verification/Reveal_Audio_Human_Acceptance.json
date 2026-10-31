@@ -1,0 +1,21 @@
+{
+  "status": "accepted-by-user-complete-frozen",
+  "userStatement": "sounds perfect. workds great",
+  "scope": "Overall acceptance of delivered assignable pull sounds and three rare fanfares, responding to the focused buildup/rare-outcome listening handoff",
+  "separatelyItemizedPhysicalSubchecksReported": false,
+  "implementationCommit": "e1d78d4",
+  "build": "native-build-fixed-14",
+  "player": "Builds/Phase3RevealAudioWindows/VintageCardCollector.exe",
+  "recordedAt": "2026-10-31T14:40:56.909914-05:00",
+  "humanHearingAcceptance": true,
+  "immutablePlayerRecheckedUnchanged": true,
+  "immutableMemberCount": 137,
+  "playerManifestSha256": "06d7ed7bfa5c2eea883599710362c01e67c20d02ec82cc0551966e476f7a997a",
+  "savesAndLogsPrunedBeforeTraversal": true,
+  "rebuiltOrLaunchedForAcceptance": false,
+  "liveSavesInspected": false,
+  "earlierArtTiltLightingBinderAcceptancePreserved": true,
+  "historicalExecutionAndReviewReportsUnchanged": true,
+  "continuationApprovalPreserved": true,
+  "nextCheckpoint": "English Jungle Unlimited and English Fossil Unlimited research; no new probability model is implicitly approved"
+}

@@ -8,7 +8,7 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 The supplied art, mouse-over tilt and angle-dependent card/booster finishes are **accepted by explicit user approval**. Build36/implementation0837c6c remains the accepted presentation baseline; earlier art/other-functionality and Phase4 passes are preserved. [Acceptance](docs/verification/Hover_Tilt_Human_Acceptance.json). The user subsequently approved continuation and requested assignable reveal sounds; that presentation-only addition is below. English Jungle/Fossil Unlimited research is the next expansion checkpoint, not an automatic approval of new probability models.
 
-## Assignable pull audio — native verified and independently reviewed
+## Assignable pull audio — accepted and frozen
 
 `F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase3RevealAudioWindows\VintageCardCollector.exe`
 
@@ -16,7 +16,7 @@ Keep the whole folder together. Source scene: **Assets/VintageCollector/Scenes/B
 
 To assign replacements, select **Assets/VintageCollector/Audio/DefaultRevealAudioProfile.asset** in the Unity Inspector: **Pull Sounds** elements0–10 map to positions1–11; the three rare fields override position8. A missing rare clip falls back to that position's clip, then generic Foley. Save/rebuild to update the standalone player. [Assignment guide](docs/technical/Reveal_Audio_Profile.md).
 
-Audio is acknowledgement-only, uses the existing volume/pause/focus controls and does not replay on inspect/Back/results/reload. Skip does not play a fanfare sequence. Corrected **native-build-fixed-14** succeeded with **0 errors / 0 warnings**; the actual player exercised all **14 clips**, all three real rare outcomes, Retry and separate-process silent reload. Runtime/audio review and corrected build rereview both passed; human hearing/taste is not yet reported. [Focused listening](docs/hermes/Reveal_Audio_Human_Review.md) · [Build/native evidence](docs/technical/Reveal_Audio_Build_Player.md) · [Exact manifest](docs/verification/Reveal_Audio_Player_Manifest.json).
+Audio is acknowledgement-only, uses the existing volume/pause/focus controls and does not replay on inspect/Back/results/reload. Skip does not play a fanfare sequence. Corrected **native-build-fixed-14** succeeded with **0 errors / 0 warnings**; the actual player exercised all **14 clips**, all three real rare outcomes, Retry and separate-process silent reload. Runtime/audio review and corrected build rereview both passed. The user then confirmed **“sounds perfect. workds great”**: the delivered audio is **accepted and frozen**. All137immutable player members were rechecked unchanged without launching, rebuilding or reading live saves. [Human acceptance](docs/verification/Reveal_Audio_Human_Acceptance.json) · [Listening guide](docs/hermes/Reveal_Audio_Human_Review.md) · [Build/native evidence](docs/technical/Reveal_Audio_Build_Player.md) · [Exact manifest](docs/verification/Reveal_Audio_Player_Manifest.json).
 
 This candidate uses its own **Builds/Phase3RevealAudioWindows/Saves** and performs no automatic collection import/merge. All seven earlier players, supplied originals, cry files and shared manifests are preserved. Catalog, RNG, identities, card order, completion targets, schema and award authority are unchanged.
 
