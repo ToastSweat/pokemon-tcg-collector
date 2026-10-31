@@ -379,7 +379,7 @@ public static class Phase1Tests
     static void Test_19_RealCatalogProvenanceAndSourceCorrections()
     {
         var c = Catalog.FromData(CatalogInput());
-        Assert(c.CompletionTargetStatus == "unresolved-machamp-exception", "completion unresolved, not a denominator");
+        Assert(c.CompletionTargetStatus == "approved-strict-unstamped-101-excluding-machamp", "User-selected strict unstamped101 completion target is preserved");
         Assert(c.Cards.Select(x => x.CollectorNumber).Distinct().Count() == 101 && !c.Cards.Any(x => x.CollectorNumber == "8"), "101 booster identities, source #8 absent intentionally");
         Assert(c.Cards.All(x => x.BoosterEligible && x.ArtReference == "placeholder:card-face" && x.Language == "en" && x.Edition == "unlimited"), "scope and placeholder only");
         Assert(c.Cards.Single(x => x.CollectorNumber == "58").Variant == "yellow-cheeks", "explicit Pikachu variant");

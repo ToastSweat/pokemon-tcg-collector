@@ -58,10 +58,12 @@ class DataAuthoringTests(unittest.TestCase):
             with self.subTest(mutation=mutate.__name__):
                 self.assertFalse(self.mutated_report(mutate)['passed'])
 
-    def test_unanswered_completion_target_cannot_be_implicitly_approved(self):
-        report = self.mutated_report(lambda catalog, model: catalog.update(
-            completionTargetStatus='approved-102-including-machamp'))
-        self.assertFalse(report['passed'])
+    def test_selected_strict_101_target_cannot_drift_or_be_reopened(self):
+        for target in ('approved-102-including-machamp', 'unresolved-machamp-exception'):
+            with self.subTest(target=target):
+                report = self.mutated_report(lambda catalog, model: catalog.update(
+                    completionTargetStatus=target))
+                self.assertFalse(report['passed'])
 
     def test_unsupported_catalog_schema_is_rejected(self):
         report = self.mutated_report(lambda catalog, model: catalog.update(schemaVersion=2))
@@ -75,7 +77,7 @@ class DataAuthoringTests(unittest.TestCase):
         self.assertTrue(report['passed'])
         self.assertEqual(report['cardCount'], 101)
         self.assertEqual(report['sourceChecklistCount'], 102)
-        self.assertEqual(report['completionTargetStatus'], 'unresolved-machamp-exception')
+        self.assertEqual(report['completionTargetStatus'], 'approved-strict-unstamped-101-excluding-machamp')
         self.assertEqual(report['modelVersion'], '0.1.0')
         self.assertEqual(report['poolSizes'], {'holo': 15, 'rare': 16, 'uncommon': 32,
                                                'common': 32, 'energy': 6})

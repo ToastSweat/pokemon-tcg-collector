@@ -42,7 +42,7 @@ namespace VintageCollector.EditorTools
                 Require(view.modelId == "base-en-unlimited1999-sheet-informed" && view.modelVersion == "0.1.0", "Model identity/version missing.");
                 Require(view.catalogVersion == "base-en-unlimited1999-0.1.0" && view.printingId == "base-en-unlimited1999", "Catalog/printing provenance missing.");
                 Require(view.status == "approved-provisional" && view.rngAlgorithm == "xorshift32-v1", "Provisional/RNG metadata missing.");
-                Require(view.completionTargetStatus == "unresolved-machamp-exception", "Unanswered completion decision was lost.");
+                Require(view.completionTargetStatus == "approved-strict-unstamped-101-excluding-machamp", "User-selected strict unstamped101 completion target was lost.");
                 Require(view.approximations != null && view.approximations.Length == 6 && !string.IsNullOrWhiteSpace(view.warning), "Limitations must accompany diagnostics.");
             });
             AddCheck(checks, "readable_order_matches_portable_seed_vector", delegate

@@ -9,6 +9,8 @@ namespace VintageCollector.Runtime
         public string SaveDirectory { get; private set; }
         public string ArtifactDirectory { get; private set; }
         public string SmokeScenario { get; private set; }
+        public string BaseSaveDirectory { get; private set; }
+        public string CollectionProfileId { get; private set; } = "";
         public bool IsSmokeTest { get { return !string.IsNullOrEmpty(SmokeScenario); } }
 
         public static GamePaths Resolve(string allowedRoot, string applicationDataPath, bool isEditor, string[] args)
@@ -35,7 +37,7 @@ namespace VintageCollector.Runtime
                 if (flags.Count != 0) throw new ArgumentException("Save/artifact overrides require explicit smoke mode");
                 string defaultSave = isEditor ? Path.Combine(root, "Saves", "Phase2") : Path.Combine(appFolder, "Saves");
                 RequireInside(root, defaultSave);
-                return new GamePaths { SaveDirectory = defaultSave, SmokeScenario = "", ArtifactDirectory = "" };
+                return new GamePaths { SaveDirectory = defaultSave, BaseSaveDirectory = defaultSave, SmokeScenario = "", ArtifactDirectory = "" };
             }
             string scenario = flags["--vcc-smoke"];
             if (Array.IndexOf(new[] { "ready", "prepare", "resume", "error", "input", "layout" }, scenario) < 0) throw new ArgumentException("Unknown smoke scenario");
@@ -44,7 +46,22 @@ namespace VintageCollector.Runtime
             string generatedRoot = Path.Combine(root, ".artifacts");
             RequireInside(generatedRoot, save);
             RequireInside(generatedRoot, artifacts);
-            return new GamePaths { SaveDirectory = save, ArtifactDirectory = artifacts, SmokeScenario = scenario };
+            return new GamePaths { SaveDirectory = save, BaseSaveDirectory = save, ArtifactDirectory = artifacts, SmokeScenario = scenario };
+        }
+
+        public GamePaths WithProfile(string profileId)
+        {
+            if (profileId == null) throw new ArgumentNullException("profileId");
+            string directory = BaseSaveDirectory;
+            if (profileId.Length != 0) {
+                Guid parsed;
+                if (!Guid.TryParseExact(profileId,"N",out parsed) || parsed.ToString("N") != profileId)
+                    throw new ArgumentException("Profile must be an exact lowercase GUID-N identity");
+                directory = Path.Combine(BaseSaveDirectory,"Profiles",profileId);
+                RequireInside(BaseSaveDirectory,directory);
+            }
+            return new GamePaths { SaveDirectory=directory, BaseSaveDirectory=BaseSaveDirectory,
+                CollectionProfileId=profileId, ArtifactDirectory=ArtifactDirectory, SmokeScenario=SmokeScenario };
         }
 
         private static string FullPath(string path)

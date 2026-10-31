@@ -17,9 +17,26 @@ namespace VintageCollector.Runtime
         public OpeningView CurrentView { get; private set; }
         // Last acknowledged snapshot only; not authoritative while CurrentView.stage == "error".
         public SessionSnapshot CurrentSession { get; private set; }
+        public bool PhysicalTrackingConfigured { get; set; }
         public int GeneratedResultCount { get; private set; }
         public string LastCommand { get; private set; }
 
+        public event Action<string> CollectionCommand;
+        public event Action ShuttingDown;
+        public bool HasPendingStorage { get { return pending != null || lastError != null; } }
+        private bool collectionGate, terminalInitialization;
+        private string initialProfileId = "";
+        public void SetCollectionGate(bool blocked) { collectionGate = blocked; }
+        public void BlockInitialization(string error) {
+            if (initialized && store != null) Shutdown();
+            initialized = true; terminalInitialization = true;
+            presentation = GetComponent<TabletopPresentation>();
+            if (presentation == null) presentation = gameObject.AddComponent<TabletopPresentation>();
+            closed = false;
+            presentation.Command -= DispatchCommand;
+            presentation.Command += DispatchCommand;
+            PublishError(new InvalidOperationException(error));
+        }
         private bool initialized;
         private Catalog catalog;
         private PackGenerator generator;
@@ -61,9 +78,12 @@ namespace VintageCollector.Runtime
             if (!initialized) Initialize(Environment.GetCommandLineArgs());
         }
 
-        public void Initialize(string[] args)
+        public void Initialize(string[] args) { InitializeForProfile(args, ""); }
+
+        public void InitializeForProfile(string[] args, string profileId)
         {
             if (initialized) return;
+            initialProfileId = profileId;
             initialized = true;
             presentation = GetComponent<TabletopPresentation>();
             if (presentation == null) presentation = gameObject.AddComponent<TabletopPresentation>();
@@ -81,7 +101,7 @@ namespace VintageCollector.Runtime
 
         private void OpenSession()
         {
-            if (Paths == null) Paths = GamePaths.Resolve(initialRoot, Application.dataPath, Application.isEditor, initialArgs);
+            if (Paths == null) Paths = GamePaths.Resolve(initialRoot, Application.dataPath, Application.isEditor, initialArgs).WithProfile(initialProfileId);
             if (catalogSource == null || modelSource == null) throw new ArgumentException("Catalog and model TextAssets must be configured");
             if (catalog == null) catalog = Catalog.FromData(JsonUtility.FromJson<CatalogData>(catalogSource));
             if (generator == null) generator = new PackGenerator(catalog, JsonUtility.FromJson<RuleData>(modelSource));
@@ -103,7 +123,13 @@ namespace VintageCollector.Runtime
 
         public void DispatchCommand(string command)
         {
-            if (closed || !PresentationRules.CanEmit(CurrentView, command)) return;
+            if (closed || string.IsNullOrEmpty(command)) return;
+            if (command == "binder-open" || command == "binder-close") {
+                var handler = CollectionCommand; if (handler != null) handler(command);
+                return;
+            }
+            if ((collectionGate || terminalInitialization) && command != "quit") return;
+            if (!PresentationRules.CanEmit(CurrentView, command)) return;
             if (command == "quit") {
                 LastCommand = command;
                 Shutdown();
@@ -154,8 +180,23 @@ namespace VintageCollector.Runtime
         {
             if (Paths == null || !Paths.IsSmokeTest) throw new InvalidOperationException("Explicit smoke mode required");
             if (seed == 0) throw new ArgumentOutOfRangeException("seed", "Seed must be nonzero");
-            if (closed || pending != null || !PresentationRules.CanEmit(CurrentView,"generate")) return;
+            if (closed || collectionGate || terminalInitialization || pending != null || !PresentationRules.CanEmit(CurrentView,"generate")) return;
             RunStorage(delegate { Generate(seed); });
+        }
+
+        // Explicit export barrier only: reconcile the actual leased store against its live
+        // acknowledgement. This never executes pending work, generates, reveals or cues audio.
+        public bool ReconcileForCollectionExport()
+        {
+            if (closed || terminalInitialization || store == null || pending != null || lastError != null) return false;
+            bool acknowledged = false;
+            RunStorage(delegate {
+                store.Reload();
+                CurrentSession = store.Snapshot;
+                PublishView();
+                acknowledged = true;
+            });
+            return acknowledged;
         }
 
         public void FailNextCommitForSmoke()
@@ -212,7 +253,7 @@ namespace VintageCollector.Runtime
             // Never query the uncertain store here: Snapshot itself may require failing recovery.
             lastError = error;
             SetView(new OpeningView {
-                stage="error", errorMessage=error.Message,
+                stage="error", errorMessage=terminalInitialization?error.Message:PhysicalTrackingConfigured?"Opening storage is blocked. Retry the same pending action or Quit; original data is retained.":error.Message,
                 transactionId=pending != null ? pending.transactionId : CurrentSession == null || CurrentSession.CurrentPack == null ? null : CurrentSession.CurrentPack.TransactionId,
                 cards=new OpeningCardView[0],
                 revealedCount=CurrentSession == null || CurrentSession.CurrentPack == null ? 0 : CurrentSession.CurrentPack.RevealedCount,
@@ -220,7 +261,7 @@ namespace VintageCollector.Runtime
                 recoveryNotice=CurrentSession == null ? null : CurrentSession.RecoveryNotice,
                 saveLocation=Paths == null ? null : Paths.SaveDirectory,
                 modelLabel="Model A 0.1.0 · approved provisional",
-                statusLine="Save blocked · Last acknowledged snapshot only · Physical tracking: not configured"
+                statusLine="Save blocked · Last acknowledged snapshot only · Physical tracking: "+(PhysicalTrackingConfigured?"manual ownership in Binder":"not configured")
             });
         }
 
@@ -252,12 +293,13 @@ namespace VintageCollector.Runtime
                 totalVirtualCards=CurrentSession.TotalVirtualCards, recoveryNotice=CurrentSession.RecoveryNotice,
                 saveLocation=Paths.SaveDirectory, volume=0.5f,
                 modelLabel=pack == null ? "Model A 0.1.0 · approved provisional" : pack.ModelId+" "+pack.ModelVersion+" · "+pack.Status,
-                statusLine="Placeholder visuals · Physical tracking: not configured"
+                statusLine="Placeholder visuals · Physical tracking: "+(PhysicalTrackingConfigured?"manual ownership in Binder":"not configured")
             });
         }
 
         public void Shutdown()
         {
+            var handler = ShuttingDown; if (handler != null) handler();
             closed = true;
             if (presentation != null) presentation.Command -= DispatchCommand;
             if (store != null) { store.Dispose(); store = null; }

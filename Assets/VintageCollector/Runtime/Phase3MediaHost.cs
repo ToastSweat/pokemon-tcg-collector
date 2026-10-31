@@ -80,10 +80,11 @@ namespace VintageCollector.Runtime
             string root=Path.GetFullPath(configured).TrimEnd(Path.DirectorySeparatorChar,Path.AltDirectorySeparatorChar);
             if(new DriveInfo(Path.GetPathRoot(root)).DriveType==DriveType.Network) throw new ArgumentException();
             string[] args=game.Paths.IsSmokeTest?new[]{"--vcc-smoke="+game.Paths.SmokeScenario,
-                "--vcc-save-root="+game.Paths.SaveDirectory,"--vcc-artifacts="+game.Paths.ArtifactDirectory}:new string[0];
+                "--vcc-save-root="+game.Paths.BaseSaveDirectory,"--vcc-artifacts="+game.Paths.ArtifactDirectory}:new string[0];
             // Pure revalidation only: never create/open a save or consume an untrusted process override.
-            var validated=GamePaths.Resolve(root,Application.dataPath,Application.isEditor,args);
-            if(!string.Equals(validated.SaveDirectory,game.Paths.SaveDirectory,StringComparison.OrdinalIgnoreCase) ||
+            var validated=GamePaths.Resolve(root,Application.dataPath,Application.isEditor,args).WithProfile(game.Paths.CollectionProfileId);
+            if(!string.Equals(validated.BaseSaveDirectory,game.Paths.BaseSaveDirectory,StringComparison.OrdinalIgnoreCase) ||
+               !string.Equals(validated.SaveDirectory,game.Paths.SaveDirectory,StringComparison.OrdinalIgnoreCase) ||
                !string.Equals(validated.ArtifactDirectory,game.Paths.ArtifactDirectory,StringComparison.OrdinalIgnoreCase)) throw new ArgumentException();
             return root;
         }

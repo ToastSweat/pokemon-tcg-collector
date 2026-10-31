@@ -1,0 +1,101 @@
+{
+  "actualUnityGeneratedMetasAdopted": 19,
+  "existingSourceMetasOverwritten": 0,
+  "files": [
+    {
+      "source": "Assets/VintageCollector/Collections/BinderProjection.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/BinderProjection.cs.meta",
+      "guid": "298d8c7999295d641b2494247dbbf03f"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionArchive.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionArchive.cs.meta",
+      "guid": "dabf224e4e85ebf4e93ed0b8b87ec4f2"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionContract.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionContract.cs.meta",
+      "guid": "1f46eb2bc8b4e3949a6d5dd3cf5b19f6"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionEnvelope.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionEnvelope.cs.meta",
+      "guid": "290675054e5672b4ca1b9a6e653a1629"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionFiles.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionFiles.cs.meta",
+      "guid": "5894c528839be894492da272926f769e"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionJsonShape.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionJsonShape.cs.meta",
+      "guid": "cfcc813872b1e4546aeed317f0f7f5e9"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionProfiles.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionProfiles.cs.meta",
+      "guid": "5351c3c65627d834f805a2576c0f8046"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/CollectionZipStructure.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/CollectionZipStructure.cs.meta",
+      "guid": "63a8a415fdd4c4d4586eb754d1573d2a"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/PhysicalProtocol.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/PhysicalProtocol.cs.meta",
+      "guid": "32cfa8b2025bab44a88abe0877ddb9a0"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/PhysicalStore.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/PhysicalStore.cs.meta",
+      "guid": "93609a1b52f5da841b9bd4ac9c809506"
+    },
+    {
+      "source": "Assets/VintageCollector/Collections/PhysicalValidation.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/PhysicalValidation.cs.meta",
+      "guid": "5b7283ce332b2fb4e80e18b91a8d0184"
+    },
+    {
+      "source": "Assets/VintageCollector/Editor/Phase4BinderPresentationChecks.cs",
+      "from": ".artifacts/phase4-ui-project/Assets/Editor/Phase4BinderPresentationChecks.cs.meta",
+      "guid": "3f08ab6f0d0c8484ca5fa5091befb474"
+    },
+    {
+      "source": "Assets/VintageCollector/Editor/Phase4RuntimeChecks.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Editor/Phase4RuntimeChecks.cs.meta",
+      "guid": "b08e0ca5a1d959744bd05c60d5879de9"
+    },
+    {
+      "source": "Assets/VintageCollector/Persistence/SessionArchiveValidation.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/SessionArchiveValidation.cs.meta",
+      "guid": "af524b3d8d93768418ac06cacb58c34b"
+    },
+    {
+      "source": "Assets/VintageCollector/Presentation/BinderLayoutRules.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/BinderLayoutRules.cs.meta",
+      "guid": "078634bbb9d803f49a5a102fbe102509"
+    },
+    {
+      "source": "Assets/VintageCollector/Presentation/BinderPresentation.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/BinderPresentation.cs.meta",
+      "guid": "d0ccafbf4e599b247972136cbe78f096"
+    },
+    {
+      "source": "Assets/VintageCollector/Presentation/BinderView.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/BinderView.cs.meta",
+      "guid": "93e39c378ec1f1f4ebbc5bf12137e3ee"
+    },
+    {
+      "source": "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/Phase4CollectionHost.cs.meta",
+      "guid": "ad85d62c580cfdb4e8e6c8e1ad463ee6"
+    },
+    {
+      "source": "Assets/VintageCollector/Runtime/UnityPhysicalSerializer.cs",
+      "from": ".artifacts/phase4-runtime/project/Assets/Scripts/UnityPhysicalSerializer.cs.meta",
+      "guid": "6f1dafb4268a2934ba9251c2c87402f5"
+    }
+  ]
+}

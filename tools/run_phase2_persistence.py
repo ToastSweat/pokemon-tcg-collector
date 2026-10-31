@@ -39,7 +39,11 @@ def main():
         if r.returncode:
             return r.returncode
         exe = out / 'PersistenceTests.exe'
-        sources = sorted((ROOT / 'Assets/VintageCollector/Persistence').glob('*.cs')) + [ROOT / 'TestsPhase2/PersistenceTests.cs']
+        # Freeze the legacy persistence surface: the Phase4 read-only archive bridge
+        # compiles with Collections in its own harness, not this schema1-only suite.
+        sources = [ROOT / 'Assets/VintageCollector/Persistence' / name for name in (
+            'SessionData.cs', 'SessionStore.cs', 'SaveProtocol.cs', 'StateValidation.cs')]
+        sources.append(ROOT / 'TestsPhase2/PersistenceTests.cs')
         (out / 'compiled-inputs.json').write_text(json.dumps({str(f.relative_to(ROOT)): hashlib.sha256(f.read_bytes()).hexdigest() for f in [*protected, *sources]}, indent=2) + '\n', encoding='utf-8')
         r = invoke([*compiler, '-r:System.Runtime.Serialization', '-r:' + str(library), '-out:' + str(exe), *sources])
         if r.returncode:

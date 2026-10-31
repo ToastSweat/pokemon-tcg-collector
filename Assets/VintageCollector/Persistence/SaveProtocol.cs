@@ -119,6 +119,12 @@ namespace VintageCollector.Persistence
                 if(Exists(PathFor("state.writing"))) notice="Unprepared interrupted write retained; no pack had been committed.";
                 return new SessionData {schemaVersion=1,revision=0,packs=new PackRecordData[0]};
             }
+            // A newer recoverable candidate cannot erase contradictory evidence at an
+            // older acknowledged revision. Inspect every available acknowledged copy
+            // before any repair/roll-forward changes its bytes or advances the anchor.
+            if(anchor!=null) foreach(var copy in valid)
+                if(copy.Data.revision==anchor.Revision && Digest(copy.Text)!=anchor.Hash)
+                    throw new InvalidDataException("Available save conflicts with its acknowledged revision; all copies preserved");
             Copy chosen=valid[0];
             foreach(var c in valid) { Compatible(c.Data,chosen.Data); if(c.Data.revision>chosen.Data.revision) chosen=c; }
             if(known!=null) { if(chosen.Data.revision<known.revision) throw new InvalidDataException("Recovery would roll back this live session; bytes preserved"); Compatible(known,chosen.Data); }

@@ -1,0 +1,97 @@
+{
+  "status": "automated-verified-independent-reviews-passed-awaiting-human-review",
+  "player": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Builds\\Phase4Windows\\VintageCardCollector.exe",
+  "buildLabel": "current-controls-candidate-01",
+  "buildReport": {
+    "result": "Succeeded",
+    "outputPath": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase4Windows/VintageCardCollector.exe",
+    "sourceProject": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase4-build-project",
+    "target": "StandaloneWindows64",
+    "backend": "Mono",
+    "graphicsApi": "Direct3D11",
+    "totalBytes": "86564385",
+    "errors": 0,
+    "warnings": 0
+  },
+  "targetCount": 101,
+  "machampIncluded": false,
+  "newHumanPassReported": false,
+  "phase5Authorized": false,
+  "brandedMaterialsDeferred": true,
+  "suites": [
+    {
+      "name": "core",
+      "report": ".artifacts/phase4-core/parent-core-corrected-03/results.json",
+      "passed": true,
+      "checkCount": 112,
+      "reportSha256": "adb3595431405853ad8ddde4ba89eb8b0e68c7049990d24965d929e9eefdf3d8"
+    },
+    {
+      "name": "legacy-persistence",
+      "report": ".artifacts/phase2-persistence/p4-final-persistence-02/results.json",
+      "passed": true,
+      "checkCount": 110,
+      "reportSha256": "88ff36fdad48d0e40347579c339e6ccf5f6d7cbceecf43e50a72a1cde89d015f"
+    },
+    {
+      "name": "native-runtime",
+      "report": ".artifacts/phase4-runtime/parent-runtime-frozen-06/results.json",
+      "passed": true,
+      "checkCount": 85,
+      "reportSha256": "74deaaa876ab06fbbdc90160f15340ef23105519d06a80190d4cb64f834a4cc5"
+    }
+  ],
+  "playerEvidence": {
+    "services": {
+      "report": ".artifacts\\phase4-player\\current-controls-services-02\\verification.json",
+      "externalAssertions": 26,
+      "nativeAssertions": 73,
+      "processCount": 2,
+      "pngCount": 11,
+      "exactlyOneImportedProfile": "49e154678c524b13907adec76f9fc2f1",
+      "realObservedPerIdPrefixChecks": 0
+    },
+    "input": {
+      "report": ".artifacts\\phase4-player\\current-controls-input-02\\verification.json",
+      "externalAssertions": 583,
+      "nativeAssertions": 177,
+      "processCount": 2,
+      "pngCount": 164,
+      "exactlyOneImportedProfile": "8b0150f542c24f07a3274b01b8bd7938",
+      "realObservedPerIdPrefixChecks": 5
+    }
+  },
+  "externalAssertionCount": 609,
+  "nativePlayerAssertionCount": 250,
+  "playerProcessCount": 4,
+  "completePngCount": 175,
+  "sourceInputCount": 176,
+  "compilerInputCount": 177,
+  "candidateFileCount": 136,
+  "scene": {
+    "scene": "Assets\\VintageCollector\\Scenes\\BootstrapPhase4.unity",
+    "scripts": [
+      "Phase4SmokeProbe.cs",
+      "Phase4CollectionHost.cs",
+      "BinderPresentation.cs",
+      "Phase3MediaHost.cs",
+      "OpeningGame.cs",
+      "TabletopPresentation.cs"
+    ],
+    "guidClosure": true
+  },
+  "finalAudit": ".artifacts/phase4-build/parent-current-controls-audit-02/final-pins.json",
+  "finalAuditSha256": "96f68ab721387dedf9fe494ec7e6fa65977bb9f5e1c44f3ab84074d71bc24f05",
+  "coreRuntimeReview": ".artifacts\\phase4-final-core-review\\review.json",
+  "coreRuntimeReviewSha256": "c3d90be09c151f7739b0c9a6bef188689b6d7f1b2445adce611760ac9b679888",
+  "limitations": [
+    "Injected background HWND input, not human physical acceptance",
+    "Branded assets deferred; production manifest has no supplied assets",
+    "Actual generic media host binding checked including restored profile; no human hearing or supplied audio playback claim",
+    "Cross-process prepared-pointer recovery remains fail-closed; same-process retry tested, not automatic recovery after kill"
+  ],
+  "historicalPlayerReviewRejection": "docs/verification/Phase_4_Player_Review_Cycle_1.json",
+  "playerIndependentReview": "docs/verification/Phase_4_Player_Independent_Review.json",
+  "playerIndependentReviewSha256": "c6f8859e02ace6e09f8500f995e5458f2669e0726dc715e97b54172ecab5a603",
+  "allIndependentBlockersResolved": true
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "security": [],
+  "logicerrors": [],
+  "security_concerns": [],
+  "logic_errors": [],
+  "blockers": [],
+  "summary": "Both prior evidence-tool defects are resolved in the exact reviewed correction bytes. The rebuilt current-controls-candidate-01 and accepted services-02/input-02 evidence reconcile with current source, compiler, candidate and audit pins; no demonstrated correction blocker remains.",
+  "scope": "Focused independent re-review of P4PLAYER-01 and P4PLAYER-02, bounded fixture reads, cumulative-label reporting, harness state transitions and applicable retained actual execution. Not a full core/runtime re-review, new graphical execution, release authorization, human acceptance or task closure.",
+  "reportpath": ".artifacts/phase4-player-review-cycle2/review.json",
+  "prior_review": ".artifacts/phase4-player-final-review/review.json",
+  "resolved_findings": [
+    {
+      "id": "P4PLAYER-01",
+      "status": "resolved",
+      "source": "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs:183-229; tools/verify_phase4_player.py:46-80,151-176",
+      "verification": "The observer accepts Repaint only and clears the dictionary for each mode:virtual start, changed frame or changed view reference. Completion is source-pinned to quit without review and import-cancel with review. Publication requires open current host DTO, identical renderer/host/observed references, exact serialized content, current or immediately preceding frame, and unchanged width/height. New/mutated/mismatched/closed DTO, incomplete or expired observations and resize publish an empty binder set. The unchanged renderer was read in full to verify registration order and policy; the external harness independently checks the complete exact name set, current sorted page selectors, selected-detail controls, backup/review controls and enabled flags. Disabled historical selectors are also rejected.",
+      "actual_evidence": "All 82 acknowledgements were checked. There are 39 binder-open complete-repaint snapshots and 43 explicitly source-pinned table-layout snapshots, not 82 binder-registration snapshots. All 39 binder selector sets exactly match their current sorted page; pending physical retry, review and pending import contain only their current selectors with required disabled policy. Page1/page0 selectors are disjoint sets of12; search has the actual matching rows. No historical binder selector is present in any of the43 table snapshots.",
+      "no_op_guard": "All74 native button-click acknowledgements have passed false-before-action checks. Exact extracted click/ensure helpers were independently exercised with offline dispatch/ack stubs: an already-satisfied click fails before dispatch, ensure skips an already-satisfied setup, and an unsatisfied predicate needs dispatch and an observed changed state. Quantity and search require actual changes; fault arming and Escape have their own meaningful transitions. Quit is separately registered and followed by actual process exit. These offline helper fixtures are not additional graphical actions."
+    },
+    {
+      "id": "P4PLAYER-02",
+      "status": "resolved",
+      "source": "tools/run_phase4_build_audit.py:16-36,45-50,98-104; TestsPhase4/BuildToolTests.py:61-80",
+      "verification": "The standalone audit now derives closure from the loaded compiler list rather than accepting the build summary. It rejects count/duplicate disagreement and changed/missing delivered inputs; extras must be lexical Assets/*.meta descendants without backslashes/dot/dotdot/absolute traversal, must pass reparse checks, must name an actual folder, and must contain a bounded strict-UTF8 folder-meta marker with the exact compiler SHA256. The independently derived closure must equal the claimed summary. main invokes this before candidate acceptance and republishes the derived result.",
+      "actual_evidence": "The exact helper passed against the real177-entry compiler manifest and current owned stage. Every176 delivered input is exact; the only extra is Assets/VintageCollector/Collections.meta, an actual native-generated folder meta with SHA256 a95e5aa5d67bd90cf925ca4709673fe8ca30306241ad9f8db452219682cf23f8. No actual extra script or mismatched folder/hash was found.",
+      "negative_fixtures": "Fresh existing BuildToolTests4/4 plus18 additional independent exact-helper refusal cases passed, including extra.cs, forged summary, duplicate/count disagreement, changed/missing delivered input, malformed lexical extras, missing actual folder, wrong actual content/hash, invalid UTF8 and oversized folder meta. Reparse rejection was established by direct no_reparse source review; this review did not create a native junction."
+    }
+  ],
+  "additional_contracts": {
+    "bounded_fixture_and_arm_reads": "Both primary fixture and arm-fault input call the same exact production ReadExactFixture helper: one FileStream, a257-byte buffer for the256-byte cap, no unbounded ReadAllText or length-check/reopen gap, oversize rejection, explicit UTF8 BOM refusal, strict UTF8 decoding and exact ordinal allowed-string comparison including refusal of trailing bytes. Update performs validation before File.Delete and before either fault hook. Fresh native exact-method checks cover primary modes input/services/reopen, both256/257-byte boundaries, BOM, invalid UTF8 and trailing data. These tests exercise the helper; order before deletion/fault consumption is verified from the full Update source.",
+    "labels": "The public and internal label set is now cumulativeRenderedLabels. Harness predicate names explicitly say cumulative observation plus current projection. physicalLabels remains a computed projection, not independently sampled raster data. Across35 retained results observations all11 projected physical labels match checksummed persisted ownership at the corresponding revision; these are DTO comparisons, not385 raster claims.",
+    "png_boundary": "All175 accepted PNG paths pass the current external parser, including CRC, dimensions, complete terminal IEND/no trailing bytes, decompression, exact noninterlaced RGB/RGBA8 scanline sizes and legal filter bytes. Existing parser-negative tests were independently rerun. This is not an exhaustive general-purpose PNG conformance/security audit."
+  },
+  "verified_candidate": {
+    "buildLabel": "current-controls-candidate-01",
+    "nativeEditorExit": 0,
+    "result": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "target": "StandaloneWindows64",
+    "backend": "Mono",
+    "graphicsApi": "Direct3D11",
+    "reportedBytes": 86564385,
+    "sourceCount": 176,
+    "compilerCount": 177,
+    "candidateImmutableFiles": 136,
+    "evidencePinnedFiles": 215,
+    "sceneScriptCount": 6,
+    "sceneGuidReferences": 8,
+    "compilerPostbuildStageDrift": [],
+    "allCurrentSourceStageCompilerCandidateEvidencePinsExact": true,
+    "candidateHasSavesEntry": false,
+    "onlyDeliveredSourceChangedSincePriorCandidate": "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs",
+    "allDeliveredSourceMetasUnchanged": true,
+    "olderPlayers": "Compared retained protected-before/after maps and audit maps only; no old immutable file bytes were rehashed. These maps agree."
+  },
+  "accepted_execution_counts": {
+    "current-controls-services-02": {
+      "external": 26,
+      "native": 73,
+      "nativeCases": {"services": 62, "reopen": 11},
+      "processes": 2,
+      "pngPaths": 11,
+      "distinctPngContents": 10
+    },
+    "current-controls-input-02": {
+      "external": 583,
+      "native": 177,
+      "nativeCases": {"input": 166, "reopen": 11},
+      "processes": 2,
+      "pngPaths": 164,
+      "distinctPngContents": 107,
+      "acknowledgements": 82,
+      "binderOpenAcknowledgements": 39,
+      "tableLayoutAcknowledgements": 43,
+      "buttonClickPreconditionChecks": 74,
+      "binderContexts": {"page-0": 17, "page-1": 1, "physical-retry": 2, "search": 13, "review": 4, "pending-import": 2}
+    },
+    "totals": {"external": 609, "native": 250, "processes": 4, "pngPaths": 175, "distinctPngContents": 116},
+    "countMeaning": "Enumerated check arrays and screenshot memberships reconcile. Assertion layers overlap and are not unique combined tests.175 means paths, not175 unique images or UI states. Four processes are supported by retained commands, native logs, actual report cases and exit checks, not independent OS forensic attestation."
+  },
+  "reviewer_reexecution": {
+    "PlayerToolTests": {"passed": true, "tests": 4, "failures": 0, "errors": 0},
+    "BuildToolTests": {"passed": true, "tests": 4, "failures": 0, "errors": 0},
+    "exactProductionProbeMethods": {"passed": true, "checks": 16, "compilerExit": 0, "executionExit": 0},
+    "exactProductionAtomicMethod": {"passed": true, "checks": 3, "compilerExit": 0, "executionExit": 0},
+    "additionalExactProbeBoundaries": {"passed": true, "checksIncludingOriginal16": 27, "compilerExit": 0, "executionExit": 0},
+    "additionalExactAuditNegatives": {"passed": true, "checks": 18},
+    "relocatedExistingEvidenceHelper": {"passed": true, "checks": 408, "outputSha256": "aa73aad1e87c069e3dfecc57ac15739fed0196ca95a0e168ecc49cb1062c9fc3"},
+    "independentEvidenceReconciliation": {"passed": true, "checks": 429},
+    "finalSourceKindAndPinCheck": {"passed": true, "checks": 85, "report": ".artifacts/phase4-player-review-cycle2/final-pin-check-02.json"},
+    "method": "Reviewed existing Python tests imported with only OUT redirected to review-owned fixtures; reviewed exact C# observer/publication/input/atomic methods extracted unchanged into native bundled-Mono harnesses. Additional lifecycle tests use explicit minimal Unity/DTO stand-ins. Supplemental existing inspect.py executed with only its output assignment redirected by AST; its output hash is byte-identical to retained408-check results. No operational player/build/audit main was invoked. Counts in these overlapping suites are not added to actual-player totals."
+  },
+  "retained_red_green_reviewed": {
+    "probe": "current-controls-red-01 compiled0/executed1 with all11 control-generation cases failing; intermediate current-controls-green-input-red-01 retained14 passes and BOM/oversize failures; current-controls-green-02 passes16. Pre-fix bounded-input fallback uses the former ReadAllText primitive, not a claimed then-nonexistent production helper.",
+    "harness": "current-harness-red-01 has3 tests/2 failures; current-harness-green-02 passes4.",
+    "audit": "parent-closure-red-02 has4 tests/1 failure on missing standalone verification helper; parent-closure-green-03 passes4. Independently rerun against current bytes in this review."
+  },
+  "visual_inspection": [
+    {
+      "path": ".artifacts/phase4-player/current-controls-input-02/input/native-099.png",
+      "sha256": "b0a24bc9d20229f04bc35871d63a1cd0daeb419dc1febce82edca38d7be25d80",
+      "observed": "Eleven result faces in6+5 arrangement; Bulbasaur/#44 PHYSICAL OWNED and the other10 PHYSICAL MISSING. NEW/VIRTUAL badges remain within faces; physical labels are below. No observed card/badge/next-row/footer overlap at1600x900."
+    },
+    {
+      "path": ".artifacts/phase4-player/current-controls-input-02/input/native-018.png",
+      "sha256": "307af2f9bbd2d8048b1d31ac5347b1c7f93c62aebc1ada68c95a98d289d4874d",
+      "observed": "Alakazam near-mint quantity2, readable uncertain-save message, Retry SAME ownership save, dimmed competing controls, Back to table and Quit visible. Screenshot alone does not prove durable save state."
+    },
+    {
+      "path": ".artifacts/phase4-player/current-controls-input-02/input/native-156.png",
+      "sha256": "f2653b3becadd1a9503dabf7bce2bff3de2af4951808a01b5ca0d0f19e64d89a",
+      "observed": "New-profile-only restore modal covers underlying collection selectors;11virtual/4physical summary, readable uncertain acknowledgement, Retry SAME reviewed restore, dimmed Cancel, Back/Quit visible."
+    },
+    {
+      "path": ".artifacts/phase4-player/current-controls-input-02/input/native-086.png",
+      "sha256": "479c6e41c511ed3f067b3e06236ef1ef7c8d64b8f20cc0b5dd6761331c412564",
+      "observed": "One visible Bulbasaur/#44 selector; search visibly contains a Bulbasaur prefix while typing. No selected-detail identity inferred. Not described as byte-atomic with the subsequent full-search DTO."
+    }
+  ],
+  "gaps": [
+    {"blocking": false, "note": "Framebuffer capture completion and subsequently sampled DTO are not an atomic timestamped raster/state pair. Coherent current binder-control publication is a separate verified contract."},
+    {"blocking": false, "note": "Table controls remain explicitly source-pinned layout targets plus actual native transitions, not newly instrumented table registrations. All43 table acknowledgements were checked for the exact appropriate source-pinned target-name set."},
+    {"blocking": false, "note": "Exact-method tests supply minimal lifecycle/DTO stand-ins and do not replace actual renderer/framebuffer evidence. Additional27-check suite includes the original16, not27 new independent tests."},
+    {"blocking": false, "note": "The original build helper verify_compiled_inputs is not claimed to have received the standalone-audit hardening. Acceptance here requires the corrected standalone final audit and the independently verified actual closure."},
+    {"blocking": false, "note": "Cumulative text and computed physical labels are not per-frame/per-card raster proof. Only the four listed actual frames were newly loaded for visual inspection in this review."},
+    {"blocking": false, "note": "No native Editor/player/UI was launched by this reviewer; new actual build/player evidence was reviewed, not replayed. Fresh reexecution was limited to pure Python/offline evidence and native Mono test executables."},
+    {"blocking": false, "note": "No full core/runtime re-review; source-map comparison confirms those delivered inputs unchanged. No human physical-input/comfort/hearing, supplied-media playback, all-resolution acceptance, automatic cross-process uncertain-import recovery, Phase5 authorization or task closure claim."}
+  ],
+  "notes": [
+    "Final current audit is current-controls-audit-01/final-pins.json, SHA25696f68ab721387dedf9fe494ec7e6fa65977bb9f5e1c44f3ab84074d71bc24f05. Prior rejected review and failed author runs were not overwritten.",
+    "Every named production/tool/test file in the requested scope was read completely. Unchanged BinderPresentation and BinderLayoutRules were also read to check actual sentinel order, current selectors and enabled policy.",
+    "Review writes, compiler outputs and synthetic fixture trees are confined to .artifacts/phase4-player-review-cycle2. No production source, Git metadata, profile, skill or tracked task was modified. No network/install or operational build/player command was used.",
+    "One reviewer-only final checker initially expected JSON null for an absent table controlsViewJson. Actual Unity serialization uses an empty string. The failed final-pin-check.json is retained; corrected absence semantics pass85/85 in fresh final-pin-check-02.json. This was an offline reviewer assertion error, not a correction/candidate defect.",
+    "Initial markdown lookup at the repository root failed; the actual document was found under docs/technical and read completely before source review. An initial broad filename search also returned legacy Build paths; no legacy immutable file content or Saves content was opened or hashed, and subsequent discovery was narrowly scoped."
+  ],
+  "exactsourcepins": {
+    "Assets/VintageCollector/Runtime/Phase4SmokeProbe.cs": "b42c6edfcebfde79f88e20c458a925c9cca4ce12734a40949bf7342bd5bd9ef0",
+    "tools/verify_phase4_player.py": "89da51163c094d81178ecd148aee3b2e3accefdef9bb80b8f03e65732b2ced91",
+    "TestsPhase4/PlayerProbeTests.cs": "95e00e9824e570567bc863433ec8cdbb87cc2eaf2f5b3cae413e9ce5b860c8f0",
+    "TestsPhase4/PlayerProbeTests.py": "3740a164092d2a4bf9ea05735e4224df0ba240f9d3520198e0dd0fa4629b9f3b",
+    "TestsPhase4/PlayerToolTests.py": "248ca2ea0b5598d738b5220cac20f0ed2ac594294a241c7673abacde91520b7c",
+    "tools/run_phase4_build_audit.py": "ff53f8548eaaa92a66b4fa0b7d1052a619d23d9db95969b514a1e3844bfdbc66",
+    "TestsPhase4/BuildToolTests.py": "c1ff89e5d09f0ecf0cc0bcae7cda0ad6ec286fa8220155eb8d7cc4295159ea28",
+    "tools/run_phase4_build.py": "c5f9ae7f314743647a3a42fae1d4421a847e5062f3bbaafeb8ed75f57b093cba",
+    "tools/run_phase4_build_atomic.py": "91db16a689d1f0128fd129abb8d2edb567c9dce76e635d711215d3b3c4d945d2",
+    "TestsPhase4/PlayerAtomicTests.cs": "c102ea3a4cc911083061679d134a2acf5b41b24d2f071cce624994986d851ef9",
+    "Assets/VintageCollector/Presentation/BinderPresentation.cs": "325307c6c101146adf270c6268c4646a8cb585b258f8b0be9a3e030d487db3ae",
+    "Assets/VintageCollector/Presentation/BinderLayoutRules.cs": "e806da620c936440202baabbc5c028d30d10335029fcbd3a6c11ac5d6a2f6a87"
+  },
+  "artifact_reports": [
+    ".artifacts/phase4-player-review-cycle2/review.json",
+    ".artifacts/phase4-player-review-cycle2/source-pins.json",
+    ".artifacts/phase4-player-review-cycle2/reexecution-results.json",
+    ".artifacts/phase4-player-review-cycle2/independent-facts.json",
+    ".artifacts/phase4-player-review-cycle2/supplemental/results.json",
+    ".artifacts/phase4-player-review-cycle2/AdditionalProbe/results.json",
+    ".artifacts/phase4-player-review-cycle2/final-pin-check.json",
+    ".artifacts/phase4-player-review-cycle2/final-pin-check-02.json"
+  ],
+  "created_file_scope": ".artifacts/phase4-player-review-cycle2 only: reports, reviewer scripts, exact-method generated test sources/executables/logs and disposable synthetic fixtures.",
+  "production_source_files_modified": []
+}

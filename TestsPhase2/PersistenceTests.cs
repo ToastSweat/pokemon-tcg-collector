@@ -326,6 +326,35 @@ public static class PersistenceTests
             Assert(File.Exists(Path.Combine(home,"save/state.save")) && !Directory.Exists(Path.Combine(other,"save")),"Store followed process cwd");
         } finally {Environment.CurrentDirectory=cwd;}
     }
+    static void OlderAnchorConflict()
+    {
+        string a=Fixture("anchor-history-a"),b=Fixture("anchor-history-b");
+        using(var s=Store(a)) s.OpenPack("tx-a",Time,1,Pack(1));
+        string foreignAnchor=File.ReadAllText(Path.Combine(a,"state.anchor")),older,olderAnchor,newer;
+        using(var s=Store(b)) {
+            s.OpenPack("tx-b",Time,4,Pack(4));
+            older=File.ReadAllText(Path.Combine(b,"state.save"));
+            olderAnchor=File.ReadAllText(Path.Combine(b,"state.anchor"));
+            s.OpenWrapper("tx-b");
+            newer=File.ReadAllText(Path.Combine(b,"state.save"));
+        }
+        foreach(string name in new[]{"state.save","state.pending"}) {
+            string d=Fixture("conflicting-old-anchor");
+            File.WriteAllText(Path.Combine(d,"state.save"),older);
+            File.WriteAllText(Path.Combine(d,"state.backup"),older);
+            File.WriteAllText(Path.Combine(d,name),newer);
+            File.WriteAllText(Path.Combine(d,"state.anchor"),foreignAnchor);
+            var before=new Dictionary<string,string>();
+            foreach(string path in Directory.GetFiles(d)) before[path]=Convert.ToBase64String(File.ReadAllBytes(path));
+            Throws<InvalidDataException>(()=>{using(var s=Store(d)) {}});
+            foreach(var file in before) Assert(Convert.ToBase64String(File.ReadAllBytes(file.Key))==file.Value,"Conflicting older acknowledgement was modified");
+        }
+        string valid=Fixture("compatible-old-anchor");
+        File.WriteAllText(Path.Combine(valid,"state.save"),newer);
+        File.WriteAllText(Path.Combine(valid,"state.backup"),older);
+        File.WriteAllText(Path.Combine(valid,"state.anchor"),olderAnchor);
+        using(var s=Store(valid)) Assert(s.Snapshot.Revision==2 && s.Snapshot.CurrentPack.WrapperOpened,"Valid prepared roll-forward was blocked");
+    }
     public static int Main(string[] args)
     {
         root = args[0]; output = args[1];
@@ -339,6 +368,7 @@ public static class PersistenceTests
             return 75;
         }
         var tests = new Dictionary<string,Action> { {"first-generation-durable-restart",FirstGeneration}, {"absolute-progress-retry-exactly-once",Progress}, {"schema-archive-metadata-new-flags-validation",Validation}, {"exclusive-lock-dispose-failed-constructor",LockLifetime}, {"missing-acknowledged-state-never-rolls-back",MissingAcknowledgedData}, {"duplicate-energy-immutable-snapshots-serializer-safety",DuplicateEnergyAndMutationSafety}, {"corruption-backup-unsupported-schema-byte-preservation",CorruptionRecovery}, {"real-filesystem-sharing-failures-block-advance",RealFilesystemFailures}, {"live-missing-state-fails-closed",LiveMissingState}, {"multiprocess-lock-denial-kill-release",ProcessLock}, {"unsupported-envelope-blank-save-preserved",UnsupportedEnvelopeAndBlankPreservation}, {"every-reveal-boundary-restart-oversize-rejection",EveryRevealBoundary}, {"relative-directory-pinned-for-lock-and-save",RelativeDirectoryPinned} };
+        tests.Add("older-anchor-conflict-not-hidden-by-newer-copy",OlderAnchorConflict);
         foreach(string stage in Stages) { string captured=stage; tests.Add("generation-fault-"+captured,()=>FaultGeneration(captured)); tests.Add("wrapper-fault-"+captured,()=>FaultProgress(captured,true)); tests.Add("reveal-fault-"+captured,()=>FaultProgress(captured,false)); }
         foreach(string stage in Stages) foreach(string action in new[]{"generation","wrapper","reveal"}) {string st=stage,ac=action;tests.Add("process-crash-"+ac+"-"+st,()=>CrashRecovery(st,ac));}
         var checks = new List<PersistenceCheck>(); bool passed = true;

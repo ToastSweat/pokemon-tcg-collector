@@ -8,6 +8,19 @@ namespace VintageCollector.Presentation
     /// <summary>Passive, original placeholder tabletop. No generator, awards, file IO or save authority.</summary>
     public sealed class TabletopPresentation : MonoBehaviour
     {
+        // Optional read-only manual ownership projection; absent in earlier phases.
+        public Func<string,bool> PhysicalOwnershipReader { get; set; }
+        public string PhysicalResultLabel(int index) {
+            if(PhysicalOwnershipReader==null || View==null || View.stage!="results" || !PresentationRules.CanInspect(View,index)) return null;
+            return PhysicalOwnershipReader(View.cards[index].id)?"PHYSICAL OWNED":"PHYSICAL MISSING";
+        }
+        public bool CollectionAvailable { get; set; }
+        public bool CollectionOverlayVisible { get; set; }
+        private bool collectionInputBlocked;
+        public bool CollectionInputBlocked {
+            get { return collectionInputBlocked; }
+            set { collectionInputBlocked=value; if(value) StopFoley(); }
+        }
         private OpeningView view;
         private IPresentationMedia media;
         public OpeningView View { get { return view; } set { view = value; SyncAudio(); } }
@@ -60,7 +73,7 @@ namespace VintageCollector.Presentation
         private void SyncAudio()
         {
             if (foleySource != null) foleySource.volume = Volume;
-            if (View == null || View.paused || View.stage == "error" || Volume <= 0 || !focused) StopFoley();
+            if (CollectionInputBlocked || View == null || View.paused || View.stage == "error" || Volume <= 0 || !focused) StopFoley();
         }
         private bool IsCommittedShape(string command)
         {
@@ -98,7 +111,9 @@ namespace VintageCollector.Presentation
 
         private void RequestCommand(string command)
         {
-            if (!PresentationRules.CanEmit(View, command)) return;
+            bool binderRequest=CollectionAvailable && (command=="binder-open" || command=="binder-close");
+            if (CollectionInputBlocked && !binderRequest && command!="quit") return;
+            if (!binderRequest && !PresentationRules.CanEmit(View, command)) return;
             var handler = Command;
             if (handler != null) handler(command);
         }
@@ -113,7 +128,7 @@ namespace VintageCollector.Presentation
         private void Update()
         {
             SyncAudio();
-            bool running=focused && View != null && !View.paused && View.stage != "error";
+            bool running=!CollectionInputBlocked && focused && View != null && !View.paused && View.stage != "error";
             motion.Inspect(View!=null && PresentationRules.CanInspect(View,View.inspectIndex)?View.inspectIndex:-1);
             motion.Advance(Time.unscaledDeltaTime,running);
             if (running) tearRemaining = Mathf.Max(0, tearRemaining-Time.unscaledDeltaTime);
@@ -213,9 +228,9 @@ namespace VintageCollector.Presentation
         private void Button(Rect rect,string label,string command,bool primary=false)
         {
             bool prior=GUI.enabled;
-            GUI.enabled=prior && PresentationRules.CanEmit(View,command);
+            GUI.enabled=prior && (!CollectionInputBlocked || command=="quit") && PresentationRules.CanEmit(View,command);
             bool hover=GUI.enabled && rect.Contains(Event.current.mousePosition);
-            Fill(rect,primary?(hover?Paper:Gold):(hover?new Color32(65,88,75,255):new Color32(42,60,51,255)));
+            Fill(rect,primary?(hover?Paper:Gold):(hover?(Color)new Color32(65,88,75,255):(Color)new Color32(42,60,51,255)));
             if(!primary) Outline(rect,new Color32(93,113,92,255));
             bool clicked=GUI.Button(rect,GUIContent.none,hitStyle);
             Label(new Rect(rect.x+10,rect.y+4,rect.width-20,rect.height-8),label,20,primary?Ink:Paper,true,TextAnchor.MiddleCenter);
@@ -225,6 +240,7 @@ namespace VintageCollector.Presentation
 
         private void OnGUI()
         {
+            if(CollectionOverlayVisible) return;
             EnsureResources();
             var l=PresentationRules.Layout(Screen.width,Screen.height);
             var oldMatrix=GUI.matrix; var oldColor=GUI.color; bool oldEnabled=GUI.enabled;
@@ -232,6 +248,9 @@ namespace VintageCollector.Presentation
             {
                 GUI.matrix=Matrix4x4.TRS(Vector3.zero,Quaternion.identity,new Vector3(l.scale,l.scale,1));
                 var v=View;
+                if(CollectionAvailable && Event.current.type==EventType.KeyDown && Event.current.keyCode==KeyCode.Tab) {
+                    RequestCommand("binder-open"); Event.current.Use(); return;
+                }
                 if(Event.current.type==EventType.KeyDown && Event.current.keyCode==KeyCode.Escape)
                 { RequestCommand(PresentationRules.BackCommand(v)); Event.current.Use(); }
                 DrawBackground(l);
@@ -244,6 +263,12 @@ namespace VintageCollector.Presentation
                 GUI.enabled=oldEnabled;
                 if(v!=null && v.paused) DrawPause(l,v);
                 else if(v!=null && v.inspectIndex>=0) DrawInspection(l,v);
+                if(CollectionAvailable) {
+                    // New dedicated target in unused footer space; accepted table targets remain unchanged.
+                    GUI.enabled=oldEnabled;
+                    Rect b=new Rect(l.width-520,l.height-49,220,34);
+                    if(GUI.Button(b,"Binder  [Tab]")) RequestCommand("binder-open");
+                }
             }
             finally { GUI.matrix=oldMatrix; GUI.color=oldColor; GUI.enabled=oldEnabled; }
         }
@@ -263,7 +288,7 @@ namespace VintageCollector.Presentation
             Label(new Rect(48,37,690,47),"Vintage Card Collector",36,Paper,true);
             Label(new Rect(50,89,760,26),"1999  /  English Base Set Unlimited",20,Muted);
             Label(new Rect(l.width-508,43,460,25),Media!=null && Media.SuppliedAssetCount>0?"OPTIONAL MEDIA  /  TABLETOP STUDY":"GENERIC  /  ASSET-READY TABLETOP",18,Gold,true,TextAnchor.UpperRight);
-            Label(new Rect(l.width-608,82,560,29),"Virtual cards  "+(v==null?"—":v.totalVirtualCards.ToString(CultureInfo.InvariantCulture))+"   ·   Physical tracking not configured",17,Muted,false,TextAnchor.UpperRight);
+            Label(new Rect(l.width-608,82,560,29),"Virtual cards  "+(v==null?"—":v.totalVirtualCards.ToString(CultureInfo.InvariantCulture))+(PhysicalOwnershipReader==null?"   ·   Physical tracking not configured":"   ·   Physical ownership: manual / Binder"),17,Muted,false,TextAnchor.UpperRight);
             Label(new Rect(50,145,900,25),StageLabel(v),18,Gold,true);
         }
         private static string StageLabel(OpeningView v)
@@ -460,11 +485,16 @@ namespace VintageCollector.Presentation
             for(int i=0;i<visible;i++) {
                 if(v.cards[i]!=null && v.cards[i].isNew) fresh++;
                 DrawFace(R(l.resultsCards[i]),v.cards[i],i); FaceHit(R(l.resultsCards[i]),i);
+                string physical=PhysicalResultLabel(i);
+                if(physical!=null) {
+                    Rect card=R(l.resultsCards[i]);
+                    Label(new Rect(card.x,card.yMax+2,card.width,22),physical,14,physical=="PHYSICAL MISSING"?Gold:Muted,true,TextAnchor.MiddleCenter);
+                }
             }
             for(int i=visible;i<11;i++) DrawBack(R(l.resultsCards[i]));
             Label(new Rect(66,184,1000,28),visible+" revealed   ·   "+fresh+" new to virtual   ·   "+(visible-fresh)+" duplicates   ·   Click a card to inspect",18,Paper);
             Button(new Rect(l.width-310,140,266,34),"Generate new pack","generate",true);
-            Label(new Rect(64,l.height-151,l.width-128,24),"Original saved order, left to right. New / duplicate refers only to the virtual collection.",17,Muted,false,TextAnchor.MiddleCenter);
+            Label(new Rect(64,l.height-(PhysicalOwnershipReader==null?151:125),l.width-128,24),"Original saved order, left to right. New / duplicate refers only to the virtual collection.",17,Muted,false,TextAnchor.MiddleCenter);
         }
 
         private void DrawFooter(PresentationLayout l,OpeningView v)

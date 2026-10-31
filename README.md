@@ -4,7 +4,25 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-**The clarified card11 flow is corrected and reviewed.** It stops on the normal opening table, same layout as cards1–10, with View pack results to continue; no forced fullscreen view. Skip remains direct. User's other passes are preserved and the conditional permission to move on is recorded, without inventing a new human retest. Branded materials remain deferred; next-phase identity decisions are still unresolved.
+**Phase 4 candidate is built and automated-player verified; human review is not reported.** The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**, as explicitly selected. Branded materials and later phases remain deferred.
+
+**Core/runtime and final build/probe/evidence independent reviews passed.** Human review is the remaining gate. Existing player/save folders below remain separate and preserved; no automatic migration or merge is performed. See [current status](docs/hermes/Phase_4_Binder_Discovery.md), [implementation contract](docs/technical/Phase_4_Implementation_Contract.md), [collection core](docs/technical/Phase_4_Collections.md), [runtime](docs/technical/Phase_4_Runtime.md), and [actual player evidence](docs/technical/Phase_4_Build_Player.md).
+
+## Phase 4 — binder / physical ownership candidate
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase4Windows\VintageCardCollector.exe`
+
+Keep the **entire Phase4Windows folder** together and inside this project. It starts its own collection under `Builds/Phase4Windows/Saves`; older players and their progress are untouched. Do not overwrite a populated save folder to import earlier progress. Schema1 legacy records remain compatible; moving an older player's collection is a separate deliberate closed-save operation, not an automatic merge.
+
+- **Binder / Tab** opens the binder. Choose **Virtual revealed pulls** or **Physical ownership**; use search, All/Owned/Missing/Duplicates/Holo and pages. Unrevealed active-pack awards do not spoil binder ownership/completion.
+- Physical edits require selecting a printing, condition and quantity, then **Confirm ownership**. Conditions are independent quantity buckets; zero removes only that bucket. Opening packs never changes physical ownership.
+- **Create backup**, select a backup and **Review restore**. Cancel changes nothing. Confirmation creates a **new profile for next launch**, preserving the old profile; Quit/reopen activates it. It is not an overwrite or merge. A successful restore locks further changes until restart.
+- A failed acknowledged operation exposes **Retry SAME ownership save / reviewed restore**. Do not replace its intent, delete saves or create a new transaction to recover it.
+- If forcibly stopped during an unfinished restore, startup can block while preserving all evidence. This candidate has no cross-process recovery wizard; ask for scoped recovery assistance rather than deleting pending/profile/save files. Normal confirmed restore/restart and same-process Retry are verified.
+
+Editable source scene: **Assets/VintageCollector/Scenes/BootstrapPhase4.unity** in Unity6000.2.14f1. Generic visuals appear on Play. Editor uses its existing separate Editor save root; do not use live Editor progress for automation.
+
+[Focused human review](docs/hermes/Phase_4_Human_Playtest.md) · [Build / native-player evidence and reproduction](docs/technical/Phase_4_Build_Player.md). Stop before Phase5 pending user review.
 
 - [Authoritative phased handoff](docs/hermes/Hermes_Vintage_Card_Collector_Handoff.md)
 - [Approved discovery proposal](docs/hermes/Phase_0_Discovery.md)
@@ -89,7 +107,7 @@ python -B Tests/test_phase1_runner.py
 python -B tools/test_phase1_data.py
 ```
 
-No runtime API or online card service is required. Model A `0.1.0` is a documented approximation, not exact factory collation. The 101 runtime booster printings exclude starter-only Machamp; they do **not** establish a collection-completion denominator. The 102-number research checklist is preserved separately.
+No runtime API or online card service is required. Model A `0.1.0` remains a documented approximation, not exact factory collation. The101 runtime printings exclude starter-only Machamp. The user has separately selected those101 unstamped printings as both completion targets; the102-number research checklist is retained as provenance. Only completion approval metadata changed, not card identities, catalog compatibility version, pack probabilities or historical save records.
 
 - [Domain API and portable RNG contract](docs/technical/Domain_API.md)
 - [Detailed distribution/test evidence](docs/verification/Domain_Verification.md)

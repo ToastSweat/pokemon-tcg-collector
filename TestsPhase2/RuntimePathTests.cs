@@ -71,6 +71,22 @@ internal static class RuntimePathTests
             string root = Root + "/.artifacts/phase2-paths/default-root";
             Rejected(delegate { PathsType().GetMethod("Resolve").Invoke(null, new object[] { root, root + "/Assets", true, new string[0] }); });
         });
+        run("validated_profile_paths_never_escape_or_nest", delegate {
+            object initial = Resolve(false);
+            var method = initial.GetType().GetMethod("WithProfile");
+            if (method == null) throw new Exception("Validated profile path selection is not implemented.");
+            string id = "0123456789abcdef0123456789abcdef";
+            object selected = method.Invoke(initial, new object[] { id });
+            EqualPath(Root + "/Builds/Phase2Windows/Saves/Profiles/" + id, Read(selected, "SaveDirectory"));
+            if (Read(selected, "CollectionProfileId") != id) throw new Exception("Profile identity not retained.");
+            object again = method.Invoke(selected, new object[] { id });
+            EqualPath(Read(selected, "SaveDirectory"), Read(again, "SaveDirectory"));
+            object original = method.Invoke(selected, new object[] { "" });
+            EqualPath(Read(initial, "SaveDirectory"), Read(original, "SaveDirectory"));
+            Rejected(delegate { method.Invoke(initial, new object[] { "../outside" }); });
+            Rejected(delegate { method.Invoke(initial, new object[] { id.ToUpperInvariant() }); });
+            Rejected(delegate { method.Invoke(initial, new object[] { "01234567-89ab-cdef-0123-456789abcdef" }); });
+        });
         Console.WriteLine("TEST_COUNT " + count);
         return failures == 0 ? 0 : 1;
     }

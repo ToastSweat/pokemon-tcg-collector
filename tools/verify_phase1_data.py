@@ -80,8 +80,8 @@ def validate(catalog, model, source):
     check('approved_model_metadata', exact({k: model.get(k) for k in approved_metadata}, approved_metadata))
     catalog_metadata = {'schemaVersion': 1, 'catalogVersion': 'base-en-unlimited1999-0.1.0',
                         'printingId': 'base-en-unlimited1999',
-                        'completionTargetStatus': 'unresolved-machamp-exception'}
-    check('catalog_schema_and_pending_target', exact({k: catalog.get(k) for k in catalog_metadata}, catalog_metadata))
+                        'completionTargetStatus': 'approved-strict-unstamped-101-excluding-machamp'}
+    check('catalog_schema_and_selected_target', exact({k: catalog.get(k) for k in catalog_metadata}, catalog_metadata))
     return {'passed': all(c['passed'] for c in checks), 'checkCount': len(checks), 'checks': checks,
             'cardCount': len(cards), 'sourceChecklistCount': len(source['cards']),
             'completionTargetStatus': catalog['completionTargetStatus'],

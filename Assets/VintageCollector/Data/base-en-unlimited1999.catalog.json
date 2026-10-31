@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "catalogVersion": "base-en-unlimited1999-0.1.0",
   "printingId": "base-en-unlimited1999",
-  "completionTargetStatus": "unresolved-machamp-exception",
+  "completionTargetStatus": "approved-strict-unstamped-101-excluding-machamp",
   "sourceResearch": "docs/research/Catalog_Findings.md",
   "cards": [
     {

@@ -1,0 +1,683 @@
+{
+  "passed": true,
+  "summary": "The inspected corrected core and narrow runtime fixes pass independent re-review: CORE-01, CORE-02, TG-06, and runtime S1/L1 are resolved for the exact pinned source bytes. This is not candidate-player, graphical, human, or whole-Phase-4 approval.",
+  "security_concerns": [],
+  "logic_errors": [],
+  "resolved_findings": [
+    {
+      "id": "CORE-01",
+      "status": "resolved",
+      "locations": [
+        "Assets/VintageCollector/Collections/PhysicalProtocol.cs:98-126",
+        "Assets/VintageCollector/Collections/CollectionArchive.cs:15-30",
+        "Assets/VintageCollector/Persistence/SessionArchiveValidation.cs:32-51",
+        "Assets/VintageCollector/Persistence/SaveProtocol.cs:109-140"
+      ],
+      "finding": "Every available valid copy at anchorRevision is hashed against the anchor before recovery writes. Newer compatible B2 no longer suppresses contradictory B1 acknowledgement evidence. Physical disk checks include primary/backup/pending; read-only inspectors cover both archive copies and either order. Corrupt/unsupported/semantic pending, damaged/ahead/conflicting anchors, prefix forks and same-revision histories fail closed. Exact authoritative input bytes survive rejection (lease files excluded intentionally). Matching older anchors still permit exact-byte roll-forward.",
+      "tests": [
+        "TestsPhase4/CoreTests.cs:383-402,456-483",
+        "TestsPhase2/PersistenceTests.cs:329-357",
+        "IndependentProbe.cs: session older primary/backup/pending conflict and matching controls (six genuine disk cases)"
+      ],
+      "evidence": "Fresh independent core 112/112, persistence 110/110, supplemental probe 11/11; parent exact-current core and persistence agree."
+    },
+    {
+      "id": "LEGACY-GUARD",
+      "status": "resolved",
+      "locations": [
+        "Assets/VintageCollector/Persistence/SaveProtocol.cs:122-127",
+        "TestsPhase2/PersistenceTests.cs:121-134,183-196,281-296,329-357"
+      ],
+      "finding": "The intentional legacy change is exactly six inserted lines: removing current lines122-127 in memory reproduces prior review SHA256 c1cdf32c693c6dbedb1f68620e7929408c3dff0d463865c57da76c55c6304999 byte-for-byte. Current SHA256 is fa265fce59ecdf9e70a85d41e2c6acc8723887857d75c111c429e336850e2b05. No schema/award/reveal/ID/model code change accompanies it. Healthy prepared recovery and exactly-once generation/wrapper/reveal remain passing at all16 injected cuts and all16 real process-loss cuts for each action in the110-check legacy suite.",
+      "limitation": "No Git operation was permitted, so61f6f52 was not read directly. Exact comparison is to the retained prior-review source pin, not an invented git-diff result."
+    },
+    {
+      "id": "CORE-02",
+      "status": "resolved",
+      "locations": [
+        "Assets/VintageCollector/Collections/CollectionProfiles.cs:8-10,50-60,69-108,168",
+        "TestsPhase4/CoreTests.cs:214-226,403-419,523-534"
+      ],
+      "finding": "One private review slot owns archive/decoded data. Successful unstarted replacement invalidates the old reference only after validation; failed replacement preserves it. DiscardPreview requires exact ownership, clears memory only, and refuses Started&&!Completed. Started is set before exclusive directory creation is attempted; prepublication source/context failures and pre-existing collisions remain cancellable. Completed is set only after successful pointer/published-profile reconciliation. Every uncertainty cut preserves the exact same object, prohibits replacement/cancel, and retries to one profile/receipt without duplicate activation. Dispose drops retained review memory and releases the lease without deleting recovery evidence.",
+      "memory_boundary": "One persistent bounded review, not a fixed small process-memory guarantee. Validation may transiently allocate a second bounded archive; large allocations/GC behavior were not stress-tested.64 replacement cycles and64 cancel cycles inspect the actual private ownership slot."
+    },
+    {
+      "id": "TG-06",
+      "status": "resolved",
+      "locations": [
+        "Assets/VintageCollector/Collections/CollectionProfiles.cs:75-101,115-129",
+        "TestsPhase4/CoreTests.cs:420-442,528-534"
+      ],
+      "finding": "Retained-stage retries require the exact expected checksummed import.owner envelope binding receipt/source/context before extraction or store recovery. Missing/checksum/receipt/source/context/renamed-foreign-stage variants all reject before writes with exact tree preservation. Published-profile uncertain retry validates owner and receipt before opening recovery-capable stores. Pre-existing stage/profile collisions are not adopted. This is a cooperating-process integrity boundary, not authentication against an attacker copying the expected owner envelope."
+    },
+    {
+      "id": "SOURCE-CONTEXT-INPUT",
+      "status": "verified",
+      "locations": [
+        "Assets/VintageCollector/Collections/CollectionProfiles.cs:50-54,69-108,123-140",
+        "TestsPhase4/CoreTests.cs:171-181,187-210,320-325,368-372",
+        "TestsPhase4/RuntimeScenarios.cs:124-154,187-203"
+      ],
+      "finding": "Confirmation accepts the exact owned object, never mutable summary/index/list fields. It rechecks active pointer context and both current/retained source hashes before publication, holds a FileShare.Read source lease through pointer publication, and extracts retained bytes only. Recovered destination session identity/flags/reveal state and full physical event history are compared. Original source ZIP/current profile remain intact; legacy single-save import preserves original schema1 bytes and repairs only the new profile."
+    },
+    {
+      "id": "S1 / TG-03",
+      "status": "resolved at the schema1 archive boundary",
+      "locations": [
+        "Assets/VintageCollector/Collections/CollectionJsonShape.cs:17-56",
+        "Assets/VintageCollector/Persistence/SessionArchiveValidation.cs:34-37",
+        "TestsPhase4/CoreTests.cs:443-455,484-487",
+        "TestsPhase4/RuntimeNativeNumbers.cs:44-59"
+      ],
+      "finding": "Strict unsigned canonical numeric tokens are range-checked before injected/native deserialization: schemaVersion/revealedCount nonnegative Int32, seed UInt32, revision nonnegative Int64. Tests cover exact maxima, maxima+1, native wrap aliases4294967297/4294967419/4294967296 and18446744073709551617, plus a Called sentinel proving rejection occurs before the permissive adapter. Existing duplicate/unknown/missing/type/array/string/surrogate gates remain intact; negative, exponent, decimal, leading-zero, quoted and null numeric forms reject. An independent legal reordered/escaped-key control still validates through the managed adapter.",
+      "native_evidence": "parent-runtime-frozen-06 has85 enumerated unique passes, native process exit0, currentMatchesStaged=true and all47 pinned inputs independently match current bytes. All six native schema1 numeric checks including the previously failing schema/seed/reveal cases pass.",
+      "scope": "This hardens the untrusted session archive inspector; it is not a claim that the intentionally unchanged legacy UnityStateSerializer/SaveProtocol now applies this shape gate to every direct local-save read. Physical adapter/store native numeric checks also pass in06."
+    },
+    {
+      "id": "L1",
+      "status": "resolved",
+      "locations": [
+        "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs:147-182,185-201",
+        "Assets/VintageCollector/Presentation/BinderPresentation.cs:25-30,43-47",
+        "TestsPhase4/RuntimeScenarios.cs:100-119,135-154"
+      ],
+      "finding": "Rejected backup, preview and confirm branches now publish a nonbusy explanatory BinderView, acknowledging the actual renderer request latch without executing pending opening work. The tests invoke private RequestCommand on the real BinderPresentation, assert pending clears and the opening remains uncertain, then retry the actual opening action and make a subsequent backup. Forged review is rejected with latch acknowledgement. Host cancel calls exact DiscardPreview before clearing its reference; unresolved confirms remain uncancellable.",
+      "authority_and_privacy_oracles": "A real backup A(q7) is reviewed while live/B(q9) exists; mutable summary/index/list are changed toward B, but confirm/reopen restores A(q7) and leaves current live q9 untouched until restart. Owned searches use hidden-holo name/collector number and a revealed-name positive control; every revealed prefix checks per-fullID quantities. Native06 passes these actual oracles."
+    },
+    {
+      "id": "TG-01 / TG-02",
+      "status": "expanded coverage verified",
+      "locations": [
+        "TestsPhase4/CoreTests.cs:470-522",
+        "Assets/VintageCollector/Collections/CollectionZipStructure.cs:15-34",
+        "Assets/VintageCollector/Collections/CollectionArchive.cs:55-68"
+      ],
+      "finding": "112 is an actual unique named-check count, not an assertion count. Independent valid-envelope prefix/sameRev physical conflicts and damaged prepared/anchor inputs exercise their real guards. ZIP mutations begin from a successfully opened valid archive. Matching but wrong local/central CRC fields pass structural checking and then fail the decoded CRC branch explicitly. Flags/encryption/descriptors, entry counts, names, disk/ZIP64/extras/comments, overlap/gaps/payload bounds, preamble/trailing, complete archive limit and aggregate uncompressed limit have real executed negatives. Aggregate test uses individually in-bound32MiB members and reaches the exact Oversized archive member branch before semantic decoding. No broader ZIP dialect or unrelated JSON-shape change was introduced."
+    }
+  ],
+  "test_gaps": [
+    {
+      "id": "TG-04-remaining",
+      "blocking_this_scoped_review": false,
+      "locations": [
+        "Assets/VintageCollector/Collections/CollectionProfiles.cs:87-108,111-121",
+        "TestsPhase4/CoreTests.cs:214-226,374-382",
+        "docs/technical/Phase_4_Collections.md:111-119,141"
+      ],
+      "gap": "Short/partial exclusive-file writes, real sharing conflicts during collection extraction/receipt/pointer publication, and process loss while replacing an already-selected pointer are not covered. The legacy SessionStore does have real sharing/crash tests; that does not transfer coverage to CollectionProfiles. Partial owned files may require explicit recovery instead of automatic repair; no stronger guarantee is approved."
+    },
+    {
+      "id": "NATIVE-PRIVACY-COMBINATIONS",
+      "blocking_this_scoped_review": false,
+      "locations": [
+        "TestsPhase4/RuntimeScenarios.cs:54-68",
+        "TestsPhase4/CoreTests.cs:143-161"
+      ],
+      "gap": "New native tests substantively improve hidden-name/number search and per-printing prefix checks, but do not combine every owned/missing/duplicates/holo filter with prior completed packs plus repeated IDs in one native scenario. Core projection remains sound on full inspection; this is remaining combinatorial coverage, not a demonstrated leak."
+    },
+    {
+      "id": "RUNTIME-LIFECYCLE-MEDIA-GRAPHICS",
+      "blocking_this_scoped_review": false,
+      "locations": [
+        "TestsPhase4/RuntimeScenarios.cs:19-32,163-165,205-214",
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:481-498"
+      ],
+      "gap": "Fixtures manually Initialize and verify eventual lease release, not actual Unity Start scheduling/disposal-order observation. The final-table cue control has no bound media, so it does not establish real media pause/volume/stop/no-replay. Helper result-label assertions are not pixels/clicks. Candidate graphical/native process Quit/reopen, manifest, and user acceptance remain separate uninspected gates."
+    },
+    {
+      "id": "RUNNER-HERMETICITY-LIMIT",
+      "blocking_this_scoped_review": false,
+      "locations": [
+        "tools/run_phase4_runtime_native.py:21-24,58-70"
+      ],
+      "gap": "The runner now pins itself/ProjectVersion and refuses unexpected direct Editor/*.cs. It still does not retain a complete recursive stage membership/manifest pin, and the admission glob is nonrecursive. Exact47-input source matching is verified; a completely hermetic Unity project is not claimed."
+    }
+  ],
+  "suggestions": [
+    {
+      "locations": [
+        "docs/technical/Phase_4_Runtime.md:68,105,109"
+      ],
+      "detail": "The final06/key-format correction is accurate at105, but the earlier Current cross-owner blocker sentence and unfinished core-worker gate at68/109 remain historical/outdated. Reconcile those labels before handoff; they are not evidence that the inspected corrected code is still failing."
+    }
+  ],
+  "verification": {
+    "independent_execution": {
+      "core": {
+        "count": 112,
+        "passed": 112,
+        "unique": 112,
+        "compiler_exit": 0,
+        "test_exit": 0,
+        "artifact": ".artifacts/phase4-final-core-review/independent-core-fresh-01"
+      },
+      "legacy_persistence": {
+        "count": 110,
+        "passed": 110,
+        "unique": 110,
+        "compiler_exits": [
+          0,
+          0
+        ],
+        "test_exit": 0,
+        "artifact": ".artifacts/phase4-final-core-review/independent-persistence-fresh-01"
+      },
+      "supplemental": {
+        "count": 11,
+        "passed": 11,
+        "compiler_exit": 0,
+        "test_exit": 0,
+        "artifact": ".artifacts/phase4-final-core-review/independent-probe-01"
+      },
+      "runtime_runner_pure": {
+        "count": 3,
+        "passed": 3,
+        "fixture_destination_only_adapted": true,
+        "log": ".artifacts/phase4-final-core-review/runtime-runner-pure-tests.log"
+      },
+      "native_editor_or_player_launched_by_reviewer": false
+    },
+    "fresh_parent_reports": [
+      {
+        "path": ".artifacts/phase4-core/parent-core-corrected-03",
+        "enumerated": 112,
+        "passed": 112,
+        "unique": 112,
+        "results_sha256": "adb3595431405853ad8ddde4ba89eb8b0e68c7049990d24965d929e9eefdf3d8",
+        "source-pins.json": {
+          "sha256": "0426357420f6ebe79ed4e789d7bfe7cbe9def92e6b7745ad3867281f8cc0cbe4",
+          "count": 23,
+          "all_current_bytes_match": true
+        },
+        "compiled-inputs.json": {
+          "sha256": "30e577ff5bb1188089d89ef933f0090ccf11c72e80ca382c4b4a9b05010efde0",
+          "count": 23,
+          "all_current_bytes_match": true
+        },
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "execution_log_sha256": "4c3cf53fee36079195872a0e914f7d68f75c09bc9f1a6e2f904368561b18ebd7"
+      },
+      {
+        "path": ".artifacts/phase2-persistence/p4-final-persistence-02",
+        "enumerated": 110,
+        "passed": 110,
+        "unique": 110,
+        "results_sha256": "88ff36fdad48d0e40347579c339e6ccf5f6d7cbceecf43e50a72a1cde89d015f",
+        "compiled-inputs.json": {
+          "sha256": "8a36cb49c82a4776dff5216b7fb1a0289ae8dbd5666ce4e3f62b153c50fe17d7",
+          "count": 11,
+          "all_current_bytes_match": true
+        },
+        "exits": [
+          "0",
+          "0",
+          "0"
+        ],
+        "execution_log_sha256": "68973f124904a06ab3e7ff2926cca5aa3a0c4889f36d8a009f5c0adc92f99c86"
+      },
+      {
+        "path": ".artifacts/phase4-runtime/parent-runtime-frozen-06",
+        "enumerated": 85,
+        "passed": 85,
+        "unique": 85,
+        "results_sha256": "74deaaa876ab06fbbdc90160f15340ef23105519d06a80190d4cb64f834a4cc5",
+        "source-pins.json": {
+          "sha256": "0dbe6f5772e2658be40eff8f266e15ea5245a1d1bb5ca57aca189cfe897a32e1",
+          "count": 47,
+          "all_current_bytes_match": true
+        },
+        "source_verification": {
+          "sha256": "69804a8e785579b7ab14b0d1a5d6ed2f0610b176363bfe473da32b09085cbae8",
+          "currentMatchesStaged": true
+        },
+        "exits": [
+          "0"
+        ],
+        "execution_log_sha256": "eb6574fb5ccbd76a605fccfe671eb269f357c9cc88716d7f6103011c6764f3a8"
+      }
+    ],
+    "red_green_audit": [
+      {
+        "path": ".artifacts\\phase4-core\\fix-core01-red-01",
+        "enumerated": 60,
+        "passed_count": 56,
+        "unique": 60,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core01-green-01",
+        "enumerated": 60,
+        "passed_count": 60,
+        "unique": 60,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core02-replacement-red-01",
+        "enumerated": 61,
+        "passed_count": 60,
+        "unique": 61,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core02-replacement-green-01",
+        "enumerated": 61,
+        "passed_count": 61,
+        "unique": 61,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core02-uncertain-red-01",
+        "enumerated": 61,
+        "passed_count": 55,
+        "unique": 61,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core02-uncertain-green-01",
+        "enumerated": 61,
+        "passed_count": 61,
+        "unique": 61,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core02-cancel-red-01",
+        "enumerated": 62,
+        "passed_count": 53,
+        "unique": 62,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core02-cancel-green-01",
+        "enumerated": 62,
+        "passed_count": 62,
+        "unique": 62,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-tg06-owner-red-01",
+        "enumerated": 69,
+        "passed_count": 63,
+        "unique": 69,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-tg06-owner-green-01",
+        "enumerated": 69,
+        "passed_count": 69,
+        "unique": 69,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-session-numbers-red-01",
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "no_results": true
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-session-numbers-red-02",
+        "enumerated": 74,
+        "passed_count": 70,
+        "unique": 74,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-session-numbers-green-01",
+        "enumerated": 74,
+        "passed_count": 74,
+        "unique": 74,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "path": ".artifacts\\phase4-core\\fix-core-review-final-01",
+        "enumerated": 112,
+        "passed_count": 112,
+        "unique": 112,
+        "exits": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "red_green_interpretation": "CORE01 real56/60->60/60; replacement60/61->61/61; uncertainty55/61->61/61; explicit API53/62->62/62; owner63/69->69/69; numeric70/74->74/74. The first numeric-red attempt is a compiler failure, not a behavioral RED. Parent latch80/83 and expanded cancellation81/85 failures are retained, not rewritten. Expanded ZIP/physical coverage is real final GREEN execution; no separate behavioral RED is claimed for every newly added branch.",
+    "legacy_change": {
+      "current_sha256": "fa265fce59ecdf9e70a85d41e2c6acc8723887857d75c111c429e336850e2b05",
+      "prior_review_sha256": "c1cdf32c693c6dbedb1f68620e7929408c3dff0d463865c57da76c55c6304999",
+      "without_lines_122_127_sha256": "c1cdf32c693c6dbedb1f68620e7929408c3dff0d463865c57da76c55c6304999",
+      "exact_six_line_insertion_confirmed": true,
+      "git_commit_not_read": true
+    },
+    "historical_runner_correction": {
+      "path": ".artifacts\\phase4-runtime\\parent-runtime-frozen-05",
+      "historical_flag": false,
+      "normalized_hash_maps_equal": true,
+      "pins_only_keys": [
+        "ProjectSettings/ProjectVersion.txt",
+        "tools/run_phase4_runtime_native.py"
+      ],
+      "current_only_keys": [
+        "ProjectSettings\\ProjectVersion.txt",
+        "tools\\run_phase4_runtime_native.py"
+      ],
+      "explanation": "Two provenance keys used forward slashes while post-run relative_to used Windows backslashes. This was a false path-key mismatch, not source byte drift. Preserve original exit3/failure history."
+    },
+    "source_pin_handling": "Core/runtime C# and tests remained byte-stable. The parent changed only the permitted runner source_key normalization and runtime documentation during this review; both entire current files were re-read and freshly pinned. The supplemental wrapper ended1 only because its broad after-hash assertion observed that real runner edit after all11+110 tests had succeeded. The first final evidence collection also rejected a subsequent documentation refresh. Those attempts were not relabeled successes. Final collection succeeded with exact current bytes; historical04/05 false source mismatch is distinct from this real during-review runner change."
+  },
+  "reviewed_files": [
+    {
+      "path": "TestsPhase4/CoreTests.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Domain/Data.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Domain/Catalog.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Domain/Random.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Domain/PackGenerator.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionData.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/StateValidation.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SaveProtocol.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionStore.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionContract.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/PhysicalStore.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/PhysicalValidation.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/PhysicalProtocol.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/BinderProjection.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionProfiles.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionFiles.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Persistence/SessionArchiveValidation.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionEnvelope.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionArchive.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionZipStructure.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Collections/CollectionJsonShape.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "TestsPhase2/PersistenceTests.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "tools/run_phase2_persistence.py",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "tools/run_phase4_core.py",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "tools/run_phase4_runtime_native.py",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "TestsPhase4/RuntimeScenarios.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "TestsPhase4/RuntimeNativeNumbers.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/UnityPhysicalSerializer.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/UnityStateSerializer.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/BinderPresentation.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/BinderLayoutRules.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/BinderView.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/TabletopPresentation.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/Phase4RuntimeChecks.cs",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "docs/technical/Phase_4_Collections.md",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "docs/technical/Phase_4_Runtime.md",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "docs/technical/Phase_4_Implementation_Contract.md",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "TestsPhase4/RuntimeRunnerTests.py",
+      "coverage": "entire current file"
+    },
+    {
+      "path": "ProjectSettings/ProjectVersion.txt",
+      "coverage": "entire current file"
+    }
+  ],
+  "hash_only_inputs": [
+    "Assets/VintageCollector/Data/base-en-unlimited1999.catalog.json",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.model-a-v0.1.json"
+  ],
+  "source_hash_pins": {
+    "TestsPhase4/CoreTests.cs": "f6215acf155317cda4a8c250c38501686b7614c464ee7f5193be01fd712906eb",
+    "Assets/VintageCollector/Domain/Data.cs": "33994c8b47a15bf1242312ef557b614a7c664c870c17673d86e6031db39280c9",
+    "Assets/VintageCollector/Domain/Catalog.cs": "d18752e2ef4162d0e32b89b7b1d2e9fe86a58aba57dbd85c4dbb97b52755d2d0",
+    "Assets/VintageCollector/Domain/Random.cs": "816ca6ffe236feeb64381bfb1620dcba47426caa70ab53dbb8933b20b32151fc",
+    "Assets/VintageCollector/Domain/PackGenerator.cs": "40d09007bd912735c06f8b6648d799cd2a25ee1fedf1aaa955e9146d013d6c95",
+    "Assets/VintageCollector/Persistence/SessionData.cs": "560db24646bd3469fcec8ded357115167fd2c15ac7fc6969d827aad7d9dc617e",
+    "Assets/VintageCollector/Persistence/StateValidation.cs": "06d23cc557b698eaeaf53d378e785327a011d16a2947dd8df8789303268f2184",
+    "Assets/VintageCollector/Persistence/SaveProtocol.cs": "fa265fce59ecdf9e70a85d41e2c6acc8723887857d75c111c429e336850e2b05",
+    "Assets/VintageCollector/Persistence/SessionStore.cs": "c10f8d2670fc170eb3b6bb5caa05032d01fa19b09f627725df96e6511b448ec6",
+    "Assets/VintageCollector/Collections/CollectionContract.cs": "21abd11577ca9e6d0f7492ea1fa004a6c62694ef49b5ccd06d4e90d2f02560bd",
+    "Assets/VintageCollector/Collections/PhysicalStore.cs": "389fa18b0b251ab4c43e70f1cd5d874fe630053050c0613cb8551f21e12e2340",
+    "Assets/VintageCollector/Collections/PhysicalValidation.cs": "3906c2501574ba93d50349ebcf30f719710f93b7f52251c05f4ad5909a5b8ee3",
+    "Assets/VintageCollector/Collections/PhysicalProtocol.cs": "7a38fadde112edb940d065cf81067a8844e2d03677fe738e28ad3b7e29eea0d6",
+    "Assets/VintageCollector/Collections/BinderProjection.cs": "a1488ee7119c27d41e272b4a09a636e5c9e26eb97191e90a8c669e1b7fc628e2",
+    "Assets/VintageCollector/Collections/CollectionProfiles.cs": "7126e40a239219be2577040806a5a36bbec13ac6d44491c2afe3223acb801c28",
+    "Assets/VintageCollector/Collections/CollectionFiles.cs": "549b020b6c4c8471748530f9730d3f6ccfa1f104a578f8028be7aa8bd3f8bb71",
+    "Assets/VintageCollector/Persistence/SessionArchiveValidation.cs": "dace093b7171b253e8c026990b528996bfdfa2409b211a6f473bed60ae13f91a",
+    "Assets/VintageCollector/Collections/CollectionEnvelope.cs": "2e1953ab4673dee2cc2d852de0288a0f3ada5c2b6f3c016944d59cfad0f39d38",
+    "Assets/VintageCollector/Collections/CollectionArchive.cs": "dbe44fac770f29124a0d37f3692f8f82cafe53392f20db05de4dc5baa56577c3",
+    "Assets/VintageCollector/Collections/CollectionZipStructure.cs": "6b96fdc7a7123313736c7d97abac6c83d6c5eba70024156cc95691cc86a51db5",
+    "Assets/VintageCollector/Collections/CollectionJsonShape.cs": "df6efe269337331cd00a28da4ee3ff5fc75cc5c0212f79682ef9c129e220fb96",
+    "TestsPhase2/PersistenceTests.cs": "2dcc7d77002ba227575497f7cddd54af46038425c2b57f51ea2655acbbef62cd",
+    "tools/run_phase2_persistence.py": "af4d382c864344f918f7ed2c7572fc588e7d7c95168021a199d1167d583689dc",
+    "tools/run_phase4_core.py": "12f2a622e3be2d578c12ac1d4a35b9afb4d666f30c29362ebd9eff7a7a56b9a4",
+    "tools/run_phase4_runtime_native.py": "2d9dc56d78ed29c506f50863d31ae77ac2753333dd04c05e875c0be3afaee5fd",
+    "TestsPhase4/RuntimeScenarios.cs": "e94e956f1850e1f4a96fe8d89f1ccd0b5e380d20d5acbc4a9813c1d28b5ff82a",
+    "TestsPhase4/RuntimeNativeNumbers.cs": "bc92418a0b7d0ad61f89c8e0d872903e36f84374730a13e24a85017760d4b152",
+    "Assets/VintageCollector/Runtime/Phase4CollectionHost.cs": "35363c5ce082331a80b95025a50e3e75ce4d3109644660e8593ad89f5056bb77",
+    "Assets/VintageCollector/Runtime/OpeningGame.cs": "d8c4255ac4b004683313c36c1bcbbd5910a34f833970d7b4114fa0ff88609d71",
+    "Assets/VintageCollector/Runtime/UnityPhysicalSerializer.cs": "082c7622b6665199a8fcbcf3f1be28b1e2417b20d3834cee04b121ca25381097",
+    "Assets/VintageCollector/Runtime/UnityStateSerializer.cs": "12735723d80e043befd44a2a0133cd7185a9f06abfaf53ec4e6c5c41721588df",
+    "Assets/VintageCollector/Presentation/BinderPresentation.cs": "325307c6c101146adf270c6268c4646a8cb585b258f8b0be9a3e030d487db3ae",
+    "Assets/VintageCollector/Presentation/BinderLayoutRules.cs": "e806da620c936440202baabbc5c028d30d10335029fcbd3a6c11ac5d6a2f6a87",
+    "Assets/VintageCollector/Presentation/BinderView.cs": "87262b5144de156bcf8421bb32f62407b52902404e79bb8df2f7330c39903de1",
+    "Assets/VintageCollector/Presentation/TabletopPresentation.cs": "82ca71130a7c331085a277bd5ad135a571d4d065729b712fc2fbd9030e6877f4",
+    "Assets/VintageCollector/Editor/Phase4RuntimeChecks.cs": "e89cc5a274bba03b02b49aaa85236c712708c4cf5c8db631353f073e062c0e61",
+    "docs/technical/Phase_4_Collections.md": "558a08813845daa517cce193da0d3eff13e773dce292bba009b7a59fdba451ef",
+    "docs/technical/Phase_4_Runtime.md": "a138409c46c4575409f1630c9baebc1e3ad4d4084df75698723546fa015c999e",
+    "docs/technical/Phase_4_Implementation_Contract.md": "620f0f80f20a1487e8c1f3a24291bc73bd3b01b8133be0606ecd4df1e7fb0d36",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.catalog.json": "0a72cd298d70a2039a9e25b092f76d8d13929117cbe7a2948c2286279122b680",
+    "Assets/VintageCollector/Data/base-en-unlimited1999.model-a-v0.1.json": "058c2027dde6633a576997359c688e461796cc5ec9689515d43d2a2880b1dbec",
+    "TestsPhase4/RuntimeRunnerTests.py": "20be86b51a8b54c6c4ca6d8a8025f3f8c9c8a207dada6baf31efd1599452df9c",
+    "ProjectSettings/ProjectVersion.txt": "a5ba4d8827f8b58a50c0934415bede5cbcb0965f30e99ce469c11b5a8b3bbe68"
+  },
+  "scope_exclusions": [
+    "No original Editor control, graphical player/native UI or own native Unity runner launch.",
+    "No live-save access, accepted-build traversal, network/install/Git/profile/skills/parent-directory writes.",
+    "No source edits, tracked work closure, build/candidate/scene approval or Phase4 completion.",
+    "Native source-pin equality for Media/GamePaths and other unchanged compiled inputs is evidence provenance, not a fresh whole-file code review of those uninspected libraries.",
+    "Approval is bound to the exact reviewed hashes; later behavioral changes require re-review."
+  ],
+  "artifacts_created": "Only .artifacts/phase4-final-core-review: report, audit/probe/harness sources, source/evidence pins, logs, synthetic fixtures/junctions and compiled review binaries. Previous rejected reviews and failed evidence remain untouched.",
+  "report_path": ".artifacts/phase4-final-core-review/review.json",
+  "evidence_hash_pins": {
+    ".artifacts/phase4-core-review/review.json": "8f660b9d5a183e2a06c5cc1a0b29f047c1e4d0d0854db6a3eed17dd79feed8a0",
+    ".artifacts/phase4-runtime-review/review.json": "4e611141c9f071b28bc11e0f54df058f19acf69e85869f9746e64588e88f13a5",
+    ".artifacts/phase4-runtime/parent-runtime-frozen-06/results.json": "74deaaa876ab06fbbdc90160f15340ef23105519d06a80190d4cb64f834a4cc5",
+    ".artifacts/phase4-runtime/parent-runtime-frozen-06/source-pins.json": "0dbe6f5772e2658be40eff8f266e15ea5245a1d1bb5ca57aca189cfe897a32e1",
+    ".artifacts/phase4-runtime/parent-runtime-frozen-06/source-verification.json": "69804a8e785579b7ab14b0d1a5d6ed2f0610b176363bfe473da32b09085cbae8",
+    ".artifacts/phase4-final-core-review/final-evidence-audit.json": "933b17f335be6138570748256c25c2295c234f5f32df1d04e2c09cbfb33b4b86",
+    ".artifacts/phase4-final-core-review/supplemental-execution.log": "897a675231300d931995267612ae4538eb658b2de683d0a7ac0a27b2fffb60a5"
+  }
+}
