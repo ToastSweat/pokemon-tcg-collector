@@ -1,5 +1,7 @@
 # Phase 4 parent checkpoint — separate layers, not integrated acceptance
 
+**Current closing status:** user subsequently reported **“all pass.”** for the delivered five-item Phase4 review. `Phase_4_Human_Acceptance.json` binds acceptance to the unchanged136-member player manifest, rechecked without save traversal or rebuild. The rest of this file retains the chronological implementation/review checkpoints; its earlier pending/human-unreported statements are historical. Newly supplied art is being inspected separately; no Phase5 work is authorized.
+
 ## Current process
 
 The corrected ordinary card11 table baseline at61f6f52 remains the current runnable reviewed player. Strict unstamped101 completion for both virtual and physical collections, excluding Machamp, is an explicit user decision. Core services and passive UI are implemented. Runtime/bootstrap and separate-candidate build/player work are concurrent; no integrated Phase4 completion, working player, human review or later-phase authorization is claimed here.

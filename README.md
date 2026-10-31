@@ -4,9 +4,11 @@ Private, personal Unity desktop project. Neutral working title; not a redistribu
 
 ## Current status
 
-**Phase 4 candidate is built and automated-player verified; human review is not reported.** The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**, as explicitly selected. Branded materials and later phases remain deferred.
+**Phase 4 is accepted:** the user reported **all five review checks PASS**. The136-member player manifest was rechecked unchanged without reading live saves, and no rebuild was performed. The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**. See [human acceptance](docs/verification/Phase_4_Human_Acceptance.json).
 
-**Core/runtime and final build/probe/evidence independent reviews passed.** Human review is the remaining gate. Existing player/save folders below remain separate and preserved; no automatic migration or merge is performed. See [current status](docs/hermes/Phase_4_Binder_Discovery.md), [implementation contract](docs/technical/Phase_4_Implementation_Contract.md), [collection core](docs/technical/Phase_4_Collections.md), [runtime](docs/technical/Phase_4_Runtime.md), and [actual player evidence](docs/technical/Phase_4_Build_Player.md).
+The user supplied the local `Pokemon-Base-Set` art folder for the deferred materials pass. Inspection is authorized; sampled card faces visibly have1stEdition stamps and need a printing-art decision before mapping to Unlimited identities. No supplied images have been integrated yet. Phase5 remains unopened.
+
+**Core/runtime and final build/probe/evidence independent reviews passed; the user gate has now passed too.** Existing player/save folders below remain separate and preserved; no automatic migration or merge is performed. See [current status](docs/hermes/Phase_4_Binder_Discovery.md), [implementation contract](docs/technical/Phase_4_Implementation_Contract.md), [collection core](docs/technical/Phase_4_Collections.md), [runtime](docs/technical/Phase_4_Runtime.md), and [actual player evidence](docs/technical/Phase_4_Build_Player.md).
 
 ## Phase 4 — binder / physical ownership candidate
 

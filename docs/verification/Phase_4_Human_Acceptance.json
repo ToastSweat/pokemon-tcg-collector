@@ -1,0 +1,44 @@
+{
+  "status": "accepted-by-user",
+  "userStatement": "all pass.",
+  "scope": "The five-item Phase 4 review delivered immediately before this response",
+  "candidateBuild": "current-controls-candidate-01",
+  "implementationCommit": "d17213d",
+  "recordedAt": "2026-10-31T02:52:28.042439-05:00",
+  "checks": [
+    {
+      "name": "opening flow / normal card11 table stop",
+      "result": "PASS",
+      "source": "direct user report"
+    },
+    {
+      "name": "binder clarity / modes / filters / completion",
+      "result": "PASS",
+      "source": "direct user report"
+    },
+    {
+      "name": "independent persistent physical ownership",
+      "result": "PASS",
+      "source": "direct user report"
+    },
+    {
+      "name": "backup / reviewed restore / restart",
+      "result": "PASS",
+      "source": "direct user report"
+    },
+    {
+      "name": "controls / readability / comfort",
+      "result": "PASS",
+      "source": "direct user report"
+    }
+  ],
+  "limitationsPreviouslyDisclosed": true,
+  "forcedKillDuringRestoreHumanTestClaimed": false,
+  "immutableMembershipAndHashesRechecked": true,
+  "immutableFileCount": 136,
+  "manifestSha256": "4c213b476d00fc271b5e766e0c92af64414f9b4821080f053a6feb3c1dcd38b2",
+  "savesAndLogsExcludedBeforeTraversal": true,
+  "rebuiltOrLaunchedForAcceptance": false,
+  "phase5Authorized": false,
+  "nextScope": "User supplied material inspection for deferred Phase 3 art pass; no printing-rule change authorized"
+}

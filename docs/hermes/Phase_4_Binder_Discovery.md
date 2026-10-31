@@ -1,6 +1,6 @@
 # Phase 4 — Binder discovery
 
-Status: **IMPLEMENTED / AUTOMATED-PLAYER VERIFIED / HUMAN REVIEW NOT REPORTED**. Corrected core/runtime and final build/probe/evidence independent reviews passed. Human review has not been reported. User permitted moving on after corrected card11 (61f6f52), then selected strict unstamped101 targets for both collections, excluding Machamp. Branded materials and Phase5 remain deferred.
+Status: **ACCEPTED — user reported “all pass.” for the five-item Phase4 checklist.** Accepted implementationd17213d and136immutable player members were rechecked unchanged without save traversal/rebuild. Core/runtime and final build/probe independent reviews passed. See [acceptance record](../verification/Phase_4_Human_Acceptance.json). This accepts the delivered Phase4 behavior, not an unperformed forced-restore-crash human test or Phase5. Newly supplied art is a separate materials intake. User permitted moving on after corrected card11 (61f6f52), then selected strict unstamped101 targets for both collections, excluding Machamp. Branded materials and Phase5 remain deferred.
 
 ## Current candidate
 
@@ -41,7 +41,7 @@ Implementation/API/ownership are frozen in ../technical/Phase_4_Implementation_C
 - [x] Parent pure profile-path RED/GREEN: six groups passed including exactGUID identity, no traversal/sibling escape/nestedProfiles, default reset and unchanged prior scope/junction guards. No filesystem writes in resolver.
 - [x] Run pure/native/actual-player opening-to-binder, schema1 archive/recovery/import checks and corrected core/runtime independent review.
 - [x] Final build/probe/evidence independent review passed; local checkpoint prepared excluding user-owned untracked PackageManagerSettings.asset.
-- [ ] Obtain human review and known-limit acceptance; no human PASS reported.
+- [x] All five human checks PASS by direct user report; known limits were disclosed, no forced-crash human test invented.
 - [ ] Stop here; no automatic Phase5.
 
 Known limit: forced process loss during an unfinished restore can block startup while retaining the old collection, backup and pending evidence. No cross-process recovery wizard or profile picker exists. Do not delete evidence to force a blank default; request scoped assistance. Same-process exact Retry and normal confirmed restart passed. Generic materials remain replaceable; no branded integration or human comfort/hearing is claimed. All controlled files remain inside root; automation did not use live saves or the main interactive Editor.
