@@ -43,7 +43,9 @@ Exact rendering/API details will be frozen after initial media readiness is know
 - [x] Run core-connected media/audio suite: 61 driver checks/34 validated captures, actual cue PCM/DSP, mute/no replay, real-loader synthetic bindings and bad/missing-mask fallback. Pixel checks confirm effects stay in the explicit mask and printed bands remain unchanged.
 - [x] Regress 109 persistence checks, accepted generator/distribution and 13 controller groups/297 assertions using the exact-source stage.
 - [x] Both cycle-two independent reviews passed; parent rechecked 77 source pins, all 136 candidate files and all 135 accepted Phase 2 files before closing documentation. No reviewed source/build bytes changed afterward.
-- [ ] Record final local checkpoint and request the bounded generic Phase 3A human review. Branded-material gate remains deferred.
+- [x] Verified local checkpoint `5c4566a` recorded (`[verified] feat: add safe replaceable media and generic opening polish`). Stop for the linked generic Phase 3A human checklist. Branded-material gate remains deferred.
+
+Closing documentation is a separate nonbehavioral checkpoint. The pre-existing untracked PackageManagerSettings.asset remains excluded and unchanged; no remote is configured.
 
 Review record: ../verification/Phase_3A_Independent_Review.json. Historical rejected review and failed intermediate capture/audio attempts are retained, not relabelled as passes. Current corrected manifest digest: `c363cf2242c5e5b91089967f13ed5be67bf66284dc1175e6f8ba0cc659e21db9`.
 

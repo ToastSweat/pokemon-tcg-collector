@@ -1,6 +1,6 @@
 # Phase 3A generic-media playtest — pending
 
-Status: NOT HUMAN ACCEPTED. This is the explicitly selected generic/replaceable-media subset; branded-material Phase 3 acceptance and Phase 4 remain gated. Candidate execution passed; independent review is recorded separately.
+Status: NOT HUMAN ACCEPTED. The generic candidate's corrected execution and both independent reviews passed; checkpoint `5c4566a` is ready for this checklist. This is the explicitly selected generic/replaceable-media subset, not full real-material Phase 3 or Phase 4 acceptance.
 
 ## Use the separate candidate
 
