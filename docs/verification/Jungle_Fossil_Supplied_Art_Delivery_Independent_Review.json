@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "scope": "Exact a04 candidate approved for focused human art review; not human acceptance",
+  "originalReport": {
+    "path": ".artifacts/phase5-supplied-art-delivery-review/review.json",
+    "sha256": "b2d30faefebc601b9639d7d207d2289b27d303fe02d302c6b66c1ae38ab4918b"
+  },
+  "coverage": {
+    "compiler": {
+      "root": 831,
+      "stage": 831,
+      "candidate": 138,
+      "compilerCapableMembers": 96,
+      "codeOmissions": 0,
+      "recipeDelta": [
+        {
+          "line": 9,
+          "root": "    path: Assets/VintageCollector/Scenes/Bootstrap.unity",
+          "stage": "    path: Assets/VintageCollector/Scenes/BootstrapSuppliedExpansionArt.unity"
+        },
+        {
+          "line": 10,
+          "root": "    guid: 3c57369eb8362ab4ab8b63f682bd652a",
+          "stage": "    guid: e7de78c5eb34a104ab1c01aef3b34730"
+        }
+      ]
+    },
+    "nativeGuidClosure": {
+      "sceneGuid": "e7de78c5eb34a104ab1c01aef3b34730",
+      "profiles": {
+        "fossil-en-unlimited1999": 62,
+        "jungle-en-unlimited1999": 64
+      },
+      "wrapperBindings": 6,
+      "uniqueMetadataGuids": 420,
+      "unresolvedSceneReferences": []
+    },
+    "nativeRuns": {
+      "a02": {
+        "action": "CreateAssets",
+        "editorExit": 0,
+        "nativeBuild": false
+      },
+      "a03": {
+        "action": "CreateBootstrap",
+        "editorExit": 0,
+        "nativeBuild": false
+      },
+      "a04": {
+        "action": "BuildWindows",
+        "editorExit": 0,
+        "nativeBuild": true
+      }
+    },
+    "nativePlayer": {
+      "art": {
+        "checkCount": 321,
+        "seedCount": 6,
+        "snapshotCount": 2,
+        "screenshotCount": 11,
+        "wrapperCount": 6,
+        "seeds": [
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ],
+        "nativeAllocatedBytes": 503810055,
+        "faces": 126,
+        "screenshots": [
+          "wrapper-1-0.png",
+          "card11-1.png",
+          "inspect-1.png",
+          "wrapper-1-1.png",
+          "wrapper-1-2.png",
+          "wrapper-2-0.png",
+          "card11-2.png",
+          "inspect-2.png",
+          "wrapper-2-1.png",
+          "wrapper-2-2.png",
+          "complete-six-packs.png"
+        ],
+        "shutdown": {
+          "released": true,
+          "borrowedAlive": true
+        },
+        "generatedResultCount": 6,
+        "totalVirtualCards": 66
+      },
+      "reopen": {
+        "checkCount": 263,
+        "seedCount": 0,
+        "snapshotCount": 2,
+        "screenshotCount": 1,
+        "wrapperCount": 0,
+        "seeds": [],
+        "nativeAllocatedBytes": 502516911,
+        "faces": 126,
+        "screenshots": [
+          "reopened.png"
+        ],
+        "shutdown": {
+          "released": true,
+          "borrowedAlive": true
+        },
+        "generatedResultCount": 0,
+        "totalVirtualCards": 66
+      }
+    },
+    "history": {
+      "packs": 6,
+      "cards": 66,
+      "identicalAcrossModes": true,
+      "reopenGeneration": 0,
+      "sessionFilesRead": false
+    },
+    "preservation": {
+      "players": {
+        "Phase2Windows": 135,
+        "Phase3FinalCardWindows": 136,
+        "Phase3MaterialsWindows": 136,
+        "Phase3RevealAudioWindows": 137,
+        "Phase3TableFlowWindows": 136,
+        "Phase3TiltWindows": 136,
+        "Phase3Windows": 136,
+        "Phase4Windows": 136,
+        "Phase5Windows": 138
+      },
+      "acceptedPlayerFiles": 1226,
+      "originals": {
+        "Pokemon-Base-Set": 114,
+        "Pokemon Cries": 302
+      },
+      "newOriginals": 132,
+      "sharedBase": {
+        "Assets/Supplied/AssetManifest.json": "f75e096eae99b26eebb69e91729099ad2f1c71f7538658a6a79be4b278935fb8",
+        "Assets/Supplied/BaseSetMaterials/Manifest.json": "7fef4c77cb34195b4195715fa99c6c01c400ee31bf73f4a5ede963d86eee93be",
+        "Assets/VintageCollector/Audio/DefaultRevealAudioProfile.asset": "d92b82b51812c37eb79f8398afdcd86fe3c2a4cd5ab15409e9631a8005f16458"
+      },
+      "playerPrunesBeforeAttributes": [
+        "Saves",
+        "Logs"
+      ],
+      "ownerPSDException": [
+        {
+          "approvalFile": "docs/verification/Owner_Base_Booster_PSD_Revision_Approval.json",
+          "approvalSha256": "46beb761dbf7762eb05f67e8181853dd56e46d828337022411fcfdb2696b947a",
+          "historicalN07Sha256": "439bf8ea086f654784b8e54ea57d4551d432e4449b860447a77d4a9333119b5f",
+          "ownerEditedSha256": "f2ba57de79033aaca4b8beef7ff93d865e48dd15ba7e6900a1f11daef564994e",
+          "sourcePath": "Pokemon-Base-Set/base1-base-set-booster-unlimited.psd"
+        }
+      ],
+      "historicalBaselineUnmodified": true,
+      "effectiveBaselineMatchesActualAndP01": true
+    },
+    "scope": {
+      "executedNow": "Read-only hashing/enumeration and existing pure validators only; no Unity/editor/player/build/Git/network launch; no Saves/Logs/session content reads.",
+      "approvedEvidence": "Native texture RGBA references plus internal gameflow and separate-process restart evidence; focused human art review only.",
+      "notProven": [
+        "Physical click/input acceptance (driver only WM_NULL owned-HWND handshake; gameplay driven internally)",
+        "Actual malformed HOST startup (managed HOST tests and native optional-map/profile fallbacks are not that coverage)",
+        "Full14-clip playlist",
+        "Framebuffer-pixel-to-source identity of every face",
+        "Native Base pixel-all acceptance",
+        "Peak allocation: values are two snapshot observations, not peaks"
+      ],
+      "noInventedPids": "Driver has no saved process.json; no PID/exit artifact invented. Native player zero exits are inherited from successful approved driver execution context, not independently replayed here."
+    }
+  },
+  "suggestions": [
+    "Perform focused human review of this exact candidate and supplied stamped visual substitutes without changing Unlimited catalog identities."
+  ],
+  "parentFinalReadback": {
+    "sourceFiles": 831,
+    "compilerFiles": 831,
+    "playerFiles": 138,
+    "allExact": true,
+    "nineAcceptedPlayersAndApprovedOriginalStateExact": true
+  },
+  "humanArtAcceptance": false
+}

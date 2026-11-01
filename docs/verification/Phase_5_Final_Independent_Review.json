@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [
+    "Parent must finish and review a02 audio, s02 services, and c02 crash/restart receipts; none was available at the single receipt snapshot. This approval is not full native acceptance.",
+    "Optional future serialized supportedSets validation currently compares canonical ID set, retaining baseline behavior; exact list cardinality/type validation could be added if it becomes a real transport. No fabricated serialization is required for the current in-memory-only DTO."
+  ],
+  "scope": "Independent exact-source/build/driver audit and available i04/i05 input receipts; Parent separately reconciled all five completed native runs",
+  "originalReport": {
+    "path": ".artifacts/phase5-final-independent/review.json",
+    "sha256": "8f4a76735163c11402837db7d4b7320843e6c0257525e8bf56d019f2d76b0983"
+  },
+  "coverage": {
+    "scope": "Independent read-only final snapshot and two driver corrections; only .artifacts/phase5-final-independent written. No fixes, Git, Unity/player/native input, process management, or Saves/Logs traversal.",
+    "driver": {
+      "fullDiffReviewed": true,
+      "originalActualPath": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-build-boundary-fix\\originals\\tools\\verify_phase5_player.py",
+      "originalSha256": "5c9b0519da54b027043ba8e962e0defdb3e465fea6330bff1ce4b0f5b1779a4e",
+      "currentSha256": "bf4ebc1439c952899d402bf97884a8a7df772ede1fbebea9bb30e38f3bf40059",
+      "hunks": 2,
+      "baselineApprovedHashMatches": true,
+      "reasoning": "SetChoiceView lacks Serializable while BinderView is Serializable. Actual coherent binder repaint controls, tied to same detached DTO/reference/JsonUtility state, frame and dimensions, prove three unique canonical IDs without inventing supportedSets JSON. Legacy validator and capability/geometry fences unchanged. Footer Quit is enabled outside paused/inspection modal, uses same layout.quit as source-pinned probe, forwards to OpeningGame.RequestQuit. Explicit unpaused check precedes owned-HWND click; paused-dialog Quit not claimed. Every posted message checks process liveness, HWND existence/visibility and PID ownership; no foreground/global injected input or foreign-process targeting introduced.",
+      "pureTests": [
+        {
+          "name": "saved-native-absent-nonserializable-choices",
+          "passed": true
+        },
+        {
+          "name": "missing",
+          "passed": true
+        },
+        {
+          "name": "extra",
+          "passed": true
+        },
+        {
+          "name": "duplicate",
+          "passed": true
+        },
+        {
+          "name": "wrong-id",
+          "passed": true
+        },
+        {
+          "name": "wrong-enabled",
+          "passed": true
+        },
+        {
+          "name": "invalid-rect",
+          "passed": true
+        },
+        {
+          "name": "conflicting-serialized-choices",
+          "passed": true
+        },
+        {
+          "name": "stale-dto",
+          "passed": true
+        }
+      ],
+      "positiveCount": 1,
+      "negativeCount": 8
+    },
+    "build": {
+      "label": "n07",
+      "passed": true,
+      "built": true,
+      "rootActualMembers": 546,
+      "rootExactSourcePins": true,
+      "stageActualMembers": 546,
+      "stageExactCompilerPins": true,
+      "candidateDeclaredMembers": 138,
+      "candidateActualMembers": 138,
+      "candidateExactMembershipAndHashes": true,
+      "codeCapableMembers": 91,
+      "codeCapableOmissions": [],
+      "completeTraversal": "All files under Assets, Packages, ProjectSettings, without extension filtering or Saves/Logs prunes. No extra/missing compiler inputs.",
+      "buildReport": {
+        "result": "Succeeded",
+        "outputPath": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/Builds/Phase5Windows/VintageCardCollector.exe",
+        "sourceProject": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-build-project",
+        "target": "StandaloneWindows64",
+        "backend": "Mono",
+        "graphicsApi": "Direct3D11",
+        "errors": 0,
+        "warnings": 0,
+        "development": false
+      },
+      "nativeCheckCount": 282,
+      "nativeChecksAllPass": true,
+      "authorizedReceipt": ".artifacts/phase5-parent-authorization/build-windows-07.json",
+      "authorizationRootAndStagePinsExact": true,
+      "onlyStageRootDelta": "EditorBuildSettings.asset replaces exactly scene path and GUID; original Root settings retained and match preservation baseline.",
+      "sourceScene": "Assets/VintageCollector/Scenes/BootstrapPhase5.unity",
+      "sourceSceneGuid": "089d60a9435809948a2efa252b809700",
+      "sceneRefsAllResolved": true,
+      "sceneScripts": [
+        "Assets/VintageCollector/Presentation/BinderPresentation.cs",
+        "Assets/VintageCollector/Runtime/OpeningGame.cs",
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs",
+        "Assets/VintageCollector/Runtime/Phase5SmokeProbe.cs",
+        "Assets/VintageCollector/Runtime/Phase5MediaHost.cs",
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs",
+        "Assets/VintageCollector/Presentation/SetSelectorPresentation.cs"
+      ],
+      "duplicateGuids": [],
+      "buildToolPinsUnchanged": true
+    },
+    "preservation": {
+      "players": 8,
+      "playerFiles": 1088,
+      "oldPlayersMatchN07AndAcceptedBaseline": true,
+      "originalFiles": 416,
+      "originalsMatchN07AndAcceptedBaseline": true,
+      "sharedBasePinsExact": true,
+      "savesOrLogsRead": false
+    },
+    "quit": {
+      "scope": "Existing separate headless native lifecycle fixture, not release GUI or paused-Quit acceptance; no rerun.",
+      "reportPinVerified": true,
+      "fourReceiptsRead": 4,
+      "modes": [
+        "normal",
+        "early",
+        "late",
+        "reentrant"
+      ],
+      "allExitZeroNoKill": true,
+      "allCleanupBeforeNativeQuit": true,
+      "productionGameHostPinsUnchanged": true,
+      "rootFixtureCommonDifferences": [
+        "Latest independently reviewed opt-in Phase5SmokeProbe source",
+        "Declared fixture-only runInBackground 0 -> 1"
+      ],
+      "fixtureCompilerMembers": 554
+    },
+    "availableFinalNativeReceipts": {
+      "i04": {
+        "passed": true,
+        "failure": null,
+        "checks": 168,
+        "declaredChecks": 168,
+        "cases": 1,
+        "declaredCases": 1,
+        "externalInput": 49,
+        "selectorReceipt": null,
+        "sha256": "d677fe8da1affc2bb5a29d5dc4d29f605b9fac53566ba48598502fcb8164f0c4"
+      },
+      "i05": {
+        "passed": true,
+        "failure": null,
+        "checks": 168,
+        "declaredChecks": 168,
+        "cases": 1,
+        "declaredCases": 1,
+        "externalInput": 49,
+        "selectorReceipt": null,
+        "sha256": "e459470a8f3c4d07c7ca06d22cc8dd036256f2ad903004471140f344872c3afd"
+      },
+      "a02": {
+        "completedReceiptAvailable": false
+      },
+      "s02": {
+        "completedReceiptAvailable": false
+      },
+      "c02": {
+        "completedReceiptAvailable": false
+      }
+    },
+    "fullNativeAcceptance": false,
+    "parentOwnsRemainingAcceptance": true,
+    "nativeSnapshotReadOnceNoPolling": true,
+    "sourcePinsRecheckedAtConclusion": true
+  },
+  "parentAllFiveRunsCompleted": true,
+  "fullNativeExecution": "docs/verification/Phase_5_Runtime_Execution.json",
+  "humanAcceptance": false
+}

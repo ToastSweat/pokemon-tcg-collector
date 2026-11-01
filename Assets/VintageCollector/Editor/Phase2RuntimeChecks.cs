@@ -41,7 +41,10 @@ public static class Phase2RuntimeChecks
         }
         public void Invoke(string method, params object[] args)
         {
-            var m=game.GetType().GetMethod(method);
+            // This legacy fixture's Seed API deliberately selects the original uint overload.
+            var m=method=="GenerateForSmoke"
+                ? game.GetType().GetMethod(method,new[]{typeof(uint)})
+                : game.GetType().GetMethod(method);
             Require(m!=null,"Required runtime API missing: "+method);
             try { m.Invoke(game,args); } catch(System.Reflection.TargetInvocationException e) { throw e.InnerException; }
         }

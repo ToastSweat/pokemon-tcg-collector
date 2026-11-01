@@ -8,17 +8,19 @@ namespace VintageCollector.Collections
  internal static class PhysicalValidation
  {
   internal static readonly string[] Conditions={"unknown","near-mint","lightly-played","moderately-played","heavily-played","damaged"};
-  internal static void Edit(PhysicalEditData e,Catalog c) {
+  internal static void Edit(PhysicalEditData e,Catalog c) { Edit(e,ApprovedSetRegistry.ForLegacyBase(c)); }
+  internal static void Edit(PhysicalEditData e,ApprovedSetRegistry registry) {
    if(e==null || string.IsNullOrWhiteSpace(e.transactionId) || e.transactionId.Length>256 || e.transactionId.Trim()!=e.transactionId) throw new InvalidDataException("Invalid physical transaction");
    foreach(char ch in e.transactionId) if(char.IsControl(ch)) throw new InvalidDataException("Invalid physical transaction");
    DateTime dt; if(e.createdUtc==null || !e.createdUtc.EndsWith("Z",StringComparison.Ordinal) || !DateTime.TryParseExact(e.createdUtc,new[]{"yyyy-MM-dd'T'HH:mm:ss'Z'","yyyy-MM-dd'T'HH:mm:ss.FFFFFFF'Z'"},CultureInfo.InvariantCulture,DateTimeStyles.AssumeUniversal|DateTimeStyles.AdjustToUniversal,out dt)) throw new InvalidDataException("Invalid UTC time");
    if(Array.IndexOf(Conditions,e.condition)<0 || e.quantity<0 || e.quantity>99999) throw new InvalidDataException("Invalid condition or quantity");
-   CardPrinting card; try {card=c.Find(e.cardId);} catch(ArgumentNullException) {throw new InvalidDataException("Invalid physical identity");} catch(KeyNotFoundException) {throw new InvalidDataException("Invalid physical identity");}
-   if(!card.BoosterEligible || card.CollectorNumber=="8" || card.PrintingId!=c.PrintingId) throw new InvalidDataException("Ineligible physical identity");
+   CardPrinting card; try {card=registry.FindCard(e.cardId);} catch(ArgumentNullException) {throw new InvalidDataException("Invalid physical identity");} catch(KeyNotFoundException) {throw new InvalidDataException("Invalid physical identity");}
+   if(!registry.IsCompletionEligible(card.Id)) throw new InvalidDataException("Ineligible physical identity");
   }
-  internal static void State(PhysicalStateData d,Catalog c) {
+  internal static void State(PhysicalStateData d,Catalog c) { State(d,ApprovedSetRegistry.ForLegacyBase(c)); }
+  internal static void State(PhysicalStateData d,ApprovedSetRegistry registry) {
    if(d==null || d.schemaVersion!=1 || d.edits==null || d.revision!=d.edits.LongLength) throw new InvalidDataException("Unsupported or invalid physical state");
-   var ids=new HashSet<string>(StringComparer.Ordinal); foreach(var e in d.edits) {Edit(e,c); if(!ids.Add(e.transactionId)) throw new InvalidDataException("Duplicate physical transaction");}
+   var ids=new HashSet<string>(StringComparer.Ordinal); foreach(var e in d.edits) {Edit(e,registry); if(!ids.Add(e.transactionId)) throw new InvalidDataException("Duplicate physical transaction");}
   }
   internal static bool Same(PhysicalEditData a,PhysicalEditData b) { return a.transactionId==b.transactionId && a.createdUtc==b.createdUtc && a.cardId==b.cardId && a.condition==b.condition && a.quantity==b.quantity; }
   internal static PhysicalStateData Copy(PhysicalStateData d) {

@@ -15,6 +15,17 @@ namespace VintageCollector.Runtime
 
         public static GamePaths Resolve(string allowedRoot, string applicationDataPath, bool isEditor, string[] args)
         {
+            return ResolveCore(allowedRoot,applicationDataPath,isEditor,args,"Phase2");
+        }
+
+        // Explicit new-scene admission; normal Editor play never opens legacy development progress.
+        public static GamePaths ResolvePhase5(string allowedRoot, string applicationDataPath, bool isEditor, string[] args)
+        {
+            return ResolveCore(allowedRoot,applicationDataPath,isEditor,args,"Phase5");
+        }
+
+        private static GamePaths ResolveCore(string allowedRoot, string applicationDataPath, bool isEditor, string[] args, string editorScope)
+        {
             if (args == null) throw new ArgumentNullException("args");
             string root = FullPath(allowedRoot);
             string dataPath = FullPath(applicationDataPath);
@@ -35,7 +46,7 @@ namespace VintageCollector.Runtime
             if (!flags.ContainsKey("--vcc-smoke"))
             {
                 if (flags.Count != 0) throw new ArgumentException("Save/artifact overrides require explicit smoke mode");
-                string defaultSave = isEditor ? Path.Combine(root, "Saves", "Phase2") : Path.Combine(appFolder, "Saves");
+                string defaultSave = isEditor ? Path.Combine(root, "Saves", editorScope) : Path.Combine(appFolder, "Saves");
                 RequireInside(root, defaultSave);
                 return new GamePaths { SaveDirectory = defaultSave, BaseSaveDirectory = defaultSave, SmokeScenario = "", ArtifactDirectory = "" };
             }

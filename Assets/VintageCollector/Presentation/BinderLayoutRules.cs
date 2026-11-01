@@ -51,6 +51,8 @@ namespace VintageCollector.Presentation
             if(command=="import-cancel") return HasReview(view);
             if(command=="import-confirm") return HasReview(view) && string.IsNullOrEmpty(view.error);
             if(HasReview(view)) return false;
+            if(command.StartsWith("binder-set:",StringComparison.Ordinal))
+                return view.canSelectSet && string.IsNullOrEmpty(view.error) && PresentationRules.IsSupportedSet(view.supportedSets,command.Substring(11));
             if(command=="mode:virtual" || command=="mode:physical") return true;
             if(command.StartsWith("filter:",StringComparison.Ordinal)) return Known(Filters,command.Substring(7));
             if(command.StartsWith("search:",StringComparison.Ordinal)) return true;

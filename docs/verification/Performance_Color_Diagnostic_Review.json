@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "originalReport": {
+    "path": ".artifacts/performance-color-diagnostic-review/review.json",
+    "sha256": "eff3abf85f8af01dc67bf0e3de9b798378a4496309b33291ea00419bcf49d597"
+  },
+  "approvedRootSource": "Assets/VintageCollector/Runtime/PerformanceSmokeProbe.cs",
+  "approvedSha256": "d5564017e76838e06b47002b4c2b99965dd297057d5e2633e6938a0d9e9c7b81",
+  "scope": "Only data-color diagnostic expression; no game/artwork/project/color settings change",
+  "requiresRebuiltNativeProof": true
+}

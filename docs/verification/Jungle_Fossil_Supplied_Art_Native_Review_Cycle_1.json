@@ -1,0 +1,89 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "NATIVE-01",
+      "severity": "high",
+      "locations": [
+        "SuppliedArtNativeBuild.cs:38-40",
+        "supplied_art_guard.py:197-201"
+      ],
+      "summary": "Initial Unity auto-import has no admitted closure transition.",
+      "detail": "Admit requires exact frozen stage membership before NativeMetaAllowance. Real CreateAssets startup auto-adds metadata for the newly promoted PNGs/scripts/folders, so preimport frozen pins refuse before the allowance can apply. Offline actual C# ExactClosure rejected auto-added file metadata while NativeMetaAllowance alone accepted that same file metadata. Updating postimport stage pins can satisfy that C# check only with a separately trusted attested postimport snapshot; the current non-BuildWindows Python authorization requires effectiveStagePins equal Root pins and supplies no approved initial import transition.",
+      "evidence": [
+        "final-checks.json:csharpIntegration",
+        "integration-results.json:0"
+      ]
+    },
+    {
+      "id": "NATIVE-02",
+      "severity": "high",
+      "locations": [
+        "SuppliedArtBuildPolicy.cs:18",
+        "supplied_art_guard.py:52-70,194-196,204-217"
+      ],
+      "summary": "New Unity folder metadata cannot pass the file-only allowance and prepare-closure integration.",
+      "detail": "Missing folder .meta files are generated normally by Unity, but folder paths are not compiler_manifest file keys. NativeMetaAllowance/native_meta_plan reject such folder allowances, and verify_prepare_closure rejects the resulting folder .meta as Unknown native authoring extra. Actual source currently has the listed missing metadata folders. This is an operational integration blocker, not rejection of the previously reviewed pure guard component in isolation.",
+      "missing_folder_metadata": [
+        "Assets/Supplied/ExpansionSetMaterials",
+        "Assets/Supplied/ExpansionSetMaterials/generations",
+        "Assets/Supplied/ExpansionSetMaterials/generations/b98f62fecb5239f3bbc7cf78273c2b8f209488f40d5362ba4519824a419058fb",
+        "Assets/Supplied/ExpansionSetMaterials/generations/b98f62fecb5239f3bbc7cf78273c2b8f209488f40d5362ba4519824a419058fb/fossil",
+        "Assets/Supplied/ExpansionSetMaterials/generations/b98f62fecb5239f3bbc7cf78273c2b8f209488f40d5362ba4519824a419058fb/jungle"
+      ],
+      "evidence": [
+        "integration-results.json:1-2",
+        "final-checks.json:csharpIntegration"
+      ]
+    },
+    {
+      "id": "NATIVE-03",
+      "severity": "high",
+      "locations": [
+        "SuppliedArtNativeBuild.cs:40,53,55-58",
+        "supplied_art_guard.py:40-44,197-199"
+      ],
+      "summary": "Prepared alternate-scene release recipe cannot be built while keeping Root configuration immutable.",
+      "detail": "CreateBootstrap changes stage ProjectSettings/EditorBuildSettings.asset to the new supplied-art scene, as required. BuildWindows Python verify_closure nevertheless insists every Root input hash remains identical in stage; C# Admit line 40 repeats that requirement. Thus a correctly prepared stage is rejected. Promoting the new settings into Root would evade this check but violate the required frozen Root/accepted-bootstrap configuration contract. An explicit bounded, independently pinned recipe delta is needed rather than weakening closure or changing Root.",
+      "evidence": [
+        "integration-results.json:3",
+        "final-checks.json:csharpIntegration:SOURCE_ROOT_CONFIG_SAME=False"
+      ]
+    }
+  ],
+  "suggestions": [
+    {
+      "location": "verify_supplied_art_player.py:31-37",
+      "detail": "Harden manifest schema/identity checks and pin these expected-pixel manifest bytes in caller authority. Actual rows() accepted duplicate canonical IDs and replaced wrapper-front roles in offline adversarial tests. Current real manifest passes; do not describe this helper as independently proving canonical role closure."
+    },
+    {
+      "location": "verify_supplied_art_player.py:41-63",
+      "detail": "Reconcile seedCount/seeds and snapshotCount/snapshots as well as existing counters, require unique screenshot names and the expected named art/reopen check/capture coverage, and require build evidence warnings/errors explicitly equal zero rather than trusting passed alone."
+    },
+    {
+      "location": "SuppliedArtNativeBuild.cs:41",
+      "detail": "Prefer refusing nonbatch operational entrypoints or replace SaveCurrentModifiedScenesIfUserWantsTo with nonmutating dirty-state rejection. This admission-time UI can save dirty scenes after pins were checked and before BuildWindows takes its before snapshot."
+    }
+  ],
+  "sourcePins": {
+    "transfer": {
+      "SuppliedArtNativeBuild.cs": "247697deb28895c3dcdeb0aa2adbc113ce0928b60e5158d2cdeec781066ba9d3",
+      "SuppliedArtSmokeProbe.cs": "c6c7b1c91df62db8ba2c8f95e9ee8a2eb964dcb252dacfc41c71b14749472914",
+      "verify_supplied_art_player.py": "851665b3295a4c6dce9af0cc8307cf88eedcac95e336c6c0d1b0b9ed970c19b8"
+    },
+    "guardPolicy": {
+      ".artifacts/phase5-supplied-art-build-tools/SuppliedArtBuildPolicy.cs": "c5332ef2fbe24c12ec9d5302389f37b6b69a9339b43e1d26667396eaa4aefce3",
+      ".artifacts/phase5-supplied-art-guard-revision-work/SuppliedArtBuildPolicy.cs": "c5332ef2fbe24c12ec9d5302389f37b6b69a9339b43e1d26667396eaa4aefce3"
+    },
+    "sourceMap": "4ec2385e00954e24b44cc98d02b95b37f0fd09d18795538cf00854e072092381",
+    "manifest": "0cb3940530050398754c8bcc649b8234bc18d44c04c3006cd1d14d0a743f6eb7"
+  },
+  "originalReport": {
+    "path": ".artifacts/phase5-supplied-art-native-independent/review.json",
+    "sha256": "395eab49ead02dd2eb508733e0c4435fa3aeb1875ab37f8f9d123cb39e852ab0"
+  },
+  "nativeLaunchBlocked": true,
+  "correctionWorkspace": ".artifacts/phase5-supplied-art-native-fix-01",
+  "acceptedBuildsUnchanged": true
+}

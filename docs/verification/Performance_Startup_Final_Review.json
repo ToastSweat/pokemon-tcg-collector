@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "originalReport": {
+    "path": ".artifacts/startup-loading-review-final-02/review.json",
+    "sha256": "1c7f29165b3768bb34b104f700dee50c60503b36b439456c723d783bfe1eda3c"
+  },
+  "coverage": {
+    "finding": "STARTUP-RESTORE-REENTRY-01 resolved for reviewed managed-source transition",
+    "full_review": [
+      "StartupLoadingCoordinator.cs",
+      "StartupLoadingPolicy.cs",
+      "exact.diff",
+      "proposal.diff",
+      "HANDOFF.md",
+      "run.py",
+      "four supplied test suites"
+    ],
+    "fresh_relocated_execution": {
+      "policy": {
+        "compile_exit": 0,
+        "run_exit": 0,
+        "pass_count": 13,
+        "fail_count": 0
+      },
+      "boundary": {
+        "compile_exit": 0,
+        "run_exit": 0,
+        "pass_count": 40,
+        "fail_count": 0
+      },
+      "adversarial": {
+        "compile_exit": 0,
+        "run_exit": 0,
+        "pass_count": 47,
+        "fail_count": 0
+      },
+      "focused": {
+        "compile_exit": 0,
+        "run_exit": 0,
+        "pass_count": 57,
+        "fail_count": 0
+      },
+      "full66-reference": {
+        "compile_exit": 0
+      }
+    },
+    "independent_supplement": {
+      "compile_exit": 0,
+      "run_exit": 0,
+      "pass_count": 61,
+      "fail_count": 0,
+      "inherited_checks": 57,
+      "new_checks": 4,
+      "cases": [
+        "direct Fail during restore plus newly added selector and nested Update",
+        "exact original-state and new-component cleanup on application Quit",
+        "sceneLoaded during restore fences both roots and prevents generation-stale commit",
+        "owner error published by restore callback remains gated and routes sole-owner Quit"
+      ]
+    },
+    "distinct_PASS_labels": 74,
+    "overlap_note": "Suites overlap; do not sum 13/40/47/57/61. Supplied union 70 labels, supplemented union 74.",
+    "restore_callback_observations": [
+      "disable: Ready=false, table=false, Failure=true, ownerQuits=1",
+      "destroy: Ready=false, table=false, Failure=true, ownerQuits=1"
+    ],
+    "transaction_review": "Restoration attempts all saved setters. Completion retains scene subscription, checks owner managed identity/native liveness/enabled, interruption/Failure/quit intent, reobserves actual game/session/collection/media/binding readiness, and checks scene generation/new captures before Ready. Interrupted restoration reimports original ledger, rescans gated roots/new components, independently suppresses captured inputs, retains late-scene fencing and requests latched owner Quit without direct fallback on owner exception.",
+    "unchanged_contracts": [
+      "policy bytes",
+      "progress and status GUI",
+      "actual Adapter.CardBack warning independent of Library",
+      "explicit owner-error dismissal",
+      "quit latch before sole-owner call; no recursive bypass"
+    ],
+    "actual66source_reference_compile": {
+      "fresh_compile_exit": 0,
+      "root_sources": 64,
+      "proposal_sources": 2,
+      "unity_version": "6000.2.14f1",
+      "reference_count": 13,
+      "references_exist": true,
+      "warnings_as_errors": true,
+      "managed_doubles_in_compile": false,
+      "log": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\startup-loading-review-final-02\\full66-reference.log"
+    },
+    "integrity": {
+      "source_pin_count": 66,
+      "source_pins_match": true,
+      "artifact_pin_count": 31,
+      "artifact_pins_match": true,
+      "policy_byte_identical": true,
+      "relocated_sources_byte_identical": true,
+      "exact_diff_match": true,
+      "proposal_diff_match": true,
+      "source_pins_match_after": true,
+      "artifact_pins_match_after": true,
+      "gui_status_progress_byte_unchanged": true,
+      "actual_back_warning_unchanged": true
+    },
+    "native_execution": false,
+    "root_edits": false,
+    "git_operations": false,
+    "network": false,
+    "save_operations": false,
+    "production_fixes": false,
+    "write_scope": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\startup-loading-review-final-02"
+  },
+  "approvedFiles": {
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\startup-loading-fix-02\\StartupLoadingCoordinator.cs": "961dc124e8c5a5bbaf288a6c246fa456e6f0f6ac6f1576f2d0c13cd7a30bed84",
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\startup-loading-fix-02\\StartupLoadingPolicy.cs": "cf8ad8c6c26b1c6eae7eb216620ba584a05592066173d975f26a23c606ecca56"
+  },
+  "nativeAcceptance": false
+}

@@ -2,6 +2,11 @@ using UnityEngine;
 
 namespace VintageCollector.Media
 {
+    public interface ICardTemplateMedia
+    {
+        Texture2D CardTemplate(string cardId);
+    }
+
     // Optional acknowledgement-driven reveal audio; null preserves generic Foley.
     public interface IRevealSoundMedia
     {

@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685a447df37b37e45b70eb505fbbe097, type: 3}
+  m_Name: NativeBasePerformanceProfile
+  m_EditorClassIdentifier: Assembly-CSharp::VintageCollector.Media.NativeBaseMediaProfile
+  printingId: base-en-unlimited1999
+  generationId: f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149
+  displayLabel: Preimported supplied Base visual substitutes
+  cards:
+  - canonicalId: pkmn-base-en-unlimited1999-001-holo-standard
+    face: {fileID: 2800000, guid: fe7730570c88a594198d38c615ba7b6b, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-002-holo-standard
+    face: {fileID: 2800000, guid: b6e54c4b2c3fdf24ca8bce0aca8deac4, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-003-holo-standard
+    face: {fileID: 2800000, guid: 7afa61450b1f3714eb7e38e3d040818e, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-004-holo-standard
+    face: {fileID: 2800000, guid: 07a5e06d83a03f644b133293e6b2041e, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-005-holo-standard
+    face: {fileID: 2800000, guid: 4add5aa7304f27949b6e745612f52cae, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-006-holo-standard
+    face: {fileID: 2800000, guid: 44653aa0da2b91040bbbd4e2d65798ee, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-007-holo-standard
+    face: {fileID: 2800000, guid: 79f02aecf55d6d948a3082bdc1994b1a, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-009-holo-standard
+    face: {fileID: 2800000, guid: c0717359ccdb29f41b5f8c1eb5c0b804, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-010-holo-standard
+    face: {fileID: 2800000, guid: d2dfafb4bd441c94ba8e27414d0f046f, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-011-holo-standard
+    face: {fileID: 2800000, guid: d2a3fd8743bcbd640a2715eb7bd5b076, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-012-holo-standard
+    face: {fileID: 2800000, guid: a89c59b90e303ee4bbf895d8cfc74641, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-013-holo-standard
+    face: {fileID: 2800000, guid: 770981bff86644640b44e6d016ee96f9, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-014-holo-standard
+    face: {fileID: 2800000, guid: 9203cf55d925e1c43bb5d7e27773517f, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-015-holo-standard
+    face: {fileID: 2800000, guid: 258e2020b0348f64693722e6f74cc388, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-016-holo-standard
+    face: {fileID: 2800000, guid: 63d4cdc47ae3ff84fa2f359e13db1ffa, type: 3}
+    mask: {fileID: 2800000, guid: edb21b323e7638c4598bf1c8fae2f8ef, type: 3}
+  - canonicalId: pkmn-base-en-unlimited1999-017-nonholo-standard
+    face: {fileID: 2800000, guid: f6361d533b721ff47a1e0bfb9da90694, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-018-nonholo-standard
+    face: {fileID: 2800000, guid: fdfb466d0109c914787739f91430dc61, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-019-nonholo-standard
+    face: {fileID: 2800000, guid: b01a30e8c5df4624cb804a833d73db47, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-020-nonholo-standard
+    face: {fileID: 2800000, guid: 3021ab3ea39371c4e96b4a58855b7ae6, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-021-nonholo-standard
+    face: {fileID: 2800000, guid: 854c5bf07f60821489b676b677805346, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-022-nonholo-standard
+    face: {fileID: 2800000, guid: 4bb1fdb1a489caa4881a35d66dfcdd73, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-023-nonholo-standard
+    face: {fileID: 2800000, guid: 10b068df351e57542aa1e3ae395c658f, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-024-nonholo-standard
+    face: {fileID: 2800000, guid: eddbaa4e2a552a944adb21f92131c76b, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-025-nonholo-standard
+    face: {fileID: 2800000, guid: e6c65e62a3faa7b4e8cecb143cc4664c, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-026-nonholo-standard
+    face: {fileID: 2800000, guid: 9456854723d9e6e439256883529a5cde, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-027-nonholo-standard
+    face: {fileID: 2800000, guid: 0505bf6c99ad62c438b9bcf143f6dd25, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-028-nonholo-standard
+    face: {fileID: 2800000, guid: 81613a5c50f1b124eabc7e105489038a, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-029-nonholo-standard
+    face: {fileID: 2800000, guid: 89e1dfd7675ee0a46bf3c8b8a6087be4, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-030-nonholo-standard
+    face: {fileID: 2800000, guid: cf3a300a21881a34b9bc22c226a4d0ff, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-031-nonholo-standard
+    face: {fileID: 2800000, guid: 78c6b16b192d76048bd27fcaab4abe14, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-032-nonholo-standard
+    face: {fileID: 2800000, guid: 9d79228832d392644b535321e7277709, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-033-nonholo-standard
+    face: {fileID: 2800000, guid: 539a5fc608802be45aa37d34c5907024, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-034-nonholo-standard
+    face: {fileID: 2800000, guid: c886500389e6e204c9bc851069293ad1, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-035-nonholo-standard
+    face: {fileID: 2800000, guid: 1592f0faa275c634a8e64ad36ab1bae9, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-036-nonholo-standard
+    face: {fileID: 2800000, guid: 62b031366ecb17b469451fa641fb0550, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-037-nonholo-standard
+    face: {fileID: 2800000, guid: 16d38a0b179f56d44916762ee3a77eae, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-038-nonholo-standard
+    face: {fileID: 2800000, guid: f1b992190ab77a54ebaa7d658e9eec33, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-039-nonholo-standard
+    face: {fileID: 2800000, guid: 859ecd37f11745c41999ec37d4493cc4, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-040-nonholo-standard
+    face: {fileID: 2800000, guid: 2a21b5a2000cdc1419aad3044111110b, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-041-nonholo-standard
+    face: {fileID: 2800000, guid: c8032912c72e43e4fa026f0307a6240a, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-042-nonholo-standard
+    face: {fileID: 2800000, guid: d93c7045d0c503e4895939f03efb5193, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-043-nonholo-standard
+    face: {fileID: 2800000, guid: bc02bc47bf106664e955c93e5d6af9c7, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-044-nonholo-standard
+    face: {fileID: 2800000, guid: fd2ea038495f78f4c99ad430b0a4bba6, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-045-nonholo-standard
+    face: {fileID: 2800000, guid: 9e8f0832b944f244795452263c9486c4, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-046-nonholo-standard
+    face: {fileID: 2800000, guid: f850dfc6f20efda41b6e737c45616ca5, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-047-nonholo-standard
+    face: {fileID: 2800000, guid: 92209262b393b5443a0c9ff6a6aa96ad, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-048-nonholo-standard
+    face: {fileID: 2800000, guid: fc7601de3525add45bf13665dbeb3436, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-049-nonholo-standard
+    face: {fileID: 2800000, guid: f79b836c605207b46bf8d29d2be49c49, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-050-nonholo-standard
+    face: {fileID: 2800000, guid: ea9485f217e74f6498066150b295e5b2, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-051-nonholo-standard
+    face: {fileID: 2800000, guid: 38647b57c79bd6f41be6e67a4f82a22e, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-052-nonholo-standard
+    face: {fileID: 2800000, guid: 4247665fc8e69e843b781035242014eb, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-053-nonholo-standard
+    face: {fileID: 2800000, guid: 6f6c3e7917932674d922ab7395fe00b9, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-054-nonholo-standard
+    face: {fileID: 2800000, guid: daa419b53fb7b5b4da2d8729acdc0d9f, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-055-nonholo-standard
+    face: {fileID: 2800000, guid: c9661e3f43ef41f4389db4f612d1ba77, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-056-nonholo-standard
+    face: {fileID: 2800000, guid: b3b5ff7ca2234ba49b82079a5bc06f18, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-057-nonholo-standard
+    face: {fileID: 2800000, guid: 9e6f85861cec4df4eb0693ede4eb855e, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-058-nonholo-yellow-cheeks
+    face: {fileID: 2800000, guid: 54f0bbfc044d818408a36f6705ebb636, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-059-nonholo-standard
+    face: {fileID: 2800000, guid: 3a317e5010f2efb46928e9d397f478f8, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-060-nonholo-standard
+    face: {fileID: 2800000, guid: 488088cfd3297f449be38a46e372937c, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-061-nonholo-standard
+    face: {fileID: 2800000, guid: 8e4977e0e88ae954d9de5fbf662ad70e, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-062-nonholo-standard
+    face: {fileID: 2800000, guid: 2b15f89cdc5c2514b9952f302a2d0293, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-063-nonholo-standard
+    face: {fileID: 2800000, guid: 0dbe2e50a2cd1b843bd031d80880a648, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-064-nonholo-standard
+    face: {fileID: 2800000, guid: 1c5924a33e84f044aab411d518d6a0dd, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-065-nonholo-standard
+    face: {fileID: 2800000, guid: f5e7f5debcae2ee4c83bbb8e746ac4ec, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-066-nonholo-standard
+    face: {fileID: 2800000, guid: 7213fc46fc0a4094da9f38b2d177339d, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-067-nonholo-standard
+    face: {fileID: 2800000, guid: 72f775d5aa8d0924ba5a2be204ad9798, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-068-nonholo-standard
+    face: {fileID: 2800000, guid: d597be8fa85324546a49fb137b728891, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-069-nonholo-standard
+    face: {fileID: 2800000, guid: 7da05079b6b025a4dba83a3f043c4cd5, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-070-nonholo-standard
+    face: {fileID: 2800000, guid: 9f6acb5699deb1948b8cfa688893535b, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-071-nonholo-standard
+    face: {fileID: 2800000, guid: c91968be28b29834ea0fdd5738af4301, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-072-nonholo-standard
+    face: {fileID: 2800000, guid: 9b43ee99272d07a439c8c4b1ca119082, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-073-nonholo-standard
+    face: {fileID: 2800000, guid: a8508d859dedc7840b97ddeb22b2a18c, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-074-nonholo-standard
+    face: {fileID: 2800000, guid: 28e68e0ffd9cc1340ade55d29f96f36f, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-075-nonholo-standard
+    face: {fileID: 2800000, guid: 12d5d15b6c83a25438fd73246fbb7c96, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-076-nonholo-standard
+    face: {fileID: 2800000, guid: 6f53717b0b46323408b4dfd13e1c54b4, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-077-nonholo-standard
+    face: {fileID: 2800000, guid: 880d9e054b19a3248ab33fd81f930ac4, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-078-nonholo-standard
+    face: {fileID: 2800000, guid: 6c6a4c57061a9514bad57099c760d4d9, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-079-nonholo-standard
+    face: {fileID: 2800000, guid: 2ddc4c3acc86b8c4fb8e4d1b5f704af6, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-080-nonholo-standard
+    face: {fileID: 2800000, guid: 71cda7257ec8c8448a80e85664309a67, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-081-nonholo-standard
+    face: {fileID: 2800000, guid: 1ba66eb6e4c5c5d41b449f4a314f5769, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-082-nonholo-standard
+    face: {fileID: 2800000, guid: a9abd4b57d03678499c81f1c32cedfa0, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-083-nonholo-standard
+    face: {fileID: 2800000, guid: d89b6d80469c5b14ab77ac56456381a4, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-084-nonholo-standard
+    face: {fileID: 2800000, guid: a7e6fd068a20d78488f4b39b6b4c23a1, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-085-nonholo-standard
+    face: {fileID: 2800000, guid: 48a44b6877abfe24483b815e85f36181, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-086-nonholo-standard
+    face: {fileID: 2800000, guid: 842bbbb68820c1140b3e068a62016a3a, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-087-nonholo-standard
+    face: {fileID: 2800000, guid: e069377997c064940b1742496bd8ad0f, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-088-nonholo-standard
+    face: {fileID: 2800000, guid: b5f72a60124ebf34dbac54803be586ff, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-089-nonholo-standard
+    face: {fileID: 2800000, guid: ee05055152b96a24b99056a104c4a0f2, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-090-nonholo-standard
+    face: {fileID: 2800000, guid: 5dc46bed01588cb47964c2effdfaa5e1, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-091-nonholo-standard
+    face: {fileID: 2800000, guid: 9b12f829b122d444ab908753977da90f, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-092-nonholo-standard
+    face: {fileID: 2800000, guid: 1dc9e35929da46049a2dd0dec261dc21, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-093-nonholo-standard
+    face: {fileID: 2800000, guid: 68eced9316c8c55408fce3ad9a741d2c, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-094-nonholo-standard
+    face: {fileID: 2800000, guid: b499daddd351cde4da0d5ca1daa8febc, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-095-nonholo-standard
+    face: {fileID: 2800000, guid: 7655cb9890049424eba0588a4e22176e, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-096-nonholo-standard
+    face: {fileID: 2800000, guid: 5c2193d3ac34b8b4184537c487063a97, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-097-nonholo-standard
+    face: {fileID: 2800000, guid: ff53b5669edd5c5449252341cc6314bb, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-098-nonholo-standard
+    face: {fileID: 2800000, guid: ba9e9476e9229bc45be32d80b4c676a0, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-099-nonholo-standard
+    face: {fileID: 2800000, guid: 64fb35d27e8c9cd4e972c066150377f9, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-100-nonholo-standard
+    face: {fileID: 2800000, guid: 06226037e1f594e42a96406b687ec0de, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-101-nonholo-standard
+    face: {fileID: 2800000, guid: 1f331dc98ce18384e97db28dd417232c, type: 3}
+    mask: {fileID: 0}
+  - canonicalId: pkmn-base-en-unlimited1999-102-nonholo-standard
+    face: {fileID: 2800000, guid: ae23ee56ba903bc4091c7b0f47a461d5, type: 3}
+    mask: {fileID: 0}
+  sharedCardBack: {fileID: 2800000, guid: 5e5a4432d812bdd4a834f6e01b685c1d, type: 3}
+  wrapperBack: {fileID: 2800000, guid: 0fcdf70067ecc5c4798a3d57fbf2c74b, type: 3}
+  wrapperFrontMask: {fileID: 2800000, guid: 53eb2132b519b16468541e52dcf7ff37, type: 3}
+  wrapperBackMask: {fileID: 2800000, guid: 74580b3f6ed6a14498144ada3df0f2f1, type: 3}
+  wrapperFronts:
+  - {fileID: 2800000, guid: c2a816ae498d5b04dafc07b87aeb0351, type: 3}
+  - {fileID: 2800000, guid: 4eca3508031e50a4dba7eb2f19e9a4bf, type: 3}
+  - {fileID: 2800000, guid: 0ddd3d1d29bdfe947be89a1f5f64aaaa, type: 3}

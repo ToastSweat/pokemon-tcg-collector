@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07199cf4b6b7cf4ea8b4723273cb9a0, type: 3}
+  m_Name: FossilSuppliedImageProfile
+  m_EditorClassIdentifier: Assembly-CSharp::VintageCollector.Media.SuppliedCardArtProfile
+  printingId: fossil-en-unlimited1999
+  displayLabel: Fossil supplied visual substitutes
+  cards:
+  - cardId: pkmn-fossil-en-unlimited1999-001-holo-standard
+    face: {fileID: 2800000, guid: ea8042207c440a441998356e405fb64a, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-002-holo-standard
+    face: {fileID: 2800000, guid: cb3a98b3fe4c2d042bde5742febecb73, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-003-holo-standard
+    face: {fileID: 2800000, guid: d555bdadb7dc168419468a6e9d3e02a1, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-004-holo-standard
+    face: {fileID: 2800000, guid: b6fede771120c034a959673c0b0cd472, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-005-holo-standard
+    face: {fileID: 2800000, guid: 1485d9ddc1f69a94f8fdea0948c013e7, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-006-holo-standard
+    face: {fileID: 2800000, guid: f8964c468c1fc5547816aa910f6404a7, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-007-holo-standard
+    face: {fileID: 2800000, guid: 51a02d2fe22b2e542bc079f70baa62f7, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-008-holo-standard
+    face: {fileID: 2800000, guid: 26df36987361e62468e65c01de6995fc, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-009-holo-standard
+    face: {fileID: 2800000, guid: b253bc34f1d96ee4f9e05a77d0cc0fec, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-010-holo-standard
+    face: {fileID: 2800000, guid: c684a0dc35f56ea4e9073ee8cb34bf61, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-011-holo-standard
+    face: {fileID: 2800000, guid: 194b6a7af33ca75408120532c6637c63, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-012-holo-standard
+    face: {fileID: 2800000, guid: 9ee681d240be17e4ab8c3285083b44e5, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-013-holo-standard
+    face: {fileID: 2800000, guid: 25a8daeff50b44141bf260383d562810, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-014-holo-standard
+    face: {fileID: 2800000, guid: 7ceeb62d55f2387468c226ed281c918e, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-015-holo-standard
+    face: {fileID: 2800000, guid: 7775a4064b218f640a9cdecc43464959, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-016-nonholo-standard
+    face: {fileID: 2800000, guid: 702d744cbd8e9a0428924527402e08db, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-017-nonholo-standard
+    face: {fileID: 2800000, guid: ee6a65ec9915d454b8c291c87dda0672, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-018-nonholo-standard
+    face: {fileID: 2800000, guid: 8f525faced44c2d4f9d8f8cf72b4f878, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-019-nonholo-standard
+    face: {fileID: 2800000, guid: fec486219d87fcc40b8998841b262010, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-020-nonholo-standard
+    face: {fileID: 2800000, guid: a55f568b4dc13864a827c85072d31f28, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-021-nonholo-standard
+    face: {fileID: 2800000, guid: 551133f4fd2cf9d4a9b9243405b7bea2, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-022-nonholo-standard
+    face: {fileID: 2800000, guid: b7edd1c6923a5c34e980aac34b003dd9, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-023-nonholo-standard
+    face: {fileID: 2800000, guid: 7d14b92e20e2c734bbf2f864f8c18dca, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-024-nonholo-standard
+    face: {fileID: 2800000, guid: f849afb831135f5418673e7195f7b662, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-025-nonholo-standard
+    face: {fileID: 2800000, guid: ef9125b280ca7f341b13ae8721221a6e, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-026-nonholo-standard
+    face: {fileID: 2800000, guid: 6c711a5bdb80f7c41b03765b54a7e48c, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-027-nonholo-standard
+    face: {fileID: 2800000, guid: d65148ea7b72b6747adb404cc4ccc1a2, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-028-nonholo-standard
+    face: {fileID: 2800000, guid: 9ba1adcefe1c65d4da394da60c19dde5, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-029-nonholo-standard
+    face: {fileID: 2800000, guid: fb314bf876068db4a87cc5c99d650457, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-030-nonholo-standard
+    face: {fileID: 2800000, guid: 430005c2c514aa84cb6c0905afa55be7, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-031-nonholo-standard
+    face: {fileID: 2800000, guid: 193dbd7b0f2180a4b86e7d7bfffd1959, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-032-nonholo-standard
+    face: {fileID: 2800000, guid: 307479d00d6a0bc4dbc1ec40a9efdfa2, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-033-nonholo-standard
+    face: {fileID: 2800000, guid: 8c419213cc9f5b24f8e8cc204bc4dc8c, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-034-nonholo-standard
+    face: {fileID: 2800000, guid: bc507ca5b2db8654db11b4d9c3d9d2d7, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-035-nonholo-standard
+    face: {fileID: 2800000, guid: 2d81cbbb8c0071542b651966bc7c63f3, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-036-nonholo-standard
+    face: {fileID: 2800000, guid: addf3894c3849104494a1ad3bcaa34fb, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-037-nonholo-standard
+    face: {fileID: 2800000, guid: 95824a97a90ecf84a95c1fc304b7313e, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-038-nonholo-standard
+    face: {fileID: 2800000, guid: 85217bdaaaaa41d4b985d44a1adbda3a, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-039-nonholo-standard
+    face: {fileID: 2800000, guid: 5239b71e745897e4fbea3fd1b0ec5a2b, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-040-nonholo-standard
+    face: {fileID: 2800000, guid: f47b84973425e7548b548799f114877c, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-041-nonholo-standard
+    face: {fileID: 2800000, guid: 7bf9edc6820966e48a0dec3b6c49ebb2, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-042-nonholo-standard
+    face: {fileID: 2800000, guid: d3be0976776b08a4db3295b617ad38e9, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-043-nonholo-standard
+    face: {fileID: 2800000, guid: 4860ecb2304238647a5f21e705cac2c0, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-044-nonholo-standard
+    face: {fileID: 2800000, guid: fadb1e9fbce142d43b0c96207723b013, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-045-nonholo-standard
+    face: {fileID: 2800000, guid: 4727f5c443a330045be6584252fe87b6, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-046-nonholo-standard
+    face: {fileID: 2800000, guid: d5edfa8ce853714479b95c3086d50c67, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-047-nonholo-standard
+    face: {fileID: 2800000, guid: aa1985387d8a10943a6cd311ca1d9bbb, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-048-nonholo-standard
+    face: {fileID: 2800000, guid: ef293e2e6a939464d8797fff4711d410, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-049-nonholo-standard
+    face: {fileID: 2800000, guid: 3e4bc94e03ddde345bc00bc68fa97dec, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-050-nonholo-standard
+    face: {fileID: 2800000, guid: e660325c4e53e214fac173a0b77606a9, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-051-nonholo-standard
+    face: {fileID: 2800000, guid: 2a6700e86f3290f44a0a4463cae6d0c9, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-052-nonholo-standard
+    face: {fileID: 2800000, guid: 289514cf5c42b01458fa2fdba68dc0d8, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-053-nonholo-standard
+    face: {fileID: 2800000, guid: 985057243d15ca04c9509cb30c4fc2c1, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-054-nonholo-standard
+    face: {fileID: 2800000, guid: 506e74376179721498709a344bd1edd7, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-055-nonholo-standard
+    face: {fileID: 2800000, guid: e1267f2b6e81a8f428480d50757b8385, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-056-nonholo-standard
+    face: {fileID: 2800000, guid: 705a4e244f4969c4691735f7ba9b5dd8, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-057-nonholo-standard
+    face: {fileID: 2800000, guid: e4bbc8c5c6f51e241b233bbf3b842bac, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-058-nonholo-standard
+    face: {fileID: 2800000, guid: cb911b34e6b214948932dae200f0de83, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-059-nonholo-standard
+    face: {fileID: 2800000, guid: e49ea420df280f140944bd14f2082200, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-060-nonholo-standard
+    face: {fileID: 2800000, guid: 498bf890be2525b4594f2c1d7758084d, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-061-nonholo-standard
+    face: {fileID: 2800000, guid: 322f96c5997b2bd4ba022fc14aa24850, type: 3}
+  - cardId: pkmn-fossil-en-unlimited1999-062-nonholo-standard
+    face: {fileID: 2800000, guid: 6fcd98460bd56fc448e5c7a335fda0a7, type: 3}

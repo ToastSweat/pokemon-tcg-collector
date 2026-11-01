@@ -1,0 +1,29 @@
+{
+  "nativeBuildPassed": true,
+  "nativePlayerAcceptance": false,
+  "candidateMembers": 140,
+  "nativeBuildErrors": 0,
+  "nativeBuildWarnings": 0,
+  "firstRunCheckCount": 18,
+  "checksPassed": 16,
+  "failedChecks": [
+    "inspection-exact",
+    "probe-failure"
+  ],
+  "screenshots": [
+    "unknown.png",
+    "confirmed.png",
+    "mismatch.png",
+    "known-zero.png",
+    "uncertain.png",
+    "source-back.png"
+  ],
+  "outboundCountsAreFakesOnly": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "rootAndElevenProtectedPlayersUnchanged": true,
+  "report": ".artifacts/phase6-shopping-player/s01/shopping/report.json"
+}

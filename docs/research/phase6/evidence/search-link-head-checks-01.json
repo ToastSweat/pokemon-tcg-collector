@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Jungle+Clefable+1%2F64+holo+Unlimited+English+Near+Mint+raw",
+    "method": "HEAD",
+    "purpose": "Public search-link routing only; no price/listing scrape or images",
+    "locationSent": false,
+    "accessedLocal": "2026-11-01T01:40:00.644244-06:00",
+    "status": 200,
+    "finalUrl": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Jungle+Clefable+1%2F64+holo+Unlimited+English+Near+Mint+raw"
+  },
+  {
+    "url": "https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=Pokemon+Jungle+Clefable+1%2F64+holo+Unlimited+English+Near+Mint+raw&view=grid",
+    "method": "HEAD",
+    "purpose": "Public search-link routing only; no price/listing scrape or images",
+    "locationSent": false,
+    "accessedLocal": "2026-11-01T01:40:01.785346-06:00",
+    "status": 200,
+    "finalUrl": "https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=Pokemon+Jungle+Clefable+1%2F64+holo+Unlimited+English+Near+Mint+raw&view=grid"
+  }
+]

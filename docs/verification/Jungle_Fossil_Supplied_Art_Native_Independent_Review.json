@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [
+    {
+      "location": "run_supplied_art_native.py:109-112",
+      "detail": "Inherited nonblocking limit: a preservation read/hash exception in finally can bypass results.json. Durable per-check failing evidence would improve diagnosis; this review does not claim that behavior was changed or tested."
+    },
+    {
+      "location": "verify_supplied_art_player.py:47-66",
+      "detail": "Inherited nonblocking limit: count checks do not independently tie seed values to final packs or the two snapshots to initial/final. No stronger seed/snapshot or native runtime acceptance is claimed."
+    }
+  ],
+  "coverage": {
+    "review_complete": true,
+    "scope": "Narrow exact-hash postflight correction; complete corrected 115-line wrapper read and exact byte comparison against previously reviewed wrapper; unchanged five-file coverage inherited, not an unrelated re-audit.",
+    "prior_reviews": {
+      "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-parent-independent-final/review.json": "a1b1a3e03884d20fdc9b1913a01d9bec1dcfe64b3c1a0ce6a4f3bef40761a3f4",
+      "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-native-independent-final-02/review.json": "a93e94d5262a97b55509de9b9301685c22124b075fcd53c8766ed0fee661a2d7"
+    },
+    "inheritance": {
+      "SuppliedArtNativeBuild.cs": "Exact hash matches prior complete native admission, fixed metadata-folder and stage-only recipe review, including managed compilation/lifecycle fixtures; NATIVE-01/02/03 resolutions inherited with prior limits.",
+      "SuppliedArtSmokeProbe.cs": "Exact hash matches prior complete probe, bounded path/handshake, transaction/pixel/count coverage and actual-exit static review; no fresh player or rendering acceptance.",
+      "verify_supplied_art_player.py": "Exact hash matches prior complete canonical 126-ID/six-wrapper, manifest/pixel/report and process exit/reap review; seed and process-matrix limits remain.",
+      "supplied_art_guard.py": "Exact hash matches prior complete trusted receipt, historical owner exception, closure/boundary and pure fixture review. Re-read completely here; newly admitted wrapper path exposes the postflight baseline mismatch reported above.",
+      "SuppliedArtBuildPolicy.cs": "Exact hash matches prior complete C# policy/attestation/compiler and boundary review plus prior managed compilation/lifecycle evidence. Actual Unity CLI remains unexecuted."
+    },
+    "transfer_pins_verified": true,
+    "five_files_match_both_prior_review_pin_sets": true,
+    "no_hidden_diff": "Entire wrapper byte array equals old bytes with exactly one verify_prepare_closure first-argument before->source replacement; old and new SHA256 match required pins.",
+    "resolved_finding": "PARENT-02-POSTFLIGHT: source assigned directly from receipt.sourcePins at line 36 now supplies prepare closure/native_meta_plan immutable Root baseline. Actual before remains separately captured from Stage at line 61.",
+    "preserved_checks": [
+      "Exact owner marker, full write-boundary-before-marker order and pending-import validation unchanged; BuildWindows exact effectiveStagePins equality unchanged.",
+      "Actual before, staged-inputs.json and result.stagePinsBefore retain existing generated metadata; changed-config map still derives from actual before.",
+      "Guard still independently requires exact semantic Bootstrap recipe, actual full closure, Root pins, explicitly enumerated file/folder metadata roles and globally unique GUIDs.",
+      "createdNativeFiles remains strictly new relative to actual Stage-before; nativeMetaPlan still includes all admitted metadata, including preexisting file/folder metadata. No Root adoption was executed.",
+      "No receipt repinning, owner exception expansion or historical baseline change."
+    ],
+    "fresh_execution": {
+      "green_command": "python -B F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-postflight-independent/verify_postflight.py new",
+      "green_exit_code": 0,
+      "existing_regressions_passed": 17,
+      "focused_cases_passed": 9,
+      "red_command": "python -B F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-postflight-independent/verify_postflight.py old",
+      "red_exit_code": 1,
+      "red_existing_metadata_failures_reproduced": 3,
+      "red_frozen_source_controls_accepted": 3,
+      "refusals_preserve_bytes_and_mtimes": 13,
+      "refusal_mutator_calls": 0,
+      "unknown_extra_dirty_root_unauthorized_config_foreign_owner_refused": true,
+      "root_compiler_inputs_unchanged": 680,
+      "blocked_or_attempted_native_network_operations": [],
+      "relocation": "Byte-identical test_parent.py relocated via __file__; verify_postflight.py has only one harness source-path substitution selecting the exact proposed wrapper. Actual AST helpers/gates/evidence/postflight and real guard run; receipt orchestration only is a fixture double. Audit hook prohibits outside-owned writes, subprocess and network.",
+      "evidence": [
+        "new-17.log",
+        "new-17.json",
+        "new-postflight.json",
+        "old-17.log",
+        "old-17.json",
+        "old-postflight.json",
+        "*-preservation.json"
+      ]
+    },
+    "code_approval_only": true,
+    "native_acceptance": false,
+    "native_execution_authorized_by_this_review": false,
+    "limits": [
+      "No Git, network, Unity, native/managed build, player, operational main, save operations or source promotion. All writes confined to this review directory.",
+      "Native Editor import/serialization/build/player, rendering/Base pixel/physical-window and known HOST fallback/playlist acceptance remain separate future execution criteria, not new blockers for this code review.",
+      "Prior nine-player/1226-member protection and owner-approved PSD historical exception coverage inherited unchanged; not freshly rescanned here.",
+      "No implementation fixes made; two inherited nonblocking suggestions remain."
+    ],
+    "harness_issue": "Initial tool-response copy attempt failed with KeyError content before any write; switched to exact-byte filesystem copies and reran successfully. Not a product issue."
+  },
+  "approvedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-final-source-01/SuppliedArtNativeBuild.cs": "c6cd4eccdaa3c81981948a9dc64cbe57e27e4b35a85814f7037166625066dab1",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-final-source-01/SuppliedArtSmokeProbe.cs": "c6c7b1c91df62db8ba2c8f95e9ee8a2eb964dcb252dacfc41c71b14749472914",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-final-source-01/verify_supplied_art_player.py": "d867590955c2c3cc1b842329445a26d9ec7bfa9f868139b2ca021efb0d8e912b",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-final-source-01/supplied_art_guard.py": "897656c6b9c0935bbd5c3cf3f8c908b450ec639a9d0dbd9edb85ea8ffc50f3e4",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-final-source-01/SuppliedArtBuildPolicy.cs": "709d5ef21f589e68b0c39b7fc127060899e704af2e1a8b2468a58adb2989bea0",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-postflight-fix/run_supplied_art_native.py": "c0551d12b3c9b2387ef9f4cc15d54682852105dcf229a00b255ba5814e9677b6"
+  },
+  "originalReport": {
+    "path": ".artifacts/phase5-supplied-art-postflight-independent/review.json",
+    "sha256": "dcd322cc5bde24a40fce3c5156f83c7187076a8a4560efc7b90c7fb3bceba6dd"
+  },
+  "nativeAcceptance": false
+}

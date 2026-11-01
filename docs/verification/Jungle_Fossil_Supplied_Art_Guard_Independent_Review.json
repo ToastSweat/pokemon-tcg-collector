@@ -1,0 +1,259 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [
+    "When the future native launcher is implemented, independently verify its exact receipt/source/tool pins and boundary checks immediately before every write, deletion and launch; this verdict does not approve that integration.",
+    "Add a future owned full-authorization matrix for canonical bindings, recipe and metadata transitions after genuine source promotion; current operational positive authorization was intentionally not fabricated."
+  ],
+  "coverage": {
+    "checks": {
+      "revisionSourceMap": true,
+      "originalSourceMap": true,
+      "csharpUnchanged": true,
+      "revisionDiffExact": true,
+      "originalComponentDiffExact": true,
+      "rootSourcePins": true,
+      "historicalBaseline": true,
+      "toolPins": true,
+      "effectiveBaseline": true
+    },
+    "originalPythonFullRead": true,
+    "revisedPythonFullRead": true,
+    "csharpFullRead": true,
+    "pureDependenciesFullRead": true,
+    "pythonOriginalTests": 10,
+    "pythonRevisionTests": 8,
+    "csharpFixtureTests": 7,
+    "commands": [
+      {
+        "name": "python-original-10",
+        "args": [
+          "C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe",
+          "-B",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\test_guard.py"
+        ],
+        "exit": 0,
+        "output": "test_00_component_exists (__main__.GuardTests.test_00_component_exists) ... ok\ntest_closure_no_exclusions (__main__.GuardTests.test_closure_no_exclusions) ... ok\ntest_junctions_before_owner_or_mutation (__main__.GuardTests.test_junctions_before_owner_or_mutation) ... ok\ntest_meta_wrong_unknown_duplicate_guid (__main__.GuardTests.test_meta_wrong_unknown_duplicate_guid) ... ok\ntest_old_player_prunes_junction_saves_logs (__main__.GuardTests.test_old_player_prunes_junction_saves_logs) ... ok\ntest_ordinary_fresh_and_exact_stage (__main__.GuardTests.test_ordinary_fresh_and_exact_stage) ... ok\ntest_prepare_requires_explicit_configuration_pins (__main__.GuardTests.test_prepare_requires_explicit_configuration_pins) ... ok\ntest_saves_refused_even_empty_no_reads (__main__.GuardTests.test_saves_refused_even_empty_no_reads) ... ok\ntest_source_mismatch_and_cousin (__main__.GuardTests.test_source_mismatch_and_cousin) ... ok\ntest_stale_compiler_and_foreign_stage (__main__.GuardTests.test_stale_compiler_and_foreign_stage) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.325s\n\nOK\n"
+      },
+      {
+        "name": "python-revision-8",
+        "args": [
+          "C:\\Users\\pada1\\AppData\\Local\\hermes\\installs\\7352df87f611e178\\environments\\98fe5d1fbaf541e0b615fb2cef0c1193\\venv\\Scripts\\python.exe",
+          "-B",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\test_revision.py"
+        ],
+        "exit": 0,
+        "output": "test_default_no_exception (__main__.RevisionTests.test_default_no_exception) ... ok\ntest_historical_repin (__main__.RevisionTests.test_historical_repin) ... ok\ntest_multiple_revisions (__main__.RevisionTests.test_multiple_revisions) ... ok\ntest_owned_missing_nonbool_and_thirdhash (__main__.RevisionTests.test_owned_missing_nonbool_and_thirdhash) ... ok\ntest_owned_other_original_shared_and_player_drift (__main__.RevisionTests.test_owned_other_original_shared_and_player_drift) ... ok\ntest_real_approved_revision (__main__.RevisionTests.test_real_approved_revision) ... ok\ntest_record_mutations (__main__.RevisionTests.test_record_mutations) ... ok\ntest_untrusted_receipt (__main__.RevisionTests.test_untrusted_receipt) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 3.066s\n\nOK\n"
+      },
+      {
+        "name": "mcs-original-warnaserror",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\4.5\\mcs.exe",
+          "-warnaserror+",
+          "-target:library",
+          "-out:F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\UnchangedGuard.dll",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Assets\\VintageCollector\\Editor\\Phase5BuildPolicy.cs",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-build-tools\\SuppliedArtBuildPolicy.cs"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "name": "mcs-fixture-warnaserror",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\4.5\\mcs.exe",
+          "-warnaserror+",
+          "-out:F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\Assets\\VintageCollector\\Editor\\Phase5BuildPolicy.cs",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\FixtureSuppliedArtBuildPolicy.cs",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.cs"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "name": "csharp-ordinary",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\5c7199b174584b89b0f921052f8f6b51",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent",
+          "positive"
+        ],
+        "exit": 0,
+        "output": "PASS boundary positive\nPASS source exact/stale\ntests=3\n"
+      },
+      {
+        "name": "junction-Library",
+        "args": [
+          "cmd.exe",
+          "/d",
+          "/c",
+          "mklink",
+          "/J",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\1f3cf915f74a4188afec41d311ff15da\\.artifacts\\phase5-supplied-art-build-project\\Library\\cache",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\1f3cf915f74a4188afec41d311ff15da\\canary"
+        ],
+        "exit": 0,
+        "output": "Junction created for F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\1f3cf915f74a4188afec41d311ff15da\\.artifacts\\phase5-supplied-art-build-project\\Library\\cache <<===>> F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\1f3cf915f74a4188afec41d311ff15da\\canary\n"
+      },
+      {
+        "name": "csharp-Library",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\1f3cf915f74a4188afec41d311ff15da",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent",
+          "reject"
+        ],
+        "exit": 0,
+        "output": "PASS boundary reject\ntests=1\n"
+      },
+      {
+        "name": "junction-arbitrary",
+        "args": [
+          "cmd.exe",
+          "/d",
+          "/c",
+          "mklink",
+          "/J",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\c4f3c03c730b4b0da30657485a8be504\\.artifacts\\phase5-supplied-art-build-project\\arbitrary\\deep",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\c4f3c03c730b4b0da30657485a8be504\\canary"
+        ],
+        "exit": 0,
+        "output": "Junction created for F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\c4f3c03c730b4b0da30657485a8be504\\.artifacts\\phase5-supplied-art-build-project\\arbitrary\\deep <<===>> F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\c4f3c03c730b4b0da30657485a8be504\\canary\n"
+      },
+      {
+        "name": "csharp-arbitrary",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\c4f3c03c730b4b0da30657485a8be504",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent",
+          "reject"
+        ],
+        "exit": 0,
+        "output": "PASS boundary reject\ntests=1\n"
+      },
+      {
+        "name": "junction-Managed",
+        "args": [
+          "cmd.exe",
+          "/d",
+          "/c",
+          "mklink",
+          "/J",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\4e016c231c3548048ffbe8978ef645cd\\Builds\\Phase5SuppliedArtWindows\\Data\\Managed\\link",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\4e016c231c3548048ffbe8978ef645cd\\canary"
+        ],
+        "exit": 0,
+        "output": "Junction created for F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\4e016c231c3548048ffbe8978ef645cd\\Builds\\Phase5SuppliedArtWindows\\Data\\Managed\\link <<===>> F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\4e016c231c3548048ffbe8978ef645cd\\canary\n"
+      },
+      {
+        "name": "csharp-Managed",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\4e016c231c3548048ffbe8978ef645cd",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent",
+          "reject"
+        ],
+        "exit": 0,
+        "output": "PASS boundary reject\ntests=1\n"
+      },
+      {
+        "name": "junction-Saves",
+        "args": [
+          "cmd.exe",
+          "/d",
+          "/c",
+          "mklink",
+          "/J",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\063940bcf4804aa6aac28c8d2c38a57e\\Builds\\Phase5SuppliedArtWindows\\Saves",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\063940bcf4804aa6aac28c8d2c38a57e\\canary"
+        ],
+        "exit": 0,
+        "output": "Junction created for F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\063940bcf4804aa6aac28c8d2c38a57e\\Builds\\Phase5SuppliedArtWindows\\Saves <<===>> F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\063940bcf4804aa6aac28c8d2c38a57e\\canary\n"
+      },
+      {
+        "name": "csharp-Saves",
+        "args": [
+          "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.14f1\\Editor\\Data\\MonoBleedingEdge\\bin\\mono.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\GuardHarness.exe",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent\\fixtures\\063940bcf4804aa6aac28c8d2c38a57e",
+          "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-supplied-art-guard-independent",
+          "reject"
+        ],
+        "exit": 0,
+        "output": "PASS boundary reject\ntests=1\n"
+      }
+    ],
+    "compilerVersion": "6000.2.14f1",
+    "fixtureRelocation": "Python byte-identical copy, C# fixture workspace constant only; operational Root unchanged",
+    "rootCompilerMembers": 546,
+    "acceptedPlayers": 9,
+    "acceptedPlayerMembers": 1226,
+    "oldOriginalMembers": 416,
+    "newOriginalMembers": 132,
+    "operationalPromotionAuthorizationGenerated": false,
+    "rootWrites": 0,
+    "editorPlayerLaunches": 0,
+    "oldAdmissionResolveCalls": 0,
+    "independentNegativeCases": 19,
+    "independentMutatorOrLaunchEvents": 0,
+    "beforeAfterExactPinsStable": true,
+    "currentProtectionBeforeAfterStable": true,
+    "allGuardFunctionsReviewed": [
+      "canonical_json",
+      "digest",
+      "relative",
+      "checked_pins",
+      "meta_guid",
+      "verify_closure",
+      "native_meta_plan",
+      "accepted_baselines",
+      "protected_snapshot",
+      "authorized_protected_baseline",
+      "validate_authorization",
+      "verify_prepare_closure",
+      "__init__",
+      "for_owned_fixture",
+      "require_stage",
+      "write_boundary",
+      "preflight",
+      "stage_exact"
+    ],
+    "staticAuthorizationReview": {
+      "schema": "Exact keys, optional approvedOriginalRevisions only; bool schema rejected",
+      "trust": "Canonical entire-receipt SHA from explicit parent argument; no adjacent digest authority",
+      "closure": "All Assets/Packages/ProjectSettings files hashed without code/cache/Saves omissions",
+      "bindings": "132 canonical id/role pairs, unique role and asset, generation path segment and pinned original hash; semantic source-ID mapping remains media responsibility",
+      "metadata": "Explicit missing-source meta allowance, bounded GUID validation, duplicates and Root overwrite refused",
+      "recipe": "BuildWindows scene/target/new candidate exact; effective stage closure recomputed; prepare config changes require exact explicit after pins",
+      "historicalProtection": "Receipt historical baseline must equal unchanged evidence; only fixed PSD old/new path receives effective exemption after exact approval file hash/fields/current SHA checks"
+    },
+    "limits": [
+      "Guard-component approval only; no native builder entrypoint or launch integration is present.",
+      "No operational promotion receipt generated. Full successful validate_authorization path after future genuine source promotion was reviewed statically, not executed against unpromoted Root.",
+      "C# original compiled unchanged; executable fixture derivative changes only original test workspace constant.",
+      "Closure/config helpers require trusted caller composition; exact configuration pins must be parent-approved and effective recipe frozen before BuildWindows.",
+      "Not an OS race-proof filesystem sandbox."
+    ],
+    "createdArtifacts": "All fixtures, relocated test/component copies, compiler outputs, logs, execution.json, current-protection.json, independent-negatives.json and review.json are inside this review workspace only.",
+    "issuesEncountered": [
+      "Initial assumed HANDOFF/source locator did not exist; actual original source is directly under phase5-supplied-art-build-tools, corroborated by original HANDOFF.md/source-map.json.",
+      "Pyright emitted missing-import diagnostics for generated colocated guard import; actual Python runs exited 0."
+    ]
+  },
+  "originalReview": {
+    "path": ".artifacts/phase5-supplied-art-guard-independent/review.json",
+    "sha256": "136926655b873a30390a0c82cf01de2026e74b578d49fb05f9322ca2b9e901ce"
+  },
+  "parentActualAuthorizedProtectionReadback": true,
+  "historicalBaselineUnmodified": true,
+  "guardSourceSha256": "6f72035d9561c5f50521f8eb4b99386596c34a3e72ebe938df1da6687353562e",
+  "nativeLauncherApproved": false
+}

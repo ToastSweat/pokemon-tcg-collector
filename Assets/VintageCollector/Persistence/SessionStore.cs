@@ -6,15 +6,16 @@ namespace VintageCollector.Persistence
 {
     public sealed class SessionStore : IDisposable
     {
-        readonly Catalog catalog; readonly SaveProtocol protocol;
+        readonly ApprovedSetRegistry registry; readonly SaveProtocol protocol;
         SessionData state; bool uncertain,disposed; string recoveryNotice; FileStream writerLock;
-        public SessionStore(string directory,IStateSerializer serializer,Catalog catalog,ISaveFaultInjector faults=null)
+        public SessionStore(string directory,IStateSerializer serializer,Catalog catalog,ISaveFaultInjector faults=null) : this(directory,serializer,ApprovedSetRegistry.ForLegacyBase(catalog),faults) { }
+        public SessionStore(string directory,IStateSerializer serializer,ApprovedSetRegistry registry,ISaveFaultInjector faults=null)
         {
             if(directory==null) throw new ArgumentNullException("directory");
             if(serializer==null) throw new ArgumentNullException("serializer");
-            if(catalog==null) throw new ArgumentNullException("catalog");
+            if(registry==null) throw new ArgumentNullException("registry");
             directory=Path.GetFullPath(directory);
-            this.catalog=catalog; Directory.CreateDirectory(directory); protocol=new SaveProtocol(directory,serializer,catalog,faults);
+            this.registry=registry; Directory.CreateDirectory(directory); protocol=new SaveProtocol(directory,serializer,registry,faults);
             try { writerLock=new FileStream(Path.Combine(directory,"state.lock"),FileMode.OpenOrCreate,FileAccess.ReadWrite,FileShare.None); writerLock.Lock(0,1); Reload(); }
             catch { if(writerLock!=null) writerLock.Dispose(); throw; }
         }
@@ -33,7 +34,7 @@ namespace VintageCollector.Persistence
             foreach(var old in state.packs) foreach(string id in old.orderedCardIds) seen.Add(id);
             for(int i=0;i<ids.Length;i++) flags[i]=seen.Add(ids[i]);
             var p=new PackRecordData {transactionId=transactionId,createdUtc=createdUtc,seed=seed,modelId=pack.ModelId,modelVersion=pack.ModelVersion,catalogVersion=pack.CatalogVersion,printingId=pack.PrintingId,rngAlgorithm=pack.RngAlgorithm,status=pack.Status,orderedCardIds=ids,newToVirtual=flags};
-            try { StateValidation.Identity(p,catalog); } catch(InvalidDataException e) { throw new ArgumentException(e.Message,e); }
+            try { StateValidation.Identity(p,registry); } catch(InvalidDataException e) { throw new ArgumentException(e.Message,e); }
             foreach(var old in state.packs) if(old.transactionId==transactionId) {
                 if(!StateCopy.SameIdentity(old,p)) throw new ArgumentException("Transaction input collision");
                 return new PackSnapshot(old);

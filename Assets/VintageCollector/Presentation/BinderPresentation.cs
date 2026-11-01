@@ -19,18 +19,58 @@ namespace VintageCollector.Presentation
         private readonly Dictionary<string,Rect> clientRects=new Dictionary<string,Rect>();
         private readonly HashSet<string> bodyControls=new HashSet<string>();
         private bool drawingBody;
+        private bool resetFocus;
         private Vector2 guiOrigin;
         private float guiScale=1;
         private Rect RootRect(Rect r) { return new Rect(r.position+guiOrigin,r.size); }
         public BinderView View {
             get { return view; }
             set {
-                if(view==null || value==null || view.mode!=value.mode || view.page!=value.page || view.search!=value.search || view.filter!=value.filter) bodyScroll=Vector2.zero;
+                if(view==null || value==null || view.mode!=value.mode || view.printingId!=value.printingId || view.page!=value.page || view.search!=value.search || view.filter!=value.filter) bodyScroll=Vector2.zero;
+                if(view==null || value==null || view.printingId!=value.printingId || view.open!=value.open) resetFocus=true;
+                previousFocusNames.Clear();clientRects.Clear();bodyControls.Clear();
                 view=value;pending=false;pendingCommand=null;
             }
         }
         public event Action<string> Command;
+        public event Action<string> ShoppingRequested;
+        public event Action FundRequested;
+        public bool FundAvailable {get;set;}
+        public void RequestFund() {
+            if(!FundAvailable || ExternalOverlayVisible || pending || view==null || !view.open || view.busy || view.pendingPhysicalEdit || view.pendingImportConfirm || view.restartRequired || BinderLayoutRules.HasReview(view) || !string.IsNullOrEmpty(view.error))return;
+            var h=FundRequested;if(h!=null)h();
+        }
+        private void FundButton(Rect r) {
+            bool old=GUI.enabled;GUI.enabled=FundAvailable && !ExternalOverlayVisible && !pending;
+            Register("collection-fund",r,GUI.enabled);
+            if(GUI.Button(r,"Collection fund",button))RequestFund();GUI.enabled=old;
+        }
+        public bool ShoppingAvailable { get; set; }
+        private bool externalOverlayVisible;
+        public bool ExternalOverlayVisible {
+            get { return externalOverlayVisible; }
+            set { if(externalOverlayVisible==value) return; externalOverlayVisible=value;
+                focusNames.Clear();previousFocusNames.Clear();clientRects.Clear();bodyControls.Clear();resetFocus=true; }
+        }
+        private bool CanRequestShopping(string id) {
+            var row=BinderLayoutRules.Selected(view);
+            return ShoppingAvailable && !ExternalOverlayVisible && !pending && view!=null && view.open &&
+                view.mode=="physical" && !view.busy && !view.pendingPhysicalEdit && !view.pendingImportConfirm &&
+                !view.restartRequired && !BinderLayoutRules.HasReview(view) && string.IsNullOrEmpty(view.error) &&
+                row!=null && row.id==id && view.selectedCardId==id && !row.owned && row.quantity==0;
+        }
+        private void RequestShopping(string id) {
+            if(!CanRequestShopping(id)) return;
+            var handler=ShoppingRequested;if(handler!=null) handler(id);
+        }
+        private void ShoppingButton(Rect r,string id) {
+            bool old=GUI.enabled;GUI.enabled=CanRequestShopping(id);
+            Register("find-physical-card",r,GUI.enabled);
+            if(GUI.Button(r,"Find physical card",button)) RequestShopping(id);
+            GUI.enabled=old;
+        }
         public bool IsOpen { get { return view!=null && view.open; } }
+        public string QuantityText { get { return view==null?"":Safe(view.quantityText); } }
         // Test observers receive text/geometry actually rendered, not undisplayed DTO fields.
         internal Action<string> TextObserver { get; set; }
         internal Action<string,Rect,bool> ControlObserver { get; set; }
@@ -40,7 +80,7 @@ namespace VintageCollector.Presentation
         private static readonly Color Accent=new Color32(124,208,172,255), Error=new Color32(255,185,158,255);
         private static string Safe(string s,string fallback="") { return string.IsNullOrEmpty(s)?fallback:s; }
         private static string N(int n) { return n.ToString(CultureInfo.InvariantCulture); }
-        private bool Allowed(string command) { return (!pending || command=="binder-close" || command=="quit") && BinderLayoutRules.CanEmit(view,command); }
+        private bool Allowed(string command) { return !ExternalOverlayVisible && (!pending || command=="binder-close" || command=="quit") && BinderLayoutRules.CanEmit(view,command); }
         private void RequestCommand(string command) {
             if(!Allowed(command)) return;
             if(command=="save-physical" || command=="backup" || command=="import-preview" || command=="import-confirm") { pending=true;pendingCommand=command; }
@@ -114,18 +154,32 @@ namespace VintageCollector.Presentation
             e.Use();
         }
         private void OnGUI() {
-            if(!IsOpen) return;
+            if(ExternalOverlayVisible) {
+                if(resetFocus) {GUI.FocusControl(null);GUIUtility.hotControl=0;GUIUtility.keyboardControl=0;resetFocus=false;}
+                return;
+            }
+            if(!IsOpen) {previousFocusNames.Clear();clientRects.Clear();return;}
             EnsureStyles();GUI.depth=-1000;
             var oldMatrix=GUI.matrix;bool oldEnabled=GUI.enabled;var oldColor=GUI.color;
             GUI.enabled=true;GUI.color=Color.white;
             var metrics=BinderLayoutRules.Geometry(Screen.width,Screen.height);guiOrigin=Vector2.zero;guiScale=metrics.scale;
             GUI.matrix=Matrix4x4.TRS(Vector3.zero,Quaternion.identity,new Vector3(metrics.scale,metrics.scale,1));
             float left=(metrics.width-1600)/2;var e=Event.current;
+            if(resetFocus) {GUI.FocusControl(null);resetFocus=false;}
             Keyboard(e);focusNames.Clear();bodyControls.Clear();clientRects.Clear();
             Fill(new Rect(0,0,metrics.width,metrics.height),Felt);
             Fill(new Rect(left+24,16,1552,72),Panel);
-            Text(new Rect(left+44,25,1350,22),"THE COLLECTION  /  PRIVATE BINDER",16,Brass,true);
-            Text(new Rect(left+44,48,1440,38),view.mode=="physical"?"Physical ownership. Your confirmation, never inferred.":"Virtual revealed pulls. Only what you have seen.",28,Paper,true);
+            bool hasSets=view.supportedSets!=null && view.supportedSets.Length>0;
+            Text(new Rect(left+44,25,740,22),"THE COLLECTION  /  PRIVATE BINDER"+(string.IsNullOrEmpty(view.setLabel)?"":"  /  "+view.setLabel),16,Brass,true);
+            Text(new Rect(left+44,48,740,38),view.mode=="physical"?"Physical ownership. Your confirmation, never inferred.":"Virtual revealed pulls. Only what you have seen.",28,Paper,true);
+            FundButton(new Rect(left+788,32,230,42));
+            if(hasSets) {
+                int index=0;var used=new HashSet<string>(StringComparer.Ordinal);
+                foreach(var choice in view.supportedSets) {
+                    if(choice==null || index>=3 || !PresentationRules.IsSupportedSet(view.supportedSets,choice.printingId) || !used.Add(choice.printingId))continue;
+                    Button(new Rect(left+1042+index*172,31,160,44),Safe(choice.label,choice.printingId),"binder-set:"+choice.printingId,view.printingId==choice.printingId);index++;
+                }
+            }
             bool review=BinderLayoutRules.HasReview(view);
             // The reviewed archive is a modal context; collection controls cannot retain keyboard focus.
             bool baseEnabled=GUI.enabled;if(review) GUI.enabled=false;
@@ -133,7 +187,7 @@ namespace VintageCollector.Presentation
             Button(new Rect(left+804,102,756,54),"PHYSICAL OWNERSHIP","mode:physical",view.mode=="physical");
             DrawStats(left);
             var viewport=new Rect(left+40,210,1520,metrics.bodyHeight);
-            bodyScroll=GUI.BeginScrollView(viewport,bodyScroll,new Rect(0,0,1500,600),false,metrics.bodyHeight<600);
+            bodyScroll=GUI.BeginScrollView(viewport,bodyScroll,new Rect(0,0,1500,650),false,metrics.bodyHeight<650);
             guiOrigin=new Vector2(left+40-bodyScroll.x,210-bodyScroll.y);
             drawingBody=true;DrawCollection();DrawSelected();DrawBackups();drawingBody=false;
             GUI.EndScrollView();guiOrigin=Vector2.zero;GUI.enabled=baseEnabled;
@@ -183,7 +237,7 @@ namespace VintageCollector.Presentation
             return string.Join("\n",parts.ToArray());
         }
         private void DrawSelected() {
-            float x=1064;Fill(new Rect(x,0,436,364),Panel);Border(new Rect(x,0,436,364),new Color32(73,98,77,255));
+            float x=1064;Fill(new Rect(x,0,436,414),Panel);Border(new Rect(x,0,436,414),new Color32(73,98,77,255));
             var selected=BinderLayoutRules.Selected(view);
             Text(new Rect(x+20,14,396,25),view.mode=="physical"?"MANUAL OWNERSHIP / CONDITION BUCKET":"REVEALED PULLS / READ ONLY",16,Brass,true);
             if(selected==null) {
@@ -200,20 +254,21 @@ namespace VintageCollector.Presentation
             Text(new Rect(x+20,273,175,28),"Bucket quantity",18,Muted);
             Field(new Rect(x+206,268,210,38),view.quantityText,"quantity:","binder-quantity");
             Button(new Rect(x+20,316,396,38),view.pendingPhysicalEdit?"Retry SAME ownership save":"Confirm ownership","save-physical");
+            if(ShoppingAvailable) ShoppingButton(new Rect(x+20,366,396,36),selected.id);
         }
         private void DrawBackups() {
-            float x=1064;Fill(new Rect(x,378,436,222),Panel);
-            Text(new Rect(x+20,390,396,24),"BACKUPS / RESTORE AS A NEW PROFILE",15,Brass,true);
-            Button(new Rect(x+20,421,192,36),"Create backup","backup");
-            Button(new Rect(x+224,421,192,36),"Preview restore","import-preview");
+            float x=1064;Fill(new Rect(x,428,436,222),Panel);
+            Text(new Rect(x+20,440,396,24),"BACKUPS / RESTORE AS A NEW PROFILE",15,Brass,true);
+            Button(new Rect(x+20,471,192,36),"Create backup","backup");
+            Button(new Rect(x+224,471,192,36),"Preview restore","import-preview");
             var backups=view.backups??new string[0];
             var previousOrigin=guiOrigin;
-            backupScroll=GUI.BeginScrollView(new Rect(x+20,467,396,90),backupScroll,new Rect(0,0,374,Math.Max(90,backups.Length*39)));
-            guiOrigin=previousOrigin+new Vector2(x+20-backupScroll.x,467-backupScroll.y);
+            backupScroll=GUI.BeginScrollView(new Rect(x+20,517,396,90),backupScroll,new Rect(0,0,374,Math.Max(90,backups.Length*39)));
+            guiOrigin=previousOrigin+new Vector2(x+20-backupScroll.x,517-backupScroll.y);
             if(backups.Length==0)Text(new Rect(8,8,350,60),"No backups supplied. Create one explicitly.",18,Muted);
             for(int i=0;i<backups.Length;i++)Button(new Rect(0,i*39,374,35),Safe(backups[i],"Unnamed backup"),"backup-select:"+N(i),i==view.selectedBackupIndex);
             GUI.EndScrollView();guiOrigin=previousOrigin;
-            Text(new Rect(x+20,566,396,32),"Preview is read only. Nothing is merged or overwritten.",16,Muted);
+            Text(new Rect(x+20,616,396,32),"Preview is read only. Nothing is merged or overwritten.",16,Muted);
         }
         private void DrawFooter(float left,float height) {
             string message=view.restartRequired?"RESTART REQUIRED — restored NEW profile activates after Quit / reopen. Current profile remains untouched.":view.busy?"BUSY — waiting for the parent operation. Collection changes are locked.":pending?"REQUEST PENDING — "+pendingCommand+". Waiting for the parent’s acknowledged view.":Safe(view.error,Safe(view.status,"Collection ready. All changes require an explicit command."));
@@ -224,6 +279,14 @@ namespace VintageCollector.Presentation
             guiOrigin=new Vector2(left+40-noticeScroll.x,height-84-noticeScroll.y);
             Text(new Rect(0,0,1214,textHeight),message,18,string.IsNullOrEmpty(view.error)?Muted:Error);GUI.EndScrollView();guiOrigin=Vector2.zero;
             Text(new Rect(left+40,height-39,950,30),"Tab: move focus   ·   Enter / Space: activate   ·   Esc: Back (or cancel review)",17,Muted);
+            bool musicEnabled=!BinderLayoutRules.HasReview(view) && !view.busy && !pending && !view.pendingPhysicalEdit && !view.pendingImportConfirm && !view.restartRequired;
+            bool musicGuiEnabled=GUI.enabled;GUI.enabled=musicEnabled;
+            var musicRect=new Rect(left+1296,height-86,264,36);
+            Register("music-night-theme",musicRect,musicEnabled);
+            bool relaxed=VintageCollector.Music.BackgroundMusicHost.RelaxedBinderTheme;
+            if(GUI.Button(musicRect,relaxed?"Music: Night (08)":"Music: Day (05)",button))
+                VintageCollector.Music.BackgroundMusicHost.RelaxedBinderTheme=!relaxed;
+            GUI.enabled=musicGuiEnabled;
             Button(new Rect(left+1080,height-43,270,35),"Back to table","binder-close");
             Button(new Rect(left+1366,height-43,194,35),"Quit","quit");
         }

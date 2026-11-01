@@ -1,0 +1,208 @@
+Getting Started with TCGplayer API
+For AI agents: the docs index is at https://docs.tcgplayer.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+GuidesAPI EndpointsCommunity
+HomeGuidesAPI Endpointsv1.39.0
+GuidesAPI EndpointsCommunityLog In
+Guides
+Log In
+v1.39.0Guides
+Getting Started with TCGplayer APIGetting Started with TCGplayer API
+Getting Started
+Welcome!
+FAQ
+Getting Started with TCGplayer API
+TCGplayer Affiliate Program
+External Kickbacks API
+Endpoint Tutorials
+Store Authorization Workflow
+Advanced Search
+Release Notes
+v1.39.0
+Powered by
+Getting Started with TCGplayer API
+This page will help you get started with TCGplayer. You'll be up and running in a jiffy!
+Suggest Edits
+Note: The current version of the API is "v1.39.0"
+This tutorial will walk through the first steps of requesting an Access Token and using it to retrieve data from the TCGplayer.com REST API.
+Step 0: Prerequisites
+To access the TCGplayer.com REST API, you must have:
+An API Developer Key
+We are no longer granting new API access at this time. Existing users must adhere to the terms of service that govern the use of our API, including, but not limited to important restrictions and attributions required by you.
+A way to submit HTTP POST requests.
+For this guide, we will be using CURL on the command line, but many other good tools exist.
+Step 1: Understanding Your Access Token
+The access token you received should have three parts.
+PUBLIC_KEY (Required)
+Also referred to as the "client_id"
+PRIVATE_KEY (Required)
+Also referred to as the "client_secret"
+Note: You should protect your PRIVATE_KEY and ACCESS_TOKEN and not share them with anyone who you don't want to represent you or your TCGplayer.com developer account.
+You will use these two parts to request a Bearer Token when you want to actually make information requests from the API.
+2. Requesting a BEARER_TOKEN
+You can request a new BEARER_TOKEN with a CURL request like the following:
+Replace ACCESS_TOKEN, PUBLIC_KEY and PRIVATE_KEY with the appropriate values from your own API credentials.
+cURL
+curl --include --request POST \
+--header "application/x-www-form-urlencoded" \
+--data-binary "grant_type=client_credentials&client_id=PUBLIC_KEY&client_secret=PRIVATE_KEY" \
+"https://api.tcgplayer.com/token"
+This will return a response like the following:
+JSON
+{
+"access_token":"BEARER_TOKEN",
+"token_type":"bearer",
+"expires_in":1209599,
+"userName":"PUBLIC_KEY",
+".issued":"Fri, 07 Jul 2017 16:47:46 GMT",
+".expires":"Fri, 21 Jul 2017 16:47:46 GMT"
+}
+Your PUBLIC_KEY is contained in userName so that you can verify you have authenticated for the correct account.
+Your BEARER_TOKEN is in access_token field. Note that this string can contain letters, numbers and punctuation (such as dashes and underscores) and can be over 300 bytes in length.
+Store this key because you will need to use it every time you want to submit an API request. There is no limit to the number of requests that can be made with a single key, but it will only be valid until the time specified in expires.
+You can request a new key as often as you like, but it's a good idea to cache the key and only refresh it if it's soon due to expire.
+4. Requesting Catalog Data
+While there are many tools and services offered through the REST API, a good place to start is to begin by requesting information about the product catalog.
+Note: Documentation for these (and additional) requests can be found here: https://docs.tcgplayer.com/reference
+We are going to begin by requesting information about all available categories in the catalog.
+It's important to note that every request to the API must include your valid BEARER_TOKEN in the header. This should be included as a Authorization parameter added to the header, with the value being equal to the token type ("bearer") plus the BEARER_TOKEN itself, with a space between the two strings. In CURL, this looks like:
+cURL
+curl --include --request GET \
+--header "Accept: application/json" \
+--header "Authorization: bearer BEARER_TOKEN" 'https://api.tcgplayer.com/[VERSION]/catalog/categories'
+If all goes well, you should get a JSON-formatted response that looks something like the following:
+JSON
+{
+"Success": true,
+"Errors": [
+],
+"Results": [
+{
+"CategoryId": 4,
+"Name": "Axis & Allies"
+},
+{
+"CategoryId": 5,
+"Name": "Boardgames"
+},
+{
+"CategoryId": 16,
+"Name": "Cardfight Vanguard"
+},
+{
+"CategoryId": 6,
+"Name": "D & D Miniatures"
+},
+{
+"CategoryId": 18,
+"Name": "Dice Masters"
+},
+{
+"CategoryId": 28,
+"Name": "Dragoborne"
+},
+{
+"CategoryId": 27,
+"Name": "Dragon Ball Super CCG"
+},
+{
+"CategoryId": 23,
+"Name": "Dragon Ball Z TCG"
+},
+{
+"CategoryId": 7,
+"Name": "Epic"
+},
+{
+"CategoryId": 24,
+"Name": "Final Fantasy TCG"
+},
+{
+"CategoryId": 17,
+"Name": "Force of Will"
+},
+{
+"CategoryId": 29,
+"Name": "Funko"
+},
+{
+"CategoryId": 19,
+"Name": "Future Card BuddyFight"
+},
+{
+"CategoryId": 8,
+"Name": "Heroclix"
+},
+{
+"CategoryId": 1,
+"Name": "Magic"
+},
+{
+"CategoryId": 9,
+"Name": "Monsterpocalypse"
+},
+{
+"CategoryId": 21,
+"Name": "My Little Pony"
+},
+{
+"CategoryId": 15,
+"Name": "Organizers & Stores"
+},
+{
+"CategoryId": 3,
+"Name": "Pokemon"
+},
+{
+"CategoryId": 10,
+"Name": "Redakai"
+},
+{
+"CategoryId": 26,
+"Name": "Star Wars Destiny"
+},
+{
+"CategoryId": 11,
+"Name": "Star Wars Miniatures"
+},
+{
+"CategoryId": 14,
+"Name": "Supplies"
+},
+{
+"CategoryId": 22,
+"Name": "TCGplayer"
+},
+{
+"CategoryId": 25,
+"Name": "Universal Fighting System"
+},
+{
+"CategoryId": 20,
+"Name": "Weiss Schwarz"
+},
+{
+"CategoryId": 12,
+"Name": "Worldof Warcraft Miniatures"
+},
+{
+"CategoryId": 13,
+"Name": "WoW"
+},
+{
+"CategoryId": 2,
+"Name": "YuGiOh"
+}
+]
+}
+Note: An actual response will not have whitespace formatting like this, but will instead be compressed to conserve bandwidth
+Congratulations!
+You've made your first successful request with the TCGplayer.com REST API!
+Next Steps
+Explore the API documentation to discover more about the features and functionality available.
+https://docs.tcgplayer.com/reference
+Post in the community here to ask questions or answer others
+https://community.tcgplayer.com/
+We look forward to seeing all of the great things you will create!
+Updated almost 3 years ago
+Copy Page

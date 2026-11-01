@@ -1,0 +1,46 @@
+[
+  {
+    "requestedUrl": "https://developer.ebay.com/api-docs/buy/browse/overview.html",
+    "retrievedLocal": "2026-10-31T21:59:47.832497-05:00",
+    "passed": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "requestedUrl": "https://developer.ebay.com/api-docs/buy/static/buy-requirements.html",
+    "retrievedLocal": "2026-10-31T21:59:48.751281-05:00",
+    "status": 200,
+    "finalUrl": "https://developer.ebay.com/api-docs/buy/static/buy-requirements.html",
+    "rawPath": "docs/research/phase6/evidence/ebay-requirements.html",
+    "rawSha256": "30568369f119fdd7fc8e68dde27caba1d30d2c8e1a5f01235a316091354cb01c",
+    "textPath": "docs/research/phase6/evidence/ebay-requirements.txt",
+    "textSha256": "500b381220df0b8444446bac658b4873e6357a6135f3a42aa26e8b3db116d3bc",
+    "transformation": "stdlib HTMLParser excludes script/style, whitespace collapsed per line, UTF-8 LF",
+    "bytes": 115921,
+    "passed": true
+  },
+  {
+    "requestedUrl": "https://developer.ebay.com/api-docs/buy/browse/resources/item_summary/methods/search",
+    "retrievedLocal": "2026-10-31T21:59:49.722258-05:00",
+    "passed": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "requestedUrl": "https://docs.tcgplayer.com/docs/getting-started",
+    "retrievedLocal": "2026-10-31T21:59:50.174975-05:00",
+    "status": 200,
+    "finalUrl": "https://docs.tcgplayer.com/docs/getting-started",
+    "rawPath": "docs/research/phase6/evidence/tcgplayer-getting-started.html",
+    "rawSha256": "23430d8ae844aae9dab3fb9b34c1185dea7e17a6acebb926d12288df66e07a8d",
+    "textPath": "docs/research/phase6/evidence/tcgplayer-getting-started.txt",
+    "textSha256": "2d98c4c7a2a96d02eac20f7f181b3a5c0b126e71921d663c050066119fb1f93b",
+    "transformation": "stdlib HTMLParser excludes script/style, whitespace collapsed per line, UTF-8 LF",
+    "bytes": 189533,
+    "passed": true
+  },
+  {
+    "requestedUrl": "https://api.cardmarket.com/ws/documentation/API:Auth_Overview",
+    "retrievedLocal": "2026-10-31T21:59:50.452853-05:00",
+    "passed": false,
+    "error": "HTTP Error 410: Gone"
+  }
+]

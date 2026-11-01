@@ -1,0 +1,60 @@
+{
+  "passed": false,
+  "security_concerns": [
+    {
+      "id": "NATIVE-REVIEW-01",
+      "severity": "medium",
+      "files": [
+        "performance_build_guard.py:68-78",
+        "PerformanceBuildPolicy.cs:35"
+      ],
+      "finding": "Folder metadata admission tests for presence of DefaultImporter rather than enforcing an exclusive folder importer structure. A new generation folder meta containing both DefaultImporter and TextureImporter passes native_meta_plan. The C# gate likewise only checks matching lines. This does not satisfy the requested strict DefaultImporter-only new-folder role check. No native parser exploit is asserted.",
+      "evidence": "adversarial-results.json, case folder DefaultImporter plus conflicting TextureImporter = ACCEPTED",
+      "recommendation": "Reject conflicting/duplicate importer blocks and unexpected root-level role fields; independently test Python and C# positive ordinary folder metadata plus conflicting importer countercases."
+    }
+  ],
+  "logic_errors": [
+    {
+      "id": "NATIVE-REVIEW-02",
+      "severity": "high",
+      "files": [
+        "run_performance_native.py:6-12,40,59",
+        "verify_performance_player.py:8,127-131"
+      ],
+      "finding": "Final runner remains hardwired to .artifacts/performance-native-build-work, whereas player verifier imports only .artifacts/performance-operative-01. Copying these exact final sources into the intended operative bundle still loads/pins the old leaf guard/runner and writes action evidence in that old leaf. Guard required_tools is HERE-relative, so an operative-only trusted receipt cannot authenticate this entry path coherently.",
+      "recommendation": "Align runner guard/evidence location with the actual reviewed operative bundle, fail closed on wrong installed location, and rerun full receipt/tool-pin tests on that exact installed layout. Do not silently edit the immutable old leaf."
+    },
+    {
+      "id": "NATIVE-REVIEW-03",
+      "severity": "medium",
+      "files": [
+        "verify_performance_player.py:115-118"
+      ],
+      "finding": "Ready timing validation is not strict: an otherwise accepted synthetic full reopen report still passes with readySeconds=-1, firstActualRepaintSeconds=-2, firstActualRepaintFrame=0 and progressFrameObserved=\"forged\". Only ordering is checked; required timing/flag types, nonnegative finite times and actual positive first Repaint are not established by this validator. This permits malformed boot evidence to pass the declared report gate.",
+      "evidence": "adversarial-results.json second accepted case",
+      "recommendation": "Require exact field types, finite nonnegative boot times, positive actual Repaint frame, positive dimensions consistent with report, Boolean progress flag, and bounded finite operation progress. Add focused malformed ready.json cases."
+    }
+  ],
+  "suggestions": [
+    "Parent bridge correctly resolves PerformanceBootTimingProbe, constructs a separate timing GameObject root, and checks exactly one timing component not on coordinator GameObject. For stronger future scene-admission checking also require timing.transform.root != coordinator.transform.root; the emitted builder scene itself already has separate roots.",
+    "Build driver closure dictionary comprehensions should explicitly reject duplicate compilerPins/candidatePins rows, as the native runner already does, rather than collapsing duplicates.",
+    "Keep quit-while-busy, owner reentry, focus/pause and Binder import native acceptance separate. Existing normal idle quit/reopen is not evidence for these cases.",
+    "Native progress visibility, real worker JsonUtility, responsiveness, GPU pixel captures and durability remain unexecuted; compilation and pure/managed fixture passes are not native proof."
+  ],
+  "originalReport": {
+    "path": ".artifacts/performance-native-tooling-review/review.json",
+    "sha256": "118de0f661c13f25894cf042372b22e57b46d7476ee1740d92ea5b0a9c1c9354"
+  },
+  "reviewedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/PerformanceBootTimingProbe.cs": "fba45438e96901a05be823f97fd1662429925748f4969ad4883277253041435b",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/PerformanceBuildPolicy.cs": "bc25111b35b3762c88962e515929417bc4936e6091c686d71815aab82915038d",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/PerformanceNativeBuild.cs": "9d16b14c43e86ddc47b34d69ad35b4d355faac3a68dd64c7198f02a18e878701",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/PerformanceSmokeProbe.cs": "491e9e3613fbdbd0a9a14214302b209ee84f2b3508c2a3b5ba7fcb331c4b4736",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/performance_build_guard.py": "6bbd3ef822960187dbd2339d1aa55ee400f3d05074f97ccbd3cc8b75e51ef18b",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/run_performance_native.py": "9b21ad69cdd9e32c1802d642a3be44027d0810f722a9b635d2acd8ebe4810efa",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-final-source-01/verify_performance_player.py": "3effd4bcad04bcc3d2835910796300ded4721685829ebc90742e6b6b909aea9a"
+  },
+  "correctionWorkspace": ".artifacts/performance-native-fix-01",
+  "nativeLaunchBlocked": true,
+  "reviewDoesNotRejectAlreadyApprovedRuntimeFamilies": true
+}

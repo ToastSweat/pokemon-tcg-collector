@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://developer.ebay.com/api-docs/buy/browse/overview.html",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 2,
+      "url": "https://help.tcgplayer.com/hc/en-us/articles/201577976-How-can-I-get-access-to-your-card-pricing-data",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 3,
+      "url": "https://api.cardmarket.com/ws/documentation/API:Auth_Overview",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 4,
+      "url": "https://developer.tcgplayer.com",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 5,
+      "url": "https://developer.ebay.com/api-docs/buy/static/buy-requirements.html",
+      "title": "",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "Note: There is no guarantee that your application for production use of the APIs will be approved.",
+          "added": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://developer.ebay.com/api-docs/buy/browse/resources/item_summary/methods/search",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 7,
+      "url": "https://docs.tcgplayer.com/docs/getting-started",
+      "title": "",
+      "accessed": "2026-10-31",
+      "quotes": [
+        {
+          "text": "We are no longer granting new API access at this time.",
+          "added": "2026-10-31"
+        }
+      ]
+    }
+  ]
+}

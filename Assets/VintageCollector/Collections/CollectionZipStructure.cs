@@ -14,7 +14,7 @@ namespace VintageCollector.Collections
   static void Require(bool b) {if(!b) throw new InvalidDataException("Unsupported or inconsistent ZIP structure");}
   internal static Dictionary<string,uint> Check(byte[] b) {
    int end=b.Length-22;Require(end>=0 && U32(b,end)==0x06054b50 && U16(b,end+4)==0 && U16(b,end+6)==0 && U16(b,end+20)==0);
-   int count=U16(b,end+10);Require(count>=3 && count<=9 && U16(b,end+8)==count);
+   int count=U16(b,end+10);Require(count>=3 && count<=CollectionArchive.MaxMembers && U16(b,end+8)==count);
    int cd=Size(b,end+16),cdSize=Size(b,end+12);Require(cd<=end && cdSize==end-cd);
    int cursor=cd,local=0;var crcs=new Dictionary<string,uint>(StringComparer.OrdinalIgnoreCase);
    for(int i=0;i<count;i++) {

@@ -1,5 +1,7 @@
 # Phase 5 — paused runtime handoff
 
+**Subsequent override: RESUMED by explicit user decision.** The user selected **“Yes—make that fix and continue”**; see [new approval](../verification/Phase_5_Quit_Ownership_Approval.json) and [bounded one-owner contract](../technical/Phase_5_Quit_Ownership_Contract.md). The redesign is being implemented in new isolated source copies. Everything below remains the historical paused checkpoint/source-map reference, not a current unanswered gate; do not erase its rejection/evidence history.
+
 ## Current decision gate
 
 **Paused. Do not start a third automatic controller fix cycle, promote Root runtime sources, or release a candidate.** Final controller review still rejects `L1-Quit-reentrancy`: a Binder Quit synchronously emitted during Game shutdown can request exit before global cleanup and duplicate the outer exit request. Two narrow fix cycles are exhausted. The proposed bounded redesign gives Game sole exit-intent ownership, with Binder forwarding/coalescing intent until cleanup completes. **That redesign is not approved or applied.** The clarification timed out unanswered; silence is not approval. See [escalation](../verification/Phase_5_Quit_Ownership_Escalation.json) and [final blocked review](../verification/Phase_5_Controller_Review_Final_Blocked.json).

@@ -137,6 +137,18 @@ namespace VintageCollector.Presentation
         }
         // Optional read-only manual ownership projection; absent in earlier phases.
         public Func<string,bool> PhysicalOwnershipReader { get; set; }
+        public event Action<string> ShoppingRequested;
+        public bool ShoppingAvailable { get; set; }
+        private bool CanRequestShopping(string id,int index) {
+            var v=View;
+            return ShoppingAvailable && !CollectionInputBlocked && !CollectionOverlayVisible && v!=null &&
+                !v.paused && !v.storageBusy && string.IsNullOrEmpty(v.errorMessage) && v.inspectIndex==index &&
+                PresentationRules.CanInspect(v,index) && v.cards[index].id==id && PhysicalOwnershipReader!=null && !PhysicalOwnershipReader(id);
+        }
+        private void RequestShopping(string id,int index) {
+            if(!CanRequestShopping(id,index)) return;
+            var handler=ShoppingRequested;if(handler!=null) handler(id);
+        }
         public string PhysicalResultLabel(int index) {
             if(PhysicalOwnershipReader==null || View==null || View.stage!="results" || !PresentationRules.CanInspect(View,index)) return null;
             return PhysicalOwnershipReader(View.cards[index].id)?"PHYSICAL OWNED":"PHYSICAL MISSING";
@@ -444,7 +456,7 @@ namespace VintageCollector.Presentation
         private void DrawHeader(PresentationLayout l,OpeningView v)
         {
             Label(new Rect(48,37,690,47),"Vintage Card Collector",36,Paper,true);
-            Label(new Rect(50,89,760,26),"1999  /  English Base Set Unlimited",20,Muted);
+            Label(new Rect(50,89,760,26),"1999  /  "+Safe(v==null?null:v.setLabel,"English Base Set Unlimited"),20,Muted);
             Label(new Rect(l.width-508,43,460,25),Media!=null && Media.SuppliedAssetCount>0?"OPTIONAL MEDIA  /  TABLETOP STUDY":"GENERIC  /  ASSET-READY TABLETOP",18,Gold,true,TextAnchor.UpperRight);
             Label(new Rect(l.width-608,82,560,29),"Virtual cards  "+(v==null?"—":v.totalVirtualCards.ToString(CultureInfo.InvariantCulture))+(PhysicalOwnershipReader==null?"   ·   Physical tracking not configured":"   ·   Physical ownership: manual / Binder"),17,Muted,false,TextAnchor.UpperRight);
             Label(new Rect(50,145,900,25),StageLabel(v),18,Gold,true);
@@ -511,7 +523,7 @@ namespace VintageCollector.Presentation
             string heading,body;
             switch(stage)
             {
-                case "ready": heading="A small ritual.\nEleven discoveries."; body="Only supported option\n1999 English Base Set Unlimited\n\nGenerate requests a new pack. The runtime must save it before the wrapper appears."; break;
+                case "ready": heading="A small ritual.\nEleven discoveries."; body=(v.supportedSets==null?"Only supported option\n1999 English Base Set Unlimited":"Selected printing\n"+Safe(v.setLabel,"English Base Set Unlimited"))+"\n\nGenerate requests a new pack. The runtime must save it before the wrapper appears."; break;
                 case "sealed": heading="A saved pack.\nReady when you are."; body="Open the saved wrapper with one click.\n\nIts contents and order are already fixed. Opening does not roll any cards."; break;
                 case "revealing":
                     int i=PresentationRules.VisibleCount(v)-1;
@@ -595,7 +607,7 @@ namespace VintageCollector.Presentation
         private void DrawFace(Rect r,OpeningCardView c,int index) { DrawFaceSurface(r,c,index,"hero"); }
         private void DrawFaceSurface(Rect r,OpeningCardView c,int index,string role)
         {
-            if(c==null) { DrawBack(r); return; }
+            if(c==null || !PresentationRules.CanInspect(View,index)) { DrawBack(r); return; }
             var supplied = Media == null ? null : Media.CardFace(c.id);
             if (supplied != null) {
                 Shadow(r,motion.RevealLift);
@@ -609,6 +621,24 @@ namespace VintageCollector.Presentation
                         DrawFoil(FittedTextureRect(r,supplied),mask);
                 }
                 return; // Full print owns the face: no locally repainted names, borders or badges.
+            }
+            var templates=Media as ICardTemplateMedia;
+            var template=templates==null?null:templates.CardTemplate(c.id);
+            if(template!=null) {
+                // Identity-neutral art is not a supplied full printing. Labels come only from
+                // this revealed DTO; no printed stats, mask inference or Base-mask borrowing.
+                r=FittedTextureRect(r,template); // Overlay labels share the actual texture fit; hitboxes remain unchanged.
+                Shadow(r,motion.RevealLift);Texture(r,template);
+                bool compact=r.width<230;float scale=r.width/350;
+                Rect name=At(r,0.08f,0.05f,0.84f,0.14f);Fill(name,Paper);
+                Label(Inset(name,3),Safe(c.name,"Unnamed card"),compact?17:Mathf.RoundToInt(25*scale),Ink,true);
+                Label(At(r,0.09f,0.67f,0.82f,compact?0.045f:0.04f),compact?"TEMPLATE ART":"TEMPORARY TEMPLATE ART",compact?9:Mathf.RoundToInt(12*scale),Paper,true,TextAnchor.MiddleCenter);
+                Fill(At(r,0.08f,0.715f,0.84f,0.14f),Paper);
+                Label(At(r,0.09f,0.72f,0.82f,0.065f),Safe(c.kind)+"  ·  "+Safe(c.rarity),compact?14:Mathf.RoundToInt(19*scale),Ink);
+                Label(At(r,0.09f,0.79f,0.82f,0.06f),"#"+Safe(c.collectorNumber)+"   "+Safe(c.finish),compact?13:Mathf.RoundToInt(16*scale),Ink);
+                Rect status=At(r,0.07f,0.875f,0.86f,0.08f);Fill(status,c.isNew?new Color32(56,105,83,255):new Color32(111,99,76,255));
+                Label(status,c.isNew?"NEW · VIRTUAL":"DUPLICATE",compact?13:Mathf.RoundToInt(17*scale),Paper,true,TextAnchor.MiddleCenter);
+                return; // Deliberately matte until an explicit appropriate mask exists.
             }
             bool small=r.width<230; float fs=r.width/350;
             Shadow(r,motion.RevealLift);
@@ -675,7 +705,7 @@ namespace VintageCollector.Presentation
             string model=Safe(v==null?null:v.modelLabel,"Model A 0.1.0");
             Label(new Rect(50,l.height-99,l.width-380,25),"PROVISIONAL RULES  ·  "+model,17,Gold,true);
             string mediaStatus=Media==null?"Generic fallback art; silent without a media provider.":Safe(Media.StatusText,"Optional media provider; generic fallback art.");
-            string notice=v==null?"No runtime attached. "+mediaStatus:Safe(v.recoveryNotice,Media==null?Safe(v.statusLine,mediaStatus):mediaStatus);
+            string notice=v!=null && v.storageBusy?"Saving... · Waiting for durable acknowledgement":v==null?"No runtime attached. "+mediaStatus:Safe(v.recoveryNotice,Media==null?Safe(v.statusLine,mediaStatus):mediaStatus);
             Label(new Rect(50,l.height-69,l.width-380,34),notice,16,Muted);
             Button(R(l.pause),"Pause","pause"); Button(R(l.quit),"Quit","quit");
         }
@@ -708,10 +738,17 @@ namespace VintageCollector.Presentation
                 Rect info=new Rect(p.x+560,p.y+40,396,508);
                 Label(new Rect(info.x,info.y,info.width,28),"REVEALED CARD  "+(i+1)+" / 11",18,Gold,true);
                 Label(new Rect(info.x,info.y+57,info.width,105),Safe(v.cards[i].name),32,Paper,true);
-                Label(new Rect(info.x,info.y+181,info.width,181),"Collector number  "+Safe(v.cards[i].collectorNumber)+"\n"+Safe(v.cards[i].kind)+"  ·  "+Safe(v.cards[i].rarity)+"\nFinish  "+Safe(v.cards[i].finish)+"\n\n"+(v.cards[i].isNew?"New to virtual collection":"Duplicate virtual card"),21,Muted);
-                Label(new Rect(info.x,info.y+382,info.width,105),(Media!=null && Media.CardFace(v.cards[i].id)!=null?"PROVIDER CARD FACE\nPrinted face shown unchanged. NEW / DUPLICATE status is outside the face.":"GENERIC FALLBACK ART\nOriginal abstract illustration, not supplied card artwork."),19,Gold);
+                Label(new Rect(info.x,info.y+181,info.width,171),"Collector number  "+Safe(v.cards[i].collectorNumber)+"\n"+Safe(v.cards[i].kind)+"  ·  "+Safe(v.cards[i].rarity)+"\nFinish  "+Safe(v.cards[i].finish)+"\n\n"+(v.cards[i].isNew?"New to virtual collection":"Duplicate virtual card"),21,Muted);
+                Label(new Rect(info.x,info.y+357,info.width,93),(Media!=null && Media.CardFace(v.cards[i].id)!=null?"PROVIDER CARD FACE\nPrinted face shown unchanged. NEW / DUPLICATE status is outside the face.":(Media is ICardTemplateMedia && ((ICardTemplateMedia)Media).CardTemplate(v.cards[i].id)!=null?"TEMPORARY TEMPLATE ART\nRevealed catalog labels over identity-neutral matte art.":"GENERIC FALLBACK ART\nOriginal abstract illustration, not supplied card artwork.")),19,Gold);
+                if(PhysicalOwnershipReader!=null) Label(new Rect(p.x+560,p.y+500,396,30),PhysicalOwnershipReader(v.cards[i].id)?"PHYSICAL OWNED":"PHYSICAL MISSING",18,Gold);
+                if(CanRequestShopping(v.cards[i].id,i)) {
+                    var shopRect=new Rect(p.x+560,p.y+538,396,40);Fill(shopRect,Gold);
+                    bool clicked=GUI.Button(shopRect,GUIContent.none,hitStyle);
+                    Label(shopRect,"Find physical card",20,Ink,true,TextAnchor.MiddleCenter);
+                    if(clicked) RequestShopping(v.cards[i].id,i);
+                }
             } else Label(new Rect(p.x+65,p.y+80,p.width-130,180),"This card is not available for inspection.\nUnrevealed names and faces remain hidden.",28,Paper,true);
-            if(pointerTiltEnabled) Label(new Rect(p.x+560,p.y+535,396,44),"Move mouse over card/pack to tilt and catch light",16,Muted,false,TextAnchor.MiddleCenter);
+            if(pointerTiltEnabled) Label(new Rect(p.x+30,p.y+650,444,26),"Move mouse over card/pack to tilt and catch light",16,Muted,false,TextAnchor.MiddleCenter);
             Button(R(l.back),"Back to table","close-inspect",true);
         }
     }

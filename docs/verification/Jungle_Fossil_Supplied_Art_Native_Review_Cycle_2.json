@@ -1,0 +1,148 @@
+{
+  "passed": false,
+  "security_concerns": [
+    {
+      "id": "PARENT-01",
+      "severity": "medium",
+      "locations": [
+        ".artifacts/run_supplied_art_native.py:34-41,50-63,67-71",
+        "supplied_art_guard.py:131-140,215-251",
+        "SuppliedArtNativeBuild.cs:30-32"
+      ],
+      "summary": "Existing-stage ownership is not checked before parent writes or Unity launch.",
+      "detail": "For an existing regular stage with matching compiler pins, the launcher calls write_boundary and compares compiler membership, but neither checks .supplied-art-owned-stage.json. It then opens existing stage header targets with wb and launches Unity. validate_authorization also does not authenticate the stage marker. The native Admit checks the exact marker only inside the launched Editor, too late to protect the parent writes and initial Editor import. A missing or foreign marker therefore does not fail closed at the parent write/launch boundary. This does not demonstrate accepted-player writes; the affected target is the exact new stage.",
+      "evidence": "independent-results.json: launcher missing marker reaches overwrite-capable stage_write; original existing-stage AST statements and stage_write helper executed only against a directly owned fixture, with actual recursive guard checks. The fixture had no stage marker and its pre-existing noncompiler header was overwritten. Operational main and Unity were not executed.",
+      "required_fix": "Before any write or launch, require an existing stage's exact owned marker as well as its recursively validated closure. Refuse missing/foreign ownership; do not create or repair a marker to authorize an existing foreign stage. Add an isolated missing/wrong marker preservation regression."
+    }
+  ],
+  "logic_errors": [
+    {
+      "id": "PARENT-02",
+      "severity": "medium",
+      "locations": [
+        ".artifacts/run_supplied_art_native.py:37-39",
+        "supplied_art_guard.py:108-118,249-251"
+      ],
+      "summary": "Launcher rejects the explicitly allowed existing-stage auto-import transition.",
+      "detail": "Prepare receipts retain effectiveStagePins equal to sourcePins. validate_authorization intentionally allows separately validated new file/folder metadata with allow_pending=True. The launcher's next unconditional compiler_manifest(stage) != effectiveStagePins check rejects exactly those metadata extras. Thus the corrected Python/C# import transition works for a pristine first launch but cannot be used to admit an already auto-imported, otherwise approved prepare stage. The no-destructive-restage contract leaves that legitimate resume/retry blocked.",
+      "evidence": "independent-results.json: original launcher existing-stage branch refused an added valid new A.cs.meta while actual verify_import_closure accepted the same fixture/frozen source/explicit allowance. Existing lifecycle tests independently demonstrate complete file/folder transition admission in C# and Python.",
+      "required_fix": "For prepare actions, use the independently validated bounded import transition rather than unconditional source equality. Preserve original frozen source pins for attestation; do not silently rebase onto arbitrary actual extras or repin source changes. Keep exact effective disk closure equality for BuildWindows."
+    }
+  ],
+  "suggestions": [
+    {
+      "location": "verify_supplied_art_player.py:47-66",
+      "detail": "Counts now reconcile and required named coverage is enforced. A future strengthening could also compare seeds to final pack seeds and the two snapshots to initial/final rather than validating only their counts. Current native probe emits those relationships, but the independent validator does not establish them."
+    },
+    {
+      "location": ".artifacts/run_supplied_art_native.py:95-98",
+      "detail": "A preservation read/hash exception in finally bypasses writing results.json. Keep this fail-closed, but capture individual preservation-read failures into durable failing evidence instead of losing the final report."
+    }
+  ],
+  "coverage": {
+    "review_complete": true,
+    "verdict_scope": "Fresh independent code review of the exact five final proposal files and the parent launcher. The five-file correction is substantiated by pure integration tests; the included parent launcher is not approved. No prior review directory or provider delivery was treated as approval.",
+    "reviewed_files": [
+      ".artifacts/phase5-supplied-art-final-source-01/SuppliedArtNativeBuild.cs",
+      ".artifacts/phase5-supplied-art-final-source-01/SuppliedArtSmokeProbe.cs",
+      ".artifacts/phase5-supplied-art-final-source-01/verify_supplied_art_player.py",
+      ".artifacts/phase5-supplied-art-final-source-01/supplied_art_guard.py",
+      ".artifacts/phase5-supplied-art-final-source-01/SuppliedArtBuildPolicy.cs",
+      ".artifacts/run_supplied_art_native.py"
+    ],
+    "supporting_reads": [
+      "native-fix-01/HANDOFF.md, report.json, exact.diff, lifecycle-results.json, compile.py, Harness.cs and all three test scripts",
+      "Original native-independent/review.json NATIVE-01/02/03 rejection",
+      "final-source-01/transfer-pins.json; parent/promotion-01/results.json",
+      "tools/run_phase5_build_policy.py and Assets/VintageCollector/Editor/Phase5BuildPolicy.cs",
+      "tools/phase5_owned_window_input.py and relevant verify_tilt_player.py PNG/input-fence helpers",
+      "docs/verification/Owner_Base_Booster_PSD_Revision_Approval.json"
+    ],
+    "original_fix_findings": {
+      "NATIVE-01": "Resolved in the final guard/native policy for initial import: inherited frozen source bytes remain authoritative; actual membership can extend only by explicitly enumerated, validated new metadata. Actual C# CreateAssets admission succeeded with auto-generated metadata. PARENT-02 separately blocks the parent existing-imported-stage path.",
+      "NATIVE-02": "Resolved in guard/native policy: exact missing subset of five fixed generation folders, backed by 132 pinned PNG inputs; file/folder role separation and globally unique bounded GUID metadata checked. Wrong case, arbitrary folders, file/folder lies, existing Root metadata, stale bytes and duplicate GUIDs refused.",
+      "NATIVE-03": "Resolved in pure/native policy: only stage EditorBuildSettings scene path/GUID substitution from the single enabled Root Bootstrap scene; all other configuration/source bytes remain pinned. Stage-only effective mapping supports BuildWindows without changing Root settings. Other settings-line edits, multiple enabled scenes and wrong GUIDs refused in Python and actual C#. No PlayerSettings setters remain in recipe preparation. Root settings are LF and no BOM/CRLF portability claim is made."
+    },
+    "static_security_and_logic": [
+      "Trusted canonical parent receipt hash is required; full source/tool/protected-state/art-binding validation precedes launcher writes. Native raw attestation SHA token must be supplied through one exact CLI argument and binds action/root/stage/candidate plus four payload hashes. Actual Unity CLI/API execution remains untested.",
+      "Recursive stage/candidate reparse checks precede explicit operations; candidate Saves entry is refused by name. Parent stage ownership ordering is the exception recorded as PARENT-01.",
+      "Metadata planner requires absent Root metadata, unchanged pinned asset bytes and unique GUIDs; folder allowance is fixed, not arbitrary. Native helpers author only new profiles and a separately named scene in stage. Parent launcher performs no Root adoption. Actual adoption remains a separate parent create-new/no-overwrite step.",
+      "Owner exception is authenticated by the trusted receipt digest and exact approval-file SHA; only the named Base PSD old/new hashes can differ. Historical pins remain verbatim; missing/default/untrusted/extra/other-file exceptions fail. Base runtime inputs and accepted players remain protected.",
+      "Driver pins expected manifest bytes before output creation and validates literal 126 canonical IDs, six wrapper roles, distinct paths, dimensions and pixel SHA schema. All 126 literal IDs were parsed from the complete source and matched against the real pinned manifest, not a truncated display.",
+      "Driver checks all native face and wrapper pixel hashes, actual six-pack/66-card history, count reconciliation, unique checks/captures, required named screenshots/checks, explicit integer zero build warnings/errors and stage/candidate pin equality before launch.",
+      "Probe is opt-in through exact bounded fixture/save/artifact paths and PID-bound handshake; exceptions become failed checks. It uses production transactions and borrowed texture references, not catalog/RNG/save behavior changes. RunAudio is unused and not counted as full playlist execution.",
+      "Driver normal exit requires actual process returncode zero. Timeout/nonzero paths cannot set normal success; terminate/kill includes waits. Validation failures propagate even after zero exit. Preservation finalizer compares before/after. These process paths were reviewed statically, not exercised with a player.",
+      "No operational write target resolves to any accepted player. Legacy preservation player manifests prune Saves/Logs by entry name before stat/reparse/traversal; independent real dangling-link fixtures verified that behavior."
+    ],
+    "fresh_tests": {
+      "commands_evidence": "test-results.json",
+      "compile": {
+        "installedUnityReferences": "6000.2.14f1",
+        "compiler": "installed MonoBleedingEdge mono.exe + mcs.exe",
+        "actualSourceCount": 69,
+        "usesExactFinalProposalSources": true,
+        "warningsAsErrors": true,
+        "exitCode": 0,
+        "diagnostics": 0,
+        "sourceMap": "source-map.json",
+        "referencePinsAndFullCommand": "unity-reference-compile.json"
+      },
+      "managedHarnessCompileExitCode": 0,
+      "existingLifecycleCases": 26,
+      "existingDriverUnittests": 4,
+      "existingOwnerRevisionUnittests": 8,
+      "allExistingTestCommandsExitZero": true,
+      "independentChecks": {
+        "caseCount": 17,
+        "evidence": "independent-results.json",
+        "includes": "canonical literal closure; four manifest mutations; two explicitly synthetic driver-report baselines; seven report/capture/pixel mutations; parent missing-marker overwrite observation; parent allowed-metadata refusal; guard acceptance of same allowed-metadata fixture",
+        "interpretation": "All 17 fixture assertions passed, including reproduction of the two review defects. This is not a product approval."
+      },
+      "additionalBoundaryChecks": "final-checks.json records real dangling Saves/Logs link pruning and candidate Saves name-before-stat refusal",
+      "testRelocations": "relocations.json records unchanged source/test copies rooted here; only compile.py proposal source paths select FINAL directly. Existing tests derive outputs and fixtures from relocated __file__. Production constants were not changed. Lifecycle Mono retains existing extended-path fixture arguments. Launcher tests execute only isolated original AST branch/helper with local frozen pins, never main, and create no operational approval receipt."
+    },
+    "preservation": {
+      "evidence": [
+        "before.json",
+        "final-checks.json"
+      ],
+      "rootCompilerInputs": 680,
+      "matchesApprovedPromotionBeforeAndAfter": true,
+      "acceptedPlayers": 9,
+      "acceptedPlayerMembers": 1226,
+      "protectedPlayersBaseAndOriginalsUnchanged": true,
+      "finalSourcesAndLauncherHashesUnchanged": true,
+      "historicalEvidenceUnchangedByReview": true
+    },
+    "limits": [
+      "No Unity Editor, native build, player, operational launcher, Git, network or accepted Saves execution/read/write was performed. Only installed Mono managed compilation and pure fixtures ran.",
+      "No real Editor import/serialization persistence, native trusted CLI admission, framebuffer-source overpaint, Base framebuffer pixel proof, malformed-profile HOST startup, physical owned-window click tour or full fourteen-clip playlist acceptance is claimed.",
+      "Synthetic report fixtures establish validator predicates only, not rendering or native acceptance. Existing lifecycle synthetic profile/scene/image bytes are admission fixtures only.",
+      "A complete mocked operational driver process/failure matrix was not run; real process exit/reap/preservation control flow was inspected statically.",
+      "A tool-display JSON parse attempt failed because before.json exceeded the reader's display budget; final_checks.py subsequently parsed the complete on-disk JSON and verified all pins/preservation. This was a review harness/display limitation, not a product defect."
+    ],
+    "writes": "All created files, copied sources/tests, fixture data, managed binaries, compile logs and reports are confined to .artifacts/phase5-supplied-art-native-independent-final-02. No implementation changes were made. Existing README was read and left unchanged."
+  },
+  "exactpins": {
+    "approved": {},
+    "reviewed_not_approved_as_a_bundle": {
+      "SuppliedArtNativeBuild.cs": "c6cd4eccdaa3c81981948a9dc64cbe57e27e4b35a85814f7037166625066dab1",
+      "SuppliedArtSmokeProbe.cs": "c6c7b1c91df62db8ba2c8f95e9ee8a2eb964dcb252dacfc41c71b14749472914",
+      "verify_supplied_art_player.py": "d867590955c2c3cc1b842329445a26d9ec7bfa9f868139b2ca021efb0d8e912b",
+      "supplied_art_guard.py": "897656c6b9c0935bbd5c3cf3f8c908b450ec639a9d0dbd9edb85ea8ffc50f3e4",
+      "SuppliedArtBuildPolicy.cs": "709d5ef21f589e68b0c39b7fc127060899e704af2e1a8b2468a58adb2989bea0",
+      ".artifacts/run_supplied_art_native.py": "42e22b5fbb954e8ed949e13f7849cb47f4afae68d1489eb54ac5999ac81db0b7"
+    },
+    "expectedPixelManifest": "0cb3940530050398754c8bcc649b8234bc18d44c04c3006cd1d14d0a743f6eb7",
+    "ownerApprovalFile": "46beb761dbf7762eb05f67e8181853dd56e46d828337022411fcfdb2696b947a",
+    "transferPinsMatchActualBytes": true,
+    "driverVersusFix": "Independently verified sole changed line is the guard import path from historical build-tools to new operative-01; four other final files are byte-identical to fix."
+  },
+  "originalReport": {
+    "path": ".artifacts/phase5-supplied-art-native-independent-final-02/review.json",
+    "sha256": "a93e94d5262a97b55509de9b9301685c22124b075fcd53c8766ed0fee661a2d7"
+  },
+  "firstThreeNativeIntegrationFindingsResolved": true,
+  "nativeLaunchBlocked": true,
+  "correctionWorkspace": ".artifacts/phase5-supplied-art-parent-fix-01"
+}

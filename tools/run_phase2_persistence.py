@@ -43,6 +43,7 @@ def main():
         # compiles with Collections in its own harness, not this schema1-only suite.
         sources = [ROOT / 'Assets/VintageCollector/Persistence' / name for name in (
             'SessionData.cs', 'SessionStore.cs', 'SaveProtocol.cs', 'StateValidation.cs')]
+        sources.append(ROOT / 'Assets/VintageCollector/Collections/CollectionJsonShape.cs')
         sources.append(ROOT / 'TestsPhase2/PersistenceTests.cs')
         (out / 'compiled-inputs.json').write_text(json.dumps({str(f.relative_to(ROOT)): hashlib.sha256(f.read_bytes()).hexdigest() for f in [*protected, *sources]}, indent=2) + '\n', encoding='utf-8')
         r = invoke([*compiler, '-r:System.Runtime.Serialization', '-r:' + str(library), '-out:' + str(exe), *sources])

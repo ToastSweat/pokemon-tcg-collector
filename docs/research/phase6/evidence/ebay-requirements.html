@@ -1,0 +1,1207 @@
+<!DOCTYPE html><html lang=en-US data-theme=system><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><title>Buy APIs Requirements | eBay Developers Program</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css"><title>Buy APIs Requirements</title>
+
+        <meta name="tocPath" content="Buying Integration Guide|Buy APIs Requirements">
+    <link rel="dns-prefetch" href="//ir.ebaystatic.com"><link rel="dns-prefetch" href="//secureir.ebaystatic.com"><link rel="dns-prefetch" href="//i.ebayimg.com"><link rel="dns-prefetch" href="//rover.ebay.com"><script>$ssgST=new Date().getTime();</script><link rel="shortcut icon" type=image/ico href=https://www.ebay.com/favicon.ico><script>$mbp_M_6e0ba3d5="https://ir.ebaystatic.com/rs/c/edpweb/"</script><script async type="module" crossorigin src="https://ir.ebaystatic.com/rs/c/edpweb/api-docs._.static._-FJ_OnZP-.js"></script><link rel="modulepreload" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/_BXAQoXXd.js"><link rel="modulepreload" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/_CGTSTsZq.js"><link rel="modulepreload" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/_B1kJHDK0.js"><link rel="modulepreload" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/_Chq1KRaa.js"><link rel="modulepreload" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/_ESH12R2E.js"><link rel="modulepreload" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/_BVnnxaQY.js"><link rel="stylesheet" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/index-ycNdsVmn.css"><link rel="stylesheet" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/style-Rs8BsC8p.css"><link rel="stylesheet" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/style-Os7IYDcc.css"><link rel="stylesheet" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/index-C002XSP9.css"><link rel="stylesheet" crossorigin href="https://ir.ebaystatic.com/rs/c/edpweb/static-page-CTAAtsmM.css"><script>(function(w, d, e, u, c, g, a, b){ w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {ss_cid : c, domain_info: "auto"}; w[g] = function(i, j){w["SSJSConnectorObj"][i] = j}; a = d.createElement(e); a.async = true; a.src = u; b = d.getElementsByTagName(e)[0]; b.parentNode.insertBefore(a, b); })(window,document,"script","https://ir.ebaystatic.com/cr/v/c01/radware_stormcaster_v24.js","bjp5","ssConf"); ssConf("c1" , "https://cas.avalon.perfdrive.com"); var __uzdbm_3="7f6000a0b44fe2-b190-4c28-b403-302a3e6a3dff17935019861660-df3cf36b15685a8f10";var __uzdbm_4="false";</script></head><body><div class=page-shell><div class=site-container><main><!--M_6e0ba3d5#s0-2-0-13--><div class="_container_ullwc_9 app-global-header"><div><a class=_logo_ullwc_22 href="/" aria-label="Go to the eBay Developers Program home page"><svg width=65 height=26 viewBox="0 0 200 80" fill=none aria-hidden=true><path d="M39.9262 37.4821C39.4852 28.0815 32.6934 24.641 25.4574 24.6819C17.6606 24.7245 11.4508 28.7106 10.4033 37.6492L39.9262 37.4821ZM10.2197 44.3156C10.8164 53.4132 17.118 58.7557 25.7541 58.7082C31.7344 58.6738 37.041 56.2114 38.7902 50.9049L49.1279 50.8475C47.182 61.608 35.7656 65.3205 25.9393 65.3729C8.05081 65.4728 0.0704767 55.6773 -0.00329375 42.3971C-0.085261 27.7718 8.05736 18.1139 25.841 18.0123C39.9852 17.9337 50.3951 25.275 50.4852 41.4256L50.5016 44.0878L10.2197 44.3156Z" fill=#F02D2D /><path d="M76.3025 58.2397C85.627 58.1873 91.9467 51.444 91.8893 41.3323C91.832 31.2205 85.4189 24.546 76.1156 24.5985C66.8123 24.6509 60.4713 31.3942 60.5271 41.5059C60.5828 51.6176 67.0418 58.2905 76.3025 58.2397ZM50.25 0.243203L60.2762 0.1875L60.4156 25.3668C65.2975 19.4885 72.0549 17.7486 78.7221 17.7093C89.8975 17.6487 102.348 25.1113 102.44 41.3896C102.514 54.9713 92.7008 64.9929 78.7975 65.0699C71.4812 65.1125 64.6598 62.5387 60.4074 57.4009C60.4183 59.4427 60.3143 61.4834 60.0959 63.5135L50.2697 63.5692C50.4172 60.4318 50.5729 56.4196 50.5549 53.2117L50.25 0.243203Z" fill=#0968F6 /><path d="M126.692 42.3396C117.597 42.6935 111.963 44.3531 111.995 50.3395C112.017 54.2142 115.176 58.3984 122.979 58.3526C133.495 58.2952 139.087 52.5267 139.035 43.1342V42.0906C135.343 42.1234 130.774 42.1791 126.692 42.3396ZM149.123 54.6369C149.14 57.5498 149.24 60.4332 149.504 62.9923L140.179 63.0447C139.936 60.9646 139.813 58.8723 139.81 56.7781C134.807 63.0038 128.813 64.8207 120.494 64.8682C108.146 64.937 101.502 58.4541 101.459 50.913C101.399 39.9936 110.367 36.0878 125.974 35.6471C130.236 35.5291 135.038 35.4833 138.999 35.4571V34.4134C138.956 27.1016 134.245 24.1166 126.123 24.1625C120.09 24.1969 115.684 26.7199 115.217 31.0434L104.669 31.1008C105.727 20.3436 117.013 17.5535 126.956 17.5027C138.863 17.4372 148.933 21.6116 149.002 34.2005L149.123 54.6369Z" fill=#FFBD14 /><path d="M150.719 32.7192L143.342 19.0196L155.07 18.954L172.429 53.231L189.36 18.7935L199.993 18.7148L169.325 79.7439L158.096 79.8078L166.919 62.8544L150.711 32.7208" fill=#92C821 /></svg><span>Developers&nbspProgram</span></a></div><nav class=_nav_10l48_33><ul class=_menu_10l48_43 data-should-animate><li><div class=_wrapper_1exnx_1><button class=_item_10l48_56 popovertarget=s0-2-0-13-5-3[0]-0 aria-controls=s0-2-0-13-5-3[0]-0 data-state=closed data-evo-menu-item data-index=0><!--F#1-->Join<!--F/--><svg class="icon icon--12" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 12 12" id=icon-chevron-down-12><path fill-rule=evenodd clip-rule=evenodd d="M1.808 4.188a.625.625 0 0 1 .884 0L6 7.495l3.308-3.307a.625.625 0 1 1 .884.885l-3.75 3.749a.625.625 0 0 1-.884 0l-3.75-3.749a.626.626 0 0 1 0-.885Z"></path></symbol></defs><use href="#icon-chevron-down-12" /></svg></button><div popover id=s0-2-0-13-5-3[0]-0 class="_popover_1exnx_16 _popover_10l48_84" data-state=closed data-visible="false" data-level=0 data-should-animate="true"><ul class=_content_1exnx_25><li><a href=/join data-level=0 data-index=1><span>Overview</span></a></li><li><a href=/join/about-the-developers-program data-level=0 data-index=2><span>About the Program</span></a></li><li><a href=/join/benefits data-level=0 data-index=3><span>Benefits</span></a></li><li><a href=/join/policies data-level=0 data-index=4><span>Policies</span></a></li><li><a href=/join/api-license-agreement data-level=0 data-index=5><span>API License Agreement</span></a></li></ul></div></div></li><li><div class=_wrapper_1exnx_1><button class=_item_10l48_56 popovertarget=s0-2-0-13-5-3[1]-0 aria-controls=s0-2-0-13-5-3[1]-0 data-state=closed data-evo-menu-item data-index=1><!--F#1-->Develop<!--F/--><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div popover id=s0-2-0-13-5-3[1]-0 class="_popover_1exnx_16 _popover_10l48_84" data-state=closed data-visible="false" data-level=0 data-should-animate="true"><ul class=_content_1exnx_25><li><a href=/develop data-level=0 data-index=1><span>Overview</span></a></li><li><div class=_submenu_1exnx_26><a href=/develop/get-started data-level=0 data-index=2 data-open=false aria-controls=s0-2-0-13-5-3[1]-0-5[1]><span>Get Started with APIs<svg width=12 height=12 viewBox="0 0 12 12" fill=none><path fill-rule=evenodd clip-rule=evenodd d="M4.18335 10.1922C3.93911 9.94831 3.93885 9.55258 4.18277 9.30835L7.48671 6.0001L4.18276 2.69164C3.93885 2.4474 3.93912 2.05167 4.18336 1.80776C4.4276 1.56385 4.82333 1.56412 5.06724 1.80836L8.81224 5.55848C9.05592 5.80249 9.05592 6.19777 8.81223 6.44177L5.06723 10.1917C4.82331 10.4359 4.42758 10.4361 4.18335 10.1922Z" fill=currentColor /></svg></span></a><div popover class=_popover_1exnx_16 id=s0-2-0-13-5-3[1]-0-5[1] data-visible="false"><ul class=_content_1exnx_25><li><a href=/develop/get-started data-level=1 data-index=1><span>Overview</span></a></li><li><a href=/develop/guides/sell/authorization data-level=1 data-index=2><span>Authorization</span></a></li><li><a href=/develop/guides/sell/using-ebay-restful-apis data-level=1 data-index=3><span>Using eBay RESTful APIs</span></a></li><li><a href=/develop/api/sell/api_call_limits data-level=1 data-index=4><span>API Call Limits</span></a></li><li><a href=/develop/get-started/api-deprecation-status data-level=1 data-index=5><span>API Deprecations</span></a></li><li><a href=/develop/get-started/api-status data-level=1 data-index=6><span>API Status</span></a></li></ul></div><span class=_triangle_1exnx_69 data-debug="false" aria-hidden=true></span></div></li><li><div class=_submenu_1exnx_26><a href=/develop/api/sell data-level=0 data-index=3 data-open=false aria-controls=s0-2-0-13-5-3[1]-0-5[2]><span>Selling Applications<svg width=12 height=12 viewBox="0 0 12 12" fill=none><path fill-rule=evenodd clip-rule=evenodd d="M4.18335 10.1922C3.93911 9.94831 3.93885 9.55258 4.18277 9.30835L7.48671 6.0001L4.18276 2.69164C3.93885 2.4474 3.93912 2.05167 4.18336 1.80776C4.4276 1.56385 4.82333 1.56412 5.06724 1.80836L8.81224 5.55848C9.05592 5.80249 9.05592 6.19777 8.81223 6.44177L5.06723 10.1917C4.82331 10.4359 4.42758 10.4361 4.18335 10.1922Z" fill=currentColor /></svg></span></a><div popover class=_popover_1exnx_16 id=s0-2-0-13-5-3[1]-0-5[2] data-visible="false"><ul class=_content_1exnx_25><li><a href=/develop/api/sell/inventory_mapping#sell-inventory_mapping-query-listingpreviewscreationtaskbyid data-level=1 data-index=1><span>Listing Management</span></a></li><li><a href=/develop/api/sell/metadata_api#sell-metadata_api-marketplace-getautomotivepartscompatibilitypolicies data-level=1 data-index=2><span>Listing Metadata</span></a></li><li><a href=/develop/api/sell/finances_api#sell-finances_api-order_earnings-getorderearnings data-level=1 data-index=3><span>Account Management</span></a></li><li><a href=/develop/api/sell/fulfillment_api#sell-fulfillment_api-order-getorder data-level=1 data-index=4><span>Order Management</span></a></li><li><a href=/develop/api/sell/leads_api#sell-leads_api-classified_lead-getallclassifiedleads data-level=1 data-index=5><span>Offers and Leads</span></a></li><li><a href=/develop/api/sell/message_api#sell-message_api-conversation-bulkupdateconversation data-level=1 data-index=6><span>Communication</span></a></li><li><a href=/develop/api/sell/marketing_api#sell-marketing_api-ad-bulkcreateadsbyinventoryreference data-level=1 data-index=7><span>Marketing and Promotions</span></a></li><li><a href=/develop/api/sell/analytics_api#sell-analytics_api-customer_service_metric-getcustomerservicemetric data-level=1 data-index=8><span>Analytics and Reporting</span></a></li><li><a href=/develop/api/sell/identity_api#sell-identity_api-user-getuser data-level=1 data-index=9><span>Other APIs</span></a></li><li><a href=/develop/api/sell/developer_analytics_api#sell-developer_analytics_api-rate_limit-getratelimits data-level=1 data-index=10><span>App Settings &amp; Insight</span></a></li></ul></div><span class=_triangle_1exnx_69 data-debug="false" aria-hidden=true></span></div></li><li><div class=_submenu_1exnx_26><a href=/develop/api/buy data-level=0 data-index=4 data-open=false aria-controls=s0-2-0-13-5-3[1]-0-5[3]><span>Buying Applications<svg width=12 height=12 viewBox="0 0 12 12" fill=none><path fill-rule=evenodd clip-rule=evenodd d="M4.18335 10.1922C3.93911 9.94831 3.93885 9.55258 4.18277 9.30835L7.48671 6.0001L4.18276 2.69164C3.93885 2.4474 3.93912 2.05167 4.18336 1.80776C4.4276 1.56385 4.82333 1.56412 5.06724 1.80836L8.81224 5.55848C9.05592 5.80249 9.05592 6.19777 8.81223 6.44177L5.06723 10.1917C4.82331 10.4359 4.42758 10.4361 4.18335 10.1922Z" fill=currentColor /></svg></span></a><div popover class=_popover_1exnx_16 id=s0-2-0-13-5-3[1]-0-5[3] data-visible="false"><ul class=_content_1exnx_25><li><a href=/develop/api/buy/browse_api#buy-browse_api-item_summary-search data-level=1 data-index=1><span>Inventory Discovery &amp; Refresh</span></a></li><li><a href=/develop/api/buy/deal_api#buy-deal_api-deal_item-getdealitems data-level=1 data-index=2><span>Marketing and Discounts</span></a></li><li><a href=/develop/api/buy/taxonomy_api#buy-taxonomy_api-category_tree-fetchitemaspects data-level=1 data-index=3><span>Marketplace Metadata</span></a></li><li><a href=/develop/api/buy/offer_api#buy-offer_api-bidding-getbidding data-level=1 data-index=4><span>Checkout/Bid</span></a></li><li><a href=/develop/api/buy/message_api#buy-message_api-conversation-bulkupdateconversation data-level=1 data-index=5><span>Communication</span></a></li><li><a href=/develop/api/buy/identity_api#buy-identity_api-user-getuser data-level=1 data-index=6><span>Other APIs</span></a></li><li><a href=/develop/api/buy/developer_analytics_api#buy-developer_analytics_api-rate_limit-getratelimits data-level=1 data-index=7><span>App Settings &amp; Insight</span></a></li></ul></div><span class=_triangle_1exnx_69 data-debug="false" aria-hidden=true></span></div></li><li><a href=/develop/guides data-level=0 data-index=5><span>All guides</span></a></li><li><a href=/develop/sdks-and-widgets data-level=0 data-index=6><span>SDKs &amp; Widgets</span></a></li><li><div class=_submenu_1exnx_26><a href=/develop/tools data-level=0 data-index=7 data-open=false aria-controls=s0-2-0-13-5-3[1]-0-5[6]><span>Tools<svg width=12 height=12 viewBox="0 0 12 12" fill=none><path fill-rule=evenodd clip-rule=evenodd d="M4.18335 10.1922C3.93911 9.94831 3.93885 9.55258 4.18277 9.30835L7.48671 6.0001L4.18276 2.69164C3.93885 2.4474 3.93912 2.05167 4.18336 1.80776C4.4276 1.56385 4.82333 1.56412 5.06724 1.80836L8.81224 5.55848C9.05592 5.80249 9.05592 6.19777 8.81223 6.44177L5.06723 10.1917C4.82331 10.4359 4.42758 10.4361 4.18335 10.1922Z" fill=currentColor /></svg></span></a><div popover class=_popover_1exnx_16 id=s0-2-0-13-5-3[1]-0-5[6] data-visible="false"><ul class=_content_1exnx_25><li><a href=/develop/tools data-level=1 data-index=1><span>Overview</span></a></li><li><div class=_submenu_1exnx_26><a href=/develop/tools/sandbox data-level=1 data-index=2 data-open=false aria-controls=s0-2-0-13-5-3[1]-0-5[6]-5[1]><span>eBay Sandbox<svg width=12 height=12 viewBox="0 0 12 12" fill=none><path fill-rule=evenodd clip-rule=evenodd d="M4.18335 10.1922C3.93911 9.94831 3.93885 9.55258 4.18277 9.30835L7.48671 6.0001L4.18276 2.69164C3.93885 2.4474 3.93912 2.05167 4.18336 1.80776C4.4276 1.56385 4.82333 1.56412 5.06724 1.80836L8.81224 5.55848C9.05592 5.80249 9.05592 6.19777 8.81223 6.44177L5.06723 10.1917C4.82331 10.4359 4.42758 10.4361 4.18335 10.1922Z" fill=currentColor /></svg></span></a><div popover class=_popover_1exnx_16 id=s0-2-0-13-5-3[1]-0-5[6]-5[1] data-visible="false"><ul class=_content_1exnx_25><li><a href=/develop/tools/sandbox data-level=2 data-index=1><span>Overview</span></a></li><li><a href=/sandbox/register data-level=2 data-index=2><span>Create Test Users</span></a></li><li><a href=/sandbox/reset-password data-level=2 data-index=3><span>Reset Password</span></a></li><li><a href=/support/api-status/sandbox data-level=2 data-index=4><span>Sandbox Status</span></a></li><li><a href="http://sandbox.ebay.com/" data-level=2 data-index=5><span>Sandbox Site</span></a></li></ul></div><span class=_triangle_1exnx_69 data-debug="false" aria-hidden=true></span></div></li><li><a href=/my/api_test_tool data-level=1 data-index=3><span>API Explorer</span></a></li><li><a href=/my/graphql_explorer data-level=1 data-index=4><span>GraphQL Explorer</span></a></li><li><a href=/develop/tools/wsdl-pruner data-level=1 data-index=5><span>WSDL Pruner</span></a></li><li><a href=/develop/tools/ai-tools data-level=1 data-index=6><span>AI Tools</span></a></li></ul></div><span class=_triangle_1exnx_69 data-debug="false" aria-hidden=true></span></div></li></ul></div></div></li><li><div class=_wrapper_1exnx_1><button class=_item_10l48_56 popovertarget=s0-2-0-13-5-3[2]-0 aria-controls=s0-2-0-13-5-3[2]-0 data-state=closed data-evo-menu-item data-index=2><!--F#1-->Grow<!--F/--><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div popover id=s0-2-0-13-5-3[2]-0 class="_popover_1exnx_16 _popover_10l48_84" data-state=closed data-visible="false" data-level=0 data-should-animate="true"><ul class=_content_1exnx_25><li><a href=/grow data-level=0 data-index=1><span>Overview</span></a></li><li><a href=/grow/application-growth-check data-level=0 data-index=2><span>Application Growth Check</span></a></li><li><a href=/grow/affiliate-program data-level=0 data-index=3><span>Affiliate Program</span></a></li><li><a href=/grow/ebay-partner-program data-level=0 data-index=4><span>eBay Partner Program</span></a></li><li><a href=/grow/events data-level=0 data-index=5><span>Events</span></a></li><li><a href=/grow/awards data-level=0 data-index=6><span>Awards</span></a></li></ul></div></div></li><li><div class=_wrapper_1exnx_1><button class=_item_10l48_56 popovertarget=s0-2-0-13-5-3[3]-0 aria-controls=s0-2-0-13-5-3[3]-0 data-state=closed data-evo-menu-item data-index=3><!--F#1-->Updates<!--F/--><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div popover id=s0-2-0-13-5-3[3]-0 class="_popover_1exnx_16 _popover_10l48_84" data-state=closed data-visible="false" data-level=0 data-should-animate="true"><ul class=_content_1exnx_25><li><a href=/updates data-level=0 data-index=1><span>Overview</span></a></li><li><a href=/updates/api-updates data-level=0 data-index=2><span>API Updates</span></a></li><li><a href=/updates/newsletter data-level=0 data-index=3><span>Newsletter</span></a></li><li><a href=/updates/blog data-level=0 data-index=4><span>Blog</span></a></li><li><a href=/survey data-level=0 data-index=5><span>Survey</span></a></li></ul></div></div></li><li><div class=_wrapper_1exnx_1><button class=_item_10l48_56 popovertarget=s0-2-0-13-5-3[4]-0 aria-controls=s0-2-0-13-5-3[4]-0 data-state=closed data-evo-menu-item data-index=4><!--F#1-->Support<!--F/--><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div popover id=s0-2-0-13-5-3[4]-0 class="_popover_1exnx_16 _popover_10l48_84" data-state=closed data-visible="false" data-level=0 data-should-animate="true"><ul class=_content_1exnx_25><li><a href=/support data-level=0 data-index=1><span>Overview</span></a></li><li><a href=/support/api-status data-level=0 data-index=2><span>API Status</span></a></li><li><a href=/support/faq data-level=0 data-index=3><span>FAQs</span></a></li><li><a href=/support/developer-community-forum data-level=0 data-index=4><span>Developer Community Forum</span></a></li><li><a href=/support/knowledge-base data-level=0 data-index=5><span>Knowledge Base</span></a></li><li><a href=/support/developer-account-support data-level=0 data-index=6><span>Developer Account Support</span></a></li><li><a href=/my/support/tickets data-level=0 data-index=7><span>Developer Technical Support</span></a></li></ul></div></div></li></ul></nav><div class=_colRight_ullwc_68><div class=_desktopOnly_ullwc_83><a href=/signin class=icon-link data-ebayui aria-label="Sign in"><!--F#1--><svg class="icon icon--20" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 20 20" id=icon-profile-20><path fill-rule=evenodd clip-rule=evenodd d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm0 2c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10Z"></path><path fill-rule=evenodd clip-rule=evenodd d="M10 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 2a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 3c-2.174 0-3.908.98-4.644 2.197L3.645 16.16C4.822 14.215 7.294 13 10 13c2.707 0 5.178 1.216 6.355 3.161l-1.71 1.036C13.908 15.98 12.174 15 10 15Z"></path></symbol></defs><use href="#icon-profile-20" /></svg><!--F/--></a><a href=/search class="_searchLink_ullwc_79 icon-link" data-ebayui aria-label=Search><!--F#1--><svg class="icon icon--20" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 20 20" id=icon-search-20><path fill-rule=evenodd d="M13.05 14.463a7.5 7.5 0 1 1 1.414-1.414l4.243 4.244a1 1 0 0 1-1.414 1.414l-4.244-4.244ZM14 8.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z" clip-rule=evenodd></path></symbol></defs><use href="#icon-search-20" /></svg><!--F/--></a><button class=icon-btn data-ebayui type=button aria-label="Use dark theme"><!--F#1--><!--F/--></button></div><a href=/search class="_searchLink_ullwc_79 icon-link" data-ebayui aria-label=Search><!--F#1--><svg class="icon icon--20" focusable=false aria-hidden=true><use href="#icon-search-20" /></svg><!--F/--></a><button type=button class="icon-btn _trigger_1ls4d_10" aria-label="Open navigation menu" aria-expanded="false" aria-haspopup=dialog aria-controls=s0-2-0-13-17-0><!--F#1--><svg class="icon icon--20" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 20 20" id=icon-menu-20><path fill-rule=evenodd d="M2 4a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" clip-rule=evenodd></path></symbol></defs><use href="#icon-menu-20" /></svg><!--F/--></button><dialog id=s0-2-0-13-17-0 class="_dialog_2i088_1 _dialog_1ls4d_10" aria-label="Navigation menu" aria-modal=true><div class=_dialog_content_2i088_29><div class=_dialog_header_2i088_43><button class=icon-btn data-ebayui type=button aria-label=Close><!--F#1--><svg class="icon icon--20" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 20 20" id=icon-close-20><path fill-rule=evenodd d="M3.293 3.293a1 1 0 0 1 1.414 0L10 8.586l5.293-5.293a1 1 0 1 1 1.414 1.414L11.414 10l5.293 5.293a1 1 0 0 1-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L8.586 10 3.293 4.707a1 1 0 0 1 0-1.414Z" clip-rule=evenodd></path></symbol></defs><use href="#icon-close-20" /></svg><!--F/--></button></div><div class="_dialog_body_2i088_52 _body_1ls4d_15"><!--F#7--><ul class=_actions_1ls4d_21><li><a class=_actionItem_1ls4d_44 href=/signin><svg class="icon icon--20" focusable=false aria-hidden=true><use href="#icon-profile-20" /></svg><span>Sign in</span></a></li><li><button type=button class=_actionItem_1ls4d_44 aria-label="Use dark theme"><span>Theme</span></button></li></ul><div class=_root_7y681_1><ul><li class=_item_uivfu_1 data-type=nestedGroup data-level=0 data-index=0 data-open="false" style="--level: 0"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[0]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[0]">Join<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[0]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[0]"><li class=_item_uivfu_1 data-type=item data-level=1 data-index=1 data-open="false" style="--level: 1"><a href=/join data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=2 data-open="false" style="--level: 1"><a href=/join/about-the-developers-program data-active="false">About the Program</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=3 data-open="false" style="--level: 1"><a href=/join/benefits data-active="false">Benefits</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=4 data-open="false" style="--level: 1"><a href=/join/policies data-active="false">Policies</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=5 data-open="false" style="--level: 1"><a href=/join/api-license-agreement data-active="false">API License Agreement</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=0 data-index=1 data-open="true" style="--level: 0"><button aria-expanded="true" id="menu-toggle-s0-2-0-13-17-0-7-13-2[1]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[1]">Develop<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[1]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[1]"><li class=_item_uivfu_1 data-type=item data-level=1 data-index=1 data-open="false" style="--level: 1"><a href=/develop data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=1 data-index=2 data-open="false" style="--level: 1"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[1]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[1]-10[1]">Get Started with APIs<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[1]-10[1]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[1]"><li class=_item_uivfu_1 data-type=item data-level=2 data-index=1 data-open="false" style="--level: 2"><a href=/develop/get-started data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=2 data-open="false" style="--level: 2"><a href=/develop/guides/sell/authorization data-active="false">Authorization</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=3 data-open="false" style="--level: 2"><a href=/develop/guides/sell/using-ebay-restful-apis data-active="false">Using eBay RESTful APIs</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=4 data-open="false" style="--level: 2"><a href=/develop/api/sell/api_call_limits data-active="false">API Call Limits</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=5 data-open="false" style="--level: 2"><a href=/develop/get-started/api-deprecation-status data-active="false">API Deprecations</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=6 data-open="false" style="--level: 2"><a href=/develop/get-started/api-status data-active="false">API Status</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=1 data-index=3 data-open="false" style="--level: 1"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[2]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[1]-10[2]">Selling Applications<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[1]-10[2]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[2]"><li class=_item_uivfu_1 data-type=item data-level=2 data-index=1 data-open="false" style="--level: 2"><a href=/develop/api/sell/inventory_mapping#sell-inventory_mapping-query-listingpreviewscreationtaskbyid data-active="false">Listing Management</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=2 data-open="false" style="--level: 2"><a href=/develop/api/sell/metadata_api#sell-metadata_api-marketplace-getautomotivepartscompatibilitypolicies data-active="false">Listing Metadata</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=3 data-open="false" style="--level: 2"><a href=/develop/api/sell/finances_api#sell-finances_api-order_earnings-getorderearnings data-active="false">Account Management</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=4 data-open="false" style="--level: 2"><a href=/develop/api/sell/fulfillment_api#sell-fulfillment_api-order-getorder data-active="false">Order Management</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=5 data-open="false" style="--level: 2"><a href=/develop/api/sell/leads_api#sell-leads_api-classified_lead-getallclassifiedleads data-active="false">Offers and Leads</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=6 data-open="false" style="--level: 2"><a href=/develop/api/sell/message_api#sell-message_api-conversation-bulkupdateconversation data-active="false">Communication</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=7 data-open="false" style="--level: 2"><a href=/develop/api/sell/marketing_api#sell-marketing_api-ad-bulkcreateadsbyinventoryreference data-active="false">Marketing and Promotions</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=8 data-open="false" style="--level: 2"><a href=/develop/api/sell/analytics_api#sell-analytics_api-customer_service_metric-getcustomerservicemetric data-active="false">Analytics and Reporting</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=9 data-open="false" style="--level: 2"><a href=/develop/api/sell/identity_api#sell-identity_api-user-getuser data-active="false">Other APIs</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=10 data-open="false" style="--level: 2"><a href=/develop/api/sell/developer_analytics_api#sell-developer_analytics_api-rate_limit-getratelimits data-active="false">App Settings &amp; Insight</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=1 data-index=4 data-open="true" style="--level: 1"><button aria-expanded="true" id="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[3]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[1]-10[3]">Buying Applications<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[1]-10[3]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[3]"><li class=_item_uivfu_1 data-type=item data-level=2 data-index=1 data-open="false" style="--level: 2"><a href=/develop/api/buy/browse_api#buy-browse_api-item_summary-search data-active="false">Inventory Discovery &amp; Refresh</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=2 data-open="false" style="--level: 2"><a href=/develop/api/buy/deal_api#buy-deal_api-deal_item-getdealitems data-active="false">Marketing and Discounts</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=3 data-open="false" style="--level: 2"><a href=/develop/api/buy/taxonomy_api#buy-taxonomy_api-category_tree-fetchitemaspects data-active="false">Marketplace Metadata</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=4 data-open="false" style="--level: 2"><a href=/develop/api/buy/offer_api#buy-offer_api-bidding-getbidding data-active="false">Checkout/Bid</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=5 data-open="false" style="--level: 2"><a href=/develop/api/buy/message_api#buy-message_api-conversation-bulkupdateconversation data-active="false">Communication</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=6 data-open="false" style="--level: 2"><a href=/develop/api/buy/identity_api#buy-identity_api-user-getuser data-active="false">Other APIs</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=7 data-open="false" style="--level: 2"><a href=/develop/api/buy/developer_analytics_api#buy-developer_analytics_api-rate_limit-getratelimits data-active="false">App Settings &amp; Insight</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=5 data-open="false" style="--level: 1"><a href=/develop/guides data-active="false">All guides</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=6 data-open="false" style="--level: 1"><a href=/develop/sdks-and-widgets data-active="false">SDKs &amp; Widgets</a></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=1 data-index=7 data-open="false" style="--level: 1"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[6]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[1]-10[6]">Tools<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[1]-10[6]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[6]"><li class=_item_uivfu_1 data-type=item data-level=2 data-index=1 data-open="false" style="--level: 2"><a href=/develop/tools data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=2 data-index=2 data-open="false" style="--level: 2"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[6]-10[1]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[1]-10[6]-10[1]">eBay Sandbox<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[1]-10[6]-10[1]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[1]-10[6]-10[1]"><li class=_item_uivfu_1 data-type=item data-level=3 data-index=1 data-open="false" style="--level: 3"><a href=/develop/tools/sandbox data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=item data-level=3 data-index=2 data-open="false" style="--level: 3"><a href=/sandbox/register data-active="false">Create Test Users</a></li><li class=_item_uivfu_1 data-type=item data-level=3 data-index=3 data-open="false" style="--level: 3"><a href=/sandbox/reset-password data-active="false">Reset Password</a></li><li class=_item_uivfu_1 data-type=item data-level=3 data-index=4 data-open="false" style="--level: 3"><a href=/support/api-status/sandbox data-active="false">Sandbox Status</a></li><li class=_item_uivfu_1 data-type=item data-level=3 data-index=5 data-open="false" style="--level: 3"><a href="http://sandbox.ebay.com/" data-active="false">Sandbox Site</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=3 data-open="false" style="--level: 2"><a href=/my/api_test_tool data-active="false">API Explorer</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=4 data-open="false" style="--level: 2"><a href=/my/graphql_explorer data-active="false">GraphQL Explorer</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=5 data-open="false" style="--level: 2"><a href=/develop/tools/wsdl-pruner data-active="false">WSDL Pruner</a></li><li class=_item_uivfu_1 data-type=item data-level=2 data-index=6 data-open="false" style="--level: 2"><a href=/develop/tools/ai-tools data-active="false">AI Tools</a></li></ul></div></div></li></ul></div></div></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=0 data-index=2 data-open="false" style="--level: 0"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[2]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[2]">Grow<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[2]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[2]"><li class=_item_uivfu_1 data-type=item data-level=1 data-index=1 data-open="false" style="--level: 1"><a href=/grow data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=2 data-open="false" style="--level: 1"><a href=/grow/application-growth-check data-active="false">Application Growth Check</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=3 data-open="false" style="--level: 1"><a href=/grow/affiliate-program data-active="false">Affiliate Program</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=4 data-open="false" style="--level: 1"><a href=/grow/ebay-partner-program data-active="false">eBay Partner Program</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=5 data-open="false" style="--level: 1"><a href=/grow/events data-active="false">Events</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=6 data-open="false" style="--level: 1"><a href=/grow/awards data-active="false">Awards</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=0 data-index=3 data-open="false" style="--level: 0"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[3]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[3]">Updates<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[3]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[3]"><li class=_item_uivfu_1 data-type=item data-level=1 data-index=1 data-open="false" style="--level: 1"><a href=/updates data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=2 data-open="false" style="--level: 1"><a href=/updates/api-updates data-active="false">API Updates</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=3 data-open="false" style="--level: 1"><a href=/updates/newsletter data-active="false">Newsletter</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=4 data-open="false" style="--level: 1"><a href=/updates/blog data-active="false">Blog</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=5 data-open="false" style="--level: 1"><a href=/survey data-active="false">Survey</a></li></ul></div></div></li><li class=_item_uivfu_1 data-type=nestedGroup data-level=0 data-index=4 data-open="false" style="--level: 0"><button aria-expanded="false" id="menu-toggle-s0-2-0-13-17-0-7-13-2[4]" aria-controls="menu-s0-2-0-13-17-0-7-13-2[4]">Support<svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></button><div class=_drawer_uivfu_67><div class=_content_uivfu_76><ul id="menu-s0-2-0-13-17-0-7-13-2[4]" aria-labelledby="menu-toggle-s0-2-0-13-17-0-7-13-2[4]"><li class=_item_uivfu_1 data-type=item data-level=1 data-index=1 data-open="false" style="--level: 1"><a href=/support data-active="false">Overview</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=2 data-open="false" style="--level: 1"><a href=/support/api-status data-active="false">API Status</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=3 data-open="false" style="--level: 1"><a href=/support/faq data-active="false">FAQs</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=4 data-open="false" style="--level: 1"><a href=/support/developer-community-forum data-active="false">Developer Community Forum</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=5 data-open="false" style="--level: 1"><a href=/support/knowledge-base data-active="false">Knowledge Base</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=6 data-open="false" style="--level: 1"><a href=/support/developer-account-support data-active="false">Developer Account Support</a></li><li class=_item_uivfu_1 data-type=item data-level=1 data-index=7 data-open="false" style="--level: 1"><a href=/my/support/tickets data-active="false">Developer Technical Support</a></li></ul></div></div></li></ul></div><!--F/--></div></div></dialog></div></div><!--M_6e0ba3d5/--><div class=page-grid-container><div class="_crumbs_xlx3c_1 app-breadcrumbs"><a href="/">Home</a><!--M_6e0ba3d5#s0-2-0-16-1-0-0-1-2[0]-0--><svg data-marko-key="@svg s0-2-0-16-1-0-0-1-2[0]-0" class="icon icon--12" focusable=false aria-hidden=true><defs data-marko-key="@defs s0-2-0-16-1-0-0-1-2[0]-0"><symbol viewbox="0 0 12 12" id=icon-chevron-right-12><path fill-rule=evenodd clip-rule=evenodd d="M4.183 10.192a.625.625 0 0 1 0-.884L7.487 6 4.183 2.692a.625.625 0 0 1 .884-.884l3.745 3.75a.625.625 0 0 1 0 .884l-3.745 3.75a.625.625 0 0 1-.884 0Z"></path></symbol></defs><use href="#icon-chevron-right-12" /></svg><!--M_6e0ba3d5/--><a href=/develop>Develop</a><!--M_6e0ba3d5#s0-2-0-16-1-0-0-1-2[1]-0--><svg data-marko-key="@svg s0-2-0-16-1-0-0-1-2[1]-0" class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-right-12" /></svg><!--M_6e0ba3d5/--><a href=/develop/guides>Guides</a><!--M_6e0ba3d5#s0-2-0-16-1-0-0-1-2[2]-0--><svg data-marko-key="@svg s0-2-0-16-1-0-0-1-2[2]-0" class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-right-12" /></svg><!--M_6e0ba3d5/--><a href=/develop/guides/buying-ig-landing.html>Buying Integration Guide</a><!--M_6e0ba3d5#s0-2-0-16-1-0-0-1-2[3]-0--><svg data-marko-key="@svg s0-2-0-16-1-0-0-1-2[3]-0" class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-right-12" /></svg><!--M_6e0ba3d5/--><a href=/api-docs/buy/static/buy-requirements.html>Buy APIs Requirements</a></div><div class=_header_10t3s_1><div data-border="true"><div class=_heading_10t3s_14><h1>Buy APIs Requirements</h1></div></div></div><main class="page-grid page-grid--static-documentation" id=mainContent tabindex=-1><nav class=doc-navigation-links><!--M_6e0ba3d5#s0-2-0-16-1-0-0-5--><nav class=app-documentation-side-nav><div class=documentation-left-menu><!--F#13--><div class=expanded data-id=buying-ig-landing data-level=0><button type=button class="icon fake-link non-link"><i><svg class="icon icon--12" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 12 12" id=icon-chevron-up-12><path fill-rule=evenodd clip-rule=evenodd d="M1.808 7.816c.244.245.64.245.884.001L6 4.51l3.308 3.307a.625.625 0 1 0 .884-.885l-3.75-3.75a.625.625 0 0 0-.884.001l-3.75 3.749a.626.626 0 0 0 0 .884Z"></path></symbol></defs><use href="#icon-chevron-up-12" /></svg></i><i class=hidden><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></i></button><button type=button class="panel-header fake-link non-link" data-url=buying-ig-landing.html>Buying Integration Guide&nbsp;</button><div class=panelcontent style=display:block><!--F#10[0]--><div class=collapsed data-id=buy-overview data-level=1><a class=" anchor" href=buy-overview.html>Buy APIs Overview</a></div><div class=expanded data-id=buy-requirements data-level=1><button type=button class="icon fake-link non-link"><i><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-up-12" /></svg></i><i class=hidden><svg class="icon icon--12" focusable=false aria-hidden=true><use href="#icon-chevron-down-12" /></svg></i></button><button type=button class="panel-header fake-link non-link selected" data-url=#Using>Buy APIs Requirements&nbsp;</button><div class=panelcontent style=display:block><!--F#10[1]--><div class=collapsed data-id=Using data-level=2><a class=" anchor" href=#Using>Using the APIs in sandbox</a></div><div class=collapsed data-id=Beta data-level=2><a class=" anchor" href=#Beta>Beta launch phase</a></div><div class=collapsed data-id=ProductionReq data-level=2><a class=" anchor" href=#ProductionReq>Production eligibility requirements</a></div><div class=collapsed data-id=Applying data-level=2><a class=" anchor" href=#Applying>Production access process</a></div><!--F/--></div></div><div class=collapsed data-id=api-browse data-level=1><a class=" anchor" href=api-browse.html>Browse API</a></div><div class=collapsed data-id=api-charity data-level=1><a class=" anchor" href=api-charity.html>Charity API</a></div><div class=collapsed data-id=api-deal data-level=1><a class=" anchor" href=api-deal.html>Deal API</a></div><div class=collapsed data-id=api-feed data-level=1><a class=" anchor" href=api-feed.html>Feed API</a></div><div class=collapsed data-id=api-feed_beta data-level=1><a class=" anchor" href=api-feed_beta.html>Feed API beta</a></div><div class=collapsed data-id=api-marketing data-level=1><a class=" anchor" href=api-marketing.html>Marketing API</a></div><div class=collapsed data-id=api-offer data-level=1><a class=" anchor" href=api-offer.html>Offer API</a></div><div class=collapsed data-id=api-order data-level=1><a class=" anchor" href=api-order.html>Order API</a></div><div class=collapsed data-id=buy-categories data-level=1><a class=" anchor" href=buy-categories.html>Categories for Buy APIs</a></div><div class=collapsed data-id=ref-marketplace-supported data-level=1><a class=" anchor" href=ref-marketplace-supported.html>Buy API Support by Marketplace</a></div><div class=collapsed data-id=ref-buy-browse-filters data-level=1><a class=" anchor" href=ref-buy-browse-filters.html>Buy API Field Filters</a></div><!--F/--></div></div><!--F/--></div></nav><!--M_6e0ba3d5/--></nav><section class="content app-api-docs-static-content">
+                
+        
+        <p>Many of the Buy APIs are a <a href="/api-docs/static/versioning.html#Limited" target="_blank"> <img src="/cms/img/docs/partners-api.svg" class="legend-icon partners-icon" title="Limited Release" alt="Limited Release">(Limited Release)</a>. The use of eBay’s Buy APIs in production is intended for eBay partners only. You must <a href="/api-docs/buy/static/buy-requirements.html#Applying" target="_blank">apply for production access</a> through the eBay Partner Network. Acceptance of applications is based on the proposed business model, as well as a formal agreement to abide by the policies and requirements stipulated by eBay. </p>
+        <div class="msgbox_note">
+            <p class="msgbox_noteInDiv"><span class="autonumber"><span><b><span style="color: #004680;" class="mcFormatColor">Note: </span></b></span></span>There is no guarantee that your application for production use of the APIs will be approved.</p>
+        </div>
+        <h2 id="Using">Using the APIs in sandbox</h2>
+        <p>Anyone with an eBay developer account can use the Buy APIs in the sandbox with the exception of methods in the <b>guest_checkout_session</b> and <b>checkout_session</b> resources which are those methods used for <b>guest checkout</b> and <b>eBay member checkout</b>, respectively.</p>
+        <p>Developers who require access to <b>guest checkout</b>/<b>eBay member checkout</b> methods should reach out to Developer Technical Support (DTS) and/or their Business Unit contact to request approval. Once approved for production use of the Buy APIs for <b>guest checkout</b> and/or <b>eBay member checkout</b> use cases, developers will then be granted access to use the <b>guest checkout</b> and/or <b>eBay member checkout</b> methods in the sandbox as well.</p>
+        <p>We advise you to complete the <a href="#Applying">Production application process</a> and obtain approval before you invest significantly in application development and testing.</p>
+        <h2 id="Beta">Beta launch phase</h2>
+        <p>Some of the eBay Buy APIs are currently beta releases. This means that they are subject to change and consumers may be asked to update their integration accordingly, depending upon the nature of the change. For details about the implications of different phases of eBay API releases, see <a href="https://developer.ebay.com/api-docs/static/versioning.html#API">API launch stages</a> in the Using eBay RESTful APIs guide.</p>
+        <h2 id="ProductionReq"><a name="Producti2"></a>Production eligibility requirements</h2>
+        <p> Users must meet standard eligibility requirements, get approvals from eBay support organizations, and sign contracts with eBay to access the Buy APIs in production. Meeting the standard eligibility requirements is not a guarantee that production access will be granted. 
+			See <a href="#Applying">Production access process</a> for additional information and instructions for requesting production access.</p>
+        <p>These requirements are grouped into:</p>
+        <ul>
+            <li><a href="#Contract">Contractual requirements</a>
+            </li>
+            <li><a href="#Technica">Technical requirements</a>
+            </li>
+            <li><a href="#reqckout">Application requirements for checkout</a>
+            </li>
+            <li><a href="#User">User experience requirements for eBay guest checkouts</a>
+            </li>
+            <li><a href="#User2">Guest checkout flow requirements</a>
+            </li>
+        </ul>
+        <h3 id="Contract">Contractual requirements</h3>
+        <p>Use of the eBay APIs in production requires the following accounts:</p>
+        <ul>
+            <li>An eBay member account (on <a href="https://www.ebay.com/" target="_blank">ebay.com</a>) (This is required in order to use sandbox.)</li>
+            <li>An <a href="https://developer.ebay.com/join/" target="_blank">eBay Developers Program account</a> (This is required in order to use sandbox.)</li>
+        </ul>
+        <p>In addition to all the contracts and agreements associated with the accounts, such as the <a href="https://pages.ebay.com/help/policies/user-agreement.html" target="_blank">eBay User Agreement</a>, the <a href="/join/api-license-agreement" target="_blank">API License Agreement</a>, and the <a href="https://partnernetwork.ebay.com/legal#network-agreement" target="_blank">eBay Partner Network Agreement</a>, there are contracts with eBay that are specific to the eBay Buy APIs and your business model. You may also be required to sign Mutual Non-disclosure Agreements (MNDAs) depending on your business model. Also, if you want to download the item feed files or get paid for selling eBay items, you need to become an affiliate by joining the <a href="https://partnernetwork.ebay.com/" target="_blank">eBay Partner Network</a>. For additional information, see <a href="https://partnernetwork.ebay.com/our-program/what-is-affiliate-marketing/" target="_blank">Affiliate Marketing Resources</a>.</p>
+        <h3 id="Technica">Technical requirements</h3>
+        <p>Depending on your use case, your application must meet one or both of the following requirements:</p>
+        <ul>
+            <li>Application must be fully functional and reviewable on the eBay sandbox</li>
+            <li>Application must implement affiliate tracking details (needed for revenue share capability)</li>
+        </ul>
+        <h3><a name="reqckout"></a>Application requirements for checkout</h3>
+        <p>There are two types of checkouts:</p>
+        <ul>
+            <li style="font-weight: normal;text-align: left;">The <strong>member </strong>method of the Order API. This is for eBay members who are signed in. </li>
+            <li>
+                <p style="font-weight: normal;">The <strong>Checkout with eBay</strong> widget flow. This is for eBay guests, who are anonymous.</p>
+            </li>
+        </ul>
+        <p style="font-weight: normal;"> The following describes the requirements for these checkout types.</p>
+        <h4><a name="reqMemckout"></a>Application requirements for eBay member checkout (Order API)</h4>
+        <p>To use the <a href="/api-docs/buy/order_v1/resources/methods" target="_blank">checkout_session</a> resource, which supports eBay member checkout, you need approval. This approval will give you access for member checkout in both the sandbox and production API environments. To request approval, see <a href="#Applying" class="MCXref_0">Production access process</a>.</p>
+        <p>The requirements for using eBay member checkout will be communicated to you with your access approval. They will be similar to the requirements for 
+		the <a href="#Guest">Application requirements for eBay guest checkouts</a>. However, there could be additional requirements, and some guest checkout requirements may not apply.</p>
+        <h4><a name="Guest"></a>Application requirements for eBay guest checkouts (Checkout with eBay)</h4>
+        <p>The <b>guest_checkout_session</b> resource lets eBay guests purchase items using the <a href="api-order.html#psb-checkout" target="_blank">Checkout with eBay widget</a>. This lets eBay guests purchase items by credit card, direct debit, or other payment method. </p>
+        <p>Partners <b>must</b> include the following data elements within the commerce flow and adhere to all user experience requirements detailed in the tables below. </p>
+        <h3><a name="User"></a>User experience requirements for eBay guest checkouts</h3>
+        <p>The following sections list the requirements for the browse, view item, partner cart and checkout experiences by marketplace. For a list of marketplaces supported by the Buy APIs, see 
+		<a href="/api-docs/buy/static/ref-marketplace-supported.html" target="_blank">Buy API Support by Marketplace</a>.</p>
+        <div class="msgbox_note">
+            <p class="msgbox_noteInDiv"><span class="autonumber"><span><b><span style="color: #004680;" class="mcFormatColor">Note: </span></b></span></span>The following user experience requirements apply to all guest checkouts, except where noted.</p>
+        </div>
+        <h4>User experience guest checkout item requirements</h4>
+        <p>The following table lists the browse/search requirements for items in all marketplaces.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        
+                    </th>
+                    <th>Fields Returned by Browse and Feed APIs</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td>Fixed Price Items</td>
+                <td>
+                    <p><b>Required:</b> Only surface FIXED PRICE items</p><b>Browse</b> and <b>Feed</b> APIs: filter <code>buyingOptions</code> for <code>FIXED_PRICE</code></td>
+            </tr>
+            <tr>
+                <td>Sort browse</td>
+                <td>
+                    <p><b>Prohibited:</b> Disabling eBay's sort functionality. Partners and users are <i>not</i> permitted to sort items.</p><b>Note:</b> The data provided is already sorted to present the most relevant/best match according to eBay's algorithms; further sorting would produce a sub-optimal experience.</td>
+            </tr>
+            <tr>
+                <td>Free Shipping</td>
+                <td>
+                    <p><b>Recommended:</b> Surface only items offering free shipping</p><b>Browse</b> API: filter <code>maxDeliveryCost</code> for <code>0</code></td>
+            </tr>
+            <tr>
+                <td>Delivery Country</td>
+                <td>
+                    <p><b>Required:</b> Filter delivery country for domestic market</p>
+                    <p>You can sell only items that are delivered within the same country as the marketplace of the item. For example, if the marketplace is EBAY_DE you can sell only items delivered in Germany.</p>
+                    <p><b>Browse</b> API: filter <code>deliveryCountry</code></p><b>Feed</b> API: filter <code>shipToIncludedRegions</code></td>
+            </tr>
+        </tbody></table>
+        <h4>User experience guest checkout view item and Partner's cart pages</h4>
+        <p>The following table lists the information required on the View Item and Partner's Cart pages in all marketplaces supported by the 
+		Order API.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>eBay Logo</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the eBay logo</b> </p>
+                        <p>Provided by eBay (<a href="https://developer.ebay.com/devzone/rest-shared/ebay-logos.zip">ebay-logos.zip</a>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>eBay Item Image</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show an eBay image of the item</b> </p>
+                        <p>The image of the item must be an eBay image.</p>
+                        <p>Response fields:</p>
+                        <ul>
+                            <li><code>image.imageUrl</code>
+                            </li>
+                            <li><code>additionalImages.imageUrl</code>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Title</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the title of the item</b> </p>
+                        <ul>
+                            <li><b>DE</b>: Full title required.</li>
+                            <li><b>Other sites</b>: You can show a shortened version of the full title as long as the full title can be displayed if the buyer hovers over it.</li>
+                            <li><b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: Full title recommended</li>
+                        </ul>
+                        <p>Response field  <code>title</code></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Price</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the BIN (Buy It Now) Price</b>
+                        </p>
+                        <ul>
+                            <li>Shipping costs must always be called out separately. Even if it is free shipping.</li>
+                            <li><b>DE:</b> You must disclose that the cost includes any 'value added taxes' (VAT). See <a href="#VAT-display">Value Added Tax</a> below.</li>
+                        </ul>
+                        <p>Response field <code>price</code></p>
+                        <p><b>Recommended:</b> Show strikethrough price / discount / savings</p>
+                        <p>Response container name <code>marketingPrice</code></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Unit Price</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td>View Item
+					</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the unit price and unit measure when returned</b>
+                        </p>
+                        <p>This is returned only by some European marketplaces.</p>
+                        <p>Response fields:</p>
+                        <ul>
+                            <li><code>unitPrice</code>
+                            </li>
+                            <li><code>unitPricingMeasure</code>
+                            </li>
+                        </ul><b>CA</b>, <b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: Recommended</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Description&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>View Item</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show item description</b>
+                        </p>
+                        <p>You can show a shorten version of the description as long as there is a link to the full description.</p>
+                        <p>Response fields:</p>
+                        <ul>
+                            <li><code>description</code>
+                            </li>
+                            <li><code>shortDescription</code>
+                            </li>
+                        </ul>
+                        <p>For item variations that share the same description.</p>
+                        <p>Response container name <code>commonDescriptions</code></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Quantity</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the total number of items being purchased</b>
+                        </p>
+                        <p>Manually coded by partner.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Condition</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart	</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show item condition</b>
+                        </p>
+                        <p>You must indicate when the item is <i>not</i> new.</p>
+                        <p><b>Note:</b> All items in the groceries category are new. </p>
+                        <p>Response field  <code>condition </code></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shipping Cost</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart	</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show shipping cost</b>
+                        </p>
+                        <p>Response field  <code>shippingOptions[i].shippingCost</code></p>
+                        <p><b>Note:</b> This requires providing the buyer's US zip code in the <a href="https://developer.ebay.com/api-docs/buy/static/api-browse.html#Headers">X-EBAY-C-ENDUSERCTX contextualLocation</a>request header.</p>
+                        <p><b>Show domestic shipping only</b>
+                        </p>
+                        <p>You can sell only items that are delivered within the same country as the marketplace of the item. For example, if the marketplace is EBAY_DE you can sell only items delivered in Germany.</p>
+                        <p><b>Exception on View Item page:</b> Items on the US marketplace that are shippable or delivered to Taiwan can be shown.</p>
+                        <p><b>Recommended:</b> Show item location</p>
+                        <p>Response fields:</p>
+                        <ul>
+                            <li><code>itemLocation.city</code>
+                            </li>
+                            <li><code>itemLocation.country</code>
+                            </li>
+                        </ul>
+					Manually coded by partner.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shipping Options</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show shipping option</b>
+                        </p>
+                        <p>Show the shipping options.</p>
+                        <p>Response container name <code>shippingOptions</code></p>
+                        <p><b>CA</b>, <b>DE</b>, <b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: This can be a link to this information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estimated Delivery Date</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show estimated delivery date</b>
+                        </p>
+                        <p>Response fields:</p>
+                        <ul>
+                            <li><code>shippingOptions.minEstimatedDeliveryDate</code>
+                            </li>
+                            <li><code>shippingOptions.maxEstimatedDeliveryDate</code>
+                            </li>
+                        </ul>
+                        <div class="msgbox_note">
+                            <p class="msgbox_noteInDiv"><span class="autonumber"><span><b><span style="color: #004680;" class="mcFormatColor">Note: </span></b></span></span>
+                                </p><p>For some shipping types these fields are null because the data is not available. When this happens, after the purchase is complete, you need to show the buyer the following.</p>
+                                <p>To get the estimated date, click on the link in the purchase confirmation email from eBay. On the page that appears, you can contact the seller and ask them for the delivery date.</p>
+                            
+                        </div>
+                        <p><b>US:</b> This requires providing the buyer's US zip code in the <a href="https://developer.ebay.com/api-docs/buy/static/api-browse.html#Headers">X-EBAY-C-ENDUSERCTX contextualLocation</a> request header.</p>
+                        <p><b>DE:</b> This can be a link to this information.</p>
+                        <p><b>CA</b>, <b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: Recommended</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shipping Exclusions</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td>View Item					</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Link to shipping exclusions</b>
+                        </p>
+                        <p><b>GB:</b> Wherever "Free postage" is included, the "see exclusions" link
+						must be added in close proximity to the postage information and the text must be red as required by Trading Standards.</p>
+                        <p><b>DE</b>, <b>ES</b>, <b>FR</b>,  <b>IT</b>: Recommended</p>
+                        <p>Manually coded by partner.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Payment Methods</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show Available Payment Methods</b>
+                        </p>
+                        <p><b>CA</b>, <b>DE</b>, <b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: You can use a link to this information so long as the payment information is also available at checkout out.</p>
+                        <p>Manually coded by partner.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seller Name</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the eBay seller user name</b>
+                        </p>
+                        <p>Response field <code>seller.username</code></p>
+                        <p><b>Strongly Suggested</b>: Show Seller Ratings</p>
+                        <p>Response fields:</p>
+                        <ul>
+                            <li><code>seller.feedbackPercentage</code>
+                            </li>
+                            <li><code>seller.feedbackScore</code>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seller Terms and Conditions</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td>View Item</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the seller's terms and conditions</b>
+                        </p>
+                        <p>This can be one click away if the link is transparent, such as labeled "Terms and Conditions" or grouped with the seller information under "legal information".</p>
+                        <p>Response field: <code>seller.termsOfService</code></p>
+                        <p><b>CA</b>, <b>DE</b>, <b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: This can be a link to this information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Return Information</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>View Item					</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show seller return information</b>
+                        </p>
+                        <p>This can be one click away if the link is transparent (i.e. labeled "returns policy" or grouped with seller information under "legal information".</p>
+                        <p>Response container name <code>returnTerms</code></p>
+                        <p><b>DE</b>, <b>FR</b>, <b>GB</b>: Must link to the seller's full return policy.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>(EEK) European Energy <br>Efficiency rating</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td>View Item					</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the European energy efficiency rating</b>
+                        </p>
+                        <p>Response field  <code>energyEfficiencyClass</code></p>
+                        <p><b>ES</b>, <b>FR</b>, <b>GB</b>, <b>IT</b>: Recommended</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a name="VAT-display"></a>Value Added Tax</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td style="text-align: center;"> </td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>Show the Value Added Tax (VAT)</b>
+                        </p>
+                        <p>VAT is included in the price and does not need to be specifically stated.</p>
+                        <p><b>DE:</b> This must be shown like this:</p>
+                        <figure align="center">
+                            <img src="/api-docs/res/Resources/Images/buy-ig/vat-included_155x74.jpg">
+                        </figure>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>AU Groceries</th>
+                    <th>AU</th>
+                    <th>CA</th>
+                    <th>DE</th>
+                    <th>ES</th>
+                    <th>FR</th>
+                    <th>GB</th>
+                    <th>IT</th>
+                    <th>US</th>
+                    <th>Page</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>In Footer: Links to eBay User Agreement and Partner's Privacy Policy</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td style="text-align: center;">✔</td>
+                    <td>
+                        <p>View Item</p>
+                        <p>Cart</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td colspan="11">
+                        <p><b>In the footer, include the following links:</b>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>Link to the <b>eBay User Agreement</b></p>
+                                <p>For the link specific to the marketplace, see <a href="buying-ig/buying-ig/ref-xo-disclosure-links.htm" class="MCXref xref">eBay Disclosure Links</a>.</p>
+                            </li>
+                            <li>
+                                <p>Link to the <b>Partner's privacy policy</b></p>
+                                <p>Partner's must create a privacy policy and provide the link to this document in the footer.</p>
+                                <p>For information about privacy policies, see the <i>Protecting User Privacy</i> section of the <a href="https://developer.ebay.com/products/license">API License Agreement</a>.</p>
+                            </li>
+                        </ul>
+                        <p>Manually coded by partner.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>User experience guest checkout purchase page</h3>
+        <p>The following table lists the information required on the checkout (Buy button) page for all marketplaces supported by the Order API.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Fields Returned by Order API Guest Methods</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td>eBay Logo</td>
+                <td>
+                    <p><b>Show the eBay logo</b>
+                    </p>
+                    <p>Provided by eBay (<a href="https://developer.ebay.com/devzone/rest-shared/ebay-logos.zip">ebay-logos.zip</a>).</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Seller Name</td>
+                <td>
+                    <p><b>Show seller name of each item in cart</b>
+                    </p>
+                    <p>Response field  <code>lineItems[].seller.username</code></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td>
+                    <p><b>Show item title of each item in cart</b>
+                    </p>
+                    <p>Response field  <code>lineItems[].title </code></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>
+                    <p><b>Show quantity of each item in cart</b>
+                    </p>
+                    <p>Response field <code>lineItems[].quantity</code></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Item Price</td>
+                <td>
+                    <p><b>Show price of each item in cart</b>
+                    </p>
+                    <p>Response field  <code>lineItems[].netPrice</code></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a name="total-shipping-cost"></a>Total Shipping Cost</td>
+                <td><b>Show shipping costs and delivery date</b>
+                    <ul>
+                        <li>
+                            <p><b>Show shipping options</b>
+                            </p>
+                            <p>Response container name <code>shippingOptions</code></p>
+                        </li>
+                        <li>
+                            <p><b>Show shipping address</b>
+                            </p>
+                            <p>Response container name <code>shippingAddress</code></p>
+                        </li>
+                        <li>
+                            <p><b>Show shipping cost</b>
+                            </p>
+                            <p>Response field name = <code>pricingSummary.deliveryCost</code></p>
+                        </li>
+                        <li>
+                            <p><b>Show import charges</b>
+                            </p>
+                            <p>Response field name = <code>lineItems.shippingOptions.importCharges</code></p>
+                        </li>
+                        <li>
+                            <p><b>Show estimated deliver date</b>
+                            </p>
+                            <p>Response fields:</p>
+                            <ul>
+                                <li><code>shippingOptions.minEstimatedDeliveryDate</code>
+                                </li>
+                                <li><code>shippingOptions.maxEstimatedDeliveryDate</code>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Cost</td>
+                <td>
+                    <p><b>Show total cost of the order</b>
+                    </p>
+                    <p>Response field  <code>pricingSummary.total</code></p>
+                    <p><b>DE:</b> You must disclose that the Total Cost includes any 'value added taxes' (VAT).</p>
+                    <p><b><a name="reqImport"></a>Requirements if there are import charges:</b>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>You must show a breakdown of the shipping and import costs. At a minimum you must show the subtotal, shipping cost, import charges, and order total. You can also show additional cost breakdown, such as delivery discount, etc.</p>
+                            <p>Response fields:</p>
+                            <ul>
+                                <li>subtotal = <code>pricingSummary.total</code> <b>-</b> <code>pricingSummary.importCharge</code> <b>-</b> <code>pricingSummary.deliveryCost</code></li>
+                                <li>shipping cost = <code>pricingSummary.deliveryCost</code></li>
+                                <li>import charges = <code>pricingSummary.importCharges</code></li>
+                                <li>order total = <code>pricingSummary.total</code></li>
+                            </ul>
+                        </li>
+                        <li>You must show the buyer the details about the shipping and import costs and there must be a link to the eBay Global Shipping Program terms and conditions (https://pages.ebay.com/shipping/globalshipping/buyer-tnc.html). This information can be displayed in a pop-up.</li>
+                    </ul>
+                    <p>The following are examples of the text:</p>
+                    <ul>
+                        <li>This amount includes seller specified domestic shipping charges as well as applicable shipping and handling fees, but is independent of import charges. For additional information, see the Global Shipping Program <a href="https://pages.ebay.com/shipping/globalshipping/buyer-tnc.html">terms and conditions</a>. </li>
+                        <li>This amount includes applicable customs duties, taxes, brokerage, and other fees. Exclusions apply. For additional details, see the <a href="https://pages.ebay.com/shipping/globalshipping/buyer-tnc.html">terms and conditions</a>.</li>
+                    </ul>
+                    <div class="MCDropDown">
+                        <div class="MCDropDownHead_0">See examples of how to display the messages and the cost breakdown</div>
+                        <div class="MCDropDownBody">
+                            <figure style="text-align: center;">
+                                <img src="/api-docs/res/Resources/images/buy-ig/shipping-breakdown.jpg" alt="messages and the cost breakdown image">
+                            </figure>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+        <h3><a name="User2"></a>Guest checkout flow requirements</h3>
+        <p>The following table lists the requirements for guest checkout flows for all marketplaces supported by the Order API.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Order API Guest Checkout Resources</th>
+                </tr>
+            </thead>
+            <tbody><tr>
+                <td>Guest Purchase Order ID</td>
+                <td>
+                    <p><b>Do not show the purchase order ID to the buyer</b>
+                    </p>
+                    <p>This ID is used only by the partner in the <b>getGuestPurchaseOrder</b> method to retrieve the purchase order details.</p>
+                    <p>Response field  <code>purchaseOrderId</code></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Buyer's Contact Information</td>
+                <td>
+                    <p><b>Provide buyer's email and their full billing and shipping address.</b>
+                    </p>
+                    <p>This is needed to facilitate the checkout and post-transaction communication between the seller and buyer.</p>
+                </td>
+            </tr>
+        </tbody></table>
+        <h2 id="Applying"><a name="Applying"></a>Production access process</h2>
+        <p>The following is the application process for obtaining production access.</p>
+        <ol>
+            <li value="1">If you haven't already, sign up for an <a href="https://partnernetwork.ebay.com/" target="_blank">eBay Partner Network (EPN) account</a>:
+            	<ul><li>Ensure that the information you provide is accurate and be as thorough as possible when completing your application.</li><li>Read and understand the EPN <a href="https://partnernetwork.ebay.com/legal" target="_blank">Policies</a>.</li></ul></li>
+            <li value="2">Completely fill out and submit the <a href="https://partnernetwork.ebay.com/page/developer-questionnaire" target="_blank">Buy API Application</a>.
+				<ul><li>Reply to the submission confirmation email and include mocks and data flows of your user experience.</li><li>Within 10 business days, the eBay Partner Network will respond, approving or declining your application.</li></ul></li>
+            <li value="3">If your business model is approved by the eBay Partner Network, 
+				<a href="https://developer.ebay.com/my/support/tickets?tab=app-check" target="_blank">open a support ticket</a> with eBay Developer Support, using "Buy API Production Access (eBay user ID)" in the subject line. In the ticket, include the following:
+         		<ul><li>EPN registered  eBay user ID</li><li>Detailed instructions on how to access and test your application in Sandbox</li><li>The approval email from EPN as an attachment</li></ul></li>
+            <li value="4">The eBay Developer Support team will initiate the application review/approval process:
+				<ol><li value="1">eBay Developer Support team reviews the application for compliance</li><li value="2">You must make changes as requested by the eBay Support team</li><li value="3">When the Support team is satisfied with your app, you are given eBay contracts</li><li value="4">Upon return of signed contracts, the eBay Support team enables production access for your application</li></ol></li>
+        </ol>
+    
+</section><aside class=app-api-docs-related-topics><div class=related-topics-menu><h2>Related topics</h2><ul><li><details><summary class=selected>API Documentation</summary><div class=related-topic-children><a href=/api-docs/buy/browse/overview.html>Browse API</a><a href=/api-docs/buy/deal/overview.html>Deal API</a><a href=/api-docs/buy/feed/overview.html>Feed Beta API</a><a href=/api-docs/buy/feed/v1/overview.html>Feed API</a><a href=/api-docs/buy/marketing/overview.html>Marketing API</a><a href=/api-docs/buy/offer/overview.html>Offer API</a><a href=/api-docs/buy/order/overview.html>Order API</a></div></details></li><li><a href=/develop/guides>Guides</a></li><li><details><summary>Related Docs</summary><div class=related-topic-children><a href=/api-docs/static/ebay-rest-landing.html>Using eBay RESTful APIs</a><a href=/develop/apis/restful-apis/commerce-apis>Commerce APIs</a><a href=/develop/apis/restful-apis/developer-apis>Developer APIs</a><a href=/devzone/finding/callref/index.html>Finding API</a><a href=/devzone/shopping/docs/callref/index.html>Shopping API</a></div></details></li></ul></div></aside><!--M_6e0ba3d5#s0-2-0-16-1-0-0-18--><aside class="app-documentation-right-nav static-documentation-nav" id=s0-2-0-16-1-0-0-18-right-nav></aside><!--M_6e0ba3d5/--></main></div></main></div><footer class="_footer_iw9sy_1 app-global-footer"><div><div class=_main_iw9sy_26><h3>eBay for Developers.</h3><div class=_links_iw9sy_43><a href=https://community.ebay.com/t5/Developer-Groups/ct-p/developergroup>Community Forum</a><a href=/my/support/tickets>Technical Support</a><a href=/develop/api>APIs</a><a href=/support/faq>FAQs</a></div></div><div class=_legal_iw9sy_55><p class=_copyright_iw9sy_63>Copyright 1999&#8212;2026 eBay Inc. All rights reserved.</p><a class=legal-link href=/join/api-license-agreement>API License Agreement</a><a title="opens in new window or tab" class=legal-link target=_blank href=http://pages.ebay.com/help/policies/user-agreement.html?rt=nc>User agreement</a><a title="opens in new window or tab" class=legal-link target=_blank href=http://pages.ebay.com/help/policies/privacy-policy.html?rt=nc>Privacy policy</a><a title="opens in new window or tab" class=legal-link target=_blank href=http://pages.ebay.com/help/account/cookies-web-beacons.html>Cookies</a></div></div></footer></div><!--M_6e0ba3d5#s0-2-0-18--><div class=_root_13pe3_1><span class=seek-ui-cta><!--F#3--><button class="_feedbackButton_13pe3_28 icon-btn" data-ebayui type=button data-click='{"sid":"p0.l183380"}' role=button><!--F#1--><svg class="icon icon--24" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 24 24" id=icon-feedback-24><path fill-rule=evenodd clip-rule=evenodd d="M5 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h2a1 1 0 1 0 0-2H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 1 0 2 0V4a3 3 0 0 0-3-3H5Zm1 6a1 1 0 0 1 1-1h7a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm1 3a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H7Zm-1 5a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm17.195-4.999a2.75 2.75 0 0 0-3.889 0l-7.344 7.344a2 2 0 0 0-.433.648l-1.217 2.93c-.512 1.236.726 2.474 1.96 1.961l2.932-1.217c.242-.1.462-.247.647-.433l7.344-7.344a2.75 2.75 0 0 0 0-3.889Zm-2.474 1.414a.75.75 0 0 1 1.06 1.06l-7.344 7.345-1.814.753.753-1.813 7.345-7.345Z"></path></symbol></defs><use href="#icon-feedback-24" /></svg><!--F/--></button><!--F/--></span><div data-html2canvas-ignore=true aria-labelledby=s0-2-0-18-@seek-survey-deco.content-@dialog-@dialog-dialog-title aria-modal=true role=dialog class="lightbox-dialog lightbox-dialog--mask-fade lightbox-dialog--wide" hidden><div class="lightbox-dialog__window lightbox-dialog__window--animate"><!--F#9--><!--F/--><div class="lightbox-dialog__header"><!--F#14--><!--F/--><!--F#15--><h2 class=lightbox-dialog__title id=s0-2-0-18-@seek-survey-deco.content-@dialog-@dialog-dialog-title><!--F#2--><div><div></div><div style="position: absolute; top: 0px; right: 0px"><button class=icon-btn type=button aria-label="Close Dialog"><svg class="icon icon--16" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 16 16" id=icon-close-16><path d="M2.293 2.293a1 1 0 0 1 1.414 0L8 6.586l4.293-4.293a1 1 0 1 1 1.414 1.414L9.414 8l4.293 4.293a1 1 0 0 1-1.414 1.414L8 9.414l-4.293 4.293a1 1 0 0 1-1.414-1.414L6.586 8 2.293 3.707a1 1 0 0 1 0-1.414Z"></path></symbol></defs><use href="#icon-close-16" /></svg></button></div></div><!--F/--></h2><!--F/--></div><div class="lightbox-dialog__main"><!--F#16--><!--F#1--><!--F#19--><div style=display:none class="seek-ui seek-success-msg"><div style="display: inline-block" class="seek-ui seek-success-check"><span aria-text="" style="display: inline-block; padding-right: 4px"><svg class="seek-ui success-foreground icon icon--24" focusable=false aria-hidden=true><defs><symbol viewbox="0 0 24 24" id=icon-confirmation-filled-24><path fill-rule=evenodd clip-rule=evenodd d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12c0-3.183-1.264-6.235-3.515-8.485A11.996 11.996 0 0 0 12 0Zm4.715 10.035A1 1 0 0 0 15.3 8.621l-4.632 4.631-1.962-1.962a1 1 0 0 0-1.414 1.415l2.67 2.669a1 1 0 0 0 1.413 0l5.339-5.339Z"></path></symbol></defs><use href="#icon-confirmation-filled-24" /></svg></span></div><div style="display: inline-block; white-space: preserve-breaks" class=seek-ui-a11ySuccessMsg><!--F#4--><!--F#2--><div><h4 class=_successHeader_13pe3_34>Thank you for helping us to improve the eBay developer program.</h4><div class=_successContent_13pe3_38>While we are not able to respond directly to your comments, we will carefully review them to improve your experience with eBay developer program!</div><div class=_successContent_13pe3_38><p>If you need help, contact <a href=/my/support/tickets>Developer Technical Support</a> .</p></div></div><!--F/--><!--F/--></div></div><!--F/--><!--F/--><!--F/--></div></div></div></div><!--M_6e0ba3d5/--><div class=_root_rzumy_1 data-edp-loading-overlay=mask><div class=_mask_rzumy_6></div></div><div class=_root_1fzok_1 data-edp-loading-overlay=spinner><span class="progress-spinner progress-spinner--large" role=img aria-label=busy><!--M_6e0ba3d5#s0-2-0-26-1-1-0--><svg data-marko-key="@svg s0-2-0-26-1-1-0" class="icon icon--30" focusable=false aria-hidden=true><defs data-marko-key="@defs s0-2-0-26-1-1-0"><symbol viewbox="0 0 24 24" fill=none id=icon-spinner-30><path fill-rule=evenodd clip-rule=evenodd d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 11.4477 22.4477 11 23 11C23.5523 11 24 11.4477 24 12C24 14.3734 23.2962 16.6935 21.9776 18.6668C20.6591 20.6402 18.7849 22.1783 16.5922 23.0866C14.3995 23.9948 11.9867 24.2324 9.65892 23.7694C7.33115 23.3064 5.19295 22.1635 3.51472 20.4853C1.83649 18.8071 0.693605 16.6689 0.230582 14.3411C-0.232441 12.0133 0.00519943 9.60051 0.913451 7.4078C1.8217 5.21509 3.35977 3.34094 5.33316 2.02236C7.30655 0.703788 9.62663 0 12 0C12.5523 0 13 0.447715 13 1C13 1.55228 12.5523 2 12 2Z" fill="var(--color-spinner-icon-background, #3665F3)"></path><path fill-rule=evenodd clip-rule=evenodd d="M14.1805 1.17194C14.3381 0.642616 14.895 0.341274 15.4243 0.498872C17.3476 1.07149 19.0965 2.11729 20.5111 3.54055C21.9257 4.96382 22.9609 6.71912 23.5217 8.64584C23.6761 9.17611 23.3714 9.73112 22.8411 9.88549C22.3108 10.0399 21.7558 9.73512 21.6015 9.20485C21.134 7.59925 20.2715 6.13651 19.0926 4.95045C17.9138 3.76439 16.4563 2.8929 14.8536 2.41572C14.3243 2.25812 14.0229 1.70126 14.1805 1.17194Z" fill="var(--color-spinner-icon-foreground, #E5E5E5)"></path></symbol></defs><use href="#icon-spinner-30" /></svg><!--M_6e0ba3d5/--></span></div><!--M_6e0ba3d5#s0-2-0-27--><div hidden></div><!--M_6e0ba3d5/--><!--M_6e0ba3d5#s0-2-0-28--><div hidden></div><!--M_6e0ba3d5/--><script src="https://ir.ebaystatic.com/cr/v/c1/ebay-cookies/6.js" crossorigin ></script><script type="text/javascript">(function(scope) {var trackingInfo = {"X_EBAY_C_CORRELATION_SESSION":"si=950c7db51a10a626dabcc064fffedae7,c=1,serviceCorrelationId=01M6AGRZDN07NCFNS38JYF0AX9,operationId=3292105,trk-gflgs=QA**"};scope.trkCorrelationSessionInfo={};scope.trkCorrelationSessionInfo.getTrackingInfo=function(){return trackingInfo;};scope.trkCorrelationSessionInfo.getTrackingCorrelationSessionInfo=function(){return trackingInfo.X_EBAY_C_CORRELATION_SESSION};})(window)</script><script type="text/javascript">if(typeof raptor !== "undefined" && raptor.require){var Uri=raptor.require("ebay/legacy/utils/Uri");$uri=function(href){return new Uri(href);};window.raptor.extend(window.raptor, require("ebay/legacy/adaptor-utils"));}</script><script id="taasHeaderRes" type="text/javascript" src="https://ir.ebaystatic.com/cr/v/c01/251201KCSGM4WMR5VP59.js" crossorigin ></script><script id="taasContent" type="text/javascript">try {new window.TaaSTrackingCore({"psi":"ADH294F0*","rover":{"imp":"/roverimp/0/0/9","clk":"/roverclk/0/0/9","uri":"https://rover.ebay.com"},"pid":"p3292105"});var TaaSIdMapTrackerObj = new TaaSIdMapTracker();TaaSIdMapTrackerObj.roverService("https://rover.ebay.com/idmap/0?footer");} catch (err) { console && console.log && console.log(err); }</script><script>/* ssgST: excluded from sampling */</script><script>Object.assign($i18n=window.$i18n||{},{});;(window.$ebay||($ebay = {})).tracking={pageId:'3292105',pageName:'EDPWEB_DOCUMENTATION_STATIC_APIGROUP_DOCUMENTATION'};$M_6e0ba3d5_C=(window.$M_6e0ba3d5_C||[]).concat({"o":{"l":1,"g":{"params":{"api_group":"buy","page_key":"buy-requirements.html"}},"w":[["s0-2-0-13",0,{"theme":"system","pathname":"/api-docs/buy/static/buy-requirements.html","signedIn":false,"headername":""},{"f":1}],["s0-2-0-16-1-0-0-1-2[0]-0",1,null],["s0-2-0-16-1-0-0-1-2[1]-0",1,null],["s0-2-0-16-1-0-0-1-2[2]-0",1,null],["s0-2-0-16-1-0-0-1-2[3]-0",1,null],["s0-2-0-16-1-0-0-5",2,{"leftNavDataModel":{"navigationTitle":"","keysToExpand":["buy-requirements","buying-ig-landing"],"selectedKey":"buy-requirements","navigationSourceData":{"key":"staticPageHtmlMenuItems","title":"staticPageHtmlMenuItems","children":[{"url":"buying-ig-landing.html","title":"Buying Integration Guide","key":"buying-ig-landing","children":[{"url":"buy-overview.html","title":"Buy APIs Overview","key":"buy-overview"},{"title":"Buy APIs Requirements","key":"buy-requirements","children":[{"url":"#Using","title":"Using the APIs in sandbox","key":"Using"},{"url":"#Beta","title":"Beta launch phase","key":"Beta"},{"url":"#ProductionReq","title":"Production eligibility requirements","key":"ProductionReq"},{"url":"#Applying","title":"Production access process","key":"Applying"}]},{"url":"api-browse.html","title":"Browse API","key":"api-browse"},{"url":"api-charity.html","title":"Charity API","key":"api-charity"},{"url":"api-deal.html","title":"Deal API","key":"api-deal"},{"url":"api-feed.html","title":"Feed API","key":"api-feed"},{"url":"api-feed_beta.html","title":"Feed API beta","key":"api-feed_beta"},{"url":"api-marketing.html","title":"Marketing API","key":"api-marketing"},{"url":"api-offer.html","title":"Offer API","key":"api-offer"},{"url":"api-order.html","title":"Order API","key":"api-order"},{"url":"buy-categories.html","title":"Categories for Buy APIs","key":"buy-categories"},{"url":"ref-marketplace-supported.html","title":"Buy API Support by Marketplace","key":"ref-marketplace-supported"},{"url":"ref-buy-browse-filters.html","title":"Buy API Field Filters","key":"ref-buy-browse-filters"}]}]}}},{"f":1,"s":{"showSpecs":false}}],["s0-2-0-16-1-0-0-18",3,{"class":"static-documentation-nav","container":"app-api-docs-static-content"},{"f":1,"s":{"container":"app-api-docs-static-content","h2List":[],"prevHeader":"","headerElement":"h2"}}],["s0-2-0-18",4,{"pageName":"EDPWEB_DOCUMENTATION_STATIC_APIGROUP_DOCUMENTATION","userName":"","surveyHost":"https://www.ebay.com","surveyAlias":"deco.content"},{"f":1,"s":{"pageTitle":"Home Page","pageURL":"/","pageBreadcrumb":"","surveyAlias":"deco.content","pageId":0}}],["s0-2-0-26-1-1-0",1,null],["s0-2-0-27",5,{},{"f":1}],["s0-2-0-28",6,{},{"f":1}]],"t":["Eb","J7P2FGQ","ub","tb","Ab","db","Cc"]},"$$":[{"l":["g","url"],"r":{"type":"URL","value":"https://developer.ebay.com/api-docs/buy/static/buy-requirements.html"}}]})</script></body></html><!-- RcmdId EDPWEB_DOCUMENTATION_STATIC_APIGROUP_DOCUMENTATION,RlogId t6favpfg4dlkr%3D9%60bwt%60d5%60jhs.0%3Fc%3Aa03%3A00*w%60ut222*oh%602t-1a1950c7d9a-0x705 --><!-- SiteId: 0, Environment: production, AppName: edpweb, PageId: 3292105 --><script type="text/javascript">(function(scope){var CosHeaders={"X_EBAY_C_TRACKING":"guid=950c7db51a10a626dabcc064fffedae7,pageid=3292105,cobrandId=0"};scope.cosHeadersInfo={getCosHeaders:function(){return CosHeaders;},getTrackingHeaders:function(){return CosHeaders.X_EBAY_C_TRACKING;}};})(window)</script>

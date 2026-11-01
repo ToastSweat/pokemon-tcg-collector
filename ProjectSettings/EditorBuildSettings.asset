@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VintageCollector/Scenes/Bootstrap.unity
-    guid: 3c57369eb8362ab4ab8b63f682bd652a
+    path: Assets/VintageCollector/Scenes/StartupFinal.unity
+    guid: 40ad9a63826af9946a0a45f91e1e78ae
+  - enabled: 1
+    path: Assets/VintageCollector/Scenes/BootstrapFinal.unity
+    guid: 4d1bc48b0f8760248bfb4e48830a01e4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

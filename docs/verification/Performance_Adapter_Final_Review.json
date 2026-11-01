@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "originalReport": {
+    "path": ".artifacts/shared-back-base-wrapper-review/review.json",
+    "sha256": "370d901f4cbfd9915eb34ef3d80c3a8332065559d2ecf8fd001417ce60b4bca0"
+  },
+  "coverage": {
+    "fullAdapterAndOriginalRead": true,
+    "exactDiffIndependentlyRegenerated": true,
+    "onlyTwoPropertyBodiesChanged": true,
+    "originalFourArgumentApiUnchanged": true,
+    "knownThreeContextsSameBorrowedBackReference": true,
+    "unknownNullCaseAndWhitespaceContextsFailClosed": true,
+    "missingBackBindingSlotsAndProviderFallbacks": true,
+    "stableTransactionAllThreeSlotsRetryAndRecreation": true,
+    "arrayElementAndWholeArraySnapshot": true,
+    "jungleFossilWrapperBehaviorUnchanged": true,
+    "rngAudioFaceMaskLifecycleSourceUnchanged": true,
+    "freshSuppliedTests": {
+      "checks": 43,
+      "failures": 0,
+      "exit": 0
+    },
+    "independentNegativeEdgeTests": {
+      "checks": 18,
+      "failures": 0,
+      "exit": 0
+    },
+    "actualUnityReferenceCompile": {
+      "Unity": "6000.2.14f1",
+      "nonEditorRuntimeSources": 64,
+      "warningsAsErrors": true,
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "membershipMatches": true,
+      "sourceHashMismatches": [],
+      "referenceHashMismatches": [],
+      "sourcePinsAfterCompileMismatches": []
+    },
+    "oldRedEvidenceReadNotRerun": {
+      "back": {
+        "checks": 12,
+        "failures": 3
+      },
+      "wrapper": {
+        "checks": 31,
+        "failures": 10
+      }
+    },
+    "rootAdapterUnchangedAndHashMatched": true,
+    "nativeExecution": false,
+    "sceneBindingProof": false,
+    "evidence": [
+      "verification.json",
+      "negative-edges.json"
+    ]
+  },
+  "approvedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/shared-back-base-wrapper-work/proposal/Assets/VintageCollector/Media/Phase5PresentationMedia.cs": "69e6a2a0d13113761da5bbe947447f37ab02acd337487695997da2baa8a0e713"
+  },
+  "nativeAcceptance": false
+}

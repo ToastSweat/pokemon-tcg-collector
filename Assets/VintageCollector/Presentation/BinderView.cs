@@ -6,6 +6,9 @@ namespace VintageCollector.Presentation
     [Serializable]
     public sealed class BinderView
     {
+        public string printingId, setLabel;
+        public bool canSelectSet;
+        public SetChoiceView[] supportedSets;
         public bool open, busy, restartRequired;
         public bool pendingPhysicalEdit, pendingImportConfirm;
         public string mode, filter, search, status, error, recoveryNotice;

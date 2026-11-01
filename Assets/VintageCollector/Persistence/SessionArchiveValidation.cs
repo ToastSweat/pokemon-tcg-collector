@@ -29,12 +29,14 @@ namespace VintageCollector.Persistence
     for(int j=0;j<x.newToVirtual.Length;j++) if(x.newToVirtual[j]!=y.newToVirtual[j]) throw new InvalidDataException("Session award conflict");
    }
   }
-  public static SessionSnapshot Validate(IDictionary<string,byte[]> files,IStateSerializer serializer,Catalog catalog) {
+  public static SessionSnapshot Validate(IDictionary<string,byte[]> files,IStateSerializer serializer,Catalog catalog) {return Validate(files,serializer,ApprovedSetRegistry.ForLegacyBase(catalog));}
+  public static SessionSnapshot Validate(IDictionary<string,byte[]> files,IStateSerializer serializer,ApprovedSetRegistry registry) {
+   if(files==null || serializer==null || registry==null)throw new ArgumentNullException();
    SessionData chosen=null;var copies=new List<KeyValuePair<long,byte[]>>();
    foreach(string n in new[]{"state.save","state.backup"}) {
     byte[] bytes; if(!files.TryGetValue(n,out bytes)) continue;
     SessionData d; try {string payload=Payload(bytes);VintageCollector.Collections.CollectionJsonShape.Session(payload);d=serializer.Deserialize(payload);} catch(Exception e) {throw new InvalidDataException("Session archive cannot be decoded",e);}
-    StateValidation.Session(d,catalog); if(d.revision==0) throw new InvalidDataException("Persisted blank session is not a legacy archive");
+    StateValidation.Session(d,registry); if(d.revision==0) throw new InvalidDataException("Persisted blank session is not a legacy archive");
     if(chosen!=null) Compatible(chosen,d);
     copies.Add(new KeyValuePair<long,byte[]>(d.revision,bytes));
     if(chosen==null || d.revision>chosen.revision) chosen=StateCopy.Session(d);

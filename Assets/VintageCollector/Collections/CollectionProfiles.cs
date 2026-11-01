@@ -6,7 +6,7 @@ using VintageCollector.Persistence;
 namespace VintageCollector.Collections {
  public sealed class CollectionProfiles : IDisposable {
  readonly string root; readonly ISaveFaultInjector faults; FileStream lease; bool disposed; string activeId="",activeDirectory,bootContext; long minimumSessionRevision,minimumPhysicalRevision;
- sealed class Review {internal byte[] Bytes;internal string Path;internal CollectionArchive Archive;internal IStateSerializer SessionSerializer;internal IPhysicalSerializer PhysicalSerializer;internal Catalog Catalog;internal string Context;internal bool StageOwned,Published,Started,Completed;}
+ sealed class Review {internal byte[] Bytes;internal string Path;internal CollectionArchive Archive;internal IStateSerializer SessionSerializer;internal IPhysicalSerializer PhysicalSerializer;internal ApprovedSetRegistry Registry;internal string Context;internal bool StageOwned,Published,Started,Completed;}
  ImportPreview reviewPreview; Review review;
  string BackupDirectory {get {return Path.Combine(root,"Backups");}}
  string BackupPath(string p) {Ready();string full=CollectionFiles.Local(p);if(Path.GetDirectoryName(full)!=BackupDirectory || Path.GetExtension(full)!=".zip") throw new ArgumentException("Select a backup from this container");CollectionFiles.Check(full);return full;}
@@ -19,39 +19,52 @@ namespace VintageCollector.Collections {
  try {string p=System.IO.Path.Combine(root,"collection.lock"); CollectionFiles.Check(p); lease=new System.IO.FileStream(p,System.IO.FileMode.OpenOrCreate,System.IO.FileAccess.ReadWrite,System.IO.FileShare.None); lease.Lock(0,1);ReadSelection();} catch {if(lease!=null) lease.Dispose();throw;}
  }
 
+ public Func<string,Dictionary<string,byte[]>> SidecarCapture {get;set;}
  public string ActiveProfileId {get {Ready();return activeId;}}
  public string ActiveDirectory {get {Ready();return activeDirectory;}}
  public string Notice {get {return null;}}
  public string[] BackupFiles {get {Ready();if(!CollectionFiles.Exists(BackupDirectory)) return new string[0];var a=Directory.GetFiles(BackupDirectory,"*.zip");foreach(string p in a) CollectionFiles.Check(p);Array.Sort(a,StringComparer.Ordinal);return a;}}
- public string CreateBackup(string activeDirectory,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,Catalog catalog) {
- try {return CreateBackupCore(activeDirectory,sessionSerializer,physicalSerializer,catalog);}
+ public string CreateBackup(string activeDirectory,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,Catalog catalog) {return CreateBackup(activeDirectory,sessionSerializer,physicalSerializer,ApprovedSetRegistry.ForLegacyBase(catalog));}
+ public string CreateBackup(string activeDirectory,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,ApprovedSetRegistry registry) {
+ try {return CreateBackupCore(activeDirectory,sessionSerializer,physicalSerializer,registry);}
  catch(IOException) {throw new IOException("CreateBackup I/O failed; existing collection, source, and recovery evidence retained. Retry the same operation.");}
  catch(UnauthorizedAccessException) {throw new IOException("CreateBackup access denied; collection and source retained.");}
  catch(InvalidDataException) {throw new InvalidDataException("CreateBackup validation failed: unsupported, changed, missing or corrupt data. Original bytes retained.");}
  catch(ArgumentException) {throw new ArgumentException("CreateBackup rejected invalid input or an unowned preview.");}
  }
- string CreateBackupCore(string activeDirectory,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,Catalog catalog) {
+ string CreateBackupCore(string activeDirectory,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,ApprovedSetRegistry registry) {
  Ready();if(CollectionFiles.Local(activeDirectory)!=ActiveDirectory) throw new ArgumentException("Only the active collection may be exported");
- var captured=CollectionArchive.Capture(ActiveDirectory);var inspected=new CollectionArchive(captured,sessionSerializer,physicalSerializer,catalog);
+ var captured=CollectionArchive.Capture(ActiveDirectory);
+ if(SidecarCapture!=null){var sidecars=SidecarCapture(ActiveDirectory);if(sidecars==null)throw new InvalidDataException("Sidecar capture unavailable");
+  foreach(string group in new[]{"Shopping","Fund"})if(CollectionArchive.Group(sidecars,group+"/").Count==0)RequireUninitializedSidecar(ActiveDirectory,group);
+  CollectionArchive.AddFullProfile(captured,sidecars);
+ }
+ else foreach(string group in new[]{"Shopping","Fund"}){string path=Path.Combine(ActiveDirectory,group);if(CollectionFiles.Exists(path)){if(!Directory.Exists(path))throw new InvalidDataException("Invalid sidecar directory");foreach(string p in Directory.GetFileSystemEntries(path)){CollectionFiles.Check(p);if(Path.GetFileName(p)!=(group=="Shopping"?"shopping.lock":"fund.lock")||Directory.Exists(p))throw new InvalidDataException("Full sidecar capture is required");}}}
+ var inspected=new CollectionArchive(captured,sessionSerializer,physicalSerializer,registry);
  if(inspected.Session.Revision<minimumSessionRevision || inspected.Physical.Revision<minimumPhysicalRevision) throw new InvalidDataException("Acknowledged collection content is missing; cannot export a blank fallback");
  minimumSessionRevision=inspected.Session.Revision;minimumPhysicalRevision=inspected.Physical.Revision;
- byte[] bytes=CollectionArchive.Zip(captured);CollectionArchive.Open(bytes,sessionSerializer,physicalSerializer,catalog);
+ byte[] bytes=CollectionArchive.Zip(captured);CollectionArchive.Open(bytes,sessionSerializer,physicalSerializer,registry);
  CollectionFiles.Check(BackupDirectory);Directory.CreateDirectory(BackupDirectory);string destination=Path.Combine(BackupDirectory,"collection-"+Guid.NewGuid().ToString("N")+".zip");
  string temp=destination+".writing";CollectionEnvelope.NewFile(temp,bytes);CollectionFiles.Check(destination);File.Move(temp,destination);
  if(CollectionEnvelope.Hash(CollectionEnvelope.Read(destination,CollectionArchive.ArchiveCap))!=CollectionEnvelope.Hash(bytes)) throw new IOException("Backup acknowledgement uncertain; retained for recovery");return destination;
  }
- public ImportPreview PreviewImport(string backupPath,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,Catalog catalog) {
- try {return PreviewImportCore(backupPath,sessionSerializer,physicalSerializer,catalog);}
+ static void RequireUninitializedSidecar(string directory,string group){
+  string path=Path.Combine(directory,group);if(!CollectionFiles.Exists(path))return;if(!Directory.Exists(path))throw new InvalidDataException("Invalid sidecar directory");
+  foreach(string p in Directory.GetFileSystemEntries(path)){CollectionFiles.Check(p);if(Directory.Exists(p)||Path.GetFileName(p)!=(group=="Shopping"?"shopping.lock":"fund.lock"))throw new InvalidDataException("Existing or pending sidecar state cannot be marked empty");}
+ }
+ public ImportPreview PreviewImport(string backupPath,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,Catalog catalog) {return PreviewImport(backupPath,sessionSerializer,physicalSerializer,ApprovedSetRegistry.ForLegacyBase(catalog));}
+ public ImportPreview PreviewImport(string backupPath,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,ApprovedSetRegistry registry) {
+ try {return PreviewImportCore(backupPath,sessionSerializer,physicalSerializer,registry);}
  catch(IOException) {throw new IOException("PreviewImport I/O failed; existing collection, source, and recovery evidence retained. Retry the same operation.");}
  catch(UnauthorizedAccessException) {throw new IOException("PreviewImport access denied; collection and source retained.");}
  catch(InvalidDataException) {throw new InvalidDataException("PreviewImport validation failed: unsupported, changed, missing or corrupt data. Original bytes retained.");}
  catch(ArgumentException) {throw new ArgumentException("PreviewImport rejected invalid input or an unowned preview.");}
  }
- ImportPreview PreviewImportCore(string backupPath,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,Catalog catalog) {
- Ready();if(review!=null && review.Started && !review.Completed) throw new InvalidOperationException("Import confirmation unresolved; retry the same preview before reviewing another");if(PointerToken()!=bootContext) throw new InvalidOperationException("Profile selection changed; reopen before reviewing another import");string p=BackupPath(backupPath);byte[] bytes=CollectionEnvelope.Read(p,CollectionArchive.ArchiveCap);var a=CollectionArchive.Open(bytes,sessionSerializer,physicalSerializer,catalog);
+ ImportPreview PreviewImportCore(string backupPath,IStateSerializer sessionSerializer,IPhysicalSerializer physicalSerializer,ApprovedSetRegistry registry) {
+ Ready();if(review!=null && review.Started && !review.Completed) throw new InvalidOperationException("Import confirmation unresolved; retry the same preview before reviewing another");if(PointerToken()!=bootContext) throw new InvalidOperationException("Profile selection changed; reopen before reviewing another import");string p=BackupPath(backupPath);byte[] bytes=CollectionEnvelope.Read(p,CollectionArchive.ArchiveCap);var a=CollectionArchive.Open(bytes,sessionSerializer,physicalSerializer,registry);
  int physicalCount=0;var pu=new HashSet<string>(StringComparer.Ordinal);foreach(var h in a.Physical.Holdings) {physicalCount=checked(physicalCount+h.Quantity);pu.Add(h.CardId);}
- var v=new ImportPreview(Guid.NewGuid().ToString("N"),CollectionEnvelope.Hash(bytes),Path.GetFileName(p),a.Session.TotalVirtualCards,physicalCount,a.Session.VirtualHoldings.Count,pu.Count,"Reviewed schema1 archive: "+a.Session.TotalVirtualCards+" virtual cards, "+physicalCount+" physical cards. Confirm creates a NEW profile; restart required.");
- review=new Review {Bytes=bytes,Path=p,Archive=a,SessionSerializer=sessionSerializer,PhysicalSerializer=physicalSerializer,Catalog=catalog,Context=PointerToken()};reviewPreview=v;return v;
+ var v=new ImportPreview(Guid.NewGuid().ToString("N"),CollectionEnvelope.Hash(bytes),Path.GetFileName(p),a.Session.TotalVirtualCards,physicalCount,a.Session.VirtualHoldings.Count,pu.Count,"Reviewed "+(a.FullProfile?"complete profile v2 ("+a.Shopping.Records.Count+" shopping notes; "+(a.Fund==null?"fund uninitialized":("recorded fund USD "+(a.Fund.ConfirmedCents/100m).ToString("F2",System.Globalization.CultureInfo.InvariantCulture)+", planned USD "+(a.Fund.PlannedCents/100m).ToString("F2",System.Globalization.CultureInfo.InvariantCulture)))+"): ":"legacy collection-only schema1 archive (no shopping/fund): ")+a.Session.TotalVirtualCards+" virtual cards, "+physicalCount+" physical cards. Confirm creates a NEW profile; restart required.");
+ review=new Review {Bytes=bytes,Path=p,Archive=a,SessionSerializer=sessionSerializer,PhysicalSerializer=physicalSerializer,Registry=registry,Context=PointerToken()};reviewPreview=v;return v;
  }
  // Memory-only cancellation/release; never removes staged, published or recovery evidence.
  public void DiscardPreview(ImportPreview preview) {
@@ -90,8 +103,10 @@ namespace VintageCollector.Collections {
   if(!r.Published) RequireExact(Path.Combine(stage,"import.owner"),owner);
   At("after-stage-create");
   if(!r.Published) {
-  foreach(var file in r.Archive.Files) if(Array.IndexOf(CollectionArchive.Authoritative,file.Key)>=0) {
-   string dest=Path.Combine(stage,file.Key);if(!CollectionFiles.Exists(dest)) CollectionEnvelope.NewFile(dest,file.Value);
+  foreach(var file in r.Archive.Files) if(CollectionArchive.IsState(file.Key)) {
+   string dest=Path.Combine(stage,file.Key);CollectionFiles.Check(dest);string parentDir=Path.GetDirectoryName(dest);CollectionFiles.Check(parentDir);Directory.CreateDirectory(parentDir);
+   if(!CollectionFiles.Exists(dest))CollectionEnvelope.NewFile(dest,file.Value);
+   else if(CollectionEnvelope.Hash(CollectionEnvelope.Read(dest,CollectionArchive.MemberCap))!=CollectionEnvelope.Hash(file.Value))throw new InvalidDataException("Staged file differs from reviewed bytes; retained");
   }
   At("after-extract");ValidateStores(stage,r);At("after-store-validation");PutExact(Path.Combine(stage,"import.receipt"),receipt);At("after-receipt");
   string parent=Path.Combine(root,"Profiles");CollectionFiles.Check(parent);Directory.CreateDirectory(parent);CollectionFiles.Check(profile);CollectionFiles.Check(stage);
@@ -123,11 +138,22 @@ namespace VintageCollector.Collections {
  static void ValidateStores(string directory,Review r) {
   CollectionFiles.Check(directory);foreach(string n in CollectionArchive.Authoritative) CollectionFiles.Check(Path.Combine(directory,n));
   foreach(string prefix in new[]{"state.","physical."}) foreach(string suffix in new[]{"lock","pending","writing","installing","backup-writing","anchor-writing"}) CollectionFiles.Check(Path.Combine(directory,prefix+suffix));
-  using(var s=new SessionStore(directory,r.SessionSerializer,r.Catalog)) {if(!SameSession(s.Snapshot,r.Archive.Session)) throw new InvalidDataException("Staged session differs from the reviewed archive");}
-  using(var p=new PhysicalStore(directory,r.PhysicalSerializer,r.Catalog)) {if(!SamePhysical(p.Snapshot,r.Archive.Physical)) throw new InvalidDataException("Staged physical state differs from the reviewed archive");}
-  var inspected=new CollectionArchive(CollectionArchive.Capture(directory),r.SessionSerializer,r.PhysicalSerializer,r.Catalog);
+  using(var s=new SessionStore(directory,r.SessionSerializer,r.Registry)) {if(!SameSession(s.Snapshot,r.Archive.Session)) throw new InvalidDataException("Staged session differs from the reviewed archive");}
+  using(var p=new PhysicalStore(directory,r.PhysicalSerializer,r.Registry)) {if(!SamePhysical(p.Snapshot,r.Archive.Physical)) throw new InvalidDataException("Staged physical state differs from the reviewed archive");}
+  var captured=CollectionArchive.Capture(directory);
+  if(r.Archive.FullProfile){
+   var sidecars=new Dictionary<string,byte[]>(StringComparer.Ordinal);
+   foreach(var f in VintageCollector.Shopping.ShoppingArchive.CaptureAcknowledgedFiles(directory,r.Registry))sidecars.Add("Shopping/"+f.Key,f.Value);
+   string fundDir=Path.Combine(directory,"Fund");CollectionFiles.Check(fundDir);
+   if(CollectionFiles.Exists(fundDir)){if(!Directory.Exists(fundDir))throw new InvalidDataException("Fund is not a directory");foreach(string p in Directory.GetFileSystemEntries(fundDir)){CollectionFiles.Check(p);string n="Fund/"+Path.GetFileName(p);if(Directory.Exists(p)||Array.IndexOf(CollectionArchive.Sidecars,n)<0)throw new InvalidDataException("Foreign staged fund member");sidecars.Add(n,CollectionEnvelope.Read(p,CollectionArchive.MemberCap));}}
+   CollectionArchive.AddFullProfile(captured,sidecars);
+   foreach(string n in CollectionArchive.Sidecars){byte[] expected,actual;bool e=r.Archive.Files.TryGetValue(n,out expected),a=captured.TryGetValue(n,out actual);if(e!=a||e&&CollectionEnvelope.Hash(expected)!=CollectionEnvelope.Hash(actual))throw new InvalidDataException("Staged sidecar differs from reviewed archive");}
+  }
+  var inspected=new CollectionArchive(captured,r.SessionSerializer,r.PhysicalSerializer,r.Registry);
+  if(r.Archive.FullProfile&&(inspected.Shopping.Revision!=r.Archive.Shopping.Revision||inspected.Shopping.Records.Count!=r.Archive.Shopping.Records.Count||!SameFund(inspected.Fund,r.Archive.Fund)))throw new InvalidDataException("Staged sidecar snapshot differs");
   if(!PhysicalProtocol.Equal(inspected.PhysicalData,r.Archive.PhysicalData)) throw new InvalidDataException("Staged physical transaction history differs from the reviewed archive");
  }
+ static bool SameFund(VintageCollector.Funds.LedgerSnapshot a,VintageCollector.Funds.LedgerSnapshot b){if(a==null||b==null)return a==b;return a.Revision==b.Revision&&a.ConfirmedCents==b.ConfirmedCents&&a.PlannedCents==b.PlannedCents&&a.OpeningBalanceCents==b.OpeningBalanceCents&&a.SuggestedContributionCents==b.SuggestedContributionCents&&a.Enabled==b.Enabled;}
  static bool SamePhysical(PhysicalSnapshot a,PhysicalSnapshot b) {
   if(a.Revision!=b.Revision || a.Holdings.Count!=b.Holdings.Count) return false;
   for(int i=0;i<a.Holdings.Count;i++) {var x=a.Holdings[i];var y=b.Holdings[i];if(x.CardId!=y.CardId || x.Condition!=y.Condition || x.Quantity!=y.Quantity) return false;}return true;

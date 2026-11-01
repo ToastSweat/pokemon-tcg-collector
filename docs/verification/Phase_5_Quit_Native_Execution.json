@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "Separate headless native lifecycle fixture; NOT release-candidate GUI acceptance",
+  "originalReport": {
+    "path": ".artifacts/phase5-quit-native/report.json",
+    "sha256": "66f93e8c5cfa747c7a5ee0025a527ba88cea4f4703904d52edc927537b787a4d"
+  },
+  "parentReadbackVerified": true,
+  "compilerCount": 554,
+  "outputCount": 137,
+  "fourNativeModes": [
+    "normal",
+    "early",
+    "late",
+    "reentrant"
+  ],
+  "allNativeExitsZeroWithoutKill": true,
+  "cleanupBeforeNativeQuit": true,
+  "sourceHashes": {
+    "Assets/VintageCollector/Runtime/OpeningGame.cs": "f4c7fdd5119f26331ec798c8a1a8f471cf3ce2af3ea263891e681f10e69b5490",
+    "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs": "6359668a34bf92c4e9092555c539c3d5aec45b9fb6579f1d3fb0ad03a01e8271"
+  },
+  "fixtureOnlyConfigurationDelta": "runInBackground 0 -> 1 only"
+}

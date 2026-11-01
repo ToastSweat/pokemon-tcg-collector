@@ -2,11 +2,61 @@
 
 Private, personal Unity desktop project. Neutral working title; not a redistribution or licensing claim.
 
-## Current status
+## Final private 1.0 candidate — ready for owner review
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase7FinalWindows\VintageCardCollector.exe`
+
+The remaining manual fund is implemented with a **USD 100.00 opening balance** and **USD 10.00 suggestion per newly opened pack**, both configurable. Planned contributions are separate from confirmed funds; purchases and corrections are explicit manual records, with no bank connection or physical-ownership changes. Complete backups now include shopping and fund history/settings, retain legacy ZIP compatibility, and restore to a reviewed new profile without adding another opening balance.
+
+Native build passed with zero errors/warnings. Two normally exiting player runs passed 21 focused checks for defaults, once-per-open suggestion, uncertainty/Retry, purchase/configuration/CSV, complete backup and independent restored-profile reopen. Three actual captures were validated and visually inspected. All thirteen previous used players and supplied media remain unchanged. The editable project now starts through **StartupFinal → BootstrapFinal**, matching the player rather than the historical Phase 2 scene.
+
+This candidate has separate saves. For a one-time upgrade preserving existing shopping notes, close both players and **copy the complete old Saves folder** into the unused final folder; never move/delete old saves or overwrite an already-used destination. See the guide for reviewed ZIP alternatives, limitations and recovery advice.
+
+[Final user guide](docs/Final_User_Guide.md) · [Execution and evidence limits](docs/verification/Final_Execution.json) · [Finishing checkpoint](docs/hermes/Phase_7_Finishing_Status.md). Private source/player packages are prepared under `Releases/VintageCardCollector-1.0-rc1/`; package completion is recorded by its `release.json`.
+
+## Accepted soundtrack and simpler TCGplayer searches baseline
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase6MusicWindows\VintageCardCollector.exe`
+
+**Accepted by the owner: “seems good. i approve”.** The complete 141-file immutable player manifest was rechecked unchanged before recording approval; saves/logs were excluded before traversal and no launch or rebuild was performed. All thirteen used players are now enrolled in the preservation baseline. [Acceptance record](docs/verification/Music_And_TCGplayer_Human_Acceptance.json).
+
+This separate build adds all eight supplied tracks as streaming audio with context routing, loops/crossfades, existing volume/pause behavior and an optional Day/Night binder music button. TCGplayer uses the owner's shorter search examples; eBay, copied descriptions and listing validation are unchanged. Native build: zero errors/warnings. A focused 12-check player run passed routing, actual playback progression for tracks 02–08, mute/pause/resume and normal shutdown. Track 01 is imported/bound for startup/title; native heavy-scene playback evidence does not cover that startup interval. Human approval is recorded separately from the automated playback evidence. All twelve previous players and eight original MP3s remain unchanged. No automatic collection migration.
+
+[Update and track mapping](docs/hermes/Music_And_TCGplayer_Update.md) · [Focused execution evidence](docs/verification/Music_And_TCGplayer_Execution.json).
+
+## Previous candidate — Phase 6 manual shopping
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase6ShoppingWindows\VintageCardCollector.exe`
+
+**Native execution and independent delivery review PASS; human acceptance pending.** This separate candidate adds exact-printing manual shopping searches and query copy, dated local comparison notes, unknown-versus-zero charges, manual matching review, and durable note Retry. Shopping opens from a missing physical binder card or revealed-card inspection without changing pack awards or physical ownership. It does not provide live prices, scrape listings or buy automatically.
+
+The actual n02 release built with zero errors/warnings and 140 fully pinned files. The s02 shopping/reopen runs passed 25 in-player checks across two normally exiting processes and eight validated screenshots. Outbound actions used fakes only; actual browser/clipboard behavior remains a focused human check. All eleven earlier players, shared dependencies and supplied originals remain preserved. The candidate has its own saves; no automatic collection migration. Shopping sidecars are not included in collection ZIP backups.
+
+[Focused human review](docs/hermes/Phase_6_Shopping_Human_Review.md) · [Execution and limitations](docs/verification/Phase_6_Shopping_Execution.json) · [Final independent audit](docs/verification/Phase_6_Shopping_Final_Independent_Review.json) · [Reproduction workflow](docs/technical/Phase_6_Shopping_Native_Verification_Workflow.md).
+
+## Historical status — retained earlier acceptance
 
 **Phase 4 is accepted:** the user reported **all five review checks PASS**. The136-member player manifest was rechecked unchanged without reading live saves, and no rebuild was performed. The ordinary card11 table stop and explicit **View pack results** remain intact. Both binders target **101 unstamped eligible printings, excluding Machamp**. See [human acceptance](docs/verification/Phase_4_Human_Acceptance.json).
 
-The supplied art, mouse-over tilt and angle-dependent card/booster finishes are **accepted by explicit user approval**. Build36/implementation0837c6c remains the accepted presentation baseline; earlier art/other-functionality and Phase4 passes are preserved. [Acceptance](docs/verification/Hover_Tilt_Human_Acceptance.json). The user subsequently approved continuation and requested assignable reveal sounds; that presentation-only addition is below. Phase 5 Jungle/Fossil work is **paused at the controller decision gate**. The64/62catalogs, approved sheet-informed models, six temporary wrapper fronts, managed core and UI component proofs are completed; runtime code remains in isolated source copies. Final controller review found premature/duplicate reentrant Quit after two narrow fix cycles. The proposed controller-only exit ownership redesign is **not approved/applied**: clarification timed out unanswered. No Phase5 executable exists, and no runtime source/save was promoted. [Current paused handoff](docs/hermes/Phase_5_Paused_Handoff.md) · [Quit escalation](docs/verification/Phase_5_Quit_Ownership_Escalation.json) · [Already-approved models](docs/verification/Phase_5_Model_Approval.json).
+The supplied art, mouse-over tilt and angle-dependent card/booster finishes are **accepted by explicit user approval**. Build36/implementation0837c6c remains the accepted presentation baseline; earlier art/other-functionality and Phase4 passes are preserved. [Acceptance](docs/verification/Hover_Tilt_Human_Acceptance.json). The user subsequently approved continuation and requested assignable reveal sounds; that presentation-only addition is below. Phase 5 Jungle/Fossil work is **resumed**. The user-approved controller-owned Quit design passed independent exact-source review. Reviewed runtime code, canonical data and temporary textures have now been promoted into the editable project with verified backups; existing builds, originals and save directories remain untouched, and the Root legacy110persistence checks pass. The descendant-reparse build guards passed independent rereview. Isolated Unity asset preparation passed198native checks and generated the new profiles/import metadata; those new files were adopted without overwriting existing source. The actual Root legacy collection harness also passed112checks. The Editor-only execution-order checker correction passed independent review; fresh scene verification passed282native checks. The separate **Builds/Phase5Windows** candidate built successfully with0errors/0warnings and138immutable player files. Actual services/reopen verification passed553+8in-player assertions in two normally exiting processes, including mixed-set history, all six new wrapper variants, binder ownership, backup/review/import and exact reload. Hard-kill/reopen verification also passed four processes. A separate headless native fixture verified normal, early-throw, late-throw and reentrant production Quit with cleanup before each natural exit. The corrected `n07` candidate passed the full five-run native series: input at1600×900 and1280×720, audio plus silent reopen, global services plus reopen, and hard-kill recovery. Counts reconcile to10processes (two deliberate hard kills),223PNG artifacts and80actual playback observations. The independent source/build/driver audit passed, and the parent reconciled all five completed native runs. Phase 5 is **human-accepted**: the user reported all focused checks PASS and authorized Phase 6. All138 immutable `n07` player files were rechecked unchanged without launching, rebuilding or traversing saves. Supplied Jungle/Fossil art is a separate presentation follow-up; it has not changed the accepted build. Phase 6 begins with physical-card-shopping discovery and a provider proposal before implementation. [Human acceptance](docs/verification/Phase_5_Human_Acceptance.json). [Quit approval](docs/verification/Phase_5_Quit_Ownership_Approval.json) · [Quit review](docs/verification/Phase_5_Quit_Owner_Independent_Review.json) · [Source contract](docs/technical/Phase_5_Quit_Ownership_Contract.md) · [Historical source-map handoff](docs/hermes/Phase_5_Paused_Handoff.md).
+
+## Shared backs / Base wrappers / performance candidate — native checks passed
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase5PerformanceWindows\VintageCardCollector.exe`
+
+Separate f04 candidate shares the supplied blue back across all three sets, uses all three Base fronts, preloads native Base artwork, shows a lightweight startup/loading screen and performs opening persistence on one serial worker with an honest Saving state. Durable acknowledgement, recovery and RNG remain intact. Matched warm-run first-pack capture improved9.84→5.57seconds; rendering continued during saves, with a remaining198ms worst frame-gap sample. Opening/reopen/pixel/worker/fault-Retry and close-during-save checks passed. Earlier players/saves/originals and the owner-edited PSD are preserved; no automatic save migration. [Focused review and limits](docs/hermes/Performance_Human_Review.md) · [Measured execution and140-member manifest](docs/verification/Performance_Execution.json). The final independent artifact audit passed and the user explicitly approved this exact candidate. Its140 immutable files were rechecked unchanged without launching/rebuilding or reading saves. [Human acceptance](docs/verification/Performance_Human_Acceptance.json). Phase6 shopping has resumed.
+
+## Jungle / Fossil supplied-art update — native checks passed
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase5SuppliedArtWindows\VintageCardCollector.exe`
+
+Separate release a04 uses all126 supplied Jungle/Fossil faces and three supplied wrapper fronts per set. The stamped scans are approved visual substitutes; Unlimited identities, models and saves are unchanged. Actual native pixel bindings, six packs, ordinary card11 hold, inspection and independent-process reload passed321+263 checks. The accepted Phase5Windows player and saves, supplied originals, owner-edited PSD and Base runtime art remain preserved. This new player has its own saves, with no automatic migration. [Focused two-check art review](docs/hermes/Jungle_Fossil_Supplied_Art_Human_Review.md) · [Execution, manifest and limits](docs/verification/Jungle_Fossil_Supplied_Art_Execution.json). The final independent artifact audit passed for this exact candidate. Human art acceptance remains pending.
+
+## Jungle / Fossil candidate — native checks passed
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase5Windows\VintageCardCollector.exe`
+
+Base, Jungle and Fossil are selectable; Jungle/Fossil use temporary card faces and three wrapper variants each. The new player uses its own saves and does not migrate earlier collections automatically. Keep its whole folder together. [Three focused review checks](docs/hermes/Phase_5_Human_Review.md) · [Native execution and full player manifest](docs/verification/Phase_5_Runtime_Execution.json).
 
 ## Assignable pull audio — accepted and frozen
 

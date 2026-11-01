@@ -66,9 +66,22 @@ namespace VintageCollector.Presentation
             return index >= 0 && index < VisibleCount(v) && v.cards[index] != null;
         }
 
+        public static bool IsSupportedSet(SetChoiceView[] choices, string printingId)
+        {
+            if (printingId != "base-en-unlimited1999" && printingId != "jungle-en-unlimited1999" && printingId != "fossil-en-unlimited1999") return false;
+            if (choices != null) foreach (var choice in choices)
+                if (choice != null && string.Equals(choice.printingId,printingId,StringComparison.Ordinal)) return true;
+            return false;
+        }
+
         public static bool CanEmit(OpeningView v, string command)
         {
             if (v == null || string.IsNullOrEmpty(command)) return false;
+            if (v.storageBusy && command!="quit" && command!="pause" && command!="resume" && command!="close-inspect" && !command.StartsWith("volume:",StringComparison.Ordinal)) return false;
+            if (command.StartsWith("set:",StringComparison.Ordinal))
+                return v.canSelectSet && !v.paused && v.inspectIndex < 0 && string.IsNullOrEmpty(v.errorMessage) &&
+                    (v.stage == "ready" || (v.stage == "results" && v.cards != null && v.cards.Length == 11 && v.revealedCount == 11)) &&
+                    IsSupportedSet(v.supportedSets,command.Substring(4));
             if (command == "quit") return true;
             if (command.StartsWith("volume:", StringComparison.Ordinal))
             {

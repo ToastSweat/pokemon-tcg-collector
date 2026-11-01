@@ -1,6 +1,6 @@
 # Phase 5 — Jungle / Fossil discovery and asset decisions
 
-**Current override: PAUSED.** The later controller-only Quit ownership escalation timed out unanswered; no redesign/source promotion is authorized. Completed component proofs and remaining native gates are summarized in [Phase_5_Paused_Handoff.md](Phase_5_Paused_Handoff.md). The active-work wording below is retained as earlier checkpoint history, not a direction to resume automatically.
+**Current override: RESUMED by explicit user approval of controller-owned Quit and continuation.** See [Quit ownership approval](../verification/Phase_5_Quit_Ownership_Approval.json) and [implementation contract](../technical/Phase_5_Quit_Ownership_Contract.md). The earlier unanswered escalation remains historical; the new bounded redesign is active without reopening model/art decisions. [Historical paused handoff/source maps](Phase_5_Paused_Handoff.md).
 
 ## Active implementation checkpoint
 

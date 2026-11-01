@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "scope": "Independent exact-byte review of the one-line preparation frozen-snapshot runner fix; no promotion or native acceptance",
+    "exact_diff_and_remaining_ast_unchanged": true,
+    "root_source_count": 1091,
+    "actual_stage_before_count": 1105,
+    "native_script_metadata_count": 13,
+    "native_folder_metadata_count": 1,
+    "current_root_matches_metadata_fix_promotion": true,
+    "current_cpp_compiled_unmodified_in_review_owned_harness": true,
+    "CreateAssets": "Actual Stage1105 old frozen inputs rejected with Unapproved frozen extra; Root1091 frozen inputs admitted against the same actual Stage1105",
+    "CreateBootstrap": "Actual Stage1105 old frozen inputs rejected with Unapproved frozen extra; Root1091 frozen inputs admitted against the same actual Stage1105",
+    "BuildWindows": "Exact runner AST preserves actual before, including differing Settings hash; separate SYNTHETIC adopted-metadata real-CPP fixture admits effective TWO-scene recipe and refuses incorrectly frozen Root Settings",
+    "actual_stage_before_evidence_unchanged": true,
+    "attestation_hashes_selected_frozen_tsv": true,
+    "parent_authorization_source_tool_boundary_checks_unchanged": true,
+    "refusals_retained": [
+      "Wrong trusted parent digest",
+      "Unknown frozen metadata",
+      "Unknown actual metadata outside frozen/allowance",
+      "Unknown source allowance",
+      "Root source-byte drift",
+      "Frozen hash drift",
+      "Wrong script metadata role",
+      "Duplicate GUID",
+      "Source-to-stage byte drift",
+      "Full closure membership mismatch",
+      "BuildWindows incorrectly frozen Root Settings"
+    ],
+    "python_checks": 20,
+    "cpp_pass_expectation_lines": 16,
+    "fresh_compilations": 2,
+    "compiler_and_harness_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "test_execution_seconds": 63.334,
+    "root_stage_compiler_pins_unchanged_after_tests": true,
+    "tool_pins_rechecked_after_all_tests": true,
+    "native_editor_run": false,
+    "operational_runner_invoked": false,
+    "protected_players_independently_rehashed": false,
+    "writes_confined_to_review_directory": true,
+    "limitations": [
+      "No operational promotion or authorization granted by this review",
+      "Native preparation, build and runtime acceptance remain unrun",
+      "BuildWindows CPP success uses an explicitly SYNTHETIC artifact-owned fixture, not the current operational stage",
+      "Broad prior native/runtime suites and protected-player/original-content inventories were not rerun"
+    ],
+    "evidence": [
+      "independent_review.py",
+      "IndependentPolicyReview.cs",
+      "commands.json",
+      "test-results.json",
+      "build_branch_review.py",
+      "SyntheticBuildReview.cs",
+      "build-branch-results.json"
+    ]
+  },
+  "approvedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-prepare-snapshot-fix/run_shopping_native.py": "9279d9d8b1a559fcc1eb710702824eba23dd56443beeaa90182a95f1e36f870c"
+  },
+  "report_path": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-prepare-snapshot-review/report.md"
+}

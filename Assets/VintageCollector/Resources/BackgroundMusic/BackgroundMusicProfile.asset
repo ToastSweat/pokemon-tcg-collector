@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1a28f0011d608488ed2cd360cc66d7, type: 3}
+  m_Name: BackgroundMusicProfile
+  m_EditorClassIdentifier: Assembly-CSharp::VintageCollector.Music.BackgroundMusicProfile
+  tracks:
+  - {fileID: 8300000, guid: 386fb1da7b03f874ba5e8841bb71e76d, type: 3}
+  - {fileID: 8300000, guid: 688229b7fa6238a43a3fa54b98c0764b, type: 3}
+  - {fileID: 8300000, guid: 896004a42a5cde54692c3f60b2e8a5e9, type: 3}
+  - {fileID: 8300000, guid: 19e6aa6bf8098a54793892d999ea1f26, type: 3}
+  - {fileID: 8300000, guid: 072ad25798347414d9878095f91019c2, type: 3}
+  - {fileID: 8300000, guid: 6618c301fb49dee409e60abef7c95de6, type: 3}
+  - {fileID: 8300000, guid: e060b29e56fb795428608c2b95a8fabc, type: 3}
+  - {fileID: 8300000, guid: a70247df3dce6304480e9950c93fad7d, type: 3}
+  gain: 0.35

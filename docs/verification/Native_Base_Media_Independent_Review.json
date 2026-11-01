@@ -1,0 +1,654 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "originalReport": {
+    "path": ".artifacts/native-base-media-review/review.json",
+    "sha256": "dcce7755209b316771722b2aaf5c692447809d61ed7aeda613a3dce406381d51"
+  },
+  "coverage": {
+    "freshManagedActualProviderHostAdapterAssertions": 237,
+    "freshSeparateSharedAdapterAssertions": 43,
+    "freshIndependentAssertions": 49,
+    "independentEdges": [
+      "null/short card arrays",
+      "null rows/identifiers",
+      "foreign printing",
+      "null/short/missing front refs",
+      "missing shared back",
+      "linear artwork/sRGB masks rejected before audio allocation",
+      "zero/negative/above-ceiling budgets",
+      "null resolver",
+      "AudioClip.Create returns null",
+      "AudioClip.Create throws",
+      "SetData failure destroys failed owned clips",
+      "invalid variants",
+      "owner config/array immutability",
+      "borrowed audio reference snapshot",
+      "stable adapter and shared native back across three known sets",
+      "unknown context closes",
+      "owned consumers cleared",
+      "terminal no-reacquisition"
+    ],
+    "fullRuntimeRealUnityReferenceCompilation": {
+      "sources": 69,
+      "unityReferences": "6000.2.14f1",
+      "warningsAsErrors": true,
+      "exit": 0,
+      "warnings": 0,
+      "errors": 0,
+      "nativeEngineExecuted": false
+    },
+    "canonicalCatalogExactSet": 101,
+    "printing": "base-en-unlimited1999",
+    "excludedMachamp": true,
+    "catalogFinishMaskExactSet": 15,
+    "manifestFrozenSHAAndAllRoleCardMappings": true,
+    "copyCount": 109,
+    "uniqueSourceByteHashes": 109,
+    "allCopiesSHAAndFullPILRGBAEqual": true,
+    "uniquePixels": 51726000,
+    "pixelLimit": 67108864,
+    "nativeBindings": 123,
+    "semanticWrapperOrder": [
+      "Blastoise from supplied venusaur filename",
+      "Charizard from supplied charizard filename",
+      "Venusaur from supplied blastoise filename"
+    ],
+    "importRequirements": "Artwork sRGB, masks linear; readable, uncompressed, no mips, max1024, bilinear/clamp declared and independently checked in builder input; actual Unity import NOT executed.",
+    "ownership": "Borrowed texture snapshot never destroyed; synthesized four clips disposed once; failed clips destroyed; replacement consumer preservation covered by fresh 237 assertions.",
+    "legacy": "Library API preserved, valid native skips legacy reads/Library null, absent or invalid native falls back; actual legacy library unchanged via Root pins.",
+    "audio14Routes": "11 positional pull references plus nonPokemon/pokemon/holo rare references preserved by unchanged adapter/audio code and fresh independent routing/snapshot assertions; rare-slot pull fallback covered in shared adapter suite.",
+    "preservation": {
+      "rootFiles": 831,
+      "usedPlayers": 10,
+      "usedPlayerMembers": 1364,
+      "mismatches": [],
+      "saveOrLogTraversal": false,
+      "externalOriginalOrPSDRead": false
+    },
+    "all69SourcePinsAnd113ProposalPinsRecheckedAfterTests": true,
+    "exactDiffReconstructedForAll4CSFiles": true,
+    "addedCodeSecurityScan": "No secret assignments, process launch, network or write/delete APIs in added production code.",
+    "notVerified": [
+      "Native Editor builder/profile asset generation",
+      "Actual native importer state",
+      "Native Unity texture lifetime/fake-null behavior",
+      "Native GPU/allocator/upload",
+      "Native full GetPixels32 pixel equality",
+      "Actual startup/first-pack performance",
+      "Player/build execution"
+    ],
+    "writesConfinedTo": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-review",
+    "gitNetworkUnityPlayerBuildInvoked": false
+  },
+  "approvedFiles": [
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-001.png",
+      "sha256": "79ca686da2df2abe03890111f13292f1488cd76b95a1f4b666f4cd0862f841e0",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-001.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-002.png",
+      "sha256": "bb330fffea48db5e78ac02b3a8f77f0e1796351cbfdbf17c59b39833798cefe9",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-002.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-003.png",
+      "sha256": "5331e1a0bab314573b259acfdcfa54d9dc3274344898cca0d3b614c79647c187",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-003.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-004.png",
+      "sha256": "5a0231c57e4857151f880df323916f401bef10c6a8f9a5b012da592239e2ec04",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-004.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-005.png",
+      "sha256": "261e1ed2a065c2f8865a69cf5c2666862c4eb361ab5edc130a222ad062ae5034",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-005.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-006.png",
+      "sha256": "fb41ac85dabe7fd88945fe244a2cf5f7cc812af781e09c10758c4d622dade5e4",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-006.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-007.png",
+      "sha256": "6225d1a82aa77cdf2df87700d0fb4c3458266e3fd602d80354c524b57ded33f5",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-007.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-009.png",
+      "sha256": "029b88871f28d37fc651de4cb1c3cc637a067ed5b50dae46bbf44e1f87fba595",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-009.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-010.png",
+      "sha256": "9c4504e5b6238e5dffd9b7ba017ac81f11b03c056c90231e515d329ba2c864f3",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-010.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-011.png",
+      "sha256": "f064781751fb817e1784b30aece684390aa13c000f1aa069b1398720c6162312",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-011.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-012.png",
+      "sha256": "36f1ab43c99e1b6bbee509c8afc602c711d78368500268730e7efeed50aaf631",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-012.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-013.png",
+      "sha256": "aa048a944baf9d0b0d64c8fdf23860436bd29322997c83f4538d55dcd6da58b2",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-013.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-014.png",
+      "sha256": "4fe17fc70b5379a94cd3af4b55edcfce397e55a94cfc805b6140b42a94ec591a",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-014.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-015.png",
+      "sha256": "73885ba30ab9c872104592d6bb83d53409de6ab88b44eb58d34b7d2b7b1ae76f",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-015.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-016.png",
+      "sha256": "b6c94059228c83f51c8a30a35f41fddf5a51440b9954eec8437cb749514c181c",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-016.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-017.png",
+      "sha256": "7b95e51e02e08bc593ebdbceed0f720f2fcd56491d2acadd779647a2318a0c22",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-017.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-018.png",
+      "sha256": "b9f2d13c624dbfc518ebf74f87e309e73684c45e69524d053bf2c1cb7286429b",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-018.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-019.png",
+      "sha256": "ede9d9cb53c544c4082bec85a4cde1cd2eba7d914f7b7fa6c0e4f47db656d535",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-019.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-020.png",
+      "sha256": "678ec2f56e88298268296b28f71c7718516689ad19fc1e4263702ea0e247acf0",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-020.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-021.png",
+      "sha256": "b4fc1ac79f9c94595753634a858492488fdb3f08589476323322bac8be2414c9",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-021.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-022.png",
+      "sha256": "9a4e3e7a93b4972c348ffbea6d5271d410d12b8c2b5c72522fb8cdc53ccff9e1",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-022.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-023.png",
+      "sha256": "cdb36f671bdb2fa314b8832513812e823d3cbe62b25614b5c6b529513c3d887a",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-023.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-024.png",
+      "sha256": "e843024d102dea2a46022ca710af456a6db2029ad416649ae4c1b7a9b82381cb",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-024.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-025.png",
+      "sha256": "5f1c1cf629154e441cfb9af0426996be926d2348847bf3f69e1cd5786772b148",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-025.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-026.png",
+      "sha256": "c3d4a5f2cce7f415e86c6b44c1d1611c99343656ac44d2474e7cf24c4617db8f",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-026.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-027.png",
+      "sha256": "d9089479d7608ff1257882638d370703d7336d07b6bffd583237bd5e1336ede8",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-027.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-028.png",
+      "sha256": "a6f4343e7f399920f126d383e53908809091aa3ad4789986dab2303f4e062e79",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-028.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-029.png",
+      "sha256": "424a779ec617109488de9a5efb6d27d3a37054344c731139c35f9afb20019b7a",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-029.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-030.png",
+      "sha256": "a042f8d4c6bcbb325c762a787b2cb36d5e474b5c1cc1a96dbdb2cfba57d1c172",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-030.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-031.png",
+      "sha256": "b5472306c8b699424dadae4bc805c5697f45b5c33d62318e074c8405fae17fc7",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-031.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-032.png",
+      "sha256": "965ba7568476bb18541507eb4f5955ad70816be40ca97ad638d39b277d2a87a7",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-032.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-033.png",
+      "sha256": "18795b16eb8780bb741921fd8571c015a79c41cb9ed982f6e52cfdef4406c48f",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-033.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-034.png",
+      "sha256": "228a2f1cb04c197d4f5ad7c5980e5642a2151615d59e971416140e6b9a2388ab",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-034.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-035.png",
+      "sha256": "1720b503a6c260bf6cb1ca3c46fe31217f3a95615cbbf82aba4da729bdd8b0b7",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-035.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-036.png",
+      "sha256": "906d09310c76f134d53022bd54972bdeaeb81f52e7a4afc2eecc043a5ae1d419",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-036.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-037.png",
+      "sha256": "3a31016e352b67a272668b7f58555fa96174a7dde3953e45c7da221c78ff8eba",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-037.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-038.png",
+      "sha256": "8f04555ad2048434a5753a1cf5a83669c6746b91844aacfa91db77e4db31e954",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-038.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-039.png",
+      "sha256": "371a4db2b3d4fe3e5a18e348789f86b7695d1882efbb51df46603a0b24c2e1c7",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-039.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-040.png",
+      "sha256": "4d2af430348f2d0f8e16c528e29b5458a4c08d2ffdce9bb8f945608a445141dd",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-040.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-041.png",
+      "sha256": "da8194305cd49408508feb102b3beb757c157c3878a498a152c3daa772497650",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-041.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-042.png",
+      "sha256": "94efee0cd4236ebb7c6aabcf321d6263bd606e00fbf0f0dab21edb03fdf5fb91",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-042.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-043.png",
+      "sha256": "998f27423d9ebdf71dc5387a8e8717aada8c477b80176964ed5c659d6e7d7e21",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-043.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-044.png",
+      "sha256": "00210151b57392c5a4625fba58e44c526fb79c2dbc2f8a67099ed778432e79cb",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-044.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-045.png",
+      "sha256": "05108ef2b47cebea2498028a18360cf68a90b3c05121b70317a481a8c1c3f1be",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-045.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-046.png",
+      "sha256": "f2fa9287ca491add7739e68b7553b4e333a26b6bc85f18af34facd55beba14d9",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-046.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-047.png",
+      "sha256": "de4cefe774a4ed701a577da6fd99a3fa92f5863d27060959b70ac3f852b32a79",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-047.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-048.png",
+      "sha256": "af3044f2e16b90b2b954b5ef7c66a6f9c56bb59e257eb796ddf8a3f3cd8b77ab",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-048.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-049.png",
+      "sha256": "4a283d3fbec5b2f283b7088bb80e081014ec434d3d5a4b52591bdc26f7909292",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-049.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-050.png",
+      "sha256": "e669f6c79e1ff1579233f5a56fc71f8d9d1e4f096f62453d10181d8992cee521",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-050.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-051.png",
+      "sha256": "7d3c99d9b8ccce6f95e4a46560c1bda5ced7f857103822b7c6df72dacfd4e5e9",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-051.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-052.png",
+      "sha256": "ef02af23149bb7d3c8d4a046a02d197adf57773dfbb48d1e8729d3a033cac0c9",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-052.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-053.png",
+      "sha256": "90ab8c28ef0bb898a380898404467ef11aead597207b15f7700abc66b5cd3c76",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-053.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-054.png",
+      "sha256": "a020f4200c84c947846d4cca5589cdea293ac2598b038eae467bd84e0e758c2d",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-054.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-055.png",
+      "sha256": "2722548214b70fa7baceefcdd10e6e8966a9383b968e36d7e397d1e3c25342f1",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-055.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-056.png",
+      "sha256": "dbc20f5b5625053ffddf01c3921bcce868f28476e293ea1ab46f5bd38a463d53",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-056.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-057.png",
+      "sha256": "8c36819109f3d25bd4e56e1fcdbf16220f1ccadd64cefbcf23cfde0a334e70e4",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-057.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-058.png",
+      "sha256": "9a10fd3a82708274874262f89312cace4c53489127fd5a51c5bf00defbec7b5c",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-058.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-059.png",
+      "sha256": "5840376f0f41e47ea4832b913b8a00cc7a54345894a19f83716ab71c7ffb4a4b",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-059.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-060.png",
+      "sha256": "df28f68b21db889655dcb7ca0725e495a7b06c8d6e3ccd6bb8ca5fabd45d786e",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-060.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-061.png",
+      "sha256": "64bd3a61e4bfdd8a8bb9ba8390ccbc91ee61cd4fc33d69da29f4707df76082ee",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-061.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-062.png",
+      "sha256": "de77a13deca23c83a4b4279ffe6a457e409e0ed3240fedda750570dbc51f611e",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-062.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-063.png",
+      "sha256": "6124e72b9cdb331e4c366aca9b2d8e50c7af4902d377e6259decc4e8faa9dc75",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-063.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-064.png",
+      "sha256": "3dc187ec46c72d56abddc5c5dccdbae9de9a238aea0affc5b9dc7813ad885811",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-064.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-065.png",
+      "sha256": "3d13b4134b17d955ad5983942a68bc5a86d90f013564ed59b1cf982f71804949",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-065.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-066.png",
+      "sha256": "054d42abe0ab89f71418e20a62456615bbc6e8d33e80f7b4f68fea2f0c1f0917",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-066.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-067.png",
+      "sha256": "1ad9aa1020b9fdce05bba198b738fa0082131e5532a19eaa264c95dec2466c71",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-067.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-068.png",
+      "sha256": "5cade3dd0d0b8bce7933591c8ea3c157b89d17823f934eb3dfc41b8225bbe4cc",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-068.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-069.png",
+      "sha256": "d52e7daad7a7cff12209878dc8c4b4a1cd2914464f0f27d2efc7b2a8459ef362",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-069.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-070.png",
+      "sha256": "f674c2b315e942e406fd50b538dde671ffeb39b1592e3f7569504c47b1ae98d6",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-070.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-071.png",
+      "sha256": "7401a5579ed311fc02470f257a207d90f859779ea3bcbf9619efceb08144c161",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-071.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-072.png",
+      "sha256": "f1db3d12f553a29ead9d768206cfab253eec89ea9da5862830c5cba7f0ad90d0",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-072.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-073.png",
+      "sha256": "5cc1beeeba1e5da5acd7d8bbf12aedce142714283e9ed7bb48c8093ac06ca6df",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-073.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-074.png",
+      "sha256": "3407cba9856a745611fdac03da1b94c620ee741895e23b3a7af474f2a65e4ebb",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-074.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-075.png",
+      "sha256": "f6b0862bb305df7e4b7cf09de740016e540aee9c9c13d58044a884173680bdd6",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-075.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-076.png",
+      "sha256": "daaefd0131415f54efd8b01337256b14c6097ab32728e9e60f85321c5f09c339",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-076.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-077.png",
+      "sha256": "97cd3724d219a7edfa9caa5d5279e79eda5b038e2926fd3478e7e2c5f62520ca",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-077.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-078.png",
+      "sha256": "c13545784ef7d0fe73814a01467c6d445fe3eaf6f7b6791c5d9933205c483bc1",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-078.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-079.png",
+      "sha256": "7371c8b281611bc0deb781b15dbfbd8103a202ca0c067f0738cff5d161493b75",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-079.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-080.png",
+      "sha256": "1b19350c3c05a85ff07101411cf6897a515ce698f939402611b59938d0247cd6",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-080.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-081.png",
+      "sha256": "6d231aa2b16d7e349db38412ef419440de7a6d8f0b32a6219864a9f5908da799",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-081.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-082.png",
+      "sha256": "b2226e8d2b3f347e8880e22187f97d9a4e3c0190156e446690400ca9bff191e4",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-082.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-083.png",
+      "sha256": "e1ea5d2f42b386f0eaca7e0a970550b752d28eb88866982a7c181d0072000f57",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-083.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-084.png",
+      "sha256": "a4c16d5f77d62e6afe8bece7d91a961a5e01f56736c2a7bc447ba44472c30503",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-084.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-085.png",
+      "sha256": "b2b19d9a769063f2aa92758326a253055c54e0bb88a953791fa83e152cf5101f",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-085.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-086.png",
+      "sha256": "6286737cdd7699e816fc4b49a3888e3c60279832a1d63d6233415b0741dfafbe",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-086.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-087.png",
+      "sha256": "31ecc570e4a73c35a03254a59e0404b0199d34e629020b8566389203ae3edcc7",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-087.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-088.png",
+      "sha256": "14b73a027c7111f1eb92d65aba1a88489b17a68cc5431c76dd40564fd697054b",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-088.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-089.png",
+      "sha256": "a92af59e4d884ff34f411f823cc8ad24f54e0512409948c9a2e94dca96f200da",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-089.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-090.png",
+      "sha256": "647bd7ed7a4a489cd7d17ce2bbd616df303b04c2699d903e7967252631e9f531",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-090.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-091.png",
+      "sha256": "987048b634b94377f8e214f5519c1a7e50e91e30e1f3494e55691caf0e44378a",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-091.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-092.png",
+      "sha256": "4cb6dd159778a722dd459c416ce4bd421d8499e727d49220a5d3c8f0dbaba415",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-092.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-093.png",
+      "sha256": "8c25fbf45aae515159651c869ba2a9f7a195e5b6d69d2963ce57f87fb8705212",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-093.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-094.png",
+      "sha256": "e56918243e934fe3b3350988099bb0c789b9ee6bd52fcc2e5043579fbab77297",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-094.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-095.png",
+      "sha256": "292acb354d303417c6669b906b02f59fbf139cbb67cb55a6bc4bae712821df18",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-095.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-096.png",
+      "sha256": "4b9ec018290e8320f17d641ae19c8c37bd365289445c17ca0a746b5d3fb260fa",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-096.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-097.png",
+      "sha256": "1223c0ec859d80e93cbe2625f46b7155bd1221d8c61f9a53aa36b6119ea64845",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-097.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-098.png",
+      "sha256": "3246396493df816efc65bda84f8be04b33c8bf08a6f717acab41fdf918aa9bf6",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-098.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-099.png",
+      "sha256": "23eda6db8a89d0c5483af946c1750c48fea907e1b08a6299c29e9b35214b29fe",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-099.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-100.png",
+      "sha256": "131a24fa4724d79a9312a9e5cc3d4b91a344fb0891b1986a626347f518d1e143",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-100.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-101.png",
+      "sha256": "305b64344ba67817a7d899de2f36d4fc4c561f965d8f8926fa4f0808d134b87b",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-101.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-102.png",
+      "sha256": "e85ff7bfcb1c2ddb339140897e51239e86189d13217aa6385068d59815901b75",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-102.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-back.png",
+      "sha256": "2de9eec4af0f4d236180c07411348dd8bbbffdb14d16cafe1ae64f1177e4c9b2",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-back.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-base-set-booster-blastoise-unlimited.png",
+      "sha256": "640f77a7e119c7aa56ef8e99c9d2ad156300ed21a86ff36323c3154d23082c7d",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-base-set-booster-blastoise-unlimited.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-base-set-booster-charizard-unlimited.png",
+      "sha256": "ecf0de35ec3d57975b688ff55db56b6ea99b81ab92c69432351fd46ba913af64",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-base-set-booster-charizard-unlimited.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-base-set-booster-unlimited-back-diffuse.png",
+      "sha256": "75d8176b2e4be436840390f0af5e620eec810de28cb05e9c6164d6802919ea2a",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-base-set-booster-unlimited-back-diffuse.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-base-set-booster-unlimited-back-metallic.png",
+      "sha256": "2827bd68a5acff1f8d268f8d51d8d11a89405b6c3e907e352c8816a423d67378",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-base-set-booster-unlimited-back-metallic.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-base-set-booster-unlimited-front-metallic.png",
+      "sha256": "b47b032257b2c518ff5f1263f415da54af56a7d12d8693ffbc9e447569aa2c13",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-base-set-booster-unlimited-front-metallic.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-base-set-booster-venusaur-unlimited.png",
+      "sha256": "ea60d5bf07a8d8d5ce729d8dedd993287e6d7171ebb9e9888b5d1a9395342142",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-base-set-booster-venusaur-unlimited.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\Supplied\\PerformanceBase\\generations\\f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149\\base1-foil.png",
+      "sha256": "758f6640f1f710eac53b30d6c46dbf9ca689fd52b916da997f6949506b34df10",
+      "target": "Assets/Supplied/PerformanceBase/generations/f1d3132f59f170d06554aa8e108110a516ffc4697f2c11eaa7255dc70a219149/base1-foil.png"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\VintageCollector\\Media\\NativeBaseBindings.cs",
+      "sha256": "3bb321ea6573ebdf4dfb7d0d521faa79095ac9e524712a9f0660f3db3396ae95",
+      "target": "Assets/VintageCollector/Media/NativeBaseBindings.cs"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\VintageCollector\\Media\\NativeBaseMediaProfile.cs",
+      "sha256": "e399b7273799b263f36d6dea2d0fa2db9209b5fa7e1b1b74350006b69755880c",
+      "target": "Assets/VintageCollector/Media/NativeBaseMediaProfile.cs"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\VintageCollector\\Media\\NativeBaseMediaProvider.cs",
+      "sha256": "a2e6f87dee32cb38b10ccc886a1bb9afea3e845c07191d20e9785b068967e953",
+      "target": "Assets/VintageCollector/Media/NativeBaseMediaProvider.cs"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\native-base-media-work\\proposal\\Assets\\VintageCollector\\Runtime\\Phase5MediaHost.cs",
+      "sha256": "2c45f1638b1fbf23c1a4cc147cb7024466af1d3d6385b16f32736ff119a7e921",
+      "target": "Assets/VintageCollector/Runtime/Phase5MediaHost.cs"
+    }
+  ],
+  "nativeExecutionClaimed": false,
+  "sourcePromotionClaimed": false
+}

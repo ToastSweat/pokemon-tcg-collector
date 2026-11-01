@@ -1,0 +1,46 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "STARTUP-RESTORE-REENTRY-01",
+      "severity": "high",
+      "source": "StartupLoadingCoordinator.cs:88-90,101-104,117-129; StartupLoadingPolicy.cs:33-37",
+      "summary": "Completion publishes IsReady=true and leaves gameplay restored after synchronous disable/destroy reentry during ReleaseGate has already failed startup and requested owner Quit.",
+      "evidence": [
+        "adversarial.log",
+        "tests/AdversarialTests.cs"
+      ],
+      "observed_disable_reentry": {
+        "IsReady": true,
+        "table_enabled": true,
+        "Failure_present": true,
+        "owner_quits": 1
+      },
+      "observed_destroy_reentry": {
+        "IsReady": true,
+        "table_enabled": true,
+        "Failure_present": true,
+        "owner_quits": 1
+      },
+      "qualification": "Bounded enable-setter callback double; not native reproduction. Present three presentation sources have no OnEnable hook. This exposes an interrupted-transition state-machine hole under requested adversarial lifecycle reentry.",
+      "required_resolution": "Make completion/restoration an interruption-aware transition; do not publish Ready after failure/Quit and preserve an effective fence if lifecycle reentry interrupts restoration. No fixes authorized here."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "NATIVE-ACCEPTANCE",
+      "summary": "Parent must verify actual keyboard dispatch, destroyed-object equality/callback ordering, visible failure/Quit and native combined NativeBase shared-back integration. Managed doubles/reference compile are not native acceptance."
+    },
+    {
+      "id": "DESTROYED-LEASE-LIMIT",
+      "summary": "Retained destroyed-overlay managed lease/callback is an explicit fail-closed process-lifetime limitation, not normal cleanup/replacement UI; keep the HANDOFF warning."
+    }
+  ],
+  "originalReport": {
+    "path": ".artifacts/startup-loading-review-final/review.json",
+    "sha256": "e24fccb56940d19bf7705d7696087752d669cbdd95f557607ebfbe115835ebba"
+  },
+  "proposalOnly": true,
+  "nativeAcceptance": false
+}

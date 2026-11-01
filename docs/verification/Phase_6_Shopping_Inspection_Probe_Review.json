@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "scope": "Independent exact-byte review of ONE proposed C# probe only; no promotion/native acceptance.",
+    "exactDiffMatched": true,
+    "rootProbeMatchesFullNativePriorPin": true,
+    "rootProbeSha256": "49f50afc9b0aded204624c2b29394af2f54e40f443960a316621fdd9f08dac3d",
+    "proposalSha256": "2763e053cb7b398e42af3bff0812db0f59168b48477052832e68d96881eb84b9",
+    "metadataByteIdentical": true,
+    "diffSemantics": [
+      "Mandatory next-frame yield",
+      "Five-second realtime readiness polling with frame-granularity deadline",
+      "Actual table.ShoppingAvailable only; reference-current view, original card/index, no pending storage",
+      "Timeout throws before request; no authority setter, private refresh/update, or direct shopping-host open added",
+      "Existing RequestShopping and CanUseShopping authority unchanged; all other probe code and checks unchanged"
+    ],
+    "causality": {
+      "hostSha256": "a318fb42382176152f7050009d382059d49f19d0082cd40b42edf70e2e1e174c",
+      "tableSha256": "a10381a648225afb86033743fd216d564ad6a4282f5bfeabdfeef8a8b60c099a",
+      "locations": [
+        "Phase5CollectionHost.Update:115-119 publishes observed view then RefreshShopping",
+        "RefreshShopping:107-112 derives capability through CanUseShopping",
+        "OnOpeningViewPublished:293-298 handles explicit retry only",
+        "TabletopPresentation.CanRequestShopping/RequestShopping:142-150 refuses stale false capability"
+      ],
+      "interpretation": "Pinned source analysis and managed reproduction; historical native failure has no per-frame timing trace."
+    },
+    "historicalNative": {
+      "report": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-player\\s01\\shopping\\report.json",
+      "sha256": "81739bd99657ab9a04fb4dca4a9022466ed54d58979510b34e8a9202ef20d0c8",
+      "passed": false,
+      "checks": 18,
+      "passedChecks": 16,
+      "failedChecks": [
+        "inspection-exact",
+        "probe-failure"
+      ],
+      "screenshots": 6,
+      "outboundCounts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "newNativeExecution": false
+    },
+    "freshTests": {
+      "existingExeReplay": [
+        {
+          "name": "red",
+          "exit": 1,
+          "stdout": "FAIL entry-yields-before-request\n",
+          "stderr": ""
+        },
+        {
+          "name": "green",
+          "exit": 0,
+          "stdout": "PASS entry-yields-before-request\nPASS actual-update-next-frame-opens\nPASS not-ready-first-frame-no-emit\nPASS not-ready-deadline-refuses\nPASS actual-gate-owned-refuses\nPASS actual-gate-blocked-refuses\nPASS stale-table-view-deadline-refuses\nTOTAL 7 managed extracted-source/simulated-frame checks; NOT native Unity execution\n",
+          "stderr": ""
+        }
+      ],
+      "independentInMemoryRoslynExecution": [
+        {
+          "name": "red-fresh",
+          "processExit": 0,
+          "scriptSha256": "044e89bdb5d3c740952774019d2f5d8959bb3494d0c20b5b7b3d258e8cca12d8",
+          "stdout": "Microsoft (R) Visual C# Interactive Compiler version 3.7.0-5.20367.1 ()\nCopyright (C) Microsoft Corporation. All rights reserved.\n\nType \"#help\" for more information.\n> > > > > > > > . . . . . . . . . . . > > > . . . . . . . . . . . . . . . > . . . . . . . . . . . . . . > > FAIL entry-yields-before-request\nREVIEW_EXIT=1\n> ",
+          "stderr": "(1,33): warning CS0649: Field 'Time.realtimeSinceStartup' is never assigned to, and will always have its default value 0\n(1,25): warning CS0649: Field 'View.paused' is never assigned to, and will always have its default value false\n(1,32): warning CS0649: Field 'View.storageBusy' is never assigned to, and will always have its default value false\n(1,60): warning CS0649: Field 'Game.HasPendingStorage' is never assigned to, and will always have its default value false\n(1,26): warning CS0649: Field 'Table.View' is never assigned to, and will always have its default value null\n(1,43): warning CS0649: Field 'Table.ShoppingAvailable' is never assigned to, and will always have its default value false\n(1,61): warning CS0649: Field 'Table.CollectionInputBlocked' is never assigned to, and will always have its default value false\n(1,84): warning CS0649: Field 'Table.CollectionOverlayVisible' is never assigned to, and will always have its default value false\n(1,28): warning CS0649: Field 'Lease.CardId' is never assigned to, and will always have its default value null\n(1,47): warning CS0649: Field 'Lease.FromBinder' is never assigned to, and will always have its default value false\n(1,27): warning CS0649: Field 'Binder.ShoppingAvailable' is never assigned to, and will always have its default value false\n(1,63): warning CS0649: Field 'Collection.Game' is never assigned to, and will always have its default value null\n(1,81): warning CS0649: Field 'Collection.table' is never assigned to, and will always have its default value null\n(1,75): warning CS0169: The field 'Test.end' is never used\n(15,12): warning CS7022: The entry point of the program is global code; ignoring 'Test.Main()' entry point.\n"
+        },
+        {
+          "name": "green-fresh",
+          "processExit": 0,
+          "scriptSha256": "12a487ac9fade81f79503b245be3cfba0ac6e9f73701cbb9600e6f1669f9da72",
+          "stdout": "Microsoft (R) Visual C# Interactive Compiler version 3.7.0-5.20367.1 ()\nCopyright (C) Microsoft Corporation. All rights reserved.\n\nType \"#help\" for more information.\n> > > > > > > > . . . . . . . . . . . > > > . . . . . . . . . . . . . . . > . . . . . . . . . . . . . . . . . . . . > > PASS entry-yields-before-request\nPASS actual-update-next-frame-opens\nPASS not-ready-first-frame-no-emit\nPASS not-ready-deadline-refuses\nPASS actual-gate-owned-refuses\nPASS actual-gate-blocked-refuses\nPASS stale-table-view-deadline-refuses\nTOTAL 7 managed extracted-source/simulated-frame checks; NOT native Unity execution\nREVIEW_EXIT=0\n> ",
+          "stderr": "(1,33): warning CS0649: Field 'Time.realtimeSinceStartup' is never assigned to, and will always have its default value 0\n(1,25): warning CS0649: Field 'View.paused' is never assigned to, and will always have its default value false\n(1,32): warning CS0649: Field 'View.storageBusy' is never assigned to, and will always have its default value false\n(1,60): warning CS0649: Field 'Game.HasPendingStorage' is never assigned to, and will always have its default value false\n(1,26): warning CS0649: Field 'Table.View' is never assigned to, and will always have its default value null\n(1,43): warning CS0649: Field 'Table.ShoppingAvailable' is never assigned to, and will always have its default value false\n(1,61): warning CS0649: Field 'Table.CollectionInputBlocked' is never assigned to, and will always have its default value false\n(1,84): warning CS0649: Field 'Table.CollectionOverlayVisible' is never assigned to, and will always have its default value false\n(1,28): warning CS0649: Field 'Lease.CardId' is never assigned to, and will always have its default value null\n(1,47): warning CS0649: Field 'Lease.FromBinder' is never assigned to, and will always have its default value false\n(1,27): warning CS0649: Field 'Binder.ShoppingAvailable' is never assigned to, and will always have its default value false\n(1,63): warning CS0649: Field 'Collection.Game' is never assigned to, and will always have its default value null\n(1,81): warning CS0649: Field 'Collection.table' is never assigned to, and will always have its default value null\n(21,12): warning CS7022: The entry point of the program is global code; ignoring 'Test.Main()' entry point.\n"
+        },
+        {
+          "name": "reviewer-extra",
+          "processExit": 0,
+          "scriptSha256": "76028f688cdffe6e084b04d339738dfdb6ffc4716187bd081b1e72d8db705c96",
+          "stdout": "Microsoft (R) Visual C# Interactive Compiler version 3.7.0-5.20367.1 ()\nCopyright (C) Microsoft Corporation. All rights reserved.\n\nType \"#help\" for more information.\n> > > > > > > > . . . . . . . . . . . > > > . . . . . . . . . . . . . . . > . . . . . . . . . . . . . . . . . . . . . . . . . . . . . > > PASS entry-yields-before-request\nPASS actual-update-next-frame-opens\nPASS not-ready-first-frame-no-emit\nPASS not-ready-deadline-refuses\nPASS actual-gate-owned-refuses\nPASS actual-gate-blocked-refuses\nPASS stale-table-view-deadline-refuses\nPASS review-storage-at-five-refuses\nPASS review-index-drift-refuses\nPASS review-card-drift-refuses\nPASS review-overlay-refuses\nPASS review-paused-refuses\nPASS review-view-storage-refuses\nPASS review-view-error-refuses\nPASS review-waits-before-deadline\nPASS review-delayed-readiness-opens\nTOTAL 16 managed extracted-source/simulated-frame checks; NOT native Unity execution\nREVIEW_EXIT=0\n> ",
+          "stderr": "(1,33): warning CS0649: Field 'Time.realtimeSinceStartup' is never assigned to, and will always have its default value 0\n(1,25): warning CS0649: Field 'View.paused' is never assigned to, and will always have its default value false\n(1,32): warning CS0649: Field 'View.storageBusy' is never assigned to, and will always have its default value false\n(1,60): warning CS0649: Field 'Game.HasPendingStorage' is never assigned to, and will always have its default value false\n(1,26): warning CS0649: Field 'Table.View' is never assigned to, and will always have its default value null\n(1,43): warning CS0649: Field 'Table.ShoppingAvailable' is never assigned to, and will always have its default value false\n(1,61): warning CS0649: Field 'Table.CollectionInputBlocked' is never assigned to, and will always have its default value false\n(1,84): warning CS0649: Field 'Table.CollectionOverlayVisible' is never assigned to, and will always have its default value false\n(1,28): warning CS0649: Field 'Lease.CardId' is never assigned to, and will always have its default value null\n(1,47): warning CS0649: Field 'Lease.FromBinder' is never assigned to, and will always have its default value false\n(1,27): warning CS0649: Field 'Binder.ShoppingAvailable' is never assigned to, and will always have its default value false\n(1,63): warning CS0649: Field 'Collection.Game' is never assigned to, and will always have its default value null\n(1,81): warning CS0649: Field 'Collection.table' is never assigned to, and will always have its default value null\n(30,12): warning CS7022: The entry point of the program is global code; ignoring 'Test.Main()' entry point.\n"
+        }
+      ],
+      "extractedEntryAndFourAuthorityMethodsMatchCurrentSource": true,
+      "oldRedScriptExit": 1,
+      "greenChecks": 7,
+      "extraRunChecks": 16,
+      "additionalReviewerChecks": 9,
+      "fixtures": "Exact extracted C# methods; simulated DTOs/CanUseShopping authority/time/frame scheduling. Roslyn csi compiles stdin in memory, no reviewer fixture/executable files written. These are NOT native Unity tests.",
+      "diagnostics": "Interactive CS0649/CS0169 stand-in-field and CS7022 global-entry warnings; no errors. Initial csi /nologo unsupported; corrected by omitting flag."
+    },
+    "compile": {
+      "evidence": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-inspection-probe-fix\\unity62-86-source-compile.json",
+      "evidenceSha256": "f53c536700e3de1ed1e8fcc2bdd9aa07e0f7a44959a93b49f15838fff9c3e071",
+      "pins": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-inspection-probe-fix\\sourcepins.json",
+      "pinsSha256": "50f04b8de590fda86817c3ad5ebe0d0c32729332d2ae391215c5740b398f3b43",
+      "all86CurrentSourcePinsMatch": true,
+      "runtimeSources": 83,
+      "editorHelperSources": 3,
+      "sourceCount": 86,
+      "actualReferenceFiles": 131,
+      "allReferenceFilesExist": true,
+      "onlyProposedProbeSubstituted": true,
+      "unity": "6000.2.14f1 / Unity 6.2",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "warningsAsErrors": true,
+      "freshCompileThisReview": false
+    },
+    "inheritedCoverage": {
+      "fullNativeReview": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-review-final\\review.json",
+      "sha256": "e0893c0a0cafdce00c1b1c7f494569657afa67a27ca3b2322eb6b723ca952625",
+      "fullProbeCoverageInheritedByOriginalHashAndExactLocalDiff": true,
+      "otherFiveHelpersUnchangedByThisProposal": [
+        "run_shopping_native.py",
+        "shopping_build_guard.py",
+        "shopping_native_driver.py",
+        "CPPPhase6ShoppingBuildPolicy.cs",
+        "Phase6ShoppingNativeBuild.cs"
+      ],
+      "separatelyApprovedExceptions": [
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\verification\\Phase_6_Shopping_Native_Metadata_Review.json",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\docs\\verification\\Phase_6_Shopping_Prepare_Snapshot_Review.json"
+      ],
+      "allPriorAndExceptionApprovalArtifactPinsRehashed": true,
+      "helperArtifactPins": {
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-fix-01\\run_shopping_native.py": "56d0d72f643c38bb58afd3b309431f14f3ab0a0a89a71cba3f5239f1f8d4d5d2",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-fix-01\\shopping_build_guard.py": "82ce1202915a1980b37afb003e1d915b1daba5ae9c8f826f0a6b1947dfea3f41",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-fix-01\\shopping_native_driver.py": "681a78476e0c2f53fbe871c50cea43e492c9aa657a09d569b78132f366b8f9c6",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-fix-01\\CPPPhase6ShoppingBuildPolicy.cs": "87e0c294194161e6764c3e9b8ff7f71cc7c19013ef4cf67b320fdfe9d0d8bed6",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-fix-01\\Phase6ShoppingNativeBuild.cs": "4e3e48891cdd2e68052deddce6940c57842c89681cc80e649b588bac662ff4b4",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-fix-01\\Phase6ShoppingSmokeProbe.cs": "49f50afc9b0aded204624c2b29394af2f54e40f443960a316621fdd9f08dac3d",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-parent-overlay\\StartupLoadingCoordinator.cs": "f296142d036a2c93c75ccb8983bb2f4566ce66f017d37b6b664169b3aac6626d",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-meta-format-fix\\shopping_build_guard.py": "ac127f3353a7a0f09e454b2d9406778d13e39cb1150d5d195bf224040db66ffc",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-meta-format-fix\\CPPPhase6ShoppingBuildPolicy.cs": "1036ff7c0d9351c6a4a447f1738d6053c60d5049d08fc5d1d77ddc1af5308e65",
+        "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-prepare-snapshot-fix\\run_shopping_native.py": "9279d9d8b1a559fcc1eb710702824eba23dd56443beeaa90182a95f1e36f870c"
+      },
+      "driverSevenAndManagedNine": "Inherited prior final review, not rerun here; broad suites unchanged by probe diff."
+    },
+    "preservation": {
+      "all86RootSourcePinsAndHistoricalEvidencePinsRechecked": true,
+      "writes": "Only review.json and report.md in this review directory",
+      "noRootStageNativePlayerGitNetworkOrSavesOperations": true
+    },
+    "limits": [
+      "Exact-source offline code approval, not authorization to promote or operate native helpers.",
+      "New player rebuild and owned native shopping/reopen execution remain required; old failed s01 evidence is unchanged, not accepted.",
+      "No new screenshot, native frame-order, UI geometry, live browser/clipboard/network or store crash/power-loss proof.",
+      "Deadline is coroutine/frame-granularity, not a hard real-time scheduling guarantee.",
+      "Broad original native guard/driver/policy coverage inherited, not freshly exercised."
+    ]
+  },
+  "approvedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-inspection-probe-fix/proposal/Assets/VintageCollector/Runtime/Phase6ShoppingSmokeProbe.cs": "2763e053cb7b398e42af3bff0812db0f59168b48477052832e68d96881eb84b9"
+  },
+  "report_path": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-inspection-probe-review/report.md"
+}

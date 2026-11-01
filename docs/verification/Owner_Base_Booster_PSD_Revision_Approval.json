@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "approved": true,
+  "sourcePath": "Pokemon-Base-Set/base1-base-set-booster-unlimited.psd",
+  "historicalN07Sha256": "439bf8ea086f654784b8e54ea57d4551d432e4449b860447a77d4a9333119b5f",
+  "ownerEditedSha256": "f2ba57de79033aaca4b8beef7ff93d865e48dd15ba7e6900a1f11daef564994e",
+  "question": "Did you edit the Base booster PSD, and should I preserve its current version while using only the new Jungle/Fossil art for this update?",
+  "userResponse": "Yes—keep my edited PSD; leave the accepted Base game artwork unchanged",
+  "scope": "Preserve this exact owner-edited source as the current original for the new art-update task only",
+  "mustNot": ["restore or overwrite the owner PSD", "modify historical n07 original hashes or earlier evidence", "regenerate or change accepted Base runtime art", "permit any other original-file change", "alter accepted player binaries or saves"],
+  "nativeBuildAuthorization": "Still requires independently reviewed exact-source builder and a trusted parent authorization; this source-change acknowledgement alone does not launch a build"
+}

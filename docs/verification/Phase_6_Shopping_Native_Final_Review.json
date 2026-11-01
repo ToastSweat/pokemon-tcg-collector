@@ -1,0 +1,193 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "scope": "Focused final independent rereview: prior complete six-helper/startup review inherited by exact SHA; only the two driver fixes newly assessed and exercised.",
+    "inheritedReview": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-review/review.json",
+    "inheritedReviewSha256": "14ed360c005595bb4c01fd92e32f9834f5cc8a9f0a0ec0df1d224ab4655766e1",
+    "unchangedFive": [
+      "run_shopping_native.py",
+      "shopping_build_guard.py",
+      "CPPPhase6ShoppingBuildPolicy.cs",
+      "Phase6ShoppingNativeBuild.cs",
+      "Phase6ShoppingSmokeProbe.cs"
+    ],
+    "driverDiff": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/exact.diff",
+    "exactDiffMatched": true,
+    "unchangedGates": [
+      "trusted parent evidence SHA and BuildWindows/nativeBuild/editorExit authority",
+      "operative guard path, source/compiler closure, real scene/probe enrollment and stage markers",
+      "nativefake-only tests, own PID/window/input fences",
+      "strict report, note/money/IDs/UTC, session equality and decompressed PNG checks",
+      "eleven protected historical players; Saves/Logs pruned before inspection"
+    ],
+    "parentFilenameBridge": {
+      "passed": true,
+      "unchangedFiles": [
+        "shopping_build_guard.py",
+        "CPPPhase6ShoppingBuildPolicy.cs",
+        "Phase6ShoppingNativeBuild.cs",
+        "Phase6ShoppingSmokeProbe.cs"
+      ],
+      "runnerOnlyReplacements": [
+        ".phase6-shopping-builder-input.json -> .shopping-builder-input.json",
+        ".phase6-shopping-build-report.json -> .shopping-build-report.json"
+      ],
+      "driverOnlyReplacement": ".phase6-shopping-build-report.json -> .shopping-build-report.json",
+      "actualCSharpProducerConsumer": "Both native helper reader and report writer use .shopping- prefix; final runner and driver agree."
+    },
+    "freshTests": {
+      "red": {
+        "methods": 2,
+        "exit": 1,
+        "failures": [
+          "candidate Logs addition incorrectly admitted by old driver",
+          "post-Popen constructor failure leaked old fake process"
+        ]
+      },
+      "focused": {
+        "methods": 10,
+        "exit": 0
+      },
+      "regression": {
+        "methods": 7,
+        "exit": 0
+      },
+      "managed": {
+        "checks": 9,
+        "compileExit": 0,
+        "exit": 0
+      },
+      "evidence": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-review-final/execution.json",
+      "fixtures": "Relocated own artifact directory; synthetic nativefake authority/source seams only; real guard boundary and complete legacy tree manifest execute. No operational admission bypass."
+    },
+    "candidateChecks": [
+      "plain Logs/Saves/Code and case variants rejected",
+      "three actual Windows directory junctions Logs/Saves/Code rejected, commands exit 0, canaries retained",
+      "Saves rejected before regular tree scan or hashing",
+      "byte and integer member-count drift rejected",
+      "valid complete candidate accepted",
+      "historical player pruning remains before stat"
+    ],
+    "cleanupChecks": [
+      "constructor, ready write, handshake, window discovery, ownership, timeout, nonzero exit, invalid report and report-read failure",
+      "normal exit reaped without kill; launch failure owns no process",
+      "terminate timeout and terminate exception both kill then bounded reap",
+      "try begins immediately after successful Popen; all subsequent adapter/native/report work inside cleanup; failures do not create success"
+    ],
+    "inheritedGuardMethods": 14,
+    "inheritedManagedPolicyChecks": 15,
+    "startupOverlay": {
+      "onlyAddedLine": "inputs.AddRange(root.GetComponentsInChildren<ShoppingPresentation>(true));",
+      "inverseRestoresCurrentRootText": true,
+      "sha256": "f296142d036a2c93c75ccb8983bb2f4566ce66f017d37b6b664169b3aac6626d",
+      "matchesPriorReviewedAndCompiledBytes": true
+    },
+    "compile": {
+      "sources": 86,
+      "unity": "6000.2.14f1 / Unity 6.2 real installed reference files",
+      "warnAsError": true,
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "all86SourcePinsMatchCurrentBytes": true,
+      "CPPPhase6ShoppingBuildPolicySha256": "87e0c294194161e6764c3e9b8ff7f71cc7c19013ef4cf67b320fdfe9d0d8bed6",
+      "evidence": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/command-exits.json",
+      "pins": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/compile-source-pins.json",
+      "freshCompileThisReview": false,
+      "nativeExecution": false
+    },
+    "preservation": {
+      "historicalRootMembers": 1078,
+      "parentApprovedRootMembers": 1088,
+      "matchesParentReceiptSourcePins": true,
+      "parentReceipt": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-parent/runtime-promotion-01/results.json",
+      "parentReceiptSha256": "593bd9e0177d11ba85d8df3a13a1672c13c35f653766ba754d04b0d80e720ae3",
+      "exactDelta": {
+        "Assets/VintageCollector/Presentation/BinderPresentation.cs": {
+          "before": "ef3fb0c1bdf05ae6c6e65da238e32e40476ca1c5e94d54969385fa463369cfae",
+          "after": "22fa2457ab33f983060937449294bc90bf41876e66d62359fb8fc88610265ab0"
+        },
+        "Assets/VintageCollector/Presentation/ShoppingPresentation.cs": {
+          "before": null,
+          "after": "c896a036b4e022b4009039d58cef4f2980d2bed7c9d45ca8c12f97d72fb10c0d"
+        },
+        "Assets/VintageCollector/Presentation/ShoppingView.cs": {
+          "before": null,
+          "after": "1058b2a0fcde0e503c34acaa805fa9740f5dfd8985dbe17394189b8a56902991"
+        },
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs": {
+          "before": "b39de3490406c385940be66195afa70f5c96b4b171bbd7ab71066cea5ec02dbc",
+          "after": "a10381a648225afb86033743fd216d564ad6a4282f5bfeabdfeef8a8b60c099a"
+        },
+        "Assets/VintageCollector/Runtime/OpeningGame.cs": {
+          "before": "43c99c3efaec969e5754692b1f51fbb4e8f2eaa1f32ed329e59d9e3b58feaf15",
+          "after": "3b74b7f19414860087f55c648a14da98256108fc9f98a37b15fe5145067843fe"
+        },
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs": {
+          "before": "6359668a34bf92c4e9092555c539c3d5aec45b9fb6579f1d3fb0ad03a01e8271",
+          "after": "a318fb42382176152f7050009d382059d49f19d0082cd40b42edf70e2e1e174c"
+        },
+        "Assets/VintageCollector/Runtime/Phase6ShoppingHost.cs": {
+          "before": null,
+          "after": "1e88fdda161635e0e1ca1d216b1b766a98f17e89e6f3caec9c28dee5428591ac"
+        },
+        "Assets/VintageCollector/Runtime/ShoppingUserActions.cs": {
+          "before": null,
+          "after": "d896f404d3f0aa246425da0199cbe89f7fc16d67815e3049b85765b3d83b1ac1"
+        },
+        "Assets/VintageCollector/Shopping/Comparison.cs": {
+          "before": null,
+          "after": "7be071129e98f56087f3e58bb968298b4982c5ba1d89c3354b73fdd778e9012a"
+        },
+        "Assets/VintageCollector/Shopping/Money.cs": {
+          "before": null,
+          "after": "56dcdfb909d054d9afc3ba52ce8461041a11118cefedbe2e8f5a531e30842a07"
+        },
+        "Assets/VintageCollector/Shopping/ShoppingJsonCodec.cs": {
+          "before": null,
+          "after": "a5fc6feca0c10f91a510bdba28556bab084f8ae440867e6b7383e9ee7dde5b23"
+        },
+        "Assets/VintageCollector/Shopping/ShoppingLinks.cs": {
+          "before": null,
+          "after": "c040bc21401c9813139ba87f367d53ad1c15ac0e0658e90ca6ece1a6c16ca02b"
+        },
+        "Assets/VintageCollector/Shopping/ShoppingNotesStore.cs": {
+          "before": null,
+          "after": "22777d461b6b14887955508f9c38f4bc24ab5a4f7fa845f49189048c2e2f3aa5"
+        },
+        "Assets/VintageCollector/Shopping/WantedCard.cs": {
+          "before": null,
+          "after": "86727e42653cdce138a5bc43a1d00a308cfc74a433e78ebfd2e5be3d5da40d51"
+        }
+      },
+      "added": 10,
+      "modified": 4,
+      "protectedPlayers": 11,
+      "protectedMembers": 1504,
+      "matchesOriginalImmutableBaseline": true,
+      "rootDeltaIsApprovedParentPromotionNotDrift": true,
+      "liveSavesAccess": false
+    },
+    "limits": [
+      "No Unity Editor launch, native asset import, scene serialization, BuildPlayer, actual player processes or screenshots exercised; compilation does not establish native acceptance.",
+      "No live shopping function, provider price/listing lookup, browser, clipboard, network sentinel or market/ownership claim.",
+      "Probe has no full stale-ID/owned-other-condition scenario, afterReplace fault, literal power-loss or native crash retry proof.",
+      "No native geometry/visual fit, Tab/underlay physical input, screen-size rendering or screenshot semantic review proved.",
+      "Driver snapshot semantics and URL-log reproduction are not independently exhaustive."
+    ],
+    "writes": "Only .artifacts/phase6-shopping-native-review-final; no production fixes, Root/native/player/Git/network/live-save changes.",
+    "approvalBoundary": "Exact-source offline code review approval only; not promotion authorization, native import/build/player proof, metadata adoption or native feature acceptance."
+  },
+  "approvedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/run_shopping_native.py": "56d0d72f643c38bb58afd3b309431f14f3ab0a0a89a71cba3f5239f1f8d4d5d2",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/shopping_build_guard.py": "82ce1202915a1980b37afb003e1d915b1daba5ae9c8f826f0a6b1947dfea3f41",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/shopping_native_driver.py": "681a78476e0c2f53fbe871c50cea43e492c9aa657a09d569b78132f366b8f9c6",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/CPPPhase6ShoppingBuildPolicy.cs": "87e0c294194161e6764c3e9b8ff7f71cc7c19013ef4cf67b320fdfe9d0d8bed6",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/Phase6ShoppingNativeBuild.cs": "4e3e48891cdd2e68052deddce6940c57842c89681cc80e649b588bac662ff4b4",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-fix-01/Phase6ShoppingSmokeProbe.cs": "49f50afc9b0aded204624c2b29394af2f54e40f443960a316621fdd9f08dac3d",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-parent-overlay/StartupLoadingCoordinator.cs": "f296142d036a2c93c75ccb8983bb2f4566ce66f017d37b6b664169b3aac6626d"
+  },
+  "report_path": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase6-shopping-native-review-final/report.md"
+}

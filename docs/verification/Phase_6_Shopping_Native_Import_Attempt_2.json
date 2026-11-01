@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "nativeAction": "CreateAssets",
+  "editorExit": 1,
+  "failure": "C# AdmitClosure rejects generated metadata included in frozen stage-before snapshot; preparation authority must remain frozen Root source",
+  "rootUnchanged": true,
+  "protectedPlayersUnchanged": true,
+  "evidence": ".artifacts/phase6-shopping-build/a02/results.json",
+  "unityLog": ".artifacts/phase6-shopping-build/a02/unity.log",
+  "metadataAdopted": false,
+  "nativePlayerBuilt": false
+}

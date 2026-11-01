@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "approved": true,
+  "question": "Should I continue correcting the remaining build-wrapper issue, or pause the art update here? Your accepted game and saves remain unchanged.",
+  "userResponse": "Continue with the narrow baseline correction and finish the art build",
+  "scope": "Correct PARENT-02-POSTFLIGHT so prepare verification uses the frozen Root source baseline, then complete independently reviewed separate art build and native verification",
+  "mustPreserve": ["accepted players and all saves", "owner-edited PSD", "historical baseline and rejected reviews", "unchanged Base runtime artwork", "strict metadata and source closure guards"],
+  "nativeAuthorizationStillRequired": true
+}

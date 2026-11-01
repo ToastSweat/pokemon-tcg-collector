@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "approved": true,
+  "question": "Should I apply the same visual-only exception you approved for Base Set to these Jungle/Fossil scans, keeping all Unlimited identities, odds and saves unchanged?",
+  "userResponse": "Use the stamped scans unchanged as visual substitutes",
+  "scope": ["Pokemon-Jungle: 64 card faces", "Pokemon-Fossil: 62 card faces"],
+  "intendedUse": "Private local presentation-only replacement of authorized temporary art",
+  "visualEdition": "Supplied scans visibly show First Edition stamps",
+  "canonicalGameEdition": "Existing English Unlimited identities remain unchanged",
+  "mustPreserve": ["supplied originals", "canonical catalog IDs and completion targets", "approved models and RNG", "saved pack contents and reveal progress", "exactly-once awards", "accepted Phase5Windows player and its saves"],
+  "wrapperUse": "Use all three supplied fronts per set through existing transaction-stable A/B/C visual selection",
+  "noRedistributionPermissionInferred": true,
+  "implementationNotYetClaimed": true
+}

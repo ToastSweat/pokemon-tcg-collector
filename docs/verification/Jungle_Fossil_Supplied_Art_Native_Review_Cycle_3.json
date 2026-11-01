@@ -1,0 +1,86 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "PARENT-02-POSTFLIGHT",
+      "severity": "medium",
+      "locations": [
+        ".artifacts/phase5-supplied-art-parent-fix-01/run_supplied_art_native.py:53,61,103",
+        ".artifacts/phase5-supplied-art-final-source-01/supplied_art_guard.py:254-266,52-55"
+      ],
+      "summary": "An already auto-imported prepare stage now passes admission but still cannot complete the unchanged parent postflight.",
+      "detail": "For a stage containing guard-authorized generated metadata absent from frozen sourcePins, verify_import_closure correctly accepts without repinning. The wrapper then sets before=compiler_manifest(policy.stage), including that metadata, and passes before to verify_prepare_closure. That function calls native_meta_plan(source_root,stage,before,...), whose compiler_manifest(root)!=pins check necessarily raises Root drift because Root intentionally lacks the generated stage metadata. This blocks both prepare actions for the newly admitted existing-stage path, after potential native side effects. The same issue also arises when before contains permitted folder metadata. Exact BuildWindows admission is unaffected.",
+      "evidence": "prepare-postflight.json: actual pinned guard admits Assets/A.cs.meta under the frozen source; actual postflight with wrapper-style before rejects ValueError('Root drift'); identical after with original frozen source as control is accepted. No native or operational entrypoint ran. The root-versus-before mismatch is independent of additional actual authoring outputs.",
+      "required_followup": "Carry the immutable Root/source baseline separately from the actual pre-action stage baseline throughout prepare postflight, preserving all source, metadata-role/GUID, allowed-authoring-delta and no-repin checks. Add an isolated admitted-existing-metadata through postflight regression. No implementation changes were made by this review."
+    }
+  ],
+  "coverage": {
+    "review_complete": true,
+    "verdict_scope": "Independent exact-hash rereview of complete 115-line proposed wrapper and complete 43-line supplied diff; all five unchanged final proposal files inherit prior full code/managed-fixture coverage only after exact SHA256 verification before and after this review. The six-file bundle is NOT approved because the prepare resume path still fails postflight.",
+    "prior_full_review": ".artifacts/phase5-supplied-art-native-independent-final-02/review.json",
+    "prior_review_sha256": "a93e94d5262a97b55509de9b9301685c22124b075fcd53c8766ed0fee661a2d7",
+    "inheritance": {
+      "SuppliedArtNativeBuild.cs": "Exact hash matches prior complete native admission, fixed metadata-folder and stage-only recipe review, including managed compilation/lifecycle fixtures; NATIVE-01/02/03 resolutions inherited with prior limits.",
+      "SuppliedArtSmokeProbe.cs": "Exact hash matches prior complete probe, bounded path/handshake, transaction/pixel/count coverage and actual-exit static review; no fresh player or rendering acceptance.",
+      "verify_supplied_art_player.py": "Exact hash matches prior complete canonical 126-ID/six-wrapper, manifest/pixel/report and process exit/reap review; seed and process-matrix limits remain.",
+      "supplied_art_guard.py": "Exact hash matches prior complete trusted receipt, historical owner exception, closure/boundary and pure fixture review. Re-read completely here; newly admitted wrapper path exposes the postflight baseline mismatch reported above.",
+      "SuppliedArtBuildPolicy.cs": "Exact hash matches prior complete C# policy/attestation/compiler and boundary review plus prior managed compilation/lifecycle evidence. Actual Unity CLI remains unexecuted."
+    },
+    "findings_status": {
+      "PARENT-01": "Resolved: require_owned_stage first completes policy.write_boundary over stage and candidate, then no_reparse(marker), is_file, size <4096, bounded read and exact json.dumps owner/root bytes. Missing, foreign, wrong-root, wrong-type, extra-key, malformed, noncanonical, oversized, directory and linked markers fail before evidence mkdir/header writes or launch. Independent real nested stage/candidate link fixtures fail before marker admission.",
+      "PARENT-02": "Pre-action gate resolved only: CreateAssets/CreateBootstrap use actual guard verify_import_closure with allow_pending=True, immutable source/effective pins, bounded validated explicit metadata only; arbitrary extras and source mutations reject. Postflight remains incompatible with preexisting allowed metadata as reported.",
+      "BuildWindows": "Exact actual compiler closure equals receipt effectiveStagePins remains mandatory; fresh stage and metadata drift are refused. Full effective recipe/Root closure authorization remains unchanged."
+    },
+    "preserved_checks": [
+      "Main statements before stage gate are AST-identical to old wrapper: out-of-band canonical trusted receipt digest, complete source/tool/art/protected-state validation, explicit action/prerequisite/path admission remain.",
+      "Bytes from evidence mkdir through finalizer are identical to old wrapper: full frozen source TSV, actual stage TSV, meta allowlist and builder-input hashes; native raw attestation SHA token binds action/root/stage/candidate; repeated authorization/boundary/tool checks remain before launch.",
+      "Actual subprocess returncode is retained and nonzero native exit raises; fresh zero-warning/error build report, complete actual candidate membership, source and protected-state/tool preservation checks remain unchanged. Their native execution is not claimed.",
+      "Exact acknowledged PSD exception and verbatim historical pins remain untouched; no authorization broadening or default-receipt acceptance was introduced."
+    ],
+    "fresh_execution": {
+      "command": "python -B F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/phase5-supplied-art-parent-independent-final/verify_review.py",
+      "exit_code": 0,
+      "existing_tests_passed": 17,
+      "refusal_cases": 13,
+      "refusal_bytes_and_mtimes_unchanged": true,
+      "refusal_mutator_calls": 0,
+      "all_receipts_unchanged": true,
+      "additional_boundary_owner_metadata_cases_passed": 6,
+      "postflight_defect_reproduced": true,
+      "native_operations_attempted": 0,
+      "native_execution_guard": "Audit hook refused subprocess/spawn/system/network calls and outside-directory mutation during the 17+6 fixture run; no prohibited event occurred. Postflight probe imports only read-only guard helpers and calls pure validators.",
+      "relocation": "test_parent.py copied byte-for-byte into this review directory; __file__ relocates HERE/results/fixtures here while ROOT remains repository Root. PARENT_SOURCE explicitly selects parent-fix-01/run_supplied_art_native.py. No production constants or original tests changed. Exact AST gate/helper/stage_write only; actual guard boundary/metadata functions; receipt orchestration is a fixture double.",
+      "evidence": [
+        "verification.json",
+        "fresh17.log",
+        "fresh17.json",
+        "fresh17-*-preservation.json",
+        "independent-results.json",
+        "*-preservation.json",
+        "prepare-postflight.json"
+      ]
+    },
+    "preservation": {
+      "root_compiler_inputs": 680,
+      "root_compiler_pins_match_supplied_before_and_after": true,
+      "all_six_reviewed_hashes_verified_before_and_after": true,
+      "old_operational_wrapper_sha256": "42e22b5fbb954e8ed949e13f7849cb47f4afae68d1489eb54ac5999ac81db0b7",
+      "actual_wrapper_promoted_or_executed": false,
+      "prior_review_tools_owner_approval_hashes_unchanged": true,
+      "protected_state_limit": "Prior complete nine-player/1226-member, Base/original and historical-exception verification is inherited as prior evidence, not freshly rescanned acceptance. No player, Saves or originals access or writes were performed here."
+    },
+    "limits": [
+      "No Root source edits, Git, network, Unity, managed/native build, player, operational launcher or Saves operations; no operative bundle promotion or operational receipt created.",
+      "Fresh fixtures establish admission/postflight predicates only, not real Editor import/serialization, build, rendering, physical-window, HOST startup or playlist behavior. Prior full-review limitations remain in force.",
+      "All review-created files and fixture mutations are confined to .artifacts/phase5-supplied-art-parent-independent-final. Existing README unchanged; no fixes or scope expansion."
+    ]
+  },
+  "originalReport": {
+    "path": ".artifacts/phase5-supplied-art-parent-independent-final/review.json",
+    "sha256": "a1b1a3e03884d20fdc9b1913a01d9bec1dcfe64b3c1a0ce6a4f3bef40761a3f4"
+  },
+  "nativeLaunched": false,
+  "status": "Review retry limit reached; escalate remaining postflight-baseline correction to owner before another fix cycle",
+  "acceptedBuildUnchanged": true
+}

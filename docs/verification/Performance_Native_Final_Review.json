@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "scope": "Focused independent corrected native-tooling review, not a fresh whole-Core/runtime audit.",
+    "inheritance": {
+      "source": "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-tooling-review/review.json",
+      "condition": "All original seven source hashes match prior reviewedFiles; complete recomputed unified diff equals exact.diff. Three unchanged C# sources byte-identical. Inherit prior full-seven review only for unchanged code/functions; prior rejection is not treated as prior approval.",
+      "unchangedProductionFiles": [
+        "PerformanceNativeBuild.cs",
+        "PerformanceBootTimingProbe.cs",
+        "PerformanceSmokeProbe.cs"
+      ],
+      "changedPythonASTNodes": {
+        "exactDiff": true,
+        "unchangedThree": {
+          "PerformanceBootTimingProbe.cs": true,
+          "PerformanceNativeBuild.cs": true,
+          "PerformanceSmokeProbe.cs": true
+        },
+        "performance_build_guard.pyChangedNodes": [
+          "native_meta_plan"
+        ],
+        "run_performance_native.pyChangedNodes": [
+          "main"
+        ],
+        "verify_performance_player.pyChangedNodes": [
+          "_validate",
+          "run"
+        ]
+      },
+      "fullChangedFileContext": [
+        "PerformanceBuildPolicy.cs",
+        "performance_build_guard.py",
+        "run_performance_native.py",
+        "verify_performance_player.py"
+      ]
+    },
+    "correctedFindings": {
+      "NATIVE-REVIEW-01": "Python and actual compiled C# require exactly one each fileFormatVersion=2, lowercase 32-hex GUID, folderAsset=yes and DefaultImporter root; extra/conflicting/duplicate root roles rejected. Nested ordinary Unity6000 fields and LF/CRLF pass. The existing three-directory 109-copy generation ownership gate is unchanged; no arbitrary folder expansion.",
+      "NATIVE-REVIEW-02": "Wrong installed runner directory is rejected at main entry before argparse, guard loading or receipt access. Runner and verifier load operative guard; exact eight-tool-set/hash checks use that installed guard HERE, and new action output is .artifacts/performance-build/<label>. Relocated exact-byte installed fixture passes pin-positive up to protected boundary and rejects old/missing/extra/drift pins. No old leaf was written. Full operational positive remains impossible before future Parent promotion.",
+      "NATIVE-REVIEW-03": "Exact eight actual Timing DTO fields; actual positive integer PID/frame/dimensions, matching PID/dimensions, finite nonnegative ordered times, literal Boolean flag, finite 0..1 progress. Probe only assigns progress/value together when op.progress>0; flag==(progress>0) therefore preserves actual semantics. Progress image mandatory if observed. Full valid synthetic reports/progress variants pass; counterexample, 66 malformed cases, inconsistent flags and extra fields fail. Duplicate compiler/candidate rows explicitly rejected before later boundaries."
+    },
+    "callerGates": "Runner keeps receipt sourcePins frozen, admits exact stage ownership/full regular tree before headers and revalidates before launch. Preparation postflight passes frozen Root source, not mutable staged-before pins, to verify_prepare_closure; native_meta_plan independently compares current Root to source. Build postflight uses strict effective two-scene source and full compiler/candidate closure; Root/preservation/tool pins rechecked finally. No Root configuration writes introduced. C# boundary/owner admission precedes header reads; AdmitClosure still ExactSource and strict effective recipe/frozen-source comparison.",
+    "startupAsyncGates": "Both runtime probes unchanged. Fresh source inspection confirms unconditional StartupLoadingCoordinator.IsReady, not-busy/no-error/no-pending/exact durable postconditions, explicit expected-fault branch, and startup completion only after live readiness, restored inputs, lifecycle/generation validation and completion Repaint. Current 946 Root compiler files match separately approved runtime/art promotion; no runtime re-audit or blanket approval.",
+    "freshExecution": {
+      "guardPythonTests": 22,
+      "guardManagedChecks": 11,
+      "proofPythonTests": 7,
+      "proofManagedChecks": 7,
+      "newPythonTests": 11,
+      "malformedReadyMatrixCases": 66,
+      "folderManagedChecks": 15,
+      "additionalIndependentReadyNegatives": 5,
+      "signedZeroNoProgressPositive": true,
+      "combinedRealUnityReferenceCompileSources": 75,
+      "compileExit": 0,
+      "compileDiagnostics": "empty stdout/stderr; -warnaserror+",
+      "allCommandsExitZero": true
+    },
+    "pinsAndEvidence": "Independently verified all 75 original compile source pins, 131 actual Unity6.2 reference pins and two installed compiler pins; reran combined compilation to review-owned output. Exact seven proposed hashes verified again after tests; 946 Root compiler pins equal approved promotion; frozen Base input a246236e80c45800e85063c9cf308af8def4e6cecf88277cdcaa9749253aa4d6 and J/F manifest 0cb3940530050398754c8bcc649b8234bc18d44c04c3006cd1d14d0a743f6eb7 verified.",
+    "fixtureRelocation": "All writes confined to performance-native-review-final, including exact proposed copies, owned miniature installed bundle, synthetic DTO/report/PNG data, fixtures/compiler/temp outputs. Only C# offline fixture-authority string relocated in a separate test-policy copy; folder harness/full75 compile use exact proposed policy bytes. Runtime Python imports use read-only legacy helpers. No Unity Editor/player/native build, Git, network, Root edits or live Saves access.",
+    "evidence": [
+      "fresh-execution.json",
+      "additional-evidence.json",
+      "reexecute.py",
+      "additional.py"
+    ],
+    "limitations": [
+      "Approval covers seven exact proposal source paths, not yet-installed operative bytes or Root destinations.",
+      "Future Root promotion, new authored/imported metadata and effective scene recipe must be independently pinned and Parent-authorized before any native action.",
+      "Installed tool fixture deliberately isolates receipt shape/Base/path preconditions and stops at protection boundary; it is not an operational authorization positive.",
+      "Prior ten-player/original preservation coverage inherited and baseline-shape exercised; did not reread every old player/original byte in this focused review.",
+      "Synthetic positive reports prove validation only; no native report was fabricated."
+    ]
+  },
+  "suggestions": [
+    "Keep the prior nonblocking separate timing-transform-root admission hardening suggestion; builder currently emits the correct separate root.",
+    "Native visibility, worker/JsonUtility behavior, pixels, responsiveness, durability, quit-while-busy/reentry/focus/pause and Binder cases still require separate native acceptance."
+  ],
+  "approvedFiles": {
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/PerformanceBootTimingProbe.cs": "fba45438e96901a05be823f97fd1662429925748f4969ad4883277253041435b",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/PerformanceBuildPolicy.cs": "f0963b2e155b55e45790a91f900969200ce7cda71841b23f2f6546c6e778590d",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/PerformanceNativeBuild.cs": "9d16b14c43e86ddc47b34d69ad35b4d355faac3a68dd64c7198f02a18e878701",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/PerformanceSmokeProbe.cs": "491e9e3613fbdbd0a9a14214302b209ee84f2b3508c2a3b5ba7fcb331c4b4736",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/performance_build_guard.py": "21253386ba1bbb508eea13ef6fe85f8d18bd9ac917081905c49f45c04520882d",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/run_performance_native.py": "8bf5efd469694131b36363fefa4bca7433e43b56201409cf26a82cee3ee654e3",
+    "F:/[WORKSPACE]/[HERMES]/[CHATGPT]/PokemonThrowbackTCG/.artifacts/performance-native-fix-02/verify_performance_player.py": "376972d4ecf0f69f8cb824e5346338e5888064b6b429801802ab227515fa2e38"
+  },
+  "originalReport": {
+    "path": ".artifacts/performance-native-review-final/review.json",
+    "sha256": "f7eccc5e94f62f4a5d27017b58766f8cf76e57e4025c0f50328b400bb6569807"
+  },
+  "nativeAcceptance": false
+}

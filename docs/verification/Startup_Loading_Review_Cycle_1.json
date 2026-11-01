@@ -1,0 +1,41 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "STARTUP-FAILURE-INPUT-01",
+      "severity": "high",
+      "source": "StartupLoadingCoordinator.cs:49-50,86-95,109-131",
+      "summary": "Fail restores gameplay presentations and removes scene input suppression while the opaque failed overlay remains and IsReady is false.",
+      "impact": "Timeout or missing media readiness with an otherwise valid game and collection permits hidden gameplay/collection inputs; visual DrawTexture overlay does not consume events. Disable/destroy rollback and post-failure late scene activation also expose ungated input without readiness.",
+      "evidence": [
+        "adversarial.log",
+        "Assets/VintageCollector/Presentation/TabletopPresentation.cs:252-258,398-428",
+        "Assets/VintageCollector/Presentation/PresentationRules.cs:77-109"
+      ],
+      "required_resolution": "Retain an effective independent command/input fence through visible startup failure and late activation; preserve exact final enabled-state restoration and reachable owner-controlled Quit/error Retry. No implementation changes authorized in this review."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "NATIVE-PROVIDER-INTEGRATION",
+      "source": "StartupLoadingCoordinator.cs:73-74",
+      "summary": "Upcoming NativeBaseHost success has Library null with NativeProvider populated. Adapt optional-art warning to its verified success/provider contract; Library null alone is not failure. Do not generalize null adapter into terminal success or failure."
+    },
+    {
+      "id": "TEST-FAILURE-PERMISSION",
+      "summary": "Original boundary checks approve immediate failure restoration but do not prove absence of gameplay commands. Add permission-level error/timeout/disable/destroy/late-activation tests rather than only enabled-state rollback assertions."
+    },
+    {
+      "id": "NATIVE-EVIDENCE",
+      "summary": "Scene authoring/admission and native no-camera paint/input/lifecycle/cleanup verification remain outstanding. Managed doubles and real-reference compilation do not prove a visible functional bar or speedup."
+    }
+  ],
+  "originalReport": {
+    "path": ".artifacts/startup-loading-review/review.json",
+    "sha256": "cc1aa3050362c6a8d9afff03e64c617586217859fbd07dcbf07dfe7987ab9135"
+  },
+  "correctionWorkspace": ".artifacts/startup-loading-fix-01",
+  "notRootPromoted": true,
+  "nativeLoadingScreenClaimed": false
+}

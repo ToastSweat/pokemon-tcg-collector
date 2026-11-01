@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "scope": "Read-only inventory, complete decode and catalog mapping; visual substitution permission still pending",
+  "manifest": {
+    "path": ".artifacts/phase6-art-discovery/manifest.json",
+    "sha256": "da4c3465307382556c30b8ad94a79e094d8df84ebd476adc4408da7c2563edfe"
+  },
+  "originalFiles": 132,
+  "originalMembershipHashesSizesMtimesRecheckedByParent": true,
+  "jungle": {
+    "faces": 64,
+    "wrappers": 3,
+    "faceDimensions": [
+      600,
+      825
+    ],
+    "wrapperDimensions": [
+      260,
+      475
+    ]
+  },
+  "fossil": {
+    "faces": 62,
+    "wrappers": 3,
+    "faceDimensions": [
+      600,
+      825
+    ],
+    "wrapperDimensions": [
+      260,
+      475
+    ]
+  },
+  "canonicalMappings": 126,
+  "missingFaces": [],
+  "duplicates": [],
+  "editionFinding": "Supplied faces have visible First Edition stamps; canonical Unlimited identities must not change",
+  "noDynamicMasksOrBacksSupplied": true,
+  "noIntegrationOrBuildChange": true,
+  "rights": "User supplied for private personal use; redistribution rights unknown",
+  "visualSubstitutionApproved": true,
+  "approvalRecord": "docs/verification/Jungle_Fossil_Art_Substitution_Approval.json",
+  "ownerDecision": "Use the stamped scans unchanged as visual substitutes"
+}

@@ -39,12 +39,14 @@ namespace VintageCollector.Collections
     public sealed class BinderSnapshot
     {
         public ReadOnlyCollection<BinderRow> Rows { get; private set; }
-        public int TargetCount { get { return 101; } }
+        public string PrintingId { get; private set; }
+        public int TargetCount { get; private set; }
         public int UniqueOwned { get; private set; }
         public int TotalQuantity { get; private set; }
         public double CompletionPercent { get { return UniqueOwned*100.0/TargetCount; } }
-        internal BinderSnapshot(BinderRow[] rows,int uniqueOwned,int totalQuantity)
-        { Rows=Array.AsReadOnly((BinderRow[])rows.Clone()); UniqueOwned=uniqueOwned; TotalQuantity=totalQuantity; }
+        internal BinderSnapshot(BinderRow[] rows,int uniqueOwned,int totalQuantity) : this("base-en-unlimited1999",101,rows,uniqueOwned,totalQuantity) { }
+        internal BinderSnapshot(string printingId,int targetCount,BinderRow[] rows,int uniqueOwned,int totalQuantity)
+        { PrintingId=printingId; TargetCount=targetCount; Rows=Array.AsReadOnly((BinderRow[])rows.Clone()); UniqueOwned=uniqueOwned; TotalQuantity=totalQuantity; }
     }
     public sealed class ImportPreview
     {

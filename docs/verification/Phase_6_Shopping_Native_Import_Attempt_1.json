@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "nativeAction": "CreateAssets",
+  "editorExit": 1,
+  "failure": "C# NativeMetaAllowance incorrectly rejects actual canonical minimal Unity script metadata lacking explicit MonoImporter",
+  "evidence": ".artifacts/phase6-shopping-build/a01/results.json",
+  "unityLog": ".artifacts/phase6-shopping-build/a01/unity.log",
+  "generatedScriptMetadata": {
+    "Assets/VintageCollector/Editor/CPPPhase6ShoppingBuildPolicy.cs.meta": "7d2f8f47d6af5c00c014b0e0ac6c740aeb8e02fb6523c378a7ea9412575e5945",
+    "Assets/VintageCollector/Editor/Phase6ShoppingNativeBuild.cs.meta": "cd41bec39d622cb57c43311bf0f3e139dd43c03d910bfb4b33993cce4f1b5b23",
+    "Assets/VintageCollector/Presentation/ShoppingPresentation.cs.meta": "1a1b7f28f741901c7f6477e314d3d1bdd925754b8658b06ff757bf5a5477c770",
+    "Assets/VintageCollector/Presentation/ShoppingView.cs.meta": "676d63bf86a9789591d6ad1ca688177ecc57ba1aa957d138df100525548a9f3a",
+    "Assets/VintageCollector/Runtime/Phase6ShoppingHost.cs.meta": "a78fb467c776b59ef823336f3640088e4c08d907a42ec9cbffc59a5e68ab9145",
+    "Assets/VintageCollector/Runtime/Phase6ShoppingSmokeProbe.cs.meta": "2275bad15e89c864e83582260ec22f4dea03b64310c0f21e7d4eabfb93e9223b",
+    "Assets/VintageCollector/Runtime/ShoppingUserActions.cs.meta": "a66afc26425cb6abf854d9a04d30fcbddd1269036c9a04298cef5f63b8f58879",
+    "Assets/VintageCollector/Shopping/Comparison.cs.meta": "b544843911d54b54411f9844d4bf90b13e39bd96bc5dbb5875db222c48d8ebe2",
+    "Assets/VintageCollector/Shopping/Money.cs.meta": "bd93d23a8e8046924ad5dece27306905c841e96f306d1dfe8ed74b99cd649e3e",
+    "Assets/VintageCollector/Shopping/ShoppingJsonCodec.cs.meta": "a4252c232dcbb81dc1be77cd41fcb8450270521a75c5a5319fdf3e25128a7209",
+    "Assets/VintageCollector/Shopping/ShoppingLinks.cs.meta": "ba95093935ab863dc1382688cfb95ee67af7328ab706b03730059c765d866ab0",
+    "Assets/VintageCollector/Shopping/ShoppingNotesStore.cs.meta": "7bbefdc3650fb92fb5055ad7267ddee964c9bf857e97a4a27889c5d65b797ec8",
+    "Assets/VintageCollector/Shopping/WantedCard.cs.meta": "73230048e5d9a598a5749d05ee11418a04ece5c2f8a106f52a5b729bdf83ee53"
+  },
+  "rootSourceCount": 1091,
+  "rootUnchanged": true,
+  "elevenUsedPlayersUnchanged": true,
+  "metadataAdopted": false,
+  "nativePlayerBuilt": false
+}

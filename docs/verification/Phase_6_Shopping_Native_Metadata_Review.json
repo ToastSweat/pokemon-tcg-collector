@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "exactDiffMatched": true,
+    "changedFunctionsOnly": [
+      "native_meta_plan",
+      "NativeMetaAllowance"
+    ],
+    "inheritedReview": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-native-review-final\\review.json",
+    "inheritedReviewSha256": "e0893c0a0cafdce00c1b1c7f494569657afa67a27ca3b2322eb6b723ca952625",
+    "priorSevenPinnedFilesUnchanged": true,
+    "freshOldRedActualMetadataBothLanguages": 13,
+    "freshGreenFormatParity": 37,
+    "freshProtectionParity": 12,
+    "freshPythonRegressionMethods": 14,
+    "freshManagedRegressionChecks": 15,
+    "freshCompileSources": 86,
+    "compileExit": 0,
+    "warningsAsErrors": true,
+    "nativeExecution": false,
+    "preservation": {
+      "passed": true,
+      "actualMetas": 13,
+      "parityCases": 37,
+      "pythonRegressionTests": 14,
+      "managedRegressionChecks": 15,
+      "compileSources": 86,
+      "compileExit": 0,
+      "warnAsError": true,
+      "nativeExecution": false,
+      "rootMembers": 1091,
+      "stageMembers": 1105,
+      "generatedMetas": 14,
+      "protectedPlayers": 11,
+      "protectedPlayerMembers": 1504,
+      "rootStagePlayersUnchanged": true,
+      "scope": "Isolated proposal only; all writes under this artifact directory; no Root or owned stage mutation, no promotion, native, git, network, saves or restaging",
+      "limits": "Strict minimal branch only; explicit MonoImporter retains historical parser behavior except duplicate count parity. Not a general YAML parser or native acceptance.",
+      "protectionParityCases": 12,
+      "actualFullClosureVerified": true,
+      "preflightStillRefusesGeneratedExtras": true
+    },
+    "execution": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-meta-format-review\\reviewer-execution.json",
+    "limits": [
+      "No Unity Editor launch, native asset import, scene serialization, BuildPlayer, actual player processes or screenshots exercised; compilation does not establish native acceptance.",
+      "No live shopping function, provider price/listing lookup, browser, clipboard, network sentinel or market/ownership claim.",
+      "Probe has no full stale-ID/owned-other-condition scenario, afterReplace fault, literal power-loss or native crash retry proof.",
+      "No native geometry/visual fit, Tab/underlay physical input, screen-size rendering or screenshot semantic review proved.",
+      "Driver snapshot semantics and URL-log reproduction are not independently exhaustive."
+    ],
+    "approvalBoundary": "Two exact proposal source files only. No installation, promotion, parent authorization, metadata adoption, stage reconciliation, Unity native import/build/player evidence, browser or clipboard access."
+  },
+  "approvedFiles": {
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-meta-format-fix\\shopping_build_guard.py": "ac127f3353a7a0f09e454b2d9406778d13e39cb1150d5d195bf224040db66ffc",
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-meta-format-fix\\CPPPhase6ShoppingBuildPolicy.cs": "1036ff7c0d9351c6a4a447f1738d6053c60d5049d08fc5d1d77ddc1af5308e65"
+  },
+  "report_path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-meta-format-review\\report.md"
+}

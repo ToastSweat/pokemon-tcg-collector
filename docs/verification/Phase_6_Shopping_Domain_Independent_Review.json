@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "reviewed": "All four complete source files, exact four-addition proposed-source.diff, contract, HANDOFF frozen API/schema, report, source map, pins, author tests and compiler/runtime evidence. No Git commands.",
+    "exactDiffVerified": true,
+    "sourcePinsBeforeAndAfter": true,
+    "pinnedInputsChecked": 26,
+    "relocatedAuthorSuites": 5,
+    "relocatedAuthorAssertions": 1893,
+    "independentEdgeAssertions": 4942,
+    "totalExecutedAssertions": 6835,
+    "allEligiblePrintings": 227,
+    "identity": "Base101 excluding Machamp8 with printed total102; Jungle64; Fossil62. All227 manual review plus unknown and mismatch for each of eight observations; same-name variants cross-checked. No art/stamp inference.",
+    "urls": "Closed authority/provider; HTTPS; explicit443; forbidden/noncanonical ports; userinfo; escaped authority/path; dot paths; 1..20 digit IDs; malformed/unsafe/Unicode percent and raw Unicode; allowlist; original-input preservation. Searches contain approved identity only and do not claim a verified match. No private location read.",
+    "money": "Int64 max parsing and overflow; aggregate overflow; all16 combinations of known-zero flags; unknown-nonzero and negatives; no implicit full total.",
+    "comparison": "Strict date invalid calendar/leap/time/offset/fraction/case/whitespace; public-field types; deep-copy input/output including nested graph across227; explicit review required; mismatch dominates unknown and manual flag; duplicate record IDs rejected; multiple listings for same card accepted; null graphs rejected.",
+    "separatePureLibraries": {
+      "compiledFresh": true,
+      "warningsAsErrors": true,
+      "unityDependencies": false,
+      "ShoppingReferences": [
+        "mscorlib",
+        "System.Core",
+        "System",
+        "VintageDomain"
+      ],
+      "DomainReferences": [
+        "mscorlib",
+        "System.Core"
+      ]
+    },
+    "unityReferenceCompileEvidence": {
+      "sourceCount": 76,
+      "referenceCount": 130,
+      "exit": 0,
+      "sourcePinMismatches": [],
+      "referencePinMismatches": [],
+      "reexecuted": false
+    },
+    "pureSideEffectReview": "No IO/network/browser/clipboard/environment/clock calls in four sources; fresh pure tests executed offline. Public search HEAD checks are not exact listing proof.",
+    "limits": "No Unity editor/native execution/build or serialization performed. Existing 76-source Unity-reference compiler evidence was hash-verified, not rerun. No protected-player/save traversal, no root/source changes, no private postcode or _SourceRoot read.",
+    "harnessCorrection": "Initial rejection expectation for harmless var=%41 was too strict. Initial failed run preserved in initial-harness-executions.json; corrected harness explicitly verifies acceptance preserves original URL. Production files were never changed."
+  },
+  "suggestions": [
+    "Document that Uri.Query canonicalizes unreserved percent escapes during allowlist validation: var=%41 is accepted and the exact original input is returned. This does not bypass host/path/provider restrictions or repair the returned URL.",
+    "Keep serializer-level wrong-type/missing-field rejection and actual Unity JsonUtility Int64 roundtrip in the separate integration gate; strongly typed pure DTO tests are not serializer evidence."
+  ],
+  "approvedFiles": [
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-domain-work\\src\\Comparison.cs",
+      "sha256": "7be071129e98f56087f3e58bb968298b4982c5ba1d89c3354b73fdd778e9012a"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-domain-work\\src\\Money.cs",
+      "sha256": "56dcdfb909d054d9afc3ba52ce8461041a11118cefedbe2e8f5a531e30842a07"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-domain-work\\src\\ShoppingLinks.cs",
+      "sha256": "c040bc21401c9813139ba87f367d53ad1c15ac0e0658e90ca6ece1a6c16ca02b"
+    },
+    {
+      "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase6-shopping-domain-work\\src\\WantedCard.cs",
+      "sha256": "86727e42653cdce138a5bc43a1d00a308cfc74a433e78ebfd2e5be3d5da40d51"
+    }
+  ],
+  "originalReport": {
+    "path": ".artifacts/phase6-shopping-domain-review/review.json",
+    "sha256": "124684a39ffccc25a6c8a83e46bcc791a31167cccfa0dca9414f115d89e5f10e"
+  },
+  "RootPromotion": false,
+  "nativeAcceptance": false
+}

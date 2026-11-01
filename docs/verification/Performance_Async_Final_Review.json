@@ -1,0 +1,317 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "originalReport": {
+    "path": ".artifacts/async-opening-storage-review-final/review.json",
+    "sha256": "a7f5f6a1d2f79f0115de700652d737c53a12e15cebb3b30edc2d5ce21c8ecfc9"
+  },
+  "coverage": {
+    "scope": "Full proposed controller, six-line exact diff, prior review and handoff; unchanged four-source prior full review retained by exact hash; actual worker reread. Fresh copied fixtures compile actual proposed controller/worker and persistence/domain.",
+    "prior_review": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review\\review.json",
+    "prior_four_files_hash_matched": true,
+    "prior_comparisons": [
+      {
+        "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Presentation\\OpeningView.cs",
+        "sha256": "042d6c5d1c210c5107838194b5e99cc58d8ceb7555efe8d2f3b134b5444c5120",
+        "baseline_sha256": "042d6c5d1c210c5107838194b5e99cc58d8ceb7555efe8d2f3b134b5444c5120",
+        "prior_sha256": "042d6c5d1c210c5107838194b5e99cc58d8ceb7555efe8d2f3b134b5444c5120",
+        "unchanged_since_prior": true
+      },
+      {
+        "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Presentation\\PresentationRules.cs",
+        "sha256": "be55fbb8686d792459680ba597e5461617472f7c2ad243e60c1c49e2e8ad59f1",
+        "baseline_sha256": "be55fbb8686d792459680ba597e5461617472f7c2ad243e60c1c49e2e8ad59f1",
+        "prior_sha256": "be55fbb8686d792459680ba597e5461617472f7c2ad243e60c1c49e2e8ad59f1",
+        "unchanged_since_prior": true
+      },
+      {
+        "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Presentation\\TabletopPresentation.cs",
+        "sha256": "b39de3490406c385940be66195afa70f5c96b4b171bbd7ab71066cea5ec02dbc",
+        "baseline_sha256": "b39de3490406c385940be66195afa70f5c96b4b171bbd7ab71066cea5ec02dbc",
+        "prior_sha256": "b39de3490406c385940be66195afa70f5c96b4b171bbd7ab71066cea5ec02dbc",
+        "unchanged_since_prior": true
+      },
+      {
+        "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Runtime\\OpeningGame.cs",
+        "sha256": "43c99c3efaec969e5754692b1f51fbb4e8f2eaa1f32ed329e59d9e3b58feaf15",
+        "baseline_sha256": "78d521366d18d4f84ec033a24064d77f7502ae988b3cf4edf685be39119ac002",
+        "prior_sha256": "78d521366d18d4f84ec033a24064d77f7502ae988b3cf4edf685be39119ac002",
+        "unchanged_since_prior": false
+      },
+      {
+        "path": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Runtime\\SerialOpeningStorage.cs",
+        "sha256": "7e1c8a5bf9b0fb7bd6abf1215cf4756602191e3ce9b2a100014bd90e0e6a9d6c",
+        "baseline_sha256": "7e1c8a5bf9b0fb7bd6abf1215cf4756602191e3ce9b2a100014bd90e0e6a9d6c",
+        "prior_sha256": "7e1c8a5bf9b0fb7bd6abf1215cf4756602191e3ce9b2a100014bd90e0e6a9d6c",
+        "unchanged_since_prior": true
+      }
+    ],
+    "six_single_line_replacements_verified": true,
+    "proposed_sources_stable_before_after": true,
+    "supplied_source_map_matched": true,
+    "original_reviewer_fixture_verbatim": true,
+    "bounded_fixture_diff": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\bounded-fixture.diff",
+    "bounded_wait_integrity": "Bounded completion retrieval occurs after unchanged duplicate rejection. Independent proven-completed-unconsumed slot rejection additionally passes using the actual gate/worker, without consuming or replicating concurrency logic.",
+    "fresh_tests": {
+      "seven": {
+        "named_groups": 7,
+        "passed": 7,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-seven\\seven-execution.json",
+        "passed_groups": [
+          "blocked-commit-responsive-no-early-ack-exactly-once-reopen",
+          "real-after-prepare-fault-reload-exact-request-no-early-ack",
+          "open-next-skip-retry-once-awards-idle-export",
+          "truthful-busy-gates-pause-volume-ack-consumed-on-main",
+          "deferred-repeated-quit-reentrant-throwing-cleanup-joined-reopen",
+          "external-shutdown-finishes-write-without-late-callback",
+          "legacy-default-synchronous-durable-ack"
+        ],
+        "all_exits_zero": true
+      },
+      "adversarial": {
+        "named_groups": 8,
+        "passed": 8,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-adversarial\\adversarial-execution.json",
+        "passed_groups": [
+          "worker-one-unconsumed-completion-thread-and-frozen-request",
+          "retry-identical-object-target-and-no-regeneration",
+          "unexpected-worker-fault-is-retryable-error-not-permanent-saving",
+          "completion-shutdown-reentrancy-no-post-cleanup-view-assignment",
+          "deferred-quit-public-set-selection-remains-closed",
+          "external-shutdown-worker-io-fault-all-cleanups-no-publication-reopen",
+          "completion-callback-throws-and-defers-quit-mandatory-cleanup-one-exit",
+          "busy-inspect-duplicate-and-collection-gate-retains-authority"
+        ],
+        "all_exits_zero": true
+      },
+      "extra": {
+        "named_groups": 3,
+        "passed": 3,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-extra\\extra-execution.json",
+        "passed_groups": [
+          "quit-seams-busy-and-idle-results",
+          "unexpected-error-retains-exception-pending-stack-and-ack",
+          "unexpected-error-callback-throw-still-cleans-up"
+        ],
+        "all_exits_zero": true
+      },
+      "negatives-final": {
+        "named_groups": 3,
+        "passed": 3,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-negatives-final\\execution.json",
+        "passed_groups": [
+          "error-publication-shutdown-never-restores-presentation-or-cue",
+          "error-publication-reentrant-retry-retains-authority-and-exact-request",
+          "completed-unconsumed-slot-denies-submit-after-proven-completion"
+        ],
+        "all_exits_zero": true
+      },
+      "legacy-original16": {
+        "named_groups": 16,
+        "passed": 16,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-legacy\\original16-execution.json",
+        "passed_groups": [
+          "selection-authority-matrix",
+          "controller-set-selection-has-no-generation-or-cue",
+          "recursion-safe-shutdown-disposes-session-once",
+          "gate-refresh-preserves-error-and-frozen-retry",
+          "collection-independent-browse-dirty-native-draft",
+          "stable-media-context-before-ack-optional-image-failure",
+          "rejected-optin-cannot-fall-back-to-legacy-on-retry",
+          "physical-retry-retains-exact-intent-and-clears-typed-drift",
+          "smoke-explicit-transaction-validated-before-generation",
+          "host-shutdown-releases-all-leases-even-on-dispose-fault",
+          "resume-binder-export-review-retry-never-generate-or-ack",
+          "canonical-handoff-raw-pins-and-scene-snapshot",
+          "initial-open-retry-adopts-stored-active-printing-without-generation",
+          "legacy-host-nested-shutdown-retains-reverse-lease-order",
+          "source-pins-before-any-optin-store",
+          "frozen-target-global-lookup-card11-explicit-results"
+        ],
+        "all_exits_zero": true
+      },
+      "legacy-targeted18": {
+        "named_groups": 18,
+        "passed": 18,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-legacy\\targeted18-execution.json",
+        "passed_groups": [
+          "L1-earlier-ShuttingDown-throw-before-host",
+          "L1-earlier-ShutdownCompleted-throw-before-container",
+          "L1-physical-Dispose-throw-before-media",
+          "L1-all-failures-and-reentrancy-game-entry",
+          "L1-all-failures-and-reentrancy-host-entry",
+          "L1-normal-Quit-cleanup",
+          "L1-earlier-subscriber-reenters-host-Shutdown",
+          "L2-quantity2-and-restore0-synchronous-permissions",
+          "L2-restoring-zero-immediately-releases-permission",
+          "L2-captured-native-typing-never-cleaned-by-publication",
+          "L2-pending-physical-typed-drift-retains-frozen-intent",
+          "L3-export-one-shot-Reload-close-advertised-Retry-acknowledges",
+          "L3-export-recovery-preserves-active-pack-and-held-error-on-navigation",
+          "L3-Retry-preserves-dirty-gate",
+          "L3-Retry-preserves-physical-gate",
+          "L3-Retry-preserves-review-gate",
+          "L3-Retry-preserves-import-confirm-gate",
+          "L3-Retry-preserves-restart-gate"
+        ],
+        "all_exits_zero": true
+      },
+      "legacy-adversarial12": {
+        "named_groups": 12,
+        "passed": 12,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-legacy\\adversarial12-execution.json",
+        "passed_groups": [
+          "adversarial-game-Quit-normal-player-mode-control",
+          "adversarial-host-Quit-normal-player-mode-control",
+          "adversarial-game-Quit-must-request-exit-even-when-cleanup-faults",
+          "adversarial-host-Quit-must-request-exit-even-when-cleanup-faults",
+          "adversarial-game-entry-16-fault-reentrancy-combinations",
+          "adversarial-host-entry-16-fault-reentrancy-combinations",
+          "adversarial-lifecycle-invocation-snapshot-survives-unsubscription",
+          "adversarial-media-detaches-only-exact-owned-provider-independently",
+          "adversarial-draft-invalid-quantity-cannot-look-clean-on-republication",
+          "adversarial-nonzero-condition-baselines-do-not-cross-clean-buckets",
+          "adversarial-repeated-export-Reload-fault-ordinary-Retry-no-navigation",
+          "adversarial-held-export-error-dirty-lock-release-without-unrelated-navigation"
+        ],
+        "all_exits_zero": true
+      },
+      "legacy-quit12": {
+        "named_groups": 12,
+        "passed": 12,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-legacy\\quit12-execution.json",
+        "passed_groups": [
+          "game-normal-player-quit",
+          "game-faulting-cleanup-player-quit",
+          "game-faulting-cleanup-and-exit-player-quit",
+          "game-exit-only-fault-player-quit",
+          "game-normal-editor-no-exit",
+          "game-faulting-editor-no-exit",
+          "host-normal-player-quit",
+          "host-faulting-cleanup-player-quit",
+          "host-faulting-cleanup-and-exit-player-quit",
+          "host-exit-only-fault-player-quit",
+          "host-normal-editor-no-exit",
+          "host-faulting-editor-no-exit"
+        ],
+        "all_exits_zero": true
+      },
+      "legacy-reentrant6": {
+        "named_groups": 6,
+        "passed": 6,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-legacy\\reentrant6-execution.json",
+        "passed_groups": [
+          "normal-game-quit-control",
+          "host-quit-reentrant-game-quit-control",
+          "editor-game-quit-reentrant-binder-quit-control",
+          "game-quit-reentrant-binder-quit-after-all-cleanup-once",
+          "game-shutdown-reentrant-binder-quit-after-all-cleanup",
+          "faulting-game-quit-reentrant-binder-quit-after-all-cleanup-once"
+        ],
+        "all_exits_zero": true
+      },
+      "legacy-owner": {
+        "named_groups": 28,
+        "passed": 28,
+        "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-legacy\\owner-execution.json",
+        "passed_groups": [
+          "binder-forwards-process-intent-to-game",
+          "shutdown-defers-nested-binder-intent-through-completion",
+          "game-dispatch-during-shutdown-retains-legitimate-intent",
+          "closed-binder-during-completion-forwards-intent",
+          "owner-matrix-game-nested-game",
+          "owner-matrix-game-nested-binder",
+          "owner-matrix-game-nested-request",
+          "owner-matrix-binder-nested-game",
+          "owner-matrix-binder-nested-binder",
+          "owner-matrix-binder-nested-request",
+          "owner-matrix-shutdown-nested-game",
+          "owner-matrix-shutdown-nested-binder",
+          "owner-matrix-shutdown-nested-request",
+          "owner-matrix-host-shutdown-nested-game",
+          "owner-matrix-host-shutdown-nested-binder",
+          "owner-matrix-host-shutdown-nested-request",
+          "post-cleanup-game-exitFault-False-editor-False",
+          "post-cleanup-game-exitFault-False-editor-True",
+          "post-cleanup-game-exitFault-True-editor-False",
+          "post-cleanup-game-exitFault-True-editor-True",
+          "post-cleanup-binder-exitFault-False-editor-False",
+          "post-cleanup-binder-exitFault-False-editor-True",
+          "post-cleanup-binder-exitFault-True-editor-False",
+          "post-cleanup-binder-exitFault-True-editor-True",
+          "post-cleanup-request-exitFault-False-editor-False",
+          "post-cleanup-request-exitFault-False-editor-True",
+          "post-cleanup-request-exitFault-True-editor-False",
+          "post-cleanup-request-exitFault-True-editor-True"
+        ],
+        "all_exits_zero": true
+      }
+    },
+    "unique_named_group_totals": {
+      "executed": 113,
+      "passed": 113,
+      "failed": 0
+    },
+    "legacy_nested_cases": {
+      "matrix": 480,
+      "post_cleanup": 12,
+      "counted_separately": false
+    },
+    "fresh_unity_reference_compile": {
+      "sources": 65,
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "warnings_as_errors": true,
+      "Unity": "6000.2.14f1",
+      "receipt": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\fresh-unity\\unity-execution.json",
+      "compile_input_map": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-review-final\\compile-inputs.json",
+      "all_inputs_match_prior_65_source_compile_hashes": true
+    },
+    "closed_findings": [
+      {
+        "id": "L1",
+        "status": "closed",
+        "evidence": "Direct PublishError(original worker exception): exact exception/stack, pending/last-ACK identity, nonbusy retry DTO and no fault cue verified."
+      },
+      {
+        "id": "L2",
+        "status": "closed",
+        "evidence": "After authority callbacks !closed protects presentation; completion/error shutdown and error-callback reentrant retry pass with nested CurrentView authority."
+      },
+      {
+        "id": "L3",
+        "status": "closed",
+        "evidence": "quitRequested guards selection, both smoke overloads and export; held-busy and idle-results completion callback tests reject mutation/export."
+      }
+    ],
+    "retained_prior_positive_findings": [
+      "OpeningStorageRequest arguments are readonly; PackResult copies and read-only-wraps card IDs. Generator/seed/transaction/time execute on main before submission; pending request object identity retained on failure and Retry.",
+      "Worker gate retains request until completion consumption; duplicate Submit denied both during held commit and while completion is unconsumed. Work executes only SessionStore operations/Snapshot; UI and events are observed from controller Update on main.",
+      "No early acknowledged snapshot, holdings projection or NotifyCommitted in held/failing commit tests. No changes to SaveProtocol four durable flushes, readbacks, anchors, state validation/schema, RNG or save envelope sources in proposal.",
+      "Main store creation is synchronous; opening mutation and Retry go through one worker, export refuses pending/busy/error, Shutdown joins before session release. Snapshot consumers use detached copies; no concurrently mutated serializer DTO shared with UI found.",
+      "Busy duplicate/retry/inspect/set policies deny, pause/volume retain truthful busy state, completion does not clear independent collection gate. Binder host acknowledgement uses HasPendingStorage and export barrier; host authority untouched.",
+      "Deferred repeated Quit, external join, worker IOException plus throwing/reentrant owners, completion callback failures, mandatory callbacks and one Application.Quit call passed tested groups; leases reopened and no late committed cues observed in those tests.",
+      "Default false synchronous behavior passed the real held-flush legacy group and all 92 named legacy checks, including original owner matrix."
+    ],
+    "limitations": [
+      "No native JsonUtility execution/thread-safety proof.",
+      "No native Binder/audio/focus/frame-latency/rendered-UI acceptance.",
+      "No exact native serializer byte-equivalence test; unchanged protocol sources and serializer adapter inspected.",
+      "No cancellation/Thread.Abort added; hung filesystem write can still delay external Shutdown by design."
+    ],
+    "operational_scope": "Only review-final directory written. No root production edits, Git, network, Unity Editor/player/native build, live save access, or other ongoing native artifacts.",
+    "issues_encountered": [
+      "First supplemental exec harness lacked __file__; corrected invocation passed all final three negatives."
+    ]
+  },
+  "approvedFiles": {
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Presentation\\OpeningView.cs": "042d6c5d1c210c5107838194b5e99cc58d8ceb7555efe8d2f3b134b5444c5120",
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Presentation\\PresentationRules.cs": "be55fbb8686d792459680ba597e5461617472f7c2ad243e60c1c49e2e8ad59f1",
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Presentation\\TabletopPresentation.cs": "b39de3490406c385940be66195afa70f5c96b4b171bbd7ab71066cea5ec02dbc",
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Runtime\\OpeningGame.cs": "43c99c3efaec969e5754692b1f51fbb4e8f2eaa1f32ed329e59d9e3b58feaf15",
+    "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\async-opening-storage-fix-01\\overlay\\Assets\\VintageCollector\\Runtime\\SerialOpeningStorage.cs": "7e1c8a5bf9b0fb7bd6abf1215cf4756602191e3ce9b2a100014bd90e0e6a9d6c"
+  },
+  "nativeAcceptance": false
+}

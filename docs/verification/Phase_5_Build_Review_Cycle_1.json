@@ -1,0 +1,73 @@
+{
+  "passed": false,
+  "security_concerns": [
+    {
+      "id": "SEC-01",
+      "severity": "high",
+      "title": "Owned candidate admission does not reject descendant reparse points before native build writes",
+      "locations": [
+        "tools/run_phase5_build_policy.py:57-68",
+        "tools/run_phase5_build.py:27,60-64",
+        ".artifacts/phase5-build-tools/Assets/VintageCollector/Editor/Phase5BuildPolicy.cs:12",
+        ".artifacts/phase5-build-tools/Assets/VintageCollector/Editor/Phase5Build.cs:59-62"
+      ],
+      "detail": "candidate_admission/Resolve check the candidate and its immediate children only. An otherwise owned candidate with a normal VintageCardCollector_Data directory and a junction at VintageCardCollector_Data/Managed is admitted. BuildPipeline.BuildPlayer subsequently receives that existing output tree; native writes can be redirected outside the admitted candidate. The post-build recursive manifest cannot prevent an earlier write. This is a pre-existing descendant-junction case, not a race-only allegation.",
+      "reproduction": "Fresh disposable owned fixture admitted the nested Managed junction in both actual Python candidate_admission and compiled production C# Resolve; no BuildPlayer or Unity was invoked, the target canary stayed unchanged, and junctions were removed.",
+      "evidence": [
+        "independent-checks.json#nested-write-junction-admission-observation",
+        "nested-boundaries-csharp.json"
+      ],
+      "required_fix": "Before candidate mutation/native launch, recursively reject existing reparse/nonregular descendants in the candidate write tree, with the existing populated-Saves refusal preserved. Add negative tests that assert refusal before marker/output writes; apply the same protection to Python preflight and direct C# menu admission."
+    },
+    {
+      "id": "SEC-02",
+      "severity": "high",
+      "title": "Owned stage admission ignores Unity-writable noncompiler directories",
+      "locations": [
+        "tools/run_phase5_build_policy.py:70-98",
+        "tools/run_phase5_build.py:37-43,50-64",
+        ".artifacts/phase5-build-tools/Assets/VintageCollector/Editor/Phase5BuildPolicy.cs:11,16-18"
+      ],
+      "detail": "stage_preflight scans Assets/Packages/ProjectSettings and selected receipt paths, but leaves an existing stage/Library junction uninspected. stage_exact retains Library; reuse-stage has the same blind spot. RequireOwnedStage/Admit likewise do not inspect Library. Launching Unity with this project path can redirect its implicit Library/cache writes outside the exact owned stage before executeMethod admission. Exact compiler-source closure does not constrain this output path.",
+      "reproduction": "A disposable stage made by production stage_exact, with an intact owner marker and a Library junction, passed stage_preflight(restage=True). Compiled production C# RequireOwnedStage also accepted that stage. The production no_reparse helper independently rejected the same junction, establishing the omitted traversal. No Unity was launched.",
+      "evidence": [
+        "independent-checks.json#nested-write-junction-admission-observation",
+        "nested-boundaries-csharp.json"
+      ],
+      "required_fix": "Preflight the complete existing Unity stage write boundary, including Library/Temp/Logs/UserSettings and other noncompiler descendants, before evidence/ownership writes, deletion, reuse or Unity launch. Reject reparse points rather than traversing their targets; do not weaken the separate preservation pruning of old-player Saves/Logs."
+    }
+  ],
+  "logic_errors": [],
+  "suggestions": [
+    {
+      "id": "SUG-01",
+      "locations": [
+        ".artifacts/phase5-build-tools/Assets/VintageCollector/Editor/Phase5NativeChecks.cs:53-65"
+      ],
+      "detail": "Strengthen native scene readback with enabled/active component and camera/listener checks, exact displayLabel/allowedProjectRoot comparisons, and explicit null optional cardBack/wrapperBack/Base-template/wrapper entries. Current creation assigns the intended values, but native validation does not cover all of them."
+    },
+    {
+      "id": "SUG-02",
+      "locations": [
+        "tools/run_phase5_build_policy.py:189-204"
+      ],
+      "detail": "Validate an explicit minimum/exact toolPins key set and binding schema in the Python preflight. Present code rejects changed listed hashes but accepts any nonempty toolPins subset; parent receipt construction must currently guarantee coverage. Keep exact approved source hashes compiled in Phase5InputPolicy, not supplied arbitrarily."
+    },
+    {
+      "id": "SUG-03",
+      "locations": [
+        "TestsPhase5/RuntimeBuildNativeTests.py",
+        "TestsPhase5/RuntimePlayerSmokeTests.py"
+      ],
+      "detail": "Token-presence tests are useful source-contract checks but do not execute native lifecycle/resource/scene semantics. Retain their actual counts without presenting them as native or end-to-end assertions."
+    }
+  ],
+  "summary": "Independent full 17-file review is BLOCKED on two reproduced descendant-reparse write-boundary defects. All 41 author Python tests rerun, six author and twelve independent C# checks passed; retained 41+16 and actual 61/30 managed compiler evidence reconciles. No Unity/player/network/Root promotion or authorization was performed.",
+  "originalReport": {
+    "path": ".artifacts/phase5-build-independent/review.json",
+    "sha256": "a0f2081a13051a5b863d5ea857c616f32d3195b9dd2f87d171e290f187148858"
+  },
+  "historicalRejectionPreserved": true,
+  "unityLaunchedOrEscapedWriteObserved": false,
+  "fixScope": "Preexisting descendant reparse write-tree checks before native launch/mutation in Python and staged C# policies"
+}

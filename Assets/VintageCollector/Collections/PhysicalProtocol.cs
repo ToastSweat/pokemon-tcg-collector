@@ -12,8 +12,9 @@ namespace VintageCollector.Collections
     {
         const string Header="VTCG-PHYSICAL-1\n";
         const int MaximumBytes=32*1024*1024;
-        readonly string directory; readonly IPhysicalSerializer serializer; readonly Catalog catalog; readonly ISaveFaultInjector faults;
-        internal PhysicalProtocol(string directory,IPhysicalSerializer serializer,Catalog catalog,ISaveFaultInjector faults) { this.directory=directory; this.serializer=serializer; this.catalog=catalog; this.faults=faults; }
+        readonly string directory; readonly IPhysicalSerializer serializer; readonly ApprovedSetRegistry registry; readonly ISaveFaultInjector faults;
+        internal PhysicalProtocol(string directory,IPhysicalSerializer serializer,Catalog catalog,ISaveFaultInjector faults) : this(directory,serializer,ApprovedSetRegistry.ForLegacyBase(catalog),faults) { }
+        internal PhysicalProtocol(string directory,IPhysicalSerializer serializer,ApprovedSetRegistry registry,ISaveFaultInjector faults) { if(registry==null)throw new ArgumentNullException("registry"); this.directory=directory; this.serializer=serializer; this.registry=registry; this.faults=faults; }
         string PathFor(string name) {string p=Path.Combine(directory,name);CollectionFiles.Check(p);return p;}
         static bool Exists(string path) { try { File.GetAttributes(path); return true; } catch(FileNotFoundException) { return false; } catch(DirectoryNotFoundException) { return false; } }
         void At(string stage) { if(faults!=null) faults.At(stage); }
@@ -36,7 +37,7 @@ namespace VintageCollector.Collections
             string payload=Payload(text);CollectionJsonShape.Physical(payload);
             PhysicalStateData data;
             try { data=serializer.Deserialize(payload); } catch(Exception e) { throw new InvalidDataException("Save payload cannot be deserialized; bytes preserved",e); }
-            PhysicalValidation.State(data,catalog); return PhysicalValidation.Copy(data);
+            PhysicalValidation.State(data,registry); return PhysicalValidation.Copy(data);
         }
         sealed class EnvelopeCorruption : IOException { internal EnvelopeCorruption(string message):base(message) { } }
         sealed class Copy
@@ -127,7 +128,7 @@ namespace VintageCollector.Collections
         }
         internal void Save(PhysicalStateData candidate)
         {
-            PhysicalValidation.State(candidate,catalog);
+            PhysicalValidation.State(candidate,registry);
             string text=Envelope(serializer.Serialize(PhysicalValidation.Copy(candidate)));
             if(new UTF8Encoding(false,true).GetByteCount(text)>MaximumBytes) throw new InvalidDataException("Save exceeds 32 MiB limit");
             if(!Equal(Decode(text),candidate)) throw new InvalidDataException("Serializer changed the candidate; no write performed");

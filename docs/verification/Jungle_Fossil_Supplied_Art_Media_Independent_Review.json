@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [
+    "Future caller native admission must account for 252444000 RGBA bytes plus Unity overhead, mipmaps and CPU/GPU copies; borrowed-reference pixel guards do not prevent prior allocations."
+  ],
+  "coverage": {
+    "fullSourceReview": 4,
+    "exactDiffVerified": true,
+    "managedMapAdapterChecks": 180,
+    "managedHostChecks": 11,
+    "realCanonicalIdChecks": 126,
+    "independentAdversarialChecks": 51,
+    "unityReferenceCompile": {
+      "sourceCount": 63,
+      "warningsAsErrors": true,
+      "exitCode": 0,
+      "nativeExecution": false
+    },
+    "assetMalformedAndPositiveTests": 17,
+    "originalAndCopiedFullPNGDecodes": 264,
+    "uniqueRGBAImages": 132,
+    "pngCRCsVerified": 132,
+    "canonicalFaces": 126,
+    "wrappers": 6,
+    "generationId": "b98f62fecb5239f3bbc7cf78273c2b8f209488f40d5362ba4519824a419058fb",
+    "manifestSHA256": "0cb3940530050398754c8bcc649b8234bc18d44c04c3006cd1d14d0a743f6eb7",
+    "rgbaBytes": 252444000,
+    "mapFacePixels": 62370000,
+    "rootProjectPreserved": 546,
+    "acceptedN07Preserved": 138,
+    "earlierPlayersPreserved": 1088,
+    "originalsPreserved": 132,
+    "mediaFrozenReceiptMembers": 37,
+    "allCallerReceiptPinsUnchanged": true,
+    "sharedBasePreserved": true,
+    "originalSizesAndMtimesPreserved": true,
+    "privateShoppingPreferencesRead": false,
+    "rootPromotion": false,
+    "nativeBuildOrAcceptance": false,
+    "limitations": "Managed boundary doubles and real Unity assembly compilation only; no native scene/import/render/audio/player acceptance or future native builder guard approval."
+  },
+  "originalReview": {
+    "path": ".artifacts/phase5-supplied-art-independent/review.json",
+    "sha256": "e6f01a761bc5035f57beb22362403dfa356dbb1209bd16d40df67429ca5d08b7"
+  },
+  "exactMediaSourceHashes": {
+    "Media/Phase5PresentationMedia.cs": "7b4339773d96680275ae27dcd46bdcfe2cb80edc36507a685a0aeb05ff2b61c1",
+    "Media/SuppliedCardArtMap.cs": "a1a4988dc2a5b1c8263036a8a9c75c033c81737751859b988204a2eb9e2b1e6d",
+    "Media/SuppliedCardArtProfile.cs": "0cf73ccfa53e50027af53119cc55b262da4ff85b9c0c349ea41bc86bc583ae26",
+    "Runtime/Phase5MediaHost.cs": "7a7d6f4c8cf08efce2028b8f319796ff22165ba34fc5ad6a2f871bb4ff8f7e40"
+  },
+  "nativeAcceptance": false,
+  "RootPromotionClaimed": false
+}

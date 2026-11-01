@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "originalReport": {
+    "path": ".artifacts/phase5-supplied-art-short-stage-review/review.json",
+    "sha256": "6f4eb1334a8b65ff0bd95f38434337ef692353a2a19a59663a8b7f89a1dff0ee"
+  },
+  "promotion": [
+    {
+      "path": ".artifacts/phase5-supplied-art-operative-01/supplied_art_guard.py",
+      "sha256": "fdaedeb0e48d9fdad8741b3b1d1af72d6b546020dc8cd060d93f8e3807a9c317"
+    },
+    {
+      "path": ".artifacts/phase5-supplied-art-operative-01/SuppliedArtBuildPolicy.cs",
+      "sha256": "6433091e7f74eeb0c05f1525032f77dfc745f85ceb231fb3a49e32898785e2c2"
+    },
+    {
+      "path": "Assets/VintageCollector/Editor/SuppliedArtBuildPolicy.cs",
+      "sha256": "6433091e7f74eeb0c05f1525032f77dfc745f85ceb231fb3a49e32898785e2c2"
+    }
+  ],
+  "scope": "Only exact owned stage-directory literal changes; prior review inherited"
+}

@@ -3,13 +3,19 @@ namespace VintageCollector.Presentation
     // Read-only-in-practice projection. Runtime owns all authoritative state.
     public sealed class OpeningView
     {
+        public string selectedPrintingId, activePackPrintingId, setLabel;
+        public bool canSelectSet;
+        public SetChoiceView[] supportedSets;
         public string stage, transactionId, errorMessage, recoveryNotice, modelLabel, statusLine, saveLocation;
         public int revealedCount, totalVirtualCards;
         public OpeningCardView[] cards;
         public bool paused;
+        public bool storageBusy;
         public float volume = 0.5f;
         public int inspectIndex = -1;
     }
+
+    public sealed class SetChoiceView { public string printingId, label; }
 
     public sealed class OpeningCardView
     {

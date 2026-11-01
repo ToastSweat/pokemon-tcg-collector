@@ -1,0 +1,50 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "S1",
+      "severity": "blocking",
+      "location": "ShoppingNotesStore.cs:60,70,74",
+      "summary": "Rehashed durable prepare with copied original operation receipt can publish different or empty comparisons and acknowledge the retained exact request.",
+      "reproduction": "afterPrepare exception; mutate comparisons only; retain lastOperationFingerprint and receipt fingerprint; recompute contentHash; Apply exact same request instance. Both altered-note and empty-array cases succeed, clear uncertainty and publish wrong state.",
+      "expected": "Refuse before repair/publish, preserve evidence, remain uncertain.",
+      "actual": "refused=False uncertain=False acknowledgedRecords=1 or 0; two independent regression groups fail."
+    }
+  ],
+  "coverage": {
+    "fullSourceReview": true,
+    "completeDiffMatchesSources": true,
+    "pinnedInputsChecked": 221,
+    "pinMismatchesBefore": [],
+    "pinMismatchesAfter": [],
+    "relocatedAuthorSuites": 10,
+    "relocatedAuthorAssertions": 193,
+    "independentAssertionEvaluations": 149,
+    "independentFailedGroups": 2,
+    "independentPassingGroups": 8,
+    "unityReferenceCompileFresh": true,
+    "unityReferenceSourceCount": 78,
+    "unityReferenceCompileExit": 0,
+    "warningsAsErrors": true,
+    "realFileSystem": true,
+    "realWindowsReparseFixture": true,
+    "preservation": "All non-lock bytes and file membership checked for independent expected refusals; live exclusive lock intentionally not read.",
+    "parser": "Full closed-reflection, ordinal canonical fields, acyclic DTO graph, bounded depth/tokens/strings/arrays/bytes inspected; primitive/UTF8/BOM/Int64/receipt array and corruption variants executed. No exhaustive fuzz claim.",
+    "protocol": "Author eight-stage exception-cut retries and reopen rerun; independent wrong lineage/missing/corrupt/unbound copies/exclusive lease/collision/deep-frozen mutation tests.",
+    "limits": [
+      "No native player/Editor/build/network/live saves or protected-player traversal.",
+      "No OS sandbox/power-loss/hostile directory-swap/IL2CPP claim.",
+      "All evidence deleted plus process restart cannot be distinguished from pristine, as disclosed.",
+      "No approved files while blocking issue remains."
+    ],
+    "harnessCorrection": "Initial active lock read failed; preserved initial executions.json; fixed reviewer helper only. Independent exit 1 in final-executions.json is intentional failing regression."
+  },
+  "approvedFiles": [],
+  "originalReport": {
+    "path": ".artifacts/phase6-shopping-store-review/review.json",
+    "sha256": "a9cf03ef5413c7a6aa72f8767c558ecdbd59b1501774d8ce23e75913b0ec5640"
+  },
+  "nativeAcceptance": false,
+  "RootPromotion": false
+}

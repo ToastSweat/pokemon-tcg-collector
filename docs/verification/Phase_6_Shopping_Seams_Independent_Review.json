@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "coverage": {
+    "reviewed": [
+      "HANDOFF.md",
+      "API.md",
+      "complete exact.diff",
+      "four full overlay changes with surrounding lifecycle/dispatch/publication/inspection paths"
+    ],
+    "fresh_original_assertions": {
+      "managed_actual_runtime_ui_lifecycle_layout": 35,
+      "actual_host_actual_registry_with_explicit_boundary_doubles": 45,
+      "existing_presentation_regressions": 2
+    },
+    "expanded_runs": {
+      "managed_actual_runtime_assertions": 37,
+      "actual_host_boundary_assertions": 60,
+      "existing_presentation_regressions": 2,
+      "note": "Expanded runs include original checks; do not add both runs to claim unique coverage."
+    },
+    "adversarial": [
+      "stale ID/source and forged binder DTO selection",
+      "current quantity typing immediately before begin retained on refusal",
+      "positive holdings across other condition buckets",
+      "same exact canonical ID and index in different authoritative inspection transaction",
+      "same ID different index",
+      "pending edit/import confirmation/review, loading false, errors, unknown ID, excluded Machamp, restart",
+      "actual OpeningGame direct gameplay command refusal under collection gate",
+      "actual OpeningGame quit while IsStorageBusy closes lifecycle input",
+      "direct host binder-open/close and all other non-Quit mutation/navigation routes blocked during lease",
+      "fresh gate recomposition after close with restart/error/binder state",
+      "reacquisition after dispose versus refusal after host shutdown",
+      "reentrant invalidation begin refusal, throwing observer isolation and later observer execution including shutdown"
+    ],
+    "compile": {
+      "source_count": 76,
+      "unity_references": "installed Unity 6000.2.14f1",
+      "warnings_as_errors": true,
+      "exit": 0,
+      "note": "Compiler run using real installed references; no Unity editor/player/build launched."
+    },
+    "geometry": {
+      "viewports": [
+        "1280x720",
+        "1600x900"
+      ],
+      "result": "Source rectangles fit scaled modal; CTA is right of face and above Back; binder extra content reachable by bounded scroll. See geometry.json and runtime layout checks.",
+      "native_render_verified": false
+    },
+    "authority": "No changed domain/store/save/RNG paths or added IO/network behavior. Shopping uses canonical IDs, current registry/projection/snapshot authority, own context lease avoids collection-gate self-deadlock. Refusal does not set collection errors or discard physical draft.",
+    "overlay": "Source audited Binder OnGUI before keyboard/focus/draw, transition focus clearing/pending latch; Tabletop existing first-line overlay return; actual host rejects binder special command routes; actual OpeningGame gate rejects gameplay dispatch.",
+    "boundaries": "No Root source modifications, Git, Unity editor/player/build, network, browser, clipboard, native GUI execution, or live saves. All writes confined to phase6-shopping-seams-review.",
+    "receipts": [
+      "fresh-ui/execution.json",
+      "fresh-host/execution.json",
+      "adversarial-ui/execution.json",
+      "adversarial-host/execution.json",
+      "compile76.json",
+      "geometry.json",
+      "review-pins.json"
+    ]
+  },
+  "approvedFiles": [
+    {
+      "path": "Assets/VintageCollector/Presentation/BinderPresentation.cs",
+      "sha256": "22fa2457ab33f983060937449294bc90bf41876e66d62359fb8fc88610265ab0",
+      "root_sha256": "ef3fb0c1bdf05ae6c6e65da238e32e40476ca1c5e94d54969385fa463369cfae"
+    },
+    {
+      "path": "Assets/VintageCollector/Presentation/TabletopPresentation.cs",
+      "sha256": "a10381a648225afb86033743fd216d564ad6a4282f5bfeabdfeef8a8b60c099a",
+      "root_sha256": "b39de3490406c385940be66195afa70f5c96b4b171bbd7ab71066cea5ec02dbc"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "sha256": "3b74b7f19414860087f55c648a14da98256108fc9f98a37b15fe5145067843fe",
+      "root_sha256": "43c99c3efaec969e5754692b1f51fbb4e8f2eaa1f32ed329e59d9e3b58feaf15"
+    },
+    {
+      "path": "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs",
+      "sha256": "a318fb42382176152f7050009d382059d49f19d0082cd40b42edf70e2e1e174c",
+      "root_sha256": "6359668a34bf92c4e9092555c539c3d5aec45b9fb6579f1d3fb0ad03a01e8271"
+    }
+  ],
+  "originalReport": {
+    "path": ".artifacts/phase6-shopping-seams-review/report.json",
+    "sha256": "e50c9ce29838c2a9e967a0fae611fb87605c9c8fa013c628acb4653dc12f0f22"
+  },
+  "nativeAcceptance": false,
+  "RootPromotion": false
+}

@@ -1,0 +1,50 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "L1",
+      "severity": "medium",
+      "file": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "lines": "368-384; RunStorage 212-222",
+      "finding": "An unclassified worker exception consumes the completion and clears IsStorageBusy, but leaves CurrentView.storageBusy=true and its old stage. The exact pending request remains, yet Retry is denied by PresentationRules. The session is permanently presented as Saving instead of an actionable storage error.",
+      "reproduction": "Actual SessionStore after-prepare injector throws ApplicationException on the worker. Update surfaces ApplicationException; observed busy=False, dtoBusy=True, stage=ready, pending=True, retry=False.",
+      "test": "unexpected-worker-fault-is-retryable-error-not-permanent-saving",
+      "scope": "Adversarial injected unexpected exception, not a claim that ordinary IOException handling failed. RunStorage filtering predates this change, but stale busy DTO is a new async failure mode.",
+      "requested_correction": "Handle every worker completion failure on the main thread with a truthful nonbusy error projection while preserving exact pending and original exception; do not reroll or acknowledge it."
+    },
+    {
+      "id": "L2",
+      "severity": "medium",
+      "file": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "lines": "417-437 (called by Update/Acknowledge 368-397)",
+      "finding": "A ViewPublished subscriber can synchronously Shutdown during completion publication. SetView resumes after all shutdown callbacks and unconditionally assigns presentation.View, restoring a view after cleanup.",
+      "reproduction": "On sealed nonbusy completion, actual ViewPublished subscriber calls game.Shutdown(); ShutdownCompleted clears the presentation View. After Drain returns, presentation.View is nonnull again. No late cue was emitted, but a post-cleanup presentation assignment occurred.",
+      "test": "completion-shutdown-reentrancy-no-post-cleanup-view-assignment",
+      "scope": "SetView has an inherited reentrancy hazard; this review does not label that line newly introduced. The new asynchronous completion path still fails the requested no-late-publication teardown contract.",
+      "requested_correction": "After synchronous authority callbacks return, do not touch presentation if shutdown closed the owner; preserve nested stricter-gate behavior and legacy regression contracts."
+    },
+    {
+      "id": "L3",
+      "severity": "medium",
+      "file": "Assets/VintageCollector/Runtime/OpeningGame.cs",
+      "lines": "29-45; 463-469; 368-379",
+      "finding": "RequestQuit closes DispatchCommand but not public TrySelectSet. During a deferred busy Quit, completion publication exposes an idle results state before Update reaches Shutdown, so a reentrant subscriber can change the selected printing and publish again after quit intent.",
+      "reproduction": "Actual three approved Phase5 configs, real Generate/Open, hold Skip at after-prepare, RequestQuit, release; nonbusy results ViewPublished subscriber calls TrySelectSet(jungle-en-unlimited1999). It returns true and SelectedPrintingId changes to jungle before cleanup.",
+      "test": "deferred-quit-public-set-selection-remains-closed",
+      "scope": "New deferred-quit window. Busy gating itself correctly denies selection until completion. No RNG or durable action was regenerated in the reproduction.",
+      "requested_correction": "Include quitRequested in direct public selection authority (and audit other direct mutation/export seams), not only DispatchCommand; coalesced exit intent must remain dominant."
+    }
+  ],
+  "suggestions": [
+    "Native acceptance remains required before scene opt-in/promotion: actual Unity JsonUtility worker serialization, frame responsiveness, rendered Saving state, audio/focus suppression, Binder integration and native process teardown were not executed.",
+    "Keep the independent adversarial regressions when correcting the controller. All three findings came from actual overlay controller/worker with real persistence, not a concurrency-state-machine replica.",
+    "Broader public API quit-intent audit: GenerateForSmoke and ReconcileForCollectionExport also omit quitRequested checks. Selection acceptance was reproduced; no unsupported additional mutation/export reproduction is claimed."
+  ],
+  "originalReport": {
+    "path": ".artifacts/async-opening-storage-review/review.json",
+    "sha256": "345c359b9bc2435337a9518497a310d100be75bdfc7a5894eb95812bd1f9ca46"
+  },
+  "proposalOnly": true,
+  "nativeAcceptance": false
+}
