@@ -1,0 +1,35 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "L1-Quit",
+      "severity": "high",
+      "title": "Faulting explicit Quit never requests process exit and leaves both command owners permanently closed",
+      "locations": [
+        ".artifacts/phase5-integration-work/Assets/VintageCollector/Runtime/OpeningGame.cs:237-241",
+        ".artifacts/phase5-integration-work/Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:125-127"
+      ],
+      "detail": "Both Quit branches call Shutdown before Application.Quit, without a guaranteed exit-attempt path. Corrected Shutdown deliberately surfaces AggregateException after attempting all cleanup. Any such exception prevents the non-editor Application.Quit call. Both owners are already closed; subsequent ordinary Quit commands return at their closed guards, and presentation command subscriptions have detached. This residual failure was not covered by the targeted normal-Quit group.",
+      "classification": "Residual fault-path defect in this corrected snapshot; not claimed to be newly introduced by the two-file delta.",
+      "observed": "Normal game and host player-mode controls each call the labelled Application.Quit double once. Faulting game and host Quit each call it zero times; physical/session/container are attempted once in order, media providers detach and library disposal is attempted once; all five actually thrown failures surface. A second ordinary Quit still calls Application.Quit zero times.",
+      "evidence": "F:\\[WORKSPACE]\\[HERMES]\\[CHATGPT]\\PokemonThrowbackTCG\\.artifacts\\phase5-controller-independent-cycle-2\\evidence\\adversarial-final\\execution.json",
+      "required_change": "Guarantee a non-editor exit attempt after all shutdown attempts for both explicit Quit entrypoints, without masking collected cleanup failures. Retain normal shutdown idempotence, release order, exact-once media cleanup, and reentrancy safety. Add player-mode faulting Quit assertions to the targeted suite.",
+      "boundary": "Exact staged production compiled unchanged; Application.Quit is only a counted managed double, not a native application/process-exit execution."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "PARENT-ASSEMBLY",
+      "detail": "Completed actual Core/UI assembly, registry semantics, strict native serialization, real durability/archive/path admission, media playback/resource ownership, scene/probe ordering, native/player and original-suite gates remain parent-owned. The authorized future read-only QuantityText getter is not reported as a speculative dependency defect."
+    }
+  ],
+  "summary": "Not approved: fresh original16 and targeted18 all pass, and L2/L3 plus lifecycle handler aggregation/reentrancy survive independent adversarial checks, but both faulting explicit Quit routes skip Application.Quit and cannot recover through another ordinary Quit.",
+  "originalReport": {
+    "path": ".artifacts/phase5-controller-independent-cycle-2/review.json",
+    "sha256": "8139d86578fe678b556c437d57d5f7a13fd4ecc11d2d3e3848286adb33274038"
+  },
+  "historicalRejectionPreserved": true,
+  "fixCycle": 2,
+  "scope": "Second/final narrow correction only to exception-safe explicit process-exit attempts; previous lifecycle/draft/export fixes retained"
+}

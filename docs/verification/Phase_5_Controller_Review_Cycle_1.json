@@ -1,0 +1,97 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "L1",
+      "severity": "high",
+      "title": "Multicast lifecycle exceptions skip mandatory cleanup and can strand leases",
+      "locations": [
+        "Assets/VintageCollector/Runtime/OpeningGame.cs:438-457",
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:254-268",
+        "Assets/VintageCollector/Runtime/Phase5MediaHost.cs:45-46,77-90"
+      ],
+      "detail": "OpeningGame invokes each lifecycle multicast delegate as a single call. A throwing earlier subscriber prevents all later subscribers from running. Finally releases the session and calls ShutdownCompleted, but does not guarantee physical release, container release, or media detachment. Closed guards make some skipped cleanup permanently unreachable.",
+      "reproductions": [
+        {
+          "case": "Earlier ShuttingDown subscriber throws before collection host",
+          "observed": "session-close,container-close; physicalStore still retained and host IsReady=true. Later host.Shutdown releases physical after the container."
+        },
+        {
+          "case": "Earlier ShutdownCompleted subscriber throws before collection host",
+          "observed": "physical-close,session-close; Profiles still retained. Both Game.Shutdown and host.Shutdown subsequently return because closed=true, leaving container undisposed."
+        },
+        {
+          "case": "PhysicalStore.Dispose throws in collection ShuttingDown handler before media handler",
+          "observed": "physical-close,session-close,container-close; Phase5MediaHost.Adapter remains bound to both table providers."
+        }
+      ],
+      "evidence": "evidence/independent-probes-3/execution.json",
+      "required_change": "Guarantee all mandatory owner cleanup despite any subscriber/Dispose exception; invoke independent handlers defensively or move ownership cleanup outside fallible multicast notification. Preserve recursion safety, exactly-once disposal, legacy nested shutdown compatibility and physical -> session -> container order. Add the reproduced ordering/throwing-handler tests."
+    },
+    {
+      "id": "L2",
+      "severity": "medium",
+      "title": "Binder set-selection permission is calculated from the previous quantity projection",
+      "locations": [
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:107-113",
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:162-164",
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:228-240"
+      ],
+      "detail": "quantity:<new> updates host quantity, but Publish computes BinderView.canSelectSet using DirtyDraft(), which still reads BinderPresentation.QuantityText from the old view. Only afterward does binder.View receive the new quantity. The returned DTO therefore exposes the opposite permission until a later publication.",
+      "reproductions": [
+        {
+          "case": "Stored0 -> quantity:2",
+          "observed": "quantityText=2, DirtyDraft=true, canSelectSet=true"
+        },
+        {
+          "case": "Dirty2 -> quantity:0",
+          "observed": "quantityText=0, DirtyDraft=false, canSelectSet=false"
+        }
+      ],
+      "impact": "The dirty draft selector is falsely enabled; restoring the stored quantity falsely leaves it disabled. Direct binder-set authority does refuse the dirty switch, so no draft loss or unauthorized persistence was observed. The UI permission is nevertheless incorrect and not guaranteed to self-refresh.",
+      "evidence": "evidence/independent-probes-3/execution.json",
+      "required_change": "Capture the native draft at the command boundary, then compute dirty status against the effective host quantity being published, consistently for both DTO and owner gate. Never infer cleanliness merely from publication; retain pending physical/import intent."
+    },
+    {
+      "id": "L3",
+      "severity": "medium",
+      "title": "Failed export reconciliation latches a collection gate that blocks the advertised opening Retry",
+      "locations": [
+        "Assets/VintageCollector/Runtime/OpeningGame.cs:235,261-273,311-321",
+        "Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:178-187,208-211,239-241"
+      ],
+      "detail": "If Game.ReconcileForCollectionExport hits a transient SessionStore.Reload failure, Game enters error and the host also records a collection error. Closing Binder retains the host error in collectionGate. OpeningGame rejects retry before reaching its error recovery branch; the table also blocks it. Retrying Backup cannot help because Acknowledged() is false.",
+      "reproduction": "A one-shot Reload IOException during Backup leaves opening stage=error after Binder close. DispatchCommand(\"retry\") causes zero new Reload calls and CollectionInputBlocked remains true. Reopening Binder, issuing unrelated mode:virtual to clear the host error, closing it, then Retry recovers immediately.",
+      "evidence": "evidence/independent-probes-3/execution.json",
+      "fixture_limit": "This reproduction substitutes only an explicitly labelled one-shot Reload fault/call counter into a review-owned copy of the existing contract double. No real store/durability claim. Actual original SessionStore.Reload can throw through protocol.Load; production controller/hosts are unmodified.",
+      "required_change": "Provide an explicit acknowledged recovery route for the opening error without clearing physical/import uncertainty, restart/review locks, or selection gates. Do not require an unrelated navigation command to clear a host error before ordinary Retry can run."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "S1",
+      "priority": "required-parent-integration-adaptation",
+      "title": "Select the seed-only overload explicitly in existing reflection-based legacy checks",
+      "location": "Assets/VintageCollector/Editor/Phase2RuntimeChecks.cs:42-49",
+      "detail": "The approved GenerateForSmoke(uint,string) addition is correctly present alongside the legacy uint overload. Existing Fixture.Invoke calls GetMethod(method) by name only; Seed consequently throws AmbiguousMatchException. Independently reproduced against the staged controller. API addendum already requires explicitly typed reflection. Adapt the parent-owned assembled test closure; this is not evidence that the old native suite passed."
+    },
+    {
+      "id": "S2",
+      "priority": "remaining-assembly-gate",
+      "detail": "Actual Core registry/store/archive and UI/media implementations must be independently assembled and exercised. The supplied registry double accepts labels/rules without semantic policy, UI doubles omit real setter/audio/native-null behavior, and GamePaths double treats all sessions as smoke. The current managed suite proves none of those real boundaries."
+    },
+    {
+      "id": "S3",
+      "priority": "required-native-gate",
+      "detail": "Confirm the actual read-only BinderPresentation.QuantityText getter in the completed presentation handoff and the scene order CollectionHost(-200) -> MediaHost(-100) -> Probe(-90), with no competing legacy hosts/probes. The missing getter in the original Root UI is an expected parent-directed addition, not an error assigned to this controller stream."
+    }
+  ],
+  "summary": "Not approved: the fresh managed boundary suite passes all 16 named groups, but independent probes reproduce lifecycle cleanup failures, stale binder draft permissions and blocked opening Retry after export reconciliation failure. No production files were modified.",
+  "originalReport": {
+    "path": ".artifacts/phase5-integration-independent/review.json",
+    "sha256": "1336bb73b947cfe736de66194aab2af7d7a7002ed066c95b00e134438c159cf3"
+  },
+  "historicalRejectionPreserved": true,
+  "componentBoundary": "Staged controller/hosts with explicit registry/store/Unity/UI/media doubles; not assembled/native acceptance"
+}

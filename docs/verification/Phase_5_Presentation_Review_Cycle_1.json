@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "security_concerns": [
+    {
+      "id": "UI-INPUT-OWNERSHIP-01",
+      "severity": "medium",
+      "component": "test driver, not the eleven production sources",
+      "path": ".artifacts/phase5-presentation-work/tools/run_phase5_render.py",
+      "lines": [
+        27,
+        29,
+        37,
+        39,
+        41,
+        42,
+        45,
+        46
+      ],
+      "issue": "The driver validates the owned process only while locating its HWND, then caches that handle across multiple PostMessageW calls and sleeps. It does not recheck process liveness and current HWND ownership immediately before each mouse/key/WM_CHAR message. A terminated player and reused HWND can therefore receive subsequent messages in a foreign window, violating the required owned-window input boundary.",
+      "evidence": "input-ownership-reproduction.json executes the exact source AST for the initial three-message click loop offline. After ownership changes during the first sleep, the unchanged loop posts both remaining messages to the now-foreign handle. No actual foreign-window input was sent. The later typing paths have the same unchecked sends.",
+      "required_change": "Route every message through one fail-closed sender that immediately checks p.poll(), IsWindow, visibility and GetWindowThreadProcessId(hwnd)==p.pid before PostMessageW; reject stale handles or exited children. Exercise loss/reuse between every message using offline mocks before another real render run. Ordinary checks cannot eliminate all OS races, but batch-time enumeration is not the required per-message fence.",
+      "productionImpact": "No evidence of an actual foreign-window message or corrupted receipt was found. This blocks approval of the complete reviewed proof workflow, not a claim that the passive production getter is incorrect."
+    }
+  ],
+  "logic_errors": [],
+  "suggestions": [
+    {
+      "component": "future projection transport",
+      "suggestion": "Keep BinderView/OpeningView as in-memory host projections. If future code serializes choices, add an explicit reviewed serializable transport/test rather than assuming BinderView.[Serializable] covers SetChoiceView. The preserved clone failure is test-fixture evidence, not a presently demonstrated production wire bug."
+    },
+    {
+      "component": "parent assembled verification",
+      "suggestion": "Retain separate claims for exact-source approval, native synthetic UI, actual Phase5CollectionHost/game durability, real serialized scene/profile bindings and human input/hearing. The latter gates are not certified by this review."
+    }
+  ],
+  "summary": "All eleven production files and the getter passed source/preservation checks, fresh pure tests and independently staged native Unity checks. Complete review fails because the native input driver lacks the required per-message owned-window fence. No production-code logic defect was found in this scope.",
+  "originalReport": {
+    "path": ".artifacts/phase5-presentation-independent/review.json",
+    "sha256": "543feb2e9c3f51d074119d551842e6aacb19355477524edf2e3aa08b1af42c57"
+  },
+  "historicalRejectionPreserved": true,
+  "productionLogicFinding": false,
+  "actualForeignWindowInputObserved": false,
+  "fixScope": "Python native-fixture input driver only; eleven production UI sources remain unchanged"
+}

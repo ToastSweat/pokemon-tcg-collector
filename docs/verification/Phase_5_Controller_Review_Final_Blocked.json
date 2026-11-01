@@ -1,0 +1,42 @@
+{
+  "passed": false,
+  "security_concerns": [],
+  "logic_errors": [
+    {
+      "id": "L1-Quit-reentrancy",
+      "severity": "high",
+      "title": "Reentrant Binder Quit requests exit before global cleanup and duplicates the outer game Quit request",
+      "locations": [
+        ".artifacts/phase5-integration-work/Assets/VintageCollector/Runtime/Phase5CollectionHost.cs:124-140,276-300",
+        ".artifacts/phase5-integration-work/Assets/VintageCollector/Runtime/OpeningGame.cs:237-250,456-472"
+      ],
+      "detail": "An earlier ShuttingDown subscriber can synchronously emit the still-subscribed Binder Quit. OpeningGame is already closed, but the host is still ready/open to commands. Nested host Shutdown releases physical, sees Game.IsShuttingDown, and correctly defers container release while Game.Shutdown returns through its closed guard. The new host Quit finally then requests Application.Quit immediately, before media/session/container cleanup. When the outer game Quit completes cleanup its own finally requests Application.Quit again. Returning from this nested Shutdown is not proof that all owners completed cleanup.",
+      "reproduction": "Register a Game.ShuttingDown subscriber before initializing Phase5CollectionHost; have it call g.GetComponent<BinderPresentation>().Emit(\"quit\"). Initialize the real staged host and media host, set the explicit Application double isEditor=false, then g.DispatchCommand(\"quit\").",
+      "actual": "Two counted requests. First request: cleanup=physical-close; sessionOwned=True, containerOwned=True, mediaOwned=True, providersBound=True. Second request: physical-close,session-close,container-close and all four ownership/binding flags False. Same ordering and duplicate requests with all four disposal faults armed; all four failures still surface. With outer g.Shutdown instead, the sole nested request is premature. Editor reentry requests zero exits; host-outer/game-reentry control requests one after all cleanup.",
+      "evidence": ".artifacts/phase5-controller-independent-final/evidence/r6/execution.json",
+      "independent_fixture": ".artifacts/phase5-controller-independent-final/ReentrantQuitChecks.cs",
+      "classification": "Residual L1 explicit-Quit/reentrancy acceptance failure, not a claimed new regression: the pre-fix two-source control also fails the same three groups (compiler0/runtime1). Ordinary non-reentrant faulting Quit is fixed.",
+      "required_escalation": "Final cycle remains blocked. Escalate this precise ordering/exact-once issue to the parent/user; no third fix cycle or source edits were attempted. A future authorized design must defer/coalesce reentrant exit intent until global cleanup completion, retaining all exception semantics.",
+      "boundary": "Actual managed calls over exact staged controller/hosts. Application.Quit is an explicit counter/observer double; no native process-exit timing or native cleanup-completion claim."
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "ESCALATE-EXHAUSTED-CYCLE",
+      "detail": "Do not promote or accept this component; escalate L1-Quit-reentrancy rather than automatically starting another fix cycle."
+    },
+    {
+      "id": "SEPARATE-PARENT-GATES",
+      "detail": "Actual Core/UI/native assembly, real store/serializer/media behavior, scene ordering and real process-exit proof remain separate parent gates. This component review is not user acceptance. Immutable assembled-source-01 is not treated as the final source snapshot."
+    }
+  ],
+  "summary": "Not approved: all 58 requested named groups pass on the exact five-file handoff; an additional independent six-group reentrant-Quit suite has three genuine failures, reproducing premature and duplicate exit requests. No production or historical evidence was modified.",
+  "originalReport": {
+    "path": ".artifacts/phase5-controller-independent-final/review.json",
+    "sha256": "f4bdc420674501801c564e863258feab07ae95cf3f67aa8cb70cff757f93d7f3"
+  },
+  "automaticFixCyclesExhausted": 2,
+  "sourcePromotionAuthorized": false,
+  "requiresEscalation": true,
+  "acceptedBuildOrSavesChanged": false
+}

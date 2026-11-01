@@ -1,5 +1,7 @@
 # Phase 5 — Jungle / Fossil discovery and asset decisions
 
+**Current override: PAUSED.** The later controller-only Quit ownership escalation timed out unanswered; no redesign/source promotion is authorized. Completed component proofs and remaining native gates are summarized in [Phase_5_Paused_Handoff.md](Phase_5_Paused_Handoff.md). The active-work wording below is retained as earlier checkpoint history, not a direction to resume automatically.
+
 ## Active implementation checkpoint
 
 The user explicitly selected **“Use the sheet-informed provisional models for both sets”** after the concrete composition/order/weighting/duplicate/independence proposal. The exact decision and parameters are recorded in `../verification/Phase_5_Model_Approval.json`; no further blanket continuation/art approval is needed.
