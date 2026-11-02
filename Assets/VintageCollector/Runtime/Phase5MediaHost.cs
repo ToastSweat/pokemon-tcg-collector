@@ -51,7 +51,12 @@ namespace VintageCollector.Runtime {
     };
     SuppliedCardArtMap art=null;
     bool artRejected=false;
-    try {art=SuppliedCardArtMap.Create(suppliedCardArtProfiles,resolver);}
+    try {art=SuppliedCardArtMap.Create(suppliedCardArtProfiles,resolver,delegate(string cardId) {
+     if(string.IsNullOrEmpty(cardId))return false;
+     try {return registry.FindCard(cardId).Finish=="holo";}
+     catch(System.Collections.Generic.KeyNotFoundException){return false;}
+     catch(ArgumentException){return false;}
+    });}
     catch(Exception) {artRejected=true;}
     // Optional art refusal must not disable accepted Base images, native audio or controls.
     if(NativeBaseProvider!=null) {

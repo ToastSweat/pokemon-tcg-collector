@@ -66,7 +66,12 @@ namespace VintageCollector.Media
             if(printing==BasePrinting) return baseMedia==null?null:baseMedia.CardFace(cardId);
             return suppliedArt!=null && suppliedArt.TryGetFace(cardId,printing,out face)?face:null;
         }
-        public Texture2D HoloMask(string cardId) { return Printing(cardId)==BasePrinting && baseMedia!=null?baseMedia.HoloMask(cardId):null; }
+        public Texture2D HoloMask(string cardId)
+        {
+            string printing=Printing(cardId); Texture2D mask;
+            if(printing==BasePrinting) return baseMedia==null?null:baseMedia.HoloMask(cardId);
+            return suppliedArt!=null && suppliedArt.TryGetHoloMask(cardId,printing,out mask)?mask:null;
+        }
         public Texture2D CardTemplate(string cardId)
         {
             string printing=Printing(cardId);Binding b;

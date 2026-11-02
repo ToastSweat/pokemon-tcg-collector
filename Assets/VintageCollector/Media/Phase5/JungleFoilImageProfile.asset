@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07199cf4b6b7cf4ea8b4723273cb9a0, type: 3}
+  m_Name: JungleFoilImageProfile
+  m_EditorClassIdentifier: Assembly-CSharp::VintageCollector.Media.SuppliedCardArtProfile
+  printingId: jungle-en-unlimited1999
+  displayLabel: Jungle supplied visual substitutes
+  cards:
+  - cardId: pkmn-jungle-en-unlimited1999-001-holo-standard
+    face: {fileID: 2800000, guid: a2da1f1d5b39f194bbacda48099b0730, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-002-holo-standard
+    face: {fileID: 2800000, guid: 947c9fe9e06a4344c8c2019562fd6ce6, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-003-holo-standard
+    face: {fileID: 2800000, guid: 2d03b9b5782bef44ab04b02dab156ced, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-004-holo-standard
+    face: {fileID: 2800000, guid: dbbbf2762f52e4245aa8e6c08e99e430, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-005-holo-standard
+    face: {fileID: 2800000, guid: 66bc03cb386409845ac27dbfb695c657, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-006-holo-standard
+    face: {fileID: 2800000, guid: e325aaf3da49af04f96a93fddf0f2865, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-007-holo-standard
+    face: {fileID: 2800000, guid: dd6f7e0322840cd40a41417d8598a9c9, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-008-holo-standard
+    face: {fileID: 2800000, guid: 2db4d779f0bb6e848b4748e2a076726d, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-009-holo-standard
+    face: {fileID: 2800000, guid: 8205da1166ae1ef4f9438683ca8c8e27, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-010-holo-standard
+    face: {fileID: 2800000, guid: bc46eec83ab6bfa49bcf0b65e9430587, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-011-holo-standard
+    face: {fileID: 2800000, guid: 5c533550d69edff4287c07e0e67542d7, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-012-holo-standard
+    face: {fileID: 2800000, guid: 677c75f65673d9844950a5315d12819c, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-013-holo-standard
+    face: {fileID: 2800000, guid: 83ec4bce427b24345ad0e51fc48df127, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-014-holo-standard
+    face: {fileID: 2800000, guid: 22594d5765cc190499707d23fb48529f, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-015-holo-standard
+    face: {fileID: 2800000, guid: 3ff8adc99d29fa8419ad32e5bfbee816, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-016-holo-standard
+    face: {fileID: 2800000, guid: f96aaa8166932b14c9736f40796dac56, type: 3}
+    holoMask: {fileID: 2800000, guid: b73e14c452bebd4498203e87baa2849f, type: 3}
+  - cardId: pkmn-jungle-en-unlimited1999-017-nonholo-standard
+    face: {fileID: 2800000, guid: 0c18af812404b944cafe6e0e5ceb6a27, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-018-nonholo-standard
+    face: {fileID: 2800000, guid: 44ddefa4113f6d142962a9444315779d, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-019-nonholo-standard
+    face: {fileID: 2800000, guid: bfec6b5bc722f6744af2c78a7c01c003, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-020-nonholo-standard
+    face: {fileID: 2800000, guid: 8b78dd31fbe7d0d478a9b94cfe5e6a6a, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-021-nonholo-standard
+    face: {fileID: 2800000, guid: de6acb8fe4747be469af88febaadd26e, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-022-nonholo-standard
+    face: {fileID: 2800000, guid: 4b147ccd0a6e944488b28b8957d2d1ab, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-023-nonholo-standard
+    face: {fileID: 2800000, guid: 557d649f46c5ce04f96af34a20b798b8, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-024-nonholo-standard
+    face: {fileID: 2800000, guid: 17d94a55c3914154db617a4d046bb71e, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-025-nonholo-standard
+    face: {fileID: 2800000, guid: 3fcff01e5f2f63a41902c936318e8831, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-026-nonholo-standard
+    face: {fileID: 2800000, guid: 9b51e7182a23cab4b98bd81ca6479d4f, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-027-nonholo-standard
+    face: {fileID: 2800000, guid: 6ec269c8496fc9b4390dd91484d3c6c1, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-028-nonholo-standard
+    face: {fileID: 2800000, guid: f27d8b54dc9436c47991d2b29eb772dc, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-029-nonholo-standard
+    face: {fileID: 2800000, guid: 729b72c7df82a794ea39708964976c12, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-030-nonholo-standard
+    face: {fileID: 2800000, guid: ccbc14a77423231478aec013c4c03d50, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-031-nonholo-standard
+    face: {fileID: 2800000, guid: 7bae8f7d02628a3488031f6d82357dd9, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-032-nonholo-standard
+    face: {fileID: 2800000, guid: 1b0829c88eea6264792f1c471681ef69, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-033-nonholo-standard
+    face: {fileID: 2800000, guid: 4d43c0d35dc73d746900bed4095e82f4, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-034-nonholo-standard
+    face: {fileID: 2800000, guid: c6ce18b243a0a174aa3f5aee4056e780, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-035-nonholo-standard
+    face: {fileID: 2800000, guid: 3ed999c72023f59468b38050a00543d6, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-036-nonholo-standard
+    face: {fileID: 2800000, guid: 803f733f44d4424479316453db791e89, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-037-nonholo-standard
+    face: {fileID: 2800000, guid: 0e9a45c8a3509eb4c8da4a56a39b617e, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-038-nonholo-standard
+    face: {fileID: 2800000, guid: 47b72229558c2ca42b3982821890a124, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-039-nonholo-standard
+    face: {fileID: 2800000, guid: 9231de77c41831f48a40ed3063a1bd5c, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-040-nonholo-standard
+    face: {fileID: 2800000, guid: 12ddcc4401c4f65478be1a1080067fb2, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-041-nonholo-standard
+    face: {fileID: 2800000, guid: d455ba66f43e0964e94cab2200098f56, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-042-nonholo-standard
+    face: {fileID: 2800000, guid: 804c81cecba5df84a85a4fd01297e979, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-043-nonholo-standard
+    face: {fileID: 2800000, guid: d32383d65b2711f42a2cb9342dafa8bd, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-044-nonholo-standard
+    face: {fileID: 2800000, guid: 90dc639eeeed06a4c9d4d1af6459c584, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-045-nonholo-standard
+    face: {fileID: 2800000, guid: f8c49397900f16f4b9c4a11ffd7062cb, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-046-nonholo-standard
+    face: {fileID: 2800000, guid: d276bec9c79c5e8438c7a523472fe0dc, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-047-nonholo-standard
+    face: {fileID: 2800000, guid: 936a2c64e25e9b346b6b9823a5bd3655, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-048-nonholo-standard
+    face: {fileID: 2800000, guid: 1a9bc3c83f9a89b4dadc876b8ca12c3d, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-049-nonholo-standard
+    face: {fileID: 2800000, guid: 18a433938278af84b800dfde910ea4ab, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-050-nonholo-standard
+    face: {fileID: 2800000, guid: f5d68de12c49b6844bda6ccc998a2b06, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-051-nonholo-standard
+    face: {fileID: 2800000, guid: c654fae080b4fe1439b40a755c88dcd3, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-052-nonholo-standard
+    face: {fileID: 2800000, guid: fa350abaff0116945a382ad148a367c1, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-053-nonholo-standard
+    face: {fileID: 2800000, guid: aeca43d51a0d2eb47804b871e12ca626, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-054-nonholo-standard
+    face: {fileID: 2800000, guid: df2fb7b2e64b20d459cb871241a4de3b, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-055-nonholo-standard
+    face: {fileID: 2800000, guid: 1672a03d39e08eb44802f4dfb999319b, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-056-nonholo-standard
+    face: {fileID: 2800000, guid: e02913fee9ede8140b7c0f2d87f80016, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-057-nonholo-standard
+    face: {fileID: 2800000, guid: 55b131cfcae895048a84651fba7e33f0, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-058-nonholo-standard
+    face: {fileID: 2800000, guid: 291338680e6aa0d42ad028fc74fef983, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-059-nonholo-standard
+    face: {fileID: 2800000, guid: c247ee5a6b259da48b1a02fb57b00a06, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-060-nonholo-standard
+    face: {fileID: 2800000, guid: ffe48d3f6f5f79d40bf9c9cd48325cb9, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-061-nonholo-standard
+    face: {fileID: 2800000, guid: 4da4e275b433e734aa0b253f45a31c00, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-062-nonholo-standard
+    face: {fileID: 2800000, guid: 1bfc24fc7420dfa46b8538ec95c48daf, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-063-nonholo-standard
+    face: {fileID: 2800000, guid: 0fc722f13bfddef4e9e79eb5b80f653d, type: 3}
+    holoMask: {fileID: 0}
+  - cardId: pkmn-jungle-en-unlimited1999-064-nonholo-standard
+    face: {fileID: 2800000, guid: 59b130e76448a004dbc904437202045a, type: 3}
+    holoMask: {fileID: 0}

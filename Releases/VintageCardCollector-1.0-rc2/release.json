@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "version": "1.0-rc2",
+  "source": {
+    "path": "Releases/VintageCardCollector-1.0-rc2/VintageCardCollector-source.zip",
+    "sha256": "976c0a1f4686bd754d09d492e75beca3e5b29cbe960d5e1820635fffd4c0728b",
+    "members": 1829,
+    "bytes": 230573072
+  },
+  "windows": {
+    "path": "Releases/VintageCardCollector-1.0-rc2/VintageCardCollector-windows.zip",
+    "sha256": "8b6f9f39afbf461363eaa3c86264449a177d2d2853d3ba7105c552bae99553ba",
+    "members": 141,
+    "bytes": 137176608
+  },
+  "excludedPlayerDebugMembers": {},
+  "noSavesOrPrivateArtifacts": true,
+  "privateLocalOnly": true,
+  "verificationRecord": "docs/verification/Expansion_Foil_Execution.json"
+}

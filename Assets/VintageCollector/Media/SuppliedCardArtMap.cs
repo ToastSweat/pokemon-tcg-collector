@@ -10,18 +10,25 @@ namespace VintageCollector.Media
         public const string FossilPrinting = "fossil-en-unlimited1999";
         public const long PerSetPixelLimit = 32L * 1024 * 1024;
         public const long CombinedPixelLimit = 64L * 1024 * 1024;
-        private sealed class FaceBinding { public string printing; public Texture2D face; }
+        public const long MaskPixelLimit = 2L * 1024 * 1024;
+        private sealed class FaceBinding { public string printing; public Texture2D face, mask; }
         private readonly Dictionary<string,FaceBinding> faces = new Dictionary<string,FaceBinding>(StringComparer.Ordinal);
         private readonly Dictionary<string,int> counts = new Dictionary<string,int>(StringComparer.Ordinal);
         private SuppliedCardArtMap() { }
         public int FaceCount { get; private set; }
+        public int MaskCount { get; private set; }
         public static SuppliedCardArtMap Create(SuppliedCardArtProfile[] profiles, Func<string,string> printingForCardId)
+        {
+            return Create(profiles,printingForCardId,null);
+        }
+        public static SuppliedCardArtMap Create(SuppliedCardArtProfile[] profiles, Func<string,string> printingForCardId, Func<string,bool> isHolo)
         {
             if (printingForCardId == null) throw new ArgumentNullException("printingForCardId");
             var result = new SuppliedCardArtMap();
             if (profiles == null) return result;
             if (profiles.Length > 2) throw new ArgumentException("Only Jungle and Fossil profiles are admitted.","profiles");
-            long combinedPixels = 0;
+            long combinedPixels = 0, maskPixels = 0;
+            var uniqueMasks = new HashSet<Texture2D>();
             foreach (var profile in profiles)
             {
                 if (profile == null) throw new ArgumentException("Null supplied art profile.","profiles");
@@ -50,7 +57,24 @@ namespace VintageCollector.Media
                             throw new ArgumentException("Supplied art pixel budget exceeded.","profiles");
                         pixels += facePixels; count++;
                     }
-                    result.faces.Add(row.cardId,new FaceBinding { printing=printing, face=face });
+                    // Optional masks fail independently; identity and face admission stay unchanged.
+                    Texture2D mask = null, candidate = row.holoMask;
+                    bool eligible = false;
+                    if (face != null && candidate != null && isHolo != null)
+                    {
+                        try { eligible = isHolo(row.cardId); }
+                        catch (Exception) { eligible = false; }
+                    }
+                    if (eligible && candidate.width == face.width && candidate.height == face.height)
+                    {
+                        long size = (long)candidate.width * candidate.height;
+                        if (size > 0 && (uniqueMasks.Contains(candidate) || size <= MaskPixelLimit - maskPixels))
+                        {
+                            if (uniqueMasks.Add(candidate)) maskPixels += size;
+                            mask = candidate; result.MaskCount++;
+                        }
+                    }
+                    result.faces.Add(row.cardId,new FaceBinding { printing=printing, face=face, mask=mask });
                 }
                 if (combinedPixels > CombinedPixelLimit - pixels) throw new ArgumentException("Combined supplied art pixel budget exceeded.","profiles");
                 combinedPixels += pixels; result.counts.Add(printing,count); result.FaceCount += count;
@@ -62,6 +86,13 @@ namespace VintageCollector.Media
             face = null; FaceBinding binding;
             if (cardId == null || printingId == null || !faces.TryGetValue(cardId,out binding) || !string.Equals(binding.printing,printingId,StringComparison.Ordinal)) return false;
             face = binding.face; return face != null;
+        }
+        public bool TryGetHoloMask(string cardId,string printingId,out Texture2D mask)
+        {
+            mask = null; FaceBinding binding;
+            if (cardId == null || printingId == null || !faces.TryGetValue(cardId,out binding) || !string.Equals(binding.printing,printingId,StringComparison.Ordinal)) return false;
+            if (binding.face == null || binding.mask == null || binding.mask.width != binding.face.width || binding.mask.height != binding.face.height) return false;
+            mask = binding.mask; return true;
         }
         public int FaceCountForPrinting(string printingId)
         {

@@ -2,7 +2,7 @@
 
 ## Start
 
-Run `Builds/Phase7FinalWindows/VintageCardCollector.exe` in place. Keep the entire folder with the EXE, `_Data`, Mono and Unity DLLs, and keep it inside this project root. This remains a private personal project, not a redistribution or licensing claim.
+Run `Builds/Phase7FoilFixWindows/VintageCardCollector.exe` in place. Keep the entire folder with the EXE, `_Data`, Mono and Unity DLLs, and keep it inside this project root. This remains a private personal project, not a redistribution or licensing claim. This latest patch corrects Jungle/Fossil holo effects; see `docs/hermes/Expansion_Foil_Update.md`.
 
 The current player adds the manual fund and complete backups to the accepted three-set opening, supplied artwork, soundtrack and shopping features. It does not connect to a bank, move money, buy cards or fetch live market prices.
 
@@ -13,7 +13,7 @@ The new player has its own `Saves` folder. Automated tests use separate disposab
 For a one-time transfer that also preserves existing shopping notes:
 
 1. Quit the previous player normally and make sure it has closed. Keep both versions closed during copying.
-2. **Copy, do not move**, its complete `Saves` folder into the new `Builds/Phase7FinalWindows` folder **before first use**. For the latest accepted version, the source is `Builds/Phase6MusicWindows/Saves`.
+2. **Copy, do not move**, its complete `Saves` folder into the new `Builds/Phase7FoilFixWindows` folder **before first use**. If you used the fund candidate, the source is `Builds/Phase7FinalWindows/Saves`; if you are still using the music candidate, use `Builds/Phase6MusicWindows/Saves`.
 3. Do not overwrite an existing destination `Saves` folder. If you already used the final candidate, keep both collections and ask for a deliberate transfer/restore instead of deleting anything.
 4. Start the final player. The collection/profile container is retained; the new fund initializes once with your configured starting defaults and does not invent contributions for already-opened historical packs.
 
@@ -81,7 +81,7 @@ Legacy collection-only ZIPs remain readable; an absent old shopping/fund section
 
 ## Editable source and verification
 
-Open `Assets/VintageCollector/Scenes/StartupFinal.unity` in Unity **6000.2.14f1** and press Play. Heavy content loads through `BootstrapFinal`; generated runtime UI is intentional. The project's build settings now select those same two final scenes in that order. Editor progress uses its separate project-local save scope, not the standalone player's saves.
+Open `Assets/VintageCollector/Scenes/StartupFoil.unity` in Unity **6000.2.14f1** and press Play. Heavy content loads through `BootstrapFoil`; generated runtime UI is intentional. The project's build settings now select those same two final scenes in that order. Editor progress uses its separate project-local save scope, not the standalone player's saves.
 
 The private source package contains Assets, Packages, ProjectSettings, tools/tests and documentation, but not player progress, private `.artifacts`, caches or credentials. The Windows package contains runtime files without saves. These packages remain local to this project; no upload or redistribution was performed.
 

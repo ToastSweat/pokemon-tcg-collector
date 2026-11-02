@@ -7,6 +7,7 @@ namespace VintageCollector.Media
     {
         public string cardId;
         public Texture2D face;
+        public Texture2D holoMask;
     }
 
     // Optional host-side native assets. No catalog/model/save fields or resource ownership.

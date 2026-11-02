@@ -2,7 +2,15 @@
 
 Private, personal Unity desktop project. Neutral working title; not a redistribution or licensing claim.
 
-## Final private 1.0 candidate — ready for owner review
+## Current private 1.0 candidate — Jungle/Fossil foil correction
+
+`F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase7FoilFixWindows\VintageCardCollector.exe`
+
+Corrects the missing expansion holo-mask path: all 16 Jungle and 15 Fossil holos receive illustration-only foil; all 95 expansion non-holos remain matte. Fossil Aerodactyl #1/62 is holo; #16/62 is not. Base finishes and all game/save/fund/music behavior remain unchanged. Actual shader/control PNG differences verified the holo effect, zero non-holo change and unchanged sampled text; fresh normal startup without smoke flags passed. Fourteen earlier used players are preserved.
+
+[Foil update and safe collection transfer](docs/hermes/Expansion_Foil_Update.md) · [Native rendering evidence](docs/verification/Expansion_Foil_Execution.json). Editable source starts at **StartupFoil → BootstrapFoil**.
+
+## Previous private 1.0 candidate — fund and complete backups
 
 `F:\[WORKSPACE]\[HERMES]\[CHATGPT]\PokemonThrowbackTCG\Builds\Phase7FinalWindows\VintageCardCollector.exe`
 
